@@ -1566,8 +1566,13 @@
       } else if (mainTab === "READY") {
         // [발송 대기 대기열 순서: 구인공고 우선 타깃 먼저 + 순번 순]
         filtered.sort((a, b) => {
-          const isPrioA = (a.views && (a.views.includes("구인") || a.views.includes("채용") || a.views.includes("공고"))) || false;
-          const isPrioB = (b.views && (b.views.includes("구인") || b.views.includes("채용") || b.views.includes("공고"))) || false;
+          const checkPrio = (x) => {
+            if (x.is_priority) return true;
+            const str = (x.point || "") + " " + (x.views || "");
+            return str.includes("구인") || str.includes("채용") || str.includes("공고");
+          };
+          const isPrioA = checkPrio(a);
+          const isPrioB = checkPrio(b);
           if (isPrioA && !isPrioB) return -1;
           if (!isPrioA && isPrioB) return 1;
           return parseInt(a.no || 0) - parseInt(b.no || 0);
@@ -1618,7 +1623,7 @@
             </tr>
           `;
         } else if (mainTab === "READY") {
-          const isPrio = (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+          const isPrio = t.is_priority || ((t.point || "") + " " + (t.views || "")).includes("구인") || ((t.point || "") + " " + (t.views || "")).includes("채용") || ((t.point || "") + " " + (t.views || "")).includes("공고");
           const prioTag = isPrio ? '<span style="color:#f87171; font-weight:800;">🚨 구인공고 우선</span>' : '<span style="color:#94a3b8;">일반 대본 제안</span>';
           return `
             <tr>
@@ -1629,7 +1634,7 @@
               <td>${t.rep}</td>
               <td>${t.category}</td>
               <td>${t.region}</td>
-              <td style="max-width: 220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${t.views||''}">${t.views || '-'}</td>
+              <td style="max-width: 260px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${t.point || t.views || ''}">${t.point || t.views || '-'}</td>
               <td style="color:#38bdf8;">${t.email}</td>
               <td><span class="token-chip">${t.token}</span></td>
             </tr>
@@ -1720,7 +1725,7 @@
                 </div>
               `;
             } else if (mainTab === "READY") {
-              const isPrio = (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+              const isPrio = t.is_priority || ((t.point || "") + " " + (t.views || "")).includes("구인") || ((t.point || "") + " " + (t.views || "")).includes("채용") || ((t.point || "") + " " + (t.views || "")).includes("공고");
               const prioBadge = isPrio
                 ? '<span style="background:rgba(239,68,68,0.2); color:#f87171; font-weight:800; padding:2px 8px; border-radius:4px; font-size:11px;">🚨 구인공고 우선 타깃</span>'
                 : '<span style="background:rgba(255,255,255,0.06); color:#94a3b8; padding:2px 8px; border-radius:4px; font-size:11px;">일반 대본 제안</span>';
@@ -1746,8 +1751,8 @@
                   </div>
 
                   <div class="card-sales-box">
-                    💡 <strong>영업 포인트 / 공고:</strong><br>
-                    ${t.views || '-'}
+                    💡 <strong>영업 포인트 / 공고 분석:</strong><br>
+                    ${t.point || t.views || '-'}
                   </div>
 
                   <div class="card-bottom-row">

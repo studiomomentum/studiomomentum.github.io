@@ -9,6 +9,8 @@
     "status": "BOUNCED",
     "sent_at": "2026-09-18 18:27:29 (반송확인)",
     "views": "40~200회",
+    "point": "광교 법조타운·영상 150개 업로드 대비 극심한 정체 돌파 롱폼 구조 제안",
+    "is_priority": false,
     "token": "1cc3e241"
   },
   "e51f4d76": {
@@ -21,6 +23,8 @@
     "status": "SENT",
     "sent_at": "2026-09-18 19:24:55",
     "views": "수십~200회",
+    "point": "수원 SK V1 1인 딜러·영상 221개 대비 200회 한계 돌파 및 신뢰 구축 제안",
+    "is_priority": false,
     "token": "e51f4d76"
   },
   "5dfeb0cc": {
@@ -33,6 +37,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 10:54:40",
     "views": "수십~100회",
+    "point": "수지/광교 인접·영상 2000개 올렸으나 구독자 167명 정체 극복 및 수임 직결 제안",
+    "is_priority": false,
     "token": "5dfeb0cc"
   },
   "81bb70eb": {
@@ -45,6 +51,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 12:44:47",
     "views": "수십~100회",
+    "point": "영통역 인근·영상 613개 정성 대비 구독자 357명 갇힘 해결 및 내원 전환 대본 제안",
+    "is_priority": false,
     "token": "81bb70eb"
   },
   "6e9d6428": {
@@ -57,6 +65,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 15:47:25",
     "views": "수십~100회",
+    "point": "영통 학원가·고교별 입시 설명회 134개 영상 정체 해소 및 학부모 등록 유치 제안",
+    "is_priority": false,
     "token": "6e9d6428"
   },
   "3f489b54": {
@@ -69,6 +79,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 16:25:18",
     "views": "수십~수백회",
+    "point": "영통역 인근·창업/음식점 절세 토킹헤드 68개 대비 구독자 275명 돌파 및 기장 의뢰 제안",
+    "is_priority": false,
     "token": "3f489b54"
   },
   "8d532453": {
@@ -81,6 +93,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 17:14:01",
     "views": "100회 내외",
+    "point": "광교 법조타운 원희캐슬·전문성 대비 구독자 10명 초기 채널 스케일업 제안",
+    "is_priority": false,
     "token": "8d532453"
   },
   "9a54526d": {
@@ -93,6 +107,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 17:34:54",
     "views": "수십~수백회",
+    "point": "광교 법조타운 원희캐슬·법가이더 학폭/소년사건 전문 롱폼 설득 아키텍처 제안",
+    "is_priority": false,
     "token": "9a54526d"
   },
   "4bee65da": {
@@ -105,6 +121,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 17:54:52",
     "views": "수백회 미만",
+    "point": "수원/용인 인접·임행TV 학폭/행정심판 토킹헤드 이탈 방지 및 수임 전환 제안",
+    "is_priority": false,
     "token": "4bee65da"
   },
   "a1bb71e7": {
@@ -117,6 +135,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 18:14:54",
     "views": "수십~수백회",
+    "point": "수원/경기남부·교통사고/상해보험금 토킹헤드 시청지속시간 극대화 및 상담 유치 제안",
+    "is_priority": false,
     "token": "a1bb71e7"
   },
   "d6f4204a": {
@@ -129,6 +149,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 18:44:53",
     "views": "수십~수백회",
+    "point": "평택 법원 맞은편·이혼/음주/형사 토킹헤드 전문 승소 대비 조회수 정체 돌파 제안",
+    "is_priority": false,
     "token": "d6f4204a"
   },
   "f1deebad": {
@@ -141,6 +163,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 19:04:54",
     "views": "수십~98회",
+    "point": "고덕국제신도시·삼성 반도체 및 지제역세권 토지/상가 롱폼 계약 전환 대본 제안",
+    "is_priority": false,
     "token": "f1deebad"
   },
   "a251203c": {
@@ -153,6 +177,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 19:24:50",
     "views": "수백회 미만",
+    "point": "평택브레인시티방송국·지제역/브레인시티 공장/토지/상가 투자 유치 제안",
+    "is_priority": false,
     "token": "a251203c"
   },
   "f9dad55b": {
@@ -165,6 +191,8 @@
     "status": "SENT",
     "sent_at": "2026-09-19 19:54:52",
     "views": "수백회 미만",
+    "point": "평택 안중분소·외국인 비자/출입국/인허가 실무 수임 직결 제안",
+    "is_priority": false,
     "token": "f9dad55b"
   },
   "64cb6851": {
@@ -177,6 +205,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 09:04:52",
     "views": "수십~수백회",
+    "point": "오산 세교지구 호반써밋·신축 단지 분석 및 전월세/매매 전환 대본 제안",
+    "is_priority": false,
     "token": "64cb6851"
   },
   "5983db21": {
@@ -189,6 +219,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 09:34:51",
     "views": "수십~수백회",
+    "point": "오산역 인근·구독자 88명 초기 채널 스케일업 및 임플란트 내원 전환 제안",
+    "is_priority": false,
     "token": "5983db21"
   },
   "deee862f": {
@@ -201,6 +233,8 @@
     "status": "BOUNCED",
     "sent_at": "2026-09-20 10:04:54 (반송확인)",
     "views": "수백회 미만",
+    "point": "오산역 인근 척추관절 병원·구독자 323명 대비 척추관절 비수술 치료 내원 제안",
+    "is_priority": false,
     "token": "deee862f"
   },
   "074b3aa8": {
@@ -213,6 +247,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 10:34:52",
     "views": "수백회 미만",
+    "point": "오산동탄 경계·경추/거북목 만성 통증 한방 치료 신규 환자 내원 전환 제안",
+    "is_priority": false,
     "token": "074b3aa8"
   },
   "0195b3ea": {
@@ -225,6 +261,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 11:04:56",
     "views": "수십~수백회",
+    "point": "병점/동탄 중고등 수학 전문·구독자 79명 대비 입시/내신 학부모 등록 전환 제안",
+    "is_priority": false,
     "token": "0195b3ea"
   },
   "ded48f43": {
@@ -237,6 +275,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 12:44:52",
     "views": "수십~수백회",
+    "point": "병점역 인근 상가/아파트·병점 복합타운 호재 분석 및 급매물 투자 상담 제안",
+    "is_priority": false,
     "token": "ded48f43"
   },
   "828ceb27": {
@@ -249,6 +289,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 12:14:53",
     "views": "구독자 36명(수십~260회)",
+    "point": "수원 매탄동 치과·구독자 36명 영상정체 해소 및 영상 디자이너 채용 대체 역제안",
+    "is_priority": true,
     "token": "828ceb27"
   },
   "a3ecbcaf": {
@@ -261,6 +303,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 11:22:24",
     "views": "구독자 4.5천명",
+    "point": "강남 어지럼증/두통 전문 한의원·유튜브 영상 편집자 구인 채용공고 타깃 B2B 역제안",
+    "is_priority": true,
     "token": "a3ecbcaf"
   },
   "355e22b8": {
@@ -273,6 +317,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 11:54:51",
     "views": "구독자 561명(영상11개)",
+    "point": "강남역 치과·영상 11개 정체 극복 및 원내 영상 제작 담당자 채용 대체 역제안",
+    "is_priority": true,
     "token": "355e22b8"
   },
   "33a3fa0f": {
@@ -285,6 +331,8 @@
     "status": "EXCLUDED",
     "sent_at": "2026-09-20 (대형채널컷)",
     "views": "구독자 8.8만명",
+    "point": "강남 빌딩 중개·황소장 8.8만명 대형 채널 확인으로 발송 배제",
+    "is_priority": false,
     "token": "33a3fa0f"
   },
   "3198713a": {
@@ -297,6 +345,8 @@
     "status": "EXCLUDED",
     "sent_at": "2026-09-20 (대형채널컷)",
     "views": "조회수 수십만회",
+    "point": "압구정 양악외과·얼굴뼈닥터 조회수 수십만회 확인으로 발송 배제",
+    "is_priority": false,
     "token": "3198713a"
   },
   "d6e30eda": {
@@ -309,6 +359,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 402명",
+    "point": "동탄 치아교정 토킹헤드 구독자 402명 정체 해소 및 교정환자 내원 전환 대본 제안",
+    "is_priority": false,
     "token": "d6e30eda"
   },
   "822b0c00": {
@@ -321,6 +373,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "조회수 360회대",
+    "point": "동탄역 교정치과·교정bubu 영상 360회 정체 돌파 및 인비절라인 내원 예약 제안",
+    "is_priority": false,
     "token": "822b0c00"
   },
   "6342a76f": {
@@ -333,6 +387,8 @@
     "status": "SENT",
     "sent_at": "2026-09-20 15:53:19",
     "views": "조회수 32~82회",
+    "point": "서초 법조타운·부동산/조세 토킹헤드 30~80회 정체 탈피 및 수임 전환 제안",
+    "is_priority": false,
     "token": "6342a76f"
   },
   "0e9e3755": {
@@ -345,6 +401,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 17명",
+    "point": "서초동 이혼/형사 전문·구독자 17명 초기 채널 스케일업 및 상담 예약 직결 제안",
+    "is_priority": false,
     "token": "0e9e3755"
   },
   "3ece3c48": {
@@ -357,6 +415,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 585명",
+    "point": "오산역 인근 치과·Dr.수석의 일타치과 585명 정체 돌파 및 임플란트 내원 전환 제안",
+    "is_priority": false,
     "token": "3ece3c48"
   },
   "0f807f20": {
@@ -369,6 +429,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 1940명",
+    "point": "수원 매탄동 치과·영상 다수 업로드 대비 1900명대 정체 극복 및 치아보존/임플란트 내원 제안",
+    "is_priority": false,
     "token": "0f807f20"
   },
   "afedfa2b": {
@@ -381,6 +443,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 585명",
+    "point": "수원 매탄동 치과·자연치아 보존 585명 정체 돌파 및 보존치료/임플란트 예약 전환 제안",
+    "is_priority": false,
     "token": "afedfa2b"
   },
   "3a873ef8": {
@@ -393,6 +457,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수십~수백회",
+    "point": "수원 장안구 치과·보철/교정 전문의 토킹헤드 정체 해소 및 신규 내원 상담 대본 제안",
+    "is_priority": false,
     "token": "3a873ef8"
   },
   "5c41ff01": {
@@ -405,6 +471,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수십~수백회",
+    "point": "동탄역 법무법인·이혼/부동산/형사 법률 토킹헤드 영상 정체 돌파 및 수임 상담 전환 대본 제안",
+    "is_priority": false,
     "token": "5c41ff01"
   },
   "97194070": {
@@ -417,6 +485,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 2010명",
+    "point": "서초 법조타운·민형사 법률 콘텐츠 2천명대 정체 돌파 및 1:1 수임 상담 전환 퍼널 제안",
+    "is_priority": false,
     "token": "97194070"
   },
   "edf30100": {
@@ -429,6 +499,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 56명",
+    "point": "서초 법조타운·아파트/집합건물 하자분쟁 전문 구독자 56명 초기 채널 스케일업 및 수임 직결 제안",
+    "is_priority": false,
     "token": "edf30100"
   },
   "80eb9ac9": {
@@ -441,6 +513,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 342명",
+    "point": "강남대로 변호사들·구독자 340명대 정체 탈피 및 스타트업/기업분쟁/민형사 수임 연결 퍼널 제안",
+    "is_priority": false,
     "token": "80eb9ac9"
   },
   "d1768b43": {
@@ -453,6 +527,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 1740명",
+    "point": "서초 법조타운·교통사고/보험금 분쟁 전문 유튜브 1700명대 정체 돌파 및 수임 직결 대본 제안",
+    "is_priority": false,
     "token": "d1768b43"
   },
   "9fa0a5df": {
@@ -465,6 +541,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 39명",
+    "point": "동탄 신도시 부동산·아파트/계약주의사항 영상 대비 구독자 39명 갇힘 해결 및 매물 계약 상담 전환 제안",
+    "is_priority": false,
     "token": "9fa0a5df"
   },
   "cf086272": {
@@ -477,6 +555,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 4490명",
+    "point": "용인 처인구 전원주택/토지 매물 영상 대비 4천명대 정체 돌파 및 외지인 계약 전환 대본 제안",
+    "is_priority": false,
     "token": "cf086272"
   },
   "22c0c56e": {
@@ -489,6 +569,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 1660명",
+    "point": "평택 안중역세권/화양지구 토지 매물 영상 1.6천명 정체 돌파 및 투자 유치 롱폼 전환 대본 제안",
+    "is_priority": false,
     "token": "22c0c56e"
   },
   "23d5f9f1": {
@@ -501,6 +583,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수십~수백회",
+    "point": "동탄 리프팅/피부시술 전문의 꿀팁 영상 정체 해소 및 프리미엄 피부관리/시술 예약 퍼널 제안",
+    "is_priority": false,
     "token": "23d5f9f1"
   },
   "04cae592": {
@@ -513,6 +597,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수백회 미만",
+    "point": "수지구 피부과 전문의 3인·색소/리프팅 토킹헤드 영상 정체 탈피 및 안티에이징 시술 예약 전환 대본 제안",
+    "is_priority": false,
     "token": "04cae592"
   },
   "376feb54": {
@@ -525,6 +611,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수백회 미만",
+    "point": "용인 동백 쁘띠/성형외과 전문의 영상 정체 돌파 및 시술 상담 내원 예약 퍼널 제안",
+    "is_priority": false,
     "token": "376feb54"
   },
   "d9993cf7": {
@@ -537,6 +625,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 113명",
+    "point": "판교/경기남부 스타트업/사업자 세무 토킹헤드 구독자 113명 초기 정체 탈피 및 기장 대행 상담 전환 대본 제안",
+    "is_priority": false,
     "token": "d9993cf7"
   },
   "7858695b": {
@@ -549,6 +639,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수십~수백회",
+    "point": "광교 법조타운·이혼/형사 전문 변호사 유튜브 토킹헤드 영상 정체 해소 및 1:1 수임 상담 전환 퍼널 제안",
+    "is_priority": false,
     "token": "7858695b"
   },
   "4122ae9f": {
@@ -561,6 +653,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 91명",
+    "point": "수원 법조타운·군사법/형사/성범죄 대응 숏폼 대비 구독자 91명 정체 탈피 및 즉각 수임 상담 전환 대본 제안",
+    "is_priority": false,
     "token": "4122ae9f"
   },
   "17ea8994": {
@@ -573,6 +667,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "수백회 미만",
+    "point": "서초 법조타운·회생의기준 영상 PD 채용공고 타깃 B2B 프로덕션 외주화 역제안",
+    "is_priority": true,
     "token": "17ea8994"
   },
   "c8b0183c": {
@@ -585,6 +681,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 617명",
+    "point": "평택 송탄 안과·백내장/녹내장 영상 120여개 대비 600명대 정체 극복 및 노안·백내장 수술 내원 예약 전환 제안",
+    "is_priority": false,
     "token": "c8b0183c"
   },
   "5381c569": {
@@ -597,6 +695,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 71명",
+    "point": "수원/경기 노동사건·산재/부당해고 전문 노무 토킹헤드 구독자 71명 정체 탈피 및 기업 노무 자문/사건 수임 연결 제안",
+    "is_priority": false,
     "token": "5381c569"
   },
   "c19e2226": {
@@ -609,6 +709,8 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 1400명",
+    "point": "강남역 노무법인·인사노무/해고분쟁 전문 유튜브 1.4천명 정체 돌파 및 기업 월 자문 계약 직결 제안",
+    "is_priority": false,
     "token": "c19e2226"
   },
   "f6b3e032": {
@@ -621,6 +723,106 @@
     "status": "READY",
     "sent_at": "",
     "views": "구독자 113명",
+    "point": "강남 여드름/흉터 재생 토킹헤드 구독자 113명 정체 탈피 및 고단가 흉터치료/시술 내원 전환 대본 제안",
+    "is_priority": false,
     "token": "f6b3e032"
+  },
+  "1b8e6c97": {
+    "no": "53",
+    "company": "남양바른탑치과의원",
+    "rep": "강선구 대표원장",
+    "email": "sscom1014@naver.com",
+    "region": "경기 화성 남양",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 1460명",
+    "point": "화성 남양 치과·'강선구의 치과월드' 1.4천명 정체 탈피 및 임플란트 내원 전환 유튜브 PD 채용공고 B2B 외주화 역제안",
+    "is_priority": true,
+    "token": "1b8e6c97"
+  },
+  "92c19a63": {
+    "no": "54",
+    "company": "올림피움채움의원 수원점",
+    "rep": "유정민 대표원장",
+    "email": "ssat850917@naver.com",
+    "region": "수원 영통(망포)",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 1150명",
+    "point": "수원 망포역 피부과·'피부좋은 의사생활' 1.1천명 정체 탈피 및 리프팅 시술 내원 전환 유튜브 PD 채용공고 B2B 외주화 역제안",
+    "is_priority": true,
+    "token": "92c19a63"
+  },
+  "e61666ed": {
+    "no": "55",
+    "company": "법무법인(유)강남 이현조 변호사팀",
+    "rep": "이현조 변호사",
+    "email": "hjlee_team@lawgangnam.com",
+    "region": "서울 서초",
+    "category": "legal",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 2920명",
+    "point": "서초 법조타운·집합건물분쟁 전담 2.9천명 정체 돌파 및 관리단 집회/하자 분쟁 수임 전환 영상 편집자 채용공고 B2B 역제안",
+    "is_priority": true,
+    "token": "e61666ed"
+  },
+  "3f6f1ed4": {
+    "no": "56",
+    "company": "법률사무소 희도",
+    "rep": "최인한·강명구 대표변호사",
+    "email": "tilaw@naver.com",
+    "region": "서울 서초",
+    "category": "legal",
+    "status": "READY",
+    "sent_at": "",
+    "views": "초기 정체 단계",
+    "point": "서초 법조타운·형사/교통 전문 법률 콘텐츠 영상 기획/제작 채용공고 타깃 B2B 프로덕션 외주화 역제안",
+    "is_priority": true,
+    "token": "3f6f1ed4"
+  },
+  "2ca21c03": {
+    "no": "57",
+    "company": "라포엘의원",
+    "rep": "이주형 대표원장",
+    "email": "rappoel@naver.com",
+    "region": "서울 강남",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "수백회 미만",
+    "point": "강남역 피부과·'닥터 리프터' 실리프팅/필러 토킹헤드 정체 돌파 및 시술 상담 내원 전환 영상 PD 채용공고 B2B 역제안",
+    "is_priority": true,
+    "token": "2ca21c03"
+  },
+  "6cce5327": {
+    "no": "58",
+    "company": "황금부동산공인중개사사무소",
+    "rep": "장선우 대표공인중개사",
+    "email": "jangseonwoo0712@naver.com",
+    "region": "화성 향남",
+    "category": "realty",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 353명",
+    "point": "화성 향남·'공장과토지tv' 동영상 70개 대비 구독자 353명 정체 극복 및 공장/토지 매물 계약 전환 롱폼/숏폼 제작 제안",
+    "is_priority": false,
+    "token": "6cce5327"
+  },
+  "c2b9b0a0": {
+    "no": "59",
+    "company": "원탑공인중개사사무소",
+    "rep": "이상민 대표공인중개사",
+    "email": "lsmnmh25@naver.com",
+    "region": "화성 향남",
+    "category": "realty",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 980명대",
+    "point": "화성 향남·'원탑공인' 공장/창고 매물 영상 980명 정체 돌파 및 임대/매매 계약 전환 대본·모션그래픽 제안",
+    "is_priority": false,
+    "token": "c2b9b0a0"
   }
 }
