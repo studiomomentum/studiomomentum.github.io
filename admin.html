@@ -553,6 +553,173 @@
       font-size: 11.5px;
       color: #38bdf8;
     }
+
+    /* 모바일 가이드 힌트 */
+    .mobile-scroll-hint {
+      display: none;
+      font-size: 11.5px;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px dashed rgba(56, 189, 248, 0.3);
+      padding: 7px 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    /* =======================================
+       모바일 & 태블릿 반응형 미디어 쿼리 (화면 최적화)
+       ======================================= */
+    @media (max-width: 768px) {
+      body {
+        padding: 0;
+      }
+      #dashboardApp {
+        padding: 16px 12px 60px;
+      }
+
+      /* 1. 로그인 모달 모바일 최적화 */
+      #loginOverlay {
+        padding: 16px;
+      }
+      .login-box {
+        padding: 30px 20px;
+        border-radius: 16px;
+        max-width: 100%;
+      }
+      .login-title {
+        font-size: 20px;
+      }
+      .input-group input {
+        font-size: 16px !important; /* iOS 자동 줌인 방지 */
+        padding: 12px 14px;
+      }
+      .login-btn {
+        padding: 13px;
+        font-size: 15px;
+      }
+
+      /* 2. 상단 헤더 모바일 최적화 */
+      .top-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        padding-bottom: 16px;
+        margin-bottom: 18px;
+      }
+      .brand-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .brand-title-wrap h1 {
+        font-size: 16px !important;
+      }
+      .header-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        width: 100%;
+      }
+      #lastUpdated {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 11.5px;
+        margin-bottom: 2px;
+      }
+      .btn-secondary {
+        justify-content: center;
+        padding: 9px 8px;
+        font-size: 12px;
+      }
+      .btn-logout {
+        grid-column: 1 / -1;
+      }
+
+      /* 3. KPI 카드 2x2 반응형 그리드 */
+      .kpi-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .kpi-card {
+        padding: 14px 12px;
+        border-radius: 10px;
+      }
+      .kpi-label {
+        font-size: 11.5px;
+        margin-bottom: 6px;
+      }
+      .kpi-val {
+        font-size: 22px;
+        margin-bottom: 4px;
+      }
+      .kpi-sub {
+        font-size: 10.5px;
+      }
+
+      /* 4. 바디 및 패널 최적화 */
+      .dashboard-body {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .panel {
+        padding: 16px 14px;
+        border-radius: 10px;
+      }
+      .panel-header {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+      }
+      .panel-title {
+        font-size: 14.5px;
+      }
+      .feed-container {
+        max-height: 380px;
+      }
+
+      /* 5. 마스터 테이블 및 검색/필터 바 모바일 최적화 */
+      .table-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+      .search-input {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 14px;
+      }
+      .filter-group {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .filter-group::-webkit-scrollbar {
+        display: none;
+      }
+      .filter-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 6px 11px;
+        font-size: 11.5px;
+      }
+      .mobile-scroll-hint {
+        display: block;
+      }
+      .table-wrap {
+        -webkit-overflow-scrolling: touch;
+      }
+      th, td {
+        padding: 10px 10px;
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -677,6 +844,10 @@
             <button class="filter-btn" onclick="setFilter('UNVISITED', this)">미방문 (<span id="cntUnvisited">0</span>)</button>
             <button class="filter-btn" onclick="setFilter('READY', this)">발송대기 (<span id="cntReady">0</span>)</button>
           </div>
+        </div>
+
+        <div class="mobile-scroll-hint">
+          👉 표를 좌우로 스크롤하여 상세 정보(방문 상태/체류시간/완독률)를 확인하세요
         </div>
 
         <div class="table-wrap">
