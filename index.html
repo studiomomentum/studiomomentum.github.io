@@ -1414,21 +1414,39 @@
   })();
 </script>
 
-<!-- 스튜디오 모멘텀 스텔스 비즈니스 트래커 (Stealth Visitor Analytics) -->
+<!-- 스튜디오 모멘텀 스텔스 비즈니스 트래커 (Stealth Visitor Analytics - Bulletproof Mobile/WebKit Edition) -->
 <script>
 (function() {
   const TRACK_TOPIC = "sm_events_2026_x89a";
-  const urlParams = new URLSearchParams(window.location.search);
-  let refToken = urlParams.get('ref') || urlParams.get('v_ref');
-  
-  if (refToken) {
-    sessionStorage.setItem('sm_lead_ref', refToken);
-  } else {
-    refToken = sessionStorage.getItem('sm_lead_ref') || 'direct';
+  let refToken = 'direct';
+
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    refToken = urlParams.get('ref') || urlParams.get('v_ref');
+    
+    // 해시 파라미터(#ref=...) fallback 지원
+    if (!refToken && window.location.hash) {
+      const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+      refToken = hashParams.get('ref') || hashParams.get('v_ref');
+    }
+
+    if (refToken) {
+      try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+      try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+    } else {
+      try {
+        refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || 'direct';
+      } catch(e) {
+        refToken = 'direct';
+      }
+    }
+  } catch(e) {
+    refToken = 'direct';
   }
 
-  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  const deviceType = isMobile ? 'Mobile' : 'Desktop';
+  const ua = navigator.userAgent || '';
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua);
+  const deviceType = isMobile ? (/iPhone|iPad|iPod/i.test(ua) ? 'Mobile (iPhone)' : (/Android/i.test(ua) ? 'Mobile (Android)' : 'Mobile')) : 'Desktop';
   const screenRes = `${window.screen.width}x${window.screen.height}`;
   const referrer = document.referrer || 'Direct/Email';
   const startTime = Date.now();
@@ -1446,24 +1464,39 @@
       meta: meta || {}
     };
 
-    try {
-      const bodyStr = JSON.stringify(payload);
-      if (navigator.sendBeacon) {
-        const blob = new Blob([bodyStr], { type: 'application/json' });
-        navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, blob);
-      } else {
+    const bodyStr = JSON.stringify(payload);
+
+    // 1. fetch 우선 전송 (text/plain;charset=UTF-8 사용으로 모바일 Safari/WebKit의 CORS 사전요청(OPTIONS) 에러 원천 차단)
+    let fetchSent = false;
+    if (window.fetch) {
+      try {
         fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
           method: 'POST',
           body: bodyStr,
-          headers: { 'Content-Type': 'application/json', 'Title': `[SM] ${eventType}: ${refToken}` },
-          keepalive: true
-        }).catch(function() {});
-      }
-    } catch(e) {}
+          headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+          keepalive: true,
+          mode: 'cors'
+        }).then(function() {
+          fetchSent = true;
+        }).catch(function() {
+          if (!fetchSent && navigator.sendBeacon) {
+            try { navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr); } catch(e){}
+          }
+        });
+        fetchSent = true;
+      } catch(e) {}
+    }
+
+    // 2. fetch 미지원 또는 실패 시 sendBeacon 순수 문자열 fallback (Blob이 아닌 DOMString 사용으로 WebKit 버그 회피)
+    if (!fetchSent && navigator.sendBeacon) {
+      try {
+        navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr);
+      } catch(e) {}
+    }
   }
 
-  // 1. 최초 방문 이벤트
-  sendEvent('visit', { ua: navigator.userAgent.slice(0, 120) });
+  // 1. 즉시 최초 방문 이벤트 발송
+  sendEvent('visit', { ua: ua.slice(0, 120) });
 
   // 2. 스크롤 깊이 추적 (50%, 90%)
   let firedScroll50 = false;
@@ -1471,6 +1504,7 @@
   window.addEventListener('scroll', function() {
     const scrollPos = window.scrollY + window.innerHeight;
     const docHeight = document.documentElement.scrollHeight;
+    if (!docHeight) return;
     const scrollPct = (scrollPos / docHeight) * 100;
 
     if (!firedScroll50 && scrollPct >= 50) {
@@ -1483,8 +1517,8 @@
     }
   }, { passive: true });
 
-  // 3. 체류 시간 마일스톤 추적 (15초, 45초, 90초)
-  [15, 45, 90].forEach(function(sec) {
+  // 3. 체류 시간 마일스톤 추적 (10초, 30초, 60초, 90초)
+  [10, 30, 60, 90].forEach(function(sec) {
     setTimeout(function() {
       sendEvent('duration_' + sec + 's', { duration: sec });
     }, sec * 1000);
@@ -1502,11 +1536,21 @@
     }
   }, { capture: true });
 
-  // 5. 페이지 이탈 시 최종 체류 시간 전송
-  window.addEventListener('pagehide', function() {
+  // 5. 모바일 사파리 및 앱 브라우저 이탈(visibilitychange & pagehide) 감지
+  let leaveSent = false;
+  function handleLeave() {
+    if (leaveSent) return;
     const totalDuration = Math.round((Date.now() - startTime) / 1000);
     if (totalDuration >= 3) {
+      leaveSent = true;
       sendEvent('leave', { totalDuration: totalDuration });
+    }
+  }
+
+  window.addEventListener('pagehide', handleLeave);
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'hidden') {
+      handleLeave();
     }
   });
 })();

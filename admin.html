@@ -29,6 +29,11 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden !important;
+    }
     body {
       font-family: var(--font);
       background-color: var(--bg);
@@ -356,6 +361,7 @@
       padding: 22px;
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
 
     .panel-header {
@@ -635,15 +641,13 @@
     @media (max-width: 768px) {
       body {
         padding: 0;
+        width: 100%;
+        overflow-x: hidden !important;
       }
       #dashboardApp {
-        padding: 16px 12px 60px;
-      }
-
-      .main-tab-btn {
-        padding: 9px 12px;
-        font-size: 12px;
-        min-width: 115px;
+        padding: 14px 12px 60px;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       /* 1. 로그인 모달 모바일 최적화 */
@@ -659,7 +663,7 @@
         font-size: 20px;
       }
       .input-group input {
-        font-size: 16px !important; /* iOS 자동 줌인 방지 */
+        font-size: 16px !important;
         padding: 12px 14px;
       }
       .login-btn {
@@ -667,29 +671,41 @@
         font-size: 15px;
       }
 
-      /* 2. 상단 헤더 모바일 최적화 (가로 폭 100% 매칭 & 깔끔한 균등 배치) */
+      /* 2. 상단 헤더 모바일 최적화: 가로 폭 100% 매칭 & 여백 정렬 */
       .top-header {
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
-        padding-bottom: 16px;
-        margin-bottom: 18px;
+        gap: 10px;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .brand-title-wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        gap: 8px;
       }
       .brand-title-wrap h1 {
-        font-size: 15.5px !important;
+        font-size: 14.5px !important;
         letter-spacing: -0.3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .brand-badge {
+        flex-shrink: 0;
+        font-size: 10px;
+        padding: 3px 8px;
       }
       .header-actions {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 6px;
         width: 100%;
+        box-sizing: border-box;
         align-items: center;
       }
       #lastUpdated {
@@ -701,78 +717,79 @@
       }
       .btn-secondary {
         justify-content: center;
-        padding: 9px 4px;
-        font-size: 11.5px;
+        padding: 8px 4px;
+        font-size: 11px;
         white-space: nowrap;
         border-radius: 8px;
-      }
-      .btn-logout {
-        grid-column: auto;
+        min-width: 0;
       }
 
-      /* 3. KPI 카드 모바일 최적화: 실시간 타임라인 UI 사이즈에 맞춘 가로 와이드 리스트 카드 */
+      /* 3. KPI 카드: 원래의 2x2 디자인 완벽 복원 & 하단 UI와 폭 100% 칼맞춤 */
       .kpi-grid {
-        grid-template-columns: 1fr; /* 실시간 타임라인 패널과 동일한 가로 100% 와이드 */
-        gap: 9px;
-        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 14px;
       }
       .kpi-card {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-          "label val"
-          "sub   val";
-        align-items: center;
-        padding: 13px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 13px 12px;
         border-radius: 12px;
         background: var(--surface);
         border: 1px solid var(--surface-border);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        position: relative;
-        overflow: hidden;
+        box-sizing: border-box;
+        min-width: 0;
+        width: 100%;
       }
-      /* 실시간 타임라인 피드 아이템과 동일한 좌측 포인트 컬러 바 */
-      .kpi-card:nth-child(1) { border-left: 4px solid #64748b; }
-      .kpi-card:nth-child(2) { border-left: 4px solid #60a5fa; }
-      .kpi-card:nth-child(3) { border-left: 4px solid #f87171; background: rgba(239, 68, 68, 0.05); }
-      .kpi-card:nth-child(4) { border-left: 4px solid #34d399; }
-
       .kpi-label {
-        grid-area: label;
-        font-size: 13px;
-        font-weight: 700;
-        color: #f1f5f9;
-        margin-bottom: 2px;
+        font-size: 11.5px;
+        font-weight: 600;
+        color: var(--text-muted);
+        margin-bottom: 6px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        gap: 6px;
+        justify-content: space-between;
+        gap: 4px;
       }
-      .kpi-sub {
-        grid-area: sub;
-        font-size: 11.5px;
-        color: var(--text-muted);
-        font-weight: 500;
+      .kpi-label span:first-child {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .kpi-val {
-        grid-area: val;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 800;
-        line-height: 1;
-        margin-bottom: 0;
-        text-align: right;
-        padding-left: 14px;
+        line-height: 1.15;
+        margin-bottom: 4px;
+        text-align: left;
         letter-spacing: -0.5px;
       }
+      .kpi-sub {
+        font-size: 10px;
+        color: var(--text-muted);
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
-      /* 4. 바디 및 실시간 타임라인 패널 모바일 최적화 */
+      /* 4. 바디 및 실시간 타임라인 패널 모바일 최적화 (가로 폭 칼맞춤) */
       .dashboard-body {
-        grid-template-columns: 1fr;
-        gap: 18px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .panel {
-        padding: 16px 14px;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 14px 12px;
         border-radius: 12px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       }
@@ -781,32 +798,65 @@
         padding-bottom: 10px;
       }
       .panel-title {
-        font-size: 14.5px;
+        font-size: 14px;
       }
       .feed-container {
-        max-height: 380px;
+        max-height: 360px;
+        width: 100%;
+        box-sizing: border-box;
       }
 
-      /* 5. 마스터 테이블 및 검색/필터 바 모바일 최적화 */
+      /* 5. 메인 탭 네비게이션 모바일 최적화 */
+      .main-tab-nav {
+        display: flex;
+        gap: 6px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4px;
+        margin-bottom: 14px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .main-tab-btn {
+        flex: 1;
+        min-width: 0;
+        padding: 8px 6px;
+        font-size: 11.5px;
+        white-space: nowrap;
+        border-radius: 6px;
+        gap: 5px;
+      }
+      .main-tab-btn .tab-badge {
+        font-size: 10px;
+        padding: 1px 5px;
+      }
+
+      /* 6. 마스터 테이블 및 검색/필터 바 모바일 최적화 */
       .table-controls {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
+        gap: 8px;
         margin-bottom: 12px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .search-input {
-        max-width: 100%;
         width: 100%;
-        font-size: 14px;
-        padding: 10px 14px;
+        box-sizing: border-box;
+        min-width: 0;
+        font-size: 13px;
+        padding: 9px 12px;
       }
       .filter-group {
         display: flex;
-        gap: 6px;
+        gap: 5px;
         overflow-x: auto;
-        padding-bottom: 6px;
+        padding-bottom: 4px;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
+        width: 100%;
+        box-sizing: border-box;
       }
       .filter-group::-webkit-scrollbar {
         display: none;
@@ -814,11 +864,11 @@
       .filter-btn {
         flex-shrink: 0;
         white-space: nowrap;
-        padding: 6px 11px;
-        font-size: 11.5px;
+        padding: 6px 9px;
+        font-size: 11px;
       }
       .mobile-scroll-hint {
-        display: none; /* 모바일 카드 뷰 도입으로 스크롤 힌트 불필요 */
+        display: none;
       }
       .table-wrap {
         -webkit-overflow-scrolling: touch;
