@@ -119,6 +119,53 @@
       box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
     }
 
+    .checkbox-group {
+      text-align: left;
+      margin: 14px 0 20px;
+    }
+
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      display: none;
+    }
+
+    .custom-checkbox {
+      width: 19px;
+      height: 19px;
+      border: 2px solid #475569;
+      background: #0f172a;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .checkbox-label input[type="checkbox"]:checked + .custom-checkbox {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .checkbox-label input[type="checkbox"]:checked + .custom-checkbox::after {
+      content: "✔";
+      font-size: 11px;
+      color: white;
+      font-weight: 900;
+    }
+
+    .checkbox-text {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+
     .login-btn {
       width: 100%;
       padding: 14px;
@@ -129,7 +176,7 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      margin-top: 10px;
+      margin-top: 6px;
       transition: opacity 0.2s, transform 0.1s;
     }
 
@@ -526,6 +573,13 @@
           <label>비밀번호 (Password)</label>
           <input type="password" id="password" placeholder="비밀번호 입력" autocomplete="current-password" required>
         </div>
+        <div class="checkbox-group">
+          <label class="checkbox-label" for="rememberMe">
+            <input type="checkbox" id="rememberMe" checked>
+            <span class="custom-checkbox"></span>
+            <span class="checkbox-text">자동 로그인 (로그인 상태 유지)</span>
+          </label>
+        </div>
         <button type="submit" class="login-btn">대시보드 로그인</button>
         <div id="loginError" class="login-error">계정 또는 비밀번호가 일치하지 않습니다.</div>
       </form>
@@ -658,6 +712,7 @@
     const AUTH_HASH = "3136bc00c575d3cb17e411256f01ddce454b74d32391d7c34e5a0abe38a6e18d";
     const AUTH_USER = "admin";
     const SESSION_KEY = "sm_admin_authenticated";
+    const LOCAL_AUTH_KEY = "sm_admin_persistent_auth";
     const TRACK_TOPIC = "sm_events_2026_x89a";
     const LOCAL_EVENTS_KEY = "sm_stored_telemetry_events";
 
@@ -672,12 +727,19 @@
       e.preventDefault();
       const u = document.getElementById("username").value.trim();
       const p = document.getElementById("password").value.trim();
+      const rememberMe = document.getElementById("rememberMe").checked;
       const errBox = document.getElementById("loginError");
 
       const pHash = await sha256(p);
 
       if (u === AUTH_USER && pHash === AUTH_HASH) {
         sessionStorage.setItem(SESSION_KEY, "true");
+        if (rememberMe) {
+          // 자동 로그인을 위해 로컬스토리지에 인증 토큰 영구 보관
+          localStorage.setItem(LOCAL_AUTH_KEY, pHash);
+        } else {
+          localStorage.removeItem(LOCAL_AUTH_KEY);
+        }
         errBox.style.display = "none";
         initDashboard();
       } else {
@@ -686,12 +748,19 @@
     }
 
     function handleLogout() {
-      sessionStorage.removeItem(SESSION_KEY);
-      location.reload();
+      if (confirm("로그아웃 하시겠습니까? (자동 로그인 정보도 함께 해제됩니다)")) {
+        sessionStorage.removeItem(SESSION_KEY);
+        localStorage.removeItem(LOCAL_AUTH_KEY);
+        location.reload();
+      }
     }
 
     function checkAuth() {
-      if (sessionStorage.getItem(SESSION_KEY) === "true") {
+      const isSessionAuthed = sessionStorage.getItem(SESSION_KEY) === "true";
+      const isLocalAuthed = localStorage.getItem(LOCAL_AUTH_KEY) === AUTH_HASH;
+
+      if (isSessionAuthed || isLocalAuthed) {
+        sessionStorage.setItem(SESSION_KEY, "true");
         initDashboard();
       } else {
         document.getElementById("loginOverlay").style.display = "flex";
