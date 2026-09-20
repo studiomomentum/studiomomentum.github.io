@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스튜디오 모멘텀 | 관제탑 어드민 대시보드</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --surface-border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.15);
+      --success: #10b981;
+      --success-bg: rgba(16, 185, 129, 0.15);
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.15);
+      --purple: #8b5cf6;
+      --purple-bg: rgba(139, 92, 246, 0.15);
+      --radius: 12px;
+      --font: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* =======================================
+       1. 로그인 게이트웨이 (Login Modal / Lock)
+       ======================================= */
+    #loginOverlay {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: radial-gradient(circle at center, #1e293b 0%, #090d16 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--surface-border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .login-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary), #3b82f6);
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(37, 99, 235, 0.35);
+    }
+
+    .login-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .login-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 13px 16px;
+      background: #0f172a;
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 14.5px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .input-group input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, var(--primary), #1d4ed8);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    .login-btn:hover { opacity: 0.95; }
+    .login-btn:active { transform: scale(0.98); }
+
+    .login-error {
+      display: none;
+      margin-top: 16px;
+      padding: 10px 14px;
+      background: var(--danger-bg);
+      border: 1px solid var(--danger);
+      border-radius: 8px;
+      color: #fca5a5;
+      font-size: 13px;
+    }
+
+    /* =======================================
+       2. 어드민 대시보드 레이아웃
+       ======================================= */
+    #dashboardApp {
+      display: none;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 28px 24px 80px;
+    }
+
+    /* 상단 네비게이션 헤더 */
+    .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--surface-border);
+      margin-bottom: 28px;
+    }
+
+    .brand-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-badge {
+      padding: 4px 10px;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-badge::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: #cbd5e1;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: #334155;
+      color: white;
+    }
+
+    .btn-logout {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+    }
+    .btn-logout:hover {
+      background: var(--danger);
+      color: white;
+    }
+
+    /* KPI 요약 카드 그리드 */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius);
+      padding: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kpi-card::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; width: 80px; height: 80px;
+      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .kpi-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .kpi-val {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .highlight-hot {
+      color: #f87171 !important;
+    }
+
+    /* 2열 메인 패널 그리드: 실시간 피드 & 타깃 현황 */
+    .dashboard-body {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 1080px) {
+      .dashboard-body {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .panel-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* 실시간 활동 타임라인 */
+    .feed-container {
+      flex: 1;
+      max-height: 640px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    .feed-container::-webkit-scrollbar { width: 6px; }
+    .feed-container::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+    .feed-item {
+      padding: 14px;
+      background: #0f172a;
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      transition: transform 0.2s;
+    }
+
+    .feed-item:hover { transform: translateX(3px); }
+
+    .feed-item.hot-item {
+      border-left: 4px solid var(--danger);
+      background: rgba(239, 68, 68, 0.08);
+    }
+    .feed-item.visit-item {
+      border-left: 4px solid var(--primary);
+    }
+    .feed-item.scroll-item {
+      border-left: 4px solid var(--success);
+    }
+
+    .feed-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .feed-tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .feed-tag.hot { background: var(--danger-bg); color: #f87171; }
+    .feed-tag.visit { background: rgba(37, 99, 235, 0.15); color: #60a5fa; }
+    .feed-tag.scroll { background: var(--success-bg); color: #34d399; }
+    .feed-tag.stay { background: var(--purple-bg); color: #c084fc; }
+
+    .feed-time {
+      font-size: 11.5px;
+      color: #64748b;
+    }
+
+    .feed-target {
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .feed-detail {
+      color: #94a3b8;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    /* 타깃 추적 테이블 컨트롤 */
+    .table-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 200px;
+      max-width: 320px;
+      padding: 9px 14px;
+      background: #0f172a;
+      border: 1px solid var(--surface-border);
+      border-radius: 8px;
+      color: white;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 6px 12px;
+      background: #0f172a;
+      border: 1px solid var(--surface-border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+
+    /* 반응형 테이블 */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--surface-border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    th {
+      background: #0f172a;
+      padding: 12px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #94a3b8;
+      border-bottom: 1px solid var(--surface-border);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      color: #cbd5e1;
+      white-space: nowrap;
+    }
+
+    tr:hover td {
+      background-color: rgba(255,255,255,0.02);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .badge-visited { background: var(--primary-light); color: var(--primary-dark); font-weight: 800; }
+    .badge-hot { background: var(--danger); color: white; animation: pulse 2s infinite; }
+    .badge-not { background: rgba(255,255,255,0.06); color: #64748b; }
+    .badge-sent { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .badge-ready { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    .badge-bounced { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
+    .token-chip {
+      font-family: monospace;
+      background: #090d16;
+      border: 1px solid #334155;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. 로그인 인증 게이트웨이 -->
+  <div id="loginOverlay">
+    <div class="login-box">
+      <div class="login-icon">🔒</div>
+      <h2 class="login-title">스튜디오 모멘텀 관제탑</h2>
+      <p class="login-desc">인증된 관리자만 접근 가능한 보안 구역입니다.</p>
+
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="input-group">
+          <label>관리자 계정 (ID)</label>
+          <input type="text" id="username" placeholder="아이디 입력" autocomplete="username" required>
+        </div>
+        <div class="input-group">
+          <label>비밀번호 (Password)</label>
+          <input type="password" id="password" placeholder="비밀번호 입력" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="login-btn">대시보드 로그인</button>
+        <div id="loginError" class="login-error">계정 또는 비밀번호가 일치하지 않습니다.</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. 어드민 대시보드 본체 -->
+  <div id="dashboardApp">
+    <!-- 헤더 -->
+    <header class="top-header">
+      <div class="brand-title-wrap">
+        <h1 style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px;">STUDIO MOMENTUM Mission Control</h1>
+        <span class="brand-badge">LIVE TRACKING</span>
+      </div>
+      <div class="header-actions">
+        <span id="lastUpdated" style="font-size: 12.5px; color: var(--text-muted);">방금 갱신됨</span>
+        <button class="btn-secondary" onclick="fetchLiveTelemetry(true)">🔄 즉시 새로고침</button>
+        <button class="btn-secondary" onclick="exportDataCSV()">📥 CSV 내보내기</button>
+        <button class="btn-secondary btn-logout" onclick="handleLogout()">로그아웃</button>
+      </div>
+    </header>
+
+    <!-- KPI 요약 카드 그리드 -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>총 발송 타깃 (Sent)</span>
+          <span>✉️</span>
+        </div>
+        <div class="kpi-val" id="kpiSentCount">0</div>
+        <div class="kpi-sub" id="kpiSentSub">발송 대기: 0건</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>사이트 방문 고객 (Visited Leads)</span>
+          <span>👀</span>
+        </div>
+        <div class="kpi-val" style="color: #60a5fa;" id="kpiVisitedCount">0</div>
+        <div class="kpi-sub" id="kpiVisitedRate">방문 전환율: 0%</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>카카오톡 상담 클릭 (Hot Leads)</span>
+          <span>🔥</span>
+        </div>
+        <div class="kpi-val highlight-hot" id="kpiHotCount">0</div>
+        <div class="kpi-sub">상담 퍼널 최종 도달</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>심층 탐독 (Scroll 90%+)</span>
+          <span>📖</span>
+        </div>
+        <div class="kpi-val" style="color: #34d399;" id="kpiScrollCount">0</div>
+        <div class="kpi-sub">포트폴리오 끝까지 완독</div>
+      </div>
+    </div>
+
+    <!-- 2열 메인 바디 -->
+    <div class="dashboard-body">
+      <!-- 좌측: 실시간 피드 (Live Feed) -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>⚡ 실시간 방문 타임라인</span>
+            <span id="liveFeedCount" style="font-size: 11px; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 10px;">0</span>
+          </div>
+          <span style="font-size: 11px; color: #64748b;">15초 자동 갱신</span>
+        </div>
+        <div class="feed-container" id="feedList">
+          <!-- 피드 아이템이 동적으로 렌더링됩니다 -->
+          <div style="text-align: center; color: #64748b; padding: 40px 0;">
+            실시간 이벤트를 동기화 중입니다...
+          </div>
+        </div>
+      </div>
+
+      <!-- 우측: 마스터 타깃 추적 테이블 -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>🎯 52개 타깃 모니터링 & 방문 추적기</span>
+          </div>
+        </div>
+
+        <div class="table-controls">
+          <input type="text" id="searchInput" class="search-input" placeholder="업체명, 대표자, 이메일, 토큰 검색..." oninput="renderTable()">
+          <div class="filter-group">
+            <button class="filter-btn active" onclick="setFilter('ALL', this)">전체 (<span id="cntAll">0</span>)</button>
+            <button class="filter-btn" onclick="setFilter('VISITED', this)">방문자만 (<span id="cntVisited">0</span>)</button>
+            <button class="filter-btn" onclick="setFilter('HOT', this)">🔥 카톡클릭 (<span id="cntHot">0</span>)</button>
+            <button class="filter-btn" onclick="setFilter('UNVISITED', this)">미방문 (<span id="cntUnvisited">0</span>)</button>
+            <button class="filter-btn" onclick="setFilter('READY', this)">발송대기 (<span id="cntReady">0</span>)</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table id="targetsTable">
+            <thead>
+              <tr>
+                <th>순번</th>
+                <th>방문 여부</th>
+                <th>난수 토큰</th>
+                <th>회사/채널명</th>
+                <th>대표자</th>
+                <th>업종</th>
+                <th>지역</th>
+                <th>발송 상태</th>
+                <th>최근 방문/액션</th>
+                <th>체류시간/완독</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- 테이블 행이 동적으로 렌더링됩니다 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ===================================================
+       1. 보안 로그인 인증 (SHA-256 해시 검증)
+       계정: admin / 비밀번호: momentum2026!
+       =================================================== */
+    const AUTH_HASH = "3136bc00c575d3cb17e411256f01ddce454b74d32391d7c34e5a0abe38a6e18d";
+    const AUTH_USER = "admin";
+    const SESSION_KEY = "sm_admin_authenticated";
+    const TRACK_TOPIC = "sm_events_2026_x89a";
+    const LOCAL_EVENTS_KEY = "sm_stored_telemetry_events";
+
+    async function sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function handleLogin(e) {
+      e.preventDefault();
+      const u = document.getElementById("username").value.trim();
+      const p = document.getElementById("password").value.trim();
+      const errBox = document.getElementById("loginError");
+
+      const pHash = await sha256(p);
+
+      if (u === AUTH_USER && pHash === AUTH_HASH) {
+        sessionStorage.setItem(SESSION_KEY, "true");
+        errBox.style.display = "none";
+        initDashboard();
+      } else {
+        errBox.style.display = "block";
+      }
+    }
+
+    function handleLogout() {
+      sessionStorage.removeItem(SESSION_KEY);
+      location.reload();
+    }
+
+    function checkAuth() {
+      if (sessionStorage.getItem(SESSION_KEY) === "true") {
+        initDashboard();
+      } else {
+        document.getElementById("loginOverlay").style.display = "flex";
+        document.getElementById("dashboardApp").style.display = "none";
+      }
+    }
+
+    /* ===================================================
+       2. 대시보드 상태 및 데이터 관리
+       =================================================== */
+    let targetsMap = {};      // token -> target object
+    let liveEvents = [];      // Array of event objects
+    let currentFilter = "ALL";
+
+    async function initDashboard() {
+      document.getElementById("loginOverlay").style.display = "none";
+      document.getElementById("dashboardApp").style.display = "block";
+
+      // 1. targets.json 로드
+      await loadTargets();
+
+      // 2. 로컬스토리지에 누적 저장된 이전 이벤트 로드
+      loadStoredEvents();
+
+      // 3. ntfy.sh 원격 텔레메트리 동기화
+      await fetchLiveTelemetry();
+
+      // 4. 15초 주기 자동 새로고침 폴링 등록
+      setInterval(() => {
+        fetchLiveTelemetry(false);
+      }, 15000);
+    }
+
+    async function loadTargets() {
+      try {
+        const res = await fetch("targets.json?v=" + Date.now());
+        if (res.ok) {
+          targetsMap = await res.json();
+        }
+      } catch (e) {
+        console.warn("targets.json 로드 실패:", e);
+      }
+    }
+
+    function loadStoredEvents() {
+      try {
+        const raw = localStorage.getItem(LOCAL_EVENTS_KEY);
+        if (raw) {
+          liveEvents = JSON.parse(raw);
+        }
+      } catch (e) {}
+    }
+
+    function saveStoredEvents() {
+      try {
+        localStorage.setItem(LOCAL_EVENTS_KEY, JSON.stringify(liveEvents.slice(0, 1000)));
+      } catch (e) {}
+    }
+
+    async function fetchLiveTelemetry(manual = false) {
+      try {
+        // ntfy.sh REST API (최근 12시간 버퍼링된 JSON 이벤트 풀링)
+        const res = await fetch(`https://ntfy.sh/${TRACK_TOPIC}/json?poll=1&since=all`);
+        if (res.ok) {
+          const text = await res.text();
+          const lines = text.trim().split("\n");
+          let newEventsCount = 0;
+
+          lines.forEach(line => {
+            if (!line) return;
+            try {
+              const msgObj = JSON.parse(line);
+              if (msgObj.event === "message" && msgObj.message) {
+                let parsedPayload = null;
+                try {
+                  parsedPayload = JSON.parse(msgObj.message);
+                } catch(e) {
+                  // If message is plain text, keep raw
+                  parsedPayload = { event: 'raw', message: msgObj.message };
+                }
+
+                if (parsedPayload) {
+                  // 중복 이벤트 검사 (id 또는 time/token/event 조합)
+                  const eventId = msgObj.id || `${parsedPayload.time}_${parsedPayload.ref}_${parsedPayload.event}`;
+                  if (!liveEvents.some(ev => ev._id === eventId)) {
+                    parsedPayload._id = eventId;
+                    parsedPayload._received = msgObj.time * 1000;
+                    liveEvents.unshift(parsedPayload);
+                    newEventsCount++;
+                  }
+                }
+              }
+            } catch (err) {}
+          });
+
+          if (newEventsCount > 0) {
+            saveStoredEvents();
+          }
+        }
+      } catch (e) {
+        console.warn("텔레메트리 동기화 통신 오류:", e);
+      }
+
+      document.getElementById("lastUpdated").textContent = new Date().toLocaleTimeString("ko-KR") + " 동기화됨";
+      updateKPIs();
+      renderFeed();
+      renderTable();
+    }
+
+    /* ===================================================
+       3. KPI 계산 및 UI 렌더링
+       =================================================== */
+    function updateKPIs() {
+      const targetsList = Object.values(targetsMap);
+      const totalSent = targetsList.filter(t => t.status === "SENT").length;
+      const totalReady = targetsList.filter(t => t.status === "READY").length;
+
+      // 방문한 고유 타깃 토큰 세트
+      const visitedTokens = new Set();
+      const hotTokens = new Set();
+      const scroll90Tokens = new Set();
+
+      liveEvents.forEach(ev => {
+        if (ev.ref && ev.ref !== 'direct') {
+          visitedTokens.add(ev.ref);
+          if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
+          if (ev.event === 'scroll_90') scroll90Tokens.add(ev.ref);
+        }
+      });
+
+      document.getElementById("kpiSentCount").textContent = totalSent;
+      document.getElementById("kpiSentSub").textContent = `발송 대기: ${totalReady}건`;
+
+      document.getElementById("kpiVisitedCount").textContent = visitedTokens.size;
+      const rate = totalSent > 0 ? ((visitedTokens.size / totalSent) * 100).toFixed(1) : 0;
+      document.getElementById("kpiVisitedRate").textContent = `방문 전환율: ${rate}% (${visitedTokens.size}/${totalSent})`;
+
+      document.getElementById("kpiHotCount").textContent = hotTokens.size;
+      document.getElementById("kpiScrollCount").textContent = scroll90Tokens.size;
+
+      // 필터 카운트
+      document.getElementById("cntAll").textContent = targetsList.length;
+      document.getElementById("cntVisited").textContent = visitedTokens.size;
+      document.getElementById("cntHot").textContent = hotTokens.size;
+      document.getElementById("cntUnvisited").textContent = targetsList.filter(t => t.status === "SENT" && !visitedTokens.has(t.token)).length;
+      document.getElementById("cntReady").textContent = totalReady;
+    }
+
+    function renderFeed() {
+      const feedBox = document.getElementById("feedList");
+      document.getElementById("liveFeedCount").textContent = liveEvents.length;
+
+      if (liveEvents.length === 0) {
+        feedBox.innerHTML = '<div style="text-align: center; color: #64748b; padding: 40px 0;">아직 수집된 방문 이벤트가 없습니다.</div>';
+        return;
+      }
+
+      feedBox.innerHTML = liveEvents.slice(0, 50).map(ev => {
+        const target = targetsMap[ev.ref];
+        const name = target ? `${target.company} (${target.rep})` : (ev.ref === 'direct' ? '웹사이트 직접 유입' : `식별 중 [${ev.ref}]`);
+        const timeStr = formatRelativeTime(ev._received || ev.timestamp || Date.now());
+
+        let badgeClass = "visit";
+        let itemClass = "visit-item";
+        let tagText = "방문";
+        let desc = `${ev.device || 'Desktop'} · ${ev.screen || ''}`;
+
+        if (ev.event === "kakao_click") {
+          badgeClass = "hot";
+          itemClass = "hot-item";
+          tagText = "🔥 카톡 상담 클릭";
+          desc = `상담 버튼: "${ev.meta && ev.meta.btnText ? ev.meta.btnText : '1:1 빠른 문의하기'}" (체류 ${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''})`;
+        } else if (ev.event === "scroll_90") {
+          badgeClass = "scroll";
+          itemClass = "scroll-item";
+          tagText = "📖 90% 완독";
+          desc = `페이지 끝까지 탐독 완료 (${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''})`;
+        } else if (ev.event === "scroll_50") {
+          badgeClass = "scroll";
+          tagText = "50% 탐색";
+          desc = `핵심 포트폴리오 및 수치 확인 (${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''})`;
+        } else if (ev.event && ev.event.startsWith("duration_")) {
+          badgeClass = "stay";
+          tagText = "⏱ 체류";
+          desc = `${ev.meta && ev.meta.duration ? ev.meta.duration + '초간 몰입' : ''}`;
+        } else if (ev.event === "leave") {
+          badgeClass = "stay";
+          tagText = "이탈";
+          desc = `총 체류 시간: ${ev.meta && ev.meta.totalDuration ? ev.meta.totalDuration + '초' : ''}`;
+        }
+
+        return `
+          <div class="feed-item ${itemClass}">
+            <div class="feed-top">
+              <span class="feed-tag ${badgeClass}">${tagText}</span>
+              <span class="feed-time">${timeStr}</span>
+            </div>
+            <div class="feed-target">${name}</div>
+            <div class="feed-detail">${desc}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderTable() {
+      const tbody = document.getElementById("tableBody");
+      const searchVal = document.getElementById("searchInput").value.trim().toLowerCase();
+
+      // 토큰별 방문 데이터 종합
+      const targetStats = {};
+      liveEvents.forEach(ev => {
+        if (!ev.ref || ev.ref === 'direct') return;
+        if (!targetStats[ev.ref]) {
+          targetStats[ev.ref] = {
+            visited: true,
+            hot: false,
+            lastSeen: ev._received || ev.timestamp,
+            events: [],
+            maxScroll: 0,
+            maxStaySec: 0
+          };
+        }
+        const s = targetStats[ev.ref];
+        if (ev.event === 'kakao_click') s.hot = true;
+        if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
+        if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
+        if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
+        if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
+      });
+
+      const list = Object.values(targetsMap);
+
+      // 필터링 적용
+      const filtered = list.filter(t => {
+        const stats = targetStats[t.token];
+        const isVisited = !!stats;
+        const isHot = stats && stats.hot;
+
+        if (currentFilter === "VISITED" && !isVisited) return false;
+        if (currentFilter === "HOT" && !isHot) return false;
+        if (currentFilter === "UNVISITED" && (isVisited || t.status !== "SENT")) return false;
+        if (currentFilter === "READY" && t.status !== "READY") return false;
+
+        if (searchVal) {
+          const matchStr = `${t.no} ${t.company} ${t.rep} ${t.email} ${t.token} ${t.region}`.toLowerCase();
+          if (!matchStr.includes(searchVal)) return false;
+        }
+        return true;
+      });
+
+      tbody.innerHTML = filtered.map(t => {
+        const stats = targetStats[t.token];
+        let visitBadge = '<span class="badge badge-not">미방문</span>';
+        let lastAction = '-';
+        let behavior = '-';
+
+        if (stats) {
+          if (stats.hot) {
+            visitBadge = '<span class="badge badge-hot">🔥 카톡상담클릭</span>';
+          } else {
+            visitBadge = '<span class="badge badge-visited">방문 확인</span>';
+          }
+          lastAction = formatRelativeTime(stats.lastSeen);
+          behavior = `완독 ${stats.maxScroll}% / 체류 ${stats.maxStaySec}초`;
+        }
+
+        let statusBadge = '<span class="badge badge-ready">READY</span>';
+        if (t.status === "SENT") statusBadge = '<span class="badge badge-sent">SENT</span>';
+        else if (t.status === "BOUNCED") statusBadge = '<span class="badge badge-bounced">BOUNCED</span>';
+
+        return `
+          <tr>
+            <td><strong>#${t.no}</strong></td>
+            <td>${visitBadge}</td>
+            <td><span class="token-chip">${t.token}</span></td>
+            <td><strong>${t.company}</strong></td>
+            <td>${t.rep}</td>
+            <td>${t.category}</td>
+            <td>${t.region}</td>
+            <td>${statusBadge}</td>
+            <td>${lastAction}</td>
+            <td>${behavior}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function setFilter(filter, el) {
+      currentFilter = filter;
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      el.classList.add("active");
+      renderTable();
+    }
+
+    function formatRelativeTime(ts) {
+      if (!ts) return '-';
+      const diff = Math.floor((Date.now() - ts) / 1000);
+      if (diff < 60) return "방금 전";
+      if (diff < 3600) return `${Math.floor(diff / 60)}분 전`;
+      if (diff < 86400) return `${Math.floor(diff / 3600)}시간 전`;
+      return `${Math.floor(diff / 86400)}일 전`;
+    }
+
+    function exportDataCSV() {
+      const list = Object.values(targetsMap);
+      let csvContent = "\uFEFF순번,토큰,회사채널명,대표자,이메일,지역,카테고리,발송상태,발송일시\n";
+      list.forEach(t => {
+        csvContent += `"${t.no}","${t.token}","${t.company}","${t.rep}","${t.email}","${t.region}","${t.category}","${t.status}","${t.sent_at}"\n`;
+      });
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `스튜디오모멘텀_타깃_방문추적_${new Date().toISOString().slice(0,10)}.csv`;
+      link.click();
+    }
+
+    // 페이지 진입 시 인증 상태 확인
+    checkAuth();
+  </script>
+</body>
+</html>

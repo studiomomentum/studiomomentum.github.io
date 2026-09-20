@@ -1414,5 +1414,103 @@
   })();
 </script>
 
+<!-- 스튜디오 모멘텀 스텔스 비즈니스 트래커 (Stealth Visitor Analytics) -->
+<script>
+(function() {
+  const TRACK_TOPIC = "sm_events_2026_x89a";
+  const urlParams = new URLSearchParams(window.location.search);
+  let refToken = urlParams.get('ref') || urlParams.get('v_ref');
+  
+  if (refToken) {
+    sessionStorage.setItem('sm_lead_ref', refToken);
+  } else {
+    refToken = sessionStorage.getItem('sm_lead_ref') || 'direct';
+  }
+
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const deviceType = isMobile ? 'Mobile' : 'Desktop';
+  const screenRes = `${window.screen.width}x${window.screen.height}`;
+  const referrer = document.referrer || 'Direct/Email';
+  const startTime = Date.now();
+
+  function sendEvent(eventType, meta) {
+    const payload = {
+      event: eventType,
+      ref: refToken,
+      device: deviceType,
+      screen: screenRes,
+      ref_url: referrer,
+      path: window.location.pathname,
+      time: new Date().toISOString(),
+      timestamp: Date.now(),
+      meta: meta || {}
+    };
+
+    try {
+      const bodyStr = JSON.stringify(payload);
+      if (navigator.sendBeacon) {
+        const blob = new Blob([bodyStr], { type: 'application/json' });
+        navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, blob);
+      } else {
+        fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
+          method: 'POST',
+          body: bodyStr,
+          headers: { 'Content-Type': 'application/json', 'Title': `[SM] ${eventType}: ${refToken}` },
+          keepalive: true
+        }).catch(function() {});
+      }
+    } catch(e) {}
+  }
+
+  // 1. 최초 방문 이벤트
+  sendEvent('visit', { ua: navigator.userAgent.slice(0, 120) });
+
+  // 2. 스크롤 깊이 추적 (50%, 90%)
+  let firedScroll50 = false;
+  let firedScroll90 = false;
+  window.addEventListener('scroll', function() {
+    const scrollPos = window.scrollY + window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+    const scrollPct = (scrollPos / docHeight) * 100;
+
+    if (!firedScroll50 && scrollPct >= 50) {
+      firedScroll50 = true;
+      sendEvent('scroll_50', { pct: 50, elapsed: Math.round((Date.now() - startTime) / 1000) });
+    }
+    if (!firedScroll90 && scrollPct >= 85) {
+      firedScroll90 = true;
+      sendEvent('scroll_90', { pct: 90, elapsed: Math.round((Date.now() - startTime) / 1000) });
+    }
+  }, { passive: true });
+
+  // 3. 체류 시간 마일스톤 추적 (15초, 45초, 90초)
+  [15, 45, 90].forEach(function(sec) {
+    setTimeout(function() {
+      sendEvent('duration_' + sec + 's', { duration: sec });
+    }, sec * 1000);
+  });
+
+  // 4. 핵심 전환: 카카오톡 오픈채팅 클릭 감지 (HOT LEAD!)
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && (link.href.includes('open.kakao.com') || link.href.includes('kakao'))) {
+      sendEvent('kakao_click', {
+        href: link.href,
+        btnText: (link.innerText || '').trim().slice(0, 50),
+        elapsed: Math.round((Date.now() - startTime) / 1000)
+      });
+    }
+  }, { capture: true });
+
+  // 5. 페이지 이탈 시 최종 체류 시간 전송
+  window.addEventListener('pagehide', function() {
+    const totalDuration = Math.round((Date.now() - startTime) / 1000);
+    if (totalDuration >= 3) {
+      sendEvent('leave', { totalDuration: totalDuration });
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
