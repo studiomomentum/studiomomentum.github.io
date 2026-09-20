@@ -554,6 +554,68 @@
       color: #38bdf8;
     }
 
+    /* =======================================
+       메인 뷰 탭 세그먼트 (발송완료 vs 발송대기)
+       ======================================= */
+    .main-tab-nav {
+      display: flex;
+      gap: 8px;
+      background: #090d16;
+      padding: 6px;
+      border-radius: 12px;
+      border: 1px solid var(--surface-border);
+      margin-bottom: 18px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .main-tab-nav::-webkit-scrollbar { display: none; }
+
+    .main-tab-btn {
+      flex: 1;
+      min-width: 140px;
+      padding: 11px 16px;
+      background: transparent;
+      border: none;
+      border-radius: 8px;
+      color: #94a3b8;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .main-tab-btn.active {
+      background: var(--surface);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .main-tab-btn:hover:not(.active) {
+      background: rgba(255, 255, 255, 0.03);
+      color: #cbd5e1;
+    }
+
+    .tab-badge {
+      font-size: 10.5px;
+      padding: 2px 7px;
+      border-radius: 12px;
+      background: rgba(37, 99, 235, 0.2);
+      color: #60a5fa;
+      font-weight: 800;
+    }
+
+    .queue-badge {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+    }
+
     /* 모바일 가이드 힌트 */
     .mobile-scroll-hint {
       display: none;
@@ -576,6 +638,12 @@
       }
       #dashboardApp {
         padding: 16px 12px 60px;
+      }
+
+      .main-tab-btn {
+        padding: 9px 12px;
+        font-size: 12px;
+        min-width: 115px;
       }
 
       /* 1. 로그인 모달 모바일 최적화 */
@@ -831,40 +899,41 @@
       <div class="panel">
         <div class="panel-header">
           <div class="panel-title">
-            <span>🎯 52개 타깃 모니터링 & 방문 추적기</span>
+            <span>🎯 타깃 현황 & 실시간 방문 관제</span>
           </div>
+        </div>
+
+        <!-- 메인 탭 네비게이션: 발송 완료 vs 발송 대기 분리 -->
+        <div class="main-tab-nav">
+          <button class="main-tab-btn active" id="tabBtnSent" onclick="setMainTab('SENT', this)">
+            <span>📨 발송 완료 목록</span>
+            <span class="tab-badge" id="tabSentCount">0</span>
+          </button>
+          <button class="main-tab-btn" id="tabBtnReady" onclick="setMainTab('READY', this)">
+            <span>⏳ 발송 대기 목록</span>
+            <span class="tab-badge queue-badge" id="tabReadyCount">0</span>
+          </button>
+          <button class="main-tab-btn" id="tabBtnAll" onclick="setMainTab('ALL', this)">
+            <span>📋 전체 타깃 DB</span>
+            <span class="tab-badge" style="background: rgba(255,255,255,0.1); color: #94a3b8;" id="tabAllCount">0</span>
+          </button>
         </div>
 
         <div class="table-controls">
           <input type="text" id="searchInput" class="search-input" placeholder="업체명, 대표자, 이메일, 토큰 검색..." oninput="renderTable()">
-          <div class="filter-group">
-            <button class="filter-btn active" onclick="setFilter('ALL', this)">전체 (<span id="cntAll">0</span>)</button>
-            <button class="filter-btn" onclick="setFilter('VISITED', this)">방문자만 (<span id="cntVisited">0</span>)</button>
-            <button class="filter-btn" onclick="setFilter('HOT', this)">🔥 카톡클릭 (<span id="cntHot">0</span>)</button>
-            <button class="filter-btn" onclick="setFilter('UNVISITED', this)">미방문 (<span id="cntUnvisited">0</span>)</button>
-            <button class="filter-btn" onclick="setFilter('READY', this)">발송대기 (<span id="cntReady">0</span>)</button>
+          <div class="filter-group" id="dynamicFilterGroup">
+            <!-- 메인 탭에 따라 서브 필터가 동적으로 렌더링됩니다 -->
           </div>
         </div>
 
         <div class="mobile-scroll-hint">
-          👉 표를 좌우로 스크롤하여 상세 정보(방문 상태/체류시간/완독률)를 확인하세요
+          👉 표를 좌우로 스크롤하여 상세 정보(발송일시/방문상태/체류시간)를 확인하세요
         </div>
 
         <div class="table-wrap">
           <table id="targetsTable">
-            <thead>
-              <tr>
-                <th>순번</th>
-                <th>방문 여부</th>
-                <th>난수 토큰</th>
-                <th>회사/채널명</th>
-                <th>대표자</th>
-                <th>업종</th>
-                <th>지역</th>
-                <th>발송 상태</th>
-                <th>최근 방문/액션</th>
-                <th>체류시간/완독</th>
-              </tr>
+            <thead id="tableHead">
+              <!-- 메인 탭에 따라 헤더 컬럼이 동적으로 바뀝니다 -->
             </thead>
             <tbody id="tableBody">
               <!-- 테이블 행이 동적으로 렌더링됩니다 -->
@@ -944,6 +1013,7 @@
        =================================================== */
     let targetsMap = {};      // token -> target object
     let liveEvents = [];      // Array of event objects
+    let mainTab = "SENT";     // 기본 탭: "SENT" (발송 완료 목록 - 최신순 정렬)
     let currentFilter = "ALL";
 
     async function initDashboard() {
@@ -1009,12 +1079,10 @@
                 try {
                   parsedPayload = JSON.parse(msgObj.message);
                 } catch(e) {
-                  // If message is plain text, keep raw
                   parsedPayload = { event: 'raw', message: msgObj.message };
                 }
 
                 if (parsedPayload) {
-                  // 중복 이벤트 검사 (id 또는 time/token/event 조합)
                   const eventId = msgObj.id || `${parsedPayload.time}_${parsedPayload.ref}_${parsedPayload.event}`;
                   if (!liveEvents.some(ev => ev._id === eventId)) {
                     parsedPayload._id = eventId;
@@ -1042,12 +1110,42 @@
     }
 
     /* ===================================================
-       3. KPI 계산 및 UI 렌더링
+       3. 메인 탭 전환 & KPI 계산 & 필터 바 동기화
        =================================================== */
+    function setMainTab(tab, el) {
+      mainTab = tab;
+      currentFilter = "ALL";
+      document.querySelectorAll(".main-tab-btn").forEach(b => b.classList.remove("active"));
+      if (el) {
+        el.classList.add("active");
+      } else {
+        if (tab === "SENT") document.getElementById("tabBtnSent")?.classList.add("active");
+        else if (tab === "READY") document.getElementById("tabBtnReady")?.classList.add("active");
+        else if (tab === "ALL") document.getElementById("tabBtnAll")?.classList.add("active");
+      }
+      updateFilterBar();
+      renderTable();
+    }
+
+    function setFilter(filter, el) {
+      currentFilter = filter;
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      if (el) el.classList.add("active");
+      renderTable();
+    }
+
     function updateKPIs() {
       const targetsList = Object.values(targetsMap);
-      const totalSent = targetsList.filter(t => t.status === "SENT").length;
+      const totalSent = targetsList.filter(t => t.status === "SENT" || t.status === "BOUNCED").length;
       const totalReady = targetsList.filter(t => t.status === "READY").length;
+
+      // 탭 뱃지 카운트 갱신
+      const elSent = document.getElementById("tabSentCount");
+      const elReady = document.getElementById("tabReadyCount");
+      const elAll = document.getElementById("tabAllCount");
+      if (elSent) elSent.textContent = totalSent;
+      if (elReady) elReady.textContent = totalReady;
+      if (elAll) elAll.textContent = targetsList.length;
 
       // 방문한 고유 타깃 토큰 세트
       const visitedTokens = new Set();
@@ -1072,12 +1170,65 @@
       document.getElementById("kpiHotCount").textContent = hotTokens.size;
       document.getElementById("kpiScrollCount").textContent = scroll90Tokens.size;
 
-      // 필터 카운트
-      document.getElementById("cntAll").textContent = targetsList.length;
-      document.getElementById("cntVisited").textContent = visitedTokens.size;
-      document.getElementById("cntHot").textContent = hotTokens.size;
-      document.getElementById("cntUnvisited").textContent = targetsList.filter(t => t.status === "SENT" && !visitedTokens.has(t.token)).length;
-      document.getElementById("cntReady").textContent = totalReady;
+      updateFilterBar();
+    }
+
+    function updateFilterBar() {
+      const filterBox = document.getElementById("dynamicFilterGroup");
+      if (!filterBox) return;
+
+      const targetsList = Object.values(targetsMap);
+      const visitedTokens = new Set();
+      const hotTokens = new Set();
+      liveEvents.forEach(ev => {
+        if (ev.ref && ev.ref !== 'direct') {
+          visitedTokens.add(ev.ref);
+          if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
+        }
+      });
+
+      if (mainTab === "SENT") {
+        const sentTargets = targetsList.filter(t => t.status === "SENT" || t.status === "BOUNCED");
+        const cntAll = sentTargets.length;
+        const cntHot = sentTargets.filter(t => hotTokens.has(t.token)).length;
+        const cntVisited = sentTargets.filter(t => visitedTokens.has(t.token)).length;
+        const cntUnvisited = sentTargets.filter(t => !visitedTokens.has(t.token)).length;
+
+        filterBox.innerHTML = `
+          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 발송완료 (${cntAll})</button>
+          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
+          <button class="filter-btn ${currentFilter==='VISITED'?'active':''}" onclick="setFilter('VISITED', this)">방문 확인 (${cntVisited})</button>
+          <button class="filter-btn ${currentFilter==='UNVISITED'?'active':''}" onclick="setFilter('UNVISITED', this)">미방문 (${cntUnvisited})</button>
+        `;
+      } else if (mainTab === "READY") {
+        const readyTargets = targetsList.filter(t => t.status === "READY");
+        const cntAll = readyTargets.length;
+        const isPriority = t => (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+        const isZoneB = t => ["서울", "강남", "서초", "송파", "판교", "분당"].some(k => (t.region || "").includes(k));
+
+        const cntPriority = readyTargets.filter(isPriority).length;
+        const cntZoneB = readyTargets.filter(isZoneB).length;
+        const cntZoneA = cntAll - cntZoneB;
+
+        filterBox.innerHTML = `
+          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 대기열 (${cntAll})</button>
+          <button class="filter-btn ${currentFilter==='PRIORITY'?'active':''}" onclick="setFilter('PRIORITY', this)">🚨 구인/채용 우선 (${cntPriority})</button>
+          <button class="filter-btn ${currentFilter==='ZONE_A'?'active':''}" onclick="setFilter('ZONE_A', this)">Zone A (오산 20km) (${cntZoneA})</button>
+          <button class="filter-btn ${currentFilter==='ZONE_B'?'active':''}" onclick="setFilter('ZONE_B', this)">Zone B (서울/판교) (${cntZoneB})</button>
+        `;
+      } else {
+        const cntTotal = targetsList.length;
+        const cntSent = targetsList.filter(t => t.status === "SENT").length;
+        const cntReady = targetsList.filter(t => t.status === "READY").length;
+        const cntHot = targetsList.filter(t => hotTokens.has(t.token)).length;
+
+        filterBox.innerHTML = `
+          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 타깃 (${cntTotal})</button>
+          <button class="filter-btn ${currentFilter==='SENT'?'active':''}" onclick="setFilter('SENT', this)">발송완료 (${cntSent})</button>
+          <button class="filter-btn ${currentFilter==='READY'?'active':''}" onclick="setFilter('READY', this)">발송대기 (${cntReady})</button>
+          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡클릭 (${cntHot})</button>
+        `;
+      }
     }
 
     function renderFeed() {
@@ -1136,11 +1287,15 @@
       }).join("");
     }
 
+    /* ===================================================
+       4. 마스터 테이블 렌더링 (최신 발송순 정렬 & 대기열 분리)
+       =================================================== */
     function renderTable() {
+      const thead = document.getElementById("tableHead");
       const tbody = document.getElementById("tableBody");
       const searchVal = document.getElementById("searchInput").value.trim().toLowerCase();
 
-      // 토큰별 방문 데이터 종합
+      // 1. 토큰별 방문 데이터 종합
       const targetStats = {};
       liveEvents.forEach(ev => {
         if (!ev.ref || ev.ref === 'direct') return;
@@ -1164,23 +1319,123 @@
 
       const list = Object.values(targetsMap);
 
-      // 필터링 적용
+      // 2. 메인 탭에 따른 헤더 컬럼 렌더링
+      if (mainTab === "SENT") {
+        thead.innerHTML = `
+          <tr>
+            <th>순번</th>
+            <th style="color: #60a5fa; font-weight: 800;">발송일시 (최신순 ⬇️)</th>
+            <th>방문 상태</th>
+            <th>회사/채널명</th>
+            <th>대표자</th>
+            <th>업종</th>
+            <th>지역</th>
+            <th>최근 활동</th>
+            <th>체류/완독</th>
+            <th>난수 토큰</th>
+          </tr>
+        `;
+      } else if (mainTab === "READY") {
+        thead.innerHTML = `
+          <tr>
+            <th>대기 순번</th>
+            <th style="color: #fbbf24; font-weight: 800;">상태</th>
+            <th>우선순위 / 특징</th>
+            <th>회사/채널명</th>
+            <th>대표자</th>
+            <th>업종</th>
+            <th>지역</th>
+            <th>현재조회수 / 공고내용</th>
+            <th>수신 이메일</th>
+            <th>난수 토큰</th>
+          </tr>
+        `;
+      } else {
+        thead.innerHTML = `
+          <tr>
+            <th>순번</th>
+            <th>상태</th>
+            <th>발송일시</th>
+            <th>방문 여부</th>
+            <th>회사/채널명</th>
+            <th>대표자</th>
+            <th>업종</th>
+            <th>지역</th>
+            <th>최근 활동</th>
+            <th>난수 토큰</th>
+          </tr>
+        `;
+      }
+
+      // 3. 메인 탭 및 서브 필터링 적용
       const filtered = list.filter(t => {
         const stats = targetStats[t.token];
         const isVisited = !!stats;
         const isHot = stats && stats.hot;
 
-        if (currentFilter === "VISITED" && !isVisited) return false;
-        if (currentFilter === "HOT" && !isHot) return false;
-        if (currentFilter === "UNVISITED" && (isVisited || t.status !== "SENT")) return false;
-        if (currentFilter === "READY" && t.status !== "READY") return false;
+        if (mainTab === "SENT") {
+          // 발송 완료(또는 반송확인) 타깃만
+          if (t.status !== "SENT" && t.status !== "BOUNCED") return false;
+          if (currentFilter === "HOT" && !isHot) return false;
+          if (currentFilter === "VISITED" && !isVisited) return false;
+          if (currentFilter === "UNVISITED" && isVisited) return false;
+        } else if (mainTab === "READY") {
+          // 발송 대기 타깃만
+          if (t.status !== "READY") return false;
+          const isPrio = (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+          const isZoneB = ["서울", "강남", "서초", "송파", "판교", "분당"].some(k => (t.region || "").includes(k));
 
+          if (currentFilter === "PRIORITY" && !isPrio) return false;
+          if (currentFilter === "ZONE_A" && isZoneB) return false;
+          if (currentFilter === "ZONE_B" && !isZoneB) return false;
+        } else {
+          // 전체 통합 탭
+          if (currentFilter === "SENT" && (t.status !== "SENT" && t.status !== "BOUNCED")) return false;
+          if (currentFilter === "READY" && t.status !== "READY") return false;
+          if (currentFilter === "HOT" && !isHot) return false;
+        }
+
+        // 검색어 필터
         if (searchVal) {
-          const matchStr = `${t.no} ${t.company} ${t.rep} ${t.email} ${t.token} ${t.region}`.toLowerCase();
+          const matchStr = `${t.no} ${t.company} ${t.rep} ${t.email} ${t.token} ${t.region} ${t.views||''}`.toLowerCase();
           if (!matchStr.includes(searchVal)) return false;
         }
         return true;
       });
+
+      // 4. [핵심 정렬 로직]
+      if (mainTab === "SENT") {
+        // [이메일 최신 발송순 정렬 (내림차순, 최신이 맨 위로!)]
+        filtered.sort((a, b) => {
+          const parseTime = (str) => {
+            if (!str) return 0;
+            const clean = str.replace(" (반송확인)", "").replace(" (발송실패)", "").trim();
+            const d = new Date(clean.replace(/-/g, "/"));
+            return isNaN(d.getTime()) ? 0 : d.getTime();
+          };
+          const tA = parseTime(a.sent_at);
+          const tB = parseTime(b.sent_at);
+          if (tA !== tB) return tB - tA; // 최신순 정렬!
+          return parseInt(b.no || 0) - parseInt(a.no || 0);
+        });
+      } else if (mainTab === "READY") {
+        // [발송 대기 대기열 순서: 구인공고 우선 타깃 먼저 + 순번 순]
+        filtered.sort((a, b) => {
+          const isPrioA = (a.views && (a.views.includes("구인") || a.views.includes("채용") || a.views.includes("공고"))) || false;
+          const isPrioB = (b.views && (b.views.includes("구인") || b.views.includes("채용") || b.views.includes("공고"))) || false;
+          if (isPrioA && !isPrioB) return -1;
+          if (!isPrioA && isPrioB) return 1;
+          return parseInt(a.no || 0) - parseInt(b.no || 0);
+        });
+      } else {
+        filtered.sort((a, b) => parseInt(a.no || 0) - parseInt(b.no || 0));
+      }
+
+      // 5. 테이블 바디(행) 렌더링
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:36px; color:#64748b;">조건에 일치하는 타깃이 없습니다.</td></tr>`;
+        return;
+      }
 
       tbody.innerHTML = filtered.map(t => {
         const stats = targetStats[t.token];
@@ -1202,28 +1457,55 @@
         if (t.status === "SENT") statusBadge = '<span class="badge badge-sent">SENT</span>';
         else if (t.status === "BOUNCED") statusBadge = '<span class="badge badge-bounced">BOUNCED</span>';
 
-        return `
-          <tr>
-            <td><strong>#${t.no}</strong></td>
-            <td>${visitBadge}</td>
-            <td><span class="token-chip">${t.token}</span></td>
-            <td><strong>${t.company}</strong></td>
-            <td>${t.rep}</td>
-            <td>${t.category}</td>
-            <td>${t.region}</td>
-            <td>${statusBadge}</td>
-            <td>${lastAction}</td>
-            <td>${behavior}</td>
-          </tr>
-        `;
+        if (mainTab === "SENT") {
+          return `
+            <tr>
+              <td><strong>#${t.no}</strong></td>
+              <td style="color: #cbd5e1; font-weight: 600;">${t.sent_at || '-'}</td>
+              <td>${visitBadge}</td>
+              <td><strong>${t.company}</strong></td>
+              <td>${t.rep}</td>
+              <td>${t.category}</td>
+              <td>${t.region}</td>
+              <td>${lastAction}</td>
+              <td>${behavior}</td>
+              <td><span class="token-chip">${t.token}</span></td>
+            </tr>
+          `;
+        } else if (mainTab === "READY") {
+          const isPrio = (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+          const prioTag = isPrio ? '<span style="color:#f87171; font-weight:800;">🚨 구인공고 우선</span>' : '<span style="color:#94a3b8;">일반 대본 제안</span>';
+          return `
+            <tr>
+              <td><strong>#${t.no}</strong></td>
+              <td>${statusBadge}</td>
+              <td>${prioTag}</td>
+              <td><strong>${t.company}</strong></td>
+              <td>${t.rep}</td>
+              <td>${t.category}</td>
+              <td>${t.region}</td>
+              <td style="max-width: 220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${t.views||''}">${t.views || '-'}</td>
+              <td style="color:#38bdf8;">${t.email}</td>
+              <td><span class="token-chip">${t.token}</span></td>
+            </tr>
+          `;
+        } else {
+          return `
+            <tr>
+              <td><strong>#${t.no}</strong></td>
+              <td>${statusBadge}</td>
+              <td>${t.sent_at || '-'}</td>
+              <td>${visitBadge}</td>
+              <td><strong>${t.company}</strong></td>
+              <td>${t.rep}</td>
+              <td>${t.category}</td>
+              <td>${t.region}</td>
+              <td>${lastAction}</td>
+              <td><span class="token-chip">${t.token}</span></td>
+            </tr>
+          `;
+        }
       }).join("");
-    }
-
-    function setFilter(filter, el) {
-      currentFilter = filter;
-      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-      el.classList.add("active");
-      renderTable();
     }
 
     function formatRelativeTime(ts) {
