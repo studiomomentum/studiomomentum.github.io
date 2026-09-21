@@ -1157,7 +1157,7 @@
       white-space: nowrap;
     }
 
-    /* 실시간 알림 관제 모달 & 스크롤바 */
+    /* 실시간 알림 관제 모달 & 스크롤바 & 도톰한 탭 UI */
     #notifListContainer::-webkit-scrollbar {
       width: 6px;
     }
@@ -1171,12 +1171,103 @@
     #notifListContainer::-webkit-scrollbar-thumb:hover {
       background: #334155;
     }
+
+    .notif-filter-bar {
+      padding: 14px 20px;
+      background: #070c18;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .notif-filter-bar::-webkit-scrollbar {
+      display: none;
+    }
+
     .notif-filter-tab {
-      transition: all 0.15s ease;
+      min-height: 44px;
+      padding: 10px 18px;
+      background: #111b2e;
+      border: 1.5px solid #22324e;
+      border-radius: 12px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #cbd5e1;
+      cursor: pointer;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: none;
     }
     .notif-filter-tab:hover {
-      border-color: #38bdf8 !important;
-      color: #fff !important;
+      background: #192742;
+      border-color: #38bdf8;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+    .notif-filter-tab:active {
+      transform: translateY(0);
+    }
+
+    .notif-filter-tab .notif-tab-badge {
+      padding: 3px 9px;
+      border-radius: 12px;
+      font-size: 11.5px;
+      font-weight: 800;
+      background: #1e2c47;
+      color: #94a3b8;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all 0.2s;
+    }
+
+    /* 활성화된 탭 스타일 (도톰하고 묵직한 입체감) */
+    .notif-filter-tab.active {
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      transform: translateY(-2px);
+    }
+
+    .notif-filter-tab.active[data-tab="live"] {
+      background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+      border-color: #fca5a5 !important;
+      box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5) !important;
+    }
+    .notif-filter-tab.active[data-tab="pay"] {
+      background: linear-gradient(135deg, #f43f5e, #be123c) !important;
+      border-color: #fda4af !important;
+      box-shadow: 0 6px 20px rgba(244, 63, 94, 0.5) !important;
+    }
+    .notif-filter-tab.active[data-tab="open"] {
+      background: linear-gradient(135deg, #9333ea, #6b21a8) !important;
+      border-color: #d8b4fe !important;
+      box-shadow: 0 6px 20px rgba(147, 51, 234, 0.5) !important;
+    }
+    .notif-filter-tab.active[data-tab="browse"] {
+      background: linear-gradient(135deg, #0284c7, #0369a1) !important;
+      border-color: #7dd3fc !important;
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5) !important;
+    }
+    .notif-filter-tab.active[data-tab="bot"] {
+      background: linear-gradient(135deg, #475569, #334155) !important;
+      border-color: #94a3b8 !important;
+      box-shadow: 0 6px 20px rgba(71, 85, 105, 0.5) !important;
+    }
+    .notif-filter-tab.active[data-tab="ALL"] {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+      border-color: #93c5fd !important;
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5) !important;
+    }
+
+    .notif-filter-tab.active .notif-tab-badge {
+      background: rgba(0, 0, 0, 0.4) !important;
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.25) !important;
     }
   </style>
 </head>
@@ -2691,14 +2782,32 @@
           <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#64748b; font-size:24px; cursor:pointer; padding:0 6px; line-height:1; border-radius:6px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#64748b';this.style.background='transparent';">&times;</button>
         </div>
       </div>
-      <!-- Filter Tabs -->
-      <div style="padding:10px 18px; background:#080d1a; border-bottom:1px solid #1e293b; display:flex; gap:6px; overflow-x:auto;">
-        <button class="notif-filter-tab active" data-tab="live" onclick="filterNotifs('live', this)" style="background:#ef4444; color:white; border:none; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:800; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">🔥 실시간 고객 반응 <span id="tabCount_live" style="background:rgba(0,0,0,0.35); padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
-        <button class="notif-filter-tab" data-tab="pay" onclick="filterNotifs('pay', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">💳 결제 & 카톡 상담 <span id="tabCount_pay" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
-        <button class="notif-filter-tab" data-tab="open" onclick="filterNotifs('open', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">👀 제안 메일 열람 <span id="tabCount_open" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
-        <button class="notif-filter-tab" data-tab="browse" onclick="filterNotifs('browse', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">🌐 사이트 완독/계산기 <span id="tabCount_browse" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
-        <button class="notif-filter-tab" data-tab="bot" onclick="filterNotifs('bot', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">🤖 발송 & 시스템 로그 <span id="tabCount_bot" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
-        <button class="notif-filter-tab" data-tab="ALL" onclick="filterNotifs('ALL', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">전체 <span id="tabCount_ALL" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
+      <!-- Filter Tabs (도톰하고 묵직한 프리미엄 세그먼트 버튼) -->
+      <div class="notif-filter-bar">
+        <button class="notif-filter-tab active" data-tab="live" onclick="filterNotifs('live', this)">
+          <span>🔥 실시간 고객 반응</span>
+          <span id="tabCount_live" class="notif-tab-badge">0</span>
+        </button>
+        <button class="notif-filter-tab" data-tab="pay" onclick="filterNotifs('pay', this)">
+          <span>💳 결제 & 카톡 상담</span>
+          <span id="tabCount_pay" class="notif-tab-badge">0</span>
+        </button>
+        <button class="notif-filter-tab" data-tab="open" onclick="filterNotifs('open', this)">
+          <span>👀 제안 메일 열람</span>
+          <span id="tabCount_open" class="notif-tab-badge">0</span>
+        </button>
+        <button class="notif-filter-tab" data-tab="browse" onclick="filterNotifs('browse', this)">
+          <span>🌐 사이트 완독/계산기</span>
+          <span id="tabCount_browse" class="notif-tab-badge">0</span>
+        </button>
+        <button class="notif-filter-tab" data-tab="bot" onclick="filterNotifs('bot', this)">
+          <span>🤖 발송 & 시스템 로그</span>
+          <span id="tabCount_bot" class="notif-tab-badge">0</span>
+        </button>
+        <button class="notif-filter-tab" data-tab="ALL" onclick="filterNotifs('ALL', this)">
+          <span>전체</span>
+          <span id="tabCount_ALL" class="notif-tab-badge">0</span>
+        </button>
       </div>
       <!-- List Area -->
       <div id="notifListContainer" style="padding:16px 20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px; background:#070b16; min-height:360px;">
@@ -3077,23 +3186,23 @@
           badgeText = '⚙️ 시스템';
         }
 
-        const cardBg = isRead ? '#0c1322' : '#111d33';
+        const cardBg = isRead ? '#090f1d' : '#0e182b';
         const cardBorder = isRead ? 'rgba(255,255,255,0.06)' : badgeColor;
 
         return `
-          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${cardBg}; border:1px solid ${cardBorder}; border-left:4px solid ${badgeColor}; border-radius:12px; padding:13px 16px; display:flex; flex-direction:column; gap:6px; opacity:${isRead ? '0.72' : '1'}; cursor:pointer; transition:all 0.18s; box-shadow:${isRead ? 'none' : '0 4px 12px rgba(0,0,0,0.3)'};" title="클릭 시 읽음/안읽음 토글">
+          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${cardBg}; border:1.5px solid ${cardBorder}; border-left:5px solid ${badgeColor}; border-radius:14px; padding:15px 18px; display:flex; flex-direction:column; gap:8px; opacity:${isRead ? '0.7' : '1'}; cursor:pointer; transition:all 0.2s cubic-bezier(0.16,1,0.3,1); box-shadow:${isRead ? 'none' : '0 4px 16px rgba(0,0,0,0.35)'};" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'" title="클릭 시 읽음/안읽음 토글">
             <div style="display:flex; justify-content:space-between; align-items:center;">
-              <div style="display:flex; align-items:center; gap:8px;">
-                <span style="background:${badgeBg}; color:${badgeColor}; font-size:11px; font-weight:800; padding:2px 8px; border-radius:5px; letter-spacing:-0.2px;">${badgeText}</span>
-                <strong style="font-size:14px; color:#fff; letter-spacing:-0.3px;">${n.title}</strong>
-                ${!isRead ? '<span style="width:7px; height:7px; border-radius:50%; background:#ef4444; display:inline-block; box-shadow:0 0 6px #ef4444;"></span>' : ''}
+              <div style="display:flex; align-items:center; gap:9px;">
+                <span style="background:${badgeBg}; color:${badgeColor}; font-size:11.5px; font-weight:800; padding:3px 9px; border-radius:6px; letter-spacing:-0.2px;">${badgeText}</span>
+                <strong style="font-size:14.5px; color:#fff; letter-spacing:-0.3px;">${n.title}</strong>
+                ${!isRead ? '<span style="width:7px; height:7px; border-radius:50%; background:#ef4444; display:inline-block; box-shadow:0 0 8px #ef4444;"></span>' : ''}
               </div>
               <div style="display:flex; align-items:center; gap:8px;">
-                ${n.relTime ? `<span style="font-size:11px; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.1); padding:1px 6px; border-radius:4px;">${n.relTime}</span>` : ''}
+                ${n.relTime ? `<span style="font-size:11.5px; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.25); padding:2px 8px; border-radius:6px;">${n.relTime}</span>` : ''}
                 <span style="font-size:11.5px; color:#64748b;">${n.timestamp || ''}</span>
               </div>
             </div>
-            <div style="font-size:13px; color:#cbd5e1; line-height:1.55; word-break:break-all;">${n.message}</div>
+            <div style="font-size:13.5px; color:#cbd5e1; line-height:1.6; word-break:break-all;">${n.message}</div>
           </div>
         `;
       }).join('');
@@ -3137,16 +3246,14 @@
     function filterNotifs(cat, btn) {
       currentNotifFilter = cat;
       document.querySelectorAll('.notif-filter-tab').forEach(el => {
-        el.style.background = 'transparent';
-        el.style.color = '#94a3b8';
-        el.style.border = '1px solid #1e293b';
-        el.style.fontWeight = '600';
+        el.classList.remove('active');
+        el.removeAttribute('style');
       });
       if (btn) {
-        btn.style.background = (cat === 'live' || cat === 'pay') ? '#ef4444' : '#2563eb';
-        btn.style.color = 'white';
-        btn.style.border = 'none';
-        btn.style.fontWeight = '800';
+        btn.classList.add('active');
+      } else {
+        const targetBtn = document.querySelector(`.notif-filter-tab[data-tab="${cat}"]`);
+        if (targetBtn) targetBtn.classList.add('active');
       }
       renderNotifications();
     }
