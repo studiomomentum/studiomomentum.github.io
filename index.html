@@ -1558,18 +1558,26 @@
 
   try {
     const urlParams = new URLSearchParams(window.location.search);
-    refToken = urlParams.get('ref') || urlParams.get('v_ref') || '';
+    if (urlParams.has('vip')) {
+      refToken = 'vip';
+    } else {
+      refToken = urlParams.get('ref') || urlParams.get('v_ref') || '';
+    }
     
     if (!refToken && window.location.hash) {
-      const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-      refToken = hashParams.get('ref') || hashParams.get('v_ref') || '';
+      if (window.location.hash.toLowerCase().includes('vip')) {
+        refToken = 'vip';
+      } else {
+        const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+        refToken = hashParams.get('ref') || hashParams.get('v_ref') || '';
+      }
     }
   } catch(e) {}
 
   if (refToken && refToken !== 'direct') {
-    // 아웃바운드 콜드메일 타깃
+    // 아웃바운드 콜드메일 타깃 / VIP 제휴
     channelType = 'OUTBOUND';
-    channelName = `아웃바운드 타깃 (${refToken})`;
+    channelName = (refToken.toLowerCase() === 'vip') ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`;
     pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 50만/70만/90만)';
     try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
     try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
