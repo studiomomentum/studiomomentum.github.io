@@ -549,6 +549,20 @@
     .badge-sent { background: rgba(16, 185, 129, 0.15); color: #34d399; }
     .badge-ready { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
     .badge-bounced { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+    .badge-job {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      font-weight: 800;
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.45);
+      vertical-align: middle;
+      margin-left: 6px;
+    }
 
     .token-chip {
       font-family: monospace;
@@ -1408,6 +1422,13 @@
       updateFilterBar();
     }
 
+    function isJobPostingTarget(target) {
+      if (!target) return false;
+      if (target.is_priority) return true;
+      const combined = ((target.point || '') + ' ' + (target.views || '')).toLowerCase();
+      return combined.includes('구인') || combined.includes('채용') || combined.includes('공고');
+    }
+
     function updateFilterBar() {
       const filterBox = document.getElementById("dynamicFilterGroup");
       if (!filterBox) return;
@@ -1425,12 +1446,14 @@
       if (mainTab === "SENT") {
         const sentTargets = targetsList.filter(t => t.status === "SENT" || t.status === "BOUNCED");
         const cntAll = sentTargets.length;
+        const cntJob = sentTargets.filter(isJobPostingTarget).length;
         const cntHot = sentTargets.filter(t => hotTokens.has(t.token)).length;
         const cntVisited = sentTargets.filter(t => visitedTokens.has(t.token)).length;
         const cntUnvisited = sentTargets.filter(t => !visitedTokens.has(t.token)).length;
 
         filterBox.innerHTML = `
           <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 발송완료 (${cntAll})</button>
+          <button class="filter-btn ${currentFilter==='JOB'?'active':''}" onclick="setFilter('JOB', this)">🚨 구인공고 타깃 (${cntJob})</button>
           <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
           <button class="filter-btn ${currentFilter==='VISITED'?'active':''}" onclick="setFilter('VISITED', this)">방문 확인 (${cntVisited})</button>
           <button class="filter-btn ${currentFilter==='UNVISITED'?'active':''}" onclick="setFilter('UNVISITED', this)">미방문 (${cntUnvisited})</button>
@@ -1438,7 +1461,7 @@
       } else if (mainTab === "READY") {
         const readyTargets = targetsList.filter(t => t.status === "READY");
         const cntAll = readyTargets.length;
-        const isPriority = t => (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+        const isPriority = isJobPostingTarget;
         const isZoneB = t => ["서울", "강남", "서초", "송파", "판교", "분당"].some(k => (t.region || "").includes(k));
 
         const cntPriority = readyTargets.filter(isPriority).length;
@@ -1477,7 +1500,9 @@
 
       feedBox.innerHTML = liveEvents.slice(0, 50).map(ev => {
         const target = targetsMap[ev.ref];
-        const name = target ? `${target.company} (${target.rep})` : (ev.ref === 'direct' ? '웹사이트 직접 유입' : `식별 중 [${ev.ref}]`);
+        const isJob = isJobPostingTarget(target);
+        const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
+        const name = target ? `${target.company} (${target.rep}) ${jobBadge}` : (ev.ref === 'direct' ? '웹사이트 직접 유입' : `식별 중 [${ev.ref}]`);
         const timeStr = formatRelativeTime(ev._received || ev.timestamp || Date.now());
 
         let badgeClass = "visit";
@@ -1611,13 +1636,14 @@
         if (mainTab === "SENT") {
           // 발송 완료(또는 반송확인) 타깃만
           if (t.status !== "SENT" && t.status !== "BOUNCED") return false;
+          if (currentFilter === "JOB" && !isJobPostingTarget(t)) return false;
           if (currentFilter === "HOT" && !isHot) return false;
           if (currentFilter === "VISITED" && !isVisited) return false;
           if (currentFilter === "UNVISITED" && isVisited) return false;
         } else if (mainTab === "READY") {
           // 발송 대기 타깃만
           if (t.status !== "READY") return false;
-          const isPrio = (t.views && (t.views.includes("구인") || t.views.includes("채용") || t.views.includes("공고"))) || false;
+          const isPrio = isJobPostingTarget(t);
           const isZoneB = ["서울", "강남", "서초", "송파", "판교", "분당"].some(k => (t.region || "").includes(k));
 
           if (currentFilter === "PRIORITY" && !isPrio) return false;
@@ -1656,13 +1682,8 @@
       } else if (mainTab === "READY") {
         // [발송 대기 대기열 순서: 구인공고 우선 타깃 먼저 + 순번 순]
         filtered.sort((a, b) => {
-          const checkPrio = (x) => {
-            if (x.is_priority) return true;
-            const str = (x.point || "") + " " + (x.views || "");
-            return str.includes("구인") || str.includes("채용") || str.includes("공고");
-          };
-          const isPrioA = checkPrio(a);
-          const isPrioB = checkPrio(b);
+          const isPrioA = isJobPostingTarget(a);
+          const isPrioB = isJobPostingTarget(b);
           if (isPrioA && !isPrioB) return -1;
           if (!isPrioA && isPrioB) return 1;
           return parseInt(a.no || 0) - parseInt(b.no || 0);
@@ -1679,6 +1700,8 @@
 
       tbody.innerHTML = filtered.map(t => {
         const stats = targetStats[t.token];
+        const isJob = isJobPostingTarget(t);
+        const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
         let visitBadge = '<span class="badge badge-not">미방문</span>';
         let lastAction = '-';
         let behavior = '-';
@@ -1703,7 +1726,7 @@
               <td><strong>#${t.no}</strong></td>
               <td style="color: #cbd5e1; font-weight: 600;">${t.sent_at || '-'}</td>
               <td>${visitBadge}</td>
-              <td><strong>${t.company}</strong></td>
+              <td><strong>${t.company}</strong> ${jobBadge}</td>
               <td>${t.rep}</td>
               <td>${t.category}</td>
               <td>${t.region}</td>
@@ -1713,14 +1736,13 @@
             </tr>
           `;
         } else if (mainTab === "READY") {
-          const isPrio = t.is_priority || ((t.point || "") + " " + (t.views || "")).includes("구인") || ((t.point || "") + " " + (t.views || "")).includes("채용") || ((t.point || "") + " " + (t.views || "")).includes("공고");
-          const prioTag = isPrio ? '<span style="color:#f87171; font-weight:800;">🚨 구인공고 우선</span>' : '<span style="color:#94a3b8;">일반 대본 제안</span>';
+          const prioTag = isJob ? '<span style="color:#f87171; font-weight:800;">🚨 구인공고 우선</span>' : '<span style="color:#94a3b8;">일반 대본 제안</span>';
           return `
             <tr>
               <td><strong>#${t.no}</strong></td>
               <td>${statusBadge}</td>
               <td>${prioTag}</td>
-              <td><strong>${t.company}</strong></td>
+              <td><strong>${t.company}</strong> ${jobBadge}</td>
               <td>${t.rep}</td>
               <td>${t.category}</td>
               <td>${t.region}</td>
@@ -1736,7 +1758,7 @@
               <td>${statusBadge}</td>
               <td>${t.sent_at || '-'}</td>
               <td>${visitBadge}</td>
-              <td><strong>${t.company}</strong></td>
+              <td><strong>${t.company}</strong> ${jobBadge}</td>
               <td>${t.rep}</td>
               <td>${t.category}</td>
               <td>${t.region}</td>
@@ -1755,6 +1777,8 @@
         } else {
           mobileContainer.innerHTML = filtered.map(t => {
             const stats = targetStats[t.token];
+            const isJob = isJobPostingTarget(t);
+            const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
             let visitBadge = '<span class="badge badge-not">미방문</span>';
             let cardStatusClass = '';
             let lastActionText = '활동 없음';
@@ -1781,6 +1805,7 @@
                     <div class="card-title-group">
                       <span class="card-num">#${t.no}</span>
                       <strong class="card-company-name">${t.company}</strong>
+                      ${jobBadge}
                     </div>
                     <div>${visitBadge}</div>
                   </div>
@@ -1815,8 +1840,7 @@
                 </div>
               `;
             } else if (mainTab === "READY") {
-              const isPrio = t.is_priority || ((t.point || "") + " " + (t.views || "")).includes("구인") || ((t.point || "") + " " + (t.views || "")).includes("채용") || ((t.point || "") + " " + (t.views || "")).includes("공고");
-              const prioBadge = isPrio
+              const prioBadge = isJob
                 ? '<span style="background:rgba(239,68,68,0.2); color:#f87171; font-weight:800; padding:2px 8px; border-radius:4px; font-size:11px;">🚨 구인공고 우선 타깃</span>'
                 : '<span style="background:rgba(255,255,255,0.06); color:#94a3b8; padding:2px 8px; border-radius:4px; font-size:11px;">일반 대본 제안</span>';
 
@@ -1826,6 +1850,7 @@
                     <div class="card-title-group">
                       <span class="card-num">#${t.no}</span>
                       <strong class="card-company-name">${t.company}</strong>
+                      ${jobBadge}
                     </div>
                     <div><span class="badge badge-ready">READY 대기</span></div>
                   </div>
