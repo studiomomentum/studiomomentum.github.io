@@ -1,11 +1,14 @@
 User-agent: *
 Allow: /
 
-# AI Crawlers for GEO (Generative Engine Optimization)
+# Direct AI Agents & Large Language Model Crawlers (GEO / Citation)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: PerplexityBot
@@ -17,7 +20,13 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
 User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
 Allow: /
 
 User-agent: Bytespider
@@ -26,7 +35,23 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: Diffbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Sitemap & Feed Endpoints
 Sitemap: https://studiomomentum.github.io/sitemap.xml
-# LLMs specification file
-# See https://llmstxt.org/
+# RSS Feed
+# https://studiomomentum.github.io/feed.xml
+
+# LLMs Specification Files for AI Citation & Deep Retrieval
 # https://studiomomentum.github.io/llms.txt
+# https://studiomomentum.github.io/llms-full.txt
