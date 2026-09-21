@@ -648,6 +648,138 @@
       color: var(--text-muted);
     }
 
+    /* 실시간 ROI & 비용 절감 계산기 */
+    .roi-calc-container {
+      background: #0f172a;
+      border: 2px solid #1e3a8a;
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      color: #ffffff;
+      box-shadow: 0 12px 36px -4px rgba(15, 23, 42, 0.25);
+      margin-bottom: 40px;
+    }
+    .roi-calc-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .roi-calc-badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.2);
+      color: #60a5fa;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .roi-calc-title {
+      font-size: 24px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .roi-calc-sub {
+      font-size: 14.5px;
+      color: #94a3b8;
+    }
+    .roi-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+    @media (max-width: 860px) {
+      .roi-grid { grid-template-columns: 1fr; }
+    }
+    .roi-inputs {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .roi-input-group label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+    }
+    .roi-select {
+      width: 100%;
+      background: #0f172a;
+      border: 1px solid #475569;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      outline: none;
+    }
+    .roi-slider-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .roi-slider-val {
+      font-size: 18px;
+      font-weight: 900;
+      color: #38bdf8;
+      text-align: right;
+    }
+    .roi-slider {
+      width: 100%;
+      accent-color: #2563eb;
+      cursor: pointer;
+    }
+    .roi-results {
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
+      border: 1.5px solid #2563eb;
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .roi-comp-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .roi-save-highlight {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid #10b981;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      text-align: center;
+    }
+    .roi-save-amount {
+      font-size: 26px;
+      font-weight: 900;
+      color: #34d399;
+    }
+    .roi-cta-btn {
+      display: block;
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 14.5px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .roi-cta-btn:hover {
+      background: #1d4ed8;
+    }
+
     /* 가격 섹션 */
     .tripwire-card {
       background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
@@ -1326,6 +1458,83 @@
     </div>
   </section>
 
+  <!-- 실시간 사내 PD 채용 vs 스튜디오 모멘텀 ROI & 비용 절감 계산기 -->
+  <section class="section">
+    <div class="roi-calc-container">
+      <div class="roi-calc-header">
+        <span class="roi-calc-badge">📊 INTERACTIVE ROI CALCULATOR</span>
+        <div class="roi-calc-title">사내 영상 PD 채용 vs 스튜디오 모멘텀 실시간 비용 계산기</div>
+        <div class="roi-calc-sub">우리 병원·로펌에 사내 PD를 직접 채용할 때와 턴키 전담 시의 실질 비용과 절감 효과를 즉시 비교해 보세요.</div>
+      </div>
+
+      <div class="roi-grid">
+        <!-- 좌측 컨트롤 -->
+        <div class="roi-inputs">
+          <div class="roi-input-group">
+            <label for="calcIndustry">🏛️ 대표님 전문 업종</label>
+            <select id="calcIndustry" class="roi-select" onchange="updateRoiCalc()">
+              <option value="medical" selected>병원·의원 (정형외과/피부과/치과/한의원)</option>
+              <option value="legal">법률사무소 · 변호사 (로펌)</option>
+              <option value="tax">세무회계사무소 · 세무사</option>
+              <option value="pro">기타 고단가 전문직 / 대표 기업</option>
+            </select>
+          </div>
+
+          <div class="roi-input-group">
+            <label for="calcFrequency">📅 희망 월간 영상 발행 규모</label>
+            <select id="calcFrequency" class="roi-select" onchange="updateRoiCalc()">
+              <option value="2">월 2편 (격주 1회 발행)</option>
+              <option value="4" selected>월 4편 (주 1회 정기 발행 - 추천)</option>
+              <option value="8">월 8편 (주 2회 공격적 성장)</option>
+            </select>
+          </div>
+
+          <div class="roi-input-group">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <label for="calcPdSalary">💼 사내 PD 예상 월 급여</label>
+              <div class="roi-slider-val" id="calcPdSalaryVal">350만 원</div>
+            </div>
+            <div class="roi-slider-wrap">
+              <input type="range" id="calcPdSalary" class="roi-slider" min="250" max="500" step="25" value="350" oninput="updateRoiCalc()">
+              <div style="display:flex; justify-content:space-between; font-size:11.5px; color:#64748b;">
+                <span>250만</span>
+                <span>350만</span>
+                <span>500만</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 우측 실시간 결과 -->
+        <div class="roi-results">
+          <div>
+            <div style="font-size: 13px; font-weight: 800; color: #93c5fd; margin-bottom: 12px; letter-spacing: -0.2px;">연간 실질 지출 & 리스크 비교 결과</div>
+
+            <div class="roi-comp-row">
+              <span style="color:#94a3b8; font-size:13.5px;">사내 PD 직접 채용 시 연간 총비용<br><span style="font-size:11.5px; color:#64748b;">(급여 12개월 + 4대보험/퇴직금 18.3% + 장비비 800만 + 식대)</span></span>
+              <strong style="color:#f87171; font-size:17px;" id="calcInhouseAnnualCost">5,770만 원</strong>
+            </div>
+
+            <div class="roi-comp-row">
+              <span style="color:#94a3b8; font-size:13.5px;">스튜디오 모멘텀 턴키 전담 시 연간 비용<br><span style="font-size:11.5px; color:#38bdf8;">(대본 100% 작성 + 촬영 코칭 + 모션그래픽 완제품 일체)</span></span>
+              <strong style="color:#38bdf8; font-size:17px;" id="calcMomentumAnnualCost">2,800만 원</strong>
+            </div>
+
+            <div class="roi-save-highlight">
+              <div style="font-size: 13px; color: #a7f3d0; font-weight: 700; margin-bottom: 4px;">🎉 스튜디오 모멘텀 이용 시 연간 순수 절감액</div>
+              <div class="roi-save-amount" id="calcSavedAmount">연간 2,970만 원 절감</div>
+              <div style="font-size: 12px; color: #cbd5e1; margin-top: 4px;" id="calcSavedHours">대표님 원고 작성 시간: 연 140시간 절약!</div>
+            </div>
+          </div>
+
+          <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="roi-cta-btn" id="calcCtaBtn">
+            📊 우리 채널 맞춤 진단서 카톡으로 받아보기 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 투명한 가격 정책 -->
   <section class="section">
     <div class="section-header">
@@ -1541,6 +1750,57 @@
       }
     }, { passive: true });
   })();
+</script>
+
+<!-- 실시간 ROI & 비용 절감 계산기 로직 -->
+<script>
+function updateRoiCalc() {
+  var salaryEl = document.getElementById('calcPdSalary');
+  var freqEl = document.getElementById('calcFrequency');
+  if (!salaryEl || !freqEl) return;
+
+  var salary = parseInt(salaryEl.value, 10) || 350;
+  var freq = parseInt(freqEl.value, 10) || 4;
+
+  var salaryValEl = document.getElementById('calcPdSalaryVal');
+  if (salaryValEl) salaryValEl.textContent = salary + '만 원';
+
+  var annualSalary = salary * 12;
+  var severanceInsurance = Math.round(annualSalary * 0.183);
+  var equipment = 800;
+  var welfare = 360;
+  var inhouseTotal = annualSalary + severanceInsurance + equipment + welfare;
+
+  var momentumTotal = 3360;
+  var savedHours = 140;
+  if (freq === 2) {
+    momentumTotal = 1920;
+    savedHours = 70;
+  } else if (freq === 4) {
+    momentumTotal = 3360;
+    savedHours = 140;
+  } else if (freq === 8) {
+    momentumTotal = 6000;
+    savedHours = 280;
+  }
+
+  var saved = Math.max(0, inhouseTotal - momentumTotal);
+
+  var inhouseEl = document.getElementById('calcInhouseAnnualCost');
+  var momentumEl = document.getElementById('calcMomentumAnnualCost');
+  var savedAmountEl = document.getElementById('calcSavedAmount');
+  var savedHoursEl = document.getElementById('calcSavedHours');
+
+  if (inhouseEl) inhouseEl.textContent = inhouseTotal.toLocaleString() + '만 원';
+  if (momentumEl) momentumEl.textContent = momentumTotal.toLocaleString() + '만 원';
+  if (savedAmountEl) savedAmountEl.textContent = '연간 ' + saved.toLocaleString() + '만 원 절감';
+  if (savedHoursEl) savedHoursEl.textContent = '대표님 원고 작성 시간: 연 ' + savedHours + '시간 절약!';
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', updateRoiCalc);
+} else {
+  updateRoiCalc();
+}
 </script>
 
 <!-- 스튜디오 모멘텀 스텔스 비즈니스 트래커 (Outbound & Inbound SEO/GEO Smart Telemetry) -->
