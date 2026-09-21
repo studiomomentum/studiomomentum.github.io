@@ -2206,6 +2206,12 @@ window.PAYAPP_CONFIG = {
 
 let currentPayPlan = 'report';
 
+// 텔레메트리 조기 호출 안전 버퍼
+window._smEventQueue = window._smEventQueue || [];
+window._smSendEvent = window._smSendEvent || function(eventType, meta) {
+  window._smEventQueue.push({ eventType: eventType, meta: meta, time: Date.now() });
+};
+
 function openPayAppModal(planKey) {
   currentPayPlan = planKey;
   const isOutbound = (window._smChannelType === 'OUTBOUND');
@@ -2596,6 +2602,12 @@ if (channelType === 'OUTBOUND') {
     }
   }
   window._smSendEvent = sendEvent;
+  if (window._smEventQueue && window._smEventQueue.length > 0) {
+    window._smEventQueue.forEach(function(item) {
+      sendEvent(item.eventType, item.meta);
+    });
+    window._smEventQueue = [];
+  }
 
   // 1. 최초 방문 이벤트 발송
   sendEvent('visit', { ua: ua.slice(0, 120), channel: channelName, pricing: pricingTier });

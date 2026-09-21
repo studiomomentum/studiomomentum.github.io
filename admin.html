@@ -1156,6 +1156,28 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+
+    /* 실시간 알림 관제 모달 & 스크롤바 */
+    #notifListContainer::-webkit-scrollbar {
+      width: 6px;
+    }
+    #notifListContainer::-webkit-scrollbar-track {
+      background: #070b16;
+    }
+    #notifListContainer::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 3px;
+    }
+    #notifListContainer::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+    .notif-filter-tab {
+      transition: all 0.15s ease;
+    }
+    .notif-filter-tab:hover {
+      border-color: #38bdf8 !important;
+      color: #fff !important;
+    }
   </style>
 </head>
 <body>
@@ -2644,33 +2666,43 @@
     checkAuth();
   </script>
 
-  <!-- 시스템 알림 센터 모달 -->
-  <div id="notifModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
-    <div style="background:#1e293b; border:1px solid #334155; border-radius:16px; width:100%; max-width:720px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.8); overflow:hidden;">
+  <!-- 시스템 알림 센터 모달 (실시간 고객 반응 우선 관제탑) -->
+  <div id="notifModal" onclick="if(event.target.id==='notifModal') closeNotifModal()" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(3,7,18,0.78); backdrop-filter:blur(8px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
+    <div style="background:#0b1120; border:1px solid #1e293b; border-radius:18px; width:100%; max-width:780px; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.9), 0 0 0 1px rgba(255,255,255,0.06); overflow:hidden;">
       <!-- Header -->
-      <div style="padding:16px 20px; border-bottom:1px solid #334155; display:flex; justify-content:space-between; align-items:center; background:#0f172a;">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <span style="font-size:20px;">🔔</span>
-          <h2 style="font-size:17px; font-weight:800; color:#fff; letter-spacing:-0.3px;">실시간 통합 알림 관제 로그</h2>
-          <span id="notifModalCount" style="font-size:11px; background:#2563eb; color:white; padding:2px 7px; border-radius:10px; font-weight:700;">0건</span>
+      <div style="padding:18px 22px; border-bottom:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center; background:#080d1a;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div style="width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg, #ef4444, #f43f5e); display:flex; align-items:center; justify-content:center; box-shadow:0 0 14px rgba(239,68,68,0.45);">
+            <span style="font-size:18px;">🔔</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <h2 style="font-size:16.5px; font-weight:800; color:#fff; letter-spacing:-0.4px; margin:0;">실시간 통합 알림 관제 센터</h2>
+              <span id="notifModalCount" style="font-size:11px; background:#ef4444; color:white; padding:2px 8px; border-radius:10px; font-weight:800;">0건</span>
+            </div>
+            <div style="font-size:11.5px; color:#64748b; margin-top:2px;">고객 실시간 반응 (결제 시도 · 카톡 상담 · 제안 열람 · 90% 완독) 우선 관제</div>
+          </div>
         </div>
         <div style="display:flex; align-items:center; gap:8px;">
-          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #475569; color:#cbd5e1; font-size:12px; padding:5px 10px; border-radius:6px; cursor:pointer; font-weight:600; transition:all 0.2s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#475569';this.style.color='#cbd5e1';">✓ 모두 읽음</button>
-          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#94a3b8; font-size:24px; cursor:pointer; padding:0 4px; line-height:1;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#94a3b8';">&times;</button>
+          <button onclick="refreshNotifModal()" style="background:#131d33; border:1px solid #243452; color:#cbd5e1; font-size:12px; padding:6px 12px; border-radius:8px; cursor:pointer; font-weight:600; display:flex; align-items:center; gap:5px; transition:all 0.15s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#cbd5e1';">
+            <span>🔄</span> 새로고침
+          </button>
+          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #243452; color:#94a3b8; font-size:12px; padding:6px 12px; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.15s;" onmouseover="this.style.borderColor='#475569';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#94a3b8';">✓ 모두 읽음</button>
+          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#64748b; font-size:24px; cursor:pointer; padding:0 6px; line-height:1; border-radius:6px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#64748b';this.style.background='transparent';">&times;</button>
         </div>
       </div>
       <!-- Filter Tabs -->
-      <div style="padding:10px 16px; background:#141e33; border-bottom:1px solid #334155; display:flex; gap:6px; overflow-x:auto;">
-        <button class="notif-filter-tab active" onclick="filterNotifs('ALL', this)" style="background:#2563eb; color:white; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer; white-space:nowrap;">전체</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('live', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">🔥 실시간 고객 반응</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('send', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">📤 발송 완료</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('reply', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">📥 수신/문의</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('prospect', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">🔄 타깃 수급</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('system', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">⚙️ 시스템</button>
+      <div style="padding:10px 18px; background:#080d1a; border-bottom:1px solid #1e293b; display:flex; gap:6px; overflow-x:auto;">
+        <button class="notif-filter-tab active" data-tab="live" onclick="filterNotifs('live', this)" style="background:#ef4444; color:white; border:none; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:800; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">🔥 실시간 고객 반응 <span id="tabCount_live" style="background:rgba(0,0,0,0.35); padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
+        <button class="notif-filter-tab" data-tab="pay" onclick="filterNotifs('pay', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">💳 결제 & 카톡 상담 <span id="tabCount_pay" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
+        <button class="notif-filter-tab" data-tab="open" onclick="filterNotifs('open', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">👀 제안 메일 열람 <span id="tabCount_open" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
+        <button class="notif-filter-tab" data-tab="browse" onclick="filterNotifs('browse', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">🌐 사이트 완독/계산기 <span id="tabCount_browse" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
+        <button class="notif-filter-tab" data-tab="bot" onclick="filterNotifs('bot', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">🤖 발송 & 시스템 로그 <span id="tabCount_bot" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
+        <button class="notif-filter-tab" data-tab="ALL" onclick="filterNotifs('ALL', this)" style="background:transparent; color:#94a3b8; border:1px solid #1e293b; padding:7px 13px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;">전체 <span id="tabCount_ALL" style="background:#131d33; padding:1px 7px; border-radius:10px; font-size:10.5px;">0</span></button>
       </div>
       <!-- List Area -->
-      <div id="notifListContainer" style="padding:16px 20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px;">
-        <div style="text-align:center; color:#64748b; padding:40px 0;">알림 로그를 불러오는 중입니다...</div>
+      <div id="notifListContainer" style="padding:16px 20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px; background:#070b16; min-height:360px;">
+        <div style="text-align:center; color:#64748b; padding:60px 0; font-size:14px;">실시간 알림 로그를 불러오는 중입니다...</div>
       </div>
     </div>
   </div>
@@ -2678,8 +2710,20 @@
   <script>
     let staticNotifications = [];
     let notificationsList = [];
-    let currentNotifFilter = 'ALL';
+    let currentNotifFilter = 'live'; // 기본값: 무조건 실시간 고객 반응 우선!
     let readNotifIds = JSON.parse(localStorage.getItem('momentum_read_notifs') || '[]');
+
+    function getRelativeTimeString(ms) {
+      if (!ms) return '';
+      const diffSec = Math.floor((Date.now() - ms) / 1000);
+      if (diffSec < 60) return '방금 전';
+      const diffMin = Math.floor(diffSec / 60);
+      if (diffMin < 60) return `${diffMin}분 전`;
+      const diffHour = Math.floor(diffMin / 60);
+      if (diffHour < 24) return `${diffHour}시간 전`;
+      const diffDay = Math.floor(diffHour / 24);
+      return `${diffDay}일 전`;
+    }
 
     function formatNotifTime(timeVal) {
       if (!timeVal) return '';
@@ -2729,64 +2773,148 @@
       const combined = [];
       const seenIds = new Set();
 
-      // 1. liveEvents 텔레메트리로부터 실시간 알림 엔트리 변환
+      // 1. liveEvents 텔레메트리로부터 실시간 고객 반응 엔트리 변환
       if (typeof liveEvents !== 'undefined' && Array.isArray(liveEvents)) {
         liveEvents.forEach(ev => {
           if (!ev || !ev.event) return;
-          const evTimeMs = ev._received || (ev.time ? (ev.time > 10000000000 ? ev.time : ev.time * 1000) : Date.now());
+          const evTimeMs = ev._received || (ev.time ? (ev.time > 10000000000 ? ev.time : ev.time * 1000) : (ev.timestamp || Date.now()));
           const timeFormatted = formatNotifTime(evTimeMs);
+          const relTime = getRelativeTimeString(evTimeMs);
           const tInfo = (typeof targetsMap !== 'undefined' && ev.ref && targetsMap[ev.ref]) ? targetsMap[ev.ref] : null;
-          const targetName = tInfo ? tInfo.company : (ev.company || ev.ref || '방문자');
+          const targetName = tInfo ? tInfo.company : (ev.company || ev.ref || '신규 방문자');
           const repInfo = tInfo ? `${tInfo.rep || ''} (${tInfo.email || ''})` : '';
 
           let notifObj = null;
 
-          if (ev.event === 'kakao_click') {
+          // 결제 주문서 접수 (최우선 순위!)
+          if (ev.event === 'pay_submit_attempt') {
+            const notifId = `live_paysubmit_${ev._id || evTimeMs}`;
+            notifObj = {
+              id: notifId,
+              category: 'pay',
+              isLive: true,
+              isHot: true,
+              title: `💳 [결제 주문서 접수] ${targetName}`,
+              message: `구매자: <strong style="color:#fff;">${ev.buyerName || '-'}</strong> (${ev.buyerPhone || '-'}) ➔ 플랜: <strong style="color:#38bdf8;">${ev.plan || '-'}</strong> (${Number(ev.amount || 0).toLocaleString()}원 결제창 이동)`,
+              timestamp: timeFormatted,
+              relTime: relTime,
+              rawTime: evTimeMs,
+              read: false
+            };
+          }
+          // 결제창 모달 오픈
+          else if (ev.event === 'pay_modal_open') {
+            const notifId = `live_paymodal_${ev._id || evTimeMs}`;
+            notifObj = {
+              id: notifId,
+              category: 'pay',
+              isLive: true,
+              isHot: true,
+              title: `💳 [결제창 진입] ${targetName}`,
+              message: `선택 플랜: <strong style="color:#38bdf8;">${ev.plan || '-'}</strong> (${Number(ev.amount || 0).toLocaleString()}원) 결제 모달을 오픈했습니다.`,
+              timestamp: timeFormatted,
+              relTime: relTime,
+              rawTime: evTimeMs,
+              read: false
+            };
+          }
+          // 카카오톡 1:1 상담 클릭 (HOT 전환!)
+          else if (ev.event === 'kakao_click') {
             const notifId = `live_kakao_${ev._id || evTimeMs}`;
             notifObj = {
               id: notifId,
               category: 'hot',
               isLive: true,
+              isHot: true,
               title: `🔥 [카톡 상담 전환] ${targetName}`,
               message: `${repInfo ? repInfo + ' | ' : ''}고객이 실시간 1:1 카카오톡 상담 버튼을 클릭했습니다! (즉시 응대 대기)`,
               timestamp: timeFormatted,
+              relTime: relTime,
               rawTime: evTimeMs,
               read: false
             };
-          } else if (ev.event === 'email_open') {
+          }
+          // 제안 메일 열람
+          else if (ev.event === 'email_open' || ev.event === 'open') {
             const notifId = `live_open_${ev._id || evTimeMs}`;
             notifObj = {
               id: notifId,
               category: 'open',
               isLive: true,
+              isHot: true,
               title: `👀 [제안 메일 열람] ${targetName}`,
-              message: `${repInfo ? repInfo + ' | ' : ''}발송된 맞춤형 B2B 영상 제안 메일을 열람했습니다.`,
+              message: `${repInfo ? repInfo + ' | ' : ''}발송된 맞춤형 B2B 영상 솔루션 제안 메일을 열람했습니다.`,
               timestamp: timeFormatted,
+              relTime: relTime,
               rawTime: evTimeMs,
               read: false
             };
-          } else if (ev.event === 'roi_calc_change') {
+          }
+          // 90% 완독 (핵심 리드)
+          else if (ev.event === 'scroll_90') {
+            const notifId = `live_scroll90_${ev._id || evTimeMs}`;
+            const elapsed = (ev.meta && ev.meta.elapsed) || ev.elapsed || '';
+            notifObj = {
+              id: notifId,
+              category: 'read',
+              isLive: true,
+              isHot: true,
+              title: `📖 [랜딩 90% 완독] ${targetName}`,
+              message: `랜딩 페이지 하단(제휴 혜택 및 FAQ 구간)까지 90% 이상 정밀 탐색 ${elapsed ? '(' + elapsed + '초 체류)' : ''}`,
+              timestamp: timeFormatted,
+              relTime: relTime,
+              rawTime: evTimeMs,
+              read: false
+            };
+          }
+          // ROI 계산기 시뮬레이션
+          else if (ev.event === 'roi_calc_change') {
             const notifId = `live_calc_${ev._id || evTimeMs}`;
+            const sal = (ev.meta && ev.meta.salary) || ev.salary || '-';
+            const frq = (ev.meta && ev.meta.frequency) || ev.frequency || '-';
+            const sav = (ev.meta && ev.meta.saved) || ev.saved || '-';
             notifObj = {
               id: notifId,
               category: 'calc',
               isLive: true,
+              isHot: false,
               title: `💰 [ROI 계산기 시뮬레이션] ${targetName}`,
-              message: `월 급여 ${ev.salary || '-'}만 / 주 ${ev.frequency || '-'}회 설정 ➡️ 연간 ${ev.saved || '-'}만원 절감액 시뮬레이션 실행`,
+              message: `월 급여 ${sal}만 / 주 ${frq}회 설정 ➔ 연간 ${Number(sav).toLocaleString()}만 원 절감액 시뮬레이션 실행`,
               timestamp: timeFormatted,
+              relTime: relTime,
               rawTime: evTimeMs,
               read: false
             };
-          } else if (ev.event === 'visit') {
+          }
+          // 랜딩 페이지 방문
+          else if (ev.event === 'visit') {
             const notifId = `live_visit_${ev._id || evTimeMs}`;
-            const chName = ev.channel === 'PSEO' ? `pSEO 검색 유입 (${ev.region || ''} ${ev.industry || ''})` : (ev.channel || 'Direct');
+            const chName = ev.channel_name || ev.channel || (ev.ref_url && ev.ref_url.includes('naver') ? '네이버 검색' : 'Direct');
             notifObj = {
               id: notifId,
               category: 'visit',
               isLive: true,
+              isHot: false,
               title: `🌐 [웹사이트 랜딩] ${targetName}`,
-              message: `유입 경로: ${chName} | 타깃: ${ev.ref || '메인'} | 접속 IP: ${ev.ip || 'Unknown'}`,
+              message: `유입 채널: ${chName} | 기기: ${ev.device || 'Desktop'} · ${ev.screen || ''}`,
               timestamp: timeFormatted,
+              relTime: relTime,
+              rawTime: evTimeMs,
+              read: false
+            };
+          }
+          // 장기 몰입 체류 (60초 이상)
+          else if (ev.event === 'duration_60s' || ev.event === 'duration_90s') {
+            const notifId = `live_stay_${ev._id || evTimeMs}`;
+            notifObj = {
+              id: notifId,
+              category: 'stay',
+              isLive: true,
+              isHot: true,
+              title: `⏱ [고몰입 장기 체류] ${targetName}`,
+              message: `이탈 없이 페이지에 60초 이상 머무르며 제휴 제안서를 집중 검토 중입니다.`,
+              timestamp: timeFormatted,
+              relTime: relTime,
               rawTime: evTimeMs,
               read: false
             };
@@ -2799,16 +2927,19 @@
         });
       }
 
-      // 2. static notifications.json 병합
+      // 2. static notifications.json 병합 (봇 자동 발송/시스템 로그)
       if (Array.isArray(staticNotifications)) {
         staticNotifications.forEach(sn => {
           if (!sn || !sn.id) return;
           if (!seenIds.has(sn.id)) {
             seenIds.add(sn.id);
+            const epochMs = parseToEpoch(sn.timestamp);
             combined.push({
               ...sn,
-              rawTime: parseToEpoch(sn.timestamp),
-              isLive: false
+              rawTime: epochMs,
+              relTime: getRelativeTimeString(epochMs),
+              isLive: false,
+              isHot: false
             });
           }
         });
@@ -2827,28 +2958,70 @@
       const modalCount = document.getElementById('notifModalCount');
       if (!container) return;
 
-      const unreadCount = notificationsList.filter(n => !readNotifIds.includes(n.id) && !n.read).length;
+      // 탭별 카운트 계산
+      const liveItems = notificationsList.filter(n => ['pay', 'hot', 'open', 'read', 'calc', 'visit', 'stay'].includes(n.category));
+      const payItems = notificationsList.filter(n => ['pay', 'hot'].includes(n.category));
+      const openItems = notificationsList.filter(n => n.category === 'open');
+      const browseItems = notificationsList.filter(n => ['visit', 'read', 'calc', 'stay'].includes(n.category));
+      const botItems = notificationsList.filter(n => ['send', 'reply', 'prospect', 'system'].includes(n.category));
+
+      // 탭 뱃지 업데이트
+      const updateEl = (id, count) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = count;
+      };
+      updateEl('tabCount_live', liveItems.length);
+      updateEl('tabCount_pay', payItems.length);
+      updateEl('tabCount_open', openItems.length);
+      updateEl('tabCount_browse', browseItems.length);
+      updateEl('tabCount_bot', botItems.length);
+      updateEl('tabCount_ALL', notificationsList.length);
+
+      // 미읽음 알림 수 (고객 반응 미읽음 우선 계산)
+      const unreadHot = liveItems.filter(n => !readNotifIds.includes(n.id) && !n.read).length;
+      const totalUnread = notificationsList.filter(n => !readNotifIds.includes(n.id) && !n.read).length;
+
       if (badge) {
-        if (unreadCount > 0) {
-          badge.textContent = unreadCount > 99 ? '99+' : unreadCount;
+        if (unreadHot > 0) {
+          badge.textContent = unreadHot > 99 ? '99+' : unreadHot;
           badge.style.display = 'inline-flex';
+          badge.style.background = '#ef4444';
+        } else if (totalUnread > 0) {
+          badge.textContent = totalUnread > 99 ? '99+' : totalUnread;
+          badge.style.display = 'inline-flex';
+          badge.style.background = '#64748b';
         } else {
           badge.style.display = 'none';
         }
       }
+
       if (modalCount) {
-        modalCount.textContent = notificationsList.length + '건';
+        modalCount.textContent = `${liveItems.length}건`;
       }
 
-      let filtered = notificationsList;
+      // 현재 선택된 필터에 따라 필터링
+      let filtered = [];
       if (currentNotifFilter === 'live') {
-        filtered = notificationsList.filter(n => ['hot', 'open', 'calc', 'visit'].includes(n.category));
-      } else if (currentNotifFilter !== 'ALL') {
-        filtered = notificationsList.filter(n => n.category === currentNotifFilter);
+        filtered = liveItems;
+      } else if (currentNotifFilter === 'pay') {
+        filtered = payItems;
+      } else if (currentNotifFilter === 'open') {
+        filtered = openItems;
+      } else if (currentNotifFilter === 'browse') {
+        filtered = browseItems;
+      } else if (currentNotifFilter === 'bot') {
+        filtered = botItems;
+      } else {
+        filtered = notificationsList;
       }
 
       if (filtered.length === 0) {
-        container.innerHTML = `<div style="text-align:center; color:#64748b; padding:40px 0; font-size:13.5px;">해당 카테고리의 알림 로그가 없습니다.</div>`;
+        container.innerHTML = `
+          <div style="text-align:center; color:#64748b; padding:60px 0; font-size:14px; display:flex; flex-direction:column; align-items:center; gap:8px;">
+            <span style="font-size:28px;">📭</span>
+            <span>선택한 카테고리에 등록된 알림 로그가 없습니다.</span>
+          </div>
+        `;
         return;
       }
 
@@ -2858,22 +3031,34 @@
         let badgeBg = 'rgba(59, 130, 246, 0.15)';
         let badgeText = '발송';
 
-        if (n.category === 'hot') {
+        if (n.category === 'pay') {
           badgeColor = '#f43f5e';
-          badgeBg = 'rgba(244, 63, 94, 0.2)';
-          badgeText = '🔥 카톡전환';
+          badgeBg = 'rgba(244, 63, 94, 0.22)';
+          badgeText = '💳 결제전환';
+        } else if (n.category === 'hot') {
+          badgeColor = '#ef4444';
+          badgeBg = 'rgba(239, 68, 68, 0.22)';
+          badgeText = '🔥 카톡상담';
         } else if (n.category === 'open') {
           badgeColor = '#a855f7';
-          badgeBg = 'rgba(168, 85, 247, 0.2)';
+          badgeBg = 'rgba(168, 85, 247, 0.22)';
           badgeText = '👀 메일열람';
+        } else if (n.category === 'read') {
+          badgeColor = '#10b981';
+          badgeBg = 'rgba(16, 185, 129, 0.22)';
+          badgeText = '📖 90%완독';
         } else if (n.category === 'calc') {
           badgeColor = '#eab308';
-          badgeBg = 'rgba(234, 179, 8, 0.2)';
+          badgeBg = 'rgba(234, 179, 8, 0.22)';
           badgeText = '💰 ROI계산';
         } else if (n.category === 'visit') {
           badgeColor = '#06b6d4';
-          badgeBg = 'rgba(6, 182, 212, 0.2)';
+          badgeBg = 'rgba(6, 182, 212, 0.22)';
           badgeText = '🌐 웹방문';
+        } else if (n.category === 'stay') {
+          badgeColor = '#38bdf8';
+          badgeBg = 'rgba(56, 189, 248, 0.22)';
+          badgeText = '⏱ 장기체류';
         } else if (n.category === 'reply') {
           badgeColor = '#10b981';
           badgeBg = 'rgba(16, 185, 129, 0.15)';
@@ -2882,23 +3067,33 @@
           badgeColor = '#8b5cf6';
           badgeBg = 'rgba(139, 92, 246, 0.15)';
           badgeText = '🔄 타깃수급';
+        } else if (n.category === 'send') {
+          badgeColor = '#475569';
+          badgeBg = 'rgba(71, 85, 105, 0.25)';
+          badgeText = '📤 발송완료';
         } else if (n.category === 'system') {
-          badgeColor = '#f59e0b';
-          badgeBg = 'rgba(245, 158, 11, 0.15)';
+          badgeColor = '#64748b';
+          badgeBg = 'rgba(100, 116, 139, 0.2)';
           badgeText = '⚙️ 시스템';
         }
 
+        const cardBg = isRead ? '#0c1322' : '#111d33';
+        const cardBorder = isRead ? 'rgba(255,255,255,0.06)' : badgeColor;
+
         return `
-          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${isRead ? '#0f172a' : '#132238'}; border:1px solid ${isRead ? 'rgba(255,255,255,0.05)' : badgeColor}; border-left:4px solid ${badgeColor}; border-radius:10px; padding:14px; display:flex; flex-direction:column; gap:6px; opacity:${isRead ? '0.75' : '1'}; cursor:pointer; transition:all 0.2s;" title="클릭하여 읽음/안읽음 토글">
+          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${cardBg}; border:1px solid ${cardBorder}; border-left:4px solid ${badgeColor}; border-radius:12px; padding:13px 16px; display:flex; flex-direction:column; gap:6px; opacity:${isRead ? '0.72' : '1'}; cursor:pointer; transition:all 0.18s; box-shadow:${isRead ? 'none' : '0 4px 12px rgba(0,0,0,0.3)'};" title="클릭 시 읽음/안읽음 토글">
             <div style="display:flex; justify-content:space-between; align-items:center;">
-              <div style="display:flex; align-items:center; gap:6px;">
-                <span style="background:${badgeBg}; color:${badgeColor}; font-size:10.5px; font-weight:800; padding:2px 7px; border-radius:4px;">${badgeText}</span>
-                <strong style="font-size:13.5px; color:#fff;">${n.title}</strong>
-                ${!isRead ? '<span style="width:6px; height:6px; border-radius:50%; background:#ef4444; display:inline-block; margin-left:4px;"></span>' : ''}
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span style="background:${badgeBg}; color:${badgeColor}; font-size:11px; font-weight:800; padding:2px 8px; border-radius:5px; letter-spacing:-0.2px;">${badgeText}</span>
+                <strong style="font-size:14px; color:#fff; letter-spacing:-0.3px;">${n.title}</strong>
+                ${!isRead ? '<span style="width:7px; height:7px; border-radius:50%; background:#ef4444; display:inline-block; box-shadow:0 0 6px #ef4444;"></span>' : ''}
               </div>
-              <span style="font-size:11.5px; color:#64748b;">${n.timestamp || ''}</span>
+              <div style="display:flex; align-items:center; gap:8px;">
+                ${n.relTime ? `<span style="font-size:11px; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.1); padding:1px 6px; border-radius:4px;">${n.relTime}</span>` : ''}
+                <span style="font-size:11.5px; color:#64748b;">${n.timestamp || ''}</span>
+              </div>
             </div>
-            <div style="font-size:13px; color:#cbd5e1; line-height:1.5;">${n.message}</div>
+            <div style="font-size:13px; color:#cbd5e1; line-height:1.55; word-break:break-all;">${n.message}</div>
           </div>
         `;
       }).join('');
@@ -2920,6 +3115,8 @@
         const isHidden = modal.style.display === 'none' || !modal.style.display;
         modal.style.display = isHidden ? 'flex' : 'none';
         if (isHidden) {
+          // 메모리에 있는 실시간 텔레메트리 즉시 렌더링 후 최신 데이터 동기화
+          buildCombinedNotifications();
           loadNotifications();
         }
       }
@@ -2930,19 +3127,26 @@
       if (modal) modal.style.display = 'none';
     }
 
+    async function refreshNotifModal() {
+      if (typeof fetchLiveTelemetry === 'function') {
+        await fetchLiveTelemetry(true);
+      }
+      await loadNotifications();
+    }
+
     function filterNotifs(cat, btn) {
       currentNotifFilter = cat;
       document.querySelectorAll('.notif-filter-tab').forEach(el => {
         el.style.background = 'transparent';
         el.style.color = '#94a3b8';
-        el.style.border = '1px solid #334155';
+        el.style.border = '1px solid #1e293b';
         el.style.fontWeight = '600';
       });
       if (btn) {
-        btn.style.background = '#2563eb';
+        btn.style.background = (cat === 'live' || cat === 'pay') ? '#ef4444' : '#2563eb';
         btn.style.color = 'white';
         btn.style.border = 'none';
-        btn.style.fontWeight = '700';
+        btn.style.fontWeight = '800';
       }
       renderNotifications();
     }
@@ -2956,6 +3160,11 @@
       localStorage.setItem('momentum_read_notifs', JSON.stringify(readNotifIds));
       renderNotifications();
     }
+
+    // ESC 키 모달 닫기 지원
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeNotifModal();
+    });
 
     // 초기 알림 로드 및 15초 주기 동기화
     loadNotifications();
