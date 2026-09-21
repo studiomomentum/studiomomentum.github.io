@@ -26,7 +26,7 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://cocked-pisto.github.io/sitemap.xml
+Sitemap: https://studiomomentum.github.io/sitemap.xml
 # LLMs specification file
 # See https://llmstxt.org/
-# https://cocked-pisto.github.io/llms.txt
+# https://studiomomentum.github.io/llms.txt
