@@ -1,4 +1,32 @@
 User-agent: *
 Allow: /
 
+# AI Crawlers for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://cocked-pisto.github.io/sitemap.xml
+# LLMs specification file
+# See https://llmstxt.org/
+# https://cocked-pisto.github.io/llms.txt
