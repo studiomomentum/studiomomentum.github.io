@@ -1280,6 +1280,241 @@
       white-space: nowrap;
     }
 
+    .price-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .price-btn.pay-now {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+      border: none;
+      cursor: pointer;
+    }
+
+    .price-btn.pay-now:hover {
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      transform: translateY(-1px);
+    }
+
+    .pay-methods-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 11.5px;
+      color: #64748b;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    .pay-badge-tag {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    /* 페이앱 결제 모달 */
+    .pay-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .pay-modal-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .pay-modal-card {
+      background: #ffffff;
+      border-radius: 18px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid #e2e8f0;
+    }
+
+    @keyframes modalSlideUp {
+      from { transform: translateY(20px) scale(0.96); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    .pay-modal-header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 20px 24px;
+      position: relative;
+    }
+
+    .pay-modal-header h4 {
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .pay-modal-header p {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    .pay-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #cbd5e1;
+      font-size: 20px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .pay-modal-close:hover {
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .pay-modal-body {
+      padding: 24px;
+    }
+
+    .pay-product-box {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+    }
+
+    .pay-product-title {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .pay-product-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .pay-product-amount {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-top: 1px dashed #cbd5e1;
+      padding-top: 8px;
+      margin-top: 6px;
+    }
+
+    .pay-amount-label {
+      font-size: 13.5px;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    .pay-amount-val {
+      font-size: 24px;
+      font-weight: 900;
+      color: #2563eb;
+    }
+
+    .pay-form-group {
+      margin-bottom: 14px;
+    }
+
+    .pay-form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+
+    .pay-form-label span.req {
+      color: #ef4444;
+      margin-left: 2px;
+    }
+
+    .pay-form-input {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 14.5px;
+      color: #0f172a;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .pay-form-input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+
+    .pay-security-notice {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #1e40af;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .pay-submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #ffffff;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .pay-submit-btn:hover {
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      transform: translateY(-1px);
+    }
+
     /* 모바일 반응형 */
     @media (max-width: 768px) {
       h1 { font-size: 29px; line-height: 1.35; letter-spacing: -0.8px; }
@@ -1572,7 +1807,7 @@
   </section>
 
   <!-- 투명한 가격 정책 -->
-  <section class="section">
+  <section class="section" id="pricingSection">
     <div class="section-header">
       <div class="section-title">투명하고 합리적인 제작 플랜</div>
       <p class="section-sub">부담 없는 정밀 진단 리포트부터 월 정기 파트너십까지 최적화된 플랜을 제공합니다.</p>
@@ -1581,7 +1816,7 @@
     <!-- 첫 진입 추천: 전략 리포트 -->
     <div class="tripwire-card">
       <div class="tripwire-badge">STEP 01. 첫 진입 추천</div>
-      <span class="tripwire-refund-tag" id="tripwireRefundTag">🎁 월 정기 플랜 진행 시 리포트 비용 100% 전액 환급 (공제)</span>
+      <span class="tripwire-refund-tag" id="tripwireRefundTag">🎁 월 정기 플랜 진행 시 20만 원 100% 전액 환급 (공제)</span>
       
       <div class="tripwire-header">
         <div class="tripwire-title">
@@ -1589,8 +1824,8 @@
           <p>귀사 업종에 최적화된 고관여 타깃 심리와 시그니처 영상 포맷을 1:1 맞춤 설계해 드립니다.</p>
         </div>
         <div class="tripwire-price">
-          <div class="tripwire-price-num" id="tripwirePriceNum">맞춤 진단</div>
-          <div class="tripwire-price-sub" id="tripwirePriceSub">1:1 맞춤 설계</div>
+          <div class="tripwire-price-num" id="tripwirePriceNum">20만 원</div>
+          <div class="tripwire-price-sub" id="tripwirePriceSub">1회 납품 (정기 계약 시 전액 차감)</div>
         </div>
       </div>
 
@@ -1615,16 +1850,29 @@
 
       <div class="tripwire-cta-box">
         <div class="tripwire-cta-text" id="tripwireCtaText">
-          💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십’</strong>으로 진행하시면, <strong>리포트 비용은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.
+          💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십’</strong>으로 진행하시면, <strong>리포트 비용 20만 원은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.
         </div>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="tripwire-cta-btn" id="tripwireBtn">전략 리포트 맞춤 신청하기 →</a>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+          <button type="button" onclick="openPayAppModal('report')" class="tripwire-cta-btn" id="tripwirePayBtn" style="border: none; cursor: pointer; background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);">
+            💳 20만 원 즉시 결제 신청 →
+          </button>
+          <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="tripwireBtn" style="padding: 12px 18px; border-radius: 10px; width: auto; font-size: 14.5px;">카카오톡 1:1 문의</a>
+        </div>
+      </div>
+      <div class="pay-methods-preview" style="margin-top: 12px; justify-content: flex-end;">
+        <span>지원 결제수단:</span>
+        <span class="pay-badge-tag">신용카드(무이자)</span>
+        <span class="pay-badge-tag">카카오페이</span>
+        <span class="pay-badge-tag">토스페이</span>
+        <span class="pay-badge-tag">네이버페이</span>
+        <span class="pay-badge-tag">가상계좌</span>
       </div>
     </div>
 
     <!-- 아웃바운드 전용 프로모션 배너 (동적 표시) -->
     <div id="outboundPromoBanner" style="display:none; background: linear-gradient(135deg, rgba(29, 78, 216, 0.15) 0%, rgba(2, 132, 199, 0.15) 100%); border: 1.5px solid #38bdf8; border-radius: 12px; padding: 14px 18px; margin-bottom: 24px; text-align: center; color: #0f172a;">
       <span style="background: #1d4ed8; color: white; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 4px; margin-right: 6px;">VIP 제휴 혜택</span>
-      <strong style="color: #1e3a8a; font-size: 14.5px;">2026 전문직 유튜브 제안 수신 고객 전용 특별 제휴가 (편당 10만 원 할인) 적용 중</strong>
+      <strong style="color: #1e3a8a; font-size: 14.5px;">2026 전문직 유튜브 제안 수신 대표님 전용 특별 제휴가 (편당 10만 원 즉시 할인) 적용 중</strong>
     </div>
 
     <!-- 3단 요금제 카드 -->
@@ -1632,7 +1880,8 @@
       <!-- 플랜 1 -->
       <div class="price-card">
         <div class="price-tier-name">단독 1편 파일럿 체험</div>
-        <div class="price-num"><span id="priceValPilot">맞춤 견적</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">(상담 시 안내)</span></div>
+        <div class="price-num" id="priceNumWrapPilot"><span id="priceValPilot">60만 원</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">/ 1회</span></div>
+        <div class="price-discount-tag" id="priceDiscountPilot" style="display:none;">🔥 제안 수신 특별 할인: 10만 원 즉시 할인</div>
         <div class="price-desc">정기 계약 전에 딱 1편만 먼저 제작해보고 영상 퀄리티와 프로세스를 직접 검증하는 파일럿 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 단독 1편 파일럿 제작</li>
@@ -1646,15 +1895,18 @@
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnPilot">파일럿 플랜 견적 문의 →</a>
+        <div class="price-btn-group">
+          <button type="button" onclick="openPayAppModal('pilot')" class="price-btn pay-now" id="pricePayBtnPilot">💳 파일럿 바로 결제 (60만)</button>
+          <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnPilot">1:1 상담 문의</a>
+        </div>
       </div>
 
       <!-- 플랜 2 (가장 인기) -->
       <div class="price-card featured">
-        <div class="featured-label" id="priceFeaturedLabel">가장 인기 있는 플랜 | 리포트 비용 전액 차감</div>
+        <div class="featured-label" id="priceFeaturedLabel">가장 인기 있는 플랜 | 20만 원 전액 차감</div>
         <div class="price-tier-name">정기 셀프 촬영 플랜</div>
-        <div class="price-num"><span id="priceValSelf">맞춤 견적</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(상담 시 산정)</span></div>
-        <div class="price-discount-tag" id="priceDiscountSelf">💎 귀사 채널 규모 및 발행 주기에 맞춘 최적 견적 산정</div>
+        <div class="price-num" id="priceNumWrapSelf"><span id="priceValSelf">건당 80만 원</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 320만 원)</span></div>
+        <div class="price-discount-tag" id="priceDiscountSelf">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 300만 원!</div>
         <div class="price-desc">세팅된 프롬프터대로 대표님이 매주 30분 읽고 영상만 넘겨주시는 최적의 효율 모델입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회)</li>
@@ -1664,16 +1916,19 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          <li class="feature-gift" id="priceGiftItemSelf"><strong>전략 리포트 비용 100% 전액 차감 혜택 제공</strong></li>
+          <li class="feature-gift" id="priceGiftItemSelf"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 300만)</span></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn primary" id="priceBtnSelf">정기 셀프 플랜 견적 문의 →</a>
+        <div class="price-btn-group">
+          <button type="button" onclick="openPayAppModal('self')" class="price-btn pay-now" id="pricePayBtnSelf">💳 첫 달 정기 결제 (320만)</button>
+          <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnSelf">1:1 맞춤 견적 문의</a>
+        </div>
       </div>
 
       <!-- 플랜 3 -->
       <div class="price-card">
         <div class="price-tier-name">현장 감독 풀케어 플랜</div>
-        <div class="price-num"><span id="priceValFull">맞춤 견적</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(상담 시 산정)</span></div>
-        <div class="price-discount-tag" id="priceDiscountFull">💎 총괄 PD 현장 전담 디렉팅 프리미엄 패키지</div>
+        <div class="price-num" id="priceNumWrapFull"><span id="priceValFull">건당 100만 원</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 400만 원)</span></div>
+        <div class="price-discount-tag" id="priceDiscountFull">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 380만 원!</div>
         <div class="price-desc">카메라 세팅부터 장비 조작까지 총괄 PD가 매회 현장에 직접 동행하여 전담하는 프리미엄 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회)</li>
@@ -1683,16 +1938,68 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          <li class="feature-gift" id="priceGiftItemFull"><strong>전략 리포트 비용 100% 전액 차감 혜택 제공</strong></li>
+          <li class="feature-gift" id="priceGiftItemFull"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 380만)</span></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnFull">현장 풀케어 견적 문의 →</a>
+        <div class="price-btn-group">
+          <button type="button" onclick="openPayAppModal('full')" class="price-btn pay-now" id="pricePayBtnFull">💳 첫 달 정기 결제 (400만)</button>
+          <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnFull">1:1 맞춤 견적 문의</a>
+        </div>
       </div>
     </div>
 
     <div class="nda-box">
-      💡 <strong>세무 처리 안내</strong>: 개인 프리랜서 용역 계약으로 진행되며, <strong>주민번호 기반 3.3% 사업소득 원천징수</strong>로 100% 합법적 기업/병의원 경비 처리가 가능합니다.
+      💡 <strong>세무 처리 안내</strong>: 개인 프리랜서 용역 계약으로 진행되며, <strong>주민번호 기반 3.3% 사업소득 원천징수</strong> 또는 <strong>페이앱 간편 결제(카드 영수증/지출증빙)</strong>로 100% 합법적 기업/병의원 경비 처리가 가능합니다.
     </div>
   </section>
+
+  <!-- 페이앱 간편 결제 모달 레이아웃 -->
+  <div class="pay-modal-overlay" id="payModalOverlay" onclick="handlePayOverlayClick(event)">
+    <div class="pay-modal-card" onclick="event.stopPropagation()">
+      <div class="pay-modal-header">
+        <h4>🔒 안전 간편 결제 (PayApp)</h4>
+        <p>신용카드(무이자 할부), 카카오페이, 토스, 네이버페이 즉시 결제</p>
+        <button type="button" class="pay-modal-close" onclick="closePayAppModal()" aria-label="닫기">✕</button>
+      </div>
+      <div class="pay-modal-body">
+        <div class="pay-product-box">
+          <div class="pay-product-title">선택된 플랜</div>
+          <div class="pay-product-name" id="payModalProdName">채널 정밀 진단 & 전략 리포트</div>
+          <div id="payModalDiscountNotice" style="display:none; font-size:12px; color:#1d4ed8; font-weight:700; margin-bottom:4px;">
+            🎉 제안서 수신 특별 제휴 할인가 적용됨
+          </div>
+          <div class="pay-product-amount">
+            <span class="pay-amount-label">결제 예정 금액</span>
+            <span class="pay-amount-val" id="payModalProdPrice">200,000원</span>
+          </div>
+        </div>
+
+        <form id="payAppForm" onsubmit="handlePayAppSubmit(event)">
+          <div class="pay-form-group">
+            <label class="pay-form-label" for="payBuyerName">대표자 성함 / 상호명 <span class="req">*</span></label>
+            <input type="text" id="payBuyerName" class="pay-form-input" placeholder="예: 김원장 / OO법률사무소" required>
+          </div>
+
+          <div class="pay-form-group">
+            <label class="pay-form-label" for="payBuyerPhone">연락처 (휴대폰 번호) <span class="req">*</span></label>
+            <input type="tel" id="payBuyerPhone" class="pay-form-input" placeholder="예: 010-1234-5678" required>
+          </div>
+
+          <div class="pay-form-group">
+            <label class="pay-form-label" for="payYoutubeUrl">분석/제작 대상 유튜브 채널 링크 또는 채널명 (선택)</label>
+            <input type="text" id="payYoutubeUrl" class="pay-form-input" placeholder="예: @youtube_channel 또는 채널명">
+          </div>
+
+          <div class="pay-security-notice">
+            🔒 결제하기 클릭 시 <strong>페이앱(PayApp) 공식 암호화 결제창</strong>으로 안전하게 연결됩니다. 결제 영수증은 입력하신 휴대폰 번호로 즉시 발송됩니다.
+          </div>
+
+          <button type="submit" class="pay-submit-btn" id="paySubmitBtn">
+            <span>🔒</span> <span id="paySubmitBtnText">200,000원 결제창으로 이동 →</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- 4단계 진행 프로세스 -->
   <section class="section">
@@ -1863,170 +2170,330 @@ if (document.readyState === 'loading') {
   const rawReferrer = document.referrer || '';
   const startTime = Date.now();
 
-  // 1. 유입 채널 (SEO vs GEO vs Outbound vs Direct) 정밀 분석
-  let channelType = 'DIRECT';
-  let channelName = '직접 접속 / 북마크';
-  let pricingTier = 'INBOUND_PRIVATE (가격 비공개 / 맞춤 견적 상담)';
+// PayApp 전역 설정 객체
+window.PAYAPP_CONFIG = {
+  sellerId: 'momentum_pd', // 페이앱 판매자 아이디
+  links: {
+    report: 'https://payapp.kr/',
+    pilot_inbound: 'https://payapp.kr/',
+    pilot_outbound: 'https://payapp.kr/',
+    self_inbound: 'https://payapp.kr/',
+    self_outbound: 'https://payapp.kr/',
+    full_inbound: 'https://payapp.kr/',
+    full_outbound: 'https://payapp.kr/'
+  }
+};
 
-  try {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('vip')) {
+let currentPayPlan = 'report';
+
+function openPayAppModal(planKey) {
+  currentPayPlan = planKey;
+  const isOutbound = (window._smChannelType === 'OUTBOUND');
+  
+  const modal = document.getElementById('payModalOverlay');
+  const prodNameEl = document.getElementById('payModalProdName');
+  const prodPriceEl = document.getElementById('payModalProdPrice');
+  const discountNoticeEl = document.getElementById('payModalDiscountNotice');
+  const submitBtnTextEl = document.getElementById('paySubmitBtnText');
+
+  let prodName = '';
+  let amount = 200000;
+  let amountStr = '200,000원';
+  let showDiscount = false;
+
+  if (planKey === 'report') {
+    prodName = '채널 정밀 진단 & 시그니처 전략 리포트 (1회)';
+    amount = 200000;
+    amountStr = '200,000원 (정기 계약 시 첫 달 100% 전액 환급)';
+    showDiscount = false;
+  } else if (planKey === 'pilot') {
+    if (isOutbound) {
+      prodName = '단독 1편 파일럿 체험 (VIP 제휴 10만 원 즉시 할인)';
+      amount = 500000;
+      amountStr = '500,000원 (정상가 60만 원 ➔ 10만 원 할인)';
+      showDiscount = true;
+    } else {
+      prodName = '단독 1편 파일럿 체험 (1회)';
+      amount = 600000;
+      amountStr = '600,000원';
+      showDiscount = false;
+    }
+  } else if (planKey === 'self') {
+    if (isOutbound) {
+      prodName = '정기 셀프 촬영 플랜 (월 4편, VIP 제휴 편당 10만 / 월 40만 할인)';
+      amount = 2800000;
+      amountStr = '월 2,800,000원 (정상가 월 320만 ➔ 월 40만 할인)';
+      showDiscount = true;
+    } else {
+      prodName = '정기 셀프 촬영 플랜 (월 4편 / 주 1회)';
+      amount = 3200000;
+      amountStr = '월 3,200,000원 (건당 80만 원)';
+      showDiscount = false;
+    }
+  } else if (planKey === 'full') {
+    if (isOutbound) {
+      prodName = '현장 감독 풀케어 플랜 (월 4편, VIP 제휴 편당 10만 / 월 40만 할인)';
+      amount = 3600000;
+      amountStr = '월 3,600,000원 (정상가 월 400만 ➔ 월 40만 할인)';
+      showDiscount = true;
+    } else {
+      prodName = '현장 감독 풀케어 플랜 (월 4편 / 주 1회)';
+      amount = 4000000;
+      amountStr = '월 4,000,000원 (건당 100만 원)';
+      showDiscount = false;
+    }
+  }
+
+  if (prodNameEl) prodNameEl.textContent = prodName;
+  if (prodPriceEl) prodPriceEl.textContent = amountStr;
+  if (discountNoticeEl) discountNoticeEl.style.display = showDiscount ? 'block' : 'none';
+  if (submitBtnTextEl) submitBtnTextEl.textContent = `${amount.toLocaleString()}원 결제창으로 이동 →`;
+
+  if (modal) {
+    modal.style.display = 'flex';
+    setTimeout(function() { modal.classList.add('active'); }, 10);
+  }
+
+  if (window._smSendEvent) {
+    window._smSendEvent('pay_modal_open', { plan: planKey, amount: amount, isOutbound: isOutbound });
+  }
+}
+
+function closePayAppModal() {
+  const modal = document.getElementById('payModalOverlay');
+  if (modal) {
+    modal.classList.remove('active');
+    setTimeout(function() { modal.style.display = 'none'; }, 200);
+  }
+}
+
+function handlePayOverlayClick(e) {
+  if (e.target.id === 'payModalOverlay') {
+    closePayAppModal();
+  }
+}
+
+function handlePayAppSubmit(e) {
+  e.preventDefault();
+  const name = (document.getElementById('payBuyerName').value || '').trim();
+  const phone = (document.getElementById('payBuyerPhone').value || '').trim();
+  const ytUrl = (document.getElementById('payYoutubeUrl').value || '').trim();
+  const isOutbound = (window._smChannelType === 'OUTBOUND');
+
+  let planName = '';
+  let amount = 200000;
+  if (currentPayPlan === 'report') {
+    planName = '전략_리포트_20만';
+    amount = 200000;
+  } else if (currentPayPlan === 'pilot') {
+    planName = isOutbound ? '파일럿_50만(VIP할인)' : '파일럿_60만(정상가)';
+    amount = isOutbound ? 500000 : 600000;
+  } else if (currentPayPlan === 'self') {
+    planName = isOutbound ? '정기셀프_280만(VIP할인)' : '정기셀프_320만(정상가)';
+    amount = isOutbound ? 2800000 : 3200000;
+  } else if (currentPayPlan === 'full') {
+    planName = isOutbound ? '현장풀케어_360만(VIP할인)' : '현장풀케어_400만(정상가)';
+    amount = isOutbound ? 3600000 : 4000000;
+  }
+
+  // 1. ntfy 결제 시도 텔레메트리 즉시 발송
+  if (window._smSendEvent) {
+    window._smSendEvent('pay_submit_attempt', {
+      plan: planName,
+      amount: amount,
+      buyerName: name,
+      buyerPhone: phone,
+      youtubeUrl: ytUrl,
+      isOutbound: isOutbound
+    });
+  }
+
+  // 2. 페이앱 결제 URL 구성
+  const encodedGoodName = encodeURIComponent(`스튜디오모멘텀 - ${planName}`);
+  const payUrl = `https://payapp.kr/payapp/?cmd=payrequest&userid=${window.PAYAPP_CONFIG.sellerId}&goodname=${encodedGoodName}&price=${amount}&recvphone=${encodeURIComponent(phone)}&memo=${encodeURIComponent(name + ' / ' + ytUrl)}`;
+
+  alert(`[안내] ${name} 대표님, 페이앱(PayApp) 안전 결제창으로 연결됩니다.\n(신용카드 무이자 할부, 카카오페이, 토스, 네이버페이 지원)`);
+  window.open(payUrl, '_blank') || (window.location.href = payUrl);
+  closePayAppModal();
+}
+
+window.openPayAppModal = openPayAppModal;
+window.closePayAppModal = closePayAppModal;
+window.handlePayAppSubmit = handlePayAppSubmit;
+window.handlePayOverlayClick = handlePayOverlayClick;
+
+// 1. 유입 채널 (SEO vs GEO vs Outbound vs Direct) 정밀 분석
+let channelType = 'DIRECT';
+let channelName = '직접 접속 / 북마크';
+let pricingTier = 'INBOUND_PUBLIC (공개 정상가: 파일럿 60만 / 정기 셀프 월 320만)';
+
+try {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('vip')) {
+    refToken = 'vip';
+  } else {
+    refToken = urlParams.get('ref') || urlParams.get('v_ref') || '';
+  }
+  
+  if (!refToken && window.location.hash) {
+    if (window.location.hash.toLowerCase().includes('vip')) {
       refToken = 'vip';
     } else {
-      refToken = urlParams.get('ref') || urlParams.get('v_ref') || '';
+      const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+      refToken = hashParams.get('ref') || hashParams.get('v_ref') || '';
     }
-    
-    if (!refToken && window.location.hash) {
-      if (window.location.hash.toLowerCase().includes('vip')) {
-        refToken = 'vip';
-      } else {
-        const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-        refToken = hashParams.get('ref') || hashParams.get('v_ref') || '';
-      }
-    }
-  } catch(e) {}
+  }
+} catch(e) {}
 
-  if (refToken && refToken !== 'direct') {
-    // 아웃바운드 콜드메일 타깃 / VIP 제휴
-    channelType = 'OUTBOUND';
-    channelName = (refToken.toLowerCase() === 'vip') ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`;
-    pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 50만/70만/90만)';
+if (refToken && refToken !== 'direct') {
+  // 아웃바운드 콜드메일 타깃 / VIP 제휴
+  channelType = 'OUTBOUND';
+  channelName = (refToken.toLowerCase() === 'vip') ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`;
+  pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 편당 -10만 원 / 파일럿 50만 / 셀프 월 280만 / 풀케어 월 360만)';
+  try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+  try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+} else {
+  // 기존 방문자 세션 확인
+  try {
+    refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
+  } catch(e){}
+
+  // 인바운드 출처 분석 (GEO vs SEO vs SNS vs UTM 파라미터)
+  const utmSource = (urlParams.get('utm_source') || urlParams.get('source') || urlParams.get('src') || '').toLowerCase();
+  const utmMedium = (urlParams.get('utm_medium') || '').toLowerCase();
+
+  if (/chatgpt\.com|chat\.openai\.com/i.test(rawReferrer) || utmSource.includes('chatgpt') || utmSource.includes('openai') || utmMedium.includes('chatgpt')) {
+    channelType = 'GEO';
+    channelName = 'ChatGPT (AI 추천)';
+  } else if (/perplexity\.ai/i.test(rawReferrer) || utmSource.includes('perplexity') || utmMedium.includes('perplexity')) {
+    channelType = 'GEO';
+    channelName = 'Perplexity AI (AI 검색)';
+  } else if (/claude\.ai/i.test(rawReferrer) || utmSource.includes('claude') || utmMedium.includes('claude')) {
+    channelType = 'GEO';
+    channelName = 'Claude AI (AI 추천)';
+  } else if (/gemini\.google\.com/i.test(rawReferrer) || utmSource.includes('gemini') || utmMedium.includes('gemini')) {
+    channelType = 'GEO';
+    channelName = 'Google Gemini (AI 추천)';
+  } else if (/copilot\.microsoft\.com/i.test(rawReferrer) || utmSource.includes('copilot') || utmMedium.includes('copilot')) {
+    channelType = 'GEO';
+    channelName = 'MS Copilot (AI 추천)';
+  } else if (utmSource === 'geo' || utmMedium === 'geo' || utmMedium === 'ai') {
+    channelType = 'GEO';
+    channelName = '생성형 AI 추천 (GEO)';
+  } else if (/naver\.com/i.test(rawReferrer) || utmSource.includes('naver')) {
+    channelType = 'SEO';
+    channelName = '네이버 검색 (Naver SEO)';
+  } else if (/google\./i.test(rawReferrer) || utmSource.includes('google')) {
+    channelType = 'SEO';
+    channelName = '구글 검색 (Google SEO)';
+  } else if (/daum\.net|kakao\.com/i.test(rawReferrer) || utmSource.includes('daum') || utmSource.includes('kakao')) {
+    channelType = 'SEO';
+    channelName = '다음/카카오 검색 (Daum SEO)';
+  } else if (/bing\.com/i.test(rawReferrer) || utmSource.includes('bing')) {
+    channelType = 'SEO';
+    channelName = 'Bing 검색 (Bing SEO)';
+  } else if (utmSource === 'seo' || utmMedium === 'seo' || utmMedium === 'search') {
+    channelType = 'SEO';
+    channelName = '포털 검색 엔진 (SEO)';
+  } else if (/instagram\.com|youtube\.com|threads\.net/i.test(rawReferrer) || utmSource.includes('instagram') || utmSource.includes('youtube')) {
+    channelType = 'SNS';
+    channelName = 'SNS / 미디어 유입';
+  } else {
+    channelType = 'DIRECT';
+    channelName = '직접 입력 / 북마크';
+  }
+
+  if (!refToken || refToken.startsWith('inbound_') || refToken === 'direct') {
+    const randHex = Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
+    refToken = `inbound_${channelType.toLowerCase()}_${randHex}`;
     try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
     try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
-  } else {
-    // 기존 방문자 세션 확인
-    try {
-      refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
-    } catch(e){}
-
-    // 인바운드 출처 분석 (GEO vs SEO vs SNS vs UTM 파라미터)
-    const utmSource = (urlParams.get('utm_source') || urlParams.get('source') || urlParams.get('src') || '').toLowerCase();
-    const utmMedium = (urlParams.get('utm_medium') || '').toLowerCase();
-
-    if (/chatgpt\.com|chat\.openai\.com/i.test(rawReferrer) || utmSource.includes('chatgpt') || utmSource.includes('openai') || utmMedium.includes('chatgpt')) {
-      channelType = 'GEO';
-      channelName = 'ChatGPT (AI 추천)';
-    } else if (/perplexity\.ai/i.test(rawReferrer) || utmSource.includes('perplexity') || utmMedium.includes('perplexity')) {
-      channelType = 'GEO';
-      channelName = 'Perplexity AI (AI 검색)';
-    } else if (/claude\.ai/i.test(rawReferrer) || utmSource.includes('claude') || utmMedium.includes('claude')) {
-      channelType = 'GEO';
-      channelName = 'Claude AI (AI 추천)';
-    } else if (/gemini\.google\.com/i.test(rawReferrer) || utmSource.includes('gemini') || utmMedium.includes('gemini')) {
-      channelType = 'GEO';
-      channelName = 'Google Gemini (AI 추천)';
-    } else if (/copilot\.microsoft\.com/i.test(rawReferrer) || utmSource.includes('copilot') || utmMedium.includes('copilot')) {
-      channelType = 'GEO';
-      channelName = 'MS Copilot (AI 추천)';
-    } else if (utmSource === 'geo' || utmMedium === 'geo' || utmMedium === 'ai') {
-      channelType = 'GEO';
-      channelName = '생성형 AI 추천 (GEO)';
-    } else if (/naver\.com/i.test(rawReferrer) || utmSource.includes('naver')) {
-      channelType = 'SEO';
-      channelName = '네이버 검색 (Naver SEO)';
-    } else if (/google\./i.test(rawReferrer) || utmSource.includes('google')) {
-      channelType = 'SEO';
-      channelName = '구글 검색 (Google SEO)';
-    } else if (/daum\.net|kakao\.com/i.test(rawReferrer) || utmSource.includes('daum') || utmSource.includes('kakao')) {
-      channelType = 'SEO';
-      channelName = '다음/카카오 검색 (Daum SEO)';
-    } else if (/bing\.com/i.test(rawReferrer) || utmSource.includes('bing')) {
-      channelType = 'SEO';
-      channelName = 'Bing 검색 (Bing SEO)';
-    } else if (utmSource === 'seo' || utmMedium === 'seo' || utmMedium === 'search') {
-      channelType = 'SEO';
-      channelName = '포털 검색 엔진 (SEO)';
-    } else if (/instagram\.com|youtube\.com|threads\.net/i.test(rawReferrer) || utmSource.includes('instagram') || utmSource.includes('youtube')) {
-      channelType = 'SNS';
-      channelName = 'SNS / 미디어 유입';
-    } else {
-      channelType = 'DIRECT';
-      channelName = '직접 입력 / 북마크';
-    }
-
-    if (!refToken || refToken.startsWith('inbound_') || refToken === 'direct') {
-      const randHex = Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
-      refToken = `inbound_${channelType.toLowerCase()}_${randHex}`;
-      try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
-      try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
-    }
   }
+}
+window._smChannelType = channelType;
 
-  // 2. 아웃바운드 VIP 타깃에게만 특별 제휴가 투명 공개 및 배너 활성화
-  if (channelType === 'OUTBOUND') {
-    // 상단 네비 및 최종 CTA 배너의 한정 3팀 문구 활성화
-    const navStatus = document.getElementById('navStatusBadge');
-    if (navStatus) navStatus.textContent = '11월 파트너십 잔여 1자리 (품질 보장 3팀 한정)';
+// 2. 아웃바운드 VIP 타깃에게만 특별 제휴가 투명 공개 및 배너 활성화
+if (channelType === 'OUTBOUND') {
+  // 상단 네비 및 최종 CTA 배너의 한정 3팀 문구 활성화
+  const navStatus = document.getElementById('navStatusBadge');
+  if (navStatus) navStatus.textContent = '11월 파트너십 잔여 1자리 (품질 보장 3팀 한정)';
 
-    const ctaTitle = document.getElementById('ctaBannerTitle');
-    if (ctaTitle) ctaTitle.textContent = '동시에 최대 3개 팀만 한정 전담 운영합니다.';
+  const ctaTitle = document.getElementById('ctaBannerTitle');
+  if (ctaTitle) ctaTitle.textContent = '동시에 최대 3개 팀만 한정 전담 운영합니다.';
 
-    const ctaDesc = document.getElementById('ctaBannerDesc');
-    if (ctaDesc) ctaDesc.textContent = '단순한 영상 편집이 아니라, 대표님의 전문성을 실제 고객 문의와 평생 브랜드 자산으로 바꿔드립니다. (11월 신규 1자리)';
+  const ctaDesc = document.getElementById('ctaBannerDesc');
+  if (ctaDesc) ctaDesc.textContent = '단순한 영상 편집이 아니라, 대표님의 전문성을 실제 고객 문의와 평생 브랜드 자산으로 바꿔드립니다. (11월 신규 1자리)';
 
-    const banner = document.getElementById('outboundPromoBanner');
-    if (banner) banner.style.display = 'block';
+  const banner = document.getElementById('outboundPromoBanner');
+  if (banner) banner.style.display = 'block';
 
-    // 전략 리포트
-    const trRefund = document.getElementById('tripwireRefundTag');
-    if (trRefund) trRefund.textContent = '🎁 월 정기 플랜 진행 시 20만 원 100% 전액 차감 (사실상 무료)';
-    const trPrice = document.getElementById('tripwirePriceNum');
-    if (trPrice) trPrice.textContent = '20만 원';
-    const trPriceSub = document.getElementById('tripwirePriceSub');
-    if (trPriceSub) trPriceSub.textContent = '1회 납품';
-    const trCtaText = document.getElementById('tripwireCtaText');
-    if (trCtaText) trCtaText.innerHTML = '💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십(월 4편)’</strong>으로 진행하시면, <strong>리포트 비용 20만 원은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.';
-    const trBtn = document.getElementById('tripwireBtn');
-    if (trBtn) trBtn.textContent = '20만 원 전략 리포트 신청하기 →';
+  // 전략 리포트 (20만 원 동일, 100% 전액 차감 강조)
+  const trRefund = document.getElementById('tripwireRefundTag');
+  if (trRefund) trRefund.textContent = '🎁 월 정기 플랜 진행 시 20만 원 100% 전액 차감 (사실상 무료)';
+  const trPrice = document.getElementById('tripwirePriceNum');
+  if (trPrice) trPrice.textContent = '20만 원';
+  const trPriceSub = document.getElementById('tripwirePriceSub');
+  if (trPriceSub) trPriceSub.textContent = '1회 납품 (정기 계약 시 전액 차감)';
+  const trCtaText = document.getElementById('tripwireCtaText');
+  if (trCtaText) trCtaText.innerHTML = '💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십(월 4편)’</strong>으로 진행하시면, <strong>리포트 비용 20만 원은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.';
 
-    // 플랜 1: 파일럿
-    const pPilot = document.getElementById('priceValPilot');
-    if (pPilot) pPilot.textContent = '50만 원';
-    const pPilotUnit = document.getElementById('priceUnitPilot');
-    if (pPilotUnit) { pPilotUnit.textContent = '/ 1회'; pPilotUnit.style.fontSize = ''; pPilotUnit.style.color = ''; pPilotUnit.style.fontWeight = ''; }
-    const pPilotBtn = document.getElementById('priceBtnPilot');
-    if (pPilotBtn) pPilotBtn.textContent = '단독 1편 파일럿 신청 (50만)';
-
-    // 플랜 2: 정기 셀프
-    const pFeaturedLabel = document.getElementById('priceFeaturedLabel');
-    if (pFeaturedLabel) pFeaturedLabel.textContent = '가장 인기 있는 플랜 | 20만 원 전액 차감';
-    const pSelf = document.getElementById('priceValSelf');
-    if (pSelf) pSelf.textContent = '건당 70만 원';
-    const pSelfM = document.getElementById('priceValSelfMonth');
-    if (pSelfM) { pSelfM.textContent = '(월 280만 원)'; pSelfM.style.fontSize = ''; pSelfM.style.color = ''; pSelfM.style.fontWeight = ''; }
-    const pDiscSelf = document.getElementById('priceDiscountSelf');
-    if (pDiscSelf) pDiscSelf.textContent = '🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 260만 원!';
-    const pGiftSelf = document.getElementById('priceGiftItemSelf');
-    if (pGiftSelf) pGiftSelf.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 260만)</span>';
-    const pSelfBtn = document.getElementById('priceBtnSelf');
-    if (pSelfBtn) pSelfBtn.textContent = '정기 셀프 플랜 상담 (월 280만)';
-
-    // 플랜 3: 현장 풀케어
-    const pFull = document.getElementById('priceValFull');
-    if (pFull) pFull.textContent = '건당 90만 원';
-    const pFullM = document.getElementById('priceValFullMonth');
-    if (pFullM) { pFullM.textContent = '(월 360만 원)'; pFullM.style.fontSize = ''; pFullM.style.color = ''; pFullM.style.fontWeight = ''; }
-    const pDiscFull = document.getElementById('priceDiscountFull');
-    if (pDiscFull) pDiscFull.textContent = '🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 340만 원!';
-    const pGiftFull = document.getElementById('priceGiftItemFull');
-    if (pGiftFull) pGiftFull.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 340만)</span>';
-    const pFullBtn = document.getElementById('priceBtnFull');
-    if (pFullBtn) pFullBtn.textContent = '현장 풀케어 상담 (월 360만)';
-
-    // 하단 배너 및 모바일 스티키 바
-    const ctaSub = document.getElementById('ctaBannerSub');
-    if (ctaSub) ctaSub.textContent = '전략 리포트(20만 원) 및 정기 파트너십(월 280만~) 일정 조율 (100% 익명 가능)';
-
-    const mStickyInfo = document.getElementById('mobileStickyInfo');
-    if (mStickyInfo) {
-      mStickyInfo.innerHTML = `
-        <span style="color: #64748b; font-size: 11px;">전략 리포트 20만 (월 계약 시 100% 전액 차감)</span><br>
-        <strong>정기 셀프 월 280만</strong> <span style="font-size: 11px; color: #64748b;">(단독 1편 50만)</span>
-      `;
-    }
-    const mStickyBtn = document.getElementById('mobileStickyBtn');
-    if (mStickyBtn) mStickyBtn.textContent = '1:1 빠른 문의하기';
+  // 플랜 1: 파일럿 (정상가 60만 취소선 ➔ 50만 할인가 티내기)
+  const pNumWrapPilot = document.getElementById('priceNumWrapPilot');
+  if (pNumWrapPilot) {
+    pNumWrapPilot.innerHTML = '<span style="text-decoration: line-through; font-size: 18px; color: #94a3b8; font-weight: normal; margin-right: 8px;">60만 원</span><span id="priceValPilot" style="color: #1d4ed8; font-size: 32px; font-weight: 900;">50만 원</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">/ 1회</span>';
   }
+  const pDiscPilot = document.getElementById('priceDiscountPilot');
+  if (pDiscPilot) {
+    pDiscPilot.style.display = 'inline-block';
+    pDiscPilot.textContent = '🔥 제안서 수신 대표님 특별 제휴: 10만 원 즉시 할인';
+  }
+  const pPilotPayBtn = document.getElementById('pricePayBtnPilot');
+  if (pPilotPayBtn) pPilotPayBtn.textContent = '💳 파일럿 제휴 할인가 결제 (50만)';
+  const pPilotBtn = document.getElementById('priceBtnPilot');
+  if (pPilotBtn) pPilotBtn.textContent = '단독 1편 파일럿 상담';
+
+  // 플랜 2: 정기 셀프 (정상가 월 320만 취소선 ➔ 건당 70만 / 월 280만 할인가 티내기)
+  const pFeaturedLabel = document.getElementById('priceFeaturedLabel');
+  if (pFeaturedLabel) pFeaturedLabel.textContent = '가장 인기 있는 플랜 | 제휴 편당 10만 할인';
+  const pNumWrapSelf = document.getElementById('priceNumWrapSelf');
+  if (pNumWrapSelf) {
+    pNumWrapSelf.innerHTML = '<span style="text-decoration: line-through; font-size: 15px; color: #94a3b8; font-weight: normal; margin-right: 6px;">건당 80만 (월 320만)</span><span id="priceValSelf" style="color: #1d4ed8; font-size: 28px; font-weight: 900;">건당 70만 원</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 280만 원)</span>';
+  }
+  const pDiscSelf = document.getElementById('priceDiscountSelf');
+  if (pDiscSelf) pDiscSelf.textContent = '🔥 제안 수신 혜택: 편당 10만 / 월 40만 원 할인 (리포트 차감 시 첫 달 260만!)';
+  const pGiftSelf = document.getElementById('priceGiftItemSelf');
+  if (pGiftSelf) pGiftSelf.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 260만)</span>';
+  const pSelfPayBtn = document.getElementById('pricePayBtnSelf');
+  if (pSelfPayBtn) pSelfPayBtn.textContent = '💳 첫 달 제휴가 결제 (280만)';
+  const pSelfBtn = document.getElementById('priceBtnSelf');
+  if (pSelfBtn) pSelfBtn.textContent = '정기 셀프 플랜 상담 (월 280만)';
+
+  // 플랜 3: 현장 풀케어 (정상가 월 400만 취소선 ➔ 건당 90만 / 월 360만 할인가 티내기)
+  const pNumWrapFull = document.getElementById('priceNumWrapFull');
+  if (pNumWrapFull) {
+    pNumWrapFull.innerHTML = '<span style="text-decoration: line-through; font-size: 15px; color: #94a3b8; font-weight: normal; margin-right: 6px;">건당 100만 (월 400만)</span><span id="priceValFull" style="color: #1d4ed8; font-size: 28px; font-weight: 900;">건당 90만 원</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 360만 원)</span>';
+  }
+  const pDiscFull = document.getElementById('priceDiscountFull');
+  if (pDiscFull) pDiscFull.textContent = '🔥 제안 수신 혜택: 편당 10만 / 월 40만 원 할인 (리포트 차감 시 첫 달 340만!)';
+  const pGiftFull = document.getElementById('priceGiftItemFull');
+  if (pGiftFull) pGiftFull.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 340만)</span>';
+  const pFullPayBtn = document.getElementById('pricePayBtnFull');
+  if (pFullPayBtn) pFullPayBtn.textContent = '💳 첫 달 제휴가 결제 (360만)';
+  const pFullBtn = document.getElementById('priceBtnFull');
+  if (pFullBtn) pFullBtn.textContent = '현장 풀케어 상담 (월 360만)';
+
+  // 하단 배너 및 모바일 스티키 바
+  const ctaSub = document.getElementById('ctaBannerSub');
+  if (ctaSub) ctaSub.textContent = '전략 리포트(20만 원) 및 제휴 파트너십(월 280만~) 일정 조율 (100% 익명 가능)';
+
+  const mStickyInfo = document.getElementById('mobileStickyInfo');
+  if (mStickyInfo) {
+    mStickyInfo.innerHTML = `
+      <span style="color: #64748b; font-size: 11px;">전략 리포트 20만 (월 계약 시 100% 전액 차감)</span><br>
+      <strong>정기 셀프 월 280만</strong> <span style="font-size: 11px; color: #64748b;">(단독 1편 50만)</span>
+    `;
+  }
+}
 
   const ua = navigator.userAgent || '';
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua);
