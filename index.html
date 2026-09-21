@@ -1587,35 +1587,44 @@
       refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
     } catch(e){}
 
-    // 인바운드 출처 분석 (GEO vs SEO vs SNS)
-    if (/chatgpt\.com|chat\.openai\.com/i.test(rawReferrer)) {
+    // 인바운드 출처 분석 (GEO vs SEO vs SNS vs UTM 파라미터)
+    const utmSource = (urlParams.get('utm_source') || urlParams.get('source') || urlParams.get('src') || '').toLowerCase();
+    const utmMedium = (urlParams.get('utm_medium') || '').toLowerCase();
+
+    if (/chatgpt\.com|chat\.openai\.com/i.test(rawReferrer) || utmSource.includes('chatgpt') || utmSource.includes('openai') || utmMedium.includes('chatgpt')) {
       channelType = 'GEO';
       channelName = 'ChatGPT (AI 추천)';
-    } else if (/perplexity\.ai/i.test(rawReferrer)) {
+    } else if (/perplexity\.ai/i.test(rawReferrer) || utmSource.includes('perplexity') || utmMedium.includes('perplexity')) {
       channelType = 'GEO';
       channelName = 'Perplexity AI (AI 검색)';
-    } else if (/claude\.ai/i.test(rawReferrer)) {
+    } else if (/claude\.ai/i.test(rawReferrer) || utmSource.includes('claude') || utmMedium.includes('claude')) {
       channelType = 'GEO';
       channelName = 'Claude AI (AI 추천)';
-    } else if (/gemini\.google\.com/i.test(rawReferrer)) {
+    } else if (/gemini\.google\.com/i.test(rawReferrer) || utmSource.includes('gemini') || utmMedium.includes('gemini')) {
       channelType = 'GEO';
       channelName = 'Google Gemini (AI 추천)';
-    } else if (/copilot\.microsoft\.com/i.test(rawReferrer)) {
+    } else if (/copilot\.microsoft\.com/i.test(rawReferrer) || utmSource.includes('copilot') || utmMedium.includes('copilot')) {
       channelType = 'GEO';
       channelName = 'MS Copilot (AI 추천)';
-    } else if (/naver\.com/i.test(rawReferrer)) {
+    } else if (utmSource === 'geo' || utmMedium === 'geo' || utmMedium === 'ai') {
+      channelType = 'GEO';
+      channelName = '생성형 AI 추천 (GEO)';
+    } else if (/naver\.com/i.test(rawReferrer) || utmSource.includes('naver')) {
       channelType = 'SEO';
       channelName = '네이버 검색 (Naver SEO)';
-    } else if (/google\./i.test(rawReferrer)) {
+    } else if (/google\./i.test(rawReferrer) || utmSource.includes('google')) {
       channelType = 'SEO';
       channelName = '구글 검색 (Google SEO)';
-    } else if (/daum\.net|kakao\.com/i.test(rawReferrer)) {
+    } else if (/daum\.net|kakao\.com/i.test(rawReferrer) || utmSource.includes('daum') || utmSource.includes('kakao')) {
       channelType = 'SEO';
       channelName = '다음/카카오 검색 (Daum SEO)';
-    } else if (/bing\.com/i.test(rawReferrer)) {
+    } else if (/bing\.com/i.test(rawReferrer) || utmSource.includes('bing')) {
       channelType = 'SEO';
       channelName = 'Bing 검색 (Bing SEO)';
-    } else if (/instagram\.com|youtube\.com|threads\.net/i.test(rawReferrer)) {
+    } else if (utmSource === 'seo' || utmMedium === 'seo' || utmMedium === 'search') {
+      channelType = 'SEO';
+      channelName = '포털 검색 엔진 (SEO)';
+    } else if (/instagram\.com|youtube\.com|threads\.net/i.test(rawReferrer) || utmSource.includes('instagram') || utmSource.includes('youtube')) {
       channelType = 'SNS';
       channelName = 'SNS / 미디어 유입';
     } else {
