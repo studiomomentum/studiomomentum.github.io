@@ -1572,6 +1572,9 @@
       updateKPIs();
       renderFeed();
       renderTable();
+      if (typeof buildCombinedNotifications === 'function') {
+        buildCombinedNotifications();
+      }
     }
 
     /* ===================================================
@@ -2642,27 +2645,28 @@
   </script>
 
   <!-- 시스템 알림 센터 모달 -->
-  <div id="notifModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.65); backdrop-filter:blur(6px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
-    <div style="background:#1e293b; border:1px solid #334155; border-radius:16px; width:100%; max-width:680px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
+  <div id="notifModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
+    <div style="background:#1e293b; border:1px solid #334155; border-radius:16px; width:100%; max-width:720px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.8); overflow:hidden;">
       <!-- Header -->
       <div style="padding:16px 20px; border-bottom:1px solid #334155; display:flex; justify-content:space-between; align-items:center; background:#0f172a;">
         <div style="display:flex; align-items:center; gap:8px;">
           <span style="font-size:20px;">🔔</span>
-          <h2 style="font-size:17px; font-weight:800; color:#fff; letter-spacing:-0.3px;">시스템 알림 & 발송/수신 로그</h2>
-          <span id="notifModalCount" style="font-size:11px; background:#2563eb; color:white; padding:2px 7px; border-radius:10px; font-weight:700;">0</span>
+          <h2 style="font-size:17px; font-weight:800; color:#fff; letter-spacing:-0.3px;">실시간 통합 알림 관제 로그</h2>
+          <span id="notifModalCount" style="font-size:11px; background:#2563eb; color:white; padding:2px 7px; border-radius:10px; font-weight:700;">0건</span>
         </div>
         <div style="display:flex; align-items:center; gap:8px;">
-          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #475569; color:#cbd5e1; font-size:12px; padding:5px 10px; border-radius:6px; cursor:pointer; font-weight:600;">✓ 모두 읽음</button>
-          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#94a3b8; font-size:24px; cursor:pointer; padding:0 4px; line-height:1;">&times;</button>
+          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #475569; color:#cbd5e1; font-size:12px; padding:5px 10px; border-radius:6px; cursor:pointer; font-weight:600; transition:all 0.2s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#475569';this.style.color='#cbd5e1';">✓ 모두 읽음</button>
+          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#94a3b8; font-size:24px; cursor:pointer; padding:0 4px; line-height:1;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#94a3b8';">&times;</button>
         </div>
       </div>
       <!-- Filter Tabs -->
-      <div style="padding:10px 20px; background:#141e33; border-bottom:1px solid #334155; display:flex; gap:6px; overflow-x:auto;">
-        <button class="notif-filter-tab active" onclick="filterNotifs('ALL', this)" style="background:#2563eb; color:white; border:none; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">전체</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('send', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">📤 발송 완료</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('reply', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">📥 메일 수신</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('prospect', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">🔄 타깃 수급</button>
-        <button class="notif-filter-tab" onclick="filterNotifs('system', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">⚙️ 시스템</button>
+      <div style="padding:10px 16px; background:#141e33; border-bottom:1px solid #334155; display:flex; gap:6px; overflow-x:auto;">
+        <button class="notif-filter-tab active" onclick="filterNotifs('ALL', this)" style="background:#2563eb; color:white; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer; white-space:nowrap;">전체</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('live', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">🔥 실시간 고객 반응</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('send', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">📤 발송 완료</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('reply', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">📥 수신/문의</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('prospect', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">🔄 타깃 수급</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('system', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;">⚙️ 시스템</button>
       </div>
       <!-- List Area -->
       <div id="notifListContainer" style="padding:16px 20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px;">
@@ -2672,20 +2676,149 @@
   </div>
 
   <script>
+    let staticNotifications = [];
     let notificationsList = [];
     let currentNotifFilter = 'ALL';
     let readNotifIds = JSON.parse(localStorage.getItem('momentum_read_notifs') || '[]');
+
+    function formatNotifTime(timeVal) {
+      if (!timeVal) return '';
+      if (typeof timeVal === 'string' && timeVal.includes('-') && timeVal.includes(':')) {
+        return timeVal;
+      }
+      try {
+        const d = new Date(timeVal);
+        if (isNaN(d.getTime())) return String(timeVal);
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        const h = String(d.getHours()).padStart(2, '0');
+        const min = String(d.getMinutes()).padStart(2, '0');
+        const sec = String(d.getSeconds()).padStart(2, '0');
+        return `${y}-${m}-${day} ${h}:${min}:${sec}`;
+      } catch (e) {
+        return String(timeVal);
+      }
+    }
+
+    function parseToEpoch(timeStr) {
+      if (!timeStr) return 0;
+      if (typeof timeStr === 'number') return timeStr;
+      try {
+        const d = new Date(String(timeStr).replace(/-/g, '/'));
+        const t = d.getTime();
+        return isNaN(t) ? 0 : t;
+      } catch (e) {
+        return 0;
+      }
+    }
 
     async function loadNotifications() {
       try {
         const res = await fetch('notifications.json?t=' + Date.now());
         if (res.ok) {
-          notificationsList = await res.json();
-          renderNotifications();
+          staticNotifications = await res.json();
         }
       } catch (e) {
         console.error('Failed to load notifications.json', e);
       }
+      buildCombinedNotifications();
+    }
+
+    function buildCombinedNotifications() {
+      const combined = [];
+      const seenIds = new Set();
+
+      // 1. liveEvents 텔레메트리로부터 실시간 알림 엔트리 변환
+      if (typeof liveEvents !== 'undefined' && Array.isArray(liveEvents)) {
+        liveEvents.forEach(ev => {
+          if (!ev || !ev.event) return;
+          const evTimeMs = ev._received || (ev.time ? (ev.time > 10000000000 ? ev.time : ev.time * 1000) : Date.now());
+          const timeFormatted = formatNotifTime(evTimeMs);
+          const tInfo = (typeof targetsMap !== 'undefined' && ev.ref && targetsMap[ev.ref]) ? targetsMap[ev.ref] : null;
+          const targetName = tInfo ? tInfo.company : (ev.company || ev.ref || '방문자');
+          const repInfo = tInfo ? `${tInfo.rep || ''} (${tInfo.email || ''})` : '';
+
+          let notifObj = null;
+
+          if (ev.event === 'kakao_click') {
+            const notifId = `live_kakao_${ev._id || evTimeMs}`;
+            notifObj = {
+              id: notifId,
+              category: 'hot',
+              isLive: true,
+              title: `🔥 [카톡 상담 전환] ${targetName}`,
+              message: `${repInfo ? repInfo + ' | ' : ''}고객이 실시간 1:1 카카오톡 상담 버튼을 클릭했습니다! (즉시 응대 대기)`,
+              timestamp: timeFormatted,
+              rawTime: evTimeMs,
+              read: false
+            };
+          } else if (ev.event === 'email_open') {
+            const notifId = `live_open_${ev._id || evTimeMs}`;
+            notifObj = {
+              id: notifId,
+              category: 'open',
+              isLive: true,
+              title: `👀 [제안 메일 열람] ${targetName}`,
+              message: `${repInfo ? repInfo + ' | ' : ''}발송된 맞춤형 B2B 영상 제안 메일을 열람했습니다.`,
+              timestamp: timeFormatted,
+              rawTime: evTimeMs,
+              read: false
+            };
+          } else if (ev.event === 'roi_calc_change') {
+            const notifId = `live_calc_${ev._id || evTimeMs}`;
+            notifObj = {
+              id: notifId,
+              category: 'calc',
+              isLive: true,
+              title: `💰 [ROI 계산기 시뮬레이션] ${targetName}`,
+              message: `월 급여 ${ev.salary || '-'}만 / 주 ${ev.frequency || '-'}회 설정 ➡️ 연간 ${ev.saved || '-'}만원 절감액 시뮬레이션 실행`,
+              timestamp: timeFormatted,
+              rawTime: evTimeMs,
+              read: false
+            };
+          } else if (ev.event === 'visit') {
+            const notifId = `live_visit_${ev._id || evTimeMs}`;
+            const chName = ev.channel === 'PSEO' ? `pSEO 검색 유입 (${ev.region || ''} ${ev.industry || ''})` : (ev.channel || 'Direct');
+            notifObj = {
+              id: notifId,
+              category: 'visit',
+              isLive: true,
+              title: `🌐 [웹사이트 랜딩] ${targetName}`,
+              message: `유입 경로: ${chName} | 타깃: ${ev.ref || '메인'} | 접속 IP: ${ev.ip || 'Unknown'}`,
+              timestamp: timeFormatted,
+              rawTime: evTimeMs,
+              read: false
+            };
+          }
+
+          if (notifObj && !seenIds.has(notifObj.id)) {
+            seenIds.add(notifObj.id);
+            combined.push(notifObj);
+          }
+        });
+      }
+
+      // 2. static notifications.json 병합
+      if (Array.isArray(staticNotifications)) {
+        staticNotifications.forEach(sn => {
+          if (!sn || !sn.id) return;
+          if (!seenIds.has(sn.id)) {
+            seenIds.add(sn.id);
+            combined.push({
+              ...sn,
+              rawTime: parseToEpoch(sn.timestamp),
+              isLive: false
+            });
+          }
+        });
+      }
+
+      // 3. 최신 시간순 내림차순 정렬
+      combined.sort((a, b) => (b.rawTime || 0) - (a.rawTime || 0));
+
+      notificationsList = combined;
+      renderNotifications();
     }
 
     function renderNotifications() {
@@ -2698,7 +2831,7 @@
       if (badge) {
         if (unreadCount > 0) {
           badge.textContent = unreadCount > 99 ? '99+' : unreadCount;
-          badge.style.display = 'inline-block';
+          badge.style.display = 'inline-flex';
         } else {
           badge.style.display = 'none';
         }
@@ -2708,7 +2841,9 @@
       }
 
       let filtered = notificationsList;
-      if (currentNotifFilter !== 'ALL') {
+      if (currentNotifFilter === 'live') {
+        filtered = notificationsList.filter(n => ['hot', 'open', 'calc', 'visit'].includes(n.category));
+      } else if (currentNotifFilter !== 'ALL') {
         filtered = notificationsList.filter(n => n.category === currentNotifFilter);
       }
 
@@ -2723,26 +2858,43 @@
         let badgeBg = 'rgba(59, 130, 246, 0.15)';
         let badgeText = '발송';
 
-        if (n.category === 'reply') {
+        if (n.category === 'hot') {
+          badgeColor = '#f43f5e';
+          badgeBg = 'rgba(244, 63, 94, 0.2)';
+          badgeText = '🔥 카톡전환';
+        } else if (n.category === 'open') {
+          badgeColor = '#a855f7';
+          badgeBg = 'rgba(168, 85, 247, 0.2)';
+          badgeText = '👀 메일열람';
+        } else if (n.category === 'calc') {
+          badgeColor = '#eab308';
+          badgeBg = 'rgba(234, 179, 8, 0.2)';
+          badgeText = '💰 ROI계산';
+        } else if (n.category === 'visit') {
+          badgeColor = '#06b6d4';
+          badgeBg = 'rgba(6, 182, 212, 0.2)';
+          badgeText = '🌐 웹방문';
+        } else if (n.category === 'reply') {
           badgeColor = '#10b981';
           badgeBg = 'rgba(16, 185, 129, 0.15)';
-          badgeText = '수신';
+          badgeText = '📥 수신/문의';
         } else if (n.category === 'prospect') {
           badgeColor = '#8b5cf6';
           badgeBg = 'rgba(139, 92, 246, 0.15)';
-          badgeText = '수급';
+          badgeText = '🔄 타깃수급';
         } else if (n.category === 'system') {
           badgeColor = '#f59e0b';
           badgeBg = 'rgba(245, 158, 11, 0.15)';
-          badgeText = '시스템';
+          badgeText = '⚙️ 시스템';
         }
 
         return `
-          <div style="background:#0f172a; border:1px solid ${isRead ? 'rgba(255,255,255,0.05)' : 'rgba(59, 130, 246, 0.4)'}; border-left:4px solid ${badgeColor}; border-radius:10px; padding:14px; display:flex; flex-direction:column; gap:6px; opacity:${isRead ? '0.75' : '1'}; transition:all 0.2s;">
+          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${isRead ? '#0f172a' : '#132238'}; border:1px solid ${isRead ? 'rgba(255,255,255,0.05)' : badgeColor}; border-left:4px solid ${badgeColor}; border-radius:10px; padding:14px; display:flex; flex-direction:column; gap:6px; opacity:${isRead ? '0.75' : '1'}; cursor:pointer; transition:all 0.2s;" title="클릭하여 읽음/안읽음 토글">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <div style="display:flex; align-items:center; gap:6px;">
                 <span style="background:${badgeBg}; color:${badgeColor}; font-size:10.5px; font-weight:800; padding:2px 7px; border-radius:4px;">${badgeText}</span>
                 <strong style="font-size:13.5px; color:#fff;">${n.title}</strong>
+                ${!isRead ? '<span style="width:6px; height:6px; border-radius:50%; background:#ef4444; display:inline-block; margin-left:4px;"></span>' : ''}
               </div>
               <span style="font-size:11.5px; color:#64748b;">${n.timestamp || ''}</span>
             </div>
@@ -2750,6 +2902,16 @@
           </div>
         `;
       }).join('');
+    }
+
+    function toggleSingleNotifRead(id) {
+      if (readNotifIds.includes(id)) {
+        readNotifIds = readNotifIds.filter(x => x !== id);
+      } else {
+        readNotifIds.push(id);
+      }
+      localStorage.setItem('momentum_read_notifs', JSON.stringify(readNotifIds));
+      renderNotifications();
     }
 
     function toggleNotifModal() {
@@ -2795,9 +2957,9 @@
       renderNotifications();
     }
 
-    // 초기 알림 로드 및 주기적 갱신
+    // 초기 알림 로드 및 15초 주기 동기화
     loadNotifications();
-    setInterval(loadNotifications, 30000);
+    setInterval(loadNotifications, 15000);
 
     // 페이지 진입 시 인증 상태 확인
     checkAuth();
