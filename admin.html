@@ -304,6 +304,40 @@
       padding: 22px;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px -6px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(56, 189, 248, 0.4);
+      border-color: rgba(56, 189, 248, 0.5);
+    }
+
+    .kpi-card:active {
+      transform: translateY(-1px) scale(0.99);
+    }
+
+    .kpi-card.active-kpi {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.35), 0 14px 28px -6px rgba(0, 0, 0, 0.5);
+    }
+
+    .kpi-click-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: #38bdf8;
+      font-weight: 700;
+      margin-top: 8px;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+    .kpi-card:hover .kpi-click-hint {
+      opacity: 1;
+      text-decoration: underline;
     }
 
     .kpi-card::after {
@@ -1099,58 +1133,64 @@
 
     <!-- KPI 요약 카드 그리드 -->
     <div class="kpi-grid">
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard_SENT_ALL" onclick="handleKpiCardClick('SENT_ALL')">
         <div class="kpi-label">
           <span>총 발송 타깃 (Sent)</span>
           <span>✉️</span>
         </div>
         <div class="kpi-val" id="kpiSentCount">0</div>
         <div class="kpi-sub" id="kpiSentSub">발송 대기: 0건</div>
+        <div class="kpi-click-hint">👉 클릭 시 전체 발송목록 조회</div>
       </div>
 
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard_OPENED_ALL" onclick="handleKpiCardClick('OPENED_ALL')">
         <div class="kpi-label">
           <span>이메일 열람 확인 (Email Opens)</span>
           <span>👁️</span>
         </div>
         <div class="kpi-val" style="color: #c084fc;" id="kpiOpenedCount">0</div>
         <div class="kpi-sub" id="kpiOpenedRate">열람률: 0%</div>
+        <div class="kpi-click-hint" style="color: #c084fc;">👉 클릭 시 메일열람 타깃 필터</div>
       </div>
 
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard_VISITED" onclick="handleKpiCardClick('VISITED')">
         <div class="kpi-label">
           <span>사이트 방문 고객 (Visited Leads)</span>
           <span>🌐</span>
         </div>
         <div class="kpi-val" style="color: #60a5fa;" id="kpiVisitedCount">0</div>
         <div class="kpi-sub" id="kpiVisitedRate">방문 전환율: 0%</div>
+        <div class="kpi-click-hint" style="color: #60a5fa;">👉 클릭 시 사이트방문 고객 필터</div>
       </div>
 
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard_HOT" onclick="handleKpiCardClick('HOT')">
         <div class="kpi-label">
           <span>카카오톡 상담 클릭 (Hot Leads)</span>
           <span>🔥</span>
         </div>
         <div class="kpi-val highlight-hot" id="kpiHotCount">0</div>
         <div class="kpi-sub">상담 퍼널 최종 도달</div>
+        <div class="kpi-click-hint" style="color: #f87171;">👉 클릭 시 카톡상담 리드 필터</div>
       </div>
 
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard_SCROLL_90" onclick="handleKpiCardClick('SCROLL_90')">
         <div class="kpi-label">
           <span>심층 탐독 (Scroll 90%+)</span>
           <span>📖</span>
         </div>
         <div class="kpi-val" style="color: #34d399;" id="kpiScrollCount">0</div>
         <div class="kpi-sub">포트폴리오 끝까지 완독</div>
+        <div class="kpi-click-hint" style="color: #34d399;">👉 클릭 시 90% 완독 고객 필터</div>
       </div>
 
-      <div class="kpi-card" style="border: 1px solid rgba(245, 158, 11, 0.3); background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.6) 100%);">
+      <div class="kpi-card" id="kpiCard_INBOUND" onclick="handleKpiCardClick('INBOUND')" style="border: 1px solid rgba(245, 158, 11, 0.3); background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.6) 100%);">
         <div class="kpi-label">
           <span>인바운드 유입 (SEO / GEO)</span>
           <span>💎</span>
         </div>
         <div class="kpi-val" style="color: #fbbf24;" id="kpiInboundCount">0</div>
         <div class="kpi-sub" id="kpiInboundSub" style="color: #facc15;">편당 +10만원 견적 대상</div>
+        <div class="kpi-click-hint" style="color: #fbbf24;">👉 클릭 시 인바운드 목록 조회</div>
       </div>
     </div>
 
@@ -1422,8 +1462,18 @@
       } else {
         if (tab === "SENT") document.getElementById("tabBtnSent")?.classList.add("active");
         else if (tab === "READY") document.getElementById("tabBtnReady")?.classList.add("active");
+        else if (tab === "INBOUND") document.getElementById("tabBtnInbound")?.classList.add("active");
         else if (tab === "ALL") document.getElementById("tabBtnAll")?.classList.add("active");
       }
+
+      // KPI 카드 활성 스타일 동기화
+      document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
+      if (tab === 'SENT') {
+        document.getElementById('kpiCard_SENT_ALL')?.classList.add('active-kpi');
+      } else if (tab === 'INBOUND') {
+        document.getElementById('kpiCard_INBOUND')?.classList.add('active-kpi');
+      }
+
       updateFilterBar();
       renderTable();
     }
@@ -1432,7 +1482,52 @@
       currentFilter = filter;
       document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
       if (el) el.classList.add("active");
+
+      // KPI 카드 활성화 상태 동기화
+      document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
+      if (mainTab === 'SENT') {
+        if (filter === 'ALL') document.getElementById('kpiCard_SENT_ALL')?.classList.add('active-kpi');
+        else if (filter === 'OPENED_ALL') document.getElementById('kpiCard_OPENED_ALL')?.classList.add('active-kpi');
+        else if (filter === 'VISITED') document.getElementById('kpiCard_VISITED')?.classList.add('active-kpi');
+        else if (filter === 'HOT') document.getElementById('kpiCard_HOT')?.classList.add('active-kpi');
+        else if (filter === 'SCROLL_90') document.getElementById('kpiCard_SCROLL_90')?.classList.add('active-kpi');
+      } else if (mainTab === 'INBOUND') {
+        document.getElementById('kpiCard_INBOUND')?.classList.add('active-kpi');
+      }
+
       renderTable();
+    }
+
+    function handleKpiCardClick(type) {
+      document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
+      const cardEl = document.getElementById(`kpiCard_${type}`);
+      if (cardEl) cardEl.classList.add('active-kpi');
+
+      if (type === 'SENT_ALL') {
+        setMainTab('SENT', document.getElementById('tabBtnSent'));
+        setFilter('ALL');
+      } else if (type === 'OPENED_ALL') {
+        setMainTab('SENT', document.getElementById('tabBtnSent'));
+        setFilter('OPENED_ALL');
+      } else if (type === 'VISITED') {
+        setMainTab('SENT', document.getElementById('tabBtnSent'));
+        setFilter('VISITED');
+      } else if (type === 'HOT') {
+        setMainTab('SENT', document.getElementById('tabBtnSent'));
+        setFilter('HOT');
+      } else if (type === 'SCROLL_90') {
+        setMainTab('SENT', document.getElementById('tabBtnSent'));
+        setFilter('SCROLL_90');
+      } else if (type === 'INBOUND') {
+        setMainTab('INBOUND', document.getElementById('tabBtnInbound'));
+        setFilter('ALL');
+      }
+
+      // 테이블 영역으로 부드럽게 스크롤 이동
+      const targetSection = document.querySelector('.table-controls') || document.getElementById('targetsTable');
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
 
     function updateKPIs() {
@@ -1565,6 +1660,8 @@
       const openedTokens = new Set();
       const visitedTokens = new Set();
       const hotTokens = new Set();
+      const scroll90Tokens = new Set();
+
       liveEvents.forEach(ev => {
         if (ev.ref && ev.ref !== 'direct') {
           if (ev.event === 'email_open' || ev.event === 'open') {
@@ -1573,6 +1670,7 @@
             visitedTokens.add(ev.ref);
             openedTokens.add(ev.ref);
             if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
+            if (ev.event === 'scroll_90') scroll90Tokens.add(ev.ref);
           }
         }
       });
@@ -1581,17 +1679,21 @@
         const sentTargets = targetsList.filter(t => t.status === "SENT" || t.status === "BOUNCED");
         const cntAll = sentTargets.length;
         const cntJob = sentTargets.filter(isJobPostingTarget).length;
-        const cntHot = sentTargets.filter(t => hotTokens.has(t.token)).length;
+        const cntOpenedAll = sentTargets.filter(t => openedTokens.has(t.token)).length;
         const cntVisited = sentTargets.filter(t => visitedTokens.has(t.token)).length;
+        const cntHot = sentTargets.filter(t => hotTokens.has(t.token)).length;
+        const cntScroll90 = sentTargets.filter(t => scroll90Tokens.has(t.token)).length;
         const cntOpenedOnly = sentTargets.filter(t => openedTokens.has(t.token) && !visitedTokens.has(t.token)).length;
         const cntUnopened = sentTargets.filter(t => !openedTokens.has(t.token)).length;
 
         filterBox.innerHTML = `
           <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 발송완료 (${cntAll})</button>
-          <button class="filter-btn ${currentFilter==='JOB'?'active':''}" onclick="setFilter('JOB', this)">🚨 구인공고 타깃 (${cntJob})</button>
-          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
+          <button class="filter-btn ${currentFilter==='OPENED_ALL'?'active':''}" onclick="setFilter('OPENED_ALL', this)">👁️ 전체 열람 (${cntOpenedAll})</button>
           <button class="filter-btn ${currentFilter==='VISITED'?'active':''}" onclick="setFilter('VISITED', this)">🌐 사이트접속 (${cntVisited})</button>
-          <button class="filter-btn ${currentFilter==='OPENED_ONLY'?'active':''}" onclick="setFilter('OPENED_ONLY', this)">👁️ 메일만 열람 [미접속] (${cntOpenedOnly})</button>
+          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
+          <button class="filter-btn ${currentFilter==='SCROLL_90'?'active':''}" onclick="setFilter('SCROLL_90', this)">📖 90% 완독 (${cntScroll90})</button>
+          <button class="filter-btn ${currentFilter==='JOB'?'active':''}" onclick="setFilter('JOB', this)">🚨 구인공고 타깃 (${cntJob})</button>
+          <button class="filter-btn ${currentFilter==='OPENED_ONLY'?'active':''}" onclick="setFilter('OPENED_ONLY', this)">✉️ 메일만 열람 [미접속] (${cntOpenedOnly})</button>
           <button class="filter-btn ${currentFilter==='UNOPENED'?'active':''}" onclick="setFilter('UNOPENED', this)">⏳ 미열람 (${cntUnopened})</button>
         `;
       } else if (mainTab === "READY") {
@@ -1914,8 +2016,10 @@
           // 발송 완료(또는 반송확인) 타깃만
           if (t.status !== "SENT" && t.status !== "BOUNCED") return false;
           if (currentFilter === "JOB" && !isJobPostingTarget(t)) return false;
+          if (currentFilter === "OPENED_ALL" && (!stats || !stats.opened)) return false;
           if (currentFilter === "HOT" && (!stats || !stats.hot)) return false;
           if (currentFilter === "VISITED" && (!stats || !stats.visited)) return false;
+          if (currentFilter === "SCROLL_90" && (!stats || stats.maxScroll < 85)) return false;
           if (currentFilter === "OPENED_ONLY" && (!stats || !stats.opened || stats.visited)) return false;
           if (currentFilter === "UNOPENED" && (stats && stats.opened)) return false;
         } else if (mainTab === "READY") {
