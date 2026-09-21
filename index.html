@@ -993,42 +993,56 @@
       font-weight: 900;
       color: var(--text-title);
       margin-bottom: 8px;
+      height: 26px;
+      display: flex;
+      align-items: center;
     }
 
     .price-num {
-      font-size: 30px;
-      font-weight: 900;
-      color: var(--primary);
-      margin-bottom: 6px;
+      height: 52px;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .price-num span {
-      font-size: 15px;
-      color: var(--text-muted);
-      font-weight: 500;
+    .price-main-val {
+      font-size: 32px;
+      font-weight: 900;
+      color: #1d4ed8;
+      letter-spacing: -0.8px;
+      line-height: 1.15;
     }
 
     .price-discount-tag {
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 800;
       color: #1d4ed8;
       background: #eff6ff;
       border: 1px solid #bfdbfe;
-      padding: 5px 10px;
+      padding: 0 10px;
       border-radius: 6px;
       margin-bottom: 12px;
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      height: 34px;
+      box-sizing: border-box;
       width: fit-content;
+      word-break: keep-all;
     }
 
     .price-desc {
       font-size: 13.5px;
       color: var(--text-muted);
-      line-height: 1.55;
+      line-height: 1.5;
       padding-bottom: 16px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 18px;
-      min-height: 48px;
+      height: 60px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-start;
+      overflow: hidden;
     }
 
     .price-features {
@@ -1883,7 +1897,7 @@
         <div class="price-num" id="priceNumWrapPilot">
           <span id="priceValPilot" style="color: #1d4ed8; font-size: 32px; font-weight: 900; letter-spacing: -0.5px;">60만 원</span>
         </div>
-        <div class="price-discount-tag" id="priceDiscountPilot" style="display:none;">🔥 제안 수신 특별 할인: 10만 원 즉시 할인</div>
+        <div class="price-discount-tag" id="priceDiscountPilot">💎 1:1 현장 코칭 & 모션그래픽 완제 일체</div>
         <div class="price-desc">정기 계약 전에 딱 1편만 먼저 제작해보고 영상 퀄리티와 프로세스를 직접 검증하는 파일럿 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 단독 1편 파일럿 제작</li>
@@ -1934,7 +1948,7 @@
         <div class="price-num" id="priceNumWrapFull">
           <span id="priceValFull" style="color: #1d4ed8; font-size: 32px; font-weight: 900; letter-spacing: -0.5px;">월 400만 원</span>
         </div>
-        <div class="price-discount-tag" id="priceDiscountFull">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 380만 원!</div>
+        <div class="price-discount-tag" id="priceDiscountFull">💎 총괄 PD 촬영 현장 전담 디렉팅 프리미엄</div>
         <div class="price-desc">카메라 세팅부터 장비 조작까지 총괄 PD가 매회 현장에 직접 동행하여 전담하는 프리미엄 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회 완제품)</li>
