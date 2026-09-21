@@ -1944,6 +1944,13 @@
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
       link.download = `스튜디오모멘텀_타깃_방문추적_${new Date().toISOString().slice(0,10)}.csv`;
+      link.click();
+    }
+
+    // 페이지 진입 시 인증 상태 확인
+    checkAuth();
+  </script>
+
   <!-- 시스템 알림 센터 모달 -->
   <div id="notifModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.65); backdrop-filter:blur(6px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
     <div style="background:#1e293b; border:1px solid #334155; border-radius:16px; width:100%; max-width:680px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
