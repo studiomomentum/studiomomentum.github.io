@@ -1880,7 +1880,7 @@
       <!-- 플랜 1 -->
       <div class="price-card">
         <div class="price-tier-name">단독 1편 파일럿 체험</div>
-        <div class="price-num" id="priceNumWrapPilot"><span id="priceValPilot">60만 원</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">/ 1회</span></div>
+        <div class="price-num" id="priceNumWrapPilot"><span id="priceValPilot">60만 원</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">/ 1회 완제</span></div>
         <div class="price-discount-tag" id="priceDiscountPilot" style="display:none;">🔥 제안 수신 특별 할인: 10만 원 즉시 할인</div>
         <div class="price-desc">정기 계약 전에 딱 1편만 먼저 제작해보고 영상 퀄리티와 프로세스를 직접 검증하는 파일럿 플랜입니다.</div>
         <ul class="price-features">
@@ -1905,7 +1905,7 @@
       <div class="price-card featured">
         <div class="featured-label" id="priceFeaturedLabel">가장 인기 있는 플랜 | 20만 원 전액 차감</div>
         <div class="price-tier-name">정기 셀프 촬영 플랜</div>
-        <div class="price-num" id="priceNumWrapSelf"><span id="priceValSelf">건당 80만 원</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 320만 원)</span></div>
+        <div class="price-num" id="priceNumWrapSelf"><span id="priceValSelf">월 320만 원</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 4편 / 편당 80만)</span></div>
         <div class="price-discount-tag" id="priceDiscountSelf">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 300만 원!</div>
         <div class="price-desc">세팅된 프롬프터대로 대표님이 매주 30분 읽고 영상만 넘겨주시는 최적의 효율 모델입니다.</div>
         <ul class="price-features">
@@ -1927,7 +1927,7 @@
       <!-- 플랜 3 -->
       <div class="price-card">
         <div class="price-tier-name">현장 감독 풀케어 플랜</div>
-        <div class="price-num" id="priceNumWrapFull"><span id="priceValFull">건당 100만 원</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 400만 원)</span></div>
+        <div class="price-num" id="priceNumWrapFull"><span id="priceValFull">월 400만 원</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 4편 / 편당 100만)</span></div>
         <div class="price-discount-tag" id="priceDiscountFull">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 380만 원!</div>
         <div class="price-desc">카메라 세팅부터 장비 조작까지 총괄 PD가 매회 현장에 직접 동행하여 전담하는 프리미엄 플랜입니다.</div>
         <ul class="price-features">
@@ -2437,48 +2437,69 @@ if (channelType === 'OUTBOUND') {
   const trCtaText = document.getElementById('tripwireCtaText');
   if (trCtaText) trCtaText.innerHTML = '💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십(월 4편)’</strong>으로 진행하시면, <strong>리포트 비용 20만 원은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.';
 
-  // 플랜 1: 파일럿 (정상가 60만 취소선 ➔ 50만 할인가 티내기)
+  // 플랜 1: 파일럿 (정상가 60만 취소선 ➔ 17% 할인 50만 원)
   const pNumWrapPilot = document.getElementById('priceNumWrapPilot');
   if (pNumWrapPilot) {
-    pNumWrapPilot.innerHTML = '<span style="text-decoration: line-through; font-size: 18px; color: #94a3b8; font-weight: normal; margin-right: 8px;">60만 원</span><span id="priceValPilot" style="color: #1d4ed8; font-size: 32px; font-weight: 900;">50만 원</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">/ 1회</span>';
+    pNumWrapPilot.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span style="background: #ef4444; color: #fff; font-size: 12px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: -0.3px;">17% OFF</span>
+        <span style="text-decoration: line-through; font-size: 16px; color: #94a3b8; font-weight: normal;">60만 원</span>
+        <span id="priceValPilot" style="color: #1d4ed8; font-size: 32px; font-weight: 900;">50만 원</span>
+        <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">/ 1회 완제</span>
+      </div>
+    `;
   }
   const pDiscPilot = document.getElementById('priceDiscountPilot');
   if (pDiscPilot) {
     pDiscPilot.style.display = 'inline-block';
-    pDiscPilot.textContent = '🔥 제안서 수신 대표님 특별 제휴: 10만 원 즉시 할인';
+    pDiscPilot.textContent = '🔥 [VIP 단독] 10만 원 즉시 지원 (정상가 60만 ➔ 50만 원)';
   }
   const pPilotPayBtn = document.getElementById('pricePayBtnPilot');
-  if (pPilotPayBtn) pPilotPayBtn.textContent = '💳 파일럿 제휴 할인가 결제 (50만)';
+  if (pPilotPayBtn) pPilotPayBtn.textContent = '💳 17% 할인가 바로 결제 (50만)';
   const pPilotBtn = document.getElementById('priceBtnPilot');
   if (pPilotBtn) pPilotBtn.textContent = '단독 1편 파일럿 상담';
 
-  // 플랜 2: 정기 셀프 (정상가 월 320만 취소선 ➔ 건당 70만 / 월 280만 할인가 티내기)
+  // 플랜 2: 정기 셀프 (정상가 월 320만 취소선 ➔ 13% 할인 월 280만 원 / 매월 40만 할인)
   const pFeaturedLabel = document.getElementById('priceFeaturedLabel');
-  if (pFeaturedLabel) pFeaturedLabel.textContent = '가장 인기 있는 플랜 | 제휴 편당 10만 할인';
+  if (pFeaturedLabel) pFeaturedLabel.textContent = '가장 인기 있는 플랜 | VIP 월 40만 원 할인';
   const pNumWrapSelf = document.getElementById('priceNumWrapSelf');
   if (pNumWrapSelf) {
-    pNumWrapSelf.innerHTML = '<span style="text-decoration: line-through; font-size: 15px; color: #94a3b8; font-weight: normal; margin-right: 6px;">건당 80만 (월 320만)</span><span id="priceValSelf" style="color: #1d4ed8; font-size: 28px; font-weight: 900;">건당 70만 원</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 280만 원)</span>';
+    pNumWrapSelf.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span style="background: #ef4444; color: #fff; font-size: 12px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: -0.3px;">13% OFF</span>
+        <span style="text-decoration: line-through; font-size: 16px; color: #94a3b8; font-weight: normal;">월 320만</span>
+        <span id="priceValSelf" style="color: #1d4ed8; font-size: 30px; font-weight: 900;">월 280만 원</span>
+        <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(편당 70만)</span>
+      </div>
+    `;
   }
   const pDiscSelf = document.getElementById('priceDiscountSelf');
-  if (pDiscSelf) pDiscSelf.textContent = '🔥 제안 수신 혜택: 편당 10만 / 월 40만 원 할인 (리포트 차감 시 첫 달 260만!)';
+  if (pDiscSelf) pDiscSelf.textContent = '🔥 [VIP 특가] 매월 40만 원 할인 (연 480만 절감) | 첫 달 260만!';
   const pGiftSelf = document.getElementById('priceGiftItemSelf');
   if (pGiftSelf) pGiftSelf.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 260만)</span>';
   const pSelfPayBtn = document.getElementById('pricePayBtnSelf');
-  if (pSelfPayBtn) pSelfPayBtn.textContent = '💳 첫 달 제휴가 결제 (280만)';
+  if (pSelfPayBtn) pSelfPayBtn.textContent = '💳 매월 40만 할인 정기 결제 (월 280만)';
   const pSelfBtn = document.getElementById('priceBtnSelf');
   if (pSelfBtn) pSelfBtn.textContent = '정기 셀프 플랜 상담 (월 280만)';
 
-  // 플랜 3: 현장 풀케어 (정상가 월 400만 취소선 ➔ 건당 90만 / 월 360만 할인가 티내기)
+  // 플랜 3: 현장 풀케어 (정상가 월 400만 취소선 ➔ 10% 할인 월 360만 원 / 매월 40만 할인)
   const pNumWrapFull = document.getElementById('priceNumWrapFull');
   if (pNumWrapFull) {
-    pNumWrapFull.innerHTML = '<span style="text-decoration: line-through; font-size: 15px; color: #94a3b8; font-weight: normal; margin-right: 6px;">건당 100만 (월 400만)</span><span id="priceValFull" style="color: #1d4ed8; font-size: 28px; font-weight: 900;">건당 90만 원</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(월 360만 원)</span>';
+    pNumWrapFull.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span style="background: #ef4444; color: #fff; font-size: 12px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: -0.3px;">10% OFF</span>
+        <span style="text-decoration: line-through; font-size: 16px; color: #94a3b8; font-weight: normal;">월 400만</span>
+        <span id="priceValFull" style="color: #1d4ed8; font-size: 30px; font-weight: 900;">월 360만 원</span>
+        <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(편당 90만)</span>
+      </div>
+    `;
   }
   const pDiscFull = document.getElementById('priceDiscountFull');
-  if (pDiscFull) pDiscFull.textContent = '🔥 제안 수신 혜택: 편당 10만 / 월 40만 원 할인 (리포트 차감 시 첫 달 340만!)';
+  if (pDiscFull) pDiscFull.textContent = '🔥 [VIP 특가] 매월 40만 원 할인 (연 480만 절감) | 첫 달 340만!';
   const pGiftFull = document.getElementById('priceGiftItemFull');
   if (pGiftFull) pGiftFull.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 340만)</span>';
   const pFullPayBtn = document.getElementById('pricePayBtnFull');
-  if (pFullPayBtn) pFullPayBtn.textContent = '💳 첫 달 제휴가 결제 (360만)';
+  if (pFullPayBtn) pFullPayBtn.textContent = '💳 매월 40만 할인 정기 결제 (월 360만)';
   const pFullBtn = document.getElementById('priceBtnFull');
   if (pFullBtn) pFullBtn.textContent = '현장 풀케어 상담 (월 360만)';
 
@@ -2490,7 +2511,7 @@ if (channelType === 'OUTBOUND') {
   if (mStickyInfo) {
     mStickyInfo.innerHTML = `
       <span style="color: #64748b; font-size: 11px;">전략 리포트 20만 (월 계약 시 100% 전액 차감)</span><br>
-      <strong>정기 셀프 월 280만</strong> <span style="font-size: 11px; color: #64748b;">(단독 1편 50만)</span>
+      <strong>정기 셀프 월 280만 <span style="color:#ef4444; font-size:12px; font-weight:800;">(13% OFF)</span></strong>
     `;
   }
 }
