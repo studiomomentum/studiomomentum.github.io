@@ -1790,6 +1790,20 @@
 
 <!-- 실시간 ROI & 비용 절감 계산기 로직 -->
 <script>
+var _roiTimer = null;
+function triggerRoiTelemetry(salary, freq, saved) {
+  clearTimeout(_roiTimer);
+  _roiTimer = setTimeout(function() {
+    if (window._smSendEvent) {
+      window._smSendEvent('roi_calc_change', {
+        salary: salary,
+        frequency: freq,
+        saved: saved
+      });
+    }
+  }, 1200);
+}
+
 function updateRoiCalc() {
   var salaryEl = document.getElementById('calcPdSalary');
   var freqEl = document.getElementById('calcFrequency');
@@ -1831,6 +1845,8 @@ function updateRoiCalc() {
   if (momentumEl) momentumEl.textContent = momentumTotal.toLocaleString() + '만 원';
   if (savedAmountEl) savedAmountEl.textContent = '연간 ' + saved.toLocaleString() + '만 원 절감';
   if (savedHoursEl) savedHoursEl.textContent = '대표님 원고 작성 시간: 연 ' + savedHours + '시간 절약!';
+
+  triggerRoiTelemetry(salary, freq, saved);
 }
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', updateRoiCalc);
@@ -2062,6 +2078,7 @@ if (document.readyState === 'loading') {
       } catch(e) {}
     }
   }
+  window._smSendEvent = sendEvent;
 
   // 1. 최초 방문 이벤트 발송
   sendEvent('visit', { ua: ua.slice(0, 120), channel: channelName, pricing: pricingTier });

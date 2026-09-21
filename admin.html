@@ -375,6 +375,84 @@
       color: #f87171 !important;
     }
 
+    /* pSEO & Inbound 실시간 분석 보드 */
+    .pseo-analytics-panel {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+    .pseo-board-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.1fr;
+      gap: 20px;
+      margin-top: 14px;
+    }
+    @media (max-width: 1024px) {
+      .pseo-board-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .pseo-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .pseo-card-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #93c5fd;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .pseo-ranking-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 280px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .pseo-ranking-list::-webkit-scrollbar { width: 4px; }
+    .pseo-ranking-list::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    .pseo-item {
+      cursor: pointer;
+      padding: 6px 10px;
+      background: rgba(30, 41, 59, 0.5);
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .pseo-item:hover {
+      background: rgba(56, 189, 248, 0.15);
+      transform: translateX(2px);
+    }
+    .pseo-item-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .pseo-item-name { color: #f1f5f9; }
+    .pseo-item-val { color: #38bdf8; font-weight: 700; }
+    .pseo-bar-track {
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .pseo-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+
     /* 2열 메인 패널 그리드: 실시간 피드 & 타깃 현황 */
     .dashboard-body {
       display: grid;
@@ -1194,6 +1272,52 @@
       </div>
     </div>
 
+    <!-- pSEO & Inbound 실시간 지역/업종 분석 보드 -->
+    <div class="pseo-analytics-panel" id="pseoAnalyticsPanel">
+      <div class="panel-header" style="cursor: pointer; margin-bottom: 0;" onclick="togglePseoBoard()">
+        <div class="panel-title">
+          <span>🗺️ pSEO 60개 권역·업종 &amp; AI 유입(GEO) 실시간 분석 보드</span>
+          <span id="pseoTotalBadge" style="font-size: 11px; background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 10px; font-weight: 800;">pSEO: 0건 | GEO: 0건</span>
+        </div>
+        <span style="font-size: 12px; color: #94a3b8;" id="pseoToggleIcon">▼ 접기/펼치기</span>
+      </div>
+      
+      <div id="pseoBoardContent" class="pseo-board-grid">
+        <!-- 좌측: 12대 핵심 권역별 유입 랭킹 -->
+        <div class="pseo-card">
+          <div class="pseo-card-title">
+            <span>📍 12대 핵심 권역별 유입 랭킹</span>
+            <span style="font-size:11px; color:#64748b; font-weight:normal;">클릭 시 필터</span>
+          </div>
+          <div class="pseo-ranking-list" id="pseoRegionList">
+            <!-- 동적 렌더링 -->
+          </div>
+        </div>
+
+        <!-- 중앙: 5대 고단가 업종별 유입 점유율 -->
+        <div class="pseo-card">
+          <div class="pseo-card-title">
+            <span>💼 5대 고단가 업종별 분포</span>
+            <span style="font-size:11px; color:#64748b; font-weight:normal;">클릭 시 필터</span>
+          </div>
+          <div class="pseo-ranking-list" id="pseoIndustryList">
+            <!-- 동적 렌더링 -->
+          </div>
+        </div>
+
+        <!-- 우측: ROI 계산기 & AI 유입 (GEO) 실시간 시뮬레이션 지표 -->
+        <div class="pseo-card">
+          <div class="pseo-card-title">
+            <span>🤖 AI 추천 &amp; ROI 계산기 시뮬레이션</span>
+            <span style="font-size:11px; color:#64748b; font-weight:normal;">실시간 집계</span>
+          </div>
+          <div id="pseoGeoStats" class="pseo-stat-box">
+            <!-- 동적 렌더링 -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 2열 메인 바디 -->
     <div class="dashboard-body">
       <!-- 좌측: 실시간 피드 (Live Feed) -->
@@ -1592,7 +1716,162 @@
       document.getElementById("kpiHotCount").textContent = hotTokens.size;
       document.getElementById("kpiScrollCount").textContent = scroll90Tokens.size;
 
+      updatePseoBoard();
       updateFilterBar();
+    }
+
+    /* ===================================================
+       pSEO & GEO 실시간 분석 보드 제어 로직
+       =================================================== */
+    const PSEO_REGIONS = ["동탄·화성", "판교·분당", "강남·서초", "수원·광교", "용인·수지", "평택·고덕", "송파·잠실", "안양·평촌", "여의도·영등포", "가산·구로", "일산·고양", "인천·송도"];
+    const PSEO_INDUSTRIES = ["병원·의원·피부과", "법무법인·변호사", "세무회계·세무사", "부동산·분양·중개", "프리미엄 입시학원"];
+
+    function togglePseoBoard() {
+      const content = document.getElementById("pseoBoardContent");
+      const icon = document.getElementById("pseoToggleIcon");
+      if (!content) return;
+      if (content.style.display === "none") {
+        content.style.display = "grid";
+        if (icon) icon.textContent = "▼ 접기/펼치기";
+      } else {
+        content.style.display = "none";
+        if (icon) icon.textContent = "▶ 펼치기";
+      }
+    }
+
+    function filterByPseoRegion(reg) {
+      setMainTab('INBOUND', document.getElementById('tabBtnInbound'));
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) {
+        searchInput.value = reg.split('·')[0];
+        renderTable();
+      }
+    }
+
+    function filterByPseoIndustry(ind) {
+      setMainTab('INBOUND', document.getElementById('tabBtnInbound'));
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) {
+        searchInput.value = ind.split('·')[0];
+        renderTable();
+      }
+    }
+
+    function updatePseoBoard() {
+      const regionCounts = {};
+      const indCounts = {};
+      PSEO_REGIONS.forEach(r => regionCounts[r] = 0);
+      PSEO_INDUSTRIES.forEach(i => indCounts[i] = 0);
+
+      let totalPseo = 0;
+      let totalGeo = 0;
+      let roiCalculations = 0;
+      let roiSalarySum = 0;
+      const aiSources = { 'ChatGPT': 0, 'Perplexity': 0, 'Claude': 0, 'Gemini': 0, 'Others': 0 };
+
+      liveEvents.forEach(ev => {
+        // 1. PSEO 감지
+        if (ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'))) {
+          totalPseo++;
+          const r = ev.region || (ev.channel_name ? ev.channel_name.split(' ')[0] : '');
+          const ind = ev.industry || (ev.channel_name ? ev.channel_name.split(' ')[1] : '');
+          
+          PSEO_REGIONS.forEach(reg => {
+            if (reg.includes(r) || (r && r.includes(reg.split('·')[0]))) regionCounts[reg] = (regionCounts[reg] || 0) + 1;
+          });
+          PSEO_INDUSTRIES.forEach(industry => {
+            if (industry.includes(ind) || (ind && ind.includes(industry.split('·')[0]))) indCounts[industry] = (indCounts[industry] || 0) + 1;
+          });
+        }
+
+        // 2. GEO (AI) 감지
+        if (ev.channel_type === 'GEO' || (ev.channel_name && (ev.channel_name.includes('ChatGPT') || ev.channel_name.includes('Perplexity') || ev.channel_name.includes('Claude') || ev.channel_name.includes('Gemini')))) {
+          totalGeo++;
+          const name = ev.channel_name || '';
+          if (name.includes('ChatGPT') || name.includes('OpenAI')) aiSources['ChatGPT']++;
+          else if (name.includes('Perplexity')) aiSources['Perplexity']++;
+          else if (name.includes('Claude')) aiSources['Claude']++;
+          else if (name.includes('Gemini')) aiSources['Gemini']++;
+          else aiSources['Others']++;
+        }
+
+        // 3. ROI 계산기 조작 감지
+        if (ev.event === 'roi_calc_change' && ev.meta && ev.meta.salary) {
+          roiCalculations++;
+          roiSalarySum += parseInt(ev.meta.salary, 10) || 350;
+        }
+      });
+
+      const totalBadgeEl = document.getElementById("pseoTotalBadge");
+      if (totalBadgeEl) totalBadgeEl.textContent = `pSEO: ${totalPseo}건 | GEO: ${totalGeo}건`;
+
+      // 렌더링: 권역별 랭킹
+      const regEl = document.getElementById("pseoRegionList");
+      if (regEl) {
+        const sortedRegs = Object.entries(regionCounts).sort((a, b) => b[1] - a[1]);
+        const maxVal = Math.max(1, sortedRegs[0][1]);
+        regEl.innerHTML = sortedRegs.map(([reg, count], idx) => {
+          const pct = Math.round((count / maxVal) * 100);
+          const isTop = idx < 3 && count > 0;
+          return `
+            <div class="pseo-item" onclick="filterByPseoRegion('${reg}')" title="클릭 시 '${reg}' 유입 필터링">
+              <div class="pseo-item-header">
+                <span class="pseo-item-name">${idx + 1}. ${reg} ${isTop ? '🔥' : ''}</span>
+                <span class="pseo-item-val">${count}건</span>
+              </div>
+              <div class="pseo-bar-track">
+                <div class="pseo-bar-fill" style="width: ${Math.max(5, pct)}%; background: ${idx === 0 ? '#38bdf8' : (idx === 1 ? '#60a5fa' : '#818cf8')};"></div>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      // 렌더링: 업종별 분포
+      const indEl = document.getElementById("pseoIndustryList");
+      if (indEl) {
+        const sortedInds = Object.entries(indCounts).sort((a, b) => b[1] - a[1]);
+        const maxVal = Math.max(1, sortedInds[0][1]);
+        indEl.innerHTML = sortedInds.map(([ind, count], idx) => {
+          const pct = Math.round((count / maxVal) * 100);
+          return `
+            <div class="pseo-item" onclick="filterByPseoIndustry('${ind}')" title="클릭 시 '${ind}' 유입 필터링">
+              <div class="pseo-item-header">
+                <span class="pseo-item-name">${ind}</span>
+                <span class="pseo-item-val" style="color: #34d399;">${count}건</span>
+              </div>
+              <div class="pseo-bar-track">
+                <div class="pseo-bar-fill" style="width: ${Math.max(5, pct)}%; background: #10b981;"></div>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      // 렌더링: AI 유입 & ROI 계산기 통계
+      const geoEl = document.getElementById("pseoGeoStats");
+      if (geoEl) {
+        const avgSalary = roiCalculations > 0 ? Math.round(roiSalarySum / roiCalculations) : 350;
+        geoEl.innerHTML = `
+          <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; border: 1px solid #334155; margin-bottom: 10px;">
+            <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px;">🤖 AI 검색 추천(GEO) 실시간 유입</div>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+              <span class="badge" style="background:#0284c7; color:white; font-size:11px;">ChatGPT: ${aiSources['ChatGPT']}</span>
+              <span class="badge" style="background:#8b5cf6; color:white; font-size:11px;">Perplexity: ${aiSources['Perplexity']}</span>
+              <span class="badge" style="background:#d97706; color:white; font-size:11px;">Claude: ${aiSources['Claude']}</span>
+              <span class="badge" style="background:#059669; color:white; font-size:11px;">Gemini: ${aiSources['Gemini']}</span>
+            </div>
+          </div>
+          <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; border: 1px solid #334155;">
+            <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 4px;">📊 ROI 계산기 실시간 시뮬레이션</div>
+            <div style="font-size: 12.5px; color: #f8fafc; line-height: 1.6;">
+              • 계산기 시뮬레이션: <strong style="color:#38bdf8;">${roiCalculations}회</strong><br>
+              • 관심 사내 PD 평균 월급: <strong style="color:#fbbf24;">${avgSalary}만 원</strong><br>
+              • 대표님 연간 기대 절감액: <strong style="color:#34d399;">연 2,970만 원+</strong>
+            </div>
+          </div>
+        `;
+      }
     }
 
     function isJobPostingTarget(target) {
@@ -1606,23 +1885,28 @@
       const inboundsMap = {};
       liveEvents.forEach(ev => {
         const isTarget = ev.ref && targetsMap[ev.ref];
-        const isInbound = (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && ev.ref !== 'direct');
+        const isPseo = ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'));
+        const isInbound = isPseo || (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && ev.ref !== 'direct');
         if (!isInbound) return;
 
         const key = ev.ref || 'inbound_unknown';
         if (!inboundsMap[key]) {
-          let chType = ev.channel_type || 'DIRECT';
+          let chType = isPseo ? 'PSEO' : (ev.channel_type || 'DIRECT');
           let chName = ev.channel_name || '';
           if (!chName) {
-            const r = (ev.ref_url || '').toLowerCase();
-            if (r.includes('chatgpt') || r.includes('openai')) { chType = 'GEO'; chName = 'ChatGPT (AI 추천)'; }
-            else if (r.includes('perplexity')) { chType = 'GEO'; chName = 'Perplexity AI (AI 검색)'; }
-            else if (r.includes('claude')) { chType = 'GEO'; chName = 'Claude AI (AI 추천)'; }
-            else if (r.includes('gemini')) { chType = 'GEO'; chName = 'Google Gemini (AI 추천)'; }
-            else if (r.includes('naver')) { chType = 'SEO'; chName = '네이버 검색 (Naver SEO)'; }
-            else if (r.includes('google')) { chType = 'SEO'; chName = '구글 검색 (Google SEO)'; }
-            else if (r.includes('daum') || r.includes('kakao')) { chType = 'SEO'; chName = '다음/카카오 검색'; }
-            else { chType = 'DIRECT'; chName = '자연 유입 / 직접 접속'; }
+            if (isPseo) {
+              chName = `${ev.region || ''} ${ev.industry || ''} (pSEO)`;
+            } else {
+              const r = (ev.ref_url || '').toLowerCase();
+              if (r.includes('chatgpt') || r.includes('openai')) { chType = 'GEO'; chName = 'ChatGPT (AI 추천)'; }
+              else if (r.includes('perplexity')) { chType = 'GEO'; chName = 'Perplexity AI (AI 검색)'; }
+              else if (r.includes('claude')) { chType = 'GEO'; chName = 'Claude AI (AI 추천)'; }
+              else if (r.includes('gemini')) { chType = 'GEO'; chName = 'Google Gemini (AI 추천)'; }
+              else if (r.includes('naver')) { chType = 'SEO'; chName = '네이버 검색 (Naver SEO)'; }
+              else if (r.includes('google')) { chType = 'SEO'; chName = '구글 검색 (Google SEO)'; }
+              else if (r.includes('daum') || r.includes('kakao')) { chType = 'SEO'; chName = '다음/카카오 검색'; }
+              else { chType = 'DIRECT'; chName = '자연 유입 / 직접 접속'; }
+            }
           }
 
           inboundsMap[key] = {
@@ -1715,12 +1999,14 @@
       } else if (mainTab === "INBOUND") {
         const inbounds = getInboundList();
         const cntAll = inbounds.length;
+        const cntPseo = inbounds.filter(i => i.channel_type === 'PSEO').length;
         const cntGeo = inbounds.filter(i => i.channel_type === 'GEO').length;
         const cntSeo = inbounds.filter(i => i.channel_type === 'SEO').length;
         const cntHot = inbounds.filter(i => i.hot).length;
 
         filterBox.innerHTML = `
           <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 인바운드 (${cntAll})</button>
+          <button class="filter-btn ${currentFilter==='PSEO'?'active':''}" onclick="setFilter('PSEO', this)">📍 pSEO (지역/업종) (${cntPseo})</button>
           <button class="filter-btn ${currentFilter==='GEO'?'active':''}" onclick="setFilter('GEO', this)">🤖 GEO (AI 추천) (${cntGeo})</button>
           <button class="filter-btn ${currentFilter==='SEO'?'active':''}" onclick="setFilter('SEO', this)">🔍 SEO (포털 검색) (${cntSeo})</button>
           <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
@@ -1754,11 +2040,15 @@
         const target = targetsMap[ev.ref];
         const isJob = isJobPostingTarget(target);
         const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-        const isInbound = !target && (ev.ref && (ev.ref.startsWith('inbound_') || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.ref === 'direct'));
+        const isPseo = ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'));
+        const isInbound = isPseo || (!target && (ev.ref && (ev.ref.startsWith('inbound_') || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.ref === 'direct')));
 
         let name = '';
         if (target) {
           name = `${target.company} (${target.rep}) ${jobBadge}`;
+        } else if (isPseo) {
+          const chName = ev.channel_name || `${ev.region || ''} ${ev.industry || ''} (pSEO)`;
+          name = `📍 [pSEO 유입] ${chName} <span class="badge badge-premium">💎 맞춤 견적 대상</span>`;
         } else if (isInbound) {
           const chName = ev.channel_name || (ev.ref_url && ev.ref_url.includes('naver') ? '네이버 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('google') ? '구글 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('chatgpt') ? 'ChatGPT (GEO)' : '자연 유입 고객')));
           name = `🌐 [인바운드] ${chName} <span class="badge badge-premium">💎 가격 비공개 맞춤 견적</span>`;
@@ -1778,6 +2068,14 @@
           itemClass = "open-item";
           tagText = "📨 메일 열람";
           desc = `이메일을 열람하셨습니다 (웹사이트 미접속 상태)`;
+        } else if (ev.event === "roi_calc_change") {
+          badgeClass = "scroll";
+          itemClass = "scroll-item";
+          tagText = "📊 ROI 계산기 조작";
+          const sal = ev.meta && ev.meta.salary ? ev.meta.salary + '만 원' : '350만 원';
+          const frq = ev.meta && ev.meta.frequency ? '월 ' + ev.meta.frequency + '편' : '월 4편';
+          const sav = ev.meta && ev.meta.saved ? ' ➔ 연 ' + ev.meta.saved.toLocaleString() + '만 원 절감 확인' : '';
+          desc = `사내PD 월급: ${sal} / 발행: ${frq}${sav}`;
         } else if (ev.event === "kakao_click") {
           badgeClass = "hot";
           itemClass = "hot-item";

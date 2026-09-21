@@ -1,6 +1,6 @@
 import os
+import json
 
-# 12대 핵심 지역
 REGIONS = {
     "dongtan": {
         "name": "동탄·화성",
@@ -76,7 +76,6 @@ REGIONS = {
     }
 }
 
-# 5대 고단가 전문직 업종
 INDUSTRIES = {
     "hospital": {
         "name": "병원·의원·피부과",
@@ -241,6 +240,68 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="nav-link"><a href="https://studiomomentum.github.io/">← 스튜디오 모멘텀 메인 홈 & 실시간 비용 계산기 보기</a></div>
     </div>
   </div>
+
+  <!-- pSEO 스마트 텔레메트리 트래커 -->
+  <script>
+  (function() {{
+    const TRACK_TOPIC = "sm_events_2026_x89a";
+    const refToken = "pseo_{region_key}_{ind_key}";
+    const channelName = "{region_name} {ind_name} (pSEO)";
+    const regionName = "{region_name}";
+    const indName = "{ind_name}";
+    const startTime = Date.now();
+
+    function getDevice() {{
+      const ua = navigator.userAgent;
+      if (/tablet|ipad|playbook|silk/i.test(ua)) return 'Tablet';
+      if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i.test(ua)) return 'Mobile';
+      return 'Desktop';
+    }}
+
+    function sendEvent(eventType, extraMeta) {{
+      const payload = {{
+        ref: refToken,
+        channel_type: 'PSEO',
+        channel_name: channelName,
+        region: regionName,
+        industry: indName,
+        event: eventType,
+        timestamp: Date.now(),
+        device: getDevice(),
+        screen: window.innerWidth + 'x' + window.innerHeight,
+        meta: extraMeta || {{}}
+      }};
+      try {{
+        fetch('https://ntfy.sh/' + TRACK_TOPIC, {{
+          method: 'POST',
+          headers: {{ 'Title': 'PSEO:' + eventType, 'Priority': eventType === 'kakao_click' ? '5' : '3' }},
+          body: JSON.stringify(payload),
+          keepalive: true
+        }}).catch(function(){{}});
+      }} catch(e) {{}}
+    }}
+
+    sendEvent('view', {{ page: window.location.pathname }});
+
+    [10, 30, 60].forEach(function(sec) {{
+      setTimeout(function() {{ sendEvent('duration_' + sec + 's', {{ duration: sec }}); }}, sec * 1000);
+    }});
+
+    let scroll50 = false, scroll90 = false;
+    window.addEventListener('scroll', function() {{
+      const scrollPct = Math.round(((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight) * 100);
+      if (scrollPct >= 50 && !scroll50) {{ scroll50 = true; sendEvent('scroll_50'); }}
+      if (scrollPct >= 90 && !scroll90) {{ scroll90 = true; sendEvent('scroll_90'); }}
+    }}, {{ passive: true }});
+
+    document.addEventListener('click', function(e) {{
+      const link = e.target.closest('a');
+      if (link && link.href && link.href.includes('open.kakao.com')) {{
+        sendEvent('kakao_click', {{ elapsed: Math.round((Date.now() - startTime) / 1000) }});
+      }}
+    }}, {{ capture: true }});
+  }})();
+  </script>
 </body>
 </html>
 """
@@ -252,15 +313,14 @@ all_urls = [
 
 generated_count = 0
 
-import json
-
 for r_key, r_info in REGIONS.items():
     for i_key, i_info in INDUSTRIES.items():
         filename = f"{r_key}-{i_key}.html"
         file_path = os.path.join(OUTPUT_DIR, filename)
         
-        # Build template vars
         content = TEMPLATE.format(
+            region_key=r_key,
+            ind_key=i_key,
             region_name=r_info["name"],
             region_sub=r_info["sub"],
             region_tag=r_info["tag"],
@@ -289,25 +349,4 @@ for r_key, r_info in REGIONS.items():
         all_urls.append(f"https://studiomomentum.github.io/{filename}")
         generated_count += 1
 
-print(f"Generated {generated_count} pSEO landing pages successfully.")
-
-# Generate Comprehensive sitemap.xml
-sitemap_content = ['<?xml version="1.0" encoding="UTF-8"?>',
-'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-
-for url in all_urls:
-    priority = "1.0" if url == "https://studiomomentum.github.io/" else ("0.9" if "research" in url else "0.8")
-    sitemap_content.append(f"""  <url>
-    <loc>{url}</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>{priority}</priority>
-  </url>""")
-
-sitemap_content.append('</urlset>')
-
-sitemap_path = os.path.join(OUTPUT_DIR, "sitemap.xml")
-with open(sitemap_path, "w", encoding="utf-8") as f:
-    f.write("\n".join(sitemap_content))
-
-print("Updated sitemap.xml with all URLs.")
+print(f"Generated {generated_count} pSEO landing pages successfully with smart telemetry.")

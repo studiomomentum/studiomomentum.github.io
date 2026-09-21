@@ -82,5 +82,67 @@
       <div class="nav-link"><a href="https://studiomomentum.github.io/">← 스튜디오 모멘텀 메인 홈 & 실시간 비용 계산기 보기</a></div>
     </div>
   </div>
+
+  <!-- pSEO 스마트 텔레메트리 트래커 -->
+  <script>
+  (function() {
+    const TRACK_TOPIC = "sm_events_2026_x89a";
+    const refToken = "pseo_pangyo_tax";
+    const channelName = "판교·분당 세무회계·세무사 (pSEO)";
+    const regionName = "판교·분당";
+    const indName = "세무회계·세무사";
+    const startTime = Date.now();
+
+    function getDevice() {
+      const ua = navigator.userAgent;
+      if (/tablet|ipad|playbook|silk/i.test(ua)) return 'Tablet';
+      if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i.test(ua)) return 'Mobile';
+      return 'Desktop';
+    }
+
+    function sendEvent(eventType, extraMeta) {
+      const payload = {
+        ref: refToken,
+        channel_type: 'PSEO',
+        channel_name: channelName,
+        region: regionName,
+        industry: indName,
+        event: eventType,
+        timestamp: Date.now(),
+        device: getDevice(),
+        screen: window.innerWidth + 'x' + window.innerHeight,
+        meta: extraMeta || {}
+      };
+      try {
+        fetch('https://ntfy.sh/' + TRACK_TOPIC, {
+          method: 'POST',
+          headers: { 'Title': 'PSEO:' + eventType, 'Priority': eventType === 'kakao_click' ? '5' : '3' },
+          body: JSON.stringify(payload),
+          keepalive: true
+        }).catch(function(){});
+      } catch(e) {}
+    }
+
+    sendEvent('view', { page: window.location.pathname });
+
+    [10, 30, 60].forEach(function(sec) {
+      setTimeout(function() { sendEvent('duration_' + sec + 's', { duration: sec }); }, sec * 1000);
+    });
+
+    let scroll50 = false, scroll90 = false;
+    window.addEventListener('scroll', function() {
+      const scrollPct = Math.round(((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight) * 100);
+      if (scrollPct >= 50 && !scroll50) { scroll50 = true; sendEvent('scroll_50'); }
+      if (scrollPct >= 90 && !scroll90) { scroll90 = true; sendEvent('scroll_90'); }
+    }, { passive: true });
+
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (link && link.href && link.href.includes('open.kakao.com')) {
+        sendEvent('kakao_click', { elapsed: Math.round((Date.now() - startTime) / 1000) });
+      }
+    }, { capture: true });
+  })();
+  </script>
 </body>
 </html>
