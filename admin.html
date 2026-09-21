@@ -1074,6 +1074,9 @@
       </div>
       <div class="header-actions">
         <span id="lastUpdated" style="font-size: 12.5px; color: var(--text-muted);">방금 갱신됨</span>
+        <button class="btn-secondary" id="notifBellBtn" onclick="toggleNotifModal()" style="position: relative; display: inline-flex; align-items: center; gap: 6px;">
+          <span>🔔</span> 알림 로그 <span id="notifBadge" style="background: #ef4444; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 10px; display: none;">0</span>
+        </button>
         <button class="btn-secondary" onclick="fetchLiveTelemetry(true)">🔄 즉시 새로고침</button>
         <button class="btn-secondary" onclick="exportDataCSV()">📥 CSV 내보내기</button>
         <button class="btn-secondary btn-logout" onclick="handleLogout()">로그아웃</button>
@@ -1941,8 +1944,163 @@
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
       link.download = `스튜디오모멘텀_타깃_방문추적_${new Date().toISOString().slice(0,10)}.csv`;
-      link.click();
+  <!-- 시스템 알림 센터 모달 -->
+  <div id="notifModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.65); backdrop-filter:blur(6px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
+    <div style="background:#1e293b; border:1px solid #334155; border-radius:16px; width:100%; max-width:680px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); overflow:hidden;">
+      <!-- Header -->
+      <div style="padding:16px 20px; border-bottom:1px solid #334155; display:flex; justify-content:space-between; align-items:center; background:#0f172a;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:20px;">🔔</span>
+          <h2 style="font-size:17px; font-weight:800; color:#fff; letter-spacing:-0.3px;">시스템 알림 & 발송/수신 로그</h2>
+          <span id="notifModalCount" style="font-size:11px; background:#2563eb; color:white; padding:2px 7px; border-radius:10px; font-weight:700;">0</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #475569; color:#cbd5e1; font-size:12px; padding:5px 10px; border-radius:6px; cursor:pointer; font-weight:600;">✓ 모두 읽음</button>
+          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#94a3b8; font-size:24px; cursor:pointer; padding:0 4px; line-height:1;">&times;</button>
+        </div>
+      </div>
+      <!-- Filter Tabs -->
+      <div style="padding:10px 20px; background:#141e33; border-bottom:1px solid #334155; display:flex; gap:6px; overflow-x:auto;">
+        <button class="notif-filter-tab active" onclick="filterNotifs('ALL', this)" style="background:#2563eb; color:white; border:none; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">전체</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('send', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">📤 발송 완료</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('reply', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">📥 메일 수신</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('prospect', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">🔄 타깃 수급</button>
+        <button class="notif-filter-tab" onclick="filterNotifs('system', this)" style="background:transparent; color:#94a3b8; border:1px solid #334155; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">⚙️ 시스템</button>
+      </div>
+      <!-- List Area -->
+      <div id="notifListContainer" style="padding:16px 20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px;">
+        <div style="text-align:center; color:#64748b; padding:40px 0;">알림 로그를 불러오는 중입니다...</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let notificationsList = [];
+    let currentNotifFilter = 'ALL';
+    let readNotifIds = JSON.parse(localStorage.getItem('momentum_read_notifs') || '[]');
+
+    async function loadNotifications() {
+      try {
+        const res = await fetch('notifications.json?t=' + Date.now());
+        if (res.ok) {
+          notificationsList = await res.json();
+          renderNotifications();
+        }
+      } catch (e) {
+        console.error('Failed to load notifications.json', e);
+      }
     }
+
+    function renderNotifications() {
+      const container = document.getElementById('notifListContainer');
+      const badge = document.getElementById('notifBadge');
+      const modalCount = document.getElementById('notifModalCount');
+      if (!container) return;
+
+      const unreadCount = notificationsList.filter(n => !readNotifIds.includes(n.id) && !n.read).length;
+      if (badge) {
+        if (unreadCount > 0) {
+          badge.textContent = unreadCount > 99 ? '99+' : unreadCount;
+          badge.style.display = 'inline-block';
+        } else {
+          badge.style.display = 'none';
+        }
+      }
+      if (modalCount) {
+        modalCount.textContent = notificationsList.length + '건';
+      }
+
+      let filtered = notificationsList;
+      if (currentNotifFilter !== 'ALL') {
+        filtered = notificationsList.filter(n => n.category === currentNotifFilter);
+      }
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div style="text-align:center; color:#64748b; padding:40px 0; font-size:13.5px;">해당 카테고리의 알림 로그가 없습니다.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(n => {
+        const isRead = readNotifIds.includes(n.id) || n.read;
+        let badgeColor = '#3b82f6';
+        let badgeBg = 'rgba(59, 130, 246, 0.15)';
+        let badgeText = '발송';
+
+        if (n.category === 'reply') {
+          badgeColor = '#10b981';
+          badgeBg = 'rgba(16, 185, 129, 0.15)';
+          badgeText = '수신';
+        } else if (n.category === 'prospect') {
+          badgeColor = '#8b5cf6';
+          badgeBg = 'rgba(139, 92, 246, 0.15)';
+          badgeText = '수급';
+        } else if (n.category === 'system') {
+          badgeColor = '#f59e0b';
+          badgeBg = 'rgba(245, 158, 11, 0.15)';
+          badgeText = '시스템';
+        }
+
+        return `
+          <div style="background:#0f172a; border:1px solid ${isRead ? 'rgba(255,255,255,0.05)' : 'rgba(59, 130, 246, 0.4)'}; border-left:4px solid ${badgeColor}; border-radius:10px; padding:14px; display:flex; flex-direction:column; gap:6px; opacity:${isRead ? '0.75' : '1'}; transition:all 0.2s;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:6px;">
+                <span style="background:${badgeBg}; color:${badgeColor}; font-size:10.5px; font-weight:800; padding:2px 7px; border-radius:4px;">${badgeText}</span>
+                <strong style="font-size:13.5px; color:#fff;">${n.title}</strong>
+              </div>
+              <span style="font-size:11.5px; color:#64748b;">${n.timestamp || ''}</span>
+            </div>
+            <div style="font-size:13px; color:#cbd5e1; line-height:1.5;">${n.message}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleNotifModal() {
+      const modal = document.getElementById('notifModal');
+      if (modal) {
+        const isHidden = modal.style.display === 'none' || !modal.style.display;
+        modal.style.display = isHidden ? 'flex' : 'none';
+        if (isHidden) {
+          loadNotifications();
+        }
+      }
+    }
+
+    function closeNotifModal() {
+      const modal = document.getElementById('notifModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function filterNotifs(cat, btn) {
+      currentNotifFilter = cat;
+      document.querySelectorAll('.notif-filter-tab').forEach(el => {
+        el.style.background = 'transparent';
+        el.style.color = '#94a3b8';
+        el.style.border = '1px solid #334155';
+        el.style.fontWeight = '600';
+      });
+      if (btn) {
+        btn.style.background = '#2563eb';
+        btn.style.color = 'white';
+        btn.style.border = 'none';
+        btn.style.fontWeight = '700';
+      }
+      renderNotifications();
+    }
+
+    function markAllNotifsRead() {
+      notificationsList.forEach(n => {
+        if (!readNotifIds.includes(n.id)) {
+          readNotifIds.push(n.id);
+        }
+      });
+      localStorage.setItem('momentum_read_notifs', JSON.stringify(readNotifIds));
+      renderNotifications();
+    }
+
+    // 초기 알림 로드 및 주기적 갱신
+    loadNotifications();
+    setInterval(loadNotifications, 30000);
 
     // 페이지 진입 시 인증 상태 확인
     checkAuth();

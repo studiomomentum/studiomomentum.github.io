@@ -1,0 +1,138 @@
+[
+  {
+    "id": "system_silent_mode",
+    "category": "system",
+    "title": "🔕 [설정 변경] 데스크톱 팝업 알림 무음 처리 완료",
+    "message": "맥북 화면 팝업 알림이 해제되었으며, 모든 이벤트는 본 어드민 관제탑 알림 센터에만 기록됩니다.",
+    "timestamp": "2026-09-21 15:18:31",
+    "read": false
+  },
+  {
+    "id": "sent_52",
+    "category": "send",
+    "title": "📤 [발송완료] #52 강남 예한의원",
+    "message": "손철훈·정호롱 대표원장 (long312@hanmail.net) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 15:16:26",
+    "read": true
+  },
+  {
+    "id": "prospect_replenish_latest",
+    "category": "prospect",
+    "title": "✨ [타깃 수급] 11건 신규 타깃 자동 적재",
+    "message": "경기 남부권(평택, 용인, 화성, 수원) 알짜 전문업장 11곳이 발송 대기(READY) 큐에 추가되었습니다.",
+    "timestamp": "2026-09-21 15:08:00",
+    "read": false
+  },
+  {
+    "id": "sent_44",
+    "category": "send",
+    "title": "📤 [발송완료] #44 맑고고운의원 용인동백점",
+    "message": "전만경 대표원장 (selfishdocto@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 14:54:39",
+    "read": true
+  },
+  {
+    "id": "sent_43",
+    "category": "send",
+    "title": "📤 [발송완료] #43 루미나피부과의원",
+    "message": "김태윤 대표원장 (luminaskin@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 14:33:03",
+    "read": true
+  },
+  {
+    "id": "sent_51",
+    "category": "send",
+    "title": "📤 [발송완료] #51 강남노무법인",
+    "message": "정봉수 대표노무사 (bongsoo@k-labor.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 14:08:10",
+    "read": true
+  },
+  {
+    "id": "sent_42",
+    "category": "send",
+    "title": "📤 [발송완료] #42 잇츠미의원 동탄점",
+    "message": "이지환 대표원장 (content.itsme.clinic@gmail.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 13:43:24",
+    "read": true
+  },
+  {
+    "id": "sent_41",
+    "category": "send",
+    "title": "📤 [발송완료] #41 평택 금두꺼비 공인중개사사무소",
+    "message": "공인중개사 대표 (kwanyangman@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 13:21:50",
+    "read": true
+  },
+  {
+    "id": "sent_45",
+    "category": "send",
+    "title": "📤 [발송완료] #45 김상덕 세무회계",
+    "message": "김상덕 대표세무사 (duk3998@hanmail.net) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 12:56:55",
+    "read": true
+  },
+  {
+    "id": "sent_40",
+    "category": "send",
+    "title": "📤 [발송완료] #40 건국공인중개사사무소",
+    "message": "김광한 소장 (ace3210114@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 12:38:28",
+    "read": true
+  },
+  {
+    "id": "sent_39",
+    "category": "send",
+    "title": "📤 [발송완료] #39 문선숙 공인중개사",
+    "message": "문선숙 대표 (vomi73@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-21 12:13:43",
+    "read": true
+  },
+  {
+    "id": "sent_57",
+    "category": "send",
+    "title": "📤 [발송완료] #57 라포엘의원",
+    "message": "이주형 대표원장 (rappoel@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-20 19:38:01",
+    "read": true
+  },
+  {
+    "id": "sent_56",
+    "category": "send",
+    "title": "📤 [발송완료] #56 법률사무소 희도",
+    "message": "최인한·강명구 대표변호사 (tilaw@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-20 19:13:46",
+    "read": true
+  },
+  {
+    "id": "sent_55",
+    "category": "send",
+    "title": "📤 [발송완료] #55 법무법인(유)강남 이현조 변호사팀",
+    "message": "이현조 변호사 (hjlee_team@lawgangnam.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-20 18:48:52",
+    "read": true
+  },
+  {
+    "id": "sent_54",
+    "category": "send",
+    "title": "📤 [발송완료] #54 올림피움채움의원 수원점",
+    "message": "유정민 대표원장 (ssat850917@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-20 18:26:06",
+    "read": true
+  },
+  {
+    "id": "sent_53",
+    "category": "send",
+    "title": "📤 [발송완료] #53 남양바른탑치과의원",
+    "message": "강선구 대표원장 (sscom1014@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-20 18:04:58",
+    "read": true
+  },
+  {
+    "id": "sent_48",
+    "category": "send",
+    "title": "📤 [발송완료] #48 법률사무소 로움",
+    "message": "조성곤 대표변호사 (whtjdrhs82@naver.com) 님께 제안 메일이 성공적으로 발송되었습니다.",
+    "timestamp": "2026-09-20 17:08:35",
+    "read": true
+  }
+]
