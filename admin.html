@@ -1159,36 +1159,34 @@
 
     /* 실시간 알림 관제 모달 & 스크롤바 & 도톰한 탭 UI */
     #notifListContainer::-webkit-scrollbar {
-      width: 6px;
+      width: 8px;
     }
     #notifListContainer::-webkit-scrollbar-track {
-      background: #070b16;
+      background: #080d1a;
     }
     #notifListContainer::-webkit-scrollbar-thumb {
-      background: #1e293b;
-      border-radius: 3px;
+      background: #22324e;
+      border-radius: 4px;
     }
     #notifListContainer::-webkit-scrollbar-thumb:hover {
-      background: #334155;
+      background: #3b82f6;
     }
 
     .notif-filter-bar {
-      padding: 14px 20px;
+      padding: 16px 24px;
       background: #070c18;
       border-bottom: 1px solid #1e293b;
       display: flex;
       gap: 10px;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    .notif-filter-bar::-webkit-scrollbar {
-      display: none;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     .notif-filter-tab {
-      min-height: 44px;
-      padding: 10px 18px;
+      flex: 1 1 auto;
+      min-width: 140px;
+      min-height: 46px;
+      padding: 11px 18px;
       background: #111b2e;
       border: 1.5px solid #22324e;
       border-radius: 12px;
@@ -1199,6 +1197,7 @@
       white-space: nowrap;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
       transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -2757,29 +2756,29 @@
     checkAuth();
   </script>
 
-  <!-- 시스템 알림 센터 모달 (실시간 고객 반응 우선 관제탑) -->
-  <div id="notifModal" onclick="if(event.target.id==='notifModal') closeNotifModal()" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(3,7,18,0.78); backdrop-filter:blur(8px); z-index:99999; justify-content:center; align-items:center; padding:16px;">
-    <div style="background:#0b1120; border:1px solid #1e293b; border-radius:18px; width:100%; max-width:780px; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.9), 0 0 0 1px rgba(255,255,255,0.06); overflow:hidden;">
+  <!-- 시스템 알림 센터 모달 (실시간 고객 반응 우선 대형 관제탑) -->
+  <div id="notifModal" onclick="if(event.target.id==='notifModal') closeNotifModal()" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(3,7,18,0.82); backdrop-filter:blur(10px); z-index:99999; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:#0b1120; border:1px solid #1e293b; border-radius:20px; width:95vw; max-width:1200px; height:90vh; max-height:900px; display:flex; flex-direction:column; box-shadow:0 30px 60px -12px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.08); overflow:hidden;">
       <!-- Header -->
-      <div style="padding:18px 22px; border-bottom:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center; background:#080d1a;">
-        <div style="display:flex; align-items:center; gap:12px;">
-          <div style="width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg, #ef4444, #f43f5e); display:flex; align-items:center; justify-content:center; box-shadow:0 0 14px rgba(239,68,68,0.45);">
-            <span style="font-size:18px;">🔔</span>
+      <div style="padding:20px 28px; border-bottom:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center; background:#080d1a;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, #ef4444, #f43f5e); display:flex; align-items:center; justify-content:center; box-shadow:0 0 16px rgba(239,68,68,0.45);">
+            <span style="font-size:20px;">🔔</span>
           </div>
           <div>
-            <div style="display:flex; align-items:center; gap:8px;">
-              <h2 style="font-size:16.5px; font-weight:800; color:#fff; letter-spacing:-0.4px; margin:0;">실시간 통합 알림 관제 센터</h2>
-              <span id="notifModalCount" style="font-size:11px; background:#ef4444; color:white; padding:2px 8px; border-radius:10px; font-weight:800;">0건</span>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <h2 style="font-size:18px; font-weight:800; color:#fff; letter-spacing:-0.4px; margin:0;">실시간 통합 알림 관제 센터</h2>
+              <span id="notifModalCount" style="font-size:12px; background:#ef4444; color:white; padding:3px 10px; border-radius:12px; font-weight:800;">0건</span>
             </div>
-            <div style="font-size:11.5px; color:#64748b; margin-top:2px;">고객 실시간 반응 (결제 시도 · 카톡 상담 · 제안 열람 · 90% 완독) 우선 관제</div>
+            <div style="font-size:12px; color:#64748b; margin-top:3px;">고객 실시간 반응 (결제 시도 · 카톡 상담 · 제안 열람 · 90% 완독) 우선 관제</div>
           </div>
         </div>
-        <div style="display:flex; align-items:center; gap:8px;">
-          <button onclick="refreshNotifModal()" style="background:#131d33; border:1px solid #243452; color:#cbd5e1; font-size:12px; padding:6px 12px; border-radius:8px; cursor:pointer; font-weight:600; display:flex; align-items:center; gap:5px; transition:all 0.15s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#cbd5e1';">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <button onclick="refreshNotifModal()" style="background:#131d33; border:1px solid #243452; color:#cbd5e1; font-size:13px; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:600; display:flex; align-items:center; gap:6px; transition:all 0.15s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#cbd5e1';">
             <span>🔄</span> 새로고침
           </button>
-          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #243452; color:#94a3b8; font-size:12px; padding:6px 12px; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.15s;" onmouseover="this.style.borderColor='#475569';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#94a3b8';">✓ 모두 읽음</button>
-          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#64748b; font-size:24px; cursor:pointer; padding:0 6px; line-height:1; border-radius:6px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#64748b';this.style.background='transparent';">&times;</button>
+          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #243452; color:#94a3b8; font-size:13px; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.15s;" onmouseover="this.style.borderColor='#475569';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#94a3b8';">✓ 모두 읽음</button>
+          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#64748b; font-size:26px; cursor:pointer; padding:0 8px; line-height:1; border-radius:8px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#64748b';this.style.background='transparent';">&times;</button>
         </div>
       </div>
       <!-- Filter Tabs (도톰하고 묵직한 프리미엄 세그먼트 버튼) -->
@@ -2810,8 +2809,8 @@
         </button>
       </div>
       <!-- List Area -->
-      <div id="notifListContainer" style="padding:16px 20px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:10px; background:#070b16; min-height:360px;">
-        <div style="text-align:center; color:#64748b; padding:60px 0; font-size:14px;">실시간 알림 로그를 불러오는 중입니다...</div>
+      <div id="notifListContainer" style="padding:22px 28px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:12px; background:#070b16;">
+        <div style="text-align:center; color:#64748b; padding:80px 0; font-size:15px;">실시간 알림 로그를 불러오는 중입니다...</div>
       </div>
     </div>
   </div>
@@ -3190,19 +3189,19 @@
         const cardBorder = isRead ? 'rgba(255,255,255,0.06)' : badgeColor;
 
         return `
-          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${cardBg}; border:1.5px solid ${cardBorder}; border-left:5px solid ${badgeColor}; border-radius:14px; padding:15px 18px; display:flex; flex-direction:column; gap:8px; opacity:${isRead ? '0.7' : '1'}; cursor:pointer; transition:all 0.2s cubic-bezier(0.16,1,0.3,1); box-shadow:${isRead ? 'none' : '0 4px 16px rgba(0,0,0,0.35)'};" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'" title="클릭 시 읽음/안읽음 토글">
+          <div onclick="toggleSingleNotifRead('${n.id}')" style="background:${cardBg}; border:1.5px solid ${cardBorder}; border-left:5px solid ${badgeColor}; border-radius:14px; padding:18px 24px; display:flex; flex-direction:column; gap:10px; opacity:${isRead ? '0.7' : '1'}; cursor:pointer; transition:all 0.2s cubic-bezier(0.16,1,0.3,1); box-shadow:${isRead ? 'none' : '0 4px 16px rgba(0,0,0,0.35)'};" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'" title="클릭 시 읽음/안읽음 토글">
             <div style="display:flex; justify-content:space-between; align-items:center;">
-              <div style="display:flex; align-items:center; gap:9px;">
-                <span style="background:${badgeBg}; color:${badgeColor}; font-size:11.5px; font-weight:800; padding:3px 9px; border-radius:6px; letter-spacing:-0.2px;">${badgeText}</span>
-                <strong style="font-size:14.5px; color:#fff; letter-spacing:-0.3px;">${n.title}</strong>
-                ${!isRead ? '<span style="width:7px; height:7px; border-radius:50%; background:#ef4444; display:inline-block; box-shadow:0 0 8px #ef4444;"></span>' : ''}
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="background:${badgeBg}; color:${badgeColor}; font-size:12px; font-weight:800; padding:4px 10px; border-radius:6px; letter-spacing:-0.2px;">${badgeText}</span>
+                <strong style="font-size:15px; color:#fff; letter-spacing:-0.3px;">${n.title}</strong>
+                ${!isRead ? '<span style="width:8px; height:8px; border-radius:50%; background:#ef4444; display:inline-block; box-shadow:0 0 8px #ef4444;"></span>' : ''}
               </div>
-              <div style="display:flex; align-items:center; gap:8px;">
-                ${n.relTime ? `<span style="font-size:11.5px; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.25); padding:2px 8px; border-radius:6px;">${n.relTime}</span>` : ''}
-                <span style="font-size:11.5px; color:#64748b;">${n.timestamp || ''}</span>
+              <div style="display:flex; align-items:center; gap:10px;">
+                ${n.relTime ? `<span style="font-size:12px; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.25); padding:3px 9px; border-radius:6px;">${n.relTime}</span>` : ''}
+                <span style="font-size:12px; color:#64748b; font-weight:600;">${n.timestamp || ''}</span>
               </div>
             </div>
-            <div style="font-size:13.5px; color:#cbd5e1; line-height:1.6; word-break:break-all;">${n.message}</div>
+            <div style="font-size:14px; color:#cbd5e1; line-height:1.65; word-break:break-all;">${n.message}</div>
           </div>
         `;
       }).join('');
