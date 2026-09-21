@@ -550,6 +550,9 @@
 
     .badge-visited { background: var(--primary-light); color: var(--primary-dark); font-weight: 800; }
     .badge-opened { background: rgba(139, 92, 246, 0.2); color: #c084fc; border: 1px solid rgba(139, 92, 246, 0.4); font-weight: 700; }
+    .badge-geo { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); font-weight: 800; }
+    .badge-seo { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); font-weight: 800; }
+    .badge-premium { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.45); font-weight: 800; }
     .badge-hot { background: var(--danger); color: white; animation: pulse 2s infinite; }
     .badge-not { background: rgba(255,255,255,0.06); color: #64748b; }
     .badge-sent { background: rgba(16, 185, 129, 0.15); color: #34d399; }
@@ -1140,6 +1143,15 @@
         <div class="kpi-val" style="color: #34d399;" id="kpiScrollCount">0</div>
         <div class="kpi-sub">포트폴리오 끝까지 완독</div>
       </div>
+
+      <div class="kpi-card" style="border: 1px solid rgba(245, 158, 11, 0.3); background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.6) 100%);">
+        <div class="kpi-label">
+          <span>인바운드 유입 (SEO / GEO)</span>
+          <span>💎</span>
+        </div>
+        <div class="kpi-val" style="color: #fbbf24;" id="kpiInboundCount">0</div>
+        <div class="kpi-sub" id="kpiInboundSub" style="color: #facc15;">편당 +10만원 견적 대상</div>
+      </div>
     </div>
 
     <!-- 2열 메인 바디 -->
@@ -1169,7 +1181,7 @@
           </div>
         </div>
 
-        <!-- 메인 탭 네비게이션: 발송 완료 vs 발송 대기 분리 -->
+        <!-- 메인 탭 네비게이션: 발송 완료 vs 발송 대기 vs 인바운드 분리 -->
         <div class="main-tab-nav">
           <button class="main-tab-btn active" id="tabBtnSent" onclick="setMainTab('SENT', this)">
             <span>📨 발송 완료 목록</span>
@@ -1178,6 +1190,10 @@
           <button class="main-tab-btn" id="tabBtnReady" onclick="setMainTab('READY', this)">
             <span>⏳ 발송 대기 목록</span>
             <span class="tab-badge queue-badge" id="tabReadyCount">0</span>
+          </button>
+          <button class="main-tab-btn" id="tabBtnInbound" onclick="setMainTab('INBOUND', this)">
+            <span>🌐 인바운드 (SEO/GEO)</span>
+            <span class="tab-badge" style="background: rgba(245, 158, 11, 0.25); color: #fbbf24; font-weight: 800;" id="tabInboundCount">0</span>
           </button>
           <button class="main-tab-btn" id="tabBtnAll" onclick="setMainTab('ALL', this)">
             <span>📋 전체 타깃 DB</span>
@@ -1427,19 +1443,24 @@
       // 탭 뱃지 카운트 갱신
       const elSent = document.getElementById("tabSentCount");
       const elReady = document.getElementById("tabReadyCount");
+      const elInbound = document.getElementById("tabInboundCount");
       const elAll = document.getElementById("tabAllCount");
       if (elSent) elSent.textContent = totalSent;
       if (elReady) elReady.textContent = totalReady;
       if (elAll) elAll.textContent = targetsList.length;
 
-      // 고유 타깃 토큰 세트
+      // 고유 타깃 토큰 세트 및 인바운드 세트
       const openedTokens = new Set();
       const visitedTokens = new Set();
       const hotTokens = new Set();
       const scroll90Tokens = new Set();
+      const inboundTokens = new Set();
 
       liveEvents.forEach(ev => {
-        if (ev.ref && ev.ref !== 'direct') {
+        const isTarget = ev.ref && targetsMap[ev.ref];
+        const isInbound = (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && ev.ref !== 'direct');
+
+        if (isTarget) {
           if (ev.event === 'email_open' || ev.event === 'open') {
             openedTokens.add(ev.ref);
           } else {
@@ -1448,8 +1469,16 @@
             if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
             if (ev.event === 'scroll_90') scroll90Tokens.add(ev.ref);
           }
+        } else if (isInbound) {
+          inboundTokens.add(ev.ref || 'inbound_unknown');
         }
       });
+
+      if (elInbound) elInbound.textContent = inboundTokens.size;
+      const elKpiInbound = document.getElementById("kpiInboundCount");
+      if (elKpiInbound) elKpiInbound.textContent = inboundTokens.size;
+      const elKpiInboundSub = document.getElementById("kpiInboundSub");
+      if (elKpiInboundSub) elKpiInboundSub.textContent = `편당 +10만원 견적 대상 (${inboundTokens.size}명)`;
 
       document.getElementById("kpiSentCount").textContent = totalSent;
       document.getElementById("kpiSentSub").textContent = `발송 대기: ${totalReady}건`;
@@ -1476,6 +1505,56 @@
       if (target.is_priority) return true;
       const combined = ((target.point || '') + ' ' + (target.views || '')).toLowerCase();
       return combined.includes('구인') || combined.includes('채용') || combined.includes('공고');
+    }
+
+    function getInboundList() {
+      const inboundsMap = {};
+      liveEvents.forEach(ev => {
+        const isTarget = ev.ref && targetsMap[ev.ref];
+        const isInbound = (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && ev.ref !== 'direct');
+        if (!isInbound) return;
+
+        const key = ev.ref || 'inbound_unknown';
+        if (!inboundsMap[key]) {
+          let chType = ev.channel_type || 'DIRECT';
+          let chName = ev.channel_name || '';
+          if (!chName) {
+            const r = (ev.ref_url || '').toLowerCase();
+            if (r.includes('chatgpt') || r.includes('openai')) { chType = 'GEO'; chName = 'ChatGPT (AI 추천)'; }
+            else if (r.includes('perplexity')) { chType = 'GEO'; chName = 'Perplexity AI (AI 검색)'; }
+            else if (r.includes('claude')) { chType = 'GEO'; chName = 'Claude AI (AI 추천)'; }
+            else if (r.includes('gemini')) { chType = 'GEO'; chName = 'Google Gemini (AI 추천)'; }
+            else if (r.includes('naver')) { chType = 'SEO'; chName = '네이버 검색 (Naver SEO)'; }
+            else if (r.includes('google')) { chType = 'SEO'; chName = '구글 검색 (Google SEO)'; }
+            else if (r.includes('daum') || r.includes('kakao')) { chType = 'SEO'; chName = '다음/카카오 검색'; }
+            else { chType = 'DIRECT'; chName = '자연 유입 / 직접 접속'; }
+          }
+
+          inboundsMap[key] = {
+            token: key,
+            channel_type: chType,
+            channel_name: chName,
+            pricing: '💎 편당 +10만원 적용',
+            hot: false,
+            firstSeen: ev._received || ev.timestamp || Date.now(),
+            lastSeen: ev._received || ev.timestamp || Date.now(),
+            maxScroll: 0,
+            maxStaySec: 0,
+            device: ev.device || 'Desktop',
+            screen: ev.screen || '',
+            ref_url: ev.ref_url || 'Direct'
+          };
+        }
+
+        const s = inboundsMap[key];
+        s.lastSeen = Math.max(s.lastSeen, ev._received || ev.timestamp || 0);
+        if (ev.event === 'kakao_click') s.hot = true;
+        if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
+        if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
+        if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
+        if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
+      });
+      return Object.values(inboundsMap);
     }
 
     function updateFilterBar() {
@@ -1531,6 +1610,20 @@
           <button class="filter-btn ${currentFilter==='ZONE_A'?'active':''}" onclick="setFilter('ZONE_A', this)">Zone A (오산 20km) (${cntZoneA})</button>
           <button class="filter-btn ${currentFilter==='ZONE_B'?'active':''}" onclick="setFilter('ZONE_B', this)">Zone B (서울/판교) (${cntZoneB})</button>
         `;
+      } else if (mainTab === "INBOUND") {
+        const inbounds = getInboundList();
+        const cntAll = inbounds.length;
+        const cntGeo = inbounds.filter(i => i.channel_type === 'GEO').length;
+        const cntSeo = inbounds.filter(i => i.channel_type === 'SEO').length;
+        const cntHot = inbounds.filter(i => i.hot).length;
+
+        filterBox.innerHTML = `
+          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 인바운드 (${cntAll})</button>
+          <button class="filter-btn ${currentFilter==='GEO'?'active':''}" onclick="setFilter('GEO', this)">🤖 GEO (AI 추천) (${cntGeo})</button>
+          <button class="filter-btn ${currentFilter==='SEO'?'active':''}" onclick="setFilter('SEO', this)">🔍 SEO (포털 검색) (${cntSeo})</button>
+          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
+          <button class="filter-btn ${currentFilter==='PREMIUM'?'active':''}" onclick="setFilter('PREMIUM', this)">💎 +10만 원 단가 대상 (${cntAll})</button>
+        `;
       } else {
         const cntTotal = targetsList.length;
         const cntSent = targetsList.filter(t => t.status === "SENT").length;
@@ -1559,7 +1652,18 @@
         const target = targetsMap[ev.ref];
         const isJob = isJobPostingTarget(target);
         const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-        const name = target ? `${target.company} (${target.rep}) ${jobBadge}` : (ev.ref === 'direct' ? '웹사이트 직접 유입' : `식별 중 [${ev.ref}]`);
+        const isInbound = !target && (ev.ref && (ev.ref.startsWith('inbound_') || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.ref === 'direct'));
+
+        let name = '';
+        if (target) {
+          name = `${target.company} (${target.rep}) ${jobBadge}`;
+        } else if (isInbound) {
+          const chName = ev.channel_name || (ev.ref_url && ev.ref_url.includes('naver') ? '네이버 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('google') ? '구글 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('chatgpt') ? 'ChatGPT (GEO)' : '자연 유입 고객')));
+          name = `🌐 [인바운드] ${chName} <span class="badge badge-premium">💎 +10만원 견적</span>`;
+        } else {
+          name = `식별 중 [${ev.ref}]`;
+        }
+
         const timeStr = formatRelativeTime(ev._received || ev.timestamp || Date.now());
 
         let badgeClass = "visit";
@@ -1576,7 +1680,7 @@
           badgeClass = "hot";
           itemClass = "hot-item";
           tagText = "🔥 카톡 상담 클릭";
-          desc = `상담 버튼: "${ev.meta && ev.meta.btnText ? ev.meta.btnText : '1:1 빠른 문의하기'}" (체류 ${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''})`;
+          desc = `상담 버튼: "${ev.meta && ev.meta.btnText ? ev.meta.btnText : '1:1 빠른 문의하기'}" (체류 ${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''}) ➔ ${isInbound ? '💎 [편당 +10만원 프리미엄 단가 적용]' : '표준 단가 적용'}`;
         } else if (ev.event === "scroll_90") {
           badgeClass = "scroll";
           itemClass = "scroll-item";
@@ -1610,7 +1714,7 @@
     }
 
     /* ===================================================
-       4. 마스터 테이블 렌더링 (최신 발송순 정렬 & 대기열 분리)
+       4. 마스터 테이블 렌더링 (최신 발송순 정렬 & 대기열 / 인바운드 분리)
        =================================================== */
     function renderTable() {
       const thead = document.getElementById("tableHead");
@@ -1680,6 +1784,19 @@
             <th>난수 토큰</th>
           </tr>
         `;
+      } else if (mainTab === "INBOUND") {
+        thead.innerHTML = `
+          <tr>
+            <th>순번</th>
+            <th style="color: #fbbf24; font-weight: 800;">최근 활동일시 (최신순 ⬇️)</th>
+            <th>유입 채널 (출처)</th>
+            <th>견적 적용 가이드</th>
+            <th>상담/탐색 상태</th>
+            <th>체류/완독</th>
+            <th>접속 기기</th>
+            <th>유입 세션 ID</th>
+          </tr>
+        `;
       } else {
         thead.innerHTML = `
           <tr>
@@ -1697,7 +1814,99 @@
         `;
       }
 
-      // 3. 메인 탭 및 서브 필터링 적용
+      // 3. 인바운드 탭 전용 렌더링 분기
+      if (mainTab === "INBOUND") {
+        const inbounds = getInboundList();
+        const filteredInbounds = inbounds.filter(item => {
+          if (currentFilter === "GEO" && item.channel_type !== "GEO") return false;
+          if (currentFilter === "SEO" && item.channel_type !== "SEO") return false;
+          if (currentFilter === "HOT" && !item.hot) return false;
+          if (searchVal) {
+            const matchStr = `${item.channel_name} ${item.token} ${item.ref_url}`.toLowerCase();
+            if (!matchStr.includes(searchVal)) return false;
+          }
+          return true;
+        });
+
+        filteredInbounds.sort((a, b) => b.lastSeen - a.lastSeen);
+
+        if (filteredInbounds.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:36px; color:#64748b;">수집된 인바운드(SEO/GEO) 방문 데이터가 아직 없습니다.</td></tr>`;
+          const mobileContainer = document.getElementById("mobileCardsContainer");
+          if (mobileContainer) mobileContainer.innerHTML = `<div style="text-align:center; padding:36px 0; color:#64748b;">수집된 인바운드 방문 데이터가 없습니다.</div>`;
+          return;
+        }
+
+        tbody.innerHTML = filteredInbounds.map((item, idx) => {
+          let chBadge = `<span class="badge badge-visited">${item.channel_name}</span>`;
+          if (item.channel_type === 'GEO') chBadge = `<span class="badge badge-geo">🤖 GEO | ${item.channel_name}</span>`;
+          else if (item.channel_type === 'SEO') chBadge = `<span class="badge badge-seo">🔍 SEO | ${item.channel_name}</span>`;
+
+          const priceBadge = `<span class="badge badge-premium">💎 +10만원/편 적용</span>`;
+          const statusBadge = item.hot ? `<span class="badge badge-hot">🔥 카톡상담클릭</span>` : `<span class="badge badge-visited">🌐 사이트탐색</span>`;
+          const behavior = `완독 ${item.maxScroll}% / 체류 ${item.maxStaySec}초`;
+
+          return `
+            <tr>
+              <td><strong>#${idx + 1}</strong></td>
+              <td style="color: #fbbf24; font-weight: 600;">${formatRelativeTime(item.lastSeen)}</td>
+              <td>${chBadge}</td>
+              <td>${priceBadge}</td>
+              <td>${statusBadge}</td>
+              <td>${behavior}</td>
+              <td style="color: #94a3b8;">${item.device}</td>
+              <td><span class="token-chip">${item.token}</span></td>
+            </tr>
+          `;
+        }).join("");
+
+        const mobileContainer = document.getElementById("mobileCardsContainer");
+        if (mobileContainer) {
+          mobileContainer.innerHTML = filteredInbounds.map((item, idx) => {
+            const chBadge = item.channel_type === 'GEO' ? `<span class="badge badge-geo">🤖 GEO | ${item.channel_name}</span>` : (item.channel_type === 'SEO' ? `<span class="badge badge-seo">🔍 SEO | ${item.channel_name}</span>` : `<span class="badge badge-visited">${item.channel_name}</span>`);
+            const statusBadge = item.hot ? `<span class="badge badge-hot">🔥 카톡상담클릭</span>` : `<span class="badge badge-visited">🌐 사이트탐색</span>`;
+
+            return `
+              <div class="target-card ${item.hot ? 'card-hot' : 'card-opened'}" style="border-left: 4px solid #f59e0b;">
+                <div class="card-top-row">
+                  <div class="card-title-group">
+                    <span class="card-num">#${idx + 1}</span>
+                    <strong class="card-company-name" style="color: #fbbf24;">인바운드 자연 유입</strong>
+                  </div>
+                  <div>${statusBadge}</div>
+                </div>
+
+                <div style="margin-bottom: 8px;">
+                  <span class="badge badge-premium">💎 편당 +10만원 견적 적용 대상</span>
+                </div>
+
+                <div class="card-highlight-box">
+                  <div class="card-highlight-row">
+                    <span class="card-hl-label">🌐 유입 경로</span>
+                    <span class="card-hl-val">${chBadge}</span>
+                  </div>
+                  <div class="card-highlight-row">
+                    <span class="card-hl-label">👀 최근 활동</span>
+                    <span class="card-hl-val">${formatRelativeTime(item.lastSeen)}</span>
+                  </div>
+                  <div class="card-highlight-row">
+                    <span class="card-hl-label">⏱ 체류/완독</span>
+                    <span class="card-hl-val">완독 ${item.maxScroll}% · 체류 ${item.maxStaySec}초</span>
+                  </div>
+                </div>
+
+                <div class="card-bottom-row">
+                  <span class="token-chip">ref: ${item.token}</span>
+                  <span style="color: #94a3b8; font-size: 11px;">${item.device}</span>
+                </div>
+              </div>
+            `;
+          }).join("");
+        }
+        return;
+      }
+
+      // 4. 메인 탭 및 서브 필터링 적용 (SENT, READY, ALL)
       const filtered = list.filter(t => {
         const stats = targetStats[t.token];
 
@@ -1733,7 +1942,7 @@
         return true;
       });
 
-      // 4. [핵심 정렬 로직]
+      // 5. [핵심 정렬 로직]
       if (mainTab === "SENT") {
         // [이메일 최신 발송순 정렬 (내림차순, 최신이 맨 위로!)]
         filtered.sort((a, b) => {
@@ -1761,7 +1970,7 @@
         filtered.sort((a, b) => parseInt(a.no || 0) - parseInt(b.no || 0));
       }
 
-      // 5. 테이블 바디(행) 렌더링
+      // 6. 테이블 바디(행) 렌더링
       if (filtered.length === 0) {
         tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:36px; color:#64748b;">조건에 일치하는 타깃이 없습니다.</td></tr>`;
         return;
@@ -1844,7 +2053,7 @@
         }
       }).join("");
 
-      // 6. 모바일 전용 카드 렌더링 (좌우 스크롤 없는 스마트폰 맞춤형 UI)
+      // 7. 모바일 전용 카드 렌더링 (좌우 스크롤 없는 스마트폰 맞춤형 UI)
       const mobileContainer = document.getElementById("mobileCardsContainer");
       if (mobileContainer) {
         if (filtered.length === 0) {

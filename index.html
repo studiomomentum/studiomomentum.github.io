@@ -1538,47 +1538,99 @@
   })();
 </script>
 
-<!-- 스튜디오 모멘텀 스텔스 비즈니스 트래커 (Stealth Visitor Analytics - Bulletproof Mobile/WebKit Edition) -->
+<!-- 스튜디오 모멘텀 스텔스 비즈니스 트래커 (Outbound & Inbound SEO/GEO Smart Telemetry) -->
 <script>
 (function() {
   const TRACK_TOPIC = "sm_events_2026_x89a";
-  let refToken = 'direct';
+  let refToken = '';
+  const rawReferrer = document.referrer || '';
+  const startTime = Date.now();
+
+  // 1. 유입 채널 (SEO vs GEO vs Outbound vs Direct) 정밀 분석
+  let channelType = 'DIRECT';
+  let channelName = '직접 접속 / 북마크';
+  let pricingTier = 'PREMIUM_INBOUND (+10만원/편)';
 
   try {
     const urlParams = new URLSearchParams(window.location.search);
-    refToken = urlParams.get('ref') || urlParams.get('v_ref');
+    refToken = urlParams.get('ref') || urlParams.get('v_ref') || '';
     
-    // 해시 파라미터(#ref=...) fallback 지원
     if (!refToken && window.location.hash) {
       const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-      refToken = hashParams.get('ref') || hashParams.get('v_ref');
+      refToken = hashParams.get('ref') || hashParams.get('v_ref') || '';
+    }
+  } catch(e) {}
+
+  if (refToken && refToken !== 'direct') {
+    // 아웃바운드 콜드메일 타깃
+    channelType = 'OUTBOUND';
+    channelName = `아웃바운드 타깃 (${refToken})`;
+    pricingTier = 'STANDARD_OUTBOUND (표준 견적)';
+    try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+    try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+  } else {
+    // 기존 방문자 세션 확인
+    try {
+      refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
+    } catch(e){}
+
+    // 인바운드 출처 분석 (GEO vs SEO vs SNS)
+    if (/chatgpt\.com|chat\.openai\.com/i.test(rawReferrer)) {
+      channelType = 'GEO';
+      channelName = 'ChatGPT (AI 추천)';
+    } else if (/perplexity\.ai/i.test(rawReferrer)) {
+      channelType = 'GEO';
+      channelName = 'Perplexity AI (AI 검색)';
+    } else if (/claude\.ai/i.test(rawReferrer)) {
+      channelType = 'GEO';
+      channelName = 'Claude AI (AI 추천)';
+    } else if (/gemini\.google\.com/i.test(rawReferrer)) {
+      channelType = 'GEO';
+      channelName = 'Google Gemini (AI 추천)';
+    } else if (/copilot\.microsoft\.com/i.test(rawReferrer)) {
+      channelType = 'GEO';
+      channelName = 'MS Copilot (AI 추천)';
+    } else if (/naver\.com/i.test(rawReferrer)) {
+      channelType = 'SEO';
+      channelName = '네이버 검색 (Naver SEO)';
+    } else if (/google\./i.test(rawReferrer)) {
+      channelType = 'SEO';
+      channelName = '구글 검색 (Google SEO)';
+    } else if (/daum\.net|kakao\.com/i.test(rawReferrer)) {
+      channelType = 'SEO';
+      channelName = '다음/카카오 검색 (Daum SEO)';
+    } else if (/bing\.com/i.test(rawReferrer)) {
+      channelType = 'SEO';
+      channelName = 'Bing 검색 (Bing SEO)';
+    } else if (/instagram\.com|youtube\.com|threads\.net/i.test(rawReferrer)) {
+      channelType = 'SNS';
+      channelName = 'SNS / 미디어 유입';
+    } else {
+      channelType = 'DIRECT';
+      channelName = '직접 입력 / 북마크';
     }
 
-    if (refToken) {
+    if (!refToken || refToken.startsWith('inbound_') || refToken === 'direct') {
+      const randHex = Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
+      refToken = `inbound_${channelType.toLowerCase()}_${randHex}`;
       try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
       try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
-    } else {
-      try {
-        refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || 'direct';
-      } catch(e) {
-        refToken = 'direct';
-      }
     }
-  } catch(e) {
-    refToken = 'direct';
   }
 
   const ua = navigator.userAgent || '';
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua);
   const deviceType = isMobile ? (/iPhone|iPad|iPod/i.test(ua) ? 'Mobile (iPhone)' : (/Android/i.test(ua) ? 'Mobile (Android)' : 'Mobile')) : 'Desktop';
   const screenRes = `${window.screen.width}x${window.screen.height}`;
-  const referrer = document.referrer || 'Direct/Email';
-  const startTime = Date.now();
+  const referrer = rawReferrer || 'Direct / Bookmark';
 
   function sendEvent(eventType, meta) {
     const payload = {
       event: eventType,
       ref: refToken,
+      channel_type: channelType,
+      channel_name: channelName,
+      pricing_tier: pricingTier,
       device: deviceType,
       screen: screenRes,
       ref_url: referrer,
@@ -1590,7 +1642,6 @@
 
     const bodyStr = JSON.stringify(payload);
 
-    // 1. fetch 우선 전송 (text/plain;charset=UTF-8 사용으로 모바일 Safari/WebKit의 CORS 사전요청(OPTIONS) 에러 원천 차단)
     let fetchSent = false;
     if (window.fetch) {
       try {
@@ -1611,7 +1662,6 @@
       } catch(e) {}
     }
 
-    // 2. fetch 미지원 또는 실패 시 sendBeacon 순수 문자열 fallback (Blob이 아닌 DOMString 사용으로 WebKit 버그 회피)
     if (!fetchSent && navigator.sendBeacon) {
       try {
         navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr);
@@ -1619,8 +1669,8 @@
     }
   }
 
-  // 1. 즉시 최초 방문 이벤트 발송
-  sendEvent('visit', { ua: ua.slice(0, 120) });
+  // 1. 최초 방문 이벤트 발송
+  sendEvent('visit', { ua: ua.slice(0, 120), channel: channelName, pricing: pricingTier });
 
   // 2. 스크롤 깊이 추적 (50%, 90%)
   let firedScroll50 = false;
@@ -1655,6 +1705,8 @@
       sendEvent('kakao_click', {
         href: link.href,
         btnText: (link.innerText || '').trim().slice(0, 50),
+        channel: channelName,
+        pricing: pricingTier,
         elapsed: Math.round((Date.now() - startTime) / 1000)
       });
     }
@@ -1670,13 +1722,11 @@
       sendEvent('leave', { totalDuration: totalDuration });
     }
   }
-
-  window.addEventListener('pagehide', handleLeave);
   document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'hidden') {
-      handleLeave();
-    }
+    if (document.visibilityState === 'hidden') handleLeave();
   });
+  window.addEventListener('pagehide', handleLeave);
+  window.addEventListener('beforeunload', handleLeave);
 })();
 </script>
 
