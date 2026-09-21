@@ -1336,7 +1336,7 @@
     <!-- 첫 진입 추천: 전략 리포트 -->
     <div class="tripwire-card">
       <div class="tripwire-badge">STEP 01. 첫 진입 추천</div>
-      <span class="tripwire-refund-tag">🎁 월 정기 플랜 진행 시 20만 원 100% 전액 차감 (사실상 무료)</span>
+      <span class="tripwire-refund-tag" id="tripwireRefundTag">🎁 월 정기 플랜 진행 시 리포트 비용 100% 전액 환급 (공제)</span>
       
       <div class="tripwire-header">
         <div class="tripwire-title">
@@ -1344,8 +1344,8 @@
           <p>귀사 업종에 최적화된 고관여 타깃 심리와 시그니처 영상 포맷을 1:1 맞춤 설계해 드립니다.</p>
         </div>
         <div class="tripwire-price">
-          <div class="tripwire-price-num">20만 원</div>
-          <div class="tripwire-price-sub">1회 납품</div>
+          <div class="tripwire-price-num" id="tripwirePriceNum">맞춤 진단</div>
+          <div class="tripwire-price-sub" id="tripwirePriceSub">1:1 맞춤 설계</div>
         </div>
       </div>
 
@@ -1369,10 +1369,10 @@
       </div>
 
       <div class="tripwire-cta-box">
-        <div class="tripwire-cta-text">
-          💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십(월 4편)’</strong>으로 진행하시면, <strong>리포트 비용 20만 원은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.
+        <div class="tripwire-cta-text" id="tripwireCtaText">
+          💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십’</strong>으로 진행하시면, <strong>리포트 비용은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.
         </div>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="tripwire-cta-btn">20만 원 전략 리포트 신청하기 →</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="tripwire-cta-btn" id="tripwireBtn">전략 리포트 맞춤 신청하기 →</a>
       </div>
     </div>
 
@@ -1387,7 +1387,7 @@
       <!-- 플랜 1 -->
       <div class="price-card">
         <div class="price-tier-name">단독 1편 파일럿 체험</div>
-        <div class="price-num"><span id="priceValPilot">60만 원</span> <span id="priceUnitPilot">/ 1회</span></div>
+        <div class="price-num"><span id="priceValPilot">맞춤 견적</span> <span id="priceUnitPilot" style="font-size: 13px; color: #64748b; font-weight: 600;">(상담 시 안내)</span></div>
         <div class="price-desc">정기 계약 전에 딱 1편만 먼저 제작해보고 영상 퀄리티와 프로세스를 직접 검증하는 파일럿 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 단독 1편 파일럿 제작</li>
@@ -1401,15 +1401,15 @@
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnPilot">단독 1편 파일럿 신청</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnPilot">파일럿 플랜 견적 문의 →</a>
       </div>
 
       <!-- 플랜 2 (가장 인기) -->
       <div class="price-card featured">
-        <div class="featured-label">가장 인기 있는 플랜 | 20만 원 전액 차감</div>
+        <div class="featured-label" id="priceFeaturedLabel">가장 인기 있는 플랜 | 리포트 비용 전액 차감</div>
         <div class="price-tier-name">정기 셀프 촬영 플랜</div>
-        <div class="price-num"><span id="priceValSelf">건당 80만 원</span> <span id="priceValSelfMonth">(월 320만 원)</span></div>
-        <div class="price-discount-tag" id="priceDiscountSelf">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 300만 원!</div>
+        <div class="price-num"><span id="priceValSelf">맞춤 견적</span> <span id="priceValSelfMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(상담 시 산정)</span></div>
+        <div class="price-discount-tag" id="priceDiscountSelf">💎 귀사 채널 규모 및 발행 주기에 맞춘 최적 견적 산정</div>
         <div class="price-desc">세팅된 프롬프터대로 대표님이 매주 30분 읽고 영상만 넘겨주시는 최적의 효율 모델입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회)</li>
@@ -1419,16 +1419,16 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          <li class="feature-gift"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;" id="priceGiftSelf">(첫 달 300만)</span></li>
+          <li class="feature-gift" id="priceGiftItemSelf"><strong>전략 리포트 비용 100% 전액 차감 혜택 제공</strong></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn primary" id="priceBtnSelf">정기 셀프 플랜 상담</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn primary" id="priceBtnSelf">정기 셀프 플랜 견적 문의 →</a>
       </div>
 
       <!-- 플랜 3 -->
       <div class="price-card">
         <div class="price-tier-name">현장 감독 풀케어 플랜</div>
-        <div class="price-num"><span id="priceValFull">건당 100만 원</span> <span id="priceValFullMonth">(월 400만 원)</span></div>
-        <div class="price-discount-tag" id="priceDiscountFull">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 380만 원!</div>
+        <div class="price-num"><span id="priceValFull">맞춤 견적</span> <span id="priceValFullMonth" style="font-size: 13px; color: #64748b; font-weight: 600;">(상담 시 산정)</span></div>
+        <div class="price-discount-tag" id="priceDiscountFull">💎 총괄 PD 현장 전담 디렉팅 프리미엄 패키지</div>
         <div class="price-desc">카메라 세팅부터 장비 조작까지 총괄 PD가 매회 현장에 직접 동행하여 전담하는 프리미엄 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회)</li>
@@ -1438,9 +1438,9 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          <li class="feature-gift"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;" id="priceGiftFull">(첫 달 380만)</span></li>
+          <li class="feature-gift" id="priceGiftItemFull"><strong>전략 리포트 비용 100% 전액 차감 혜택 제공</strong></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnFull">현장 풀케어 상담</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnFull">현장 풀케어 견적 문의 →</a>
       </div>
     </div>
 
@@ -1485,8 +1485,8 @@
       <h3>동시에 최대 3개 팀만 한정 전담 운영합니다.</h3>
       <p>단순한 영상 편집이 아니라, 대표님의 전문성을 실제 고객 문의와 평생 브랜드 자산으로 바꿔드립니다. (11월 신규 1자리)</p>
       <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="cta-btn-main">
-        <span class="cta-btn-title">카카오톡 1:1 오픈채팅으로 상담하기 →</span>
-        <span class="cta-btn-sub">전략 리포트(20만 원) 및 정기 파트너십(월 280만~) 일정 조율 (100% 익명 가능)</span>
+        <span class="cta-btn-title">카카오톡 1:1 오픈채팅으로 견적 문의하기 →</span>
+        <span class="cta-btn-sub" id="ctaBannerSub">전략 리포트 및 정기 파트너십 맞춤 견적·일정 조율 (1:1 프라이빗 상담)</span>
       </a>
     </div>
   </section>
@@ -1502,12 +1502,12 @@
 
 <!-- 모바일 고정 하단 바 -->
 <div class="mobile-sticky-bar">
-  <div class="mobile-sticky-info">
-    <span style="color: #64748b; font-size: 11px;">전략 리포트 20만 (월 계약 시 100% 전액 차감)</span><br>
-    <strong>정기 셀프 월 280만</strong> <span style="font-size: 11px; color: #64748b;">(단독 1편 50만)</span>
+  <div class="mobile-sticky-info" id="mobileStickyInfo">
+    <span style="color: #64748b; font-size: 11px;">전문직 유튜브 전담 올인원 솔루션</span><br>
+    <strong style="font-size: 14px; color: #0f172a;">1:1 맞춤 견적 상담</strong>
   </div>
-  <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="mobile-sticky-btn">
-    1:1 빠른 문의하기
+  <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="mobile-sticky-btn" id="mobileStickyBtn">
+    1:1 빠른 견적 문의
   </a>
 </div>
 
@@ -1554,7 +1554,7 @@
   // 1. 유입 채널 (SEO vs GEO vs Outbound vs Direct) 정밀 분석
   let channelType = 'DIRECT';
   let channelName = '직접 접속 / 북마크';
-  let pricingTier = 'PREMIUM_INBOUND (+10만원/편)';
+  let pricingTier = 'INBOUND_PRIVATE (가격 비공개 / 맞춤 견적 상담)';
 
   try {
     const urlParams = new URLSearchParams(window.location.search);
@@ -1570,7 +1570,7 @@
     // 아웃바운드 콜드메일 타깃
     channelType = 'OUTBOUND';
     channelName = `아웃바운드 타깃 (${refToken})`;
-    pricingTier = 'STANDARD_OUTBOUND (표준 견적)';
+    pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 50만/70만/90만)';
     try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
     try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
   } else {
@@ -1623,30 +1623,70 @@
     }
   }
 
-  // 2. 아웃바운드 vs 인바운드 가격표 & 프로모션 배너 동적 분기
+  // 2. 아웃바운드 VIP 타깃에게만 특별 제휴가 투명 공개 및 배너 활성화
   if (channelType === 'OUTBOUND') {
     const banner = document.getElementById('outboundPromoBanner');
     if (banner) banner.style.display = 'block';
 
+    // 전략 리포트
+    const trRefund = document.getElementById('tripwireRefundTag');
+    if (trRefund) trRefund.textContent = '🎁 월 정기 플랜 진행 시 20만 원 100% 전액 차감 (사실상 무료)';
+    const trPrice = document.getElementById('tripwirePriceNum');
+    if (trPrice) trPrice.textContent = '20만 원';
+    const trPriceSub = document.getElementById('tripwirePriceSub');
+    if (trPriceSub) trPriceSub.textContent = '1회 납품';
+    const trCtaText = document.getElementById('tripwireCtaText');
+    if (trCtaText) trCtaText.innerHTML = '💡 <strong>100% 전액 환급 혜택</strong>: 본 리포트를 받아보신 후 <strong>‘월 정기 파트너십(월 4편)’</strong>으로 진행하시면, <strong>리포트 비용 20만 원은 첫 달 제작비에서 전액 공제(차감)</strong>해 드립니다.';
+    const trBtn = document.getElementById('tripwireBtn');
+    if (trBtn) trBtn.textContent = '20만 원 전략 리포트 신청하기 →';
+
+    // 플랜 1: 파일럿
     const pPilot = document.getElementById('priceValPilot');
     if (pPilot) pPilot.textContent = '50만 원';
+    const pPilotUnit = document.getElementById('priceUnitPilot');
+    if (pPilotUnit) { pPilotUnit.textContent = '/ 1회'; pPilotUnit.style.fontSize = ''; pPilotUnit.style.color = ''; pPilotUnit.style.fontWeight = ''; }
+    const pPilotBtn = document.getElementById('priceBtnPilot');
+    if (pPilotBtn) pPilotBtn.textContent = '단독 1편 파일럿 신청 (50만)';
+
+    // 플랜 2: 정기 셀프
+    const pFeaturedLabel = document.getElementById('priceFeaturedLabel');
+    if (pFeaturedLabel) pFeaturedLabel.textContent = '가장 인기 있는 플랜 | 20만 원 전액 차감';
     const pSelf = document.getElementById('priceValSelf');
     if (pSelf) pSelf.textContent = '건당 70만 원';
     const pSelfM = document.getElementById('priceValSelfMonth');
-    if (pSelfM) pSelfM.textContent = '(월 280만 원)';
+    if (pSelfM) { pSelfM.textContent = '(월 280만 원)'; pSelfM.style.fontSize = ''; pSelfM.style.color = ''; pSelfM.style.fontWeight = ''; }
     const pDiscSelf = document.getElementById('priceDiscountSelf');
     if (pDiscSelf) pDiscSelf.textContent = '🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 260만 원!';
-    const pGiftSelf = document.getElementById('priceGiftSelf');
-    if (pGiftSelf) pGiftSelf.textContent = '(첫 달 260만)';
+    const pGiftSelf = document.getElementById('priceGiftItemSelf');
+    if (pGiftSelf) pGiftSelf.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 260만)</span>';
+    const pSelfBtn = document.getElementById('priceBtnSelf');
+    if (pSelfBtn) pSelfBtn.textContent = '정기 셀프 플랜 상담 (월 280만)';
 
+    // 플랜 3: 현장 풀케어
     const pFull = document.getElementById('priceValFull');
     if (pFull) pFull.textContent = '건당 90만 원';
     const pFullM = document.getElementById('priceValFullMonth');
-    if (pFullM) pFullM.textContent = '(월 360만 원)';
+    if (pFullM) { pFullM.textContent = '(월 360만 원)'; pFullM.style.fontSize = ''; pFullM.style.color = ''; pFullM.style.fontWeight = ''; }
     const pDiscFull = document.getElementById('priceDiscountFull');
     if (pDiscFull) pDiscFull.textContent = '🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 340만 원!';
-    const pGiftFull = document.getElementById('priceGiftFull');
-    if (pGiftFull) pGiftFull.textContent = '(첫 달 340만)';
+    const pGiftFull = document.getElementById('priceGiftItemFull');
+    if (pGiftFull) pGiftFull.innerHTML = '<strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 340만)</span>';
+    const pFullBtn = document.getElementById('priceBtnFull');
+    if (pFullBtn) pFullBtn.textContent = '현장 풀케어 상담 (월 360만)';
+
+    // 하단 배너 및 모바일 스티키 바
+    const ctaSub = document.getElementById('ctaBannerSub');
+    if (ctaSub) ctaSub.textContent = '전략 리포트(20만 원) 및 정기 파트너십(월 280만~) 일정 조율 (100% 익명 가능)';
+
+    const mStickyInfo = document.getElementById('mobileStickyInfo');
+    if (mStickyInfo) {
+      mStickyInfo.innerHTML = `
+        <span style="color: #64748b; font-size: 11px;">전략 리포트 20만 (월 계약 시 100% 전액 차감)</span><br>
+        <strong>정기 셀프 월 280만</strong> <span style="font-size: 11px; color: #64748b;">(단독 1편 50만)</span>
+      `;
+    }
+    const mStickyBtn = document.getElementById('mobileStickyBtn');
+    if (mStickyBtn) mStickyBtn.textContent = '1:1 빠른 문의하기';
   }
 
   const ua = navigator.userAgent || '';

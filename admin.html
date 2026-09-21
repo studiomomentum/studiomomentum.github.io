@@ -1189,7 +1189,7 @@
           <span>💎</span>
         </div>
         <div class="kpi-val" style="color: #fbbf24;" id="kpiInboundCount">0</div>
-        <div class="kpi-sub" id="kpiInboundSub" style="color: #facc15;">편당 +10만원 견적 대상</div>
+        <div class="kpi-sub" id="kpiInboundSub" style="color: #facc15;">가격 비공개 맞춤 견적 대상</div>
         <div class="kpi-click-hint" style="color: #fbbf24;">👉 클릭 시 인바운드 목록 조회</div>
       </div>
     </div>
@@ -1573,7 +1573,7 @@
       const elKpiInbound = document.getElementById("kpiInboundCount");
       if (elKpiInbound) elKpiInbound.textContent = inboundTokens.size;
       const elKpiInboundSub = document.getElementById("kpiInboundSub");
-      if (elKpiInboundSub) elKpiInboundSub.textContent = `편당 +10만원 견적 대상 (${inboundTokens.size}명)`;
+      if (elKpiInboundSub) elKpiInboundSub.textContent = `가격 비공개 맞춤 견적 대상 (${inboundTokens.size}명)`;
 
       document.getElementById("kpiSentCount").textContent = totalSent;
       document.getElementById("kpiSentSub").textContent = `발송 대기: ${totalReady}건`;
@@ -1629,7 +1629,7 @@
             token: key,
             channel_type: chType,
             channel_name: chName,
-            pricing: '💎 편당 +10만원 적용',
+            pricing: '💎 가격 비공개 맞춤 견적',
             hot: false,
             firstSeen: ev._received || ev.timestamp || Date.now(),
             lastSeen: ev._received || ev.timestamp || Date.now(),
@@ -1724,7 +1724,7 @@
           <button class="filter-btn ${currentFilter==='GEO'?'active':''}" onclick="setFilter('GEO', this)">🤖 GEO (AI 추천) (${cntGeo})</button>
           <button class="filter-btn ${currentFilter==='SEO'?'active':''}" onclick="setFilter('SEO', this)">🔍 SEO (포털 검색) (${cntSeo})</button>
           <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
-          <button class="filter-btn ${currentFilter==='PREMIUM'?'active':''}" onclick="setFilter('PREMIUM', this)">💎 +10만 원 단가 대상 (${cntAll})</button>
+          <button class="filter-btn ${currentFilter==='PREMIUM'?'active':''}" onclick="setFilter('PREMIUM', this)">💎 가격 비공개 맞춤 견적 (${cntAll})</button>
         `;
       } else {
         const cntTotal = targetsList.length;
@@ -1761,7 +1761,7 @@
           name = `${target.company} (${target.rep}) ${jobBadge}`;
         } else if (isInbound) {
           const chName = ev.channel_name || (ev.ref_url && ev.ref_url.includes('naver') ? '네이버 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('google') ? '구글 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('chatgpt') ? 'ChatGPT (GEO)' : '자연 유입 고객')));
-          name = `🌐 [인바운드] ${chName} <span class="badge badge-premium">💎 +10만원 견적</span>`;
+          name = `🌐 [인바운드] ${chName} <span class="badge badge-premium">💎 가격 비공개 맞춤 견적</span>`;
         } else {
           name = `식별 중 [${ev.ref}]`;
         }
@@ -1782,7 +1782,7 @@
           badgeClass = "hot";
           itemClass = "hot-item";
           tagText = "🔥 카톡 상담 클릭";
-          desc = `상담 버튼: "${ev.meta && ev.meta.btnText ? ev.meta.btnText : '1:1 빠른 문의하기'}" (체류 ${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''}) ➔ ${isInbound ? '💎 [편당 +10만원 프리미엄 단가 적용]' : '표준 단가 적용'}`;
+          desc = `상담 버튼: "${ev.meta && ev.meta.btnText ? ev.meta.btnText : '1:1 빠른 문의하기'}" (체류 ${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''}) ➔ ${isInbound ? '💎 [가격 비공개 맞춤 견적 상담 대상]' : '표준 제휴가 적용'}`;
         } else if (ev.event === "scroll_90") {
           badgeClass = "scroll";
           itemClass = "scroll-item";
@@ -1944,7 +1944,7 @@
           if (item.channel_type === 'GEO') chBadge = `<span class="badge badge-geo">🤖 GEO | ${item.channel_name}</span>`;
           else if (item.channel_type === 'SEO') chBadge = `<span class="badge badge-seo">🔍 SEO | ${item.channel_name}</span>`;
 
-          const priceBadge = `<span class="badge badge-premium">💎 +10만원/편 적용</span>`;
+          const priceBadge = `<span class="badge badge-premium">💎 가격 비공개 맞춤 견적</span>`;
           const statusBadge = item.hot ? `<span class="badge badge-hot">🔥 카톡상담클릭</span>` : `<span class="badge badge-visited">🌐 사이트탐색</span>`;
           const behavior = `완독 ${item.maxScroll}% / 체류 ${item.maxStaySec}초`;
 
@@ -1979,7 +1979,7 @@
                 </div>
 
                 <div style="margin-bottom: 8px;">
-                  <span class="badge badge-premium">💎 편당 +10만원 견적 적용 대상</span>
+                  <span class="badge badge-premium">💎 가격 비공개 맞춤 견적 상담 대상</span>
                 </div>
 
                 <div class="card-highlight-box">
