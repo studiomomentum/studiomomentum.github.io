@@ -1376,12 +1376,18 @@
       </div>
     </div>
 
+    <!-- 아웃바운드 전용 프로모션 배너 (동적 표시) -->
+    <div id="outboundPromoBanner" style="display:none; background: linear-gradient(135deg, rgba(29, 78, 216, 0.15) 0%, rgba(2, 132, 199, 0.15) 100%); border: 1.5px solid #38bdf8; border-radius: 12px; padding: 14px 18px; margin-bottom: 24px; text-align: center; color: #0f172a;">
+      <span style="background: #1d4ed8; color: white; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 4px; margin-right: 6px;">VIP 제휴 혜택</span>
+      <strong style="color: #1e3a8a; font-size: 14.5px;">2026 전문직 유튜브 제안 수신 고객 전용 특별 제휴가 (편당 10만 원 할인) 적용 중</strong>
+    </div>
+
     <!-- 3단 요금제 카드 -->
     <div class="pricing-grid">
       <!-- 플랜 1 -->
       <div class="price-card">
         <div class="price-tier-name">단독 1편 파일럿 체험</div>
-        <div class="price-num">50만 원 <span>/ 1회</span></div>
+        <div class="price-num"><span id="priceValPilot">60만 원</span> <span id="priceUnitPilot">/ 1회</span></div>
         <div class="price-desc">정기 계약 전에 딱 1편만 먼저 제작해보고 영상 퀄리티와 프로세스를 직접 검증하는 파일럿 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 단독 1편 파일럿 제작</li>
@@ -1394,17 +1400,16 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub">단독 1편 파일럿 신청</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnPilot">단독 1편 파일럿 신청</a>
       </div>
 
       <!-- 플랜 2 (가장 인기) -->
       <div class="price-card featured">
         <div class="featured-label">가장 인기 있는 플랜 | 20만 원 전액 차감</div>
         <div class="price-tier-name">정기 셀프 촬영 플랜</div>
-        <div class="price-num">건당 70만 원 <span>(월 280만 원)</span></div>
-        <div class="price-discount-tag">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 260만 원!</div>
+        <div class="price-num"><span id="priceValSelf">건당 80만 원</span> <span id="priceValSelfMonth">(월 320만 원)</span></div>
+        <div class="price-discount-tag" id="priceDiscountSelf">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 300만 원!</div>
         <div class="price-desc">세팅된 프롬프터대로 대표님이 매주 30분 읽고 영상만 넘겨주시는 최적의 효율 모델입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회)</li>
@@ -1414,16 +1419,16 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          <li class="feature-gift"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 260만)</span></li>
+          <li class="feature-gift"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;" id="priceGiftSelf">(첫 달 300만)</span></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn primary">정기 셀프 플랜 상담 (월 280만)</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn primary" id="priceBtnSelf">정기 셀프 플랜 상담</a>
       </div>
 
       <!-- 플랜 3 -->
       <div class="price-card">
         <div class="price-tier-name">현장 감독 풀케어 플랜</div>
-        <div class="price-num">건당 90만 원 <span>(월 360만 원)</span></div>
-        <div class="price-discount-tag">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 340만 원!</div>
+        <div class="price-num"><span id="priceValFull">건당 100만 원</span> <span id="priceValFullMonth">(월 400만 원)</span></div>
+        <div class="price-discount-tag" id="priceDiscountFull">🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 380만 원!</div>
         <div class="price-desc">카메라 세팅부터 장비 조작까지 총괄 PD가 매회 현장에 직접 동행하여 전담하는 프리미엄 플랜입니다.</div>
         <ul class="price-features">
           <li class="include-base">📁 월 4편 정기 발행 (주 1회)</li>
@@ -1433,9 +1438,9 @@
           </li>
           <li class="feature-item">전문직 맞춤 대본 1편 완벽 작성 <span style="white-space: nowrap;">(대표님 준비 0분)</span></li>
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
-          <li class="feature-gift"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 340만)</span></li>
+          <li class="feature-gift"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;" id="priceGiftFull">(첫 달 380만)</span></li>
         </ul>
-        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub">현장 풀케어 상담 (월 360만)</a>
+        <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnFull">현장 풀케어 상담</a>
       </div>
     </div>
 
@@ -1616,6 +1621,32 @@
       try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
       try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
     }
+  }
+
+  // 2. 아웃바운드 vs 인바운드 가격표 & 프로모션 배너 동적 분기
+  if (channelType === 'OUTBOUND') {
+    const banner = document.getElementById('outboundPromoBanner');
+    if (banner) banner.style.display = 'block';
+
+    const pPilot = document.getElementById('priceValPilot');
+    if (pPilot) pPilot.textContent = '50만 원';
+    const pSelf = document.getElementById('priceValSelf');
+    if (pSelf) pSelf.textContent = '건당 70만 원';
+    const pSelfM = document.getElementById('priceValSelfMonth');
+    if (pSelfM) pSelfM.textContent = '(월 280만 원)';
+    const pDiscSelf = document.getElementById('priceDiscountSelf');
+    if (pDiscSelf) pDiscSelf.textContent = '🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 260만 원!';
+    const pGiftSelf = document.getElementById('priceGiftSelf');
+    if (pGiftSelf) pGiftSelf.textContent = '(첫 달 260만)';
+
+    const pFull = document.getElementById('priceValFull');
+    if (pFull) pFull.textContent = '건당 90만 원';
+    const pFullM = document.getElementById('priceValFullMonth');
+    if (pFullM) pFullM.textContent = '(월 360만 원)';
+    const pDiscFull = document.getElementById('priceDiscountFull');
+    if (pDiscFull) pDiscFull.textContent = '🎁 전략 리포트 20만 원 차감 시 ➔ 첫 달 340만 원!';
+    const pGiftFull = document.getElementById('priceGiftFull');
+    if (pGiftFull) pGiftFull.textContent = '(첫 달 340만)';
   }
 
   const ua = navigator.userAgent || '';
