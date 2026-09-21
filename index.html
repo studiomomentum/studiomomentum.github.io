@@ -1145,8 +1145,8 @@
       <div class="logo-dot"></div>
       STUDIO MOMENTUM
     </div>
-    <div class="nav-status">
-      11월 파트너십 잔여 1자리 (품질 보장 3팀 한정)
+    <div class="nav-status" id="navStatusBadge">
+      1:1 프라이빗 전문직 전담 파트너십
     </div>
   </header>
 
@@ -1482,8 +1482,8 @@
   <!-- 최종 전환 CTA -->
   <section class="section">
     <div class="cta-banner">
-      <h3>동시에 최대 3개 팀만 한정 전담 운영합니다.</h3>
-      <p>단순한 영상 편집이 아니라, 대표님의 전문성을 실제 고객 문의와 평생 브랜드 자산으로 바꿔드립니다. (11월 신규 1자리)</p>
+      <h3 id="ctaBannerTitle">대표님의 전문성을 평생의 브랜드 자산으로 만들어 드립니다.</h3>
+      <p id="ctaBannerDesc">단순한 영상 편집이 아니라, 실제 환자 내원과 의뢰인 수임으로 이어지는 완주형 영상을 전담 제작합니다.</p>
       <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="cta-btn-main">
         <span class="cta-btn-title">카카오톡 1:1 오픈채팅으로 견적 문의하기 →</span>
         <span class="cta-btn-sub" id="ctaBannerSub">전략 리포트 및 정기 파트너십 맞춤 견적·일정 조율 (1:1 프라이빗 상담)</span>
@@ -1625,6 +1625,16 @@
 
   // 2. 아웃바운드 VIP 타깃에게만 특별 제휴가 투명 공개 및 배너 활성화
   if (channelType === 'OUTBOUND') {
+    // 상단 네비 및 최종 CTA 배너의 한정 3팀 문구 활성화
+    const navStatus = document.getElementById('navStatusBadge');
+    if (navStatus) navStatus.textContent = '11월 파트너십 잔여 1자리 (품질 보장 3팀 한정)';
+
+    const ctaTitle = document.getElementById('ctaBannerTitle');
+    if (ctaTitle) ctaTitle.textContent = '동시에 최대 3개 팀만 한정 전담 운영합니다.';
+
+    const ctaDesc = document.getElementById('ctaBannerDesc');
+    if (ctaDesc) ctaDesc.textContent = '단순한 영상 편집이 아니라, 대표님의 전문성을 실제 고객 문의와 평생 브랜드 자산으로 바꿔드립니다. (11월 신규 1자리)';
+
     const banner = document.getElementById('outboundPromoBanner');
     if (banner) banner.style.display = 'block';
 
