@@ -412,6 +412,10 @@
     .feed-item.visit-item {
       border-left: 4px solid var(--primary);
     }
+    .feed-item.open-item {
+      border-left: 4px solid #8b5cf6;
+      background: rgba(139, 92, 246, 0.08);
+    }
     .feed-item.scroll-item {
       border-left: 4px solid var(--success);
     }
@@ -432,6 +436,7 @@
 
     .feed-tag.hot { background: var(--danger-bg); color: #f87171; }
     .feed-tag.visit { background: rgba(37, 99, 235, 0.15); color: #60a5fa; }
+    .feed-tag.open { background: rgba(139, 92, 246, 0.2); color: #c084fc; }
     .feed-tag.scroll { background: var(--success-bg); color: #34d399; }
     .feed-tag.stay { background: var(--purple-bg); color: #c084fc; }
 
@@ -544,6 +549,7 @@
     }
 
     .badge-visited { background: var(--primary-light); color: var(--primary-dark); font-weight: 800; }
+    .badge-opened { background: rgba(139, 92, 246, 0.2); color: #c084fc; border: 1px solid rgba(139, 92, 246, 0.4); font-weight: 700; }
     .badge-hot { background: var(--danger); color: white; animation: pulse 2s infinite; }
     .badge-not { background: rgba(255,255,255,0.06); color: #64748b; }
     .badge-sent { background: rgba(16, 185, 129, 0.15); color: #34d399; }
@@ -930,6 +936,10 @@
     .target-card.card-visited {
       border-left: 4px solid var(--primary);
     }
+    .target-card.card-opened {
+      border-left: 4px solid #a855f7;
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.08) 0%, #0f172a 100%);
+    }
     .target-card.card-ready {
       border-left: 4px solid var(--warning);
     }
@@ -1097,8 +1107,17 @@
 
       <div class="kpi-card">
         <div class="kpi-label">
+          <span>이메일 열람 확인 (Email Opens)</span>
+          <span>👁️</span>
+        </div>
+        <div class="kpi-val" style="color: #c084fc;" id="kpiOpenedCount">0</div>
+        <div class="kpi-sub" id="kpiOpenedRate">열람률: 0%</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
           <span>사이트 방문 고객 (Visited Leads)</span>
-          <span>👀</span>
+          <span>🌐</span>
         </div>
         <div class="kpi-val" style="color: #60a5fa;" id="kpiVisitedCount">0</div>
         <div class="kpi-sub" id="kpiVisitedRate">방문 전환율: 0%</div>
@@ -1413,21 +1432,34 @@
       if (elReady) elReady.textContent = totalReady;
       if (elAll) elAll.textContent = targetsList.length;
 
-      // 방문한 고유 타깃 토큰 세트
+      // 고유 타깃 토큰 세트
+      const openedTokens = new Set();
       const visitedTokens = new Set();
       const hotTokens = new Set();
       const scroll90Tokens = new Set();
 
       liveEvents.forEach(ev => {
         if (ev.ref && ev.ref !== 'direct') {
-          visitedTokens.add(ev.ref);
-          if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
-          if (ev.event === 'scroll_90') scroll90Tokens.add(ev.ref);
+          if (ev.event === 'email_open' || ev.event === 'open') {
+            openedTokens.add(ev.ref);
+          } else {
+            visitedTokens.add(ev.ref);
+            openedTokens.add(ev.ref);
+            if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
+            if (ev.event === 'scroll_90') scroll90Tokens.add(ev.ref);
+          }
         }
       });
 
       document.getElementById("kpiSentCount").textContent = totalSent;
       document.getElementById("kpiSentSub").textContent = `발송 대기: ${totalReady}건`;
+
+      const openCount = openedTokens.size;
+      const openRate = totalSent > 0 ? ((openCount / totalSent) * 100).toFixed(1) : 0;
+      if (document.getElementById("kpiOpenedCount")) {
+        document.getElementById("kpiOpenedCount").textContent = openCount;
+        document.getElementById("kpiOpenedRate").textContent = `열람률: ${openRate}% (${openCount}/${totalSent})`;
+      }
 
       document.getElementById("kpiVisitedCount").textContent = visitedTokens.size;
       const rate = totalSent > 0 ? ((visitedTokens.size / totalSent) * 100).toFixed(1) : 0;
@@ -1451,12 +1483,18 @@
       if (!filterBox) return;
 
       const targetsList = Object.values(targetsMap);
+      const openedTokens = new Set();
       const visitedTokens = new Set();
       const hotTokens = new Set();
       liveEvents.forEach(ev => {
         if (ev.ref && ev.ref !== 'direct') {
-          visitedTokens.add(ev.ref);
-          if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
+          if (ev.event === 'email_open' || ev.event === 'open') {
+            openedTokens.add(ev.ref);
+          } else {
+            visitedTokens.add(ev.ref);
+            openedTokens.add(ev.ref);
+            if (ev.event === 'kakao_click') hotTokens.add(ev.ref);
+          }
         }
       });
 
@@ -1466,14 +1504,16 @@
         const cntJob = sentTargets.filter(isJobPostingTarget).length;
         const cntHot = sentTargets.filter(t => hotTokens.has(t.token)).length;
         const cntVisited = sentTargets.filter(t => visitedTokens.has(t.token)).length;
-        const cntUnvisited = sentTargets.filter(t => !visitedTokens.has(t.token)).length;
+        const cntOpenedOnly = sentTargets.filter(t => openedTokens.has(t.token) && !visitedTokens.has(t.token)).length;
+        const cntUnopened = sentTargets.filter(t => !openedTokens.has(t.token)).length;
 
         filterBox.innerHTML = `
           <button class="filter-btn ${currentFilter==='ALL'?'active':''}" onclick="setFilter('ALL', this)">전체 발송완료 (${cntAll})</button>
           <button class="filter-btn ${currentFilter==='JOB'?'active':''}" onclick="setFilter('JOB', this)">🚨 구인공고 타깃 (${cntJob})</button>
           <button class="filter-btn ${currentFilter==='HOT'?'active':''}" onclick="setFilter('HOT', this)">🔥 카톡상담클릭 (${cntHot})</button>
-          <button class="filter-btn ${currentFilter==='VISITED'?'active':''}" onclick="setFilter('VISITED', this)">방문 확인 (${cntVisited})</button>
-          <button class="filter-btn ${currentFilter==='UNVISITED'?'active':''}" onclick="setFilter('UNVISITED', this)">미방문 (${cntUnvisited})</button>
+          <button class="filter-btn ${currentFilter==='VISITED'?'active':''}" onclick="setFilter('VISITED', this)">🌐 사이트접속 (${cntVisited})</button>
+          <button class="filter-btn ${currentFilter==='OPENED_ONLY'?'active':''}" onclick="setFilter('OPENED_ONLY', this)">👁️ 메일만 열람 [미접속] (${cntOpenedOnly})</button>
+          <button class="filter-btn ${currentFilter==='UNOPENED'?'active':''}" onclick="setFilter('UNOPENED', this)">⏳ 미열람 (${cntUnopened})</button>
         `;
       } else if (mainTab === "READY") {
         const readyTargets = targetsList.filter(t => t.status === "READY");
@@ -1511,7 +1551,7 @@
       document.getElementById("liveFeedCount").textContent = liveEvents.length;
 
       if (liveEvents.length === 0) {
-        feedBox.innerHTML = '<div style="text-align: center; color: #64748b; padding: 40px 0;">아직 수집된 방문 이벤트가 없습니다.</div>';
+        feedBox.innerHTML = '<div style="text-align: center; color: #64748b; padding: 40px 0;">아직 수집된 활동 이벤트가 없습니다.</div>';
         return;
       }
 
@@ -1524,10 +1564,15 @@
 
         let badgeClass = "visit";
         let itemClass = "visit-item";
-        let tagText = "방문";
+        let tagText = "🌐 방문";
         let desc = `${ev.device || 'Desktop'} · ${ev.screen || ''}`;
 
-        if (ev.event === "kakao_click") {
+        if (ev.event === "email_open" || ev.event === "open") {
+          badgeClass = "open";
+          itemClass = "open-item";
+          tagText = "📨 메일 열람";
+          desc = `이메일을 열람하셨습니다 (웹사이트 미접속 상태)`;
+        } else if (ev.event === "kakao_click") {
           badgeClass = "hot";
           itemClass = "hot-item";
           tagText = "🔥 카톡 상담 클릭";
@@ -1572,26 +1617,34 @@
       const tbody = document.getElementById("tableBody");
       const searchVal = document.getElementById("searchInput").value.trim().toLowerCase();
 
-      // 1. 토큰별 방문 데이터 종합
+      // 1. 토큰별 활동 데이터 종합
       const targetStats = {};
       liveEvents.forEach(ev => {
         if (!ev.ref || ev.ref === 'direct') return;
         if (!targetStats[ev.ref]) {
           targetStats[ev.ref] = {
-            visited: true,
+            opened: false,
+            visited: false,
             hot: false,
-            lastSeen: ev._received || ev.timestamp,
+            lastSeen: ev._received || ev.timestamp || 0,
             events: [],
             maxScroll: 0,
             maxStaySec: 0
           };
         }
         const s = targetStats[ev.ref];
-        if (ev.event === 'kakao_click') s.hot = true;
-        if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
-        if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
-        if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
-        if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
+        s.lastSeen = Math.max(s.lastSeen, ev._received || ev.timestamp || 0);
+        if (ev.event === 'email_open' || ev.event === 'open') {
+          s.opened = true;
+        } else {
+          s.opened = true;
+          s.visited = true;
+          if (ev.event === 'kakao_click') s.hot = true;
+          if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
+          if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
+          if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
+          if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
+        }
       });
 
       const list = Object.values(targetsMap);
@@ -1602,7 +1655,7 @@
           <tr>
             <th>순번</th>
             <th style="color: #60a5fa; font-weight: 800;">발송일시 (최신순 ⬇️)</th>
-            <th>방문 상태</th>
+            <th>열람/방문 상태</th>
             <th>회사/채널명</th>
             <th>대표자</th>
             <th>업종</th>
@@ -1647,16 +1700,15 @@
       // 3. 메인 탭 및 서브 필터링 적용
       const filtered = list.filter(t => {
         const stats = targetStats[t.token];
-        const isVisited = !!stats;
-        const isHot = stats && stats.hot;
 
         if (mainTab === "SENT") {
           // 발송 완료(또는 반송확인) 타깃만
           if (t.status !== "SENT" && t.status !== "BOUNCED") return false;
           if (currentFilter === "JOB" && !isJobPostingTarget(t)) return false;
-          if (currentFilter === "HOT" && !isHot) return false;
-          if (currentFilter === "VISITED" && !isVisited) return false;
-          if (currentFilter === "UNVISITED" && isVisited) return false;
+          if (currentFilter === "HOT" && (!stats || !stats.hot)) return false;
+          if (currentFilter === "VISITED" && (!stats || !stats.visited)) return false;
+          if (currentFilter === "OPENED_ONLY" && (!stats || !stats.opened || stats.visited)) return false;
+          if (currentFilter === "UNOPENED" && (stats && stats.opened)) return false;
         } else if (mainTab === "READY") {
           // 발송 대기 타깃만
           if (t.status !== "READY") return false;
@@ -1670,7 +1722,7 @@
           // 전체 통합 탭
           if (currentFilter === "SENT" && (t.status !== "SENT" && t.status !== "BOUNCED")) return false;
           if (currentFilter === "READY" && t.status !== "READY") return false;
-          if (currentFilter === "HOT" && !isHot) return false;
+          if (currentFilter === "HOT" && (!stats || !stats.hot)) return false;
         }
 
         // 검색어 필터
@@ -1719,18 +1771,24 @@
         const stats = targetStats[t.token];
         const isJob = isJobPostingTarget(t);
         const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-        let visitBadge = '<span class="badge badge-not">미방문</span>';
+        let visitBadge = '<span class="badge badge-not">⏳ 미열람</span>';
         let lastAction = '-';
         let behavior = '-';
 
         if (stats) {
           if (stats.hot) {
             visitBadge = '<span class="badge badge-hot">🔥 카톡상담클릭</span>';
-          } else {
-            visitBadge = '<span class="badge badge-visited">방문 확인</span>';
+          } else if (stats.visited) {
+            visitBadge = '<span class="badge badge-visited">🌐 사이트접속</span>';
+          } else if (stats.opened) {
+            visitBadge = '<span class="badge badge-opened">👁️ 메일만 열람</span>';
           }
           lastAction = formatRelativeTime(stats.lastSeen);
-          behavior = `완독 ${stats.maxScroll}% / 체류 ${stats.maxStaySec}초`;
+          if (stats.visited) {
+            behavior = `완독 ${stats.maxScroll}% / 체류 ${stats.maxStaySec}초`;
+          } else if (stats.opened) {
+            behavior = `메일 열람 (웹 미접속)`;
+          }
         }
 
         let statusBadge = '<span class="badge badge-ready">READY</span>';
@@ -1796,21 +1854,28 @@
             const stats = targetStats[t.token];
             const isJob = isJobPostingTarget(t);
             const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-            let visitBadge = '<span class="badge badge-not">미방문</span>';
+            let visitBadge = '<span class="badge badge-not">⏳ 미열람</span>';
             let cardStatusClass = '';
-            let lastActionText = '활동 없음';
+            let lastActionText = '열람/활동 없음';
             let behaviorText = '-';
 
             if (stats) {
               if (stats.hot) {
                 visitBadge = '<span class="badge badge-hot">🔥 카톡상담클릭</span>';
                 cardStatusClass = 'card-hot';
-              } else {
-                visitBadge = '<span class="badge badge-visited">방문 확인</span>';
+              } else if (stats.visited) {
+                visitBadge = '<span class="badge badge-visited">🌐 사이트접속</span>';
                 cardStatusClass = 'card-visited';
+              } else if (stats.opened) {
+                visitBadge = '<span class="badge badge-opened">👁️ 메일만 열람</span>';
+                cardStatusClass = 'card-opened';
               }
               lastActionText = formatRelativeTime(stats.lastSeen);
-              behaviorText = `완독 ${stats.maxScroll}% · 체류 ${stats.maxStaySec}초`;
+              if (stats.visited) {
+                behaviorText = `완독 ${stats.maxScroll}% · 체류 ${stats.maxStaySec}초`;
+              } else if (stats.opened) {
+                behaviorText = `메일 열람 (웹 미접속)`;
+              }
             } else if (t.status === "READY") {
               cardStatusClass = 'card-ready';
             }
