@@ -1503,7 +1503,129 @@
       font-size: 12px;
       color: #1e40af;
       margin-bottom: 20px;
-      line-height: 1.5;
+    }
+
+    .pay-bank-box {
+      background: linear-gradient(145deg, #f8fafc 0%, #f1f5f9 100%);
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+
+    .pay-bank-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .pay-bank-title {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pay-bank-num-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: #ffffff;
+      padding: 10px 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+
+    .pay-bank-num {
+      font-size: 16px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: 0.5px;
+      font-family: monospace, -apple-system;
+    }
+
+    .pay-bank-holder {
+      font-size: 12px;
+      color: #64748b;
+      font-weight: normal;
+      margin-left: 4px;
+    }
+
+    .pay-copy-btn {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .pay-copy-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .pay-bank-hint {
+      font-size: 11.5px;
+      color: #64748b;
+      margin-top: 8px;
+      line-height: 1.45;
+    }
+
+    .pay-tax-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .pay-tax-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: #334155;
+      cursor: pointer;
+      background: #f8fafc;
+      padding: 10px 12px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      transition: all 0.15s;
+    }
+
+    .pay-tax-label:hover {
+      border-color: #38bdf8;
+      background: #f0f9ff;
+    }
+
+    .pay-tax-label input[type="radio"] {
+      margin-top: 2px;
+      accent-color: #2563eb;
+      cursor: pointer;
+    }
+
+    .pay-tax-text {
+      flex: 1;
+      line-height: 1.4;
+    }
+
+    .pay-tax-title {
+      font-weight: 800;
+      color: #0f172a;
+      font-size: 13px;
+    }
+
+    .pay-tax-desc {
+      font-size: 11.5px;
+      color: #64748b;
+      margin-top: 2px;
     }
 
     .pay-submit-btn {
@@ -1868,18 +1990,16 @@
         </div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
           <button type="button" onclick="openPayAppModal('report')" class="tripwire-cta-btn" id="tripwirePayBtn" style="border: none; cursor: pointer; background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);">
-            💳 20만 원 즉시 결제 신청 →
+            ⚡ 20만 원 즉시 결제/송금 신청 →
           </button>
           <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="tripwireBtn" style="padding: 12px 18px; border-radius: 10px; width: auto; font-size: 14.5px;">카카오톡 1:1 문의</a>
         </div>
       </div>
       <div class="pay-methods-preview" style="margin-top: 12px; justify-content: flex-end;">
-        <span>지원 결제수단:</span>
-        <span class="pay-badge-tag">신용카드(무이자)</span>
-        <span class="pay-badge-tag">카카오페이</span>
-        <span class="pay-badge-tag">토스페이</span>
-        <span class="pay-badge-tag">네이버페이</span>
-        <span class="pay-badge-tag">가상계좌</span>
+        <span>결제 및 세무 지원:</span>
+        <span class="pay-badge-tag">계좌이체 (3.3% 원천징수 증빙)</span>
+        <span class="pay-badge-tag">토스·카카오 간편송금</span>
+        <span class="pay-badge-tag">기장 세무사 직발송 대행</span>
       </div>
     </div>
 
@@ -1912,7 +2032,7 @@
           <li class="feature-item">고급 모션그래픽 & 맞춤 썸네일 1종 <span style="white-space: nowrap;">(완제품 납품)</span></li>
         </ul>
         <div class="price-btn-group">
-          <button type="button" onclick="openPayAppModal('pilot')" class="price-btn pay-now" id="pricePayBtnPilot">💳 파일럿 바로 결제 (60만 원)</button>
+          <button type="button" onclick="openPayAppModal('pilot')" class="price-btn pay-now" id="pricePayBtnPilot">⚡ 파일럿 바로 결제 (60만 원)</button>
           <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnPilot">1:1 파일럿 상담 문의</a>
         </div>
       </div>
@@ -1937,7 +2057,7 @@
           <li class="feature-gift" id="priceGiftItemSelf"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 300만 원)</span></li>
         </ul>
         <div class="price-btn-group">
-          <button type="button" onclick="openPayAppModal('self')" class="price-btn pay-now" id="pricePayBtnSelf">💳 첫 달 정기 결제 (320만 원)</button>
+          <button type="button" onclick="openPayAppModal('self')" class="price-btn pay-now" id="pricePayBtnSelf">📋 첫 달 정기 결제 예약 (320만 원)</button>
           <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnSelf">1:1 맞춤 견적 문의</a>
         </div>
       </div>
@@ -1961,23 +2081,23 @@
           <li class="feature-gift" id="priceGiftItemFull"><strong>전략 리포트 20만 원 100% 전액 차감</strong> <span style="white-space: nowrap;">(첫 달 380만 원)</span></li>
         </ul>
         <div class="price-btn-group">
-          <button type="button" onclick="openPayAppModal('full')" class="price-btn pay-now" id="pricePayBtnFull">💳 첫 달 정기 결제 (400만 원)</button>
+          <button type="button" onclick="openPayAppModal('full')" class="price-btn pay-now" id="pricePayBtnFull">📋 첫 달 정기 결제 예약 (400만 원)</button>
           <a href="https://open.kakao.com/o/sEX8RWNi" target="_blank" class="price-btn sub" id="priceBtnFull">1:1 맞춤 견적 문의</a>
         </div>
       </div>
     </div>
 
     <div class="nda-box">
-      💡 <strong>세무 처리 안내</strong>: 개인 프리랜서 용역 계약으로 진행되며, <strong>주민번호 기반 3.3% 사업소득 원천징수</strong> 또는 <strong>페이앱 간편 결제(카드 영수증/지출증빙)</strong>로 100% 합법적 기업/병의원 경비 처리가 가능합니다.
+      💡 <strong>세무 및 경비 처리 안내</strong>: 개인 프리랜서 용역 계약으로 진행되며, <strong>주민번호 기반 3.3% 사업소득 원천징수 영수증 발급</strong> 또는 <strong>기장 세무사 사무실로 서류 직접 전달 대행</strong>을 통해 100% 합법적 기업/병의원/전문직 사업 경비(비용) 처리가 가능합니다.
     </div>
   </section>
 
-  <!-- 페이앱 간편 결제 모달 레이아웃 -->
+  <!-- 안전 결제 및 세무 증빙 / 파트너십 예약 모달 레이아웃 -->
   <div class="pay-modal-overlay" id="payModalOverlay" onclick="handlePayOverlayClick(event)">
     <div class="pay-modal-card" onclick="event.stopPropagation()">
       <div class="pay-modal-header">
-        <h4>🔒 안전 간편 결제 (PayApp)</h4>
-        <p>신용카드(무이자 할부), 카카오페이, 토스, 네이버페이 즉시 결제</p>
+        <h4 id="payModalTitle">🔒 1:1 안심 송금 & 세무 증빙 신청</h4>
+        <p id="payModalSubtitle">계좌 이체 및 3.3% 원천징수 영수증 / 세무사 직접 발송</p>
         <button type="button" class="pay-modal-close" onclick="closePayAppModal()" aria-label="닫기">✕</button>
       </div>
       <div class="pay-modal-body">
@@ -1988,9 +2108,37 @@
             🎉 제안서 수신 특별 제휴 할인가 적용됨
           </div>
           <div class="pay-product-amount">
-            <span class="pay-amount-label">결제 예정 금액</span>
+            <span class="pay-amount-label" id="payAmountLabel">결제 예정 금액</span>
             <span class="pay-amount-val" id="payModalProdPrice">200,000원</span>
           </div>
+        </div>
+
+        <!-- 1. 소액 즉시 송금 전용 계좌 안내 박스 (전략리포트/파일럿) -->
+        <div class="pay-bank-box" id="payBankBox">
+          <div class="pay-bank-header">
+            <span class="pay-bank-title">🏦 안심 송금 공식 계좌</span>
+            <span style="font-size:11.5px; color:#2563eb; font-weight:700;">모바일뱅킹 / 토스 / 카카오페이</span>
+          </div>
+          <div class="pay-bank-num-row">
+            <div>
+              <span class="pay-bank-num" id="payBankAccText">3333-31-8271701</span>
+              <span class="pay-bank-holder">카카오뱅크 (예금주: 스튜디오모멘텀)</span>
+            </div>
+            <button type="button" class="pay-copy-btn" id="payBankCopyBtn" onclick="copyAccountInfo()">
+              📋 계좌 복사
+            </button>
+          </div>
+          <div class="pay-bank-hint">
+            💡 위 계좌로 송금 후 아래 신청서를 제출하시면, 신청 내역이 자동 복사되어 <strong>전담 디렉터 1:1 카카오톡 라인</strong>으로 즉시 연결됩니다.
+          </div>
+        </div>
+
+        <!-- 2. 월 정기 파트너십 전용 예약 안내 박스 (정기 셀프/현장 풀케어) -->
+        <div id="payReserveNotice" style="display:none; background:#f0fdf4; border:1.5px solid #86efac; border-radius:12px; padding:14px 16px; font-size:12.5px; color:#166534; margin-bottom:18px; line-height:1.55;">
+          <div style="font-weight:800; font-size:13.5px; color:#15803d; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+            <span>🤝</span> <span>선입금 없는 안전한 파트너십 예약 절차</span>
+          </div>
+          월 정기 플랜은 사전 입금 없이, 신청 접수 후 <strong>전담 총괄 PD 배정 ➔ 1:1 일정 및 톤앤매너 상담 ➔ 상호 날인 전자 용역 계약서 체결 후</strong> 입금이 진행됩니다.
         </div>
 
         <form id="payAppForm" onsubmit="handlePayAppSubmit(event)">
@@ -2009,12 +2157,40 @@
             <input type="text" id="payYoutubeUrl" class="pay-form-input" placeholder="예: @youtube_channel 또는 채널명">
           </div>
 
-          <div class="pay-security-notice">
-            🔒 결제하기 클릭 시 <strong>페이앱(PayApp) 공식 암호화 결제창</strong>으로 안전하게 연결됩니다. 결제 영수증은 입력하신 휴대폰 번호로 즉시 발송됩니다.
+          <!-- 세무 증빙 선택 라디오 그룹 -->
+          <div class="pay-form-group" style="margin-bottom: 16px;">
+            <label class="pay-form-label">세무 증빙 및 경비 처리 방식 <span class="req">*</span></label>
+            <div class="pay-tax-group">
+              <label class="pay-tax-label">
+                <input type="radio" name="payTaxOption" value="3.3% 프리랜서 원천징수" checked>
+                <div class="pay-tax-text">
+                  <div class="pay-tax-title">3.3% 프리랜서 원천징수 <span style="background:#dbeafe; color:#1d4ed8; font-size:11px; padding:2px 6px; border-radius:4px; margin-left:4px;">권장</span></div>
+                  <div class="pay-tax-desc">주민등록번호(또는 사업자등록번호)로 100% 합법적 사업 경비(비용) 처리 영수증 발급</div>
+                </div>
+              </label>
+              <label class="pay-tax-label">
+                <input type="radio" name="payTaxOption" value="기장 세무사 사무실로 서류 직접 전달 대행">
+                <div class="pay-tax-text">
+                  <div class="pay-tax-title">기장 세무사 사무실로 서류 직접 전달 대행 <span style="background:#f1f5f9; color:#475569; font-size:11px; padding:2px 6px; border-radius:4px; margin-left:4px;">가장 편리</span></div>
+                  <div class="pay-tax-desc">세무사 사무실 연락처만 남겨주시면, 당사가 필요 서류를 세무사님께 원스톱 직접 전달</div>
+                </div>
+              </label>
+              <label class="pay-tax-label">
+                <input type="radio" name="payTaxOption" value="단순 계좌 이체 (세무 증빙 생략)">
+                <div class="pay-tax-text">
+                  <div class="pay-tax-title">단순 계좌 이체 (세무 증빙 생략)</div>
+                  <div class="pay-tax-desc">별도 증빙 없이 가장 신속하게 제작 및 분석 착수를 희망하시는 경우</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="pay-security-notice" id="payNoticeText">
+            💡 신청 완료 시 신청 내역이 클립보드에 <strong>자동 복사</strong>되며, <strong>전담 디렉터 1:1 카카오톡 라인</strong>으로 즉시 연결됩니다.
           </div>
 
           <button type="submit" class="pay-submit-btn" id="paySubmitBtn">
-            <span>🔒</span> <span id="paySubmitBtnText">200,000원 결제창으로 이동 →</span>
+            <span>⚡</span> <span id="paySubmitBtnText">200,000원 입금 신청 & 1:1 카톡 연결 →</span>
           </button>
         </form>
       </div>
@@ -2190,18 +2366,12 @@ if (document.readyState === 'loading') {
   const rawReferrer = document.referrer || '';
   const startTime = Date.now();
 
-// PayApp 전역 설정 객체
-window.PAYAPP_CONFIG = {
-  sellerId: 'momentum_pd', // 페이앱 판매자 아이디
-  links: {
-    report: 'https://payapp.kr/',
-    pilot_inbound: 'https://payapp.kr/',
-    pilot_outbound: 'https://payapp.kr/',
-    self_inbound: 'https://payapp.kr/',
-    self_outbound: 'https://payapp.kr/',
-    full_inbound: 'https://payapp.kr/',
-    full_outbound: 'https://payapp.kr/'
-  }
+// 스튜디오 모멘텀 안전 결제 & 세무 처리 설정 객체
+window.MOMENTUM_PAY_CONFIG = {
+  bankName: '카카오뱅크',
+  accountNumber: '3333-31-8271701',
+  accountHolder: '스튜디오모멘텀',
+  kakaoUrl: 'https://open.kakao.com/o/sEX8RWNi'
 };
 
 let currentPayPlan = 'report';
@@ -2212,20 +2382,70 @@ window._smSendEvent = window._smSendEvent || function(eventType, meta) {
   window._smEventQueue.push({ eventType: eventType, meta: meta, time: Date.now() });
 };
 
+// 공식 계좌번호 1클릭 복사 헬퍼
+function copyAccountInfo() {
+  const fullText = '카카오뱅크 3333-31-8271701 스튜디오모멘텀';
+  const btn = document.getElementById('payBankCopyBtn');
+
+  function showSuccess() {
+    if (btn) {
+      const orig = btn.innerHTML;
+      btn.innerHTML = '✓ 복사완료!';
+      btn.style.background = '#16a34a';
+      setTimeout(function() {
+        btn.innerHTML = orig;
+        btn.style.background = '';
+      }, 2000);
+    }
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(fullText).then(showSuccess).catch(function() {
+      fallbackCopy(fullText, showSuccess);
+    });
+  } else {
+    fallbackCopy(fullText, showSuccess);
+  }
+}
+
+function fallbackCopy(text, cb) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try {
+    document.execCommand('copy');
+    if (cb) cb();
+  } catch (e) {
+    alert('계좌번호: ' + text);
+  }
+  document.body.removeChild(ta);
+}
+
 function openPayAppModal(planKey) {
   currentPayPlan = planKey;
   const isOutbound = (window._smChannelType === 'OUTBOUND');
   
   const modal = document.getElementById('payModalOverlay');
+  const titleEl = document.getElementById('payModalTitle');
+  const subtitleEl = document.getElementById('payModalSubtitle');
   const prodNameEl = document.getElementById('payModalProdName');
   const prodPriceEl = document.getElementById('payModalProdPrice');
   const discountNoticeEl = document.getElementById('payModalDiscountNotice');
+  const bankBoxEl = document.getElementById('payBankBox');
+  const reserveNoticeEl = document.getElementById('payReserveNotice');
   const submitBtnTextEl = document.getElementById('paySubmitBtnText');
+  const noticeTextEl = document.getElementById('payNoticeText');
+  const amountLabelEl = document.getElementById('payAmountLabel');
 
   let prodName = '';
   let amount = 200000;
   let amountStr = '200,000원';
   let showDiscount = false;
+  const isInstantPay = (planKey === 'report' || planKey === 'pilot');
 
   if (planKey === 'report') {
     prodName = '채널 정밀 진단 & 시그니처 전략 리포트 (1회)';
@@ -2273,7 +2493,24 @@ function openPayAppModal(planKey) {
   if (prodNameEl) prodNameEl.textContent = prodName;
   if (prodPriceEl) prodPriceEl.textContent = amountStr;
   if (discountNoticeEl) discountNoticeEl.style.display = showDiscount ? 'block' : 'none';
-  if (submitBtnTextEl) submitBtnTextEl.textContent = `${amount.toLocaleString()}원 결제창으로 이동 →`;
+
+  if (isInstantPay) {
+    if (titleEl) titleEl.textContent = '🔒 1:1 안심 송금 & 세무 증빙 신청';
+    if (subtitleEl) subtitleEl.textContent = '계좌 이체 및 3.3% 원천징수 영수증 / 기장 세무사 직접 전달';
+    if (amountLabelEl) amountLabelEl.textContent = '결제/송금 예정 금액';
+    if (bankBoxEl) bankBoxEl.style.display = 'block';
+    if (reserveNoticeEl) reserveNoticeEl.style.display = 'none';
+    if (submitBtnTextEl) submitBtnTextEl.textContent = `${amount.toLocaleString()}원 입금 신청 & 1:1 카톡 연결 →`;
+    if (noticeTextEl) noticeTextEl.innerHTML = '💡 위 계좌로 송금 후 신청서를 제출하시면, 신청 내역이 <strong>자동 복사</strong>되어 <strong>전담 디렉터 1:1 카카오톡 라인</strong>으로 즉시 연결됩니다.';
+  } else {
+    if (titleEl) titleEl.textContent = '📋 월 정기 파트너십 결제 예약 & 계약 신청';
+    if (subtitleEl) subtitleEl.textContent = '선입금 부담 0원! 전담 PD 배정 및 1:1 계약 상담 직결';
+    if (amountLabelEl) amountLabelEl.textContent = '월 약정 금액 (계약 체결 후 결제)';
+    if (bankBoxEl) bankBoxEl.style.display = 'none';
+    if (reserveNoticeEl) reserveNoticeEl.style.display = 'block';
+    if (submitBtnTextEl) submitBtnTextEl.textContent = '파트너십 결제 예약 & 전담 PD 배정 →';
+    if (noticeTextEl) noticeTextEl.innerHTML = '💡 신청 완료 시 신청 내역이 <strong>자동 복사</strong>되며, <strong>전담 총괄 PD 1:1 카카오톡 라인</strong>으로 즉시 연결되어 계약서 및 일정을 협의합니다.';
+  }
 
   if (modal) {
     modal.style.display = 'flex';
@@ -2304,45 +2541,82 @@ function handlePayAppSubmit(e) {
   const name = (document.getElementById('payBuyerName').value || '').trim();
   const phone = (document.getElementById('payBuyerPhone').value || '').trim();
   const ytUrl = (document.getElementById('payYoutubeUrl').value || '').trim();
+  const taxOptionEl = document.querySelector('input[name="payTaxOption"]:checked');
+  const taxOption = taxOptionEl ? taxOptionEl.value : '3.3% 프리랜서 원천징수';
   const isOutbound = (window._smChannelType === 'OUTBOUND');
 
   let planName = '';
+  let planTitle = '';
   let amount = 200000;
+  let amountStr = '200,000원';
+  const isInstantPay = (currentPayPlan === 'report' || currentPayPlan === 'pilot');
+
   if (currentPayPlan === 'report') {
     planName = '전략_리포트_20만';
+    planTitle = '채널 정밀 진단 & 시그니처 전략 리포트 (20만 원)';
     amount = 200000;
+    amountStr = '200,000원';
   } else if (currentPayPlan === 'pilot') {
     planName = isOutbound ? '파일럿_50만(VIP할인)' : '파일럿_60만(정상가)';
+    planTitle = isOutbound ? '단독 1편 파일럿 체험 (VIP 제휴 50만 원)' : '단독 1편 파일럿 체험 (60만 원)';
     amount = isOutbound ? 500000 : 600000;
+    amountStr = `${amount.toLocaleString()}원`;
   } else if (currentPayPlan === 'self') {
     planName = isOutbound ? '정기셀프_280만(VIP할인)' : '정기셀프_320만(정상가)';
+    planTitle = isOutbound ? '정기 셀프 촬영 플랜 (월 4편 / VIP 월 280만 원)' : '정기 셀프 촬영 플랜 (월 4편 / 월 320만 원)';
     amount = isOutbound ? 2800000 : 3200000;
+    amountStr = `월 ${amount.toLocaleString()}원`;
   } else if (currentPayPlan === 'full') {
     planName = isOutbound ? '현장풀케어_360만(VIP할인)' : '현장풀케어_400만(정상가)';
+    planTitle = isOutbound ? '현장 감독 풀케어 플랜 (월 4편 / VIP 월 360만 원)' : '현장 감독 풀케어 플랜 (월 4편 / 월 400만 원)';
     amount = isOutbound ? 3600000 : 4000000;
+    amountStr = `월 ${amount.toLocaleString()}원`;
   }
 
-  // 1. ntfy 결제 시도 텔레메트리 즉시 발송
+  // 1. 카카오톡 채팅창 전송용 클립보드 양식 텍스트 구성
+  const clipboardText = [
+    `[스튜디오 모멘텀 결제/신청 접수]`,
+    `• 신청 플랜: ${planTitle}`,
+    `• 대표자(상호): ${name}`,
+    `• 연락처: ${phone}`,
+    `• 유튜브 채널: ${ytUrl || '(미입력 / 상담 시 전달)'}`,
+    `• 세무 증빙: ${taxOption}`,
+    isInstantPay ? `• 입금 계좌: 카카오뱅크 3333-31-8271701 (스튜디오모멘텀)` : `• 진행 방식: 선입금 0원 ➔ 전담 PD 배정 후 전자계약서 체결`
+  ].join('\n');
+
+  // 클립보드 자동 복사
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(clipboardText).catch(function(err) {
+      console.warn('Clipboard write failed:', err);
+    });
+  }
+
+  // 2. ntfy 결제/신청 텔레메트리 즉시 발송
   if (window._smSendEvent) {
-    window._smSendEvent('pay_submit_attempt', {
+    window._smSendEvent('pay_and_kakao_connect', {
       plan: planName,
       amount: amount,
       buyerName: name,
       buyerPhone: phone,
       youtubeUrl: ytUrl,
-      isOutbound: isOutbound
+      taxOption: taxOption,
+      isOutbound: isOutbound,
+      isInstantPay: isInstantPay
     });
   }
 
-  // 2. 페이앱 결제 URL 구성
-  const encodedGoodName = encodeURIComponent(`스튜디오모멘텀 - ${planName}`);
-  const payUrl = `https://payapp.kr/payapp/?cmd=payrequest&userid=${window.PAYAPP_CONFIG.sellerId}&goodname=${encodedGoodName}&price=${amount}&recvphone=${encodeURIComponent(phone)}&memo=${encodeURIComponent(name + ' / ' + ytUrl)}`;
+  // 3. 안내 알림 후 1:1 오픈카톡 직결
+  const kakaoUrl = 'https://open.kakao.com/o/sEX8RWNi';
+  const alertMsg = isInstantPay
+    ? `[신청 완료]\n\n${name} 대표님, 신청서가 정상 접수되었습니다!\n\n📋 대표님의 신청 정보가 클립보드에 자동 복사되었습니다.\n\n확인을 누르시면 [스튜디오 모멘텀 전담 디렉터 1:1 카카오톡 라인]으로 즉시 연결됩니다.\n(채팅방 입장 후 '붙여넣기' 하시면 가장 빠르게 접수됩니다.)`
+    : `[파트너십 예약 완료]\n\n${name} 대표님, 월 정기 플랜 결제 예약이 정상 접수되었습니다!\n\n📋 신청 정보가 클립보드에 자동 복사되었습니다.\n\n확인을 누르시면 [총괄 PD 1:1 카카오톡 라인]으로 즉시 연결되어 계약서 및 일정을 협의해 드립니다.`;
 
-  alert(`[안내] ${name} 대표님, 페이앱(PayApp) 안전 결제창으로 연결됩니다.\n(신용카드 무이자 할부, 카카오페이, 토스, 네이버페이 지원)`);
-  window.open(payUrl, '_blank') || (window.location.href = payUrl);
+  alert(alertMsg);
+  window.location.href = kakaoUrl;
   closePayAppModal();
 }
 
+window.copyAccountInfo = copyAccountInfo;
 window.openPayAppModal = openPayAppModal;
 window.closePayAppModal = closePayAppModal;
 window.handlePayAppSubmit = handlePayAppSubmit;

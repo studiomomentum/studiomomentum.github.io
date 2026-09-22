@@ -1,5 +1,37 @@
 [
   {
+    "id": "notif_1790059349075",
+    "category": "send",
+    "title": "스튜디오 모멘텀 자동 홍보",
+    "message": "[클라우드 발송 기동] 직전 발송 75분 경과로 다음 타깃 발송을 시작합니다.",
+    "timestamp": "2026-09-22 15:42:29",
+    "read": false
+  },
+  {
+    "id": "notif_1790054811862",
+    "category": "send",
+    "title": "스튜디오 모멘텀 자동 홍보",
+    "message": "[클라우드 발송 기동] 직전 발송 27분 경과로 다음 타깃 발송을 시작합니다.",
+    "timestamp": "2026-09-22 14:26:51",
+    "read": false
+  },
+  {
+    "id": "notif_1790054627833",
+    "category": "send",
+    "title": "스튜디오 모멘텀 자동 홍보",
+    "message": "[클라우드 발송 기동] 직전 발송 24분 경과로 다음 타깃 발송을 시작합니다.",
+    "timestamp": "2026-09-22 14:23:47",
+    "read": false
+  },
+  {
+    "id": "notif_1790053173979",
+    "category": "send",
+    "title": "스튜디오 모멘텀 자동 홍보",
+    "message": "[클라우드 발송 기동] 직전 발송 341분 경과로 다음 타깃 발송을 시작합니다.",
+    "timestamp": "2026-09-22 13:59:33",
+    "read": false
+  },
+  {
     "id": "system_silent_mode",
     "category": "system",
     "title": "🔕 [설정 변경] 데스크톱 팝업 알림 무음 처리 완료",
