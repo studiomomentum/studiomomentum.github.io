@@ -2121,12 +2121,10 @@
           </div>
           <div class="pay-bank-num-row">
             <div>
-              <span class="pay-bank-num" id="payBankAccText">3333-31-8271701</span>
-              <span class="pay-bank-holder">카카오뱅크 (예금주: 스튜디오모멘텀)</span>
+              <span class="pay-bank-num" id="payBankAccText2">351-0506-7273-13</span>
+              <span class="pay-bank-holder">농협 (예금주: 김지현)</span>
             </div>
-            <button type="button" class="pay-copy-btn" id="payBankCopyBtn" onclick="copyAccountInfo()">
-              📋 계좌 복사
-            </button>
+            <button type="button" class="pay-copy-btn" id="payBankCopyBtn2" onclick="copyAccountInfo(this)">📋 계좌 복사</button>
           </div>
           <div class="pay-bank-hint">
             💡 위 계좌로 송금 후 아래 신청서를 제출하시면, 신청 내역이 자동 복사되어 <strong>전담 디렉터 1:1 카카오톡 라인</strong>으로 즉시 연결됩니다.
@@ -2367,12 +2365,12 @@ if (document.readyState === 'loading') {
   const startTime = Date.now();
 
 // 스튜디오 모멘텀 안전 결제 & 세무 처리 설정 객체
-window.MOMENTUM_PAY_CONFIG = {
-  bankName: '카카오뱅크',
-  accountNumber: '3333-31-8271701',
-  accountHolder: '스튜디오모멘텀',
-  kakaoUrl: 'https://open.kakao.com/o/sEX8RWNi'
-};
+  window.MOMENTUM_PAY_CONFIG = {
+    bankName: '농협',
+    accountNumber: '351-0506-7273-13',
+    accountHolder: '김지현',
+    kakaoUrl: 'https://open.kakao.com/o/sEX8RWNi'
+  };
 
 let currentPayPlan = 'report';
 
@@ -2382,31 +2380,38 @@ window._smSendEvent = window._smSendEvent || function(eventType, meta) {
   window._smEventQueue.push({ eventType: eventType, meta: meta, time: Date.now() });
 };
 
-// 공식 계좌번호 1클릭 복사 헬퍼
-function copyAccountInfo() {
-  const fullText = '카카오뱅크 3333-31-8271701 스튜디오모멘텀';
-  const btn = document.getElementById('payBankCopyBtn');
+      // 공식 계좌번호 1클릭 복사 헬퍼 (다중 계좌 지원)
+      function copyAccountInfo(btn) {
+        // Find the surrounding row to get account info
+        const row = btn.closest('.pay-bank-num-row');
+        if (!row) return;
+        const numEl = row.querySelector('.pay-bank-num');
+        const holderEl = row.querySelector('.pay-bank-holder');
+        if (!numEl || !holderEl) return;
+        const accountNumber = numEl.textContent.trim();
+        // holder text like "카카오뱅크 (예금주: 스튜디오모멘텀)"
+        const holderText = holderEl.textContent.trim();
+        const bankName = holderText.split('(')[0].trim();
+        const holderMatch = holderText.match(/예금주:\s*([^)]*)/);
+        const holderName = holderMatch ? holderMatch[1].trim() : '';
+        const fullText = `${bankName} ${accountNumber} ${holderName}`;
 
-  function showSuccess() {
-    if (btn) {
-      const orig = btn.innerHTML;
-      btn.innerHTML = '✓ 복사완료!';
-      btn.style.background = '#16a34a';
-      setTimeout(function() {
-        btn.innerHTML = orig;
-        btn.style.background = '';
-      }, 2000);
-    }
-  }
+        function showSuccess() {
+          const orig = btn.innerHTML;
+          btn.innerHTML = '✓ 복사완료!';
+          btn.style.background = '#16a34a';
+          setTimeout(() => {
+            btn.innerHTML = orig;
+            btn.style.background = '';
+          }, 2000);
+        }
 
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(fullText).then(showSuccess).catch(function() {
-      fallbackCopy(fullText, showSuccess);
-    });
-  } else {
-    fallbackCopy(fullText, showSuccess);
-  }
-}
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(fullText).then(showSuccess).catch(() => fallbackCopy(fullText, showSuccess));
+        } else {
+          fallbackCopy(fullText, showSuccess);
+        }
+      }
 
 function fallbackCopy(text, cb) {
   const ta = document.createElement('textarea');
@@ -2581,7 +2586,7 @@ function handlePayAppSubmit(e) {
     `• 연락처: ${phone}`,
     `• 유튜브 채널: ${ytUrl || '(미입력 / 상담 시 전달)'}`,
     `• 세무 증빙: ${taxOption}`,
-    isInstantPay ? `• 입금 계좌: 카카오뱅크 3333-31-8271701 (스튜디오모멘텀)` : `• 진행 방식: 선입금 0원 ➔ 전담 PD 배정 후 전자계약서 체결`
+    isInstantPay ? `• 입금 계좌: ${window.MOMENTUM_PAY_CONFIG.bankName} ${window.MOMENTUM_PAY_CONFIG.accountNo} (${window.MOMENTUM_PAY_CONFIG.holderName})` : `• 진행 방식: 선입금 0원 ➔ 전담 PD 배정 후 전자계약서 체결`
   ].join('\n');
 
   // 클립보드 자동 복사
