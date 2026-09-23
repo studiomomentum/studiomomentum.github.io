@@ -3139,11 +3139,70 @@
     }
 
     function exportDataCSV() {
-      const list = Object.values(targetsMap);
-      let csvContent = "\uFEFF순번,토큰,회사채널명,대표자,이메일,지역,카테고리,발송상태,발송일시\n";
-      list.forEach(t => {
-        csvContent += `"${t.no}","${t.token}","${t.company}","${t.rep}","${t.email}","${t.region}","${t.category}","${t.status}","${t.sent_at}"\n`;
+      // 1. 이벤트 종합 집계
+      const statsMap = {};
+      liveEvents.forEach(ev => {
+        if (!ev.ref || ev.ref === 'direct') return;
+        if (!statsMap[ev.ref]) {
+          statsMap[ev.ref] = {
+            openCount: 0,
+            visitCount: 0,
+            kakaoClick: false,
+            maxScroll: 0,
+            maxStaySec: 0,
+            firstSeen: ev._received || ev.timestamp || 0,
+            lastSeen: ev._received || ev.timestamp || 0
+          };
+        }
+        const s = statsMap[ev.ref];
+        const t = ev._received || ev.timestamp || 0;
+        if (t) {
+          s.firstSeen = s.firstSeen ? Math.min(s.firstSeen, t) : t;
+          s.lastSeen = Math.max(s.lastSeen, t);
+        }
+        if (ev.event === 'email_open' || ev.event === 'open') {
+          s.openCount++;
+        } else {
+          s.visitCount++;
+          if (ev.event === 'kakao_click') s.kakaoClick = true;
+          if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
+          if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
+          if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
+          if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
+        }
       });
+
+      // 2. 타깃별 추적 마스터 시트 생성
+      const list = Object.values(targetsMap).filter(t => t && t.token && t.token !== '_search_db_stats');
+      let csvContent = "\uFEFF[타깃 활동 추적 마스터]\n";
+      csvContent += "순번,토큰,회사채널명,대표자,이메일,지역,카테고리,발송상태,발송일시,열람상태,방문상태,열람횟수,방문횟수,카톡상담클릭,완독률(%),체류시간(초),최초활동일시,최근활동일시\n";
+
+      list.forEach(t => {
+        const s = statsMap[t.token];
+        const isOpened = s && (s.openCount > 0 || s.visitCount > 0);
+        const isVisited = s && s.visitCount > 0;
+        const openStatus = isOpened ? "열람완료" : "미열람";
+        const visitStatus = isVisited ? "사이트방문" : "미방문";
+        const openCnt = s ? (s.openCount + (s.visitCount > 0 && s.openCount === 0 ? 1 : 0)) : 0;
+        const visitCnt = s ? s.visitCount : 0;
+        const hotStr = s && s.kakaoClick ? "Y" : "N";
+        const scrollPct = s ? s.maxScroll : 0;
+        const staySec = s ? s.maxStaySec : 0;
+        const firstStr = s && s.firstSeen ? new Date(s.firstSeen).toLocaleString("ko-KR") : "-";
+        const lastStr = s && s.lastSeen ? new Date(s.lastSeen).toLocaleString("ko-KR") : "-";
+
+        csvContent += `"${t.no}","${t.token}","${t.company}","${t.rep}","${t.email}","${t.region}","${t.category}","${t.status}","${t.sent_at}","${openStatus}","${visitStatus}","${openCnt}","${visitCnt}","${hotStr}","${scrollPct}","${staySec}","${firstStr}","${lastStr}"\n`;
+      });
+
+      // 3. 브라우저 캐시 원본 이벤트 로그 블록 (100% 무손실 복구용)
+      csvContent += "\n\n[원본 이벤트 텔레메트리 로그]\n";
+      csvContent += "이벤트ID,일시,토큰,이벤트유형,채널,기기,해상도,체류/완독,메타데이터\n";
+      liveEvents.forEach(ev => {
+        const timeStr = ev._received || ev.timestamp ? new Date(ev._received || ev.timestamp).toLocaleString("ko-KR") : "-";
+        const metaStr = ev.meta ? JSON.stringify(ev.meta).replace(/"/g, '""') : "";
+        csvContent += `"${ev._id || ''}","${timeStr}","${ev.ref || ''}","${ev.event || ''}","${ev.channel_type || ''}","${ev.device || ''}","${ev.screen || ''}","${ev.meta && ev.meta.duration ? ev.meta.duration + '초' : ''}","${metaStr}"\n`;
+      });
+
       const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
