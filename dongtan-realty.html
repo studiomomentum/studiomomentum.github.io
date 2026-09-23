@@ -49,6 +49,69 @@
   </style>
 </head>
 <body>
+  <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
+  <div id="maintenanceOverlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#070b16; z-index:9999999; justify-content:center; align-items:center; padding:24px; box-sizing:border-box;">
+    <div style="background:#0f172a; border:1px solid #1e293b; border-radius:24px; max-width:540px; width:100%; padding:48px 32px; text-align:center; box-shadow:0 25px 50px -12px rgba(0,0,0,0.85); box-sizing:border-box;">
+      <div style="width:72px; height:72px; margin:0 auto 24px; border-radius:20px; background:linear-gradient(135deg, rgba(245,158,11,0.2), rgba(217,119,6,0.3)); border:1px solid rgba(245,158,11,0.4); display:flex; align-items:center; justify-content:center; font-size:36px;">
+        🚧
+      </div>
+      <span style="display:inline-block; font-size:12px; font-weight:800; color:#fbbf24; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.3); padding:4px 12px; border-radius:9999px; margin-bottom:16px;">
+        SYSTEM UPDATE & MAINTENANCE
+      </span>
+      <h2 style="font-size:24px; font-weight:900; color:#ffffff; line-height:1.4; margin-bottom:14px; letter-spacing:-0.5px;">
+        서비스 품질 개선을 위한<br>시스템 업데이트 점검 중입니다
+      </h2>
+      <p id="maintenanceMsgText" style="font-size:15px; color:#94a3b8; line-height:1.75; margin-bottom:28px; word-break:keep-all;">
+        현재 더욱 쾌적하고 안전한 서비스 제공을 위해 시스템 정기 업데이트를 진행하고 있습니다.<br>
+        잠시 후 다시 접속해 주시기 바랍니다.
+      </p>
+      <button onclick="location.reload()" style="background:linear-gradient(135deg, #1d4ed8, #0284c7); border:none; color:#ffffff; font-size:14.5px; font-weight:800; padding:13px 30px; border-radius:12px; cursor:pointer;">
+        🔄 새로고침
+      </button>
+    </div>
+  </div>
+
+  <script>
+  (function checkMaintenance() {
+    function applyBlock(isBlocked, msg) {
+      const el = document.getElementById("maintenanceOverlay");
+      if (!el) return;
+      if (isBlocked) {
+        el.style.display = "flex";
+        document.body.style.overflow = "hidden";
+        if (msg && document.getElementById("maintenanceMsgText")) {
+          document.getElementById("maintenanceMsgText").innerText = msg;
+        }
+      } else {
+        el.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    }
+    fetch("system_config.json?t=" + Date.now())
+      .then(r => r.ok ? r.json() : null)
+      .then(cfg => {
+        if (cfg && cfg.client_access_blocked) {
+          applyBlock(true, cfg.blocked_message);
+        }
+      })
+      .catch(() => {});
+    try {
+      const evSource = new EventSource("https://ntfy.sh/sm_events_2026_x89a/sse");
+      evSource.onmessage = function(e) {
+        try {
+          const data = JSON.parse(e.data);
+          if (data && data.message) {
+            const payload = JSON.parse(data.message);
+            if (payload.event === "client_access_block_change") {
+              applyBlock(payload.blocked === true, payload.message);
+            }
+          }
+        } catch(err) {}
+      };
+    } catch(err) {}
+  })();
+  </script>
+
   <div class="container">
     <span class="header-tag">🏢 DONGTAN & HWASEONG REALTY PRODUCTION</span>
     <h1>동탄·화성 부동산·분양·중개법인을 위한<br><span class="highlight">계약 전환율 300% 극대화 턴키 유튜브 솔루션</span></h1>

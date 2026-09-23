@@ -1268,6 +1268,114 @@
       color: #ffffff !important;
       border-color: rgba(255, 255, 255, 0.25) !important;
     }
+
+    /* 모바일 알림창 UI 완전 개선 */
+    @media (max-width: 768px) {
+      #notifModal {
+        padding: 0 !important;
+      }
+      #notifModalContent {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;
+        border: none !important;
+      }
+      .notif-modal-header {
+        padding: 14px 16px !important;
+      }
+      .notif-modal-header .header-sub {
+        display: none !important;
+      }
+      .notif-filter-bar {
+        padding: 10px 14px !important;
+        gap: 6px !important;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+      }
+      .notif-filter-tab {
+        min-width: 110px !important;
+        min-height: 38px !important;
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+        flex-shrink: 0 !important;
+      }
+      #notifListContainer {
+        padding: 14px 16px 80px 16px !important;
+        -webkit-overflow-scrolling: touch !important;
+        overscroll-behavior: contain !important;
+      }
+      .notif-modal-close-btn {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 28px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border-radius: 10px !important;
+        color: #fff !important;
+      }
+    }
+
+    /* 원터치 시스템 제어 스위치 버튼 스타일 */
+    .system-ctrl-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 13px;
+      border-radius: 9px;
+      font-size: 12.5px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      user-select: none;
+    }
+    .system-ctrl-btn:active {
+      transform: scale(0.96);
+    }
+    .btn-sys-active {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.25));
+      border-color: #10b981;
+      color: #34d399;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
+    }
+    .btn-sys-active:hover {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.4));
+      color: #fff;
+    }
+    .btn-sys-paused {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.3));
+      border-color: #ef4444;
+      color: #f87171;
+      box-shadow: 0 0 12px rgba(239, 68, 68, 0.3);
+    }
+    .btn-sys-paused:hover {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.35), rgba(220, 38, 38, 0.5));
+      color: #fff;
+    }
+    .btn-block-active {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.3));
+      border-color: #f59e0b;
+      color: #fbbf24;
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+    }
+    .btn-block-active:hover {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(217, 119, 6, 0.45));
+      color: #fff;
+    }
+    .btn-block-normal {
+      background: #111b2e;
+      border-color: #243452;
+      color: #94a3b8;
+    }
+    .btn-block-normal:hover {
+      border-color: #475569;
+      color: #cbd5e1;
+    }
   </style>
 </head>
 <body>
@@ -1311,6 +1419,18 @@
         <span class="brand-badge">LIVE TRACKING</span>
       </div>
       <div class="header-actions">
+        <!-- 원터치 1: 이메일 자동 발송 원시스템 ON/OFF 스위치 -->
+        <button id="btnEmailSystemToggle" class="system-ctrl-btn btn-sys-active" onclick="toggleEmailSystem()" title="서치부터 발송까지의 전체 자동화 시스템을 일시 정지하거나 재개합니다">
+          <span id="iconEmailSystem">⚡</span>
+          <span id="textEmailSystem">자동발송: 가동중 (ON)</span>
+        </button>
+
+        <!-- 원터치 2: 고객 페이지 접속 차단 (점검중) 스위치 -->
+        <button id="btnClientBlockToggle" class="system-ctrl-btn btn-block-normal" onclick="toggleClientAccessBlock()" title="고객의 웹사이트 및 랜딩페이지 접속을 즉시 차단하고 점검중 화면을 띄웁니다">
+          <span id="iconClientBlock">🛡️</span>
+          <span id="textClientBlock">고객접속: 정상 (OPEN)</span>
+        </button>
+
         <span id="lastUpdated" style="font-size: 12.5px; color: var(--text-muted);">방금 갱신됨</span>
         <button class="btn-secondary" id="notifBellBtn" onclick="toggleNotifModal()" style="position: relative; display: inline-flex; align-items: center; gap: 6px;">
           <span>🔔</span> 알림 로그 <span id="notifBadge" style="background: #ef4444; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 10px; display: none;">0</span>
@@ -1593,20 +1713,135 @@
     let mainTab = "SENT";     // 기본 탭: "SENT" (발송 완료 목록 - 최신순 정렬)
     let currentFilter = "ALL";
 
+    let systemConfig = {
+      email_system_enabled: true,
+      client_access_blocked: false,
+      blocked_message: "현재 서비스 품질 향상을 위한 시스템 업데이트 점검 중입니다.\n잠시 후 다시 접속해 주시기 바랍니다."
+    };
+
+    async function loadSystemConfig() {
+      try {
+        const res = await fetch("system_config.json?v=" + Date.now());
+        if (res.ok) {
+          systemConfig = await res.json();
+          updateSystemControlUI();
+        }
+      } catch (e) {
+        console.warn("system_config.json 로드 실패:", e);
+      }
+    }
+
+    function updateSystemControlUI() {
+      // 1. 이메일 자동발송 원터치 스위치 UI 갱신
+      const btnEmail = document.getElementById("btnEmailSystemToggle");
+      const iconEmail = document.getElementById("iconEmailSystem");
+      const textEmail = document.getElementById("textEmailSystem");
+      if (btnEmail && iconEmail && textEmail) {
+        if (systemConfig.email_system_enabled !== false) {
+          btnEmail.className = "system-ctrl-btn btn-sys-active";
+          iconEmail.textContent = "⚡";
+          textEmail.textContent = "자동발송: 가동중 (ON)";
+        } else {
+          btnEmail.className = "system-ctrl-btn btn-sys-paused";
+          iconEmail.textContent = "⏸️";
+          textEmail.textContent = "자동발송: 일시정지 (OFF)";
+        }
+      }
+
+      // 2. 고객 페이지 접속 차단 스위치 UI 갱신
+      const btnBlock = document.getElementById("btnClientBlockToggle");
+      const iconBlock = document.getElementById("iconClientBlock");
+      const textBlock = document.getElementById("textClientBlock");
+      if (btnBlock && iconBlock && textBlock) {
+        if (systemConfig.client_access_blocked === true) {
+          btnBlock.className = "system-ctrl-btn btn-block-active";
+          iconBlock.textContent = "🚧";
+          textBlock.textContent = "고객접속: 차단중 (점검중)";
+        } else {
+          btnBlock.className = "system-ctrl-btn btn-block-normal";
+          iconBlock.textContent = "🛡️";
+          textBlock.textContent = "고객접속: 정상 (OPEN)";
+        }
+      }
+    }
+
+    async function toggleEmailSystem() {
+      const currentState = systemConfig.email_system_enabled !== false;
+      const nextState = !currentState;
+      const actionName = nextState ? "가동(ON)" : "일시정지(OFF)";
+
+      if (!confirm(`이메일 자동 발송 시스템(서치·DB보충·발송 일련의 원시스템)을 [${actionName}] 상태로 변경하시겠습니까?`)) {
+        return;
+      }
+
+      systemConfig.email_system_enabled = nextState;
+      systemConfig.updated_at = new Date().toISOString();
+      updateSystemControlUI();
+
+      // ntfy 실시간 브로드캐스트 전송 (접속 중인 모든 관리자 화면 및 워치독 즉시 동기화)
+      try {
+        await fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
+          method: 'POST',
+          body: JSON.stringify({
+            event: 'system_config_change',
+            config: systemConfig,
+            admin: 'admin',
+            time: new Date().toISOString()
+          }),
+          headers: { 'Content-Type': 'text/plain;charset=UTF-8' }
+        });
+      } catch(e) {}
+
+      alert(`이메일 자동 발송 시스템이 [${actionName}] 되었습니다.\n클라우드 워크플로우에 즉시 적용됩니다.`);
+    }
+
+    async function toggleClientAccessBlock() {
+      const currentState = systemConfig.client_access_blocked === true;
+      const nextState = !currentState;
+      const actionName = nextState ? "차단 활성화 (점검중 화면 송출)" : "차단 해제 (정상 접속 허용)";
+
+      if (!confirm(`고객 페이지 접속(인바운드, 아웃바운드 전체)을 [${actionName}] 하시겠습니까?\n\n차단 시 고객이 접속하면 즉시 "시스템 업데이트 점검 중" 안내 화면이 표시됩니다.`)) {
+        return;
+      }
+
+      systemConfig.client_access_blocked = nextState;
+      systemConfig.updated_at = new Date().toISOString();
+      updateSystemControlUI();
+
+      // ntfy 실시간 브로드캐스트 전송 (모든 접속 고객 화면 실시간 락다운 또는 해제)
+      try {
+        await fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
+          method: 'POST',
+          body: JSON.stringify({
+            event: 'client_access_block_change',
+            blocked: nextState,
+            message: systemConfig.blocked_message,
+            time: new Date().toISOString()
+          }),
+          headers: { 'Content-Type': 'text/plain;charset=UTF-8' }
+        });
+      } catch(e) {}
+
+      alert(`고객 접속이 [${nextState ? '차단(점검중)' : '정상 오픈'}] 상태로 전환되었습니다.`);
+    }
+
     async function initDashboard() {
       document.getElementById("loginOverlay").style.display = "none";
       document.getElementById("dashboardApp").style.display = "block";
 
-      // 1. targets.json 로드
-      await loadTargets();
+      // 1. targets.json 및 시스템 제어 config 로드
+      await Promise.all([loadTargets(), loadSystemConfig()]);
 
-      // 2. 로컬스토리지에 누적 저장된 이전 이벤트 로드
+      // 2. pSEO 분석 보드 이전 사용자 접힘/펼침 상태 복원
+      initPseoBoardState();
+
+      // 3. 로컬스토리지에 누적 저장된 이전 이벤트 로드
       loadStoredEvents();
 
-      // 3. ntfy.sh 원격 텔레메트리 동기화
+      // 4. ntfy.sh 원격 텔레메트리 동기화
       await fetchLiveTelemetry();
 
-      // 4. 15초 주기 자동 새로고침 폴링 등록
+      // 5. 15초 주기 자동 새로고침 폴링 등록
       setInterval(() => {
         fetchLiveTelemetry(false);
       }, 15000);
@@ -1841,6 +2076,22 @@
     const PSEO_REGIONS = ["동탄·화성", "판교·분당", "강남·서초", "수원·광교", "용인·수지", "평택·고덕", "송파·잠실", "안양·평촌", "여의도·영등포", "가산·구로", "일산·고양", "인천·송도"];
     const PSEO_INDUSTRIES = ["병원·의원·피부과", "법무법인·변호사", "세무회계·세무사", "부동산·분양·중개", "프리미엄 입시학원"];
 
+    const PSEO_BOARD_STATE_KEY = "sm_pseo_board_collapsed";
+
+    function initPseoBoardState() {
+      const content = document.getElementById("pseoBoardContent");
+      const icon = document.getElementById("pseoToggleIcon");
+      if (!content) return;
+      const isCollapsed = localStorage.getItem(PSEO_BOARD_STATE_KEY) === "true";
+      if (isCollapsed) {
+        content.style.display = "none";
+        if (icon) icon.textContent = "▶ 펼치기";
+      } else {
+        content.style.display = "grid";
+        if (icon) icon.textContent = "▼ 접기/펼치기";
+      }
+    }
+
     function togglePseoBoard() {
       const content = document.getElementById("pseoBoardContent");
       const icon = document.getElementById("pseoToggleIcon");
@@ -1848,9 +2099,11 @@
       if (content.style.display === "none") {
         content.style.display = "grid";
         if (icon) icon.textContent = "▼ 접기/펼치기";
+        localStorage.setItem(PSEO_BOARD_STATE_KEY, "false");
       } else {
         content.style.display = "none";
         if (icon) icon.textContent = "▶ 펼치기";
+        localStorage.setItem(PSEO_BOARD_STATE_KEY, "true");
       }
     }
 
@@ -2758,11 +3011,11 @@
 
   <!-- 시스템 알림 센터 모달 (실시간 고객 반응 우선 대형 관제탑) -->
   <div id="notifModal" onclick="if(event.target.id==='notifModal') closeNotifModal()" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(3,7,18,0.82); backdrop-filter:blur(10px); z-index:99999; justify-content:center; align-items:center; padding:20px;">
-    <div style="background:#0b1120; border:1px solid #1e293b; border-radius:20px; width:95vw; max-width:1200px; height:90vh; max-height:900px; display:flex; flex-direction:column; box-shadow:0 30px 60px -12px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.08); overflow:hidden;">
+    <div id="notifModalContent" style="background:#0b1120; border:1px solid #1e293b; border-radius:20px; width:95vw; max-width:1200px; height:90vh; max-height:900px; display:flex; flex-direction:column; box-shadow:0 30px 60px -12px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.08); overflow:hidden;">
       <!-- Header -->
-      <div style="padding:20px 28px; border-bottom:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center; background:#080d1a;">
+      <div class="notif-modal-header" style="padding:20px 28px; border-bottom:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center; background:#080d1a;">
         <div style="display:flex; align-items:center; gap:14px;">
-          <div style="width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, #ef4444, #f43f5e); display:flex; align-items:center; justify-content:center; box-shadow:0 0 16px rgba(239,68,68,0.45);">
+          <div style="width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, #ef4444, #f43f5e); display:flex; align-items:center; justify-content:center; box-shadow:0 0 16px rgba(239,68,68,0.45); flex-shrink:0;">
             <span style="font-size:20px;">🔔</span>
           </div>
           <div>
@@ -2770,15 +3023,15 @@
               <h2 style="font-size:18px; font-weight:800; color:#fff; letter-spacing:-0.4px; margin:0;">실시간 통합 알림 관제 센터</h2>
               <span id="notifModalCount" style="font-size:12px; background:#ef4444; color:white; padding:3px 10px; border-radius:12px; font-weight:800;">0건</span>
             </div>
-            <div style="font-size:12px; color:#64748b; margin-top:3px;">고객 실시간 반응 (결제 시도 · 카톡 상담 · 제안 열람 · 90% 완독) 우선 관제</div>
+            <div class="header-sub" style="font-size:12px; color:#64748b; margin-top:3px;">고객 실시간 반응 (결제 시도 · 카톡 상담 · 제안 열람 · 90% 완독) 우선 관제</div>
           </div>
         </div>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <button onclick="refreshNotifModal()" style="background:#131d33; border:1px solid #243452; color:#cbd5e1; font-size:13px; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:600; display:flex; align-items:center; gap:6px; transition:all 0.15s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#cbd5e1';">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button onclick="refreshNotifModal()" style="background:#131d33; border:1px solid #243452; color:#cbd5e1; font-size:13px; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; display:flex; align-items:center; gap:6px; transition:all 0.15s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#cbd5e1';">
             <span>🔄</span> 새로고침
           </button>
-          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #243452; color:#94a3b8; font-size:13px; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.15s;" onmouseover="this.style.borderColor='#475569';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#94a3b8';">✓ 모두 읽음</button>
-          <button onclick="closeNotifModal()" style="background:transparent; border:none; color:#64748b; font-size:26px; cursor:pointer; padding:0 8px; line-height:1; border-radius:8px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#64748b';this.style.background='transparent';">&times;</button>
+          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #243452; color:#94a3b8; font-size:13px; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.15s;" onmouseover="this.style.borderColor='#475569';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#94a3b8';">✓ 모두 읽음</button>
+          <button class="notif-modal-close-btn" onclick="closeNotifModal()" style="background:transparent; border:none; color:#94a3b8; font-size:28px; cursor:pointer; padding:0 10px; line-height:1; border-radius:8px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#94a3b8';this.style.background='transparent';" aria-label="닫기">&times;</button>
         </div>
       </div>
       <!-- Filter Tabs (도톰하고 묵직한 프리미엄 세그먼트 버튼) -->
