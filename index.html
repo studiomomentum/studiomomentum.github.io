@@ -2821,9 +2821,9 @@ let channelType = 'DIRECT';
 let channelName = '직접 접속 / 북마크';
 let pricingTier = 'INBOUND_PUBLIC (공개 정상가: 파일럿 60만 / 정기 셀프 월 320만)';
 let targetCompName = '';
+const urlParams = new URLSearchParams(window.location.search);
 
 try {
-  const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has('vip') || urlParams.get('pricing') === 'vip') {
     refToken = 'vip';
   } else {
@@ -2844,7 +2844,6 @@ try {
 if (refToken && refToken !== 'direct') {
   channelType = 'OUTBOUND';
   try {
-    const urlParams = new URLSearchParams(window.location.search);
     targetCompName = urlParams.get('comp') || '';
     if (targetCompName) {
       sessionStorage.setItem('sm_lead_comp', targetCompName);
