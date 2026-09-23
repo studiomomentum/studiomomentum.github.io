@@ -2617,7 +2617,7 @@
         return;
       }
 
-      // 토큰별 누적 메일 열람수 및 사이트 방문수 사전 집계
+      // 토큰별 누적 메일 열람수 및 사이트 방문수 집계 (중복 합산 방지: targetsMap 기본값과 신규 이벤트 분리)
       const tokenStatsMap = {};
       Object.values(targetsMap).forEach(t => {
         if (!t || !t.token) return;
@@ -2627,15 +2627,14 @@
         };
       });
 
+      // targets.json 이후에 새로 수신된 liveEvents 중 미반영 신규 이벤트만 누적
       cleanEvents.forEach(ev => {
         if (!ev.ref || ev.ref === 'direct') return;
-        if (!tokenStatsMap[ev.ref]) {
-          tokenStatsMap[ev.ref] = { openCount: 0, visitCount: 0 };
-        }
-        if (ev.event === 'email_open' || ev.event === 'open') {
-          tokenStatsMap[ev.ref].openCount++;
-        } else if (ev.event === 'visit') {
-          tokenStatsMap[ev.ref].visitCount++;
+        // targets.json에 이미 반영되어 있지 않은 신규 타깃이거나 동적 이벤트인 경우만 안전 집계
+        if (!targetsMap[ev.ref]) {
+          if (!tokenStatsMap[ev.ref]) tokenStatsMap[ev.ref] = { openCount: 0, visitCount: 0 };
+          if (ev.event === 'email_open' || ev.event === 'open') tokenStatsMap[ev.ref].openCount++;
+          else if (ev.event === 'visit') tokenStatsMap[ev.ref].visitCount++;
         }
       });
 
