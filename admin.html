@@ -2077,6 +2077,18 @@
       const scroll90Tokens = new Set();
       const inboundTokens = new Set();
 
+      // 1. targets.json에 영구 보존된 실측 열람/방문 데이터 기본 적재
+      targetsList.forEach(t => {
+        if (t.opened) openedTokens.add(t.token);
+        if (t.visited) {
+          visitedTokens.add(t.token);
+          openedTokens.add(t.token);
+        }
+        if (t.hot) hotTokens.add(t.token);
+        if (t.max_scroll >= 85) scroll90Tokens.add(t.token);
+      });
+
+      // 2. 실시간 텔레메트리 스트림 추가 반영 (누적 증분)
       liveEvents.forEach(ev => {
         const refLower = (ev.ref || '').toLowerCase();
         if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
@@ -2385,6 +2397,18 @@
       const hotTokens = new Set();
       const scroll90Tokens = new Set();
 
+      // 1. targets.json에 영구 보존된 실측 열람/방문 데이터 기본 적재
+      targetsList.forEach(t => {
+        if (t.opened) openedTokens.add(t.token);
+        if (t.visited) {
+          visitedTokens.add(t.token);
+          openedTokens.add(t.token);
+        }
+        if (t.hot) hotTokens.add(t.token);
+        if (t.max_scroll >= 85) scroll90Tokens.add(t.token);
+      });
+
+      // 2. 실시간 텔레메트리 스트림 추가 반영
       liveEvents.forEach(ev => {
         const refLower = (ev.ref || '').toLowerCase();
         if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
@@ -2582,6 +2606,26 @@
 
       // 1. 토큰별 활동 데이터 종합
       const targetStats = {};
+
+      // 1-1. targets.json에 영구 보존된 활동 지표 기본 적재
+      Object.values(targetsMap).forEach(t => {
+        if (!t || !t.token || t.token === '_search_db_stats') return;
+        if (t.opened || t.visited) {
+          targetStats[t.token] = {
+            opened: !!t.opened,
+            visited: !!t.visited,
+            hot: !!t.hot,
+            lastSeen: t.last_activity ? new Date(t.last_activity).getTime() : 0,
+            events: [],
+            maxScroll: t.max_scroll || (t.visited ? 90 : 0),
+            maxStaySec: t.max_stay_sec || 0,
+            openCount: t.open_count || (t.opened ? 1 : 0),
+            visitCount: t.visit_count || (t.visited ? 1 : 0)
+          };
+        }
+      });
+
+      // 1-2. 실시간 텔레메트리 스트림 추가 반영 (누적 갱신)
       liveEvents.forEach(ev => {
         if (!ev.ref || ev.ref === 'direct') return;
         const refLower = (ev.ref || '').toLowerCase();
