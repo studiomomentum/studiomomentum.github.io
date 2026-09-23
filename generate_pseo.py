@@ -154,7 +154,7 @@ INDUSTRIES = {
     }
 }
 
-OUTPUT_DIR = "/Users/pc/Desktop/PD/06_개발도구/자체제작프로그램/cocked-pisto.github.io"
+OUTPUT_DIR = "/Users/pc/Desktop/PD/06_개발도구/자체제작프로그램/studiomomentum.github.io"
 
 TEMPLATE = """<!DOCTYPE html>
 <html lang="ko">

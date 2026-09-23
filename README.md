@@ -1,4 +1,4 @@
-# 🚀 스튜디오 모멘텀 웹 플랫폼 저장소 (cocked-pisto.github.io)
+# 🚀 스튜디오 모멘텀 웹 플랫폼 저장소 (studiomomentum.github.io)
 
 > **호스팅:** GitHub Pages (`https://studiomomentum.github.io/`)  
 > **시스템 목적:** 의사·변호사·세무사·전문직 대상 유튜브 올인원 턴키 솔루션 세일즈 퍼널 및 관제 플랫폼  
