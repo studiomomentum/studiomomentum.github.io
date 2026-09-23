@@ -321,7 +321,19 @@ TEMPLATE = """<!DOCTYPE html>
       return 'Desktop';
     }}
 
+    const isAdminDevice = (function() {{
+      try {{
+        if (localStorage.getItem('sm_admin_device') === 'true') return true;
+        if (sessionStorage.getItem('sm_admin_device') === 'true') return true;
+        if (document.cookie.split(';').some(function(c){{ return c.trim().indexOf('sm_admin_device=true') === 0; }})) return true;
+      }} catch(e){{}}
+      const host = window.location.hostname;
+      if (host === 'localhost' || host === '127.0.0.1' || host.indexOf('192.168.') === 0) return true;
+      return false;
+    }})();
+
     function sendEvent(eventType, extraMeta) {{
+      if (isAdminDevice) return;
       const payload = {{
         ref: refToken,
         channel_type: 'PSEO',

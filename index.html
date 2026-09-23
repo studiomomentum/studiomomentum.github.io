@@ -3052,9 +3052,32 @@ if (channelType === 'OUTBOUND') {
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua);
   const deviceType = isMobile ? (/iPhone|iPad|iPod/i.test(ua) ? 'Mobile (iPhone)' : (/Android/i.test(ua) ? 'Mobile (Android)' : 'Mobile')) : 'Desktop';
   const screenRes = `${window.screen.width}x${window.screen.height}`;
-  const referrer = rawReferrer || 'Direct / Bookmark';
+  const isAdminDevice = (function() {
+    try {
+      if (localStorage.getItem('sm_admin_device') === 'true') return true;
+      if (sessionStorage.getItem('sm_admin_device') === 'true') return true;
+      if (document.cookie.split(';').some(function(c) { return c.trim().indexOf('sm_admin_device=true') === 0; })) return true;
+    } catch(e){}
+    const host = window.location.hostname;
+    if (host === 'localhost' || host === '127.0.0.1' || host.indexOf('192.168.') === 0) return true;
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('admin') === '1' || urlParams.get('test') === '1' || urlParams.get('preview') === '1' || urlParams.get('dev') === '1') {
+        try {
+          localStorage.setItem('sm_admin_device', 'true');
+          document.cookie = "sm_admin_device=true; path=/; max-age=31536000; SameSite=Lax";
+        } catch(e){}
+        return true;
+      }
+    } catch(e){}
+    return false;
+  })();
 
   function sendEvent(eventType, meta) {
+    if (isAdminDevice) {
+      console.log('[Momentum Telemetry Skipped] Admin self-visit detected. Telemetry event ignored:', eventType);
+      return;
+    }
     const payload = {
       event: eventType,
       ref: refToken,

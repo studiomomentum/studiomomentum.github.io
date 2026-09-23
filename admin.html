@@ -1417,6 +1417,7 @@
       <div class="brand-title-wrap">
         <h1 style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px;">STUDIO MOMENTUM Mission Control</h1>
         <span class="brand-badge">LIVE TRACKING</span>
+        <span class="brand-badge" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4);">🛡️ 내 방문 제외 필터 가동중</span>
       </div>
       <div class="header-actions">
         <!-- 원터치 1: 이메일 자동 발송 원시스템 ON/OFF 스위치 -->
@@ -1637,12 +1638,21 @@
        1. 보안 로그인 인증 (SHA-256 해시 검증)
        계정: admin / 비밀번호: momentum2026!
        =================================================== */
+    // 관리자 브라우저 기기 등록 (이 브라우저에서 메인 웹사이트 접속 시 텔레메트리 자동 면제)
+    try {
+      localStorage.setItem('sm_admin_device', 'true');
+      sessionStorage.setItem('sm_admin_device', 'true');
+      document.cookie = "sm_admin_device=true; path=/; max-age=31536000; SameSite=Lax";
+    } catch(e) {}
+
     const AUTH_HASH = "3136bc00c575d3cb17e411256f01ddce454b74d32391d7c34e5a0abe38a6e18d";
     const AUTH_USER = "admin";
     const SESSION_KEY = "sm_admin_authenticated";
     const LOCAL_AUTH_KEY = "sm_admin_persistent_auth";
     const TRACK_TOPIC = "sm_events_2026_x89a";
     const LOCAL_EVENTS_KEY = "sm_stored_telemetry_events";
+    // 관리자 테스트/미등록 테스트 토큰 블랙리스트 (인바운드 및 통계 오염 방지)
+    const TEST_REFS = new Set(['vip', 'test', 'preview', 'admin', 'dev', 'o3eltr25', 'sample', 'direct']);
 
     async function sha256(message) {
       const msgBuffer = new TextEncoder().encode(message);
@@ -2147,6 +2157,9 @@
       const aiSources = { 'ChatGPT': 0, 'Perplexity (AEO)': 0, 'Claude': 0, 'Gemini': 0, 'Google AI (AEO)': 0, 'Others': 0 };
 
       liveEvents.forEach(ev => {
+        const refLower = (ev.ref || '').toLowerCase();
+        if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
+
         // 1. PSEO 감지
         if (ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'))) {
           totalPseo++;
@@ -2269,9 +2282,12 @@
     function getInboundList() {
       const inboundsMap = {};
       liveEvents.forEach(ev => {
+        const refLower = (ev.ref || '').toLowerCase();
+        if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
+
         const isTarget = ev.ref && targetsMap[ev.ref];
         const isPseo = ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'));
-        const isInbound = isPseo || (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && ev.ref !== 'direct');
+        const isInbound = isPseo || (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'AEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && !TEST_REFS.has(refLower));
         if (!isInbound) return;
 
         const key = ev.ref || 'inbound_unknown';
@@ -2332,6 +2348,9 @@
       const scroll90Tokens = new Set();
 
       liveEvents.forEach(ev => {
+        const refLower = (ev.ref || '').toLowerCase();
+        if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
+
         if (ev.ref && ev.ref !== 'direct') {
           if (ev.event === 'email_open' || ev.event === 'open') {
             openedTokens.add(ev.ref);
@@ -2427,14 +2446,18 @@
 
     function renderFeed() {
       const feedBox = document.getElementById("feedList");
-      document.getElementById("liveFeedCount").textContent = liveEvents.length;
+      const cleanEvents = liveEvents.filter(ev => {
+        const refLower = (ev.ref || '').toLowerCase();
+        return !TEST_REFS.has(refLower) && !ev.is_admin && ev.channel_type !== 'ADMIN_TEST' && !(ev.meta && ev.meta.is_admin);
+      });
+      document.getElementById("liveFeedCount").textContent = cleanEvents.length;
 
-      if (liveEvents.length === 0) {
-        feedBox.innerHTML = '<div style="text-align: center; color: #64748b; padding: 40px 0;">아직 수집된 활동 이벤트가 없습니다.</div>';
+      if (cleanEvents.length === 0) {
+        feedBox.innerHTML = '<div style="text-align: center; color: #64748b; padding: 40px 0;">수집된 실제 고객 활동 이벤트가 없습니다. (관리자 테스트 제외 필터 가동 중)</div>';
         return;
       }
 
-      feedBox.innerHTML = liveEvents.slice(0, 50).map(ev => {
+      feedBox.innerHTML = cleanEvents.slice(0, 50).map(ev => {
         const target = targetsMap[ev.ref];
         const isJob = isJobPostingTarget(target);
         const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
