@@ -1504,12 +1504,12 @@
       </div>
     </div>
 
-    <!-- pSEO & Inbound 실시간 지역/업종 분석 보드 -->
+    <!-- pSEO & Inbound 실시간 지역/업종/AI(GEO·AEO) 분석 보드 -->
     <div class="pseo-analytics-panel" id="pseoAnalyticsPanel">
       <div class="panel-header" style="cursor: pointer; margin-bottom: 0;" onclick="togglePseoBoard()">
         <div class="panel-title">
-          <span>🗺️ pSEO 60개 권역·업종 &amp; AI 유입(GEO) 실시간 분석 보드</span>
-          <span id="pseoTotalBadge" style="font-size: 11px; background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 10px; font-weight: 800;">pSEO: 0건 | GEO: 0건</span>
+          <span>🗺️ pSEO 60개 권역·업종 &amp; AI 유입 (GEO·AEO 직답) 실시간 분석 보드</span>
+          <span id="pseoTotalBadge" style="font-size: 11px; background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 10px; font-weight: 800;">pSEO: 0건 | GEO: 0건 | AEO: 0건</span>
         </div>
         <span style="font-size: 12px; color: #94a3b8;" id="pseoToggleIcon">▼ 접기/펼치기</span>
       </div>
@@ -2141,9 +2141,10 @@
 
       let totalPseo = 0;
       let totalGeo = 0;
+      let totalAeo = 0;
       let roiCalculations = 0;
       let roiSalarySum = 0;
-      const aiSources = { 'ChatGPT': 0, 'Perplexity': 0, 'Claude': 0, 'Gemini': 0, 'Others': 0 };
+      const aiSources = { 'ChatGPT': 0, 'Perplexity (AEO)': 0, 'Claude': 0, 'Gemini': 0, 'Google AI (AEO)': 0, 'Others': 0 };
 
       liveEvents.forEach(ev => {
         // 1. PSEO 감지
@@ -2160,18 +2161,25 @@
           });
         }
 
-        // 2. GEO (AI) 감지
-        if (ev.channel_type === 'GEO' || (ev.channel_name && (ev.channel_name.includes('ChatGPT') || ev.channel_name.includes('Perplexity') || ev.channel_name.includes('Claude') || ev.channel_name.includes('Gemini')))) {
+        // 2. AEO (답변 엔진 직답 인용) 감지
+        if (ev.channel_type === 'AEO' || (ev.channel_name && (ev.channel_name.includes('AEO') || ev.channel_name.includes('Perplexity') || ev.channel_name.includes('Overview')))) {
+          totalAeo++;
+          const name = ev.channel_name || '';
+          if (name.includes('Perplexity')) aiSources['Perplexity (AEO)']++;
+          else if (name.includes('Overview') || name.includes('Google')) aiSources['Google AI (AEO)']++;
+          else aiSources['Others']++;
+        }
+        // 3. GEO (생성형 AI 추천) 감지
+        else if (ev.channel_type === 'GEO' || (ev.channel_name && (ev.channel_name.includes('ChatGPT') || ev.channel_name.includes('Claude') || ev.channel_name.includes('Gemini')))) {
           totalGeo++;
           const name = ev.channel_name || '';
           if (name.includes('ChatGPT') || name.includes('OpenAI')) aiSources['ChatGPT']++;
-          else if (name.includes('Perplexity')) aiSources['Perplexity']++;
           else if (name.includes('Claude')) aiSources['Claude']++;
           else if (name.includes('Gemini')) aiSources['Gemini']++;
           else aiSources['Others']++;
         }
 
-        // 3. ROI 계산기 조작 감지
+        // 4. ROI 계산기 조작 감지
         if (ev.event === 'roi_calc_change' && ev.meta && ev.meta.salary) {
           roiCalculations++;
           roiSalarySum += parseInt(ev.meta.salary, 10) || 350;
@@ -2179,7 +2187,7 @@
       });
 
       const totalBadgeEl = document.getElementById("pseoTotalBadge");
-      if (totalBadgeEl) totalBadgeEl.textContent = `pSEO: ${totalPseo}건 | GEO: ${totalGeo}건`;
+      if (totalBadgeEl) totalBadgeEl.textContent = `pSEO: ${totalPseo}건 | GEO: ${totalGeo}건 | AEO: ${totalAeo}건`;
 
       // 렌더링: 권역별 랭킹
       const regEl = document.getElementById("pseoRegionList");
@@ -2230,12 +2238,13 @@
         const avgSalary = roiCalculations > 0 ? Math.round(roiSalarySum / roiCalculations) : 350;
         geoEl.innerHTML = `
           <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; border: 1px solid #334155; margin-bottom: 10px;">
-            <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px;">🤖 AI 검색 추천(GEO) 실시간 유입</div>
+            <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px;">🤖 AI 검색 추천 &amp; 직답 인용 (GEO · AEO)</div>
             <div style="display: flex; gap: 6px; flex-wrap: wrap;">
               <span class="badge" style="background:#0284c7; color:white; font-size:11px;">ChatGPT: ${aiSources['ChatGPT']}</span>
-              <span class="badge" style="background:#8b5cf6; color:white; font-size:11px;">Perplexity: ${aiSources['Perplexity']}</span>
+              <span class="badge" style="background:#8b5cf6; color:white; font-size:11px;">Perplexity (AEO): ${aiSources['Perplexity (AEO)']}</span>
+              <span class="badge" style="background:#059669; color:white; font-size:11px;">Google AI (AEO): ${aiSources['Google AI (AEO)']}</span>
               <span class="badge" style="background:#d97706; color:white; font-size:11px;">Claude: ${aiSources['Claude']}</span>
-              <span class="badge" style="background:#059669; color:white; font-size:11px;">Gemini: ${aiSources['Gemini']}</span>
+              <span class="badge" style="background:#475569; color:white; font-size:11px;">Gemini: ${aiSources['Gemini']}</span>
             </div>
           </div>
           <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; border: 1px solid #334155;">
