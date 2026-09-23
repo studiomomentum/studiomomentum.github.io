@@ -1084,8 +1084,8 @@
     "email": "hongdo8888@daum.net",
     "region": "동탄",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-23 17:35:00",
     "views": "구독자 562명 / 최근 5편 [34, 90, 1500, 151, 664] / 평균 488회",
     "point": "동탄 변호사 채널의 최근 5편 실측 평균 488회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "d87bbb8c",
@@ -1370,13 +1370,5 @@
     "point": "분당 산부인과 채널의 최근 2편 실측 평균 282회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "2916e376",
     "is_priority": false
-  },
-  "_search_db_stats": {
-    "total_candidates": 1105,
-    "discovered_count": 0,
-    "review_count": 1072,
-    "verified_count": 28,
-    "evidence_count": 1150,
-    "updated_at": "2026-09-23T08:31:45.562234+00:00"
   }
 }
