@@ -1048,5 +1048,19 @@
     "point": "평택 행정사 채널의 최근 5편 실측 평균 14회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "e0ccdc54",
     "is_priority": false
+  },
+  "555b0ad6": {
+    "no": "76",
+    "company": "법대로해",
+    "rep": "대표님",
+    "email": "mj@kisunglaw.com",
+    "region": "서초",
+    "category": "legal",
+    "status": "SENT",
+    "sent_at": "2026-09-23 15:47:31",
+    "views": "구독자 295명 / 최근 5편 [2, 19, 41, 28, 46] / 평균 27회",
+    "point": "서초 변호사 채널의 최근 5편 실측 평균 27회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "555b0ad6",
+    "is_priority": false
   }
 }
