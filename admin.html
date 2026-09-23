@@ -1449,6 +1449,7 @@
           <span>🔔</span> 알림 로그 <span id="notifBadge" style="background: #ef4444; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 10px; display: none;">0</span>
         </button>
         <button class="btn-secondary" onclick="fetchLiveTelemetry(true)">🔄 즉시 새로고침</button>
+        <button class="btn-secondary" onclick="purgeTestTelemetry()" title="대표님이 테스트하면서 누적된 브라우저 로컬 저장소의 더미 인바운드/테스트 기록을 0으로 초기화합니다">🧹 테스트 기록 초기화</button>
         <button class="btn-secondary" onclick="exportDataCSV()">📥 CSV 내보내기</button>
         <button class="btn-secondary btn-logout" onclick="handleLogout()">로그아웃</button>
       </div>
@@ -1888,9 +1889,30 @@
       try {
         const raw = localStorage.getItem(LOCAL_EVENTS_KEY);
         if (raw) {
-          liveEvents = JSON.parse(raw);
+          const list = JSON.parse(raw);
+          // 저장된 이벤트 중 대표님 테스트 토큰 및 관리자 이벤트 자동 필터링
+          liveEvents = list.filter(ev => {
+            const refLower = (ev.ref || '').toLowerCase();
+            if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) {
+              return false;
+            }
+            return true;
+          });
         }
       } catch (e) {}
+    }
+
+    function purgeTestTelemetry() {
+      if (confirm("대표님이 테스트하면서 브라우저에 누적된 더미 테스트/인바운드 기록을 완전히 비우시겠습니까?\n\n(실제 고객의 유효 발송 및 방문 데이터는 보존됩니다)")) {
+        localStorage.removeItem(LOCAL_EVENTS_KEY);
+        liveEvents = [];
+        saveStoredEvents();
+        updateKPIs();
+        updatePseoBoard();
+        renderLiveFeed();
+        renderTable();
+        alert("🧹 테스트 기록이 초기화되었습니다. 실시간 고객 유입만 깨끗하게 표시됩니다.");
+      }
     }
 
     function saveStoredEvents() {
@@ -2056,8 +2078,12 @@
       const inboundTokens = new Set();
 
       liveEvents.forEach(ev => {
+        const refLower = (ev.ref || '').toLowerCase();
+        if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
+
         const isTarget = ev.ref && targetsMap[ev.ref];
-        const isInbound = (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && ev.ref !== 'direct');
+        const isPseo = ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'));
+        const isInbound = isPseo || (ev.ref && ev.ref.startsWith('inbound_')) || ev.channel_type === 'GEO' || ev.channel_type === 'AEO' || ev.channel_type === 'SEO' || ev.channel_type === 'SNS' || (!isTarget && ev.ref && !TEST_REFS.has(refLower));
 
         if (isTarget) {
           if (ev.event === 'email_open' || ev.event === 'open') {
@@ -2558,6 +2584,9 @@
       const targetStats = {};
       liveEvents.forEach(ev => {
         if (!ev.ref || ev.ref === 'direct') return;
+        const refLower = (ev.ref || '').toLowerCase();
+        if (TEST_REFS.has(refLower) || ev.is_admin || ev.channel_type === 'ADMIN_TEST' || (ev.meta && ev.meta.is_admin)) return;
+
         if (!targetStats[ev.ref]) {
           targetStats[ev.ref] = {
             opened: false,
