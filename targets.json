@@ -1798,8 +1798,8 @@
     "email": "iddxd@naver.com",
     "region": "수원 영통",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-23 19:54:58",
     "views": "46회 (영상PD 구인)",
     "point": "[🚨구인공고 타깃] 치과 영상PD 구인 대체 및 임플란트·보철 시술 완주형 심리 대본 턴키 역제안",
     "token": "df3b2c62",
@@ -1839,6 +1839,6 @@
     "review_count": 1131,
     "verified_count": 29,
     "evidence_count": 1213,
-    "updated_at": "2026-09-23T10:36:41.746929+00:00"
+    "updated_at": "2026-09-23T10:55:00.276250+00:00"
   }
 }
