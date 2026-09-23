@@ -1370,5 +1370,13 @@
     "point": "분당 산부인과 채널의 최근 2편 실측 평균 282회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "2916e376",
     "is_priority": false
+  },
+  "_search_db_stats": {
+    "total_candidates": 1121,
+    "discovered_count": 0,
+    "review_count": 1087,
+    "verified_count": 28,
+    "evidence_count": 1165,
+    "updated_at": "2026-09-23T09:53:29.875594+00:00"
   }
 }
