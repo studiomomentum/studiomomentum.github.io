@@ -941,33 +941,45 @@
         box-sizing: border-box;
       }
 
-      /* 5. 메인 탭 네비게이션 모바일 최적화 */
+      /* 5. 메인 탭 네비게이션 모바일 최적화 (2줄 분할 그리드로 폰트 겹침 원천 차단) */
       .main-tab-nav {
-        display: flex;
-        gap: 6px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
         width: 100%;
         box-sizing: border-box;
-        padding: 4px;
+        padding: 6px;
         margin-bottom: 14px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        overflow: visible;
       }
       .main-tab-btn {
-        flex: 1;
+        width: 100%;
         min-width: 0;
-        padding: 8px 6px;
-        font-size: 11.5px;
+        padding: 10px 10px;
+        font-size: 12px;
+        font-weight: 700;
         white-space: nowrap;
-        border-radius: 6px;
-        gap: 5px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        box-sizing: border-box;
+      }
+      .main-tab-btn#tabBtnAll {
+        grid-column: span 2;
+        justify-content: center;
+        gap: 8px;
       }
       .main-tab-btn .tab-badge {
-        font-size: 10px;
-        padding: 1px 5px;
+        font-size: 11px;
+        padding: 2px 7px;
+        border-radius: 10px;
+        font-weight: 800;
+        flex-shrink: 0;
       }
 
-      /* 6. 마스터 테이블 및 검색/필터 바 모바일 최적화 */
+      /* 6. 마스터 테이블 및 검색/필터 바 모바일 최적화 (필터 버튼 줄바꿈 적용) */
       .table-controls {
         flex-direction: column;
         align-items: stretch;
@@ -985,11 +997,9 @@
       }
       .filter-group {
         display: flex;
-        gap: 5px;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        gap: 6px;
         padding-bottom: 4px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
         width: 100%;
         box-sizing: border-box;
       }
@@ -999,8 +1009,9 @@
       .filter-btn {
         flex-shrink: 0;
         white-space: nowrap;
-        padding: 6px 9px;
-        font-size: 11px;
+        padding: 7px 10px;
+        font-size: 11.5px;
+        border-radius: 6px;
       }
       .mobile-scroll-hint {
         display: none;
@@ -1582,11 +1593,11 @@
         <!-- 메인 탭 네비게이션: 발송 완료 vs 발송 대기 vs 서치 발굴 DB vs 인바운드 분리 -->
         <div class="main-tab-nav">
           <button class="main-tab-btn active" id="tabBtnSent" onclick="setMainTab('SENT', this)">
-            <span>📨 발송 완료 목록</span>
+            <span>📨 발송 완료</span>
             <span class="tab-badge" id="tabSentCount">0</span>
           </button>
           <button class="main-tab-btn" id="tabBtnReady" onclick="setMainTab('READY', this)">
-            <span>⏳ 발송 대기 목록</span>
+            <span>⏳ 발송 대기</span>
             <span class="tab-badge queue-badge" id="tabReadyCount">0</span>
           </button>
           <button class="main-tab-btn" id="tabBtnSearchDB" onclick="setMainTab('SEARCH_DB', this)">
@@ -1594,11 +1605,11 @@
             <span class="tab-badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; font-weight: 800;" id="tabSearchDBCount">0</span>
           </button>
           <button class="main-tab-btn" id="tabBtnInbound" onclick="setMainTab('INBOUND', this)">
-            <span>🌐 인바운드 (SEO/GEO)</span>
+            <span>🌐 인바운드 유입</span>
             <span class="tab-badge" style="background: rgba(245, 158, 11, 0.25); color: #fbbf24; font-weight: 800;" id="tabInboundCount">0</span>
           </button>
           <button class="main-tab-btn" id="tabBtnAll" onclick="setMainTab('ALL', this)">
-            <span>📋 전체 타깃 DB</span>
+            <span>📋 전체 타깃 DB 통합</span>
             <span class="tab-badge" style="background: rgba(255,255,255,0.1); color: #94a3b8;" id="tabAllCount">0</span>
           </button>
         </div>
