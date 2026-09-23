@@ -1,3 +1,7 @@
 # 로컬 비공개 시스템 설계 및 보안 문서
 SYSTEM_ARCHITECTURE.md
 .DS_Store
+backup_service.log
+backup_service_error.log
+telemetry_master.jsonl
+
