@@ -1767,6 +1767,7 @@
     let mainTab = "SENT";     // 기본 탭: "SENT" (발송 완료 목록 - 최신순 정렬)
     let currentFilter = "ALL";
 
+    const LOCAL_SYSTEM_CONFIG_KEY = "sm_admin_system_config";
     let systemConfig = {
       email_system_enabled: true,
       client_access_blocked: false,
@@ -1774,11 +1775,26 @@
     };
 
     async function loadSystemConfig() {
+      // 1. 브라우저 로컬 저장소 우선 복원 (새로고침 시 ON 원복 방지)
+      try {
+        const cached = localStorage.getItem(LOCAL_SYSTEM_CONFIG_KEY);
+        if (cached) {
+          systemConfig = Object.assign(systemConfig, JSON.parse(cached));
+          updateSystemControlUI();
+        }
+      } catch (e) {}
+
+      // 2. 서버 system_config.json 확인
       try {
         const res = await fetch("system_config.json?v=" + Date.now());
         if (res.ok) {
-          systemConfig = await res.json();
-          updateSystemControlUI();
+          const remote = await res.json();
+          // 로컬 업데이트 시각과 비교하여 최신본 적용
+          if (!systemConfig.updated_at || (remote.updated_at && remote.updated_at >= systemConfig.updated_at)) {
+            systemConfig = Object.assign(systemConfig, remote);
+            localStorage.setItem(LOCAL_SYSTEM_CONFIG_KEY, JSON.stringify(systemConfig));
+            updateSystemControlUI();
+          }
         }
       } catch (e) {
         console.warn("system_config.json 로드 실패:", e);
@@ -1830,23 +1846,41 @@
 
       systemConfig.email_system_enabled = nextState;
       systemConfig.updated_at = new Date().toISOString();
+      try {
+        localStorage.setItem(LOCAL_SYSTEM_CONFIG_KEY, JSON.stringify(systemConfig));
+      } catch (e) {}
       updateSystemControlUI();
 
-      // ntfy 실시간 브로드캐스트 전송 (접속 중인 모든 관리자 화면 및 워치독 즉시 동기화)
+      const payload = {
+        event: 'system_config_change',
+        config: systemConfig,
+        admin: 'admin',
+        time: systemConfig.updated_at
+      };
+      const payloadStr = JSON.stringify(payload);
+
+      // 1. ntfy 실시간 브로드캐스트 전송
       try {
         await fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
           method: 'POST',
-          body: JSON.stringify({
-            event: 'system_config_change',
-            config: systemConfig,
-            admin: 'admin',
-            time: new Date().toISOString()
-          }),
+          body: payloadStr,
           headers: { 'Content-Type': 'text/plain;charset=UTF-8' }
         });
       } catch(e) {}
 
-      alert(`이메일 자동 발송 시스템이 [${actionName}] 되었습니다.\n클라우드 워크플로우에 즉시 적용됩니다.`);
+      // 2. Google Apps Script (Google Drive 영구 DB) 즉시 기록
+      if (GAS_DB_URL) {
+        try {
+          fetch(GAS_DB_URL, {
+            method: 'POST',
+            body: payloadStr,
+            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+            mode: 'no-cors'
+          }).catch(() => {});
+        } catch(e) {}
+      }
+
+      alert(`이메일 자동 발송 시스템이 [${actionName}] 되었습니다.\n클라우드 및 백엔드 봇에 실시간 전파되었습니다.`);
     }
 
     async function toggleClientAccessBlock() {
@@ -1860,21 +1894,39 @@
 
       systemConfig.client_access_blocked = nextState;
       systemConfig.updated_at = new Date().toISOString();
+      try {
+        localStorage.setItem(LOCAL_SYSTEM_CONFIG_KEY, JSON.stringify(systemConfig));
+      } catch (e) {}
       updateSystemControlUI();
 
-      // ntfy 실시간 브로드캐스트 전송 (모든 접속 고객 화면 실시간 락다운 또는 해제)
+      const payload = {
+        event: 'client_access_block_change',
+        blocked: nextState,
+        message: systemConfig.blocked_message,
+        time: systemConfig.updated_at
+      };
+      const payloadStr = JSON.stringify(payload);
+
+      // 1. ntfy 실시간 브로드캐스트 전송 (모든 접속 고객 화면 실시간 락다운 또는 해제)
       try {
         await fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
           method: 'POST',
-          body: JSON.stringify({
-            event: 'client_access_block_change',
-            blocked: nextState,
-            message: systemConfig.blocked_message,
-            time: new Date().toISOString()
-          }),
+          body: payloadStr,
           headers: { 'Content-Type': 'text/plain;charset=UTF-8' }
         });
       } catch(e) {}
+
+      // 2. Google Apps Script (Google Drive 영구 DB) 즉시 기록
+      if (GAS_DB_URL) {
+        try {
+          fetch(GAS_DB_URL, {
+            method: 'POST',
+            body: payloadStr,
+            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+            mode: 'no-cors'
+          }).catch(() => {});
+        } catch(e) {}
+      }
 
       alert(`고객 접속이 [${nextState ? '차단(점검중)' : '정상 오픈'}] 상태로 전환되었습니다.`);
     }
@@ -1999,6 +2051,19 @@
                 }
 
                 if (parsedPayload) {
+                  // 시스템 설정 변경 이벤트 실시간 감지
+                  if (parsedPayload.event === 'system_config_change' && parsedPayload.config) {
+                    if (!systemConfig.updated_at || (parsedPayload.time && parsedPayload.time >= systemConfig.updated_at)) {
+                      systemConfig = Object.assign(systemConfig, parsedPayload.config);
+                      try { localStorage.setItem(LOCAL_SYSTEM_CONFIG_KEY, JSON.stringify(systemConfig)); } catch(e){}
+                      updateSystemControlUI();
+                    }
+                  } else if (parsedPayload.event === 'client_access_block_change') {
+                    systemConfig.client_access_blocked = parsedPayload.blocked === true;
+                    try { localStorage.setItem(LOCAL_SYSTEM_CONFIG_KEY, JSON.stringify(systemConfig)); } catch(e){}
+                    updateSystemControlUI();
+                  }
+
                   const eventId = msgObj.id || `${parsedPayload.time}_${parsedPayload.ref}_${parsedPayload.event}`;
                   if (!liveEvents.some(ev => ev._id === eventId)) {
                     parsedPayload._id = eventId;
@@ -2029,6 +2094,15 @@
               let gNewCount = 0;
               gEvents.forEach(gev => {
                 if (!gev) return;
+                // 구글 드라이브 DB에서 시스템 설정 변경 이벤트 확인
+                if (gev.event === 'system_config_change' && gev.config) {
+                  if (!systemConfig.updated_at || (gev.time && gev.time >= systemConfig.updated_at)) {
+                    systemConfig = Object.assign(systemConfig, gev.config);
+                    try { localStorage.setItem(LOCAL_SYSTEM_CONFIG_KEY, JSON.stringify(systemConfig)); } catch(e){}
+                    updateSystemControlUI();
+                  }
+                }
+
                 const gId = gev.id || gev._msg_id || `${gev.time}_${gev.ref}_${gev.event}`;
                 if (!liveEvents.some(ev => ev._id === gId || (ev.time === gev.time && ev.ref === gev.ref && ev.event === gev.event))) {
                   gev._id = gId;
