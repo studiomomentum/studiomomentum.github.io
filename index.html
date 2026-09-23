@@ -2725,7 +2725,23 @@ try {
 if (refToken && refToken !== 'direct') {
   // 아웃바운드 콜드메일 타깃 / VIP 제휴
   channelType = 'OUTBOUND';
-  channelName = (refToken.toLowerCase() === 'vip') ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`;
+  let targetCompName = '';
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    targetCompName = urlParams.get('comp') || '';
+    if (targetCompName) {
+      sessionStorage.setItem('sm_lead_comp', targetCompName);
+      localStorage.setItem('sm_lead_comp', targetCompName);
+    } else {
+      targetCompName = sessionStorage.getItem('sm_lead_comp') || localStorage.getItem('sm_lead_comp') || '';
+    }
+  } catch(e) {}
+
+  if (targetCompName) {
+    channelName = `아웃바운드 [${targetCompName}] (${refToken})`;
+  } else {
+    channelName = (refToken.toLowerCase() === 'vip') ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`;
+  }
   pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 편당 -10만 원 / 파일럿 50만 / 셀프 월 280만 / 풀케어 월 360만)';
   try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
   try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
@@ -2733,6 +2749,11 @@ if (refToken && refToken !== 'direct') {
   // 기존 방문자 세션 확인
   try {
     refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
+    const savedComp = sessionStorage.getItem('sm_lead_comp') || localStorage.getItem('sm_lead_comp') || '';
+    if (savedComp && refToken && !refToken.startsWith('inbound_')) {
+      channelType = 'OUTBOUND';
+      channelName = `아웃바운드 [${savedComp}] (${refToken})`;
+    }
   } catch(e){}
 
   // 인바운드 출처 분석 (GEO vs SEO vs SNS vs UTM 파라미터)
@@ -2802,7 +2823,13 @@ if (channelType === 'OUTBOUND') {
   if (ctaDesc) ctaDesc.textContent = '단순한 영상 편집이 아니라, 대표님의 전문성을 실제 고객 문의와 평생 브랜드 자산으로 바꿔드립니다. (11월 신규 1자리)';
 
   const banner = document.getElementById('outboundPromoBanner');
-  if (banner) banner.style.display = 'block';
+  if (banner) {
+    banner.style.display = 'block';
+    if (targetCompName) {
+      const bannerTitleEl = banner.querySelector('h3, .banner-title, strong');
+      if (bannerTitleEl) bannerTitleEl.innerHTML = `💌 <strong>[${targetCompName}]</strong> 대표님 전용 VIP 제휴 혜택 안내`;
+    }
+  }
 
   // 전략 리포트 (20만 원 동일, 100% 전액 차감 강조)
   const trRefund = document.getElementById('tripwireRefundTag');
