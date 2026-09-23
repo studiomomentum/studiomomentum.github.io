@@ -1182,8 +1182,8 @@
     "email": "together@togethernomu.com",
     "region": "수원",
     "category": "labor",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-23 18:56:12",
     "views": "구독자 139명 / 최근 5편 [130, 80, 59, 720, 302] / 평균 258회",
     "point": "수원 노무사 채널의 최근 5편 실측 평균 258회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "64131197",
@@ -1371,12 +1371,26 @@
     "token": "2916e376",
     "is_priority": false
   },
+  "e31f7ed1": {
+    "no": "99",
+    "company": "바닐라리쉬",
+    "rep": "대표님",
+    "email": "qqltbsl@naver.com",
+    "region": "평택",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 244명 / 최근 5편 [20, 65, 12, 24, 36] / 평균 31회",
+    "point": "평택 재활의학과 채널의 최근 5편 실측 평균 31회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "e31f7ed1",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 1121,
+    "total_candidates": 1166,
     "discovered_count": 0,
-    "review_count": 1087,
-    "verified_count": 28,
-    "evidence_count": 1165,
-    "updated_at": "2026-09-23T09:53:29.875594+00:00"
+    "review_count": 1131,
+    "verified_count": 29,
+    "evidence_count": 1210,
+    "updated_at": "2026-09-23T09:56:14.259156+00:00"
   }
 }
