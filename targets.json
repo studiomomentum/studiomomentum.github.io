@@ -1791,12 +1791,54 @@
     "token": "46f6c93c",
     "is_priority": false
   },
+  "df3b2c62": {
+    "no": "129",
+    "company": "광교삼성화이트치과의원",
+    "rep": "김백규",
+    "email": "iddxd@naver.com",
+    "region": "수원 영통",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "46회 (영상PD 구인)",
+    "point": "[🚨구인공고 타깃] 치과 영상PD 구인 대체 및 임플란트·보철 시술 완주형 심리 대본 턴키 역제안",
+    "token": "df3b2c62",
+    "is_priority": true
+  },
+  "8c3c77a1": {
+    "no": "130",
+    "company": "최상산부인과의원",
+    "rep": "최동석",
+    "email": "yeesang1005@gmail.com",
+    "region": "서울 서초",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "524회 (홍보팀 영상PD 구인)",
+    "point": "[🚨구인공고 타깃] 원내 유튜브 영상PD 채용 대체 및 자궁근종 비수술 완주형 심리 대본 턴키 역제안",
+    "token": "8c3c77a1",
+    "is_priority": true
+  },
+  "5599d6f1": {
+    "no": "131",
+    "company": "에르네의원",
+    "rep": "공혜련",
+    "email": "minhowind@naver.com",
+    "region": "서울 서초",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "140회 (영상PD 구인)",
+    "point": "[🚨구인공고 타깃] 신논현 원내 영상PD·편집자 채용 대체 및 리프팅·안티에이징 턴키 역제안",
+    "token": "5599d6f1",
+    "is_priority": true
+  },
   "_search_db_stats": {
     "total_candidates": 1166,
     "discovered_count": 0,
     "review_count": 1131,
     "verified_count": 29,
-    "evidence_count": 1210,
-    "updated_at": "2026-09-23T10:29:52.636751+00:00"
+    "evidence_count": 1213,
+    "updated_at": "2026-09-23T10:36:41.746929+00:00"
   }
 }
