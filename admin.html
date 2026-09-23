@@ -512,10 +512,15 @@
       border-radius: 10px;
       margin-bottom: 12px;
       font-size: 13px;
-      transition: transform 0.2s;
+      transition: all 0.2s;
+      cursor: pointer;
     }
 
-    .feed-item:hover { transform: translateX(3px); }
+    .feed-item:hover { 
+      transform: translateX(4px); 
+      border-color: rgba(59, 130, 246, 0.4);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
 
     .feed-item.hot-item {
       border-left: 4px solid var(--danger);
@@ -2584,6 +2589,21 @@
       }
     }
 
+    function filterTargetInTable(token) {
+      if (!token) return;
+      // 1. 발송완료 탭으로 전환
+      setMainTab('SENT');
+      // 2. 검색창에 해당 토큰 입력 후 테이블 재렌더링
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) {
+        searchInput.value = token;
+        renderTable();
+        // 테이블 위치로 부드럽게 스크롤
+        const tableCard = document.querySelector('.table-card');
+        if (tableCard) tableCard.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
     function renderFeed() {
       const feedBox = document.getElementById("feedList");
       const cleanEvents = liveEvents.filter(ev => {
@@ -2596,6 +2616,28 @@
         feedBox.innerHTML = '<div style="text-align: center; color: #64748b; padding: 40px 0;">수집된 실제 고객 활동 이벤트가 없습니다. (관리자 테스트 제외 필터 가동 중)</div>';
         return;
       }
+
+      // 토큰별 누적 메일 열람수 및 사이트 방문수 사전 집계
+      const tokenStatsMap = {};
+      Object.values(targetsMap).forEach(t => {
+        if (!t || !t.token) return;
+        tokenStatsMap[t.token] = {
+          openCount: t.open_count || (t.opened ? 1 : 0),
+          visitCount: t.visit_count || (t.visited ? 1 : 0)
+        };
+      });
+
+      cleanEvents.forEach(ev => {
+        if (!ev.ref || ev.ref === 'direct') return;
+        if (!tokenStatsMap[ev.ref]) {
+          tokenStatsMap[ev.ref] = { openCount: 0, visitCount: 0 };
+        }
+        if (ev.event === 'email_open' || ev.event === 'open') {
+          tokenStatsMap[ev.ref].openCount++;
+        } else if (ev.event === 'visit') {
+          tokenStatsMap[ev.ref].visitCount++;
+        }
+      });
 
       feedBox.innerHTML = cleanEvents.slice(0, 50).map(ev => {
         const target = targetsMap[ev.ref];
@@ -2661,14 +2703,29 @@
           desc = `총 체류 시간: ${ev.meta && ev.meta.totalDuration ? ev.meta.totalDuration + '초' : ''}`;
         }
 
+        // 수식어 없는 순수 메일/사이트 방문 횟수 표기
+        const stats = tokenStatsMap[ev.ref] || { openCount: 0, visitCount: 0 };
+        const openCnt = Math.max(stats.openCount, 0);
+        const visitCnt = Math.max(stats.visitCount, 0);
+        const countInfoBadge = (openCnt > 0 || visitCnt > 0)
+          ? `<div style="margin-top: 5px; font-size: 11.5px; color: #93c5fd; font-weight: 600; display: flex; gap: 8px;">
+               <span>📨 메일 열람 ${openCnt}회</span>
+               <span>·</span>
+               <span>🌐 사이트 방문 ${visitCnt}회</span>
+             </div>`
+          : '';
+
+        const clickAttr = target ? `onclick="filterTargetInTable('${ev.ref}')" title="클릭 시 [발송완료] 탭에서 이 고객 정보만 필터링합니다"` : '';
+
         return `
-          <div class="feed-item ${itemClass}">
+          <div class="feed-item ${itemClass}" ${clickAttr}>
             <div class="feed-top">
               <span class="feed-tag ${badgeClass}">${tagText}</span>
               <span class="feed-time">${timeStr}</span>
             </div>
             <div class="feed-target">${name}</div>
             <div class="feed-detail">${desc}</div>
+            ${countInfoBadge}
           </div>
         `;
       }).join("");
