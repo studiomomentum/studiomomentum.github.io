@@ -2548,6 +2548,7 @@ if (document.readyState === 'loading') {
 <script>
 (function() {
   const TRACK_TOPIC = "sm_events_2026_x89a";
+  const GAS_DB_URL = "https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec";
   let refToken = '';
   const rawReferrer = document.referrer || '';
   const startTime = Date.now();
@@ -3111,6 +3112,17 @@ if (channelType === 'OUTBOUND') {
             try { navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr); } catch(e){}
           }
         });
+
+        // Google Drive 클라우드 영구 JSON DB 동시 전송 (365일 24시간 무중단 실시간 백엔드)
+        if (GAS_DB_URL) {
+          fetch(GAS_DB_URL, {
+            method: 'POST',
+            body: bodyStr,
+            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+            mode: 'no-cors'
+          }).catch(function(){});
+        }
+
         fetchSent = true;
       } catch(e) {}
     }
@@ -3118,6 +3130,7 @@ if (channelType === 'OUTBOUND') {
     if (!fetchSent && navigator.sendBeacon) {
       try {
         navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr);
+        if (GAS_DB_URL) navigator.sendBeacon(GAS_DB_URL, bodyStr);
       } catch(e) {}
     }
   }

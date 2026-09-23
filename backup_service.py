@@ -24,6 +24,7 @@ TARGETS_FILE_PATH = os.path.join(BASE_DIR, "targets.json")
 
 TRACK_TOPIC = "sm_events_2026_x89a"
 NTFY_URL = f"https://ntfy.sh/{TRACK_TOPIC}/json?poll=1&since=all"
+GAS_DB_URL = "https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec"
 
 # 테스트용 제외 토큰
 TEST_REFS = {'vip', 'test', 'preview', 'admin', 'dev', 'o3eltr25', 'sample', 'direct'}
@@ -174,6 +175,17 @@ def run_backup():
             with open(MASTER_JSONL_PATH, 'a', encoding='utf-8') as f:
                 for ev in new_events:
                     f.write(json.dumps(ev, ensure_ascii=False) + '\n')
+            
+            # Google Drive 원격 JSON DB에도 동시 전송 백업
+            if GAS_DB_URL:
+                try:
+                    payload_bytes = json.dumps(new_events, ensure_ascii=False).encode('utf-8')
+                    req = urllib.request.Request(GAS_DB_URL, data=payload_bytes, headers={'Content-Type': 'text/plain;charset=UTF-8'})
+                    with urllib.request.urlopen(req, timeout=20) as g_resp:
+                        pass
+                except Exception as ge:
+                    print(f"[{now_str}] WARN: Google Drive 원격 동기화 일시 지연: {ge}")
+
             updated_msg = f"신규 {len(new_events)}건 검증 통과 및 갱신 완료 (총 {len(existing_events) + len(new_events)}건 보존)"
         else:
             updated_msg = f"검증 완료: 신규 추가 이벤트 없음 (기존 {len(existing_events)}건 정상 유지)"

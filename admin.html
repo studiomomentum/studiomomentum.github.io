@@ -1684,6 +1684,7 @@
     const SESSION_KEY = "sm_admin_authenticated";
     const LOCAL_AUTH_KEY = "sm_admin_persistent_auth";
     const TRACK_TOPIC = "sm_events_2026_x89a";
+    const GAS_DB_URL = "https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec";
     const LOCAL_EVENTS_KEY = "sm_stored_telemetry_events";
     // 관리자 테스트/미등록 테스트 토큰 블랙리스트 (인바운드 및 통계 오염 방지)
     const TEST_REFS = new Set(['vip', 'test', 'preview', 'admin', 'dev', 'o3eltr25', 'sample', 'direct']);
@@ -2010,7 +2011,34 @@
           }
         }
       } catch (e) {
-        console.warn("텔레메트리 동기화 통신 오류:", e);
+        console.warn("ntfy 텔레메트리 동기화 통신 오류:", e);
+      }
+
+      // 2. Google Drive 클라우드 영구 JSON DB 동기화 (12시간 제한 없는 영구 아카이브)
+      if (GAS_DB_URL) {
+        try {
+          const gRes = await fetch(GAS_DB_URL);
+          if (gRes.ok) {
+            const gEvents = await gRes.json();
+            if (Array.isArray(gEvents)) {
+              let gNewCount = 0;
+              gEvents.forEach(gev => {
+                if (!gev) return;
+                const gId = gev.id || gev._msg_id || `${gev.time}_${gev.ref}_${gev.event}`;
+                if (!liveEvents.some(ev => ev._id === gId || (ev.time === gev.time && ev.ref === gev.ref && ev.event === gev.event))) {
+                  gev._id = gId;
+                  liveEvents.push(gev);
+                  gNewCount++;
+                }
+              });
+              if (gNewCount > 0) {
+                saveStoredEvents();
+              }
+            }
+          }
+        } catch(ge) {
+          console.warn("구글 드라이브 JSON DB 동기화 통신 오류:", ge);
+        }
       }
 
       document.getElementById("lastUpdated").textContent = new Date().toLocaleTimeString("ko-KR") + " 동기화됨";
