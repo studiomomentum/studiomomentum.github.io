@@ -2823,10 +2823,10 @@ let pricingTier = 'INBOUND_PUBLIC (공개 정상가: 파일럿 60만 / 정기 �
 
 try {
   const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('vip')) {
+  if (urlParams.has('vip') || urlParams.get('pricing') === 'vip') {
     refToken = 'vip';
   } else {
-    refToken = urlParams.get('ref') || urlParams.get('v_ref') || '';
+    refToken = (urlParams.get('ref') || urlParams.get('v_ref') || '').trim();
   }
   
   if (!refToken && window.location.hash) {
@@ -2834,13 +2834,13 @@ try {
       refToken = 'vip';
     } else {
       const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-      refToken = hashParams.get('ref') || hashParams.get('v_ref') || '';
+      refToken = (hashParams.get('ref') || hashParams.get('v_ref') || '').trim();
     }
   }
 } catch(e) {}
 
+// URL 파라미터로 VIP 또는 타깃 토큰이 명시된 경우 -> 기존 인바운드 세션을 즉시 파기하고 OUTBOUND 모드 강제 적용
 if (refToken && refToken !== 'direct') {
-  // 아웃바운드 콜드메일 타깃 / VIP 제휴
   channelType = 'OUTBOUND';
   let targetCompName = '';
   try {
@@ -2863,13 +2863,15 @@ if (refToken && refToken !== 'direct') {
   try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
   try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
 } else {
-  // 기존 방문자 세션 확인
+  // URL에 토큰이 없을 때만 기존 방문자 세션 확인
   try {
-    refToken = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
+    const savedRef = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
     const savedComp = sessionStorage.getItem('sm_lead_comp') || localStorage.getItem('sm_lead_comp') || '';
-    if (savedComp && refToken && !refToken.startsWith('inbound_')) {
+    if (savedRef && (savedRef === 'vip' || (!savedRef.startsWith('inbound_') && savedRef !== 'direct'))) {
+      refToken = savedRef;
       channelType = 'OUTBOUND';
-      channelName = `아웃바운드 [${savedComp}] (${refToken})`;
+      channelName = savedComp ? `아웃바운드 [${savedComp}] (${refToken})` : (refToken === 'vip' ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`);
+      pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 편당 -10만 원 / 파일럿 50만 / 셀프 월 280만 / 풀케어 월 360만)';
     }
   } catch(e){}
 
