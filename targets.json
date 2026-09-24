@@ -1833,12 +1833,26 @@
     "token": "96f75f45",
     "is_priority": false
   },
+  "8633a347": {
+    "no": "137",
+    "company": "장변 법률연구소",
+    "rep": "대표님",
+    "email": "jang@kisunglaw.com",
+    "region": "서초",
+    "category": "legal",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 31명 / 최근 5편 [4, 7, 10, 13, 9] / 평균 9회",
+    "point": "서초 변호사 채널의 최근 5편 실측 평균 9회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "8633a347",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 1839,
-    "discovered_count": 130,
-    "review_count": 1676,
-    "verified_count": 25,
-    "evidence_count": 1749,
-    "updated_at": "2026-09-24T15:51:33.625787+00:00"
+    "total_candidates": 1882,
+    "discovered_count": 118,
+    "review_count": 1727,
+    "verified_count": 26,
+    "evidence_count": 1804,
+    "updated_at": "2026-09-24T22:23:38.470036+00:00"
   }
 }
