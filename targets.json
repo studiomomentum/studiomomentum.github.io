@@ -1672,8 +1672,8 @@
     "email": "law_firm@gaongilaw.co.kr",
     "region": "수원",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 13:45:04",
     "views": "구독자 384명 / 최근 5편 [67, 322, 204, 109, 236] / 평균 187회",
     "point": "수원 변호사 채널의 최근 5편 실측 평균 187회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "c17c3be2",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T04:25:01.017692+00:00"
+    "updated_at": "2026-09-24T04:45:05.558989+00:00"
   }
 }
