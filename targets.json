@@ -1546,8 +1546,8 @@
     "email": "sarangina@naver.com",
     "region": "서초",
     "category": "realty",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 12:55:03",
     "views": "구독자 514명 / 최근 5편 [218, 719, 814, 195, 53] / 평균 399회",
     "point": "서초 공인중개사 채널의 최근 5편 실측 평균 399회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "6d727106",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T03:34:59.211821+00:00"
+    "updated_at": "2026-09-24T03:55:04.775672+00:00"
   }
 }
