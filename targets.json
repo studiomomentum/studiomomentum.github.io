@@ -1658,8 +1658,8 @@
     "email": "goodman7773@naver.com",
     "region": "수원",
     "category": "admin",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 13:24:59",
     "views": "구독자 358명 / 최근 5편 [7, 13, 6, 4, 18] / 평균 9회",
     "point": "수원 행정사 채널의 최근 5편 실측 평균 9회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "1fe0dac5",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T03:55:04.775672+00:00"
+    "updated_at": "2026-09-24T04:25:01.017692+00:00"
   }
 }
