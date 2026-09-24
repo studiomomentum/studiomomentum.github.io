@@ -1462,8 +1462,8 @@
     "email": "lienluv@naver.com",
     "region": "용인",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 11:04:57",
     "views": "구독자 22명 / 최근 5편 [116, 75, 134, 129, 159] / 평균 123회",
     "point": "용인 피부과 채널의 최근 5편 실측 평균 123회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "b127ead6",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T01:34:57.155929+00:00"
+    "updated_at": "2026-09-24T02:04:59.608735+00:00"
   }
 }
