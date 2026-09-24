@@ -1812,8 +1812,8 @@
     "email": "lawelllawfirm@gmail.com",
     "region": "서초",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 14:05:07",
     "views": "구독자 1030명 / 최근 5편 [1000, 1100, 1400, 1100, 354] / 평균 991회",
     "point": "서초 법무법인 채널의 최근 5편 실측 평균 991회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "c4745189",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T04:45:05.558989+00:00"
+    "updated_at": "2026-09-24T05:05:09.117107+00:00"
   }
 }
