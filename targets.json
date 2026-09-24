@@ -1756,8 +1756,8 @@
     "email": "minhowind@naver.com",
     "region": "서울 서초",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 09:34:57",
     "views": "140회 (영상PD 구인)",
     "point": "[🚨구인공고 타깃] 신논현 원내 영상PD·편집자 채용 대체 및 리프팅·안티에이징 턴키 역제안",
     "token": "5599d6f1",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T00:04:59.230301+00:00"
+    "updated_at": "2026-09-24T00:34:59.772319+00:00"
   }
 }
