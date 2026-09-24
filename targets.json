@@ -1834,11 +1834,11 @@
     "is_priority": false
   },
   "_search_db_stats": {
-    "total_candidates": 1784,
-    "discovered_count": 75,
+    "total_candidates": 1807,
+    "discovered_count": 98,
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T11:48:41.563154+00:00"
+    "updated_at": "2026-09-24T11:53:50.211774+00:00"
   }
 }
