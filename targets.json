@@ -1770,8 +1770,8 @@
     "email": "bcryug1@gmail.com",
     "region": "평택",
     "category": "realty",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 15:34:54",
     "views": "구독자 1320명 / 최근 5편 [195, 162, 539, 273, 332] / 평균 300회",
     "point": "평택 공인중개사 채널의 최근 5편 실측 평균 300회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "3c24b649",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T06:14:33.321973+00:00"
+    "updated_at": "2026-09-24T06:34:56.763545+00:00"
   }
 }
