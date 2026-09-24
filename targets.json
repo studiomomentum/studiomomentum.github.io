@@ -1602,8 +1602,8 @@
     "email": "songhseop@daum.net",
     "region": "평택",
     "category": "tax",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-24 12:05:04",
     "views": "구독자 7명 / 최근 5편 [371, 7, 10, 71, 4] / 평균 92회",
     "point": "평택 세무사 채널의 최근 5편 실측 평균 92회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "6c9a327c",
@@ -1839,6 +1839,6 @@
     "review_count": 1676,
     "verified_count": 25,
     "evidence_count": 1749,
-    "updated_at": "2026-09-24T02:34:57.939549+00:00"
+    "updated_at": "2026-09-24T03:05:05.964869+00:00"
   }
 }
