@@ -154,7 +154,7 @@ INDUSTRIES = {
     }
 }
 
-OUTPUT_DIR = "/Users/pc/Desktop/PD/06_개발도구/자체제작프로그램/studiomomentum.github.io"
+OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 TEMPLATE = """<!DOCTYPE html>
 <html lang="ko">
@@ -205,6 +205,7 @@ TEMPLATE = """<!DOCTYPE html>
       .cta-box {{ padding: 28px 18px; }}
     }}
   </style>
+<script src="assets/momentum-runtime.js"></script>
 </head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
@@ -253,20 +254,6 @@ TEMPLATE = """<!DOCTYPE html>
         }}
       }})
       .catch(() => {{}});
-    try {{
-      const evSource = new EventSource("https://ntfy.sh/sm_events_2026_x89a/sse");
-      evSource.onmessage = function(e) {{
-        try {{
-          const data = JSON.parse(e.data);
-          if (data && data.message) {{
-            const payload = JSON.parse(data.message);
-            if (payload.event === "client_access_block_change") {{
-              applyBlock(payload.blocked === true, payload.message);
-            }}
-          }}
-        }} catch(err) {{}}
-      }};
-    }} catch(err) {{}}
   }})();
   </script>
 
@@ -308,7 +295,12 @@ TEMPLATE = """<!DOCTYPE html>
   <script>
   (function() {{
     const TRACK_TOPIC = "sm_events_2026_x89a";
-    const refToken = "pseo_{region_key}_{ind_key}";
+    const pageToken = "pseo_{region_key}_{ind_key}";
+    let visitorId = '';
+    try {{ visitorId=sessionStorage.getItem('sm_pseo_visitor')||''; }} catch (_) {{}}
+    if (!visitorId) visitorId = Math.random().toString(16).slice(2,14);
+    try {{ sessionStorage.setItem('sm_pseo_visitor',visitorId); }} catch (_) {{}}
+    const refToken = pageToken + '_' + visitorId;
     const channelName = "{region_name} {ind_name} (pSEO)";
     const regionName = "{region_name}";
     const indName = "{ind_name}";
@@ -346,17 +338,10 @@ TEMPLATE = """<!DOCTYPE html>
         screen: window.innerWidth + 'x' + window.innerHeight,
         meta: extraMeta || {{}}
       }};
-      try {{
-        fetch('https://ntfy.sh/' + TRACK_TOPIC, {{
-          method: 'POST',
-          headers: {{ 'Title': 'PSEO:' + eventType, 'Priority': eventType === 'kakao_click' ? '5' : '3' }},
-          body: JSON.stringify(payload),
-          keepalive: true
-        }}).catch(function(){{}});
-      }} catch(e) {{}}
+      Momentum.sendTelemetry(payload, TRACK_TOPIC, 'https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec');
     }}
 
-    sendEvent('view', {{ page: window.location.pathname }});
+    sendEvent('visit', {{ page: window.location.pathname }});
 
     [10, 30, 60].forEach(function(sec) {{
       setTimeout(function() {{ sendEvent('duration_' + sec + 's', {{ duration: sec }}); }}, sec * 1000);
@@ -381,47 +366,51 @@ TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-all_urls = [
-    "https://studiomomentum.github.io/",
-    "https://studiomomentum.github.io/research-2026-retention.html"
-]
+def main():
+    all_urls = [
+        "https://studiomomentum.github.io/",
+        "https://studiomomentum.github.io/research-2026-retention.html"
+    ]
 
-generated_count = 0
+    generated_count = 0
 
-for r_key, r_info in REGIONS.items():
-    for i_key, i_info in INDUSTRIES.items():
-        filename = f"{r_key}-{i_key}.html"
-        file_path = os.path.join(OUTPUT_DIR, filename)
-        
-        content = TEMPLATE.format(
-            region_key=r_key,
-            ind_key=i_key,
-            region_name=r_info["name"],
-            region_sub=r_info["sub"],
-            region_tag=r_info["tag"],
-            ind_name=i_info["name"],
-            ind_tag=i_key.upper(),
-            target=i_info["target"],
-            filename=filename,
-            schema_type=i_info["schemaType"],
-            area_served_json=json.dumps(r_info["areaServed"], ensure_ascii=False),
-            icon=i_info["icon"],
-            meta_desc=i_info["metaDesc"],
-            h1_content=i_info["h1"],
-            pain_header=i_info["painHeader"],
-            pain1_title=i_info["painPoints"][0][0],
-            pain1_desc=i_info["painPoints"][0][1],
-            pain2_title=i_info["painPoints"][1][0],
-            pain2_desc=i_info["painPoints"][1][1],
-            pain3_title=i_info["painPoints"][2][0],
-            pain3_desc=i_info["painPoints"][2][1],
-            specialties=i_info["specialties"]
-        )
-        
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write(content)
-            
-        all_urls.append(f"https://studiomomentum.github.io/{filename}")
-        generated_count += 1
+    for r_key, r_info in REGIONS.items():
+        for i_key, i_info in INDUSTRIES.items():
+            filename = f"{r_key}-{i_key}.html"
+            file_path = os.path.join(OUTPUT_DIR, filename)
 
-print(f"Generated {generated_count} pSEO landing pages successfully with smart telemetry.")
+            content = TEMPLATE.format(
+                region_key=r_key,
+                ind_key=i_key,
+                region_name=r_info["name"],
+                region_sub=r_info["sub"],
+                region_tag=r_info["tag"],
+                ind_name=i_info["name"],
+                ind_tag=i_key.upper(),
+                target=i_info["target"],
+                filename=filename,
+                schema_type=i_info["schemaType"],
+                area_served_json=json.dumps(r_info["areaServed"], ensure_ascii=False),
+                icon=i_info["icon"],
+                meta_desc=i_info["metaDesc"],
+                h1_content=i_info["h1"],
+                pain_header=i_info["painHeader"],
+                pain1_title=i_info["painPoints"][0][0],
+                pain1_desc=i_info["painPoints"][0][1],
+                pain2_title=i_info["painPoints"][1][0],
+                pain2_desc=i_info["painPoints"][1][1],
+                pain3_title=i_info["painPoints"][2][0],
+                pain3_desc=i_info["painPoints"][2][1],
+                specialties=i_info["specialties"]
+            )
+
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(content)
+
+            all_urls.append(f"https://studiomomentum.github.io/{filename}")
+            generated_count += 1
+
+    print(f"Generated {generated_count} pSEO landing pages successfully with smart telemetry.")
+
+if __name__ == "__main__":
+    main()

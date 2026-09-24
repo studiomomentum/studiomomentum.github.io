@@ -1708,6 +1708,7 @@
       .cta-banner h3 { font-size: 23px; }
     }
   </style>
+<script src="assets/momentum-runtime.js"></script>
 </head>
 <body>
 
@@ -1763,21 +1764,12 @@
       })
       .catch(() => {});
 
-    // 2. ntfy 실시간 즉각 차단 브로드캐스트 리스너
-    try {
-      const evSource = new EventSource("https://ntfy.sh/sm_events_2026_x89a/sse");
-      evSource.onmessage = function(e) {
-        try {
-          const data = JSON.parse(e.data);
-          if (data && data.message) {
-            const payload = JSON.parse(data.message);
-            if (payload.event === "client_access_block_change") {
-              applyBlock(payload.blocked === true, payload.message);
-            }
-          }
-        } catch(err) {}
-      };
-    } catch(err) {}
+    // Only the website repository config controls maintenance, never public telemetry.
+    setInterval(() => fetch('system_config.json?t=' + Date.now(), {cache:'no-store'})
+      .then(r => r.ok ? r.json() : null)
+      .then(cfg => { if (cfg) applyBlock(cfg.client_access_blocked === true, cfg.blocked_message); })
+      .catch(() => {}), 60000);
+
   })();
   </script>
 
@@ -1799,30 +1791,31 @@
       🎙️ 의사·변호사·세무사 전문직 유튜브 전담팀
     </div>
     <h1>
-      대표님은 준비하지 마세요.<br>
-      원고는 저희가 씁니다. <span class="highlight">30분만 읽고 퇴근하세요.</span>
+      ‘잘 봤습니다’에서 끝나는 영상,<br>
+      <span class="highlight">왜 상담으로는 이어지지 않을까요?</span>
     </h1>
     <p class="hero-sub">
-      대본 쓸 시간도 없고, 카메라 앞은 어색하고, 외주 편집자는 유치한 자막만 넣나요?<br>
-      스튜디오 모멘텀이 <strong>[원고 작성 + 촬영 세팅 코칭 + 고급 모션그래픽 편집]</strong>까지 완제품으로 다 해드립니다.
+      정보를 이해한 고객이, 반드시 대표님을 선택하는 건 아닙니다.<br>
+      <strong>고객의 고민 → 대표님의 판단 기준 → 맡길 이유.</strong> 이 순서로 전문성을 보여줘야 합니다.<br>
+      스튜디오 모멘텀은 그 흐름을 대본에 설계하고, 촬영과 편집으로 완성합니다.
     </p>
 
     <!-- 3초 핵심 요약 3단 박스 -->
     <div class="summary-boxes">
       <div class="summary-box">
         <span class="summary-badge">STEP 01</span>
-        <h3>📝 대본 작성 0분</h3>
-        <p>카톡으로 주제만 한 줄 던져주세요. 시청자가 홀린 듯 끝까지 보는 전문 대본을 저희가 완성해 드립니다.</p>
+        <h3>📝 고객의 고민에서 시작</h3>
+        <p>대표님이 설명하고 싶은 주제를 고객이 궁금해하는 질문으로 바꿉니다. 첫 장면부터 내 이야기라고 느끼도록 대본을 설계합니다.</p>
       </div>
       <div class="summary-box">
         <span class="summary-badge">STEP 02</span>
-        <h3>🎬 촬영은 단 30분</h3>
-        <p>화면에 뜨는 프롬프터 글자를 그냥 읽으세요. 스마트폰 카메라 각도, 조명, 시선 처리까지 1:1로 다 잡아드립니다.</p>
+        <h3>🎬 대표님의 판단 기준을 전달</h3>
+        <p>정보의 나열을 넘어, 대표님이 문제를 어떻게 판단하고 해결하는지 보여줍니다. 준비된 대본과 촬영 코칭으로 전달을 돕습니다.</p>
       </div>
       <div class="summary-box">
         <span class="summary-badge">STEP 03</span>
-        <h3>💎 품격 있는 모션그래픽</h3>
-        <p>유치한 예능 밈이나 조잡한 자막은 뺍니다. 병원과 로펌의 품격을 높여주는 깔끔한 인포그래픽만 입힙니다.</p>
+        <h3>💎 맡길 이유가 남는 편집</h3>
+        <p>사례와 설명의 근거를 화면으로 정리합니다. 고객이 대표님의 전문성을 이해하고 다음 행동을 판단할 수 있게 만듭니다.</p>
       </div>
     </div>
 
@@ -2730,7 +2723,7 @@ function handlePayOverlayClick(e) {
   }
 }
 
-function handlePayAppSubmit(e) {
+async function handlePayAppSubmit(e) {
   e.preventDefault();
   const name = (document.getElementById('payBuyerName').value || '').trim();
   const phone = (document.getElementById('payBuyerPhone').value || '').trim();
@@ -2778,11 +2771,12 @@ function handlePayAppSubmit(e) {
     isInstantPay ? `• 입금 계좌: ${window.MOMENTUM_PAY_CONFIG.bankName} ${window.MOMENTUM_PAY_CONFIG.accountNo} (${window.MOMENTUM_PAY_CONFIG.holderName})` : `• 진행 방식: 선입금 0원 ➔ 전담 PD 배정 후 전자계약서 체결`
   ].join('\n');
 
-  // 클립보드 자동 복사
+  let copied = false;
   if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(clipboardText).catch(function(err) {
-      console.warn('Clipboard write failed:', err);
-    });
+    try { await navigator.clipboard.writeText(clipboardText); copied = true; } catch (_) {}
+  }
+  if (!copied) {
+    window.prompt('자동 복사가 제한되었습니다. 아래 신청 내용을 복사해 상담 채팅에 붙여넣어 주세요.', clipboardText);
   }
 
   // 2. ntfy 결제/신청 텔레메트리 즉시 발송
@@ -2790,10 +2784,7 @@ function handlePayAppSubmit(e) {
     window._smSendEvent('pay_and_kakao_connect', {
       plan: planName,
       amount: amount,
-      buyerName: name,
-      buyerPhone: phone,
-      youtubeUrl: ytUrl,
-      taxOption: taxOption,
+      // Personal contact fields stay in the user-controlled clipboard, never public telemetry.
       isOutbound: isOutbound,
       isInstantPay: isInstantPay
     });
@@ -2801,9 +2792,7 @@ function handlePayAppSubmit(e) {
 
   // 3. 안내 알림 후 1:1 오픈카톡 직결
   const kakaoUrl = 'https://open.kakao.com/o/sEX8RWNi';
-  const alertMsg = isInstantPay
-    ? `[신청 완료]\n\n${name} 대표님, 신청서가 정상 접수되었습니다!\n\n📋 대표님의 신청 정보가 클립보드에 자동 복사되었습니다.\n\n확인을 누르시면 [스튜디오 모멘텀 전담 디렉터 1:1 카카오톡 라인]으로 즉시 연결됩니다.\n(채팅방 입장 후 '붙여넣기' 하시면 가장 빠르게 접수됩니다.)`
-    : `[파트너십 예약 완료]\n\n${name} 대표님, 월 정기 플랜 결제 예약이 정상 접수되었습니다!\n\n📋 신청 정보가 클립보드에 자동 복사되었습니다.\n\n확인을 누르시면 [총괄 PD 1:1 카카오톡 라인]으로 즉시 연결되어 계약서 및 일정을 협의해 드립니다.`;
+  const alertMsg = `[상담 연결]\n\n${copied ? '신청 내용을 복사했습니다.' : '신청 내용을 직접 복사해 주세요.'}\n카카오톡 채팅에 붙여넣어 전송하면 접수가 진행됩니다. 입금·결제 완료 여부는 별도 확인합니다.`;
 
   alert(alertMsg);
   window.location.href = kakaoUrl;
@@ -2841,7 +2830,7 @@ try {
 } catch(e) {}
 
 // URL 파라미터로 VIP 또는 타깃 토큰이 명시된 경우 -> 기존 인바운드 세션을 즉시 파기하고 OUTBOUND 모드 강제 적용
-if (refToken && refToken !== 'direct') {
+if (refToken && refToken !== 'direct' && !refToken.startsWith('inbound_')) {
   channelType = 'OUTBOUND';
   try {
     targetCompName = urlParams.get('comp') || '';
@@ -2869,11 +2858,13 @@ if (refToken && refToken !== 'direct') {
     if (savedRef && (savedRef === 'vip' || (!savedRef.startsWith('inbound_') && savedRef !== 'direct'))) {
       refToken = savedRef;
       channelType = 'OUTBOUND';
+      targetCompName = savedComp;
       channelName = savedComp ? `아웃바운드 [${savedComp}] (${refToken})` : (refToken === 'vip' ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`);
       pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 편당 -10만 원 / 파일럿 50만 / 셀프 월 280만 / 풀케어 월 360만)';
     }
   } catch(e){}
 
+  if (channelType !== 'OUTBOUND') {
   // 인바운드 출처 분석 (GEO vs SEO vs SNS vs UTM 파라미터)
   const utmSource = (urlParams.get('utm_source') || urlParams.get('source') || urlParams.get('src') || '').toLowerCase();
   const utmMedium = (urlParams.get('utm_medium') || '').toLowerCase();
@@ -2922,7 +2913,8 @@ if (refToken && refToken !== 'direct') {
     channelName = '직접 입력 / 북마크';
   }
 
-  if (!refToken || refToken.startsWith('inbound_') || refToken === 'direct') {
+  }
+  if (!refToken || refToken === 'direct') {
     const randHex = Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
     refToken = `inbound_${channelType.toLowerCase()}_${randHex}`;
     try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
@@ -2948,7 +2940,7 @@ if (channelType === 'OUTBOUND') {
     banner.style.display = 'block';
     if (targetCompName) {
       const bannerTitleEl = banner.querySelector('h3, .banner-title, strong');
-      if (bannerTitleEl) bannerTitleEl.innerHTML = `💌 <strong>[${targetCompName}]</strong> 대표님 전용 VIP 제휴 혜택 안내`;
+      if (bannerTitleEl) bannerTitleEl.textContent = `💌 [${targetCompName}] 대표님 전용 VIP 제휴 혜택 안내`;
     }
   }
 
@@ -3076,53 +3068,16 @@ if (channelType === 'OUTBOUND') {
       pricing_tier: pricingTier,
       device: deviceType,
       screen: screenRes,
-      ref_url: referrer,
+      ref_url: rawReferrer,
       path: window.location.pathname,
       time: new Date().toISOString(),
       timestamp: Date.now(),
       meta: meta || {}
     };
 
-    const bodyStr = JSON.stringify(payload);
-
-    let fetchSent = false;
-    if (window.fetch) {
-      try {
-        fetch(`https://ntfy.sh/${TRACK_TOPIC}`, {
-          method: 'POST',
-          body: bodyStr,
-          headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-          keepalive: true,
-          mode: 'cors'
-        }).then(function() {
-          fetchSent = true;
-        }).catch(function() {
-          if (!fetchSent && navigator.sendBeacon) {
-            try { navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr); } catch(e){}
-          }
-        });
-
-        // Google Drive 클라우드 영구 JSON DB 동시 전송 (365일 24시간 무중단 실시간 백엔드)
-        if (GAS_DB_URL) {
-          fetch(GAS_DB_URL, {
-            method: 'POST',
-            body: bodyStr,
-            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-            mode: 'no-cors'
-          }).catch(function(){});
-        }
-
-        fetchSent = true;
-      } catch(e) {}
-    }
-
-    if (!fetchSent && navigator.sendBeacon) {
-      try {
-        navigator.sendBeacon(`https://ntfy.sh/${TRACK_TOPIC}`, bodyStr);
-        if (GAS_DB_URL) navigator.sendBeacon(GAS_DB_URL, bodyStr);
-      } catch(e) {}
-    }
+    return Momentum.sendTelemetry(payload, TRACK_TOPIC, GAS_DB_URL);
   }
+
   window._smSendEvent = sendEvent;
   if (window._smEventQueue && window._smEventQueue.length > 0) {
     window._smEventQueue.forEach(function(item) {
@@ -3147,7 +3102,7 @@ if (channelType === 'OUTBOUND') {
       firedScroll50 = true;
       sendEvent('scroll_50', { pct: 50, elapsed: Math.round((Date.now() - startTime) / 1000) });
     }
-    if (!firedScroll90 && scrollPct >= 85) {
+    if (!firedScroll90 && scrollPct >= 90) {
       firedScroll90 = true;
       sendEvent('scroll_90', { pct: 90, elapsed: Math.round((Date.now() - startTime) / 1000) });
     }

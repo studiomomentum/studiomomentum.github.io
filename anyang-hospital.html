@@ -47,6 +47,7 @@
       .cta-box { padding: 28px 18px; }
     }
   </style>
+<script src="assets/momentum-runtime.js"></script>
 </head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
@@ -95,20 +96,6 @@
         }
       })
       .catch(() => {});
-    try {
-      const evSource = new EventSource("https://ntfy.sh/sm_events_2026_x89a/sse");
-      evSource.onmessage = function(e) {
-        try {
-          const data = JSON.parse(e.data);
-          if (data && data.message) {
-            const payload = JSON.parse(data.message);
-            if (payload.event === "client_access_block_change") {
-              applyBlock(payload.blocked === true, payload.message);
-            }
-          }
-        } catch(err) {}
-      };
-    } catch(err) {}
   })();
   </script>
 
@@ -150,7 +137,12 @@
   <script>
   (function() {
     const TRACK_TOPIC = "sm_events_2026_x89a";
-    const refToken = "pseo_anyang_hospital";
+    const pageToken = "pseo_anyang_hospital";
+    let visitorId = '';
+    try { visitorId=sessionStorage.getItem('sm_pseo_visitor')||''; } catch (_) {}
+    if (!visitorId) visitorId = Math.random().toString(16).slice(2,14);
+    try { sessionStorage.setItem('sm_pseo_visitor',visitorId); } catch (_) {}
+    const refToken = pageToken + '_' + visitorId;
     const channelName = "안양·평촌 병원·의원·피부과 (pSEO)";
     const regionName = "안양·평촌";
     const indName = "병원·의원·피부과";
@@ -188,17 +180,10 @@
         screen: window.innerWidth + 'x' + window.innerHeight,
         meta: extraMeta || {}
       };
-      try {
-        fetch('https://ntfy.sh/' + TRACK_TOPIC, {
-          method: 'POST',
-          headers: { 'Title': 'PSEO:' + eventType, 'Priority': eventType === 'kakao_click' ? '5' : '3' },
-          body: JSON.stringify(payload),
-          keepalive: true
-        }).catch(function(){});
-      } catch(e) {}
+      Momentum.sendTelemetry(payload, TRACK_TOPIC, 'https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec');
     }
 
-    sendEvent('view', { page: window.location.pathname });
+    sendEvent('visit', { page: window.location.pathname });
 
     [10, 30, 60].forEach(function(sec) {
       setTimeout(function() { sendEvent('duration_' + sec + 's', { duration: sec }); }, sec * 1000);

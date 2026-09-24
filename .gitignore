@@ -5,3 +5,10 @@ backup_service.log
 backup_service_error.log
 telemetry_master.jsonl
 
+
+.backup.lock
+.backup-*
+telemetry_pending.json
+
+__pycache__/
+*.pyc
