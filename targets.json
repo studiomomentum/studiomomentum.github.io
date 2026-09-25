@@ -1946,11 +1946,24 @@
     "is_priority": false
   },
   "_search_db_stats": {
+    "schema_version": 2,
     "total_candidates": 2468,
     "discovered_count": 0,
-    "review_count": 2425,
-    "verified_count": 33,
-    "evidence_count": 2504,
-    "updated_at": "2026-09-25T11:59:10.946122+00:00"
+    "review_count": 1034,
+    "rejected_count": 1387,
+    "error_count": 2,
+    "duplicate_count": 4,
+    "registered_count": 41,
+    "verified_count": 41,
+    "ready_count": 0,
+    "status_counts": {
+      "REJECTED": 1387,
+      "REGISTERED": 41,
+      "REVIEW": 1034,
+      "ERROR": 2,
+      "DUPLICATE": 4
+    },
+    "evidence_count": 2466,
+    "updated_at": "2026-09-25T15:12:00.531535+00:00"
   }
 }
