@@ -1449,8 +1449,8 @@
 
   <script>
     /* ===================================================
-       1. 보안 로그인 인증 (SHA-256 해시 검증)
-       로컬 화면 잠금이며 서버 인증이 아닙니다. 데이터 접근은 별도 서버 인증 필요.
+       1. 서버 세션 기반 관리자 인증
+       서버 검증 세션으로 관리자 제어를 인증합니다. 공개 집계 데이터는 기존 계약을 유지합니다.
        =================================================== */
     // 관리자 브라우저 기기 등록 (이 브라우저에서 메인 웹사이트 접속 시 텔레메트리 자동 면제)
     try {
@@ -1459,75 +1459,12 @@
       document.cookie = "sm_admin_device=true; path=/; max-age=31536000; SameSite=Lax";
     } catch(e) {}
 
-    const AUTH_HASH = "3136bc00c575d3cb17e411256f01ddce454b74d32391d7c34e5a0abe38a6e18d";
-    const AUTH_USER = "admin";
-    const SESSION_KEY = "sm_admin_authenticated";
-    const LOCAL_AUTH_KEY = "sm_admin_persistent_auth";
     const TRACK_TOPIC = "sm_events_2026_x89a";
     const GAS_DB_URL = "https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec";
     const LOCAL_EVENTS_KEY = "sm_stored_telemetry_events";
     // 관리자 테스트/미등록 테스트 토큰 블랙리스트 (인바운드 및 통계 오염 방지)
     const TEST_REFS = new Set(['vip', 'test', 'preview', 'admin', 'dev', 'o3eltr25', 'sample', 'direct']);
 
-    async function sha256(message) {
-      const msgBuffer = new TextEncoder().encode(message);
-      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-      const hashArray = Array.from(new Uint8Array(hashBuffer));
-      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-    }
-
-    async function handleLogin(e) {
-      e.preventDefault();
-      const u = (document.getElementById("username").value || "").trim().toLowerCase();
-      const p = (document.getElementById("password").value || "").trim();
-      const rememberMe = document.getElementById("rememberMe").checked;
-      const errBox = document.getElementById("loginError");
-
-      let pHash = "";
-      try {
-        pHash = await sha256(p);
-      } catch (err) {
-        console.warn("SHA256 failed, using plaintext fallback", err);
-      }
-
-      if ((u === "admin" || u === AUTH_USER) && (pHash === AUTH_HASH)) {
-        sessionStorage.setItem(SESSION_KEY, "true");
-        if (rememberMe) {
-          localStorage.setItem(LOCAL_AUTH_KEY, AUTH_HASH);
-        } else {
-          localStorage.removeItem(LOCAL_AUTH_KEY);
-        }
-        errBox.style.display = "none";
-        initDashboard();
-      } else {
-        errBox.style.display = "block";
-      }
-    }
-
-    function handleLogout() {
-      if (confirm("로그아웃 하시겠습니까? (자동 로그인 정보도 함께 해제됩니다)")) {
-        sessionStorage.removeItem(SESSION_KEY);
-        localStorage.removeItem(LOCAL_AUTH_KEY);
-        location.reload();
-      }
-    }
-
-    function checkAuth() {
-      const isSessionAuthed = sessionStorage.getItem(SESSION_KEY) === "true";
-      const isLocalAuthed = localStorage.getItem(LOCAL_AUTH_KEY) === AUTH_HASH;
-
-      if (isSessionAuthed || isLocalAuthed) {
-        sessionStorage.setItem(SESSION_KEY, "true");
-        initDashboard();
-      } else {
-        document.getElementById("loginOverlay").style.display = "flex";
-        document.getElementById("dashboardApp").style.display = "none";
-      }
-    }
-
-    /* ===================================================
-       2. 대시보드 상태 및 데이터 관리
-       =================================================== */
     let targetsMap = {};      // token -> target object
     let liveEvents = [];      // Array of event objects
     let mainTab = "SENT";     // 기본 탭: "SENT" (발송 완료 목록 - 최신순 정렬)
@@ -1590,26 +1527,9 @@
       }
     }
 
-    function requestGitHubCredential(permission) {
-      return window.prompt('GitHub 저장소 '+permission+' 권한 토큰을 입력하세요. 브라우저에 저장하지 않습니다.');
-    }
-
     async function updateRepositoryConfig(repo, changes) {
-      // This explicit administrator action requires GitHub repository write authentication.
-      // Credentials are kept only in this call, never storage or telemetry.
-      const credential = requestGitHubCredential('Contents 쓰기');
-      if (!credential) return false;
-      const url = 'https://api.github.com/repos/studiomomentum/' + repo + '/contents/system_config.json';
-      const headers = {Authorization: 'Bearer '+credential, Accept:'application/vnd.github+json'};
-      const response = await fetch(url, {headers, cache:'no-store'});
-      if (!response.ok) throw new Error('설정 조회 실패: '+response.status);
-      const file = await response.json();
-      const current = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(file.content.replace(/\s/g,'')), c => c.charCodeAt(0))));
-      const next = Object.assign({}, current, changes, {updated_at:new Date().toISOString()});
-      const bytes = new TextEncoder().encode(JSON.stringify(next,null,2)+'\n');
-      const content = btoa(Array.from(bytes, b => String.fromCharCode(b)).join(''));
-      const saved = await fetch(url, {method:'PUT', headers, body:JSON.stringify({message:'Update operational switch',content,sha:file.sha,branch:'main'})});
-      if (!saved.ok) throw new Error('설정 저장 실패: '+saved.status+' (화면 상태는 변경하지 않았습니다)');
+      const setting = Object.keys(changes)[0];
+      await MomentumAdmin.call('settings.update', {setting, value: changes[setting]});
       Object.assign(systemConfig, changes); updateSystemControlUI();
       return true;
     }
@@ -2146,7 +2066,8 @@
 
   <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
   <script src="assets/admin-workspace.js"></script>
-  <script src="assets/admin-classification.js"></script>
+  <script src="assets/admin-auth.js?v=server-session-1"></script>
+  <script src="assets/admin-classification.js?v=server-session-1"></script>
   <script>checkAuth();</script>
 </body>
 </html>

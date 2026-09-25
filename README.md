@@ -42,12 +42,16 @@
 - 발굴 현황은 `_search_db_stats.schema_version=2`의 DISCOVERED / REVIEW / REJECTED / ERROR / DUPLICATE / REGISTERED를 분리합니다. 후보 누적은 조건 통과 수가 아니며, 등록 이력에는 발송 완료 대상도 포함됩니다. 현재 READY는 실제 타깃 목록 기준이며 목록이 없을 때 `ready_count`를 사용합니다. 구버전의 `verified_count`는 등록 이력으로 표시하고, 누락된 신규 분류는 미집계로 표시합니다. 후보 0건 비율은 `0.0%`입니다.
 - 브라우저 회귀 검증: Playwright가 설치된 환경에서 `node tests/admin-workspace.cjs`. 별도 설치 경로는 `PLAYWRIGHT_MODULE`로 지정합니다. 외부 요청은 테스트에서 차단하며 실제 발송·텔레메트리 쓰기를 하지 않습니다.
 
-### 수동 분류·장전
+### 서버 인증 및 수동 분류·장전 (2026-09-26)
 
-발송대기 카드의 버튼은 `momentum-cold-mailer`의 `auto_prospect.yml`만 `workflow_dispatch`로 호출합니다. 요청은 `ref: main`, `inputs.force: true`이며 검색·메일 발송 워크플로를 호출하지 않습니다. 전체 정지 스위치는 봇에서 계속 적용됩니다.
+기존 Apps Script 웹앱의 telemetry URL, GET JSON 배열, POST 이벤트 계약을 유지합니다. `server/apps-script/Code.gs`는 `route: momentum_admin` 요청만 `AdminRelay.gs`로 분리합니다. 소유자 프로젝트의 Script Properties에 `ADMIN_SESSION_SECRET`, `ADMIN_PASSWORD_CHECK`, `MOMENTUM_GITHUB_TOKEN`을 보관합니다. 비밀값은 Git, 공개 페이지, 로그에 넣지 않습니다.
 
-기존 GitHub 토큰 입력 방식을 공유하며 Actions 읽기·쓰기 권한이 필요합니다. 토큰은 실행을 추적하는 동안 메모리에만 두고 저장하지 않습니다. 접수 후 반환된 실행 ID를 5초마다 조회하고 GitHub의 최종 conclusion으로 완료·실패를 구분합니다. 완료는 워크플로 종료를 뜻하며 신규 등록 또는 READY 증가를 보장하지 않습니다. 실제 숫자는 자동 동기화되는 발송대기 및 실행 상세에서 확인합니다.
+관리자 로그인은 기존 비밀번호 원문을 HTTPS POST 본문으로 받아 서버에서 SHA-256 후 비밀키 HMAC 검증합니다. 기존 공개 해시나 로컬 로그인 플래그는 인증으로 인정하지 않습니다. 로그인 성공 시 무작위 세션을 발급하고 서버에는 그 해시와 만료시각만 보관합니다. 기본 만료 8시간, 자동 로그인 선택 시 7일, 로그아웃 시 서버 세션 폐기, 로그인 실패 15분간 8회 제한을 적용합니다. 비밀번호와 GitHub 토큰을 브라우저에 저장하지 않습니다. 브라우저에는 로그인 선택에 따라 만료되는 관리자 세션만 저장합니다.
 
-중복 클릭은 실행 중 비활성화하며, 다른 탭과 새로고침에는 실행 메타데이터만 공유합니다. 재접속 후 ‘실행 상태 확인’은 토큰을 다시 입력받아 기존 실행을 조회합니다. 접수 응답이 유실되면 POST를 자동 재시도하지 않습니다. 접수 전 실행 목록·요청자·요청시각으로 단일 실행을 찾으며, 식별할 수 없으면 상세 확인을 안내합니다. 30분 조회 제한 또는 통신 실패도 작업 실패로 단정하지 않습니다.
+발송대기 버튼은 서버 세션으로 `classify.start`를 호출합니다. 서버는 `momentum-cold-mailer/auto_prospect.yml`만 `main`, `inputs.force=true`로 dispatch합니다. 전체 정지 설정이 명시적으로 `true`일 때만 실행합니다. `drip_sender.yml` 및 검색 워크플로는 호출하지 않습니다. 운영 스위치는 별도의 `settings.update`에서 두 개의 기존 boolean 설정만 허용합니다. 임의 저장소·경로·워크플로 입력은 받지 않습니다.
 
-검증: `node tests/admin-classification.cjs` (필요시 `PLAYWRIGHT_MODULE` 지정). 성공/실패/취소/권한 오류/응답 유실/기존 실행, 중복 클릭, 토큰 비저장, 모바일 버튼 크기를 모의 API로 검증합니다. [GitHub workflow dispatch API](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event)의 `return_run_details`를 사용합니다.
+서버 lock과 requestId로 중복을 차단하고, 반환된 실행 ID의 실제 conclusion으로 완료/실패를 구분합니다. 접수 응답 유실 시 자동 재발송하지 않습니다. 요청 전 실행 목록·요청시각·요청자를 비교해 새 실행이 하나일 때만 연결하며 여러 개이면 확인 필요로 유지합니다. 완료는 워크플로 종료이며 READY 증가를 보장하지 않습니다. 웹 집계는 기존 자동 동기화를 따릅니다.
+
+검증 명령: `node tests/admin-relay.cjs`, `node tests/admin-classification.cjs`, `node tests/admin-workspace.cjs`. 브라우저 검증은 Playwright 설치가 필요하며 별도 경로는 `PLAYWRIGHT_MODULE`로 지정합니다. 테스트는 외부 제어 요청을 mock 처리합니다.
+
+배포: 기존 Apps Script 프로젝트 `14TWuyAHdQlLFussAPnjZspaWGD-hARToY6LFJTtnwGCCcpY2m0ZWQam4`를 먼저 clone/백업한 뒤 서버 파일을 push하고, 기존 웹앱 배포 ID의 버전만 갱신합니다. 기존 Drive 파일 ID/배포 URL/접근 계약을 변경하지 않습니다. 서버 health는 기존 URL에 `?admin_health=1`을 붙여 확인합니다. 정상 telemetry 응답은 배열이어야 합니다. 운영 웹은 서버 검증 후 배포합니다. 서버 롤백은 기존 배포 ID를 이전 버전으로 돌리며, 세션 중계 전 웹 코드를 함께 복구해야 합니다.
