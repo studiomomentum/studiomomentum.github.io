@@ -1932,11 +1932,11 @@
     "is_priority": false
   },
   "_search_db_stats": {
-    "total_candidates": 2264,
+    "total_candidates": 2272,
     "discovered_count": 0,
-    "review_count": 2222,
+    "review_count": 2230,
     "verified_count": 32,
-    "evidence_count": 2301,
-    "updated_at": "2026-09-25T05:25:00.573588+00:00"
+    "evidence_count": 2309,
+    "updated_at": "2026-09-25T05:37:24.348874+00:00"
   }
 }
