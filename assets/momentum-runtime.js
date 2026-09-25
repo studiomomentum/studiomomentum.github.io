@@ -34,7 +34,12 @@
   function setHTML(el, markup) {
     if (!el) return;
     if (!window.DOMPurify) throw new Error('HTML sanitizer unavailable');
-    el.innerHTML = window.DOMPurify.sanitize(String(markup), {USE_PROFILES: {html: true}});
+    // Parse fragments in their destination context so table rows/cells survive.
+    // Sanitize the detached node before attaching any of its children.
+    const staging = el.cloneNode(false);
+    staging.innerHTML = String(markup);
+    window.DOMPurify.sanitize(staging, {USE_PROFILES: {html: true}, IN_PLACE: true});
+    el.replaceChildren(...staging.childNodes);
   }
   function sendTelemetry(payload, topic, gasUrl) {
     payload.event_id = payload.event_id || (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(16).slice(2));

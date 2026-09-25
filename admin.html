@@ -2861,6 +2861,7 @@
       // 6. 테이블 바디(행) 렌더링
       if (filtered.length === 0) {
         Momentum.setHTML(tbody, `<tr><td colspan="10" style="text-align:center; padding:36px; color:#64748b;">조건에 일치하는 타깃이 없습니다.</td></tr>`);
+        Momentum.setHTML(document.getElementById("mobileCardsContainer"), `<div style="text-align:center; padding:36px 0; color:#64748b;">조건에 일치하는 타깃이 없습니다.</div>`);
         return;
       }
 
