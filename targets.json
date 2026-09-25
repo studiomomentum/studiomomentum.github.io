@@ -1889,12 +1889,26 @@
     "token": "40ce2723",
     "is_priority": false
   },
+  "70412fba": {
+    "no": "141",
+    "company": "법률사무소 K-SPACE(케이 스페이스)",
+    "rep": "대표님",
+    "email": "kspacelaw@kspacelaw.com",
+    "region": "강남",
+    "category": "legal",
+    "status": "SENT",
+    "sent_at": "2026-09-25 11:28:48",
+    "views": "구독자 434명 / 최근 5편 [28, 30, 315, 202, 160] / 평균 147회",
+    "point": "강남 법률사무소 채널의 최근 5편 실측 평균 147회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "70412fba",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 2082,
+    "total_candidates": 2105,
     "discovered_count": 0,
-    "review_count": 2042,
-    "verified_count": 29,
-    "evidence_count": 2120,
-    "updated_at": "2026-09-25T01:48:37.595498+00:00"
+    "review_count": 2064,
+    "verified_count": 30,
+    "evidence_count": 2142,
+    "updated_at": "2026-09-25T02:28:51.007319+00:00"
   }
 }
