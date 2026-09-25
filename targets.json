@@ -1903,12 +1903,26 @@
     "token": "70412fba",
     "is_priority": false
   },
+  "b58ad292": {
+    "no": "142",
+    "company": "민병진 손해사정",
+    "rep": "대표님",
+    "email": "mjuster@hanmail.net",
+    "region": "서초",
+    "category": "admin",
+    "status": "SENT",
+    "sent_at": "2026-09-25 12:57:37",
+    "views": "구독자 31명 / 최근 5편 [174, 63, 174, 162, 40] / 평균 123회",
+    "point": "서초 손해사정사 채널의 최근 5편 실측 평균 123회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "b58ad292",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 2199,
+    "total_candidates": 2225,
     "discovered_count": 0,
-    "review_count": 2158,
-    "verified_count": 30,
-    "evidence_count": 2235,
-    "updated_at": "2026-09-25T03:44:56.400223+00:00"
+    "review_count": 2183,
+    "verified_count": 31,
+    "evidence_count": 2261,
+    "updated_at": "2026-09-25T03:57:39.200292+00:00"
   }
 }
