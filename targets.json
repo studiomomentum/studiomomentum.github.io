@@ -1931,12 +1931,26 @@
     "token": "87fd5965",
     "is_priority": false
   },
+  "aceea952": {
+    "no": "144",
+    "company": "부동산 굿즈& 경매 공매전문",
+    "rep": "대표님",
+    "email": "seven5306@gmail.com",
+    "region": "동탄",
+    "category": "realty",
+    "status": "SENT",
+    "sent_at": "2026-09-25 18:05:46",
+    "views": "구독자 838명 / 최근 5편 [24, 123, 56, 164, 95] / 평균 92회",
+    "point": "동탄 공인중개사 채널의 최근 5편 실측 평균 92회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "aceea952",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 2424,
+    "total_candidates": 2432,
     "discovered_count": 0,
-    "review_count": 2382,
-    "verified_count": 32,
-    "evidence_count": 2460,
-    "updated_at": "2026-09-25T08:54:56.546156+00:00"
+    "review_count": 2389,
+    "verified_count": 33,
+    "evidence_count": 2468,
+    "updated_at": "2026-09-25T09:05:48.073427+00:00"
   }
 }
