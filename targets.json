@@ -1917,12 +1917,26 @@
     "token": "b58ad292",
     "is_priority": false
   },
+  "87fd5965": {
+    "no": "143",
+    "company": "매물박스 부동산",
+    "rep": "대표님",
+    "email": "ghrbs5618@naver.com",
+    "region": "수원",
+    "category": "realty",
+    "status": "SENT",
+    "sent_at": "2026-09-25 13:48:29",
+    "views": "구독자 211명 / 최근 5편 [67, 191, 397, 342, 373] / 평균 274회",
+    "point": "수원 공인중개사 채널의 최근 5편 실측 평균 274회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "87fd5965",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 2236,
+    "total_candidates": 2252,
     "discovered_count": 0,
-    "review_count": 2195,
-    "verified_count": 31,
-    "evidence_count": 2273,
-    "updated_at": "2026-09-25T04:35:07.427330+00:00"
+    "review_count": 2210,
+    "verified_count": 32,
+    "evidence_count": 2289,
+    "updated_at": "2026-09-25T04:48:31.648227+00:00"
   }
 }
