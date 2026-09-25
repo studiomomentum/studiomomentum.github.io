@@ -1847,12 +1847,40 @@
     "token": "8633a347",
     "is_priority": false
   },
+  "0bf27659": {
+    "no": "138",
+    "company": "MTS 세무회계",
+    "rep": "대표님",
+    "email": "hwan1993@naver.com",
+    "region": "강남",
+    "category": "tax",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 10명 / 최근 5편 [12, 9, 19, 17, 12] / 평균 14회",
+    "point": "강남 세무회계 채널의 최근 5편 실측 평균 14회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "0bf27659",
+    "is_priority": false
+  },
+  "f35a2485": {
+    "no": "139",
+    "company": "튼튼한방병원",
+    "rep": "대표님",
+    "email": "maesil2000@hanmail.net",
+    "region": "동탄",
+    "category": "medical",
+    "status": "SENT",
+    "sent_at": "2026-09-25 10:01:09",
+    "views": "구독자 988명 / 최근 5편 [148, 243, 403, 196, 2400] / 평균 678회",
+    "point": "동탄 한방병원 채널의 최근 5편 실측 평균 678회. 채널 진단 및 상담 전환 동선 검토 제안",
+    "token": "f35a2485",
+    "is_priority": false
+  },
   "_search_db_stats": {
-    "total_candidates": 1941,
+    "total_candidates": 1969,
     "discovered_count": 0,
-    "review_count": 1904,
-    "verified_count": 26,
-    "evidence_count": 1980,
-    "updated_at": "2026-09-25T00:44:59.912822+00:00"
+    "review_count": 1930,
+    "verified_count": 28,
+    "evidence_count": 2007,
+    "updated_at": "2026-09-25T01:01:10.842482+00:00"
   }
 }
