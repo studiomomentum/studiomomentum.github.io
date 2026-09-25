@@ -41,3 +41,13 @@
 - 인바운드 바로가기는 `?admin=1&preview_mode=inbound`, 아웃바운드는 `?admin=1&preview_mode=outbound&vip`를 새 탭/창으로 엽니다. 기존 고객 방문 귀속을 읽거나 덮어쓰지 않고 관리자 방문을 통계에서 제외합니다. 새 탭과 별도 창 중 실제 표시 방식은 브라우저 설정을 따릅니다.
 - 발굴 현황은 `_search_db_stats.schema_version=2`의 DISCOVERED / REVIEW / REJECTED / ERROR / DUPLICATE / REGISTERED를 분리합니다. 후보 누적은 조건 통과 수가 아니며, 등록 이력에는 발송 완료 대상도 포함됩니다. 현재 READY는 실제 타깃 목록 기준이며 목록이 없을 때 `ready_count`를 사용합니다. 구버전의 `verified_count`는 등록 이력으로 표시하고, 누락된 신규 분류는 미집계로 표시합니다. 후보 0건 비율은 `0.0%`입니다.
 - 브라우저 회귀 검증: Playwright가 설치된 환경에서 `node tests/admin-workspace.cjs`. 별도 설치 경로는 `PLAYWRIGHT_MODULE`로 지정합니다. 외부 요청은 테스트에서 차단하며 실제 발송·텔레메트리 쓰기를 하지 않습니다.
+
+### 수동 분류·장전
+
+발송대기 카드의 버튼은 `momentum-cold-mailer`의 `auto_prospect.yml`만 `workflow_dispatch`로 호출합니다. 요청은 `ref: main`, `inputs.force: true`이며 검색·메일 발송 워크플로를 호출하지 않습니다. 전체 정지 스위치는 봇에서 계속 적용됩니다.
+
+기존 GitHub 토큰 입력 방식을 공유하며 Actions 읽기·쓰기 권한이 필요합니다. 토큰은 실행을 추적하는 동안 메모리에만 두고 저장하지 않습니다. 접수 후 반환된 실행 ID를 5초마다 조회하고 GitHub의 최종 conclusion으로 완료·실패를 구분합니다. 완료는 워크플로 종료를 뜻하며 신규 등록 또는 READY 증가를 보장하지 않습니다. 실제 숫자는 자동 동기화되는 발송대기 및 실행 상세에서 확인합니다.
+
+중복 클릭은 실행 중 비활성화하며, 다른 탭과 새로고침에는 실행 메타데이터만 공유합니다. 재접속 후 ‘실행 상태 확인’은 토큰을 다시 입력받아 기존 실행을 조회합니다. 접수 응답이 유실되면 POST를 자동 재시도하지 않습니다. 접수 전 실행 목록·요청자·요청시각으로 단일 실행을 찾으며, 식별할 수 없으면 상세 확인을 안내합니다. 30분 조회 제한 또는 통신 실패도 작업 실패로 단정하지 않습니다.
+
+검증: `node tests/admin-classification.cjs` (필요시 `PLAYWRIGHT_MODULE` 지정). 성공/실패/취소/권한 오류/응답 유실/기존 실행, 중복 클릭, 토큰 비저장, 모바일 버튼 크기를 모의 API로 검증합니다. [GitHub workflow dispatch API](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event)의 `return_run_details`를 사용합니다.

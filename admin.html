@@ -1355,7 +1355,7 @@
         <div class="kpi-click-hint" style="color: #f87171;">👉 클릭 시 카톡상담 리드 필터</div>
       </div>
 
-      <button class="kpi-card" id="kpiCard_READY" onclick="setMainTab('READY')"><div class="kpi-label">발송 대기</div><div class="kpi-val" id="kpiReadyCount">0</div><div class="kpi-sub">검증 후 발송 가능한 타깃</div></button>
+      <div class="kpi-card ready-card" id="kpiCard_READY"><button class="ready-summary" onclick="setMainTab('READY')" aria-label="발송대기 목록 보기"><span class="kpi-label">발송 대기</span><span class="kpi-val" id="kpiReadyCount">0</span></button><button type="button" id="classifyButton" onclick="MomentumClassification.start()">분류·장전 실행</button><p id="classifyStatus" role="status" aria-live="polite">기존 후보 분류 · 메일 발송 없음</p><a id="classifyRunLink" hidden target="_blank" rel="noopener noreferrer">실행 상세 ↗</a></div>
     </div>
 
     <!-- 2열 메인 바디 -->
@@ -1590,10 +1590,14 @@
       }
     }
 
+    function requestGitHubCredential(permission) {
+      return window.prompt('GitHub 저장소 '+permission+' 권한 토큰을 입력하세요. 브라우저에 저장하지 않습니다.');
+    }
+
     async function updateRepositoryConfig(repo, changes) {
       // This explicit administrator action requires GitHub repository write authentication.
       // Credentials are kept only in this call, never storage or telemetry.
-      const credential = window.prompt('설정을 저장할 GitHub 저장소 Contents 쓰기 권한 토큰을 입력하세요. 브라우저에 저장하지 않습니다.');
+      const credential = requestGitHubCredential('Contents 쓰기');
       if (!credential) return false;
       const url = 'https://api.github.com/repos/studiomomentum/' + repo + '/contents/system_config.json';
       const headers = {Authorization: 'Bearer '+credential, Accept:'application/vnd.github+json'};
@@ -2142,6 +2146,7 @@
 
   <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
   <script src="assets/admin-workspace.js"></script>
+  <script src="assets/admin-classification.js"></script>
   <script>checkAuth();</script>
 </body>
 </html>
