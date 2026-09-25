@@ -1946,11 +1946,11 @@
     "is_priority": false
   },
   "_search_db_stats": {
-    "total_candidates": 2451,
+    "total_candidates": 2455,
     "discovered_count": 0,
-    "review_count": 2408,
+    "review_count": 2412,
     "verified_count": 33,
-    "evidence_count": 2487,
-    "updated_at": "2026-09-25T10:24:59.897859+00:00"
+    "evidence_count": 2491,
+    "updated_at": "2026-09-25T10:35:18.285713+00:00"
   }
 }
