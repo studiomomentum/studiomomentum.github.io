@@ -1876,11 +1876,11 @@
     "is_priority": false
   },
   "_search_db_stats": {
-    "total_candidates": 1969,
+    "total_candidates": 2007,
     "discovered_count": 0,
-    "review_count": 1930,
+    "review_count": 1968,
     "verified_count": 28,
-    "evidence_count": 2007,
-    "updated_at": "2026-09-25T01:01:10.842482+00:00"
+    "evidence_count": 2045,
+    "updated_at": "2026-09-25T01:16:33.871616+00:00"
   }
 }
