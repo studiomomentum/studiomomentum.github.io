@@ -2812,6 +2812,7 @@ let pricingTier = 'INBOUND_PUBLIC (공개 정상가: 파일럿 60만 / 정기 �
 let targetCompName = '';
 const urlParams = new URLSearchParams(window.location.search);
 
+const adminPreviewMode = urlParams.get('admin') === '1' ? urlParams.get('preview_mode') : '';
 try {
   if (urlParams.has('vip') || urlParams.get('pricing') === 'vip') {
     refToken = 'vip';
@@ -2838,7 +2839,7 @@ if (refToken && refToken !== 'direct' && !refToken.startsWith('inbound_')) {
       sessionStorage.setItem('sm_lead_comp', targetCompName);
       localStorage.setItem('sm_lead_comp', targetCompName);
     } else {
-      targetCompName = sessionStorage.getItem('sm_lead_comp') || localStorage.getItem('sm_lead_comp') || '';
+      targetCompName = adminPreviewMode ? '' : (sessionStorage.getItem('sm_lead_comp') || localStorage.getItem('sm_lead_comp') || '');
     }
   } catch(e) {}
 
@@ -2848,14 +2849,14 @@ if (refToken && refToken !== 'direct' && !refToken.startsWith('inbound_')) {
     channelName = (refToken.toLowerCase() === 'vip') ? 'VIP 제휴 타깃 (VIP)' : `아웃바운드 타깃 (${refToken})`;
   }
   pricingTier = 'OUTBOUND_VIP (제휴 특별 할인가: 편당 -10만 원 / 파일럿 50만 / 셀프 월 280만 / 풀케어 월 360만)';
-  try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
-  try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+  if (!adminPreviewMode) try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+  if (!adminPreviewMode) try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
 } else {
   // URL에 토큰이 없을 때만 기존 방문자 세션 확인
   try {
     const savedRef = sessionStorage.getItem('sm_lead_ref') || localStorage.getItem('sm_lead_ref') || '';
     const savedComp = sessionStorage.getItem('sm_lead_comp') || localStorage.getItem('sm_lead_comp') || '';
-    if (savedRef && (savedRef === 'vip' || (!savedRef.startsWith('inbound_') && savedRef !== 'direct'))) {
+    if (!adminPreviewMode && savedRef && (savedRef === 'vip' || (!savedRef.startsWith('inbound_') && savedRef !== 'direct'))) {
       refToken = savedRef;
       channelType = 'OUTBOUND';
       targetCompName = savedComp;
@@ -2917,8 +2918,8 @@ if (refToken && refToken !== 'direct' && !refToken.startsWith('inbound_')) {
   if (!refToken || refToken === 'direct') {
     const randHex = Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
     refToken = `inbound_${channelType.toLowerCase()}_${randHex}`;
-    try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
-    try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+    if (!adminPreviewMode) try { sessionStorage.setItem('sm_lead_ref', refToken); } catch(e){}
+    if (!adminPreviewMode) try { localStorage.setItem('sm_lead_ref', refToken); } catch(e){}
   }
 }
 window._smChannelType = channelType;

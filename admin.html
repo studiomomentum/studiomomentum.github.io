@@ -1173,169 +1173,6 @@
       white-space: nowrap;
     }
 
-    /* 실시간 알림 관제 모달 & 스크롤바 & 도톰한 탭 UI */
-    #notifListContainer::-webkit-scrollbar {
-      width: 8px;
-    }
-    #notifListContainer::-webkit-scrollbar-track {
-      background: #080d1a;
-    }
-    #notifListContainer::-webkit-scrollbar-thumb {
-      background: #22324e;
-      border-radius: 4px;
-    }
-    #notifListContainer::-webkit-scrollbar-thumb:hover {
-      background: #3b82f6;
-    }
-
-    .notif-filter-bar {
-      padding: 16px 24px;
-      background: #070c18;
-      border-bottom: 1px solid #1e293b;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .notif-filter-tab {
-      flex: 1 1 auto;
-      min-width: 140px;
-      min-height: 46px;
-      padding: 11px 18px;
-      background: #111b2e;
-      border: 1.5px solid #22324e;
-      border-radius: 12px;
-      font-size: 13.5px;
-      font-weight: 700;
-      color: #cbd5e1;
-      cursor: pointer;
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      user-select: none;
-    }
-    .notif-filter-tab:hover {
-      background: #192742;
-      border-color: #38bdf8;
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-    }
-    .notif-filter-tab:active {
-      transform: translateY(0);
-    }
-
-    .notif-filter-tab .notif-tab-badge {
-      padding: 3px 9px;
-      border-radius: 12px;
-      font-size: 11.5px;
-      font-weight: 800;
-      background: #1e2c47;
-      color: #94a3b8;
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: all 0.2s;
-    }
-
-    /* 활성화된 탭 스타일 (도톰하고 묵직한 입체감) */
-    .notif-filter-tab.active {
-      color: #ffffff !important;
-      font-weight: 800 !important;
-      transform: translateY(-2px);
-    }
-
-    .notif-filter-tab.active[data-tab="live"] {
-      background: linear-gradient(135deg, #ef4444, #dc2626) !important;
-      border-color: #fca5a5 !important;
-      box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5) !important;
-    }
-    .notif-filter-tab.active[data-tab="pay"] {
-      background: linear-gradient(135deg, #f43f5e, #be123c) !important;
-      border-color: #fda4af !important;
-      box-shadow: 0 6px 20px rgba(244, 63, 94, 0.5) !important;
-    }
-    .notif-filter-tab.active[data-tab="open"] {
-      background: linear-gradient(135deg, #9333ea, #6b21a8) !important;
-      border-color: #d8b4fe !important;
-      box-shadow: 0 6px 20px rgba(147, 51, 234, 0.5) !important;
-    }
-    .notif-filter-tab.active[data-tab="browse"] {
-      background: linear-gradient(135deg, #0284c7, #0369a1) !important;
-      border-color: #7dd3fc !important;
-      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5) !important;
-    }
-    .notif-filter-tab.active[data-tab="bot"] {
-      background: linear-gradient(135deg, #475569, #334155) !important;
-      border-color: #94a3b8 !important;
-      box-shadow: 0 6px 20px rgba(71, 85, 105, 0.5) !important;
-    }
-    .notif-filter-tab.active[data-tab="ALL"] {
-      background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
-      border-color: #93c5fd !important;
-      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5) !important;
-    }
-
-    .notif-filter-tab.active .notif-tab-badge {
-      background: rgba(0, 0, 0, 0.4) !important;
-      color: #ffffff !important;
-      border-color: rgba(255, 255, 255, 0.25) !important;
-    }
-
-    /* 모바일 알림창 UI 완전 개선 */
-    @media (max-width: 768px) {
-      #notifModal {
-        padding: 0 !important;
-      }
-      #notifModalContent {
-        width: 100vw !important;
-        max-width: 100vw !important;
-        height: 100vh !important;
-        max-height: 100vh !important;
-        border-radius: 0 !important;
-        border: none !important;
-      }
-      .notif-modal-header {
-        padding: 14px 16px !important;
-      }
-      .notif-modal-header .header-sub {
-        display: none !important;
-      }
-      .notif-filter-bar {
-        padding: 10px 14px !important;
-        gap: 6px !important;
-        overflow-x: auto !important;
-        flex-wrap: nowrap !important;
-        -webkit-overflow-scrolling: touch;
-      }
-      .notif-filter-tab {
-        min-width: 110px !important;
-        min-height: 38px !important;
-        padding: 8px 12px !important;
-        font-size: 12px !important;
-        flex-shrink: 0 !important;
-      }
-      #notifListContainer {
-        padding: 14px 16px 80px 16px !important;
-        -webkit-overflow-scrolling: touch !important;
-        overscroll-behavior: contain !important;
-      }
-      .notif-modal-close-btn {
-        width: 40px !important;
-        height: 40px !important;
-        font-size: 28px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        background: rgba(255, 255, 255, 0.1) !important;
-        border-radius: 10px !important;
-        color: #fff !important;
-      }
-    }
-
     /* 원터치 시스템 제어 스위치 버튼 스타일 */
     .system-ctrl-btn {
       display: inline-flex;
@@ -1396,6 +1233,7 @@
   </style>
 <script src="assets/purify.min.js"></script>
 <script src="assets/momentum-runtime.js"></script>
+<link rel="stylesheet" href="assets/admin-workspace.css">
 </head>
 <body>
 
@@ -1433,31 +1271,24 @@
     <!-- 헤더 -->
     <header class="top-header">
       <div class="brand-title-wrap">
-        <h1 style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px;">STUDIO MOMENTUM Mission Control</h1>
+        <h1 style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px;">STUDIO MOMENTUM</h1>
         <span class="brand-badge">LIVE TRACKING</span>
         <span class="brand-badge" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4);">🛡️ 내 방문 제외 필터 가동중</span>
       </div>
+      <div class="page-shortcuts" aria-label="고객 페이지 바로가기">
+        <a href="./?admin=1&amp;preview_mode=inbound" target="_blank" rel="noopener noreferrer">인바운드 페이지 <span aria-hidden="true">↗</span><small>새 창</small></a>
+        <a href="./?admin=1&amp;preview_mode=outbound&amp;vip" target="_blank" rel="noopener noreferrer">아웃바운드 페이지 <span aria-hidden="true">↗</span><small>새 창</small></a>
+      </div>
       <div class="header-actions">
-        <!-- 원터치 1: 이메일 자동 발송 원시스템 ON/OFF 스위치 -->
         <button id="btnEmailSystemToggle" class="system-ctrl-btn btn-sys-active" onclick="toggleEmailSystem()" title="서치부터 발송까지의 전체 자동화 시스템을 일시 정지하거나 재개합니다">
           <span id="iconEmailSystem">⚡</span>
           <span id="textEmailSystem">자동발송: 가동중 (ON)</span>
         </button>
-
-        <!-- 원터치 2: 고객 페이지 접속 차단 (점검중) 스위치 -->
-        <button id="btnClientBlockToggle" class="system-ctrl-btn btn-block-normal" onclick="toggleClientAccessBlock()" title="고객의 웹사이트 및 랜딩페이지 접속을 즉시 차단하고 점검중 화면을 띄웁니다">
+        <span id="lastUpdated" role="status">자동 갱신 연결 중</span>
+        <details class="admin-menu"><summary>관리</summary><div><button id="btnClientBlockToggle" class="system-ctrl-btn btn-block-normal" onclick="toggleClientAccessBlock()" title="고객의 웹사이트 및 랜딩페이지 접속을 즉시 차단하고 점검중 화면을 띄웁니다">
           <span id="iconClientBlock">🟢</span>
           <span id="textClientBlock">고객접속: 정상 (OPEN)</span>
-        </button>
-
-        <span id="lastUpdated" style="font-size: 12.5px; color: var(--text-muted);">방금 갱신됨</span>
-        <button class="btn-secondary" id="notifBellBtn" onclick="toggleNotifModal()" style="position: relative; display: inline-flex; align-items: center; gap: 6px;">
-          <span>🔔</span> 알림 로그 <span id="notifBadge" style="background: #ef4444; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 10px; display: none;">0</span>
-        </button>
-        <button class="btn-secondary" onclick="fetchLiveTelemetry(true)">🔄 즉시 새로고침</button>
-        <button class="btn-secondary" onclick="purgeTestTelemetry()" title="대표님이 테스트하면서 누적된 브라우저 로컬 저장소의 더미 인바운드/테스트 기록을 0으로 초기화합니다">🧹 테스트 기록 초기화</button>
-        <button class="btn-secondary" onclick="exportDataCSV()">📥 CSV 내보내기</button>
-        <button class="btn-secondary btn-logout" onclick="handleLogout()">로그아웃</button>
+        </button><button class="btn-secondary" onclick="handleLogout()">로그아웃</button></div></details>
       </div>
     </header>
 
@@ -1484,9 +1315,9 @@
 
     <!-- KPI 요약 카드 그리드 -->
     <div class="kpi-grid">
-      <div class="kpi-card" id="kpiCard_SENT_ALL" onclick="handleKpiCardClick('SENT_ALL')">
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_SENT_ALL" onclick="handleKpiCardClick('SENT_ALL')">
         <div class="kpi-label">
-          <span>총 발송 타깃 (Sent)</span>
+          <span>발송 처리</span>
           <span>✉️</span>
         </div>
         <div class="kpi-val" id="kpiSentCount">0</div>
@@ -1494,9 +1325,9 @@
         <div class="kpi-click-hint">👉 클릭 시 전체 발송목록 조회</div>
       </div>
 
-      <div class="kpi-card" id="kpiCard_OPENED_ALL" onclick="handleKpiCardClick('OPENED_ALL')">
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_OPENED_ALL" onclick="handleKpiCardClick('OPENED_ALL')">
         <div class="kpi-label">
-          <span>이메일 열람 확인 (Email Opens)</span>
+          <span>메일 열람</span>
           <span>👁️</span>
         </div>
         <div class="kpi-val" style="color: #c084fc;" id="kpiOpenedCount">0</div>
@@ -1504,9 +1335,9 @@
         <div class="kpi-click-hint" style="color: #c084fc;">👉 클릭 시 메일열람 타깃 필터</div>
       </div>
 
-      <div class="kpi-card" id="kpiCard_VISITED" onclick="handleKpiCardClick('VISITED')">
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_VISITED" onclick="handleKpiCardClick('VISITED')">
         <div class="kpi-label">
-          <span>사이트 방문 고객 (Visited Leads)</span>
+          <span>사이트 방문</span>
           <span>🌐</span>
         </div>
         <div class="kpi-val" style="color: #60a5fa;" id="kpiVisitedCount">0</div>
@@ -1514,42 +1345,39 @@
         <div class="kpi-click-hint" style="color: #60a5fa;">👉 클릭 시 사이트방문 고객 필터</div>
       </div>
 
-      <div class="kpi-card" id="kpiCard_HOT" onclick="handleKpiCardClick('HOT')">
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_HOT" onclick="handleKpiCardClick('HOT')">
         <div class="kpi-label">
-          <span>카카오톡 상담 클릭 (Hot Leads)</span>
+          <span>상담 클릭</span>
           <span>🔥</span>
         </div>
         <div class="kpi-val highlight-hot" id="kpiHotCount">0</div>
-        <div class="kpi-sub">상담 퍼널 최종 도달</div>
+        <div class="kpi-sub">카카오톡 버튼 클릭 기준</div>
         <div class="kpi-click-hint" style="color: #f87171;">👉 클릭 시 카톡상담 리드 필터</div>
       </div>
 
-      <div class="kpi-card" id="kpiCard_SCROLL_90" onclick="handleKpiCardClick('SCROLL_90')">
-        <div class="kpi-label">
-          <span>심층 탐독 (Scroll 90%+)</span>
-          <span>📖</span>
-        </div>
-        <div class="kpi-val" style="color: #34d399;" id="kpiScrollCount">0</div>
-        <div class="kpi-sub">포트폴리오 끝까지 완독</div>
-        <div class="kpi-click-hint" style="color: #34d399;">👉 클릭 시 90% 완독 고객 필터</div>
-      </div>
-
-      <div class="kpi-card" id="kpiCard_INBOUND" onclick="handleKpiCardClick('INBOUND')" style="border: 1px solid rgba(245, 158, 11, 0.3); background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.6) 100%);">
-        <div class="kpi-label">
-          <span>인바운드 유입 (SEO / GEO)</span>
-          <span>💎</span>
-        </div>
-        <div class="kpi-val" style="color: #fbbf24;" id="kpiInboundCount">0</div>
-        <div class="kpi-sub" id="kpiInboundSub" style="color: #facc15;">공개 정상가 상담 대상</div>
-        <div class="kpi-click-hint" style="color: #fbbf24;">👉 클릭 시 인바운드 목록 조회</div>
-      </div>
+      <button class="kpi-card" id="kpiCard_READY" onclick="setMainTab('READY')"><div class="kpi-label">발송 대기</div><div class="kpi-val" id="kpiReadyCount">0</div><div class="kpi-sub">검증 후 발송 가능한 타깃</div></button>
     </div>
 
+    <!-- 2열 메인 바디 -->
+    <div class="dashboard-body">
+      <!-- 우측: 마스터 타깃 추적 테이블 -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>타깃 관리</span>
+          </div>
+        </div>
+
+        <nav class="workspace-tabs" aria-label="관리 화면">
+          <button class="active" id="workspaceTargets" onclick="setMainTab('SENT')">타깃 관리</button>
+          <button id="tabBtnSearchDB" onclick="setMainTab('SEARCH_DB')">발굴 현황 <span id="tabSearchDBCount"></span></button>
+          <button id="tabBtnInbound" onclick="setMainTab('INBOUND')">유입 분석 <span id="tabInboundCount"></span></button>
+        </nav>
     <!-- pSEO & Inbound 실시간 지역/업종/AI(GEO·AEO) 분석 보드 -->
     <div class="pseo-analytics-panel" id="pseoAnalyticsPanel">
       <div class="panel-header" style="cursor: pointer; margin-bottom: 0;" onclick="togglePseoBoard()">
         <div class="panel-title">
-          <span>🗺️ pSEO 60개 권역·업종 &amp; AI 유입 (GEO·AEO 직답) 실시간 분석 보드</span>
+          <span>유입 경로 · 지역 · 업종</span>
           <span id="pseoTotalBadge" style="font-size: 11px; background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 10px; font-weight: 800;">pSEO: 0건 | GEO: 0건 | AEO: 0건</span>
         </div>
         <span style="font-size: 12px; color: #94a3b8;" id="pseoToggleIcon">▼ 접기/펼치기</span>
@@ -1559,7 +1387,7 @@
         <!-- 좌측: 12대 핵심 권역별 유입 랭킹 -->
         <div class="pseo-card">
           <div class="pseo-card-title">
-            <span>📍 12대 핵심 권역별 유입 랭킹</span>
+            <span>지역별 유입</span>
             <span style="font-size:11px; color:#64748b; font-weight:normal;">클릭 시 필터</span>
           </div>
           <div class="pseo-ranking-list" id="pseoRegionList">
@@ -1570,7 +1398,7 @@
         <!-- 중앙: 5대 고단가 업종별 유입 점유율 -->
         <div class="pseo-card">
           <div class="pseo-card-title">
-            <span>💼 5대 고단가 업종별 분포</span>
+            <span>업종별 유입</span>
             <span style="font-size:11px; color:#64748b; font-weight:normal;">클릭 시 필터</span>
           </div>
           <div class="pseo-ranking-list" id="pseoIndustryList">
@@ -1581,7 +1409,7 @@
         <!-- 우측: ROI 계산기 & AI 유입 (GEO) 실시간 시뮬레이션 지표 -->
         <div class="pseo-card">
           <div class="pseo-card-title">
-            <span>🤖 AI 추천 &amp; ROI 계산기 시뮬레이션</span>
+            <span>AI 추천 · 계산기 이용</span>
             <span style="font-size:11px; color:#64748b; font-weight:normal;">실시간 집계</span>
           </div>
           <div id="pseoGeoStats" class="pseo-stat-box">
@@ -1591,70 +1419,16 @@
       </div>
     </div>
 
-    <!-- 2열 메인 바디 -->
-    <div class="dashboard-body">
-      <!-- 좌측: 실시간 피드 (Live Feed) -->
-      <div class="panel">
-        <div class="panel-header">
-          <div class="panel-title">
-            <span>⚡ 실시간 방문 타임라인</span>
-            <span id="liveFeedCount" style="font-size: 11px; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 10px;">0</span>
-          </div>
-          <span style="font-size: 11px; color: #64748b;">15초 자동 갱신</span>
-        </div>
-        <div class="feed-container" id="feedList">
-          <!-- 피드 아이템이 동적으로 렌더링됩니다 -->
-          <div style="text-align: center; color: #64748b; padding: 40px 0;">
-            실시간 이벤트를 동기화 중입니다...
-          </div>
-        </div>
-      </div>
-
-      <!-- 우측: 마스터 타깃 추적 테이블 -->
-      <div class="panel">
-        <div class="panel-header">
-          <div class="panel-title">
-            <span>🎯 타깃 현황 & 실시간 방문 관제</span>
-          </div>
-        </div>
-
-        <!-- 메인 탭 네비게이션: 발송 완료 vs 발송 대기 vs 서치 발굴 DB vs 인바운드 분리 -->
-        <div class="main-tab-nav">
-          <button class="main-tab-btn active" id="tabBtnSent" onclick="setMainTab('SENT', this)">
-            <span>📨 발송 완료</span>
-            <span class="tab-badge" id="tabSentCount">0</span>
-          </button>
-          <button class="main-tab-btn" id="tabBtnReady" onclick="setMainTab('READY', this)">
-            <span>⏳ 발송 대기</span>
-            <span class="tab-badge queue-badge" id="tabReadyCount">0</span>
-          </button>
-          <button class="main-tab-btn" id="tabBtnSearchDB" onclick="setMainTab('SEARCH_DB', this)">
-            <span>🔍 서치 발굴 DB</span>
-            <span class="tab-badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; font-weight: 800;" id="tabSearchDBCount">0</span>
-          </button>
-          <button class="main-tab-btn" id="tabBtnInbound" onclick="setMainTab('INBOUND', this)">
-            <span>🌐 인바운드 유입</span>
-            <span class="tab-badge" style="background: rgba(245, 158, 11, 0.25); color: #fbbf24; font-weight: 800;" id="tabInboundCount">0</span>
-          </button>
-          <button class="main-tab-btn" id="tabBtnAll" onclick="setMainTab('ALL', this)">
-            <span>📋 전체 타깃 DB 통합</span>
-            <span class="tab-badge" style="background: rgba(255,255,255,0.1); color: #94a3b8;" id="tabAllCount">0</span>
-          </button>
-        </div>
-
+        <div id="prospectSummary" hidden></div>
         <div class="table-controls">
-          <input type="text" id="searchInput" class="search-input" placeholder="업체명, 대표자, 이메일, 토큰 검색..." oninput="renderTable()">
-          <div class="filter-group" id="dynamicFilterGroup">
-            <!-- 메인 탭에 따라 서브 필터가 동적으로 렌더링됩니다 -->
-          </div>
+          <input type="text" id="searchInput" class="search-input" placeholder="업체·담당자·이메일 검색" aria-label="목록 검색" oninput="renderTable()">
+          <div class="filter-group" id="dynamicFilterGroup"></div>
+          <button class="btn-secondary" onclick="resetWorkspaceFilters()">초기화</button>
+          <button class="btn-secondary" onclick="exportDataCSV()">CSV 내보내기</button>
         </div>
-
-        <div class="mobile-scroll-hint">
-          👉 표를 좌우로 스크롤하여 상세 정보(발송일시/방문상태/체류시간)를 확인하세요
-        </div>
-
+        <div id="resultSummary" class="result-summary" aria-live="polite"></div>
         <!-- 데스크톱 전용 테이블 뷰 -->
-        <div class="desktop-table-container table-wrap">
+        <div class="desktop-table-container table-wrap" id="workspaceTable">
           <table id="targetsTable">
             <thead id="tableHead">
               <!-- 메인 탭에 따라 헤더 컬럼이 동적으로 바뀝니다 -->
@@ -1935,19 +1709,6 @@
       } catch (e) {}
     }
 
-    function purgeTestTelemetry() {
-      if (confirm("대표님이 테스트하면서 브라우저에 누적된 더미 테스트/인바운드 기록을 완전히 비우시겠습니까?\n\n(실제 고객의 유효 발송 및 방문 데이터는 보존됩니다)")) {
-        localStorage.removeItem(LOCAL_EVENTS_KEY);
-        liveEvents = liveEvents.filter(ev => !Momentum.isTestEvent(ev));
-        saveStoredEvents();
-        updateKPIs();
-        updatePseoBoard();
-        renderFeed();
-        renderTable();
-        alert("🧹 테스트 기록이 초기화되었습니다. 실시간 고객 유입만 깨끗하게 표시됩니다.");
-      }
-    }
-
     function saveStoredEvents() {
       try {
         localStorage.setItem(LOCAL_EVENTS_KEY, JSON.stringify(liveEvents.slice(0, 1000)));
@@ -1985,8 +1746,7 @@
           if (result.status === 'fulfilled') { successes++; incoming.push(...result.value); }
         }
         liveEvents = Momentum.mergeEvents(liveEvents,incoming);
-        saveStoredEvents(); updateKPIs(); updatePseoBoard(); renderFeed(); renderTable();
-        if (typeof buildCombinedNotifications === 'function') buildCombinedNotifications();
+        saveStoredEvents(); updateKPIs(); updatePseoBoard();  renderTable();
         document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString('ko-KR') +
           (successes===2?' 동기화됨':successes===1?' 일부 소스 실패 · 보존 데이터 표시':' 동기화 실패 · 보존 데이터 표시');
       } finally { telemetryBusy = false; }
@@ -1995,52 +1755,6 @@
     /* ===================================================
        3. 메인 탭 전환 & KPI 계산 & 필터 바 동기화
        =================================================== */
-    function setMainTab(tab, el) {
-      mainTab = tab;
-      currentFilter = "ALL";
-      document.querySelectorAll(".main-tab-btn").forEach(b => b.classList.remove("active"));
-      if (el) {
-        el.classList.add("active");
-      } else {
-        if (tab === "SENT") document.getElementById("tabBtnSent")?.classList.add("active");
-        else if (tab === "READY") document.getElementById("tabBtnReady")?.classList.add("active");
-        else if (tab === "SEARCH_DB") document.getElementById("tabBtnSearchDB")?.classList.add("active");
-        else if (tab === "INBOUND") document.getElementById("tabBtnInbound")?.classList.add("active");
-        else if (tab === "ALL") document.getElementById("tabBtnAll")?.classList.add("active");
-      }
-
-      // KPI 카드 활성 스타일 동기화
-      document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
-      if (tab === 'SENT') {
-        document.getElementById('kpiCard_SENT_ALL')?.classList.add('active-kpi');
-      } else if (tab === 'INBOUND') {
-        document.getElementById('kpiCard_INBOUND')?.classList.add('active-kpi');
-      }
-
-      updateFilterBar();
-      renderTable();
-    }
-
-    function setFilter(filter, el) {
-      currentFilter = filter;
-      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-      if (el) el.classList.add("active");
-
-      // KPI 카드 활성화 상태 동기화
-      document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
-      if (mainTab === 'SENT') {
-        if (filter === 'ALL') document.getElementById('kpiCard_SENT_ALL')?.classList.add('active-kpi');
-        else if (filter === 'OPENED_ALL') document.getElementById('kpiCard_OPENED_ALL')?.classList.add('active-kpi');
-        else if (filter === 'VISITED') document.getElementById('kpiCard_VISITED')?.classList.add('active-kpi');
-        else if (filter === 'HOT') document.getElementById('kpiCard_HOT')?.classList.add('active-kpi');
-        else if (filter === 'SCROLL_90') document.getElementById('kpiCard_SCROLL_90')?.classList.add('active-kpi');
-      } else if (mainTab === 'INBOUND') {
-        document.getElementById('kpiCard_INBOUND')?.classList.add('active-kpi');
-      }
-
-      renderTable();
-    }
-
     function handleKpiCardClick(type) {
       document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
       const cardEl = document.getElementById(`kpiCard_${type}`);
@@ -2102,7 +1816,7 @@
       if (elKpiInboundSub) elKpiInboundSub.textContent = `공개 정상가 상담 대상 (${inboundTokens.size}명)`;
 
       document.getElementById("kpiSentCount").textContent = totalSent;
-      document.getElementById("kpiSentSub").textContent = `발송 대기: ${totalReady}건`;
+      document.getElementById("kpiSentSub").textContent = `반송 포함 ${totalSent}건`;
 
       const openCount = openedTokens.size;
       const openRate = totalSent > 0 ? ((openCount / totalSent) * 100).toFixed(1) : 0;
@@ -2116,7 +1830,7 @@
       document.getElementById("kpiVisitedRate").textContent = `방문 전환율: ${rate}% (${visitedTokens.size}/${totalSent})`;
 
       document.getElementById("kpiHotCount").textContent = hotTokens.size;
-      document.getElementById("kpiScrollCount").textContent = scroll90Tokens.size;
+      document.getElementById("kpiReadyCount").textContent = totalReady;
 
       updatePseoBoard();
       updateFilterBar();
@@ -2245,7 +1959,7 @@
           const pct = Math.round((count / maxVal) * 100);
           const isTop = idx < 3 && count > 0;
           return `
-            <div class="pseo-item" onclick="filterByPseoRegion('${reg}')" title="클릭 시 '${reg}' 유입 필터링">
+            <div class="pseo-item" data-pseo-region="${reg}" role="button" tabindex="0" title="클릭 시 '${reg}' 유입 필터링">
               <div class="pseo-item-header">
                 <span class="pseo-item-name">${idx + 1}. ${reg} ${isTop ? '🔥' : ''}</span>
                 <span class="pseo-item-val">${count}건</span>
@@ -2266,7 +1980,7 @@
         Momentum.setHTML(indEl, sortedInds.map(([ind, count], idx) => {
           const pct = Math.round((count / maxVal) * 100);
           return `
-            <div class="pseo-item" onclick="filterByPseoIndustry('${ind}')" title="클릭 시 '${ind}' 유입 필터링">
+            <div class="pseo-item" data-pseo-industry="${ind}" role="button" tabindex="0" title="클릭 시 '${ind}' 유입 필터링">
               <div class="pseo-item-header">
                 <span class="pseo-item-name">${ind}</span>
                 <span class="pseo-item-val" style="color: #34d399;">${count}건</span>
@@ -2371,737 +2085,6 @@
       return Object.values(inboundsMap);
     }
 
-    function updateFilterBar() {
-      const filterBox = document.getElementById("dynamicFilterGroup");
-      if (!filterBox) return;
-
-      const targetsList = Object.values(targetsMap);
-      const {openedTokens,visitedTokens,hotTokens,scroll90Tokens} = Momentum.activitySets(targetsMap,liveEvents);
-
-      if (mainTab === "SENT") {
-        const sentTargets = targetsList.filter(t => t.status === "SENT" || t.status === "BOUNCED");
-        const cntAll = sentTargets.length;
-        const cntJob = sentTargets.filter(isJobPostingTarget).length;
-        const cntOpenedAll = sentTargets.filter(t => openedTokens.has(t.token)).length;
-        const cntVisited = sentTargets.filter(t => visitedTokens.has(t.token)).length;
-        const cntHot = sentTargets.filter(t => hotTokens.has(t.token)).length;
-        const cntScroll90 = sentTargets.filter(t => scroll90Tokens.has(t.token)).length;
-        const cntOpenedOnly = sentTargets.filter(t => openedTokens.has(t.token) && !visitedTokens.has(t.token)).length;
-        const cntUnopened = sentTargets.filter(t => !openedTokens.has(t.token)).length;
-
-        Momentum.setHTML(filterBox, `
-          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" data-filter="ALL">전체 발송완료 (${cntAll})</button>
-          <button class="filter-btn ${currentFilter==='OPENED_ALL'?'active':''}" data-filter="OPENED_ALL">👁️ 전체 열람 (${cntOpenedAll})</button>
-          <button class="filter-btn ${currentFilter==='VISITED'?'active':''}" data-filter="VISITED">🌐 사이트접속 (${cntVisited})</button>
-          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" data-filter="HOT">🔥 카톡상담클릭 (${cntHot})</button>
-          <button class="filter-btn ${currentFilter==='SCROLL_90'?'active':''}" data-filter="SCROLL_90">📖 90% 완독 (${cntScroll90})</button>
-          <button class="filter-btn ${currentFilter==='JOB'?'active':''}" data-filter="JOB">🚨 구인공고 타깃 (${cntJob})</button>
-          <button class="filter-btn ${currentFilter==='OPENED_ONLY'?'active':''}" data-filter="OPENED_ONLY">✉️ 메일만 열람 [미접속] (${cntOpenedOnly})</button>
-          <button class="filter-btn ${currentFilter==='UNOPENED'?'active':''}" data-filter="UNOPENED">⏳ 미열람 (${cntUnopened})</button>
-        `);
-      } else if (mainTab === "READY") {
-        const readyTargets = targetsList.filter(t => t.status === "READY");
-        const cntAll = readyTargets.length;
-        const isPriority = isJobPostingTarget;
-        const isZoneB = t => ["서울", "강남", "서초", "송파", "판교", "분당"].some(k => (t.region || "").includes(k));
-
-        const cntPriority = readyTargets.filter(isPriority).length;
-        const cntZoneB = readyTargets.filter(isZoneB).length;
-        const cntZoneA = cntAll - cntZoneB;
-
-        Momentum.setHTML(filterBox, `
-          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" data-filter="ALL">전체 대기열 (${cntAll})</button>
-          <button class="filter-btn ${currentFilter==='PRIORITY'?'active':''}" data-filter="PRIORITY">🚨 구인/채용 우선 (${cntPriority})</button>
-          <button class="filter-btn ${currentFilter==='ZONE_A'?'active':''}" data-filter="ZONE_A">Zone A (경기 남부) (${cntZoneA})</button>
-          <button class="filter-btn ${currentFilter==='ZONE_B'?'active':''}" data-filter="ZONE_B">Zone B (서울/판교) (${cntZoneB})</button>
-        `);
-      } else if (mainTab === "SEARCH_DB") {
-        const stats = targetsMap['_search_db_stats'] || {};
-        const total = stats.total_candidates ?? 0;
-        const disc = stats.discovered_count ?? 0;
-        const rev = stats.review_count ?? 0;
-        const ver = stats.verified_count ?? 0;
-
-        Momentum.setHTML(filterBox, `
-          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" data-filter="ALL">전체 발굴 후보 (${total})</button>
-          <button class="filter-btn ${currentFilter==='VERIFIED'?'active':''}" data-filter="VERIFIED">✅ 검증 완료·장전 (${ver})</button>
-          <button class="filter-btn ${currentFilter==='DISCOVERED'?'active':''}" data-filter="DISCOVERED">⏳ 미검증 신규대기 (${disc})</button>
-          <button class="filter-btn ${currentFilter==='REVIEW'?'active':''}" data-filter="REVIEW">⚠️ 기준미달·보류 (${rev})</button>
-        `);
-      } else if (mainTab === "INBOUND") {
-        const inbounds = getInboundList();
-        const cntAll = inbounds.length;
-        const cntPseo = inbounds.filter(i => i.channel_type === 'PSEO').length;
-        const cntGeo = inbounds.filter(i => i.channel_type === 'GEO').length;
-        const cntSeo = inbounds.filter(i => i.channel_type === 'SEO').length;
-        const cntHot = inbounds.filter(i => i.hot).length;
-
-        Momentum.setHTML(filterBox, `
-          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" data-filter="ALL">전체 인바운드 (${cntAll})</button>
-          <button class="filter-btn ${currentFilter==='PSEO'?'active':''}" data-filter="PSEO">📍 pSEO (지역/업종) (${cntPseo})</button>
-          <button class="filter-btn ${currentFilter==='GEO'?'active':''}" data-filter="GEO">🤖 GEO (AI 추천) (${cntGeo})</button>
-          <button class="filter-btn ${currentFilter==='SEO'?'active':''}" data-filter="SEO">🔍 SEO (포털 검색) (${cntSeo})</button>
-          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" data-filter="HOT">🔥 카톡상담클릭 (${cntHot})</button>
-          <button class="filter-btn ${currentFilter==='PREMIUM'?'active':''}" data-filter="PREMIUM">💎 공개 정상가 상담 (${cntAll})</button>
-        `);
-      } else {
-        const cntTotal = targetsList.length;
-        const cntSent = targetsList.filter(t => t.status === "SENT").length;
-        const cntReady = targetsList.filter(t => t.status === "READY").length;
-        const cntHot = targetsList.filter(t => hotTokens.has(t.token)).length;
-
-        Momentum.setHTML(filterBox, `
-          <button class="filter-btn ${currentFilter==='ALL'?'active':''}" data-filter="ALL">전체 타깃 (${cntTotal})</button>
-          <button class="filter-btn ${currentFilter==='SENT'?'active':''}" data-filter="SENT">발송완료 (${cntSent})</button>
-          <button class="filter-btn ${currentFilter==='READY'?'active':''}" data-filter="READY">발송대기 (${cntReady})</button>
-          <button class="filter-btn ${currentFilter==='HOT'?'active':''}" data-filter="HOT">🔥 카톡클릭 (${cntHot})</button>
-        `);
-      }
-    }
-
-    function filterTargetInTable(token) {
-      if (!token) return;
-      // 1. 발송완료 탭으로 전환
-      setMainTab('SENT');
-      // 2. 검색창에 해당 토큰 입력 후 테이블 재렌더링
-      const searchInput = document.getElementById("searchInput");
-      if (searchInput) {
-        searchInput.value = token;
-        renderTable();
-        // 테이블 위치로 부드럽게 스크롤
-        const tableCard = document.querySelector('.table-card');
-        if (tableCard) tableCard.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-
-    function renderFeed() {
-      const feedBox = document.getElementById("feedList");
-      const cleanEvents = Momentum.mergeEvents(liveEvents).filter(ev => {
-        const refLower = (ev.ref || '').toLowerCase();
-        return !Momentum.isTestEvent(ev);
-      });
-      document.getElementById("liveFeedCount").textContent = cleanEvents.length;
-
-      if (cleanEvents.length === 0) {
-        Momentum.setHTML(feedBox, '<div style="text-align: center; color: #64748b; padding: 40px 0;">수집된 실제 고객 활동 이벤트가 없습니다. (관리자 테스트 제외 필터 가동 중)</div>');
-        return;
-      }
-
-      // 토큰별 누적 메일 열람수 및 사이트 방문수 집계 (중복 합산 방지: targetsMap 기본값과 신규 이벤트 분리)
-      const tokenStatsMap = Momentum.aggregateStats(targetsMap, liveEvents);
-
-      Momentum.setHTML(feedBox, cleanEvents.slice(0, 50).map(ev => {
-        const target = targetsMap[ev.ref];
-        const isJob = isJobPostingTarget(target);
-        const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-        const isPseo = ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'));
-        const isInbound = isPseo || (!target && (ev.ref && (ev.ref.startsWith('inbound_') || ev.channel_type === 'GEO' || ev.channel_type === 'SEO' || ev.ref === 'direct')));
-
-        let name = '';
-        if (target) {
-          name = `${target.company} (${target.rep}) ${jobBadge}`;
-        } else if (isPseo) {
-          const chName = ev.channel_name || `${ev.region || ''} ${ev.industry || ''} (pSEO)`;
-          name = `📍 [pSEO 유입] ${chName} <span class="badge badge-premium">💎 맞춤 견적 대상</span>`;
-        } else if (isInbound) {
-          const chName = ev.channel_name || (ev.ref_url && ev.ref_url.includes('naver') ? '네이버 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('google') ? '구글 검색 (SEO)' : (ev.ref_url && ev.ref_url.includes('chatgpt') ? 'ChatGPT (GEO)' : '자연 유입 고객')));
-          name = `🌐 [인바운드] ${chName} <span class="badge badge-premium">💎 공개 정상가 상담</span>`;
-        } else {
-          name = `식별 중 [${ev.ref}]`;
-        }
-
-        const timeStr = formatRelativeTime(ev.timestamp || ev._received || Date.now());
-
-        let badgeClass = "visit";
-        let itemClass = "visit-item";
-        let tagText = "🌐 방문";
-        let desc = `${ev.device || 'Desktop'} · ${ev.screen || ''}`;
-
-        if (ev.event === "email_open" || ev.event === "open") {
-          badgeClass = "open";
-          itemClass = "open-item";
-          tagText = "📨 메일 열람";
-          desc = `메일 추적 이미지 요청 감지 (실제 열람 여부는 프록시·미리보기의 영향을 받을 수 있음)`;
-        } else if (ev.event === "roi_calc_change") {
-          badgeClass = "scroll";
-          itemClass = "scroll-item";
-          tagText = "📊 ROI 계산기 조작";
-          const sal = ev.meta && ev.meta.salary ? ev.meta.salary + '만 원' : '350만 원';
-          const frq = ev.meta && ev.meta.frequency ? '월 ' + ev.meta.frequency + '편' : '월 4편';
-          const sav = ev.meta && ev.meta.saved ? ' ➔ 연 ' + ev.meta.saved.toLocaleString() + '만 원 절감 확인' : '';
-          desc = `사내PD 월급: ${sal} / 발행: ${frq}${sav}`;
-        } else if (ev.event === "kakao_click") {
-          badgeClass = "hot";
-          itemClass = "hot-item";
-          tagText = "🔥 카톡 상담 클릭";
-          desc = `상담 버튼: "${ev.meta && ev.meta.btnText ? ev.meta.btnText : '1:1 빠른 문의하기'}" (체류 ${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''}) ➔ ${isInbound ? '💎 [공개 정상가 상담 상담 대상]' : '표준 제휴가 적용'}`;
-        } else if (ev.event === "scroll_90") {
-          badgeClass = "scroll";
-          itemClass = "scroll-item";
-          tagText = "📖 90% 완독";
-          desc = `페이지 끝까지 탐독 완료 (${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''})`;
-        } else if (ev.event === "scroll_50") {
-          badgeClass = "scroll";
-          tagText = "50% 탐색";
-          desc = `핵심 포트폴리오 및 수치 확인 (${ev.meta && ev.meta.elapsed ? ev.meta.elapsed + '초' : ''})`;
-        } else if (ev.event && ev.event.startsWith("duration_")) {
-          badgeClass = "stay";
-          tagText = "⏱ 체류";
-          desc = `${ev.meta && ev.meta.duration ? ev.meta.duration + '초간 몰입' : ''}`;
-        } else if (ev.event === "leave") {
-          badgeClass = "stay";
-          tagText = "이탈";
-          desc = `총 체류 시간: ${ev.meta && ev.meta.totalDuration ? ev.meta.totalDuration + '초' : ''}`;
-        }
-
-        // 수식어 없는 순수 메일/사이트 방문 횟수 표기
-        const stats = tokenStatsMap[ev.ref] || { openCount: 0, visitCount: 0 };
-        const countInfoBadge = Momentum.renderActivityCounts(stats);
-
-        const clickAttr = target ? `data-target-token="${ev.ref}" title="클릭 시 [발송완료] 탭에서 이 고객 정보만 필터링합니다"` : '';
-
-        return `
-          <div class="feed-item ${itemClass}" ${clickAttr}>
-            <div class="feed-top">
-              <span class="feed-tag ${badgeClass}">${tagText}</span>
-              <span class="feed-time">${timeStr}</span>
-            </div>
-            <div class="feed-target">${name}</div>
-            <div class="feed-detail">${desc}</div>
-            ${countInfoBadge}
-          </div>
-        `;
-      }).join(""));
-    }
-
-    /* ===================================================
-       4. 마스터 테이블 렌더링 (최신 발송순 정렬 & 대기열 / 인바운드 분리)
-       =================================================== */
-    function renderTable() {
-      const thead = document.getElementById("tableHead");
-      const tbody = document.getElementById("tableBody");
-      const searchVal = document.getElementById("searchInput").value.trim().toLowerCase();
-
-      // 1. 토큰별 활동 데이터 종합
-      const targetStats = Momentum.aggregateStats(targetsMap, liveEvents);
-
-      const list = Object.values(targetsMap).filter(t => t && t.token);
-
-      // 2. 메인 탭에 따른 헤더 컬럼 렌더링
-      if (mainTab === "SENT") {
-        Momentum.setHTML(thead, `
-          <tr>
-            <th>순번</th>
-            <th style="color: #60a5fa; font-weight: 800;">발송일시 (최신순 ⬇️)</th>
-            <th>열람/방문 상태</th>
-            <th>회사/채널명</th>
-            <th>대표자</th>
-            <th>업종</th>
-            <th>지역</th>
-            <th>최근 활동</th>
-            <th>체류/완독</th>
-            <th>난수 토큰</th>
-          </tr>
-        `);
-      } else if (mainTab === "READY") {
-        Momentum.setHTML(thead, `
-          <tr>
-            <th>대기 순번</th>
-            <th style="color: #fbbf24; font-weight: 800;">상태</th>
-            <th>우선순위 / 특징</th>
-            <th>회사/채널명</th>
-            <th>대표자</th>
-            <th>업종</th>
-            <th>지역</th>
-            <th>현재조회수 / 공고내용</th>
-            <th>수신 이메일</th>
-            <th>난수 토큰</th>
-          </tr>
-        `);
-      } else if (mainTab === "INBOUND") {
-        Momentum.setHTML(thead, `
-          <tr>
-            <th>순번</th>
-            <th style="color: #fbbf24; font-weight: 800;">최근 활동일시 (최신순 ⬇️)</th>
-            <th>유입 채널 (출처)</th>
-            <th>견적 적용 가이드</th>
-            <th>상담/탐색 상태</th>
-            <th>체류/완독</th>
-            <th>접속 기기</th>
-            <th>유입 세션 ID</th>
-          </tr>
-        `);
-      } else {
-        Momentum.setHTML(thead, `
-          <tr>
-            <th>순번</th>
-            <th>상태</th>
-            <th>발송일시</th>
-            <th>방문 여부</th>
-            <th>회사/채널명</th>
-            <th>대표자</th>
-            <th>업종</th>
-            <th>지역</th>
-            <th>최근 활동</th>
-            <th>난수 토큰</th>
-          </tr>
-        `);
-      }
-
-      // 3. 인바운드 탭 전용 렌더링 분기
-      if (mainTab === "INBOUND") {
-        const inbounds = getInboundList();
-        const filteredInbounds = inbounds.filter(item => {
-          if (currentFilter === "GEO" && item.channel_type !== "GEO") return false;
-          if (currentFilter === "SEO" && item.channel_type !== "SEO") return false;
-          if (currentFilter === "HOT" && !item.hot) return false;
-          if (searchVal) {
-            const matchStr = `${item.channel_name} ${item.token} ${item.ref_url}`.toLowerCase();
-            if (!matchStr.includes(searchVal)) return false;
-          }
-          return true;
-        });
-
-        filteredInbounds.sort((a, b) => b.lastSeen - a.lastSeen);
-
-        if (filteredInbounds.length === 0) {
-          Momentum.setHTML(tbody, `<tr><td colspan="8" style="text-align:center; padding:36px; color:#64748b;">수집된 인바운드(SEO/GEO) 방문 데이터가 아직 없습니다.</td></tr>`);
-          const mobileContainer = document.getElementById("mobileCardsContainer");
-          if (mobileContainer) Momentum.setHTML(mobileContainer, `<div style="text-align:center; padding:36px 0; color:#64748b;">수집된 인바운드 방문 데이터가 없습니다.</div>`);
-          return;
-        }
-
-        Momentum.setHTML(tbody, filteredInbounds.map((item, idx) => {
-          let chBadge = `<span class="badge badge-visited">${item.channel_name}</span>`;
-          if (item.channel_type === 'GEO') chBadge = `<span class="badge badge-geo">🤖 GEO | ${item.channel_name}</span>`;
-          else if (item.channel_type === 'SEO') chBadge = `<span class="badge badge-seo">🔍 SEO | ${item.channel_name}</span>`;
-
-          const priceBadge = `<span class="badge badge-premium">💎 공개 정상가 상담</span>`;
-          const statusBadge = item.hot ? `<span class="badge badge-hot">🔥 카톡상담클릭</span>` : `<span class="badge badge-visited">🌐 사이트탐색</span>`;
-          const behavior = `완독 ${item.maxScroll}% / 체류 ${item.maxStaySec}초`;
-
-          return `
-            <tr>
-              <td><strong>#${idx + 1}</strong></td>
-              <td style="color: #fbbf24; font-weight: 600;">${formatRelativeTime(item.lastSeen)}</td>
-              <td>${chBadge}</td>
-              <td>${priceBadge}</td>
-              <td>${statusBadge}</td>
-              <td>${behavior}</td>
-              <td style="color: #94a3b8;">${item.device}</td>
-              <td><span class="token-chip">${item.token}</span></td>
-            </tr>
-          `;
-        }).join(""));
-
-        const mobileContainer = document.getElementById("mobileCardsContainer");
-        if (mobileContainer) {
-          Momentum.setHTML(mobileContainer, filteredInbounds.map((item, idx) => {
-            const chBadge = item.channel_type === 'GEO' ? `<span class="badge badge-geo">🤖 GEO | ${item.channel_name}</span>` : (item.channel_type === 'SEO' ? `<span class="badge badge-seo">🔍 SEO | ${item.channel_name}</span>` : `<span class="badge badge-visited">${item.channel_name}</span>`);
-            const statusBadge = item.hot ? `<span class="badge badge-hot">🔥 카톡상담클릭</span>` : `<span class="badge badge-visited">🌐 사이트탐색</span>`;
-
-            return `
-              <div class="target-card ${item.hot ? 'card-hot' : 'card-opened'}" style="border-left: 4px solid #f59e0b;">
-                <div class="card-top-row">
-                  <div class="card-title-group">
-                    <span class="card-num">#${idx + 1}</span>
-                    <strong class="card-company-name" style="color: #fbbf24;">인바운드 자연 유입</strong>
-                  </div>
-                  <div>${statusBadge}</div>
-                </div>
-
-                <div style="margin-bottom: 8px;">
-                  <span class="badge badge-premium">💎 공개 정상가 상담 상담 대상</span>
-                </div>
-
-                <div class="card-highlight-box">
-                  <div class="card-highlight-row">
-                    <span class="card-hl-label">🌐 유입 경로</span>
-                    <span class="card-hl-val">${chBadge}</span>
-                  </div>
-                  <div class="card-highlight-row">
-                    <span class="card-hl-label">👀 최근 활동</span>
-                    <span class="card-hl-val">${formatRelativeTime(item.lastSeen)}</span>
-                  </div>
-                  <div class="card-highlight-row">
-                    <span class="card-hl-label">⏱ 체류/완독</span>
-                    <span class="card-hl-val">완독 ${item.maxScroll}% · 체류 ${item.maxStaySec}초</span>
-                  </div>
-                </div>
-
-                <div class="card-bottom-row">
-                  <span class="token-chip">ref: ${item.token}</span>
-                  <span style="color: #94a3b8; font-size: 11px;">${item.device}</span>
-                </div>
-              </div>
-            `;
-          }).join(""));
-        }
-        return;
-      }
-
-      // 3-2. 서치 발굴 DB (크롤링 수집 풀) 전용 렌더링 분기
-      if (mainTab === "SEARCH_DB") {
-        Momentum.setHTML(thead, `
-          <tr>
-            <th>지표 구분</th>
-            <th style="color: #38bdf8; font-weight: 800;">누적 수치</th>
-            <th>비율</th>
-            <th>상태 설명</th>
-            <th>관제 및 조치 가이드</th>
-          </tr>
-        `);
-        const stats = targetsMap['_search_db_stats'] || {};
-        const total = stats.total_candidates ?? 0;
-        const disc = stats.discovered_count ?? 0;
-        const rev = stats.review_count ?? 0;
-        const ver = stats.verified_count ?? 0;
-        const evCnt = stats.evidence_count ?? 0;
-
-        const rowsData = [
-          { name: '🌐 총 발굴 후보 채널 (All Crawled)', val: total + '개', pct: '100%', desc: '유튜브·포털을 통해 수집된 전체 전문직 채널 풀', guide: '24시간 무중단 자동 크롤링 풀 누적 관리', color: '#f8fafc' },
-          { name: '📁 정밀 실측 완료 채널 (Evidence Cached)', val: evCnt + '개', pct: ((evCnt/total)*100).toFixed(1)+'%', desc: '영상 조회수, 구독자, 이메일, 주소를 정밀 수집한 채널', guide: 'yt-dlp 고속 캐시로 0.01초 내 재평가 가능', color: '#38bdf8' },
-          { name: '✅ 적격 판정 & 장전 풀 (Qualified)', val: ver + '개', pct: ((ver/total)*100).toFixed(1)+'%', desc: '모든 심사 기준(소형 알짜, 이메일 보유)을 통과한 채널', guide: '발송 대기열(이틀치 버퍼 48개)에 순차 투입 중', color: '#10b981' },
-          { name: '⏳ 신규 검증 대기 (Discovered Queue)', val: disc + '개', pct: ((disc/total)*100).toFixed(1)+'%', desc: '신규 검색되어 1차 실측 검증 대기 중인 채널', guide: '매 10분 클라우드 주기마다 봇이 순차 검증 진행', color: '#fbbf24' },
-          { name: '⚠️ 기준 미달 또는 보류 (Review / Filtered)', val: rev + '개', pct: ((rev/total)*100).toFixed(1)+'%', desc: '이메일 부재(80%) 또는 대형 채널(구독자 2천 이상)', guide: '1일 후 연락처/스펙 변경 시 자동 재평가', color: '#94a3b8' }
-        ];
-
-        Momentum.setHTML(tbody, rowsData.map(r => `
-          <tr>
-            <td style="font-weight: 700; color: ${r.color};">${r.name}</td>
-            <td style="font-size: 15px; font-weight: 800; color: ${r.color};">${r.val}</td>
-            <td><span class="badge" style="background: rgba(255,255,255,0.08);">${r.pct}</span></td>
-            <td style="color: #cbd5e1;">${r.desc}</td>
-            <td style="color: #94a3b8; font-size: 12.5px;">${r.guide}</td>
-          </tr>
-        `).join(""));
-
-        const mobileContainer = document.getElementById("mobileCardsContainer");
-        if (mobileContainer) {
-          Momentum.setHTML(mobileContainer, rowsData.map(r => `
-            <div class="target-card" style="border-left: 4px solid ${r.color};">
-              <div class="card-top-row">
-                <strong style="color: ${r.color}; font-size: 14.5px;">${r.name}</strong>
-                <span style="font-size: 16px; font-weight: 800; color: ${r.color};">${r.val}</span>
-              </div>
-              <div style="font-size: 12.5px; color: #cbd5e1; margin: 8px 0;">${r.desc}</div>
-              <div style="font-size: 11.5px; color: #94a3b8; background: rgba(255,255,255,0.04); padding: 8px; border-radius: 6px;">
-                💡 <strong>가이드:</strong> ${r.guide}
-              </div>
-            </div>
-          `).join(""));
-        }
-        return;
-      }
-      const filtered = list.filter(t => {
-        const stats = targetStats[t.token];
-
-        if (mainTab === "SENT") {
-          // 발송 완료(또는 반송확인) 타깃만
-          if (t.status !== "SENT" && t.status !== "BOUNCED") return false;
-          if (currentFilter === "JOB" && !isJobPostingTarget(t)) return false;
-          if (currentFilter === "OPENED_ALL" && (!stats || !stats.opened)) return false;
-          if (currentFilter === "HOT" && (!stats || !stats.hot)) return false;
-          if (currentFilter === "VISITED" && (!stats || !stats.visited)) return false;
-          if (currentFilter === "SCROLL_90" && (!stats || stats.maxScroll < 90)) return false;
-          if (currentFilter === "OPENED_ONLY" && (!stats || !stats.opened || stats.visited)) return false;
-          if (currentFilter === "UNOPENED" && (stats && stats.opened)) return false;
-        } else if (mainTab === "READY") {
-          // 발송 대기 타깃만
-          if (t.status !== "READY") return false;
-          const isPrio = isJobPostingTarget(t);
-          const isZoneB = ["서울", "강남", "서초", "송파", "판교", "분당"].some(k => (t.region || "").includes(k));
-
-          if (currentFilter === "PRIORITY" && !isPrio) return false;
-          if (currentFilter === "ZONE_A" && isZoneB) return false;
-          if (currentFilter === "ZONE_B" && !isZoneB) return false;
-        } else {
-          // 전체 통합 탭
-          if (currentFilter === "SENT" && (t.status !== "SENT" && t.status !== "BOUNCED")) return false;
-          if (currentFilter === "READY" && t.status !== "READY") return false;
-          if (currentFilter === "HOT" && (!stats || !stats.hot)) return false;
-        }
-
-        // 검색어 필터
-        if (searchVal) {
-          const matchStr = `${t.no} ${t.company} ${t.rep} ${t.email} ${t.token} ${t.region} ${t.views||''}`.toLowerCase();
-          if (!matchStr.includes(searchVal)) return false;
-        }
-        return true;
-      });
-
-      // 5. [핵심 정렬 로직]
-      if (mainTab === "SENT") {
-        // [이메일 최신 발송순 정렬 (내림차순, 최신이 맨 위로!)]
-        filtered.sort((a, b) => {
-          const parseTime = (str) => {
-            if (!str) return 0;
-            const clean = str.replace(" (반송확인)", "").replace(" (발송실패)", "").trim();
-            const d = new Date(clean.replace(/-/g, "/"));
-            return isNaN(d.getTime()) ? 0 : d.getTime();
-          };
-          const tA = parseTime(a.sent_at);
-          const tB = parseTime(b.sent_at);
-          if (tA !== tB) return tB - tA; // 최신순 정렬!
-          return parseInt(b.no || 0) - parseInt(a.no || 0);
-        });
-      } else if (mainTab === "READY") {
-        // [발송 대기 대기열 순서: 구인공고 우선 타깃 먼저 + 순번 순]
-        filtered.sort((a, b) => {
-          const isPrioA = isJobPostingTarget(a);
-          const isPrioB = isJobPostingTarget(b);
-          if (isPrioA && !isPrioB) return -1;
-          if (!isPrioA && isPrioB) return 1;
-          return parseInt(a.no || 0) - parseInt(b.no || 0);
-        });
-      } else {
-        filtered.sort((a, b) => parseInt(a.no || 0) - parseInt(b.no || 0));
-      }
-
-      // 6. 테이블 바디(행) 렌더링
-      if (filtered.length === 0) {
-        Momentum.setHTML(tbody, `<tr><td colspan="10" style="text-align:center; padding:36px; color:#64748b;">조건에 일치하는 타깃이 없습니다.</td></tr>`);
-        Momentum.setHTML(document.getElementById("mobileCardsContainer"), `<div style="text-align:center; padding:36px 0; color:#64748b;">조건에 일치하는 타깃이 없습니다.</div>`);
-        return;
-      }
-
-      Momentum.setHTML(tbody, filtered.map(t => {
-        const stats = targetStats[t.token];
-        const isJob = isJobPostingTarget(t);
-        const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-        let visitBadge = '<span class="badge badge-not">⏳ 미열람</span>';
-        let lastAction = '-';
-        let behavior = '-';
-
-        if (stats) {
-          if (stats.hot) {
-            visitBadge = '<span class="badge badge-hot">🔥 카톡상담클릭</span>';
-          } else if (stats.visited) {
-            visitBadge = '<span class="badge badge-visited">🌐 사이트접속</span>';
-          } else if (stats.opened) {
-            visitBadge = '<span class="badge badge-opened">👁️ 메일만 열람</span>';
-          }
-          lastAction = formatRelativeTime(stats.lastSeen);
-          if (stats.visited) {
-            behavior = `완독 ${stats.maxScroll}% / 체류 ${stats.maxStaySec}초`;
-          } else if (stats.opened) {
-            behavior = `메일 열람 (웹 미접속)`;
-          }
-        }
-
-        let statusBadge = '<span class="badge badge-ready">'+String(t.status || 'UNKNOWN').replace(/[^A-Z_]/g,'')+'</span>';
-        if (t.status === "SENT") statusBadge = '<span class="badge badge-sent">SENT</span>';
-        else if (t.status === "BOUNCED") statusBadge = '<span class="badge badge-bounced">BOUNCED</span>';
-
-        if (mainTab === "SENT") {
-          return `
-            <tr>
-              <td><strong>#${t.no}</strong></td>
-              <td style="color: #cbd5e1; font-weight: 600;">${t.sent_at || '-'}</td>
-              <td>${visitBadge}</td>
-              <td><strong>${t.company}</strong> ${jobBadge}</td>
-              <td>${t.rep}</td>
-              <td>${t.category}</td>
-              <td>${t.region}</td>
-              <td>${lastAction}</td>
-              <td>${behavior}</td>
-              <td><span class="token-chip">${t.token}</span></td>
-            </tr>
-          `;
-        } else if (mainTab === "READY") {
-          const prioTag = isJob ? '<span style="color:#f87171; font-weight:800;">🚨 구인공고 우선</span>' : '<span style="color:#94a3b8;">일반 대본 제안</span>';
-          return `
-            <tr>
-              <td><strong>#${t.no}</strong></td>
-              <td>${statusBadge}</td>
-              <td>${prioTag}</td>
-              <td><strong>${t.company}</strong> ${jobBadge}</td>
-              <td>${t.rep}</td>
-              <td>${t.category}</td>
-              <td>${t.region}</td>
-              <td style="max-width: 260px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${t.point || t.views || ''}">${t.point || t.views || '-'}</td>
-              <td style="color:#38bdf8;">${t.email}</td>
-              <td><span class="token-chip">${t.token}</span></td>
-            </tr>
-          `;
-        } else {
-          return `
-            <tr>
-              <td><strong>#${t.no}</strong></td>
-              <td>${statusBadge}</td>
-              <td>${t.sent_at || '-'}</td>
-              <td>${visitBadge}</td>
-              <td><strong>${t.company}</strong> ${jobBadge}</td>
-              <td>${t.rep}</td>
-              <td>${t.category}</td>
-              <td>${t.region}</td>
-              <td>${lastAction}</td>
-              <td><span class="token-chip">${t.token}</span></td>
-            </tr>
-          `;
-        }
-      }).join(""));
-
-      // 7. 모바일 전용 카드 렌더링 (좌우 스크롤 없는 스마트폰 맞춤형 UI)
-      const mobileContainer = document.getElementById("mobileCardsContainer");
-      if (mobileContainer) {
-        if (filtered.length === 0) {
-          Momentum.setHTML(mobileContainer, `<div style="text-align:center; padding:36px 0; color:#64748b;">조건에 일치하는 타깃이 없습니다.</div>`);
-        } else {
-          Momentum.setHTML(mobileContainer, filtered.map(t => {
-            const stats = targetStats[t.token];
-            const isJob = isJobPostingTarget(t);
-            const jobBadge = isJob ? '<span class="badge-job">🚨채용공고</span>' : '';
-            let visitBadge = '<span class="badge badge-not">⏳ 미열람</span>';
-            let cardStatusClass = '';
-            let lastActionText = '열람/활동 없음';
-            let behaviorText = '-';
-
-            if (stats) {
-              if (stats.hot) {
-                visitBadge = '<span class="badge badge-hot">🔥 카톡상담클릭</span>';
-                cardStatusClass = 'card-hot';
-              } else if (stats.visited) {
-                visitBadge = '<span class="badge badge-visited">🌐 사이트접속</span>';
-                cardStatusClass = 'card-visited';
-              } else if (stats.opened) {
-                visitBadge = '<span class="badge badge-opened">👁️ 메일만 열람</span>';
-                cardStatusClass = 'card-opened';
-              }
-              lastActionText = formatRelativeTime(stats.lastSeen);
-              if (stats.visited) {
-                behaviorText = `완독 ${stats.maxScroll}% · 체류 ${stats.maxStaySec}초`;
-              } else if (stats.opened) {
-                behaviorText = `메일 열람 (웹 미접속)`;
-              }
-            } else if (t.status === "READY") {
-              cardStatusClass = 'card-ready';
-            }
-
-            if (mainTab === "SENT") {
-              return `
-                <div class="target-card ${cardStatusClass}">
-                  <div class="card-top-row">
-                    <div class="card-title-group">
-                      <span class="card-num">#${t.no}</span>
-                      <strong class="card-company-name">${t.company}</strong>
-                      ${jobBadge}
-                    </div>
-                    <div>${visitBadge}</div>
-                  </div>
-
-                  <div class="card-meta-line">
-                    <span>${t.rep}</span>
-                    <span class="dot">•</span>
-                    <span>${t.category}</span>
-                    <span class="dot">•</span>
-                    <span>${t.region}</span>
-                  </div>
-
-                  <div class="card-highlight-box">
-                    <div class="card-highlight-row">
-                      <span class="card-hl-label">✉️ 발송일시</span>
-                      <span class="card-hl-val" style="color: #60a5fa;">${t.sent_at || '-'}</span>
-                    </div>
-                    <div class="card-highlight-row">
-                      <span class="card-hl-label">👀 최근활동</span>
-                      <span class="card-hl-val">${lastActionText}</span>
-                    </div>
-                    <div class="card-highlight-row">
-                      <span class="card-hl-label">⏱ 체류/완독</span>
-                      <span class="card-hl-val">${behaviorText}</span>
-                    </div>
-                  </div>
-
-                  <div class="card-bottom-row">
-                    <span class="token-chip">ref: ${t.token}</span>
-                    <a href="mailto:${t.email}" class="card-email-link">${t.email}</a>
-                  </div>
-                </div>
-              `;
-            } else if (mainTab === "READY") {
-              const prioBadge = isJob
-                ? '<span style="background:rgba(239,68,68,0.2); color:#f87171; font-weight:800; padding:2px 8px; border-radius:4px; font-size:11px;">🚨 구인공고 우선 타깃</span>'
-                : '<span style="background:rgba(255,255,255,0.06); color:#94a3b8; padding:2px 8px; border-radius:4px; font-size:11px;">일반 대본 제안</span>';
-
-              return `
-                <div class="target-card ${cardStatusClass}">
-                  <div class="card-top-row">
-                    <div class="card-title-group">
-                      <span class="card-num">#${t.no}</span>
-                      <strong class="card-company-name">${t.company}</strong>
-                      ${jobBadge}
-                    </div>
-                    <div><span class="badge badge-ready">READY 대기</span></div>
-                  </div>
-
-                  <div style="margin-bottom: 8px;">${prioBadge}</div>
-
-                  <div class="card-meta-line">
-                    <span>${t.rep}</span>
-                    <span class="dot">•</span>
-                    <span>${t.category}</span>
-                    <span class="dot">•</span>
-                    <span>${t.region}</span>
-                  </div>
-
-                  <div class="card-sales-box">
-                    💡 <strong>영업 포인트 / 공고 분석:</strong><br>
-                    ${t.point || t.views || '-'}
-                  </div>
-
-                  <div class="card-bottom-row">
-                    <span class="token-chip">ref: ${t.token}</span>
-                    <a href="mailto:${t.email}" class="card-email-link">${t.email}</a>
-                  </div>
-                </div>
-              `;
-            } else {
-              let statusBadge = '<span class="badge badge-ready">'+String(t.status || 'UNKNOWN').replace(/[^A-Z_]/g,'')+'</span>';
-              if (t.status === "SENT") statusBadge = '<span class="badge badge-sent">SENT</span>';
-              else if (t.status === "BOUNCED") statusBadge = '<span class="badge badge-bounced">BOUNCED</span>';
-
-              return `
-                <div class="target-card ${cardStatusClass}">
-                  <div class="card-top-row">
-                    <div class="card-title-group">
-                      <span class="card-num">#${t.no}</span>
-                      <strong class="card-company-name">${t.company}</strong>
-                    </div>
-                    <div>${statusBadge}</div>
-                  </div>
-
-                  <div class="card-meta-line">
-                    <span>${t.rep}</span>
-                    <span class="dot">•</span>
-                    <span>${t.category}</span>
-                    <span class="dot">•</span>
-                    <span>${t.region}</span>
-                  </div>
-
-                  <div class="card-highlight-box">
-                    <div class="card-highlight-row">
-                      <span class="card-hl-label">발송일시</span>
-                      <span class="card-hl-val">${t.sent_at || '-'}</span>
-                    </div>
-                    <div class="card-highlight-row">
-                      <span class="card-hl-label">방문여부</span>
-                      <span class="card-hl-val">${visitBadge}</span>
-                    </div>
-                  </div>
-
-                  <div class="card-bottom-row">
-                    <span class="token-chip">ref: ${t.token}</span>
-                    <a href="mailto:${t.email}" class="card-email-link">${t.email}</a>
-                  </div>
-                </div>
-              `;
-            }
-          }).join(""));
-        }
-      }
-    }
-
     function formatRelativeTime(ts) {
       if (!ts) return '-';
       const diff = Math.floor((Date.now() - ts) / 1000);
@@ -3157,529 +2140,8 @@
 
   </script>
 
-  <!-- 시스템 알림 센터 모달 (실시간 고객 반응 우선 대형 관제탑) -->
-  <div id="notifModal" onclick="if(event.target.id==='notifModal') closeNotifModal()" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(3,7,18,0.82); backdrop-filter:blur(10px); z-index:99999; justify-content:center; align-items:center; padding:20px;">
-    <div id="notifModalContent" style="background:#0b1120; border:1px solid #1e293b; border-radius:20px; width:95vw; max-width:1200px; height:90vh; max-height:900px; display:flex; flex-direction:column; box-shadow:0 30px 60px -12px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.08); overflow:hidden;">
-      <!-- Header -->
-      <div class="notif-modal-header" style="padding:20px 28px; border-bottom:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center; background:#080d1a;">
-        <div style="display:flex; align-items:center; gap:14px;">
-          <div style="width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, #ef4444, #f43f5e); display:flex; align-items:center; justify-content:center; box-shadow:0 0 16px rgba(239,68,68,0.45); flex-shrink:0;">
-            <span style="font-size:20px;">🔔</span>
-          </div>
-          <div>
-            <div style="display:flex; align-items:center; gap:10px;">
-              <h2 style="font-size:18px; font-weight:800; color:#fff; letter-spacing:-0.4px; margin:0;">실시간 통합 알림 관제 센터</h2>
-              <span id="notifModalCount" style="font-size:12px; background:#ef4444; color:white; padding:3px 10px; border-radius:12px; font-weight:800;">0건</span>
-            </div>
-            <div class="header-sub" style="font-size:12px; color:#64748b; margin-top:3px;">고객 실시간 반응 (결제 시도 · 카톡 상담 · 제안 열람 · 90% 완독) 우선 관제</div>
-          </div>
-        </div>
-        <div style="display:flex; align-items:center; gap:8px;">
-          <button onclick="refreshNotifModal()" style="background:#131d33; border:1px solid #243452; color:#cbd5e1; font-size:13px; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; display:flex; align-items:center; gap:6px; transition:all 0.15s;" onmouseover="this.style.borderColor='#3b82f6';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#cbd5e1';">
-            <span>🔄</span> 새로고침
-          </button>
-          <button onclick="markAllNotifsRead()" style="background:transparent; border:1px solid #243452; color:#94a3b8; font-size:13px; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.15s;" onmouseover="this.style.borderColor='#475569';this.style.color='#fff';" onmouseout="this.style.borderColor='#243452';this.style.color='#94a3b8';">✓ 모두 읽음</button>
-          <button class="notif-modal-close-btn" onclick="closeNotifModal()" style="background:transparent; border:none; color:#94a3b8; font-size:28px; cursor:pointer; padding:0 10px; line-height:1; border-radius:8px; transition:all 0.15s;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.08)';" onmouseout="this.style.color='#94a3b8';this.style.background='transparent';" aria-label="닫기">&times;</button>
-        </div>
-      </div>
-      <!-- Filter Tabs (도톰하고 묵직한 프리미엄 세그먼트 버튼) -->
-      <div class="notif-filter-bar">
-        <button class="notif-filter-tab active" data-tab="live" onclick="filterNotifs('live', this)">
-          <span>🔥 실시간 고객 반응</span>
-          <span id="tabCount_live" class="notif-tab-badge">0</span>
-        </button>
-        <button class="notif-filter-tab" data-tab="pay" onclick="filterNotifs('pay', this)">
-          <span>💳 결제 & 카톡 상담</span>
-          <span id="tabCount_pay" class="notif-tab-badge">0</span>
-        </button>
-        <button class="notif-filter-tab" data-tab="open" onclick="filterNotifs('open', this)">
-          <span>👀 제안 메일 열람</span>
-          <span id="tabCount_open" class="notif-tab-badge">0</span>
-        </button>
-        <button class="notif-filter-tab" data-tab="browse" onclick="filterNotifs('browse', this)">
-          <span>🌐 사이트 완독/계산기</span>
-          <span id="tabCount_browse" class="notif-tab-badge">0</span>
-        </button>
-        <button class="notif-filter-tab" data-tab="bot" onclick="filterNotifs('bot', this)">
-          <span>🤖 발송 & 시스템 로그</span>
-          <span id="tabCount_bot" class="notif-tab-badge">0</span>
-        </button>
-        <button class="notif-filter-tab" data-tab="ALL" onclick="filterNotifs('ALL', this)">
-          <span>전체</span>
-          <span id="tabCount_ALL" class="notif-tab-badge">0</span>
-        </button>
-      </div>
-      <!-- List Area -->
-      <div id="notifListContainer" style="padding:22px 28px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:12px; background:#070b16;">
-        <div style="text-align:center; color:#64748b; padding:80px 0; font-size:15px;">실시간 알림 로그를 불러오는 중입니다...</div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    let staticNotifications = [];
-    let notificationsList = [];
-    let currentNotifFilter = 'live'; // 기본값: 무조건 실시간 고객 반응 우선!
-    let readNotifIds = [];
-    try { const stored=JSON.parse(localStorage.getItem('momentum_read_notifs')||'[]'); if(Array.isArray(stored)) readNotifIds=stored; } catch (_) {}
-
-    function getRelativeTimeString(ms) {
-      if (!ms) return '';
-      const diffSec = Math.floor((Date.now() - ms) / 1000);
-      if (diffSec < 60) return '방금 전';
-      const diffMin = Math.floor(diffSec / 60);
-      if (diffMin < 60) return `${diffMin}분 전`;
-      const diffHour = Math.floor(diffMin / 60);
-      if (diffHour < 24) return `${diffHour}시간 전`;
-      const diffDay = Math.floor(diffHour / 24);
-      return `${diffDay}일 전`;
-    }
-
-    function formatNotifTime(timeVal) {
-      if (!timeVal) return '';
-      if (typeof timeVal === 'string' && timeVal.includes('-') && timeVal.includes(':')) {
-        return timeVal;
-      }
-      try {
-        const d = new Date(timeVal);
-        if (isNaN(d.getTime())) return String(timeVal);
-        const y = d.getFullYear();
-        const m = String(d.getMonth() + 1).padStart(2, '0');
-        const day = String(d.getDate()).padStart(2, '0');
-        const h = String(d.getHours()).padStart(2, '0');
-        const min = String(d.getMinutes()).padStart(2, '0');
-        const sec = String(d.getSeconds()).padStart(2, '0');
-        return `${y}-${m}-${day} ${h}:${min}:${sec}`;
-      } catch (e) {
-        return String(timeVal);
-      }
-    }
-
-    function parseToEpoch(timeStr) {
-      if (!timeStr) return 0;
-      if (typeof timeStr === 'number') return timeStr;
-      try {
-        const d = new Date(String(timeStr).replace(/-/g, '/'));
-        const t = d.getTime();
-        return isNaN(t) ? 0 : t;
-      } catch (e) {
-        return 0;
-      }
-    }
-
-    async function loadNotifications() {
-      try {
-        const res = await fetch('notifications.json?t=' + Date.now());
-        if (res.ok) {
-          staticNotifications = await res.json();
-        }
-      } catch (e) {
-        console.error('Failed to load notifications.json', e);
-      }
-      buildCombinedNotifications();
-    }
-
-    function buildCombinedNotifications() {
-      const combined = [];
-      const seenIds = new Set();
-
-      // 1. liveEvents 텔레메트리로부터 실시간 고객 반응 엔트리 변환
-      if (typeof liveEvents !== 'undefined' && Array.isArray(liveEvents)) {
-        liveEvents.forEach(ev => {
-          if (!ev || !ev.event) return;
-          const evTimeMs = ev._received || (ev.time ? (ev.time > 10000000000 ? ev.time : ev.time * 1000) : (ev.timestamp || Date.now()));
-          const timeFormatted = formatNotifTime(evTimeMs);
-          const relTime = getRelativeTimeString(evTimeMs);
-          const tInfo = (typeof targetsMap !== 'undefined' && ev.ref && targetsMap[ev.ref]) ? targetsMap[ev.ref] : null;
-          const targetName = tInfo ? tInfo.company : (ev.company || ev.ref || '신규 방문자');
-          const repInfo = tInfo ? `${tInfo.rep || ''} (${tInfo.email || ''})` : '';
-
-          let notifObj = null;
-
-          // 결제 주문서 접수 (최우선 순위!)
-          if (ev.event === 'pay_submit_attempt') {
-            const notifId = `live_paysubmit_${ev._id || evTimeMs}`;
-            notifObj = {
-              id: notifId,
-              category: 'pay',
-              isLive: true,
-              isHot: true,
-              title: `💳 [결제 주문서 접수] ${targetName}`,
-              message: `구매자: <strong style="color:#fff;">${ev.buyerName || '-'}</strong> (${ev.buyerPhone || '-'}) ➔ 플랜: <strong style="color:#38bdf8;">${ev.plan || '-'}</strong> (${Number(ev.amount || 0).toLocaleString()}원 결제창 이동)`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // 결제창 모달 오픈
-          else if (ev.event === 'pay_modal_open') {
-            const notifId = `live_paymodal_${ev._id || evTimeMs}`;
-            notifObj = {
-              id: notifId,
-              category: 'pay',
-              isLive: true,
-              isHot: true,
-              title: `💳 [결제창 진입] ${targetName}`,
-              message: `선택 플랜: <strong style="color:#38bdf8;">${ev.plan || '-'}</strong> (${Number(ev.amount || 0).toLocaleString()}원) 결제 모달을 오픈했습니다.`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // 카카오톡 1:1 상담 클릭 (HOT 전환!)
-          else if (ev.event === 'kakao_click') {
-            const notifId = `live_kakao_${ev._id || evTimeMs}`;
-            notifObj = {
-              id: notifId,
-              category: 'hot',
-              isLive: true,
-              isHot: true,
-              title: `🔥 [카톡 상담 전환] ${targetName}`,
-              message: `${repInfo ? repInfo + ' | ' : ''}고객이 실시간 1:1 카카오톡 상담 버튼을 클릭했습니다! (즉시 응대 대기)`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // 제안 메일 열람
-          else if (ev.event === 'email_open' || ev.event === 'open') {
-            const notifId = `live_open_${ev._id || evTimeMs}`;
-            notifObj = {
-              id: notifId,
-              category: 'open',
-              isLive: true,
-              isHot: true,
-              title: `👀 [제안 메일 열람] ${targetName}`,
-              message: `${repInfo ? repInfo + ' | ' : ''}발송된 맞춤형 B2B 영상 솔루션 제안 메일을 열람했습니다.`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // 90% 완독 (핵심 리드)
-          else if (ev.event === 'scroll_90') {
-            const notifId = `live_scroll90_${ev._id || evTimeMs}`;
-            const elapsed = (ev.meta && ev.meta.elapsed) || ev.elapsed || '';
-            notifObj = {
-              id: notifId,
-              category: 'read',
-              isLive: true,
-              isHot: true,
-              title: `📖 [랜딩 90% 완독] ${targetName}`,
-              message: `랜딩 페이지 하단(제휴 혜택 및 FAQ 구간)까지 90% 이상 정밀 탐색 ${elapsed ? '(' + elapsed + '초 체류)' : ''}`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // ROI 계산기 시뮬레이션
-          else if (ev.event === 'roi_calc_change') {
-            const notifId = `live_calc_${ev._id || evTimeMs}`;
-            const sal = (ev.meta && ev.meta.salary) || ev.salary || '-';
-            const frq = (ev.meta && ev.meta.frequency) || ev.frequency || '-';
-            const sav = (ev.meta && ev.meta.saved) || ev.saved || '-';
-            notifObj = {
-              id: notifId,
-              category: 'calc',
-              isLive: true,
-              isHot: false,
-              title: `💰 [ROI 계산기 시뮬레이션] ${targetName}`,
-              message: `월 급여 ${sal}만 / 주 ${frq}회 설정 ➔ 연간 ${Number(sav).toLocaleString()}만 원 절감액 시뮬레이션 실행`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // 랜딩 페이지 방문
-          else if (ev.event === 'visit') {
-            const notifId = `live_visit_${ev._id || evTimeMs}`;
-            const chName = ev.channel_name || ev.channel || (ev.ref_url && ev.ref_url.includes('naver') ? '네이버 검색' : 'Direct');
-            notifObj = {
-              id: notifId,
-              category: 'visit',
-              isLive: true,
-              isHot: false,
-              title: `🌐 [웹사이트 랜딩] ${targetName}`,
-              message: `유입 채널: ${chName} | 기기: ${ev.device || 'Desktop'} · ${ev.screen || ''}`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-          // 장기 몰입 체류 (60초 이상)
-          else if (ev.event === 'duration_60s' || ev.event === 'duration_90s') {
-            const notifId = `live_stay_${ev._id || evTimeMs}`;
-            notifObj = {
-              id: notifId,
-              category: 'stay',
-              isLive: true,
-              isHot: true,
-              title: `⏱ [고몰입 장기 체류] ${targetName}`,
-              message: `이탈 없이 페이지에 60초 이상 머무르며 제휴 제안서를 집중 검토 중입니다.`,
-              timestamp: timeFormatted,
-              relTime: relTime,
-              rawTime: evTimeMs,
-              read: false
-            };
-          }
-
-          if (notifObj && !seenIds.has(notifObj.id)) {
-            seenIds.add(notifObj.id);
-            combined.push(notifObj);
-          }
-        });
-      }
-
-      // 2. static notifications.json 병합 (봇 자동 발송/시스템 로그)
-      if (Array.isArray(staticNotifications)) {
-        staticNotifications.forEach(sn => {
-          if (!sn || !sn.id) return;
-          if (!seenIds.has(sn.id)) {
-            seenIds.add(sn.id);
-            const epochMs = parseToEpoch(sn.timestamp);
-            combined.push({
-              ...sn,
-              rawTime: epochMs,
-              relTime: getRelativeTimeString(epochMs),
-              isLive: false,
-              isHot: false
-            });
-          }
-        });
-      }
-
-      // 3. 최신 시간순 내림차순 정렬
-      combined.sort((a, b) => (b.rawTime || 0) - (a.rawTime || 0));
-
-      notificationsList = combined;
-      renderNotifications();
-    }
-
-    function renderNotifications() {
-      const container = document.getElementById('notifListContainer');
-      const badge = document.getElementById('notifBadge');
-      const modalCount = document.getElementById('notifModalCount');
-      if (!container) return;
-
-      // 탭별 카운트 계산
-      const liveItems = notificationsList.filter(n => ['pay', 'hot', 'open', 'read', 'calc', 'visit', 'stay'].includes(n.category));
-      const payItems = notificationsList.filter(n => ['pay', 'hot'].includes(n.category));
-      const openItems = notificationsList.filter(n => n.category === 'open');
-      const browseItems = notificationsList.filter(n => ['visit', 'read', 'calc', 'stay'].includes(n.category));
-      const botItems = notificationsList.filter(n => ['send', 'reply', 'prospect', 'system'].includes(n.category));
-
-      // 탭 뱃지 업데이트
-      const updateEl = (id, count) => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = count;
-      };
-      updateEl('tabCount_live', liveItems.length);
-      updateEl('tabCount_pay', payItems.length);
-      updateEl('tabCount_open', openItems.length);
-      updateEl('tabCount_browse', browseItems.length);
-      updateEl('tabCount_bot', botItems.length);
-      updateEl('tabCount_ALL', notificationsList.length);
-
-      // 미읽음 알림 수 (고객 반응 미읽음 우선 계산)
-      const unreadHot = liveItems.filter(n => !readNotifIds.includes(n.id) && !n.read).length;
-      const totalUnread = notificationsList.filter(n => !readNotifIds.includes(n.id) && !n.read).length;
-
-      if (badge) {
-        if (unreadHot > 0) {
-          badge.textContent = unreadHot > 99 ? '99+' : unreadHot;
-          badge.style.display = 'inline-flex';
-          badge.style.background = '#ef4444';
-        } else if (totalUnread > 0) {
-          badge.textContent = totalUnread > 99 ? '99+' : totalUnread;
-          badge.style.display = 'inline-flex';
-          badge.style.background = '#64748b';
-        } else {
-          badge.style.display = 'none';
-        }
-      }
-
-      if (modalCount) {
-        modalCount.textContent = `${liveItems.length}건`;
-      }
-
-      // 현재 선택된 필터에 따라 필터링
-      let filtered = [];
-      if (currentNotifFilter === 'live') {
-        filtered = liveItems;
-      } else if (currentNotifFilter === 'pay') {
-        filtered = payItems;
-      } else if (currentNotifFilter === 'open') {
-        filtered = openItems;
-      } else if (currentNotifFilter === 'browse') {
-        filtered = browseItems;
-      } else if (currentNotifFilter === 'bot') {
-        filtered = botItems;
-      } else {
-        filtered = notificationsList;
-      }
-
-      if (filtered.length === 0) {
-        Momentum.setHTML(container, `
-          <div style="text-align:center; color:#64748b; padding:60px 0; font-size:14px; display:flex; flex-direction:column; align-items:center; gap:8px;">
-            <span style="font-size:28px;">📭</span>
-            <span>선택한 카테고리에 등록된 알림 로그가 없습니다.</span>
-          </div>
-        `);
-        return;
-      }
-
-      Momentum.setHTML(container, filtered.map(n => {
-        const isRead = readNotifIds.includes(n.id) || n.read;
-        let badgeColor = '#3b82f6';
-        let badgeBg = 'rgba(59, 130, 246, 0.15)';
-        let badgeText = '발송';
-
-        if (n.category === 'pay') {
-          badgeColor = '#f43f5e';
-          badgeBg = 'rgba(244, 63, 94, 0.22)';
-          badgeText = '💳 결제전환';
-        } else if (n.category === 'hot') {
-          badgeColor = '#ef4444';
-          badgeBg = 'rgba(239, 68, 68, 0.22)';
-          badgeText = '🔥 카톡상담';
-        } else if (n.category === 'open') {
-          badgeColor = '#a855f7';
-          badgeBg = 'rgba(168, 85, 247, 0.22)';
-          badgeText = '👀 메일열람';
-        } else if (n.category === 'read') {
-          badgeColor = '#10b981';
-          badgeBg = 'rgba(16, 185, 129, 0.22)';
-          badgeText = '📖 90%완독';
-        } else if (n.category === 'calc') {
-          badgeColor = '#eab308';
-          badgeBg = 'rgba(234, 179, 8, 0.22)';
-          badgeText = '💰 ROI계산';
-        } else if (n.category === 'visit') {
-          badgeColor = '#06b6d4';
-          badgeBg = 'rgba(6, 182, 212, 0.22)';
-          badgeText = '🌐 웹방문';
-        } else if (n.category === 'stay') {
-          badgeColor = '#38bdf8';
-          badgeBg = 'rgba(56, 189, 248, 0.22)';
-          badgeText = '⏱ 장기체류';
-        } else if (n.category === 'reply') {
-          badgeColor = '#10b981';
-          badgeBg = 'rgba(16, 185, 129, 0.15)';
-          badgeText = '📥 수신/문의';
-        } else if (n.category === 'prospect') {
-          badgeColor = '#8b5cf6';
-          badgeBg = 'rgba(139, 92, 246, 0.15)';
-          badgeText = '🔄 타깃수급';
-        } else if (n.category === 'send') {
-          badgeColor = '#475569';
-          badgeBg = 'rgba(71, 85, 105, 0.25)';
-          badgeText = '📤 발송완료';
-        } else if (n.category === 'system') {
-          badgeColor = '#64748b';
-          badgeBg = 'rgba(100, 116, 139, 0.2)';
-          badgeText = '⚙️ 시스템';
-        }
-
-        const cardBg = isRead ? '#090f1d' : '#0e182b';
-        const cardBorder = isRead ? 'rgba(255,255,255,0.06)' : badgeColor;
-
-        return `
-          <div data-notif-id="${n.id}" style="background:${cardBg}; border:1.5px solid ${cardBorder}; border-left:5px solid ${badgeColor}; border-radius:14px; padding:18px 24px; display:flex; flex-direction:column; gap:10px; opacity:${isRead ? '0.7' : '1'}; cursor:pointer; transition:all 0.2s cubic-bezier(0.16,1,0.3,1); box-shadow:${isRead ? 'none' : '0 4px 16px rgba(0,0,0,0.35)'};" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'" title="클릭 시 읽음/안읽음 토글">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <span style="background:${badgeBg}; color:${badgeColor}; font-size:12px; font-weight:800; padding:4px 10px; border-radius:6px; letter-spacing:-0.2px;">${badgeText}</span>
-                <strong style="font-size:15px; color:#fff; letter-spacing:-0.3px;">${n.title}</strong>
-                ${!isRead ? '<span style="width:8px; height:8px; border-radius:50%; background:#ef4444; display:inline-block; box-shadow:0 0 8px #ef4444;"></span>' : ''}
-              </div>
-              <div style="display:flex; align-items:center; gap:10px;">
-                ${n.relTime ? `<span style="font-size:12px; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.25); padding:3px 9px; border-radius:6px;">${n.relTime}</span>` : ''}
-                <span style="font-size:12px; color:#64748b; font-weight:600;">${n.timestamp || ''}</span>
-              </div>
-            </div>
-            <div style="font-size:14px; color:#cbd5e1; line-height:1.65; word-break:break-all;">${n.message}</div>
-          </div>
-        `;
-      }).join(''));
-    }
-
-    function toggleSingleNotifRead(id) {
-      if (readNotifIds.includes(id)) {
-        readNotifIds = readNotifIds.filter(x => x !== id);
-      } else {
-        readNotifIds.push(id);
-      }
-      localStorage.setItem('momentum_read_notifs', JSON.stringify(readNotifIds));
-      renderNotifications();
-    }
-
-    function toggleNotifModal() {
-      const modal = document.getElementById('notifModal');
-      if (modal) {
-        const isHidden = modal.style.display === 'none' || !modal.style.display;
-        modal.style.display = isHidden ? 'flex' : 'none';
-        if (isHidden) {
-          // 메모리에 있는 실시간 텔레메트리 즉시 렌더링 후 최신 데이터 동기화
-          buildCombinedNotifications();
-          loadNotifications();
-        }
-      }
-    }
-
-    function closeNotifModal() {
-      const modal = document.getElementById('notifModal');
-      if (modal) modal.style.display = 'none';
-    }
-
-    async function refreshNotifModal() {
-      if (typeof fetchLiveTelemetry === 'function') {
-        await fetchLiveTelemetry(true);
-      }
-      await loadNotifications();
-    }
-
-    function filterNotifs(cat, btn) {
-      currentNotifFilter = cat;
-      document.querySelectorAll('.notif-filter-tab').forEach(el => {
-        el.classList.remove('active');
-        el.removeAttribute('style');
-      });
-      if (btn) {
-        btn.classList.add('active');
-      } else {
-        const targetBtn = document.querySelector(`.notif-filter-tab[data-tab="${cat}"]`);
-        if (targetBtn) targetBtn.classList.add('active');
-      }
-      renderNotifications();
-    }
-
-    function markAllNotifsRead() {
-      notificationsList.forEach(n => {
-        if (!readNotifIds.includes(n.id)) {
-          readNotifIds.push(n.id);
-        }
-      });
-      localStorage.setItem('momentum_read_notifs', JSON.stringify(readNotifIds));
-      renderNotifications();
-    }
-
-    // ESC 키 모달 닫기 지원
-    window.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeNotifModal();
-    });
-
-    // 초기 알림 로드 및 15초 주기 동기화
-    loadNotifications();
-    setInterval(loadNotifications, 15000);
-
-    // 페이지 진입 시 인증 상태 확인
-    checkAuth();
-  </script>
+  <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
+  <script src="assets/admin-workspace.js"></script>
+  <script>checkAuth();</script>
 </body>
 </html>
