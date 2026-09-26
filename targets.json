@@ -2022,8 +2022,8 @@
     "email": "info@philmedis.org",
     "region": "서초",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 11:24:58",
     "views": "구독자 348명 / 최근 5편 [70, 114, 216, 43, 132] / 평균 115회",
     "point": "서초 의원 채널의 최근 5편 실측 평균 115회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "a704a47c",
@@ -2089,21 +2089,21 @@
     "schema_version": 2,
     "total_candidates": 2468,
     "discovered_count": 0,
-    "review_count": 985,
-    "rejected_count": 1424,
+    "review_count": 982,
+    "rejected_count": 1427,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 5,
+    "ready_count": 4,
     "status_counts": {
-      "REJECTED": 1424,
+      "REJECTED": 1427,
       "REGISTERED": 51,
-      "REVIEW": 985,
+      "REVIEW": 982,
       "DUPLICATE": 6,
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T01:55:06.865123+00:00"
+    "updated_at": "2026-09-26T02:26:49.245343+00:00"
   }
 }
