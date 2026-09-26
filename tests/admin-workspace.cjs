@@ -6,6 +6,22 @@ await p.evaluate(()=>setMainTab('SENT'));const sent=await p.locator('#tableBody 
 await p.setViewportSize({width:390,height:844});await p.screenshot({path:path.join(artifactDir,'mobile.png')});assert(await p.locator('#mobileCardsContainer').isVisible());assert(!(await p.locator('#workspaceTable').isVisible()));assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.locator('#mobileCardsContainer [data-detail-token]').first().click();assert(await p.locator('#targetDetail').isVisible());await p.keyboard.press('Escape');await p.evaluate(()=>setMainTab('READY'));assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),await p.evaluate(()=>Object.values(targetsMap).filter(t=>t&&t.status==='READY').length));
 for(const mode of ['outbound','inbound']){await p.evaluate(()=>{localStorage.setItem('sm_lead_ref','existing_customer');localStorage.setItem('sm_lead_comp','이전 고객');});const popupPromise=c.waitForEvent('page');await p.locator(`.page-shortcuts a[href*="preview_mode=${mode}"]`).click();const popup=await popupPromise;popup.on('pageerror',e=>errors.push(e.message));await popup.waitForLoadState();const actual=await popup.evaluate(()=>({channel:window._smChannelType,ref:localStorage.getItem('sm_lead_ref'),admin:localStorage.getItem('sm_admin_device')}));console.log('preview',mode,actual);assert.equal(actual.channel==='OUTBOUND',mode==='outbound');assert.equal(actual.ref,'existing_customer');await popup.close();}
 
+// Channel links work in desktop/mobile lists; untrusted URLs never become links.
+await p.evaluate(()=>{
+  window.linkFixtureBackup=targetsMap;
+  targetsMap={good:{token:'good',company:'테스트 채널',status:'READY',no:'1',channel_url:'https://www.youtube.com/channel/UCaaaaaaaaaaaaaaaaaaaaaa'},bad:{token:'bad',company:'잘못된 URL',status:'READY',no:'2',channel_url:'https://youtube.com.evil.test/channel/UCaaaaaaaaaaaaaaaaaaaaaa'}};
+  setMainTab('READY');
+});
+assert.equal(await p.locator('#tableBody .youtube-channel-link').count(),1);
+assert.equal(await p.locator('#mobileCardsContainer .youtube-channel-link').count(),1);
+const yt=p.locator('#mobileCardsContainer .youtube-channel-link');
+assert.equal(await yt.getAttribute('target'),'_blank');
+assert.equal(await yt.getAttribute('rel'),'noopener noreferrer');
+const channelPopup=c.waitForEvent('page');await yt.click();const channelPage=await channelPopup;
+await channelPage.waitForLoadState();assert.equal(channelPage.url(),'https://www.youtube.com/channel/UCaaaaaaaaaaaaaaaaaaaaaa');await channelPage.close();
+assert.equal(await p.locator('#targetDetail').isVisible(),false);
+await p.evaluate(()=>{for(const channel_url of ['javascript:alert(1)','http://youtube.com/@name','https://youtube.com/watch?v=abc','https://evil.test/@name']){if(youtubeChannelButton({channel_url})!=='')throw Error('unsafe URL');}targetsMap=window.linkFixtureBackup;});
+
 // Schema v2 separates candidate dispositions, registration history and READY.
 await p.evaluate(()=>{window.fixtureBackup=targetsMap;targetsMap={_search_db_stats:{schema_version:2,total_candidates:100,discovered_count:10,review_count:20,rejected_count:30,error_count:5,duplicate_count:15,registered_count:20,ready_count:4}};setMainTab('SEARCH_DB');});
 assert.deepEqual(await p.locator('.prospect-card strong').allTextContents(),['100','10','20','30','5','15','20','4']);
@@ -20,5 +36,5 @@ await p.evaluate(()=>{targetsMap=window.fixtureBackup;liveEvents=[{ref:'inbound_
 await p.locator('#reactionFilter').selectOption('PSEO');assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),1);
 await p.locator('#mobileCardsContainer [data-detail-token]').click();assert((await p.locator('#detailBody').textContent()).includes('카카오톡 상담 클릭'));await p.keyboard.press('Escape');
 for(const width of [320,390,768,1024,1440]){await p.setViewportSize({width,height:900});for(const tab of ['SENT','SEARCH_DB','INBOUND']){await p.evaluate(t=>setMainTab(t),tab);assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow ${width} ${tab}`);}}
-await p.evaluate(()=>fetchLiveTelemetry());
+await p.evaluate(()=>{liveEvents=[];saveStoredEvents();return fetchLiveTelemetry();});
 assert.deepEqual(errors,[]);assert.deepEqual(writes,[]);assert.equal(await p.evaluate(()=>typeof purgeTestTelemetry),'undefined');console.log('PASS',sent,'sent rows, desktop/mobile/filters/details/new tabs/attribution/no writes');await b.close();})().catch(error=>{console.error(error);process.exit(1);});
