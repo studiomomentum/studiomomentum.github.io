@@ -2008,8 +2008,8 @@
     "email": "howpilates@naver.com",
     "region": "수원",
     "category": "fitness",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 10:54:57",
     "views": "구독자 1210명 / 최근 5편 [639, 1400, 229, 234, 416] / 평균 584회",
     "point": "수원 필라테스 채널의 최근 5편 실측 평균 584회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "910844fe",
@@ -2089,21 +2089,21 @@
     "schema_version": 2,
     "total_candidates": 2468,
     "discovered_count": 0,
-    "review_count": 992,
-    "rejected_count": 1417,
+    "review_count": 985,
+    "rejected_count": 1424,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 6,
+    "ready_count": 5,
     "status_counts": {
-      "REJECTED": 1417,
+      "REJECTED": 1424,
       "REGISTERED": 51,
-      "REVIEW": 992,
+      "REVIEW": 985,
       "DUPLICATE": 6,
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T01:35:04.556319+00:00"
+    "updated_at": "2026-09-26T01:55:06.865123+00:00"
   }
 }
