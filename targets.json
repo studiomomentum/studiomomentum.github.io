@@ -2078,8 +2078,8 @@
     "email": "partnerslawyerlee@gmail.com",
     "region": "송파",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 13:24:55",
     "views": "구독자 1810명 / 최근 5편 [116, 199, 76, 46, 247] / 평균 137회",
     "point": "송파 변호사 채널의 최근 5편 실측 평균 137회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "60557740",
@@ -2095,7 +2095,7 @@
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 1,
+    "ready_count": 0,
     "status_counts": {
       "REJECTED": 1427,
       "REGISTERED": 51,
@@ -2104,6 +2104,6 @@
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T03:55:10.898239+00:00"
+    "updated_at": "2026-09-26T04:24:57.776932+00:00"
   }
 }
