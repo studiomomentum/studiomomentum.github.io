@@ -2050,8 +2050,8 @@
     "email": "sihr@sihr.co.kr",
     "region": "강남",
     "category": "labor",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 12:24:59",
     "views": "구독자 23명 / 최근 5편 [32, 18, 589, 40, 776] / 평균 291회",
     "point": "강남 노무법인 채널의 최근 5편 실측 평균 291회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "89124aee",
@@ -2095,7 +2095,7 @@
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 3,
+    "ready_count": 2,
     "status_counts": {
       "REJECTED": 1427,
       "REGISTERED": 51,
@@ -2104,6 +2104,6 @@
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T02:55:01.068098+00:00"
+    "updated_at": "2026-09-26T03:25:01.536774+00:00"
   }
 }
