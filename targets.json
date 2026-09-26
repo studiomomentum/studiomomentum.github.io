@@ -1952,8 +1952,8 @@
     "email": "drbyun_clinic@naver.com",
     "region": "용인",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 09:34:57",
     "views": "구독자 505명 / 최근 5편 [31, 28, 16, 10, 32] / 평균 23회",
     "point": "용인 한의원 채널의 최근 5편 실측 평균 23회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "815d351a",
@@ -2095,7 +2095,7 @@
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 9,
+    "ready_count": 8,
     "status_counts": {
       "REJECTED": 1406,
       "REGISTERED": 51,
@@ -2104,6 +2104,6 @@
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T00:07:31.300123+00:00"
+    "updated_at": "2026-09-26T00:35:54.036963+00:00"
   }
 }
