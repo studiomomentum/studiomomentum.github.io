@@ -2089,21 +2089,21 @@
     "schema_version": 2,
     "total_candidates": 2468,
     "discovered_count": 0,
-    "review_count": 982,
-    "rejected_count": 1427,
+    "review_count": 992,
+    "rejected_count": 1417,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
     "ready_count": 0,
     "status_counts": {
-      "REJECTED": 1427,
+      "REJECTED": 1417,
       "REGISTERED": 51,
-      "REVIEW": 982,
+      "REVIEW": 992,
       "DUPLICATE": 6,
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T04:24:57.776932+00:00"
+    "updated_at": "2026-09-26T04:43:05.146052+00:00"
   }
 }
