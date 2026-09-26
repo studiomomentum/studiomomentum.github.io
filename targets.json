@@ -2036,8 +2036,8 @@
     "email": "lamicheps@naver.com",
     "region": "서초",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 11:54:57",
     "views": "구독자 516명 / 최근 5편 [83, 262, 715, 374, 792] / 평균 445회",
     "point": "서초 성형외과 채널의 최근 5편 실측 평균 445회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "69bac22a",
@@ -2095,7 +2095,7 @@
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 4,
+    "ready_count": 3,
     "status_counts": {
       "REJECTED": 1427,
       "REGISTERED": 51,
@@ -2104,6 +2104,6 @@
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T02:26:49.245343+00:00"
+    "updated_at": "2026-09-26T02:55:01.068098+00:00"
   }
 }
