@@ -890,7 +890,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "4122ae9f",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "17ea8994": {
     "no": "48",
@@ -928,7 +936,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "c8b0183c",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 4,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "5381c569": {
     "no": "50",
@@ -947,7 +963,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "5381c569",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "c19e2226": {
     "no": "51",
@@ -1042,7 +1066,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "e61666ed",
-    "is_priority": true
+    "is_priority": true,
+    "opened": true,
+    "visited": true,
+    "open_count": 0,
+    "visit_count": 1,
+    "max_scroll": 90,
+    "max_stay_sec": 48,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오전 9:08:03"
   },
   "3f6f1ed4": {
     "no": "56",
@@ -1099,7 +1131,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "6cce5327",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "c2b9b0a0": {
     "no": "59",
@@ -1118,7 +1158,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "c2b9b0a0",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "3ffe6e00": {
     "no": "60",
@@ -1137,7 +1185,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "3ffe6e00",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "00566007": {
     "no": "61",
@@ -1156,7 +1212,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "00566007",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": true,
+    "open_count": 2,
+    "visit_count": 2,
+    "max_scroll": 90,
+    "max_stay_sec": 82,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "dd0d7228": {
     "no": "62",
@@ -1175,7 +1239,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "dd0d7228",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 4,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "60f68028": {
     "no": "63",
@@ -1194,7 +1266,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "60f68028",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "33cdeca6": {
     "no": "64",
@@ -1213,7 +1293,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "33cdeca6",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오전 9:16:18"
   },
   "f5c7ae41": {
     "no": "65",
@@ -1232,7 +1320,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "f5c7ae41",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오전 9:16:18"
   },
   "b79243ff": {
     "no": "66",
@@ -1251,7 +1347,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "b79243ff",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오전 9:16:18"
   },
   "3ab302bd": {
     "no": "67",
@@ -1270,7 +1374,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "3ab302bd",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오전 9:16:18"
   },
   "6360c6d2": {
     "no": "68",
@@ -1289,7 +1401,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "6360c6d2",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오전 9:16:18"
   },
   "560c5cc8": {
     "no": "69",
@@ -1308,7 +1428,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "560c5cc8",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": true,
+    "open_count": 3,
+    "visit_count": 1,
+    "max_scroll": 90,
+    "max_stay_sec": 25,
+    "hot": false,
+    "last_activity": "2026. 9. 21. 오후 8:10:35"
   },
   "8d1360d7": {
     "no": "70",
@@ -1327,7 +1455,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "8d1360d7",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오전 9:16:18"
   },
   "265c9f95": {
     "no": "71",
@@ -1346,7 +1482,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "265c9f95",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오후 4:11:42"
   },
   "4c9b171b": {
     "no": "72",
@@ -1365,7 +1509,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "4c9b171b",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오후 4:11:42"
   },
   "445ae66c": {
     "no": "73",
@@ -1384,7 +1536,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "445ae66c",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 3,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 22. 오후 5:49:03"
   },
   "13213182": {
     "no": "74",
@@ -1403,7 +1563,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "13213182",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 2,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:18:46"
   },
   "e0ccdc54": {
     "no": "75",
@@ -1422,7 +1590,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "e0ccdc54",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": true,
+    "open_count": 3,
+    "visit_count": 1,
+    "max_scroll": 90,
+    "max_stay_sec": 42,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:18:46"
   },
   "555b0ad6": {
     "no": "76",
@@ -1441,7 +1617,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "555b0ad6",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 1,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:18:46"
   },
   "f2487eac": {
     "no": "77",
@@ -1460,7 +1644,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "f2487eac",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 1,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:18:46"
   },
   "d87bbb8c": {
     "no": "78",
@@ -1479,7 +1671,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "d87bbb8c",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 1,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:18:46"
   },
   "74c762c9": {
     "no": "79",
@@ -1498,7 +1698,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "74c762c9",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 1,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 7:11:35"
   },
   "85b41beb": {
     "no": "80",
@@ -1517,7 +1725,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "85b41beb",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 1,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:18:46"
   },
   "500d46b3": {
     "no": "81",
@@ -1574,7 +1790,15 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "64131197",
-    "is_priority": false
+    "is_priority": false,
+    "opened": true,
+    "visited": false,
+    "open_count": 1,
+    "visit_count": 0,
+    "max_scroll": 0,
+    "max_stay_sec": 0,
+    "hot": false,
+    "last_activity": "2026. 9. 23. 오후 6:56:31"
   },
   "80c903d2": {
     "no": "87",
