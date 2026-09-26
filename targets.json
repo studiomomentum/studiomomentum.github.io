@@ -1966,8 +1966,8 @@
     "email": "lama-archi@naver.com",
     "region": "판교",
     "category": "arch",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 09:04:58",
     "views": "구독자 757명 / 최근 5편 [111, 118, 115, 371, 935] / 평균 330회",
     "point": "판교 건축사사무소 채널의 최근 5편 실측 평균 330회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "03576ad3",
@@ -2095,7 +2095,7 @@
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 10,
+    "ready_count": 9,
     "status_counts": {
       "REJECTED": 1406,
       "REGISTERED": 51,
@@ -2104,6 +2104,6 @@
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-25T15:40:13.342586+00:00"
+    "updated_at": "2026-09-26T00:07:31.300123+00:00"
   }
 }
