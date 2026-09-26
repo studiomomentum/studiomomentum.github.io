@@ -1994,8 +1994,8 @@
     "email": "landlaw7004@gmail.com",
     "region": "서초",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 10:04:57",
     "views": "구독자 1470명 / 최근 5편 [181, 249, 462, 207, 814] / 평균 383회",
     "point": "서초 변호사 채널의 최근 5편 실측 평균 383회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "f552ead5",
@@ -2089,21 +2089,21 @@
     "schema_version": 2,
     "total_candidates": 2468,
     "discovered_count": 0,
-    "review_count": 1003,
-    "rejected_count": 1406,
+    "review_count": 1001,
+    "rejected_count": 1408,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 8,
+    "ready_count": 7,
     "status_counts": {
-      "REJECTED": 1406,
+      "REJECTED": 1408,
       "REGISTERED": 51,
-      "REVIEW": 1003,
+      "REVIEW": 1001,
       "DUPLICATE": 6,
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T00:35:54.036963+00:00"
+    "updated_at": "2026-09-26T01:07:24.906040+00:00"
   }
 }
