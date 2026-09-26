@@ -26,6 +26,21 @@
       seen.add(key); if (useLegacy) seen.add(legacy); return true;
     }).sort((a,b) => b.timestamp-a.timestamp);
   }
+  function unpersistedEvents(events, persisted) {
+    const keys = ev => {
+      const values = [ev.event_id, ev._msg_id, ev.id, ev._id].filter(Boolean).map(String);
+      if (ev.timestamp > 0) values.push([ev.timestamp, ev.ref, ev.event].join('_'));
+      return values;
+    };
+    const seen = new Set(mergeEvents(persisted).flatMap(keys));
+    return mergeEvents(events).filter(ev => {
+      if (isTestEvent(ev)) return false;
+      const identities = keys(ev);
+      if (!identities.length || identities.some(key => seen.has(key))) return false;
+      identities.forEach(key => seen.add(key));
+      return true;
+    });
+  }
   function csvCell(value) {
     let text = String(value == null ? '' : value);
     if (/^[=+@\-\t\r]/.test(text)) text = "'" + text;
@@ -111,7 +126,7 @@
     }
     return result;
   }
-  window.Momentum = {isTestEvent,renderActivityCounts,activitySets,aggregateStats,eventKey, normalizeEvent, mergeEvents, csvCell, setHTML, sendTelemetry};
+  window.Momentum = {unpersistedEvents,isTestEvent,renderActivityCounts,activitySets,aggregateStats,eventKey, normalizeEvent, mergeEvents, csvCell, setHTML, sendTelemetry};
   document.addEventListener('click', event => {
     const el = event.target.closest('[data-filter],[data-target-token],[data-notif-id]');
     if (!el) return;

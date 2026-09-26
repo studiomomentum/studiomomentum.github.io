@@ -1232,7 +1232,7 @@
     }
   </style>
 <script src="assets/purify.min.js"></script>
-<script src="assets/momentum-runtime.js"></script>
+<script src="assets/momentum-runtime.js?v=20260927-archive"></script>
 <link rel="stylesheet" href="assets/admin-workspace.css">
 </head>
 <body>
@@ -1327,7 +1327,7 @@
 
       <div class="kpi-card" role="button" tabindex="0" id="kpiCard_OPENED_ALL" onclick="handleKpiCardClick('OPENED_ALL')">
         <div class="kpi-label">
-          <span>메일 열람</span>
+          <span title="추적 이미지 요청 기준 · 실제 읽음 여부는 확인할 수 없습니다">메일 열람 수신처</span>
           <span>👁️</span>
         </div>
         <div class="kpi-val" style="color: #c084fc;" id="kpiOpenedCount">0</div>
@@ -1645,6 +1645,7 @@
       telemetryBusy = true;
       const incoming = [];
       let successes = 0;
+      let archivePending = false;
       try {
         const results = await Promise.allSettled([
           fetch(`https://ntfy.sh/${TRACK_TOPIC}/json?poll=1&since=all`).then(async res => {
@@ -1670,9 +1671,24 @@
           if (result.status === 'fulfilled') { successes++; incoming.push(...result.value); }
         }
         liveEvents = Momentum.mergeEvents(liveEvents,incoming);
+        // Preserve device-only history in the shared archive before calling sync complete.
+        // A failed/uncertain POST leaves local history intact and is reconciled by the next GET.
+        if (results[1].status === 'fulfilled') {
+          const pending = Momentum.unpersistedEvents(liveEvents, results[1].value);
+          try {
+            for (let i = 0; i < pending.length; i += 100) {
+              const res = await fetch(GAS_DB_URL, {method:'POST',
+                headers:{'Content-Type':'text/plain;charset=UTF-8'},
+                body:JSON.stringify(pending.slice(i,i+100))});
+              const ack = await res.json();
+              if (!res.ok || !ack || ack.status !== 'SUCCESS') throw new Error('Archive not acknowledged');
+            }
+          } catch (_) { archivePending = true; }
+        } else { archivePending = true; }
+
         saveStoredEvents(); updateKPIs(); updatePseoBoard();  renderTable();
         document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString('ko-KR') +
-          (successes===2?' 동기화됨':successes===1?' 일부 소스 실패 · 보존 데이터 표시':' 동기화 실패 · 보존 데이터 표시');
+          (archivePending?' 기기 기록 보존 중 · 서버 저장 재확인 필요':successes===2?' 동기화됨 · 서버 보존 확인':' 일부 소스 실패 · 보존 데이터 표시');
       } finally { telemetryBusy = false; }
     }
 
@@ -1745,8 +1761,8 @@
       const openCount = openedTokens.size;
       const openRate = totalSent > 0 ? ((openCount / totalSent) * 100).toFixed(1) : 0;
       if (document.getElementById("kpiOpenedCount")) {
-        document.getElementById("kpiOpenedCount").textContent = openCount;
-        document.getElementById("kpiOpenedRate").textContent = `열람률: ${openRate}% (${openCount}/${totalSent})`;
+        document.getElementById("kpiOpenedCount").textContent = openCount + "곳";
+        document.getElementById("kpiOpenedRate").textContent = `열람 기록률: ${openRate}% (${openCount}/${totalSent}) · 수신처 중복 제외`;
       }
 
       document.getElementById("kpiVisitedCount").textContent = visitedTokens.size;
