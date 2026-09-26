@@ -42,7 +42,7 @@
     "company": "법무법인 송강",
     "rep": "오성근 대표변호사",
     "email": "tslaw2038@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCXLUqq29qwymM_v9DXCi4ow",
     "region": "용인 수지",
     "category": "legal",
     "status": "SENT",
@@ -61,7 +61,7 @@
     "company": "올치한의원",
     "rep": "김영서 대표원장",
     "email": "kimdudtj@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCi13ISyysy6R1qdGJP6ozTQ",
     "region": "수원 영통",
     "category": "medical",
     "status": "SENT",
@@ -118,7 +118,7 @@
     "company": "법률사무소 정중동",
     "rep": "김상윤 변호사",
     "email": "Lawyer_kimsy@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UC1M8uYKGRFIcUQyS1Sfg39A",
     "region": "수원 광교",
     "category": "legal",
     "status": "SENT",
@@ -137,7 +137,7 @@
     "company": "법률사무소 가온길",
     "rep": "장진우 대표변호사",
     "email": "dptskf10@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCYPhwEfx3R09yN3xN0D2KEg",
     "region": "수원 광교",
     "category": "legal",
     "status": "SENT",
@@ -194,7 +194,7 @@
     "company": "법률사무소 휘선",
     "rep": "이해선 대표변호사",
     "email": "touchxe@gmail.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCCESldLEOkxgI7do31Kwrlg",
     "region": "평택 평남로",
     "category": "legal",
     "status": "SENT",
@@ -327,7 +327,7 @@
     "company": "청담한의원",
     "rep": "김동규 대표원장",
     "email": "sojiha01@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCwOXWe-zJfXnGl7RA_pwiUQ",
     "region": "오산/동탄",
     "category": "medical",
     "status": "SENT",
@@ -365,7 +365,7 @@
     "company": "금빛공인중개사사무소",
     "rep": "손지영 대표",
     "email": "ilovesummer83@gmail.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCI5eMpuTgamk7XEkGs-f_Ag",
     "region": "화성 병점",
     "category": "realty",
     "status": "SENT",
@@ -403,7 +403,7 @@
     "company": "두청한의원",
     "rep": "김도환 대표원장",
     "email": "dohwan2k@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UC60B9zTLsOORiuD5PvPMGcQ",
     "region": "서울 강남",
     "category": "medical",
     "status": "SENT",
@@ -536,7 +536,7 @@
     "company": "법률사무소 이룸",
     "rep": "전성배 대표변호사",
     "email": "gut1905@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCGQWtPiHTX0ZDeC0viDWfOQ",
     "region": "서울 서초",
     "category": "legal",
     "status": "SENT",
@@ -574,7 +574,7 @@
     "company": "김기록치과의원",
     "rep": "김기록 대표원장",
     "email": "kimkirokdc@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCjHjnJFGvFoNHMYZMxfX2jA",
     "region": "수원 영통",
     "category": "medical",
     "status": "SENT",
@@ -650,7 +650,7 @@
     "company": "법률사무소 글",
     "rep": "하종원 대표변호사",
     "email": "geul@lawgeul.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCw1LoEhNPQid3yi_E9zfBOQ",
     "region": "서울 서초",
     "category": "legal",
     "status": "SENT",
@@ -764,7 +764,7 @@
     "company": "평택 금두꺼비 공인중개사사무소",
     "rep": "공인중개사 대표",
     "email": "kwanyangman@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCcCh75DYRbVLiSq2n_hyh7Q",
     "region": "평택 안중",
     "category": "realty",
     "status": "SENT",
@@ -890,15 +890,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "4122ae9f",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "17ea8994": {
     "no": "48",
@@ -936,15 +928,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "c8b0183c",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 4,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "5381c569": {
     "no": "50",
@@ -963,15 +947,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "5381c569",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "c19e2226": {
     "no": "51",
@@ -1054,7 +1030,7 @@
     "company": "법무법인(유)강남 이현조 변호사팀",
     "rep": "이현조 변호사",
     "email": "hjlee_team@lawgangnam.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UCtmo5pabirOV8ciKtkTO_Eg",
     "region": "서울 서초",
     "category": "legal",
     "status": "SENT",
@@ -1066,15 +1042,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "e61666ed",
-    "is_priority": true,
-    "opened": true,
-    "visited": true,
-    "open_count": 0,
-    "visit_count": 1,
-    "max_scroll": 90,
-    "max_stay_sec": 48,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오전 9:08:03"
+    "is_priority": true
   },
   "3f6f1ed4": {
     "no": "56",
@@ -1131,22 +1099,14 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "6cce5327",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "c2b9b0a0": {
     "no": "59",
     "company": "원탑공인중개사사무소",
     "rep": "이상민 대표공인중개사",
     "email": "lsmnmh25@naver.com",
-    "channel_url": "",
+    "channel_url": "https://www.youtube.com/channel/UChe8vEakXUhfhCsGfr6qmYA",
     "region": "화성 향남",
     "category": "realty",
     "status": "SENT",
@@ -1158,15 +1118,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "c2b9b0a0",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "3ffe6e00": {
     "no": "60",
@@ -1185,15 +1137,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "3ffe6e00",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "00566007": {
     "no": "61",
@@ -1212,15 +1156,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "00566007",
-    "is_priority": false,
-    "opened": true,
-    "visited": true,
-    "open_count": 2,
-    "visit_count": 2,
-    "max_scroll": 90,
-    "max_stay_sec": 82,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "dd0d7228": {
     "no": "62",
@@ -1239,15 +1175,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "dd0d7228",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 4,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "60f68028": {
     "no": "63",
@@ -1266,15 +1194,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "60f68028",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "33cdeca6": {
     "no": "64",
@@ -1293,15 +1213,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "33cdeca6",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오전 9:16:18"
+    "is_priority": false
   },
   "f5c7ae41": {
     "no": "65",
@@ -1320,15 +1232,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "f5c7ae41",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오전 9:16:18"
+    "is_priority": false
   },
   "b79243ff": {
     "no": "66",
@@ -1347,15 +1251,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "b79243ff",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오전 9:16:18"
+    "is_priority": false
   },
   "3ab302bd": {
     "no": "67",
@@ -1374,15 +1270,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "3ab302bd",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오전 9:16:18"
+    "is_priority": false
   },
   "6360c6d2": {
     "no": "68",
@@ -1401,15 +1289,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "6360c6d2",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오전 9:16:18"
+    "is_priority": false
   },
   "560c5cc8": {
     "no": "69",
@@ -1428,15 +1308,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "560c5cc8",
-    "is_priority": false,
-    "opened": true,
-    "visited": true,
-    "open_count": 3,
-    "visit_count": 1,
-    "max_scroll": 90,
-    "max_stay_sec": 25,
-    "hot": false,
-    "last_activity": "2026. 9. 21. 오후 8:10:35"
+    "is_priority": false
   },
   "8d1360d7": {
     "no": "70",
@@ -1455,15 +1327,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "8d1360d7",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오전 9:16:18"
+    "is_priority": false
   },
   "265c9f95": {
     "no": "71",
@@ -1482,15 +1346,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "265c9f95",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오후 4:11:42"
+    "is_priority": false
   },
   "4c9b171b": {
     "no": "72",
@@ -1509,15 +1365,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "4c9b171b",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오후 4:11:42"
+    "is_priority": false
   },
   "445ae66c": {
     "no": "73",
@@ -1536,15 +1384,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "445ae66c",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 3,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 22. 오후 5:49:03"
+    "is_priority": false
   },
   "13213182": {
     "no": "74",
@@ -1563,15 +1403,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "13213182",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 2,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:18:46"
+    "is_priority": false
   },
   "e0ccdc54": {
     "no": "75",
@@ -1590,15 +1422,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "e0ccdc54",
-    "is_priority": false,
-    "opened": true,
-    "visited": true,
-    "open_count": 3,
-    "visit_count": 1,
-    "max_scroll": 90,
-    "max_stay_sec": 42,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:18:46"
+    "is_priority": false
   },
   "555b0ad6": {
     "no": "76",
@@ -1617,15 +1441,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "555b0ad6",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 1,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:18:46"
+    "is_priority": false
   },
   "f2487eac": {
     "no": "77",
@@ -1644,15 +1460,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "f2487eac",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 1,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:18:46"
+    "is_priority": false
   },
   "d87bbb8c": {
     "no": "78",
@@ -1671,15 +1479,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "d87bbb8c",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 1,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:18:46"
+    "is_priority": false
   },
   "74c762c9": {
     "no": "79",
@@ -1698,15 +1498,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "74c762c9",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 1,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 7:11:35"
+    "is_priority": false
   },
   "85b41beb": {
     "no": "80",
@@ -1725,15 +1517,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "85b41beb",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 1,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:18:46"
+    "is_priority": false
   },
   "500d46b3": {
     "no": "81",
@@ -1790,15 +1574,7 @@
     "score_version": "",
     "score_snapshot": "",
     "token": "64131197",
-    "is_priority": false,
-    "opened": true,
-    "visited": false,
-    "open_count": 1,
-    "visit_count": 0,
-    "max_scroll": 0,
-    "max_stay_sec": 0,
-    "hot": false,
-    "last_activity": "2026. 9. 23. 오후 6:56:31"
+    "is_priority": false
   },
   "80c903d2": {
     "no": "87",
@@ -2834,6 +2610,6 @@
       "HIGH": 84,
       "VERY LOW": 22
     },
-    "updated_at": "2026-09-26T23:20:26.556515+00:00"
+    "updated_at": "2026-09-26T23:23:19.942529+00:00"
   }
 }
