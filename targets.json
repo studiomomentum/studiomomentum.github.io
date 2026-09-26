@@ -2064,8 +2064,8 @@
     "email": "elite8040@naver.com",
     "region": "서초",
     "category": "tax",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-26 12:55:06",
     "views": "구독자 121명 / 최근 5편 [784, 476, 18, 28, 149] / 평균 291회",
     "point": "서초 세무회계 채널의 최근 5편 실측 평균 291회. 채널 진단 및 상담 전환 동선 검토 제안",
     "token": "dfb3ff23",
@@ -2095,7 +2095,7 @@
     "duplicate_count": 6,
     "registered_count": 51,
     "verified_count": 51,
-    "ready_count": 2,
+    "ready_count": 1,
     "status_counts": {
       "REJECTED": 1427,
       "REGISTERED": 51,
@@ -2104,6 +2104,6 @@
       "ERROR": 2
     },
     "evidence_count": 2466,
-    "updated_at": "2026-09-26T03:25:01.536774+00:00"
+    "updated_at": "2026-09-26T03:55:10.898239+00:00"
   }
 }
