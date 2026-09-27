@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:51:56.383481+00:00",
+  "updated_at": "2026-09-27T16:53:06.341080+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "서초 내과의원",
@@ -13,37 +13,26 @@
     "region": "서초"
   },
   "classification": {
-    "total": 26158,
-    "processed": 8395,
-    "pending": 17761,
-    "processing": 2,
+    "total": 26199,
+    "processed": 8411,
+    "pending": 17788,
+    "processing": 0,
     "eligible": 120,
-    "review": 5696,
-    "rejected": 2567,
+    "review": 5706,
+    "rejected": 2573,
     "errors": 9,
     "ready": 79,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCoMqkN7gUQ2GCbI4nVaE_ZA",
-        "name": "조철휘박사 유통물류 AI(통통통)",
-        "query": "동탄 관세사"
-      },
-      {
-        "channel_id": "UCSzY7vfhkzcQkvubdUGWqrw",
-        "name": "임쏘TV",
-        "query": "동탄 관세사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 384,
   "region_queries_completed": 24,
-  "region_channels": 3415,
-  "region_observed": 1203,
-  "channels_discovered": 26157,
-  "channels_observed": 8386,
-  "search_pages": 8634,
-  "search_results_read": 175838,
+  "region_channels": 3517,
+  "region_observed": 1243,
+  "channels_discovered": 26198,
+  "channels_observed": 8402,
+  "search_pages": 8660,
+  "search_results_read": 176337,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4256,
+      "observed": 4272,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4261,
+      "classified": 4277,
       "classification_errors": 5,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1766,
+      "observed": 1768,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1768,
+      "classified": 1770,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1674,
+      "observed": 1675,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1674,
+      "classified": 1675,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2579,
+      "observed": 2588,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2581,
+      "classified": 2590,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1966,
+      "observed": 1972,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1966,
+      "classified": 1972,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2150,
+      "observed": 2154,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2152,
+      "classified": 2156,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2395,10 +2384,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1647,
+      "observed": 1648,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1649,
+      "classified": 1650,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2687,11 +2676,11 @@
       "name": "서초",
       "queries_completed": 24,
       "queries_total": 40,
-      "channels": 3415,
-      "observed": 1203,
+      "channels": 3517,
+      "observed": 1243,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1204,
+      "classified": 1244,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2865,16 +2854,16 @@
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 43,
-          "results_read": 80,
-          "pages": 4
+          "channels": 106,
+          "results_read": 324,
+          "pages": 17
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 39,
-          "results_read": 79,
-          "pages": 4
+          "channels": 110,
+          "results_read": 334,
+          "pages": 17
         },
         {
           "name": "비뇨기과",
