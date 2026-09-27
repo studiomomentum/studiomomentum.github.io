@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:28:03.351232+00:00",
+  "updated_at": "2026-09-27T22:29:04.496248+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14789,
-    "pending": 13148,
-    "processing": 1,
+    "processed": 14808,
+    "pending": 13128,
+    "processing": 2,
     "eligible": 166,
-    "review": 10356,
-    "rejected": 4235,
+    "review": 10371,
+    "rejected": 4239,
     "errors": 29,
     "ready": 119,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCmXSUJ7AlbfVJugtFLHzMbA",
-        "name": "올받음손해사정사",
+        "channel_id": "UCGqxFeuG63KQ7QjSOOZeP1Q",
+        "name": "강남종로엠기숙학원",
+        "query": "용인 감정평가사"
+      },
+      {
+        "channel_id": "UC4QpZhCsS3FFbe3tcv0g4fw",
+        "name": "법률사무소 해랑",
         "query": "용인 손해사정사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1734,
+  "region_observed": 1738,
   "channels_discovered": 27937,
-  "channels_observed": 14760,
+  "channels_observed": 14779,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4162,
+      "observed": 4181,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4165,
+      "classified": 4184,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2655,
+      "observed": 2656,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2657,
+      "classified": 2658,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2096,
+      "observed": 2098,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2101,
+      "classified": 2103,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1944,
+      "observed": 1945,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1945,
+      "classified": 1946,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1734,
+      "observed": 1738,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1735,
+      "classified": 1739,
       "classification_errors": 1,
       "jobs": [
         {
