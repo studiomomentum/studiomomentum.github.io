@@ -12,6 +12,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
     const r=JSON.parse(req.postData());assert.equal(r.route,'momentum_admin');actions.push(r.action);
     if(r.action==='login'){loginCount++;if(r.password!=='demo-password')return json({ok:false,error:'INVALID_LOGIN'});return json({ok:true,result:{token,expiresAt:Date.now()+3600000}});}
     if(r.session!==token)return json({ok:false,error:'UNAUTHORIZED'});
+    if(r.action==='targets.exclusions')return json({ok:true,result:{entries:{}}});
     if(r.action==='session')return json({ok:true,result:{expiresAt:Date.now()+3600000}});
     if(r.action==='logout'){token='';return json({ok:true,result:{loggedOut:true}});}
     if(r.action==='classify.start'){starts++;if(outcome==='unknown')return route.abort();return json({ok:true,result:{phase:'accepted',runId:42,status:'queued'}});}
@@ -25,6 +26,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
   await p.goto('http://momentum.local/admin.html');assert(await p.locator('#loginOverlay').isVisible());
   await p.locator('#username').fill('admin');await p.locator('#password').fill('wrong');await p.locator('.login-btn').click();await p.waitForFunction(()=>document.getElementById('loginError').textContent.includes('일치하지'));
   await p.locator('#password').fill('demo-password');await p.locator('.login-btn').click();await p.waitForFunction(()=>document.getElementById('dashboardApp').style.display==='block');
+  await p.waitForFunction(()=>document.getElementById('password').value==='');
   assert.equal(await p.locator('#password').inputValue(),'');
   await p.evaluate(()=>Promise.all([MomentumClassification.start(),MomentumClassification.start()]));assert.equal(starts,1);
   assert(!(await p.locator('#classifyStatus').textContent()).includes('완료'));
