@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:54:59.804527+00:00",
+  "updated_at": "2026-09-27T13:56:06.449259+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 행정사",
-    "용인 행정사사무소"
+    "용인 행정사사무소",
+    "용인 피부과"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 14337,
-    "processed": 5200,
-    "pending": 9135,
-    "processing": 2,
+    "total": 14382,
+    "processed": 5230,
+    "pending": 9152,
+    "processing": 0,
     "eligible": 96,
-    "review": 3516,
-    "rejected": 1582,
+    "review": 3543,
+    "rejected": 1585,
     "errors": 5,
     "ready": 56,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC9sjumX1XiEJrP9BIaGmS8g",
-        "name": "점포라인 "
-      },
-      {
-        "channel_id": "UCgU7d9uFkWvuinVlN4qFMaw",
-        "name": "필라테스초이"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 171,
-  "region_queries_completed": 15,
-  "region_channels": 2028,
-  "region_observed": 1129,
-  "channels_discovered": 14336,
-  "channels_observed": 5195,
-  "search_pages": 3448,
-  "search_results_read": 75106,
+  "queries_completed": 172,
+  "region_queries_completed": 16,
+  "region_channels": 2145,
+  "region_observed": 1179,
+  "channels_discovered": 14381,
+  "channels_observed": 5225,
+  "search_pages": 3493,
+  "search_results_read": 75959,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +40,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3985,
+      "observed": 4015,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3990,
+      "classified": 4020,
       "classification_errors": 5,
       "jobs": [
         {
@@ -335,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1214,
+      "observed": 1220,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1215,
+      "classified": 1221,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1251,
+      "observed": 1254,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1253,
+      "classified": 1256,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +898,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1260,
+      "observed": 1262,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1260,
+      "classified": 1262,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1181,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 15,
+      "queries_completed": 16,
       "queries_total": 39,
-      "channels": 2028,
-      "observed": 1129,
+      "channels": 2145,
+      "observed": 1179,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1129,
+      "classified": 1179,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1306,24 +1297,24 @@
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 170,
-          "results_read": 446,
-          "pages": 23
+          "status": "completed",
+          "channels": 183,
+          "results_read": 481,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 16,
-          "results_read": 20,
-          "pages": 1
+          "channels": 104,
+          "results_read": 465,
+          "pages": 24
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 91,
+          "results_read": 373,
+          "pages": 19
         },
         {
           "name": "성형외과",
