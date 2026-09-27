@@ -2,37 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:01:37.160353+00:00",
+  "updated_at": "2026-09-27T14:02:38.840348+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 산부인과",
-    "용인 비뇨기과"
+    "용인 비뇨기과",
+    "용인 동물병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 14490,
-    "processed": 5364,
-    "pending": 9126,
-    "processing": 0,
+    "total": 14513,
+    "processed": 5390,
+    "pending": 9121,
+    "processing": 2,
     "eligible": 96,
-    "review": 3641,
-    "rejected": 1621,
+    "review": 3654,
+    "rejected": 1634,
     "errors": 5,
     "ready": 56,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCFEbu2hHaXYSVZCEz37uSQA",
+        "name": "바른길부동산TV"
+      },
+      {
+        "channel_id": "UCHmXGmj6JA-4iQ1UFMC7LYw",
+        "name": "KB부동산TV"
+      }
+    ]
   },
-  "queries_completed": 181,
-  "region_queries_completed": 25,
-  "region_channels": 2745,
-  "region_observed": 1560,
-  "channels_discovered": 14489,
-  "channels_observed": 5359,
-  "search_pages": 3704,
-  "search_results_read": 79910,
+  "queries_completed": 182,
+  "region_queries_completed": 26,
+  "region_channels": 2915,
+  "region_observed": 1681,
+  "channels_discovered": 14512,
+  "channels_observed": 5385,
+  "search_pages": 3745,
+  "search_results_read": 80691,
   "query_errors": {},
   "regions": [
     {
@@ -40,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 4149,
+      "observed": 4171,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4154,
+      "classified": 4176,
       "classification_errors": 5,
       "jobs": [
         {
@@ -326,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1240,
+      "observed": 1250,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1241,
+      "classified": 1251,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1268,
+      "observed": 1272,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1270,
+      "classified": 1274,
       "classification_errors": 2,
       "jobs": [
         {
@@ -898,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1276,
+      "observed": 1280,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1276,
+      "classified": 1280,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1181,13 +1190,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 25,
+      "queries_completed": 26,
       "queries_total": 39,
-      "channels": 2745,
-      "observed": 1560,
+      "channels": 2915,
+      "observed": 1681,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1562,
+      "classified": 1683,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1367,24 +1376,24 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 127,
-          "results_read": 415,
-          "pages": 21
+          "status": "completed",
+          "channels": 169,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
           "status": "running",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "channels": 63,
+          "results_read": 406,
+          "pages": 21
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 141,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "의원",
