@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:12:53.501270+00:00",
+  "updated_at": "2026-09-27T22:13:54.860665+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14487,
-    "pending": 13450,
-    "processing": 1,
+    "processed": 14504,
+    "pending": 13434,
+    "processing": 0,
     "eligible": 163,
-    "review": 10136,
-    "rejected": 4157,
+    "review": 10151,
+    "rejected": 4159,
     "errors": 28,
     "ready": 117,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC-hWrQVKVbykbDmYvLErmXg",
-        "name": "케이미래의원",
-        "query": "용인 내과의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1702,
+  "region_observed": 1704,
   "channels_discovered": 27937,
-  "channels_observed": 14459,
+  "channels_observed": 14476,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3861,
+      "observed": 3878,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3863,
+      "classified": 3880,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2658,
+      "observed": 2660,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2661,
+      "classified": 2663,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2576,
+      "observed": 2580,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2578,
+      "classified": 2582,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1933,
+      "observed": 1937,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1936,
+      "classified": 1940,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2069,
+      "observed": 2071,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2074,
+      "classified": 2076,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1926,
+      "observed": 1927,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1927,
+      "classified": 1928,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1702,
+      "observed": 1704,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1703,
+      "classified": 1705,
       "classification_errors": 1,
       "jobs": [
         {
