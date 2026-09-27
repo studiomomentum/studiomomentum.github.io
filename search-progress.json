@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:47:42.343044+00:00",
+  "updated_at": "2026-09-27T22:48:44.472977+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15156,
-    "pending": 12780,
+    "processed": 15170,
+    "pending": 12766,
     "processing": 2,
-    "eligible": 167,
-    "review": 10618,
-    "rejected": 4338,
+    "eligible": 168,
+    "review": 10626,
+    "rejected": 4343,
     "errors": 30,
-    "ready": 120,
+    "ready": 121,
     "status": "running",
     "active": [
       {
-        "channel_id": "UClubTW_6kgiINU_jhI84Nqw",
-        "name": "웅지",
-        "query": "화성 세무회계"
+        "channel_id": "UCLKuglhGlMmDteQKoniENIQ",
+        "name": "14F 일사에프",
+        "query": "화성 변호사"
       },
       {
-        "channel_id": "UCgqyLnMUc1375s3ecg_1qKA",
-        "name": "김동영TV",
-        "query": "화성 세무회계"
+        "channel_id": "UCRtgDoysI9RSwUak1mmgGFw",
+        "name": "이화",
+        "query": "화성 변호사"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1751,
   "channels_discovered": 27937,
-  "channels_observed": 15126,
+  "channels_observed": 15140,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2871,
+      "observed": 2885,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2875,
+      "classified": 2889,
       "classification_errors": 4,
       "jobs": [
         {
