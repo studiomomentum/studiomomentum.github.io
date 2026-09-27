@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:21:07.580093+00:00",
+  "updated_at": "2026-09-27T22:22:09.471342+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14646,
-    "pending": 13290,
-    "processing": 2,
+    "processed": 14666,
+    "pending": 13272,
+    "processing": 0,
     "eligible": 165,
-    "review": 10246,
-    "rejected": 4204,
-    "errors": 28,
+    "review": 10261,
+    "rejected": 4208,
+    "errors": 29,
     "ready": 118,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCbb_Ue9FEjRYgz9UXtpnejQ",
-        "name": "콜라보뉴스TV",
-        "query": "용인 변리사"
-      },
-      {
-        "channel_id": "UC555jFF87WGM2PbaWukQBGQ",
-        "name": "INNODESIGN",
-        "query": "용인 변리사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1716,
   "channels_discovered": 27937,
-  "channels_observed": 14618,
+  "channels_observed": 14637,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,11 +1209,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4020,
-      "observation_errors": 2,
+      "observed": 4039,
+      "observation_errors": 3,
       "classified_at": null,
-      "classified": 4022,
-      "classification_errors": 2,
+      "classified": 4042,
+      "classification_errors": 3,
       "jobs": [
         {
           "name": "세무사",
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2673,
+      "observed": 2676,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2676,
+      "classified": 2679,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2615,
+      "observed": 2624,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2617,
+      "classified": 2626,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2086,
+      "observed": 2087,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2091,
+      "classified": 2092,
       "classification_errors": 5,
       "jobs": [
         {
