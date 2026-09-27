@@ -2,42 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:18:22.830080+00:00",
+  "updated_at": "2026-09-27T14:19:24.168953+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 학원",
-    "화성 입시학원"
+    "화성 어학원",
+    "화성 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 15779,
-    "processed": 5757,
-    "pending": 10021,
-    "processing": 1,
-    "eligible": 98,
-    "review": 3879,
-    "rejected": 1774,
+    "total": 15928,
+    "processed": 5780,
+    "pending": 10146,
+    "processing": 2,
+    "eligible": 99,
+    "review": 3892,
+    "rejected": 1783,
     "errors": 5,
     "ready": 58,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCB09D8Dv0qBBZTny7FpSpVQ",
-        "name": "야매 지식 한입"
+        "channel_id": "UCiUVqgF9TAgkL36F-w4CGcg",
+        "name": "현동명의 공사비 닷컴"
+      },
+      {
+        "channel_id": "UC4Kc00am78bxWcFR9tF41Ug",
+        "name": "콩쥐 (콩쥐)"
       }
     ]
   },
-  "queries_completed": 205,
-  "region_queries_completed": 10,
-  "region_channels": 1986,
-  "region_observed": 824,
-  "channels_discovered": 15778,
-  "channels_observed": 5752,
-  "search_pages": 4306,
-  "search_results_read": 92004,
+  "queries_completed": 207,
+  "region_queries_completed": 12,
+  "region_channels": 2189,
+  "region_observed": 854,
+  "channels_discovered": 15927,
+  "channels_observed": 5775,
+  "search_pages": 4343,
+  "search_results_read": 93694,
   "query_errors": {},
   "regions": [
     {
@@ -331,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1617,
+      "observed": 1640,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1618,
+      "classified": 1641,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1369,
+      "observed": 1371,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1371,
+      "classified": 1373,
       "classification_errors": 2,
       "jobs": [
         {
@@ -903,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1356,
+      "observed": 1360,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1356,
+      "classified": 1360,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1189,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2404,
+      "observed": 2405,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2406,
+      "classified": 2407,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1472,13 +1476,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 10,
+      "queries_completed": 12,
       "queries_total": 39,
-      "channels": 1986,
-      "observed": 824,
+      "channels": 2189,
+      "observed": 854,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 824,
+      "classified": 854,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1553,31 +1557,31 @@
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 72,
-          "results_read": 220,
-          "pages": 11
+          "status": "completed",
+          "channels": 185,
+          "results_read": 520,
+          "pages": 27
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 148,
-          "results_read": 984,
-          "pages": 10
+          "status": "completed",
+          "channels": 277,
+          "results_read": 2294,
+          "pages": 27
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 25,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 16,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "부동산중개",
