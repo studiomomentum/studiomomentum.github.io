@@ -2,37 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:14:00.314529+00:00",
+  "updated_at": "2026-09-27T14:15:06.595709+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 법무법인",
-    "화성 법률사무소"
+    "화성 치과",
+    "화성 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 15268,
-    "processed": 5656,
-    "pending": 9612,
-    "processing": 0,
+    "total": 15361,
+    "processed": 5682,
+    "pending": 9677,
+    "processing": 2,
     "eligible": 98,
-    "review": 3816,
-    "rejected": 1736,
+    "review": 3829,
+    "rejected": 1749,
     "errors": 5,
     "ready": 58,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCsoO3N2aOgIc_AGBhx04_tA",
+        "name": "변호사 심포도"
+      },
+      {
+        "channel_id": "UCQDvxpdzfzSUg-QfO8BAEjQ",
+        "name": "건강지인TV"
+      }
+    ]
   },
-  "queries_completed": 199,
-  "region_queries_completed": 4,
-  "region_channels": 1014,
-  "region_observed": 576,
-  "channels_discovered": 15267,
-  "channels_observed": 5651,
-  "search_pages": 4147,
-  "search_results_read": 88247,
+  "queries_completed": 201,
+  "region_queries_completed": 6,
+  "region_channels": 1233,
+  "region_observed": 651,
+  "channels_discovered": 15360,
+  "channels_observed": 5677,
+  "search_pages": 4189,
+  "search_results_read": 89019,
   "query_errors": {},
   "regions": [
     {
@@ -326,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1516,
+      "observed": 1542,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1517,
+      "classified": 1543,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1345,
+      "observed": 1354,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1347,
+      "classified": 1356,
       "classification_errors": 2,
       "jobs": [
         {
@@ -898,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1342,
+      "observed": 1346,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1342,
+      "classified": 1346,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1184,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2396,
+      "observed": 2398,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2398,
+      "classified": 2400,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1467,13 +1476,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 4,
+      "queries_completed": 6,
       "queries_total": 39,
-      "channels": 1014,
-      "observed": 576,
+      "channels": 1233,
+      "observed": 651,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 576,
+      "classified": 651,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1506,31 +1515,31 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 85,
-          "results_read": 215,
-          "pages": 11
+          "status": "completed",
+          "channels": 177,
+          "results_read": 480,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 58,
-          "results_read": 179,
-          "pages": 9
+          "status": "completed",
+          "channels": 211,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 74,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 53,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "한의원",
