@@ -1,47 +1,50 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "",
+  "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:47:17.528572+00:00",
+  "updated_at": "2026-09-27T12:48:18.555980+00:00",
   "run_id": "36320123849",
-  "active_queries": [],
+  "active_queries": [
+    "수원 동물병원",
+    "수원 의원"
+  ],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "수원"
   },
   "classification": {
-    "total": 4102,
-    "processed": 3377,
-    "pending": 725,
+    "total": 4149,
+    "processed": 3511,
+    "pending": 638,
     "processing": 0,
-    "eligible": 83,
-    "review": 2275,
+    "eligible": 84,
+    "review": 2287,
     "rejected": 1019,
-    "errors": 0,
-    "ready": 16,
-    "status": "starting",
+    "errors": 121,
+    "ready": 45,
+    "status": "running",
     "active": []
   },
-  "queries_completed": 25,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
-  "channels_discovered": 4096,
-  "channels_observed": 3377,
-  "search_pages": 131,
-  "search_results_read": 11992,
+  "queries_completed": 27,
+  "region_queries_completed": 27,
+  "region_channels": 2803,
+  "region_observed": 2044,
+  "channels_discovered": 4143,
+  "channels_observed": 3390,
+  "search_pages": 203,
+  "search_results_read": 13372,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 25,
+      "queries_completed": 27,
       "queries_total": 39,
-      "channels": 2750,
-      "observed": 2031,
-      "observation_errors": 128,
+      "channels": 2803,
+      "observed": 2044,
+      "observation_errors": 121,
       "classified_at": null,
-      "classified": 2031,
-      "classification_errors": 0,
+      "classified": 2165,
+      "classification_errors": 121,
       "jobs": [
         {
           "name": "세무사",
@@ -220,31 +223,31 @@
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 155,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 193,
+          "results_read": 505,
+          "pages": 27
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 66,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 90,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 131,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 141,
+          "results_read": 200,
+          "pages": 10
         },
         {
           "name": "의원",
-          "status": "pending",
-          "channels": 62,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 66,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "노무사",
@@ -2042,8 +2045,8 @@
       "observed": 237,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 237,
-      "classification_errors": 0,
+      "classified": 238,
+      "classification_errors": 1,
       "jobs": [
         {
           "name": "세무사",
