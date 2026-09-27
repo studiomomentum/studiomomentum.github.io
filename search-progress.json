@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:48:29.296218+00:00",
+  "updated_at": "2026-09-27T17:49:37.960449+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 손해사정사",
-    "송파 건축사사무소"
+    "송파 건축사사무소",
+    "송파 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27788,
-    "processed": 9213,
-    "pending": 18575,
+    "total": 27812,
+    "processed": 9229,
+    "pending": 18583,
     "processing": 0,
     "eligible": 122,
-    "review": 6303,
-    "rejected": 2773,
+    "review": 6313,
+    "rejected": 2779,
     "errors": 12,
     "ready": 81,
     "status": "running",
     "active": []
   },
-  "queries_completed": 435,
-  "region_queries_completed": 35,
-  "region_channels": 3726,
-  "region_observed": 1274,
-  "channels_discovered": 27787,
-  "channels_observed": 9201,
-  "search_pages": 9969,
-  "search_results_read": 200739,
+  "queries_completed": 436,
+  "region_queries_completed": 36,
+  "region_channels": 3828,
+  "region_observed": 1318,
+  "channels_discovered": 27811,
+  "channels_observed": 9217,
+  "search_pages": 9995,
+  "search_results_read": 201227,
   "query_errors": {},
   "regions": [
     {
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2102,
+      "observed": 2118,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2106,
+      "classified": 2122,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2078,
+      "observed": 2079,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2078,
+      "classified": 2079,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2205,
+      "observed": 2206,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2207,
+      "classified": 2208,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2677,10 +2677,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1635,
+      "observed": 1636,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1636,
+      "classified": 1637,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,13 +2967,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 35,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 3726,
-      "observed": 1274,
+      "channels": 3828,
+      "observed": 1318,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1275,
+      "classified": 1319,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3223,24 +3223,24 @@
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 29,
-          "results_read": 272,
-          "pages": 14
+          "status": "completed",
+          "channels": 86,
+          "results_read": 482,
+          "pages": 26
         },
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "channels": 91,
+          "results_read": 258,
+          "pages": 13
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 19,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "필라테스",
