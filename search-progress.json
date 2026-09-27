@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:27:37.518631+00:00",
+  "updated_at": "2026-09-27T18:28:39.203052+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 10001,
-    "pending": 17935,
-    "processing": 2,
+    "processed": 10025,
+    "pending": 17913,
+    "processing": 0,
     "eligible": 129,
-    "review": 6849,
-    "rejected": 3007,
+    "review": 6862,
+    "rejected": 3018,
     "errors": 13,
     "ready": 86,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCxhn1DrOhG-TgXCSZ2n80qw",
-        "name": "행정사 바이크 라이더",
-        "query": "오산 행정사"
-      },
-      {
-        "channel_id": "UCxxvmHcmpJgXfQoT1svTJ_Q",
-        "name": "건강한 백세-안전운전.교통법규길라잡이",
-        "query": "오산 행정사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1457,
+  "region_observed": 1458,
   "channels_discovered": 27937,
-  "channels_observed": 9988,
+  "channels_observed": 10012,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2889,
+      "observed": 2913,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2894,
+      "classified": 2918,
       "classification_errors": 5,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1935,
+      "observed": 1939,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1937,
+      "classified": 1941,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2724,
+      "observed": 2726,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2726,
+      "classified": 2728,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2176,
+      "observed": 2178,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2177,
+      "classified": 2179,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2242,
+      "observed": 2243,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2244,
+      "classified": 2245,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1645,
+      "observed": 1646,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1647,
+      "classified": 1648,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1748,
+      "observed": 1749,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1751,
+      "classified": 1752,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1457,
+      "observed": 1458,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1458,
+      "classified": 1459,
       "classification_errors": 1,
       "jobs": [
         {
