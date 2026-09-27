@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T19:24:22.668018+00:00",
+  "updated_at": "2026-09-27T19:25:24.647216+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11185,
-    "pending": 16753,
-    "processing": 0,
+    "processed": 11207,
+    "pending": 16729,
+    "processing": 2,
     "eligible": 134,
-    "review": 7705,
-    "rejected": 3326,
+    "review": 7722,
+    "rejected": 3331,
     "errors": 17,
     "ready": 91,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCPBLLs_Rzc9YEjddZq-_nEw",
+        "name": "프리뷰유닛 분양 모델하우스  ",
+        "query": "오산 필라테스"
+      },
+      {
+        "channel_id": "UC32Y0tdIHhSRxYLl1hS5txw",
+        "name": "빈feel",
+        "query": "오산 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1511,
+  "region_observed": 1512,
   "channels_discovered": 27937,
-  "channels_observed": 11168,
+  "channels_observed": 11190,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 4069,
+      "observed": 4091,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4078,
+      "classified": 4100,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1827,
+      "observed": 1828,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1830,
+      "classified": 1831,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1734,
+      "observed": 1735,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1735,
+      "classified": 1736,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1511,
+      "observed": 1512,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1512,
+      "classified": 1513,
       "classification_errors": 1,
       "jobs": [
         {
