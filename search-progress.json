@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T19:01:56.346417+00:00",
+  "updated_at": "2026-09-27T19:02:57.707188+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 10709,
-    "pending": 17229,
-    "processing": 0,
+    "processed": 10736,
+    "pending": 17201,
+    "processing": 1,
     "eligible": 132,
-    "review": 7352,
-    "rejected": 3207,
+    "review": 7372,
+    "rejected": 3214,
     "errors": 15,
     "ready": 89,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC8nJlBaeHT8kJDxjuG5ypaQ",
+        "name": "이종담TV",
+        "query": "오산 의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1492,
   "channels_discovered": 27937,
-  "channels_observed": 10694,
+  "channels_observed": 10721,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 3595,
+      "observed": 3622,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 3602,
+      "classified": 3629,
       "classification_errors": 7,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2072,
+      "observed": 2083,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2074,
+      "classified": 2085,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2776,
+      "observed": 2778,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2778,
+      "classified": 2780,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2256,
+      "observed": 2258,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2258,
+      "classified": 2260,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1691,
+      "observed": 1693,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1693,
+      "classified": 1695,
       "classification_errors": 2,
       "jobs": [
         {
