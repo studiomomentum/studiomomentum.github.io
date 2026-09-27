@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:57:18.061936+00:00",
+  "updated_at": "2026-09-27T12:58:19.149052+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 법무법인",
-    "동탄 법률사무소"
+    "동탄 한의원",
+    "동탄 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 6016,
-    "processed": 3564,
-    "pending": 2450,
+    "total": 6310,
+    "processed": 3606,
+    "pending": 2702,
     "processing": 2,
     "eligible": 85,
-    "review": 2400,
-    "rejected": 1075,
+    "review": 2427,
+    "rejected": 1090,
     "errors": 4,
     "ready": 47,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCyzeTUsLWn8exFtjj7uLaTg",
-        "name": "바른미"
+        "channel_id": "UCHqL43fyPZiyucyQMZfAKXA",
+        "name": "한국인재교육원"
       },
       {
-        "channel_id": "UCo5EKBgOOovstiUea50-NkA",
-        "name": "강남서울이비인후과 [코끼리병원]"
+        "channel_id": "UCUYjVu3Z5R0sHwaWtp2QkEg",
+        "name": "군산성신병원"
       }
     ]
   },
-  "queries_completed": 43,
-  "region_queries_completed": 4,
-  "region_channels": 1172,
-  "region_observed": 468,
-  "channels_discovered": 6012,
-  "channels_observed": 3560,
-  "search_pages": 613,
-  "search_results_read": 21088,
+  "queries_completed": 47,
+  "region_queries_completed": 8,
+  "region_channels": 1552,
+  "region_observed": 547,
+  "channels_discovered": 6306,
+  "channels_observed": 3602,
+  "search_pages": 689,
+  "search_results_read": 22492,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2350,
+      "observed": 2392,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2354,
+      "classified": 2396,
       "classification_errors": 4,
       "jobs": [
         {
@@ -332,13 +332,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 4,
+      "queries_completed": 8,
       "queries_total": 39,
-      "channels": 1172,
-      "observed": 468,
+      "channels": 1552,
+      "observed": 547,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 469,
+      "classified": 548,
       "classification_errors": 1,
       "jobs": [
         {
@@ -371,45 +371,45 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 168,
-          "results_read": 377,
-          "pages": 19
+          "status": "completed",
+          "channels": 192,
+          "results_read": 482,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 181,
-          "results_read": 376,
-          "pages": 19
+          "status": "completed",
+          "channels": 254,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 189,
+          "results_read": 506,
+          "pages": 27
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 209,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 33,
+          "results_read": 99,
+          "pages": 5
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 49,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "학원",
