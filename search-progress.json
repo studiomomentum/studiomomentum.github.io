@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:31:36.171111+00:00",
+  "updated_at": "2026-09-27T16:32:37.813613+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "서초 법무법인",
@@ -13,26 +13,37 @@
     "region": "서초"
   },
   "classification": {
-    "total": 25121,
-    "processed": 8073,
-    "pending": 17048,
-    "processing": 0,
+    "total": 25202,
+    "processed": 8093,
+    "pending": 17107,
+    "processing": 2,
     "eligible": 120,
-    "review": 5465,
-    "rejected": 2479,
+    "review": 5480,
+    "rejected": 2484,
     "errors": 6,
     "ready": 79,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCRcng8Inz7AbckTaJubaeWw",
+        "name": "OBS 시사",
+        "query": "동탄 의원"
+      },
+      {
+        "channel_id": "UCwdA3tz-0mNw9LowmJzjN3A",
+        "name": "원주좋은방연구소",
+        "query": "동탄 노무사"
+      }
+    ]
   },
   "queries_completed": 364,
   "region_queries_completed": 4,
-  "region_channels": 855,
-  "region_observed": 492,
-  "channels_discovered": 25120,
-  "channels_observed": 8067,
-  "search_pages": 8142,
-  "search_results_read": 164784,
+  "region_channels": 1032,
+  "region_observed": 537,
+  "channels_discovered": 25201,
+  "channels_observed": 8087,
+  "search_pages": 8172,
+  "search_results_read": 165383,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3937,
+      "observed": 3957,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3939,
+      "classified": 3959,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1743,
+      "observed": 1746,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1745,
+      "classified": 1748,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1647,
+      "observed": 1648,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1647,
+      "classified": 1648,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2562,
+      "observed": 2563,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2564,
+      "classified": 2565,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1906,
+      "observed": 1911,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1906,
+      "classified": 1911,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2128,
+      "observed": 2129,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2130,
+      "classified": 2131,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1460,
+      "observed": 1462,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1461,
+      "classified": 1463,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2676,11 +2687,11 @@
       "name": "서초",
       "queries_completed": 4,
       "queries_total": 40,
-      "channels": 855,
-      "observed": 492,
+      "channels": 1032,
+      "observed": 537,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 492,
+      "classified": 537,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2714,16 +2725,16 @@
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 88,
-          "results_read": 196,
-          "pages": 10
+          "channels": 182,
+          "results_read": 495,
+          "pages": 25
         },
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 70,
-          "results_read": 114,
-          "pages": 6
+          "channels": 211,
+          "results_read": 414,
+          "pages": 21
         },
         {
           "name": "치과",
