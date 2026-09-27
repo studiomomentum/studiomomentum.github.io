@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:47:26.677987+00:00",
+  "updated_at": "2026-09-27T21:48:28.858074+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13989,
-    "pending": 13948,
-    "processing": 1,
+    "processed": 14008,
+    "pending": 13930,
+    "processing": 0,
     "eligible": 157,
-    "review": 9792,
-    "rejected": 4009,
+    "review": 9806,
+    "rejected": 4014,
     "errors": 28,
     "ready": 112,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC-BVxCopzUay2LsXWNrdkQA",
-        "name": "8617505",
-        "query": "용인 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1654,
+  "region_observed": 1655,
   "channels_discovered": 27937,
-  "channels_observed": 13961,
+  "channels_observed": 13980,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3363,
+      "observed": 3382,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3365,
+      "classified": 3384,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2467,
+      "observed": 2468,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2469,
+      "classified": 2470,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1654,
+      "observed": 1655,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1655,
+      "classified": 1656,
       "classification_errors": 1,
       "jobs": [
         {
