@@ -2,48 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:44:14.069980+00:00",
+  "updated_at": "2026-09-27T17:45:16.717563+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 법무사",
-    "송파 변리사"
+    "송파 변리사",
+    "송파 관세사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27665,
-    "processed": 9155,
-    "pending": 18508,
-    "processing": 2,
+    "total": 27684,
+    "processed": 9168,
+    "pending": 18515,
+    "processing": 1,
     "eligible": 122,
-    "review": 6257,
-    "rejected": 2762,
+    "review": 6266,
+    "rejected": 2766,
     "errors": 11,
     "ready": 81,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCeJKPR8bwDkTnQXBuvuXALA",
-        "name": "김민정 MJTV (RDH) 치과위생사의 임상 이야기",
-        "query": "오산 세무회계"
-      },
-      {
-        "channel_id": "UCdKzxdlUy6QVzb_UvRaTQ8w",
-        "name": "219부동산tv&토지땅",
+        "channel_id": "UCAbXiHuTF_fAUasu7h4njDg",
+        "name": "주형남교수의 재테크 닥터",
         "query": "오산 세무회계"
       }
     ]
   },
-  "queries_completed": 431,
-  "region_queries_completed": 31,
-  "region_channels": 3400,
-  "region_observed": 1170,
-  "channels_discovered": 27664,
-  "channels_observed": 9144,
-  "search_pages": 9877,
-  "search_results_read": 199018,
+  "queries_completed": 432,
+  "region_queries_completed": 32,
+  "region_channels": 3470,
+  "region_observed": 1197,
+  "channels_discovered": 27683,
+  "channels_observed": 9157,
+  "search_pages": 9903,
+  "search_results_read": 199512,
   "query_errors": {},
   "regions": [
     {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2045,
+      "observed": 2058,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2048,
+      "classified": 2061,
       "classification_errors": 3,
       "jobs": [
         {
@@ -930,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1771,
+      "observed": 1774,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1772,
+      "classified": 1775,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1223,10 +1218,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2642,
+      "observed": 2644,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2644,
+      "classified": 2646,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2073,
+      "observed": 2075,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2073,
+      "classified": 2075,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2395,10 +2390,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1694,
+      "observed": 1695,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1697,
+      "classified": 1698,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,13 +2973,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 31,
+      "queries_completed": 32,
       "queries_total": 40,
-      "channels": 3400,
-      "observed": 1170,
+      "channels": 3470,
+      "observed": 1197,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1171,
+      "classified": 1198,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3206,24 +3201,24 @@
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 64,
-          "results_read": 397,
-          "pages": 20
+          "status": "completed",
+          "channels": 98,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "변리사",
           "status": "running",
-          "channels": 40,
-          "results_read": 115,
-          "pages": 6
+          "channels": 114,
+          "results_read": 375,
+          "pages": 19
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 11,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "감정평가사",
