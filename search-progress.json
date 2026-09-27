@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:10:11.340395+00:00",
+  "updated_at": "2026-09-27T16:11:13.463164+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 마취통증의학과",
-    "강남 내과의원"
+    "강남 내과의원",
+    "강남 산부인과"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24138,
-    "processed": 7729,
-    "pending": 16407,
+    "total": 24179,
+    "processed": 7747,
+    "pending": 16430,
     "processing": 2,
     "eligible": 118,
-    "review": 5233,
-    "rejected": 2369,
+    "review": 5245,
+    "rejected": 2375,
     "errors": 6,
     "ready": 77,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCSBXnIvayfwR4TsmZCTOyKA",
-        "name": "라보라 rabora",
+        "channel_id": "UCwWZBKbQ6JONDOPJQiNJhvg",
+        "name": "쏘키 SoKee",
         "query": "동탄 산부인과"
       },
       {
-        "channel_id": "UCsYL8OySLhSYDCGLDaCs6GA",
-        "name": "미영 의사",
+        "channel_id": "UClemszPF495bc4y7iD-J6CQ",
+        "name": "Beeneene ",
         "query": "동탄 산부인과"
       }
     ]
   },
-  "queries_completed": 343,
-  "region_queries_completed": 23,
-  "region_channels": 3396,
-  "region_observed": 1184,
-  "channels_discovered": 24137,
-  "channels_observed": 7723,
-  "search_pages": 7603,
-  "search_results_read": 154667,
+  "queries_completed": 344,
+  "region_queries_completed": 24,
+  "region_channels": 3490,
+  "region_observed": 1220,
+  "channels_discovered": 24178,
+  "channels_observed": 7741,
+  "search_pages": 7629,
+  "search_results_read": 155163,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3593,
+      "observed": 3611,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3595,
+      "classified": 3613,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1622,
+      "observed": 1623,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1622,
+      "classified": 1623,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2552,
+      "observed": 2553,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2554,
+      "classified": 2555,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 23,
+      "queries_completed": 24,
       "queries_total": 40,
-      "channels": 3396,
-      "observed": 1184,
+      "channels": 3490,
+      "observed": 1220,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1186,
+      "classified": 1222,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2564,24 +2564,24 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 122,
-          "results_read": 472,
-          "pages": 24
+          "status": "completed",
+          "channels": 125,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 66,
-          "results_read": 120,
-          "pages": 6
+          "channels": 166,
+          "results_read": 380,
+          "pages": 19
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 59,
+          "results_read": 218,
+          "pages": 11
         },
         {
           "name": "비뇨기과",
