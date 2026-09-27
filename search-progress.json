@@ -1,48 +1,48 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "동탄",
+  "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:57:02.034384+00:00",
+  "updated_at": "2026-09-27T14:58:03.440097+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "동탄 중고차"
+    "오산 중고차"
   ],
   "search_stage": {
     "status": "running",
-    "region": "동탄"
+    "region": "오산"
   },
   "classification": {
-    "total": 18525,
-    "processed": 6485,
-    "pending": 12038,
+    "total": 18607,
+    "processed": 6505,
+    "pending": 12100,
     "processing": 2,
     "eligible": 106,
-    "review": 4386,
-    "rejected": 1987,
+    "review": 4398,
+    "rejected": 1995,
     "errors": 5,
     "ready": 65,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCsL-CI0nG4qCgtj7nvu4aRQ",
-        "name": "어쩔아재",
-        "query": "동탄 한의원"
+        "channel_id": "UCa7-3Zvxg-5Rfxgu3RQY_gw",
+        "name": "질병관리청 아프지마TV",
+        "query": "동탄 한방병원"
       },
       {
-        "channel_id": "UCceaOQMFbC_2-m5Z5RONhgw",
-        "name": "S카 입원실",
-        "query": "동탄 한의원"
+        "channel_id": "UC9QiQXtSoadpguSxkYPN-tQ",
+        "name": "(주)제이브랜드디자인",
+        "query": "동탄 한방병원"
       }
     ]
   },
-  "queries_completed": 258,
+  "queries_completed": 259,
   "region_queries_completed": 39,
-  "region_channels": 4856,
-  "region_observed": 2349,
-  "channels_discovered": 18524,
-  "channels_observed": 6480,
-  "search_pages": 5549,
-  "search_results_read": 116304,
+  "region_channels": 4211,
+  "region_observed": 1510,
+  "channels_discovered": 18606,
+  "channels_observed": 6500,
+  "search_pages": 5570,
+  "search_results_read": 116702,
   "query_errors": {},
   "regions": [
     {
@@ -340,13 +340,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4856,
-      "observed": 2349,
+      "channels": 4936,
+      "observed": 2370,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2350,
+      "classified": 2371,
       "classification_errors": 1,
       "jobs": [
         {
@@ -624,10 +624,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 82,
-          "results_read": 172,
-          "pages": 9
+          "status": "completed",
+          "channels": 171,
+          "results_read": 490,
+          "pages": 26
         }
       ]
     },
@@ -635,11 +635,11 @@
       "name": "오산",
       "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4182,
-      "observed": 1504,
+      "channels": 4211,
+      "observed": 1510,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1506,
+      "classified": 1512,
       "classification_errors": 2,
       "jobs": [
         {
@@ -917,10 +917,10 @@
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 29,
+          "results_read": 80,
+          "pages": 4
         }
       ]
     },
@@ -929,10 +929,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 4618,
-      "observed": 1469,
+      "observed": 1472,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1469,
+      "classified": 1472,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1222,10 +1222,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 4348,
-      "observed": 2463,
+      "observed": 2465,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2465,
+      "classified": 2467,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1515,10 +1515,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 5393,
-      "observed": 1659,
+      "observed": 1662,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1659,
+      "classified": 1662,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1808,10 +1808,10 @@
       "queries_completed": 23,
       "queries_total": 40,
       "channels": 2298,
-      "observed": 1246,
+      "observed": 1248,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1248,
+      "classified": 1250,
       "classification_errors": 2,
       "jobs": [
         {
