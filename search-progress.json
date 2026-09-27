@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:21:27.742996+00:00",
+  "updated_at": "2026-09-27T14:22:29.176048+00:00",
   "run_id": "36322315094",
   "active_queries": [
     "화성 부동산중개",
@@ -13,35 +13,35 @@
     "region": "화성"
   },
   "classification": {
-    "total": 16082,
-    "processed": 5828,
-    "pending": 10252,
+    "total": 16119,
+    "processed": 5850,
+    "pending": 10267,
     "processing": 2,
     "eligible": 99,
-    "review": 3927,
-    "rejected": 1796,
+    "review": 3944,
+    "rejected": 1801,
     "errors": 5,
     "ready": 59,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCuJ_zbkzO5Vp6inXmnWXY_A",
-        "name": "Real Design"
+        "channel_id": "UC24bIeaPa8s54tuVz2wsFtQ",
+        "name": "Deloitte Korea"
       },
       {
-        "channel_id": "UCLB_RQRtkfqC6tcDiyhz8GQ",
-        "name": "한깨TV"
+        "channel_id": "UCneTi0bXXAeDgF7ZppGxN9A",
+        "name": "김정훈 변호사 TV"
       }
     ]
   },
   "queries_completed": 210,
   "region_queries_completed": 15,
-  "region_channels": 2505,
-  "region_observed": 954,
-  "channels_discovered": 16081,
-  "channels_observed": 5823,
-  "search_pages": 4417,
-  "search_results_read": 95067,
+  "region_channels": 2634,
+  "region_observed": 1004,
+  "channels_discovered": 16118,
+  "channels_observed": 5845,
+  "search_pages": 4447,
+  "search_results_read": 95663,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1688,
+      "observed": 1710,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1689,
+      "classified": 1711,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1379,
+      "observed": 1382,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1381,
+      "classified": 1384,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1364,
+      "observed": 1365,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1364,
+      "classified": 1365,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1478,11 +1478,11 @@
       "name": "화성",
       "queries_completed": 15,
       "queries_total": 39,
-      "channels": 2505,
-      "observed": 954,
+      "channels": 2634,
+      "observed": 1004,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 954,
+      "classified": 1004,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1586,9 +1586,9 @@
         {
           "name": "부동산중개",
           "status": "running",
-          "channels": 138,
-          "results_read": 236,
-          "pages": 12
+          "channels": 232,
+          "results_read": 533,
+          "pages": 27
         },
         {
           "name": "행정사",
@@ -1600,9 +1600,9 @@
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 29,
-          "results_read": 60,
-          "pages": 3
+          "channels": 146,
+          "results_read": 359,
+          "pages": 18
         },
         {
           "name": "피부과",
