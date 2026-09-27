@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:50:30.776255+00:00",
+  "updated_at": "2026-09-27T14:51:32.521164+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 안과",
-    "분당 정형외과"
+    "분당 정형외과",
+    "분당 이비인후과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 18277,
-    "processed": 6400,
-    "pending": 11875,
+    "total": 18312,
+    "processed": 6418,
+    "pending": 11892,
     "processing": 2,
     "eligible": 105,
-    "review": 4325,
-    "rejected": 1964,
+    "review": 4338,
+    "rejected": 1969,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0x_7sWipKxN4W7ijMywsNA",
-        "name": "엘이디싸인코리아"
+        "channel_id": "UCoDYSo4ao33sO0ySuJ4at_A",
+        "name": "여성미한의원 조선화 원장"
       },
       {
-        "channel_id": "UCQj3jearUzrnY11pT3cY9EQ",
-        "name": "SLRSHOP에스엘알샵"
+        "channel_id": "UC3noAE5UqEpexVELd-4ESBQ",
+        "name": "알면한의원 뇌 면역 진료실 "
       }
     ]
   },
-  "queries_completed": 253,
-  "region_queries_completed": 19,
-  "region_channels": 2011,
-  "region_observed": 1112,
-  "channels_discovered": 18276,
-  "channels_observed": 6395,
-  "search_pages": 5428,
-  "search_results_read": 114038,
+  "queries_completed": 254,
+  "region_queries_completed": 20,
+  "region_channels": 2127,
+  "region_observed": 1163,
+  "channels_discovered": 18311,
+  "channels_observed": 6413,
+  "search_pages": 5457,
+  "search_results_read": 114583,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2260,
+      "observed": 2278,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2261,
+      "classified": 2279,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1487,
+      "observed": 1491,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1489,
+      "classified": 1493,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1453,
+      "observed": 1459,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1453,
+      "classified": 1459,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2450,
+      "observed": 2454,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2452,
+      "classified": 2456,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1479,10 +1479,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1636,
+      "observed": 1640,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1636,
+      "classified": 1640,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1762,14 +1762,14 @@
     },
     {
       "name": "분당",
-      "queries_completed": 19,
+      "queries_completed": 20,
       "queries_total": 39,
-      "channels": 2011,
-      "observed": 1112,
-      "observation_errors": 1,
+      "channels": 2127,
+      "observed": 1163,
+      "observation_errors": 2,
       "classified_at": null,
-      "classified": 1113,
-      "classification_errors": 1,
+      "classified": 1165,
+      "classification_errors": 2,
       "jobs": [
         {
           "name": "세무사",
@@ -1906,24 +1906,24 @@
         },
         {
           "name": "안과",
-          "status": "running",
-          "channels": 104,
-          "results_read": 377,
-          "pages": 19
+          "status": "completed",
+          "channels": 176,
+          "results_read": 502,
+          "pages": 27
         },
         {
           "name": "정형외과",
           "status": "running",
-          "channels": 17,
-          "results_read": 40,
-          "pages": 2
+          "channels": 86,
+          "results_read": 340,
+          "pages": 17
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "재활의학과",
