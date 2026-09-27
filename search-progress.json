@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:17:02.450243+00:00",
+  "updated_at": "2026-09-27T22:18:03.607421+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14566,
-    "pending": 13372,
-    "processing": 0,
+    "processed": 14592,
+    "pending": 13344,
+    "processing": 2,
     "eligible": 163,
-    "review": 10188,
-    "rejected": 4184,
+    "review": 10206,
+    "rejected": 4192,
     "errors": 28,
     "ready": 117,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCEOqZCdOzY-4keEKXasETIQ",
+        "name": "壁畫太多",
+        "query": "용인 의원"
+      },
+      {
+        "channel_id": "UCzUFb1S_G1SQij_3QcC0z-A",
+        "name": "엘투",
+        "query": "용인 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1704,
+  "region_observed": 1706,
   "channels_discovered": 27937,
-  "channels_observed": 14538,
+  "channels_observed": 14564,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3940,
+      "observed": 3966,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3942,
+      "classified": 3968,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1941,
+      "observed": 1943,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1944,
+      "classified": 1946,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1704,
+      "observed": 1706,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1705,
+      "classified": 1707,
       "classification_errors": 1,
       "jobs": [
         {
