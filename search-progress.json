@@ -2,46 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:47:33.585067+00:00",
+  "updated_at": "2026-09-27T13:48:35.184908+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 법무법인",
-    "용인 법률사무소"
+    "용인 치과",
+    "용인 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 13822,
-    "processed": 5018,
-    "pending": 8802,
-    "processing": 2,
+    "total": 13853,
+    "processed": 5041,
+    "pending": 8811,
+    "processing": 1,
     "eligible": 95,
-    "review": 3382,
-    "rejected": 1535,
+    "review": 3399,
+    "rejected": 1541,
     "errors": 5,
     "ready": 55,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCXAQmJgVwGZ5TKuOJxDR2pw",
-        "name": "시각장애 너무해박사 심리가 있는 라인댄스"
-      },
-      {
-        "channel_id": "UCSIdTmSVl7a6wlVUgpGO39A",
-        "name": "베트남세딸아빠"
+        "channel_id": "UCdluGwHifaPr4nQxX8iDrig",
+        "name": "보상플랫폼"
       }
     ]
   },
-  "queries_completed": 160,
-  "region_queries_completed": 4,
-  "region_channels": 583,
-  "region_observed": 474,
-  "channels_discovered": 13821,
-  "channels_observed": 5013,
-  "search_pages": 3157,
-  "search_results_read": 69655,
+  "queries_completed": 162,
+  "region_queries_completed": 6,
+  "region_channels": 712,
+  "region_observed": 551,
+  "channels_discovered": 13852,
+  "channels_observed": 5036,
+  "search_pages": 3195,
+  "search_results_read": 70343,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +45,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3803,
+      "observed": 3826,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3808,
+      "classified": 3831,
       "classification_errors": 5,
       "jobs": [
         {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1178,
+      "observed": 1182,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1179,
+      "classified": 1183,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1223,
+      "observed": 1227,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1225,
+      "classified": 1229,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1234,
+      "observed": 1236,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1234,
+      "classified": 1236,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1186,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 4,
+      "queries_completed": 6,
       "queries_total": 39,
-      "channels": 583,
-      "observed": 474,
+      "channels": 712,
+      "observed": 551,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 474,
+      "classified": 551,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1229,31 +1225,31 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 66,
-          "results_read": 260,
-          "pages": 13
+          "status": "completed",
+          "channels": 109,
+          "results_read": 478,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 32,
-          "results_read": 212,
-          "pages": 11
+          "status": "completed",
+          "channels": 63,
+          "results_read": 422,
+          "pages": 23
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 75,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 58,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "한의원",
