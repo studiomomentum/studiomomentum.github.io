@@ -2,30 +2,28 @@
   "sweep_id": "full-20260927-429",
   "region": "수원",
   "phase": "search",
-  "updated_at": "2026-09-27T12:28:34.723228+00:00",
+  "updated_at": "2026-09-27T12:29:34.981086+00:00",
   "run_id": "36319007549",
   "active_queries": [
-    "수원 노무사",
-    "수원 노무법인",
-    "수원 법무사",
-    "수원 변리사"
+    "수원 심리상담센터",
+    "수원 필라테스"
   ],
-  "queries_completed": 29,
-  "region_queries_completed": 29,
-  "region_channels": 3308,
-  "region_observed": 2099,
-  "channels_discovered": 4586,
+  "queries_completed": 37,
+  "region_queries_completed": 37,
+  "region_channels": 4061,
+  "region_observed": 2168,
+  "channels_discovered": 5270,
   "channels_observed": 3377,
-  "search_pages": 332,
-  "search_results_read": 15873,
+  "search_pages": 477,
+  "search_results_read": 18524,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 29,
+      "queries_completed": 37,
       "queries_total": 39,
-      "channels": 3308,
-      "observed": 2099,
+      "channels": 4061,
+      "observed": 2168,
       "observation_errors": 128,
       "classified_at": null,
       "jobs": [
@@ -234,73 +232,73 @@
         },
         {
           "name": "노무사",
-          "status": "running",
+          "status": "completed",
           "channels": 229,
           "results_read": 499,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 209,
-          "results_read": 460,
-          "pages": 23
+          "status": "completed",
+          "channels": 212,
+          "results_read": 466,
+          "pages": 25
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 91,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 96,
+          "results_read": 461,
+          "pages": 25
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 130,
-          "results_read": 399,
-          "pages": 20
+          "status": "completed",
+          "channels": 156,
+          "results_read": 461,
+          "pages": 25
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 72,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 204,
+          "results_read": 286,
+          "pages": 16
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 266,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 21,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 247,
+          "results_read": 500,
+          "pages": 26
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 73,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 139,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 69,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 254,
+          "results_read": 491,
+          "pages": 25
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 92,
+          "results_read": 287,
+          "pages": 15
         }
       ]
     },
