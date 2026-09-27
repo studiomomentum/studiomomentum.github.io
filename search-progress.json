@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:54:09.178008+00:00",
+  "updated_at": "2026-09-27T16:55:11.348836+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "서초 비뇨기과",
@@ -13,26 +13,37 @@
     "region": "서초"
   },
   "classification": {
-    "total": 26228,
-    "processed": 8427,
-    "pending": 17801,
-    "processing": 0,
+    "total": 26278,
+    "processed": 8445,
+    "pending": 17831,
+    "processing": 2,
     "eligible": 120,
-    "review": 5719,
-    "rejected": 2575,
+    "review": 5732,
+    "rejected": 2580,
     "errors": 10,
     "ready": 79,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCLVXJxJ5e6UjyUKH870uK8A",
+        "name": "부동산전문가사업단(이진우단장)",
+        "query": "동탄 감정평가사"
+      },
+      {
+        "channel_id": "UC9klmSoHeXQdAdxa7q-KOUg",
+        "name": "맞춤경매",
+        "query": "동탄 감정평가사"
+      }
+    ]
   },
   "queries_completed": 386,
   "region_queries_completed": 26,
-  "region_channels": 3611,
-  "region_observed": 1283,
-  "channels_discovered": 26227,
-  "channels_observed": 8417,
-  "search_pages": 8686,
-  "search_results_read": 176793,
+  "region_channels": 3708,
+  "region_observed": 1313,
+  "channels_discovered": 26277,
+  "channels_observed": 8435,
+  "search_pages": 8714,
+  "search_results_read": 177347,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4287,
+      "observed": 4305,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4293,
+      "classified": 4311,
       "classification_errors": 6,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1769,
+      "observed": 1770,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1771,
+      "classified": 1772,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1678,
+      "observed": 1680,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1678,
+      "classified": 1680,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2592,
+      "observed": 2598,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2594,
+      "classified": 2600,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1976,
+      "observed": 1984,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1976,
+      "classified": 1984,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2154,
+      "observed": 2155,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2156,
+      "classified": 2157,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1501,
+      "observed": 1505,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1502,
+      "classified": 1506,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2384,10 +2395,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1649,
+      "observed": 1653,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1652,
+      "classified": 1656,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2676,11 +2687,11 @@
       "name": "서초",
       "queries_completed": 26,
       "queries_total": 40,
-      "channels": 3611,
-      "observed": 1283,
+      "channels": 3708,
+      "observed": 1313,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1284,
+      "classified": 1314,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2868,16 +2879,16 @@
         {
           "name": "비뇨기과",
           "status": "running",
-          "channels": 32,
-          "results_read": 80,
-          "pages": 4
+          "channels": 61,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "동물병원",
           "status": "running",
-          "channels": 50,
-          "results_read": 77,
-          "pages": 4
+          "channels": 137,
+          "results_read": 351,
+          "pages": 18
         },
         {
           "name": "의원",
