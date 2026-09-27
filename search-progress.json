@@ -2,37 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:15:22.000277+00:00",
+  "updated_at": "2026-09-27T16:16:24.191942+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "강남 의원",
-    "강남 노무사"
+    "강남 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24410,
-    "processed": 7815,
-    "pending": 16595,
-    "processing": 0,
+    "total": 24465,
+    "processed": 7832,
+    "pending": 16632,
+    "processing": 1,
     "eligible": 118,
-    "review": 5283,
-    "rejected": 2405,
+    "review": 5298,
+    "rejected": 2407,
     "errors": 6,
     "ready": 77,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCdlOXR8f4nfMT07mQFrue-g",
+        "name": "최고의수의사들",
+        "query": "동탄 동물병원"
+      }
+    ]
   },
-  "queries_completed": 348,
-  "region_queries_completed": 28,
-  "region_channels": 3936,
-  "region_observed": 1337,
-  "channels_discovered": 24409,
-  "channels_observed": 7809,
-  "search_pages": 7733,
-  "search_results_read": 157113,
+  "queries_completed": 349,
+  "region_queries_completed": 29,
+  "region_channels": 4014,
+  "region_observed": 1358,
+  "channels_discovered": 24464,
+  "channels_observed": 7826,
+  "search_pages": 7761,
+  "search_results_read": 157632,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3679,
+      "observed": 3696,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3681,
+      "classified": 3698,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1711,
+      "observed": 1713,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1713,
+      "classified": 1715,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1626,
+      "observed": 1628,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1626,
+      "classified": 1628,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1505,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1868,
+      "observed": 1870,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1868,
+      "classified": 1870,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1426,
+      "observed": 1427,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1427,
+      "classified": 1428,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,13 +2387,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 28,
+      "queries_completed": 29,
       "queries_total": 40,
-      "channels": 3936,
-      "observed": 1337,
+      "channels": 4014,
+      "observed": 1358,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1339,
+      "classified": 1360,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2589,23 +2595,23 @@
         {
           "name": "의원",
           "status": "running",
-          "channels": 93,
-          "results_read": 318,
-          "pages": 16
+          "channels": 215,
+          "results_read": 588,
+          "pages": 30
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 16,
-          "results_read": 79,
-          "pages": 4
+          "status": "completed",
+          "channels": 27,
+          "results_read": 148,
+          "pages": 9
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 1,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 5,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "법무사",
