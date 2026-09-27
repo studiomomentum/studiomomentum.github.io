@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:33:40.164682+00:00",
+  "updated_at": "2026-09-27T16:34:42.654836+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "서초 치과",
@@ -13,26 +13,37 @@
     "region": "서초"
   },
   "classification": {
-    "total": 25247,
-    "processed": 8111,
-    "pending": 17136,
-    "processing": 0,
+    "total": 25295,
+    "processed": 8127,
+    "pending": 17166,
+    "processing": 2,
     "eligible": 120,
-    "review": 5492,
-    "rejected": 2490,
+    "review": 5503,
+    "rejected": 2495,
     "errors": 6,
     "ready": 79,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCBsjscyu5h_FQEOklI919xA",
+        "name": "화성맨 전성균",
+        "query": "동탄 의원"
+      },
+      {
+        "channel_id": "UCz3Cg0Wu8_3rhFYeG5lXiYg",
+        "name": "이탄희TV",
+        "query": "동탄 의원"
+      }
+    ]
   },
   "queries_completed": 366,
   "region_queries_completed": 6,
-  "region_channels": 1188,
-  "region_observed": 592,
-  "channels_discovered": 25246,
-  "channels_observed": 8105,
-  "search_pages": 8198,
-  "search_results_read": 165846,
+  "region_channels": 1304,
+  "region_observed": 624,
+  "channels_discovered": 25294,
+  "channels_observed": 8121,
+  "search_pages": 8224,
+  "search_results_read": 166363,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3975,
+      "observed": 3991,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3977,
+      "classified": 3993,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1747,
+      "observed": 1749,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1749,
+      "classified": 1751,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1212,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2564,
+      "observed": 2565,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2566,
+      "classified": 2567,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1913,
+      "observed": 1916,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1913,
+      "classified": 1916,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1464,
+      "observed": 1465,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1465,
+      "classified": 1466,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2676,11 +2687,11 @@
       "name": "서초",
       "queries_completed": 6,
       "queries_total": 40,
-      "channels": 1188,
-      "observed": 592,
+      "channels": 1304,
+      "observed": 624,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 592,
+      "classified": 624,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2728,16 +2739,16 @@
         {
           "name": "치과",
           "status": "running",
-          "channels": 128,
-          "results_read": 216,
-          "pages": 11
+          "channels": 191,
+          "results_read": 476,
+          "pages": 24
         },
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 72,
-          "results_read": 140,
-          "pages": 7
+          "channels": 172,
+          "results_read": 397,
+          "pages": 20
         },
         {
           "name": "한의원",
