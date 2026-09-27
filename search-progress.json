@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:11:52.308422+00:00",
+  "updated_at": "2026-09-27T22:12:53.501270+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14465,
-    "pending": 13472,
+    "processed": 14487,
+    "pending": 13450,
     "processing": 1,
     "eligible": 163,
-    "review": 10116,
-    "rejected": 4155,
+    "review": 10136,
+    "rejected": 4157,
     "errors": 28,
     "ready": 117,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCukEBqgp_pY3VmyWV_MPxXg",
-        "name": "몸짱 약사 민재원",
-        "query": "용인 재활의학과"
+        "channel_id": "UC-hWrQVKVbykbDmYvLErmXg",
+        "name": "케이미래의원",
+        "query": "용인 내과의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1699,
+  "region_observed": 1702,
   "channels_discovered": 27937,
-  "channels_observed": 14437,
+  "channels_observed": 14459,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1215,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3839,
+      "observed": 3861,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3841,
+      "classified": 3863,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2657,
+      "observed": 2658,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2660,
+      "classified": 2661,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2571,
+      "observed": 2576,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2573,
+      "classified": 2578,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1930,
+      "observed": 1933,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1933,
+      "classified": 1936,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2067,
+      "observed": 2069,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2072,
+      "classified": 2074,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1924,
+      "observed": 1926,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1925,
+      "classified": 1927,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1699,
+      "observed": 1702,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1700,
+      "classified": 1703,
       "classification_errors": 1,
       "jobs": [
         {
