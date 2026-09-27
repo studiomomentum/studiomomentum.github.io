@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:45:39.324634+00:00",
+  "updated_at": "2026-09-27T22:46:40.505943+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15122,
-    "pending": 12814,
+    "processed": 15136,
+    "pending": 12800,
     "processing": 2,
-    "eligible": 166,
-    "review": 10590,
-    "rejected": 4333,
+    "eligible": 167,
+    "review": 10601,
+    "rejected": 4335,
     "errors": 30,
     "ready": 119,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCR-JTovFR1-A7ftesVRBtTA",
-        "name": "Study baromiter",
+        "channel_id": "UCrxnP2mLFkRIQfw6KalVJGQ",
+        "name": "마이바씨의 회계이야기",
         "query": "화성 세무회계"
       },
       {
-        "channel_id": "UChyJGMy4FTL5BPFwrFKRl9A",
-        "name": "글로벌아카데미",
-        "query": "화성 세무회계"
+        "channel_id": "UCgFQod4mcKK2yvfugd1GkRQ",
+        "name": "법무법인(유한) 디엘지ㅣDLG Law LLC",
+        "query": "화성 변호사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1749,
+  "region_observed": 1750,
   "channels_discovered": 27937,
-  "channels_observed": 15092,
+  "channels_observed": 15106,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2837,
+      "observed": 2851,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2841,
+      "classified": 2855,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2122,
+      "observed": 2123,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2127,
+      "classified": 2128,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1960,
+      "observed": 1961,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1961,
+      "classified": 1962,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1749,
+      "observed": 1750,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1750,
+      "classified": 1751,
       "classification_errors": 1,
       "jobs": [
         {
