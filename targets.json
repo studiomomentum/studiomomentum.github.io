@@ -3005,8 +3005,8 @@
     "channel_url": "https://www.youtube.com/channel/UC_u9Ld9puqWmw4dAi47nEWQ",
     "region": "수원",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 15:15:05",
     "views": "구독자 69900 / 최근 롱폼 10편 중앙값 11500.0회",
     "point": "수원 정형외과 채널의 최근 롱폼 10편 중앙값 11500.0회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "50",
@@ -3722,30 +3722,29 @@
   "_search_db_stats": {
     "schema_version": 2,
     "total_candidates": 2470,
-    "discovered_count": 2,
-    "review_count": 2150,
+    "discovered_count": 0,
+    "review_count": 2152,
     "rejected_count": 188,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 38,
+    "ready_count": 37,
     "status_counts": {
-      "REVIEW": 2150,
+      "REVIEW": 2152,
       "REJECTED": 188,
       "REGISTERED": 122,
       "DUPLICATE": 6,
-      "ERROR": 2,
-      "DISCOVERED": 2
+      "ERROR": 2
     },
-    "evidence_count": 2466,
+    "evidence_count": 2468,
     "score_grade_counts": {
-      "MEDIUM": 648,
-      "UNSCORED": 284,
-      "LOW": 598,
-      "HIGH": 791,
-      "VERY LOW": 149
+      "MEDIUM": 664,
+      "UNSCORED": 213,
+      "LOW": 612,
+      "HIGH": 827,
+      "VERY LOW": 154
     },
-    "updated_at": "2026-09-27T05:50:38.119442+00:00"
+    "updated_at": "2026-09-27T06:20:52.387583+00:00"
   }
 }
