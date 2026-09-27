@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:09:33.504080+00:00",
+  "updated_at": "2026-09-27T17:10:35.444540+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 세무사",
@@ -13,37 +13,32 @@
     "region": "송파"
   },
   "classification": {
-    "total": 26704,
-    "processed": 8653,
-    "pending": 18049,
-    "processing": 2,
+    "total": 26716,
+    "processed": 8670,
+    "pending": 18045,
+    "processing": 1,
     "eligible": 120,
-    "review": 5894,
-    "rejected": 2626,
+    "review": 5907,
+    "rejected": 2630,
     "errors": 10,
     "ready": 79,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCBTpG1p5bwQZANeJXrd8bTQ",
-        "name": "지미라이프jimeelife",
-        "query": "동탄 필라테스"
-      },
-      {
-        "channel_id": "UCk1Yy37mDdkhNZvns5VCl4A",
-        "name": "BOM Pilates 봄필라테스 by PAI인스티튜트",
+        "channel_id": "UCWYAZmSZ5JbW_YV_j1BbSbA",
+        "name": "DALFIT",
         "query": "동탄 필라테스"
       }
     ]
   },
   "queries_completed": 400,
   "region_queries_completed": 0,
-  "region_channels": 391,
-  "region_observed": 326,
-  "channels_discovered": 26703,
-  "channels_observed": 8643,
-  "search_pages": 9069,
-  "search_results_read": 183987,
+  "region_channels": 446,
+  "region_observed": 347,
+  "channels_discovered": 26715,
+  "channels_observed": 8660,
+  "search_pages": 9093,
+  "search_results_read": 184461,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4513,
+      "observed": 4530,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4519,
+      "classified": 4536,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1789,
+      "observed": 1790,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1791,
+      "classified": 1792,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1548,
+      "observed": 1552,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1549,
+      "classified": 1553,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2395,10 +2390,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1672,
+      "observed": 1676,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1675,
+      "classified": 1679,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2688,10 +2683,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1609,
+      "observed": 1610,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1610,
+      "classified": 1611,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2980,26 +2975,26 @@
       "name": "송파",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 391,
-      "observed": 326,
+      "channels": 446,
+      "observed": 347,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 326,
+      "classified": 347,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
           "status": "running",
-          "channels": 103,
-          "results_read": 239,
-          "pages": 12
+          "channels": 149,
+          "results_read": 473,
+          "pages": 24
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 66,
-          "results_read": 235,
-          "pages": 12
+          "channels": 97,
+          "results_read": 475,
+          "pages": 24
         },
         {
           "name": "세무회계",
