@@ -1,59 +1,47 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "수원",
+  "region": "",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:51:21.631862+00:00",
-  "run_id": "36320123849",
-  "active_queries": [
-    "수원 손해사정사",
-    "수원 건축사사무소"
-  ],
+  "updated_at": "2026-09-27T12:55:15.486911+00:00",
+  "run_id": "36320569240",
+  "active_queries": [],
   "search_stage": {
-    "status": "running",
-    "region": "수원"
+    "status": "starting",
+    "region": ""
   },
   "classification": {
-    "total": 4993,
-    "processed": 3509,
-    "pending": 1482,
-    "processing": 2,
+    "total": 5386,
+    "processed": 3480,
+    "pending": 1906,
+    "processing": 0,
     "eligible": 85,
-    "review": 2337,
-    "rejected": 1046,
-    "errors": 41,
+    "review": 2347,
+    "rejected": 1048,
+    "errors": 0,
     "ready": 47,
-    "status": "running",
-    "active": [
-      {
-        "channel_id": "UC3B7OjKl4AXOCmM_PUC3pig",
-        "name": "수원중개여왕"
-      },
-      {
-        "channel_id": "UCuYj258Puu9I9KsbTbbRN3A",
-        "name": "박용덕 박사의 부동산여행"
-      }
-    ]
+    "status": "starting",
+    "active": []
   },
-  "queries_completed": 35,
-  "region_queries_completed": 35,
-  "region_channels": 3741,
-  "region_observed": 2216,
-  "channels_discovered": 4988,
-  "channels_observed": 3468,
-  "search_pages": 405,
-  "search_results_read": 17154,
+  "queries_completed": 39,
+  "region_queries_completed": 0,
+  "region_channels": 0,
+  "region_observed": 0,
+  "channels_discovered": 5381,
+  "channels_observed": 3480,
+  "search_pages": 471,
+  "search_results_read": 18354,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 35,
+      "queries_completed": 39,
       "queries_total": 39,
-      "channels": 3741,
-      "observed": 2216,
-      "observation_errors": 43,
+      "channels": 4176,
+      "observed": 2270,
+      "observation_errors": 4,
       "classified_at": null,
-      "classified": 2257,
-      "classification_errors": 41,
+      "classified": 2270,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -247,21 +235,21 @@
         {
           "name": "동물병원",
           "status": "completed",
-          "channels": 253,
+          "channels": 255,
           "results_read": 525,
           "pages": 28
         },
         {
           "name": "의원",
           "status": "completed",
-          "channels": 214,
+          "channels": 219,
           "results_read": 558,
           "pages": 29
         },
         {
           "name": "노무사",
           "status": "completed",
-          "channels": 244,
+          "channels": 266,
           "results_read": 497,
           "pages": 26
         },
@@ -275,7 +263,7 @@
         {
           "name": "법무사",
           "status": "completed",
-          "channels": 96,
+          "channels": 97,
           "results_read": 466,
           "pages": 25
         },
@@ -289,44 +277,44 @@
         {
           "name": "관세사",
           "status": "completed",
-          "channels": 203,
+          "channels": 204,
           "results_read": 285,
           "pages": 16
         },
         {
           "name": "감정평가사",
           "status": "completed",
-          "channels": 261,
+          "channels": 297,
           "results_read": 498,
           "pages": 26
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 136,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 248,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 74,
-          "results_read": 98,
-          "pages": 5
+          "status": "completed",
+          "channels": 139,
+          "results_read": 144,
+          "pages": 9
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 69,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 255,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 137,
+          "results_read": 486,
+          "pages": 26
         }
       ]
     },
@@ -2054,8 +2042,8 @@
       "observed": 237,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 238,
-      "classification_errors": 1,
+      "classified": 237,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
