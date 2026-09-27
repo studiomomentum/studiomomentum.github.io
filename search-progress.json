@@ -2,37 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:09:09.513133+00:00",
+  "updated_at": "2026-09-27T16:10:11.340395+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 재활의학과",
-    "강남 마취통증의학과"
+    "강남 마취통증의학과",
+    "강남 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24101,
-    "processed": 7713,
-    "pending": 16388,
-    "processing": 0,
+    "total": 24138,
+    "processed": 7729,
+    "pending": 16407,
+    "processing": 2,
     "eligible": 118,
-    "review": 5225,
-    "rejected": 2361,
+    "review": 5233,
+    "rejected": 2369,
     "errors": 6,
     "ready": 77,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCSBXnIvayfwR4TsmZCTOyKA",
+        "name": "라보라 rabora",
+        "query": "동탄 산부인과"
+      },
+      {
+        "channel_id": "UCsYL8OySLhSYDCGLDaCs6GA",
+        "name": "미영 의사",
+        "query": "동탄 산부인과"
+      }
+    ]
   },
-  "queries_completed": 342,
-  "region_queries_completed": 22,
-  "region_channels": 3314,
-  "region_observed": 1150,
-  "channels_discovered": 24100,
-  "channels_observed": 7707,
-  "search_pages": 7575,
-  "search_results_read": 154143,
+  "queries_completed": 343,
+  "region_queries_completed": 23,
+  "region_channels": 3396,
+  "region_observed": 1184,
+  "channels_discovered": 24137,
+  "channels_observed": 7723,
+  "search_pages": 7603,
+  "search_results_read": 154667,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3577,
+      "observed": 3593,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3579,
+      "classified": 3595,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1708,
+      "observed": 1710,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1710,
+      "classified": 1712,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1863,
+      "observed": 1864,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1863,
+      "classified": 1864,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1416,
+      "observed": 1418,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1417,
+      "classified": 1419,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 22,
+      "queries_completed": 23,
       "queries_total": 40,
-      "channels": 3314,
-      "observed": 1150,
+      "channels": 3396,
+      "observed": 1184,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1152,
+      "classified": 1186,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2546,24 +2557,24 @@
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 126,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 171,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
           "status": "running",
-          "channels": 74,
-          "results_read": 198,
-          "pages": 10
+          "channels": 122,
+          "results_read": 472,
+          "pages": 24
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 66,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "산부인과",
