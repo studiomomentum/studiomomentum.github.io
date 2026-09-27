@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:09:33.519963+00:00",
+  "updated_at": "2026-09-27T13:10:35.123085+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 법률사무소",
-    "오산 치과"
+    "오산 치과의원",
+    "오산 한의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 9332,
-    "processed": 4044,
-    "pending": 5286,
-    "processing": 2,
+    "total": 9456,
+    "processed": 4086,
+    "pending": 5370,
+    "processing": 0,
     "eligible": 89,
-    "review": 2742,
-    "rejected": 1209,
+    "review": 2771,
+    "rejected": 1222,
     "errors": 4,
     "ready": 50,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCHbAlDk1ZVSmZojcbpNzzRA",
-        "name": "비움비건축"
-      },
-      {
-        "channel_id": "UCDGZRwAz2NHInm3cVRHRcSw",
-        "name": "전지적 건축사 시점"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 83,
-  "region_queries_completed": 5,
-  "region_channels": 1006,
-  "region_observed": 424,
-  "channels_discovered": 9329,
-  "channels_observed": 4040,
-  "search_pages": 1450,
-  "search_results_read": 37925,
+  "queries_completed": 85,
+  "region_queries_completed": 7,
+  "region_channels": 1259,
+  "region_observed": 503,
+  "channels_discovered": 9453,
+  "channels_observed": 4082,
+  "search_pages": 1514,
+  "search_results_read": 39147,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +40,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2830,
+      "observed": 2872,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2834,
+      "classified": 2876,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1021,
+      "observed": 1029,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1022,
+      "classified": 1030,
       "classification_errors": 1,
       "jobs": [
         {
@@ -618,13 +609,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 5,
+      "queries_completed": 7,
       "queries_total": 39,
-      "channels": 1006,
-      "observed": 424,
+      "channels": 1259,
+      "observed": 503,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 424,
+      "classified": 503,
       "classification_errors": 0,
       "jobs": [
         {
@@ -664,31 +655,31 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 103,
-          "results_read": 177,
-          "pages": 9
+          "status": "completed",
+          "channels": 270,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 30,
-          "results_read": 100,
-          "pages": 5
+          "status": "completed",
+          "channels": 114,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 56,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 64,
+          "results_read": 219,
+          "pages": 11
         },
         {
           "name": "한방병원",
