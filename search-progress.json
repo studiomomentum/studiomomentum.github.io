@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:27:46.918163+00:00",
+  "updated_at": "2026-09-27T13:28:48.371679+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 치과",
-    "평택 치과의원"
+    "평택 한의원",
+    "평택 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 11803,
-    "processed": 4550,
-    "pending": 7251,
+    "total": 11929,
+    "processed": 4576,
+    "pending": 7351,
     "processing": 2,
-    "eligible": 91,
-    "review": 3073,
-    "rejected": 1381,
+    "eligible": 92,
+    "review": 3087,
+    "rejected": 1392,
     "errors": 4,
     "ready": 52,
     "status": "running",
     "active": [
       {
-        "channel_id": "UClyjOiQud5mgwKwBJ4rhrwg",
-        "name": "마케팅기획 SearchHarmony"
+        "channel_id": "UCkVWZSQWdUA4FvnfOf4sUJw",
+        "name": "법무법인 정률 형사특별팀"
       },
       {
-        "channel_id": "UC9HoVCOceB9SRjEXkjs0wFg",
-        "name": "닥터옥수수"
+        "channel_id": "UC-zK8H55eEVjAMv8qgmo76g",
+        "name": "자유로 경매 NPL"
       }
     ]
   },
-  "queries_completed": 123,
-  "region_queries_completed": 6,
-  "region_channels": 1272,
-  "region_observed": 507,
-  "channels_discovered": 11800,
-  "channels_observed": 4546,
-  "search_pages": 2287,
-  "search_results_read": 53414,
+  "queries_completed": 125,
+  "region_queries_completed": 8,
+  "region_channels": 1488,
+  "region_observed": 556,
+  "channels_discovered": 11927,
+  "channels_observed": 4572,
+  "search_pages": 2334,
+  "search_results_read": 54298,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3336,
+      "observed": 3362,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3340,
+      "classified": 3366,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1105,
+      "observed": 1109,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1106,
+      "classified": 1110,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1159,
+      "observed": 1163,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1161,
+      "classified": 1165,
       "classification_errors": 2,
       "jobs": [
         {
@@ -904,13 +904,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 6,
+      "queries_completed": 8,
       "queries_total": 39,
-      "channels": 1272,
-      "observed": 507,
+      "channels": 1488,
+      "observed": 556,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 507,
+      "classified": 556,
       "classification_errors": 0,
       "jobs": [
         {
@@ -957,31 +957,31 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 268,
-          "results_read": 460,
-          "pages": 23
+          "status": "completed",
+          "channels": 286,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 37,
-          "results_read": 80,
-          "pages": 4
+          "status": "completed",
+          "channels": 249,
+          "results_read": 475,
+          "pages": 25
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 81,
+          "results_read": 398,
+          "pages": 20
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "학원",
