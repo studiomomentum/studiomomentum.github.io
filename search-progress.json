@@ -2,43 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:22:24.277668+00:00",
+  "updated_at": "2026-09-27T15:23:26.552360+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 치과의원",
-    "판교 한의원"
+    "판교 한방병원",
+    "판교 학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 20264,
-    "processed": 6938,
-    "pending": 13325,
-    "processing": 1,
-    "eligible": 113,
-    "review": 4698,
-    "rejected": 2121,
+    "total": 20361,
+    "processed": 6955,
+    "pending": 13404,
+    "processing": 2,
+    "eligible": 112,
+    "review": 4711,
+    "rejected": 2125,
     "errors": 5,
     "ready": 71,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCMmWT0Gn_Tfb1HGoXw3M5Ug",
-        "name": "닥터모네의 피부르박물관",
-        "query": "동탄 피부과"
+        "channel_id": "UCzjG8r9JZ2-d5l9ieW2qY0w",
+        "name": "가넷성형외과",
+        "query": "동탄 성형외과"
+      },
+      {
+        "channel_id": "UCUfR_H4bcTbhnOkZ54438mQ",
+        "name": "F5_에프오TV",
+        "query": "동탄 성형외과"
       }
     ]
   },
-  "queries_completed": 287,
-  "region_queries_completed": 7,
-  "region_channels": 1401,
-  "region_observed": 657,
-  "channels_discovered": 20263,
-  "channels_observed": 6933,
-  "search_pages": 6267,
-  "search_results_read": 129759,
+  "queries_completed": 289,
+  "region_queries_completed": 9,
+  "region_channels": 1608,
+  "region_observed": 717,
+  "channels_discovered": 20360,
+  "channels_observed": 6950,
+  "search_pages": 6299,
+  "search_results_read": 130347,
   "query_errors": {},
   "regions": [
     {
@@ -339,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2803,
+      "observed": 2820,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2804,
+      "classified": 2821,
       "classification_errors": 1,
       "jobs": [
         {
@@ -632,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1577,
+      "observed": 1581,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1579,
+      "classified": 1583,
       "classification_errors": 2,
       "jobs": [
         {
@@ -925,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1539,
+      "observed": 1540,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1539,
+      "classified": 1540,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1804,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2028,
+      "observed": 2029,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2030,
+      "classified": 2031,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,13 +2099,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 7,
+      "queries_completed": 9,
       "queries_total": 40,
-      "channels": 1401,
-      "observed": 657,
+      "channels": 1608,
+      "observed": 717,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 658,
+      "classified": 718,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2154,31 +2159,31 @@
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 131,
-          "results_read": 460,
-          "pages": 23
+          "status": "completed",
+          "channels": 137,
+          "results_read": 499,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 86,
-          "results_read": 238,
-          "pages": 12
+          "status": "completed",
+          "channels": 219,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 153,
+          "results_read": 254,
+          "pages": 13
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 15,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "입시학원",
