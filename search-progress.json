@@ -1,35 +1,35 @@
 {
   "sweep_id": "full-20260927-429",
   "region": "",
-  "phase": "parallel",
-  "updated_at": "2026-09-27T13:24:10.809794+00:00",
+  "phase": "incomplete",
+  "updated_at": "2026-09-27T13:24:31.416982+00:00",
   "run_id": "36322224559",
   "active_queries": [],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "incomplete",
+    "region": "평택"
   },
   "classification": {
-    "total": 11554,
-    "processed": 4500,
-    "pending": 7054,
+    "total": 11573,
+    "processed": 4502,
+    "pending": 7071,
     "processing": 0,
     "eligible": 92,
-    "review": 3041,
-    "rejected": 1363,
+    "review": 3042,
+    "rejected": 1364,
     "errors": 4,
     "ready": 53,
-    "status": "starting",
+    "status": "incomplete",
     "active": []
   },
   "queries_completed": 119,
   "region_queries_completed": 0,
   "region_channels": 0,
   "region_observed": 0,
-  "channels_discovered": 11551,
-  "channels_observed": 4496,
-  "search_pages": 2194,
-  "search_results_read": 51702,
+  "channels_discovered": 11570,
+  "channels_observed": 4498,
+  "search_pages": 2200,
+  "search_results_read": 51809,
   "query_errors": {},
   "regions": [
     {
@@ -37,10 +37,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3286,
+      "observed": 3288,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3290,
+      "classified": 3292,
       "classification_errors": 4,
       "jobs": [
         {
@@ -323,10 +323,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1098,
+      "observed": 1099,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1099,
+      "classified": 1100,
       "classification_errors": 1,
       "jobs": [
         {
@@ -894,11 +894,11 @@
       "name": "평택",
       "queries_completed": 2,
       "queries_total": 39,
-      "channels": 791,
-      "observed": 380,
+      "channels": 830,
+      "observed": 388,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 380,
+      "classified": 388,
       "classification_errors": 0,
       "jobs": [
         {
@@ -918,16 +918,16 @@
         {
           "name": "세무회계",
           "status": "pending",
-          "channels": 118,
-          "results_read": 217,
-          "pages": 11
+          "channels": 149,
+          "results_read": 264,
+          "pages": 14
         },
         {
           "name": "변호사",
           "status": "pending",
-          "channels": 60,
-          "results_read": 211,
-          "pages": 11
+          "channels": 86,
+          "results_read": 271,
+          "pages": 14
         },
         {
           "name": "법무법인",
