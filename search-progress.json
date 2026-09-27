@@ -1,28 +1,47 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "수원",
-  "phase": "observe",
-  "updated_at": "2026-09-27T12:37:44.679913+00:00",
-  "run_id": "36319007549",
+  "region": "",
+  "phase": "parallel",
+  "updated_at": "2026-09-27T12:47:17.528572+00:00",
+  "run_id": "36320123849",
   "active_queries": [],
-  "queries_completed": 39,
-  "region_queries_completed": 39,
-  "region_channels": 4103,
-  "region_observed": 2656,
-  "channels_discovered": 5310,
-  "channels_observed": 3863,
-  "search_pages": 489,
-  "search_results_read": 18723,
+  "search_stage": {
+    "status": "starting",
+    "region": ""
+  },
+  "classification": {
+    "total": 4102,
+    "processed": 3377,
+    "pending": 725,
+    "processing": 0,
+    "eligible": 83,
+    "review": 2275,
+    "rejected": 1019,
+    "errors": 0,
+    "ready": 16,
+    "status": "starting",
+    "active": []
+  },
+  "queries_completed": 25,
+  "region_queries_completed": 0,
+  "region_channels": 0,
+  "region_observed": 0,
+  "channels_discovered": 4096,
+  "channels_observed": 3377,
+  "search_pages": 131,
+  "search_results_read": 11992,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 39,
+      "queries_completed": 25,
       "queries_total": 39,
-      "channels": 4103,
-      "observed": 2656,
-      "observation_errors": 4,
+      "channels": 2750,
+      "observed": 2031,
+      "observation_errors": 128,
       "classified_at": null,
+      "classified": 2031,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -201,101 +220,101 @@
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 193,
-          "results_read": 506,
-          "pages": 27
+          "status": "pending",
+          "channels": 155,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 90,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 66,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 250,
-          "results_read": 527,
-          "pages": 28
+          "status": "pending",
+          "channels": 131,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 205,
-          "results_read": 561,
-          "pages": 30
+          "status": "pending",
+          "channels": 62,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 229,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 9,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 212,
-          "results_read": 466,
-          "pages": 25
+          "status": "pending",
+          "channels": 20,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 96,
-          "results_read": 461,
-          "pages": 25
+          "status": "pending",
+          "channels": 34,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 156,
-          "results_read": 461,
-          "pages": 25
+          "status": "pending",
+          "channels": 11,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 204,
-          "results_read": 286,
-          "pages": 16
+          "status": "pending",
+          "channels": 72,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 266,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 8,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 247,
-          "results_read": 500,
-          "pages": 26
+          "status": "pending",
+          "channels": 21,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 139,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 73,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 254,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 69,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 135,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 8,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
@@ -307,6 +326,8 @@
       "observed": 267,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 267,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -591,6 +612,8 @@
       "observed": 237,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 237,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -875,6 +898,8 @@
       "observed": 237,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 237,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -1159,6 +1184,8 @@
       "observed": 260,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 260,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -1443,6 +1470,8 @@
       "observed": 278,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 278,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -1727,6 +1756,8 @@
       "observed": 238,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 238,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -2011,6 +2042,8 @@
       "observed": 237,
       "observation_errors": 1,
       "classified_at": null,
+      "classified": 237,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -2295,6 +2328,8 @@
       "observed": 258,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 258,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -2579,6 +2614,8 @@
       "observed": 291,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 291,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -2863,6 +2900,8 @@
       "observed": 281,
       "observation_errors": 0,
       "classified_at": null,
+      "classified": 281,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
