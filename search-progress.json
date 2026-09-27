@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:11:13.463164+00:00",
+  "updated_at": "2026-09-27T16:12:15.813278+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 내과의원",
-    "강남 산부인과"
+    "강남 산부인과",
+    "강남 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24179,
-    "processed": 7747,
-    "pending": 16430,
+    "total": 24213,
+    "processed": 7761,
+    "pending": 16450,
     "processing": 2,
     "eligible": 118,
-    "review": 5245,
-    "rejected": 2375,
+    "review": 5253,
+    "rejected": 2381,
     "errors": 6,
     "ready": 77,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCwWZBKbQ6JONDOPJQiNJhvg",
-        "name": "쏘키 SoKee",
+        "channel_id": "UC20XuBIULFme-Lp4rgyO-SQ",
+        "name": "예예랑",
         "query": "동탄 산부인과"
       },
       {
-        "channel_id": "UClemszPF495bc4y7iD-J6CQ",
-        "name": "Beeneene ",
+        "channel_id": "UChT_sjSRg_K1FHL8hr3G71A",
+        "name": "다가치하우스 ONENESSHOUSE",
         "query": "동탄 산부인과"
       }
     ]
   },
-  "queries_completed": 344,
-  "region_queries_completed": 24,
-  "region_channels": 3490,
-  "region_observed": 1220,
-  "channels_discovered": 24178,
-  "channels_observed": 7741,
-  "search_pages": 7629,
-  "search_results_read": 155163,
+  "queries_completed": 345,
+  "region_queries_completed": 25,
+  "region_channels": 3572,
+  "region_observed": 1251,
+  "channels_discovered": 24212,
+  "channels_observed": 7755,
+  "search_pages": 7653,
+  "search_results_read": 155602,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3611,
+      "observed": 3625,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3613,
+      "classified": 3627,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1864,
+      "observed": 1865,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1864,
+      "classified": 1865,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2106,
+      "observed": 2108,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2108,
+      "classified": 2110,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1418,
+      "observed": 1421,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1419,
+      "classified": 1422,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 24,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 3490,
-      "observed": 1220,
+      "channels": 3572,
+      "observed": 1251,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1222,
+      "classified": 1253,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2571,24 +2571,24 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 166,
-          "results_read": 380,
-          "pages": 19
+          "status": "completed",
+          "channels": 220,
+          "results_read": 500,
+          "pages": 27
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 59,
-          "results_read": 218,
-          "pages": 11
+          "channels": 112,
+          "results_read": 457,
+          "pages": 23
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 28,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "동물병원",
