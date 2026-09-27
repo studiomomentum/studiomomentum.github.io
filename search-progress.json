@@ -2,58 +2,58 @@
   "sweep_id": "full-20260927-429",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:50:20.405407+00:00",
+  "updated_at": "2026-09-27T12:51:21.631862+00:00",
   "run_id": "36320123849",
   "active_queries": [
-    "수원 법무사",
-    "수원 변리사"
+    "수원 손해사정사",
+    "수원 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 4643,
+    "total": 4993,
     "processed": 3509,
-    "pending": 1132,
+    "pending": 1482,
     "processing": 2,
     "eligible": 85,
-    "review": 2319,
-    "rejected": 1037,
-    "errors": 68,
+    "review": 2337,
+    "rejected": 1046,
+    "errors": 41,
     "ready": 47,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCCVUVzKCo7GCsP1dTsyNfrg",
-        "name": "그사랑 말씀방"
+        "channel_id": "UC3B7OjKl4AXOCmM_PUC3pig",
+        "name": "수원중개여왕"
       },
       {
-        "channel_id": "UCHsli9PaXx_TmZxoLIOfEaw",
-        "name": "MTM Actor"
+        "channel_id": "UCuYj258Puu9I9KsbTbbRN3A",
+        "name": "박용덕 박사의 부동산여행"
       }
     ]
   },
-  "queries_completed": 31,
-  "region_queries_completed": 31,
-  "region_channels": 3359,
-  "region_observed": 2157,
-  "channels_discovered": 4638,
-  "channels_observed": 3441,
-  "search_pages": 339,
-  "search_results_read": 15952,
+  "queries_completed": 35,
+  "region_queries_completed": 35,
+  "region_channels": 3741,
+  "region_observed": 2216,
+  "channels_discovered": 4988,
+  "channels_observed": 3468,
+  "search_pages": 405,
+  "search_results_read": 17154,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 31,
+      "queries_completed": 35,
       "queries_total": 39,
-      "channels": 3359,
-      "observed": 2157,
-      "observation_errors": 70,
+      "channels": 3741,
+      "observed": 2216,
+      "observation_errors": 43,
       "classified_at": null,
-      "classified": 2225,
-      "classification_errors": 68,
+      "classified": 2257,
+      "classification_errors": 41,
       "jobs": [
         {
           "name": "세무사",
@@ -274,45 +274,45 @@
         },
         {
           "name": "법무사",
-          "status": "running",
+          "status": "completed",
           "channels": 96,
           "results_read": 466,
-          "pages": 24
+          "pages": 25
         },
         {
           "name": "변리사",
-          "status": "running",
+          "status": "completed",
           "channels": 158,
-          "results_read": 455,
-          "pages": 23
+          "results_read": 457,
+          "pages": 25
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 72,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 203,
+          "results_read": 285,
+          "pages": 16
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 261,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 21,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 136,
+          "results_read": 319,
+          "pages": 16
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 73,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 74,
+          "results_read": 98,
+          "pages": 5
         },
         {
           "name": "심리상담센터",
