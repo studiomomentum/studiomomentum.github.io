@@ -2,37 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:26:38.352208+00:00",
+  "updated_at": "2026-09-27T15:27:47.429942+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 어학원",
-    "판교 공인중개사"
+    "판교 공인중개사",
+    "판교 부동산중개"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 20674,
-    "processed": 7007,
-    "pending": 13667,
-    "processing": 0,
-    "eligible": 114,
-    "review": 4743,
-    "rejected": 2143,
+    "total": 20768,
+    "processed": 7027,
+    "pending": 13739,
+    "processing": 2,
+    "eligible": 115,
+    "review": 4755,
+    "rejected": 2150,
     "errors": 5,
-    "ready": 73,
+    "ready": 74,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCWPBP2sSbAdMxuTliPcANug",
+        "name": "금손닥터 이현주",
+        "query": "동탄 성형외과"
+      },
+      {
+        "channel_id": "UCYaXri7JS_2PqtYbE46DeHQ",
+        "name": "강남비율성형외과",
+        "query": "동탄 성형외과"
+      }
+    ]
   },
-  "queries_completed": 292,
-  "region_queries_completed": 12,
-  "region_channels": 2095,
-  "region_observed": 808,
-  "channels_discovered": 20673,
-  "channels_observed": 7002,
-  "search_pages": 6391,
-  "search_results_read": 132101,
+  "queries_completed": 293,
+  "region_queries_completed": 13,
+  "region_channels": 2305,
+  "region_observed": 880,
+  "channels_discovered": 20767,
+  "channels_observed": 7022,
+  "search_pages": 6427,
+  "search_results_read": 132787,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2872,
+      "observed": 2892,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2873,
+      "classified": 2893,
       "classification_errors": 1,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1588,
+      "observed": 1592,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1590,
+      "classified": 1594,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1546,
+      "observed": 1548,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1546,
+      "classified": 1548,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2512,
+      "observed": 2513,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2514,
+      "classified": 2515,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1753,
+      "observed": 1755,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1753,
+      "classified": 1755,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2088,13 +2099,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 12,
+      "queries_completed": 13,
       "queries_total": 40,
-      "channels": 2095,
-      "observed": 808,
+      "channels": 2305,
+      "observed": 880,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 809,
+      "classified": 881,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2183,24 +2194,24 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 190,
-          "results_read": 473,
-          "pages": 24
+          "status": "completed",
+          "channels": 199,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 54,
-          "results_read": 140,
-          "pages": 7
+          "channels": 250,
+          "results_read": 499,
+          "pages": 25
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 117,
+          "results_read": 312,
+          "pages": 16
         },
         {
           "name": "행정사",
