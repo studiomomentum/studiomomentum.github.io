@@ -1233,7 +1233,7 @@
   </style>
 <script src="assets/purify.min.js"></script>
 <script src="assets/momentum-runtime.js?v=20260927-archive"></script>
-<link rel="stylesheet" href="assets/admin-workspace.css?v=20260927-audit">
+<link rel="stylesheet" href="assets/admin-workspace.css?v=20260927-live-search">
 </head>
 <body>
 
@@ -1419,6 +1419,7 @@
       </div>
     </div>
 
+        <section id="searchProgress" hidden aria-label="서치 진행 상황"></section>
         <div id="prospectSummary" hidden></div>
         <div class="table-controls">
           <input type="text" id="searchInput" class="search-input" placeholder="업체·담당자·이메일 검색" aria-label="목록 검색" oninput="renderTable()">
@@ -2081,7 +2082,8 @@
   </script>
 
   <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
-  <script src="assets/admin-workspace.js?v=20260927-audit"></script>
+  <script src="assets/admin-workspace.js?v=20260927-live-search"></script>
+  <script src="assets/admin-search-progress.js?v=20260927-live-search"></script>
   <script src="assets/admin-auth.js?v=server-session-1"></script>
   <script src="assets/admin-classification.js?v=server-session-1"></script>
   <script>checkAuth();</script>

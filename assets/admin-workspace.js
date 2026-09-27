@@ -21,6 +21,7 @@ function updateFilterBar() {
   document.querySelector('.dashboard-body .panel-title span').textContent = inbound?'유입 분석':prospect?'발굴 현황':'타깃 관리';
   document.getElementById('pseoAnalyticsPanel').hidden = !inbound;
   document.getElementById('prospectSummary').hidden = !prospect;
+  document.getElementById('searchProgress').hidden = !prospect;
   document.querySelector('.table-controls').hidden = prospect;
   document.getElementById('workspaceTable').classList.toggle('workspace-hidden',prospect);
   document.getElementById('mobileCardsContainer').classList.toggle('workspace-hidden',prospect);
