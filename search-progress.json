@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:19:24.168953+00:00",
+  "updated_at": "2026-09-27T14:20:25.969214+00:00",
   "run_id": "36322315094",
   "active_queries": [
     "화성 어학원",
@@ -13,35 +13,35 @@
     "region": "화성"
   },
   "classification": {
-    "total": 15928,
-    "processed": 5780,
-    "pending": 10146,
+    "total": 16012,
+    "processed": 5804,
+    "pending": 10206,
     "processing": 2,
     "eligible": 99,
-    "review": 3892,
-    "rejected": 1783,
+    "review": 3910,
+    "rejected": 1789,
     "errors": 5,
-    "ready": 58,
+    "ready": 59,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCiUVqgF9TAgkL36F-w4CGcg",
-        "name": "현동명의 공사비 닷컴"
+        "channel_id": "UCf6AEK8O0GohLVCJctkYp1A",
+        "name": "설리아"
       },
       {
-        "channel_id": "UC4Kc00am78bxWcFR9tF41Ug",
-        "name": "콩쥐 (콩쥐)"
+        "channel_id": "UCaJh655RQFcZ_B7hXkZnzCg",
+        "name": "96년생 리동탉"
       }
     ]
   },
   "queries_completed": 207,
   "region_queries_completed": 12,
-  "region_channels": 2189,
-  "region_observed": 854,
-  "channels_discovered": 15927,
-  "channels_observed": 5775,
-  "search_pages": 4343,
-  "search_results_read": 93694,
+  "region_channels": 2336,
+  "region_observed": 885,
+  "channels_discovered": 16011,
+  "channels_observed": 5799,
+  "search_pages": 4380,
+  "search_results_read": 94424,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1640,
+      "observed": 1664,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1641,
+      "classified": 1665,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1371,
+      "observed": 1374,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1373,
+      "classified": 1376,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1360,
+      "observed": 1363,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1360,
+      "classified": 1363,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2405,
+      "observed": 2406,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2407,
+      "classified": 2408,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1478,11 +1478,11 @@
       "name": "화성",
       "queries_completed": 12,
       "queries_total": 39,
-      "channels": 2189,
-      "observed": 854,
+      "channels": 2336,
+      "observed": 885,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 854,
+      "classified": 885,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1572,16 +1572,16 @@
         {
           "name": "어학원",
           "status": "running",
-          "channels": 25,
-          "results_read": 40,
-          "pages": 2
+          "channels": 133,
+          "results_read": 415,
+          "pages": 21
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 16,
-          "results_read": 40,
-          "pages": 2
+          "channels": 189,
+          "results_read": 395,
+          "pages": 20
         },
         {
           "name": "부동산중개",
