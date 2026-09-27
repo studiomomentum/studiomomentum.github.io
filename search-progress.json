@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:18:54.266705+00:00",
+  "updated_at": "2026-09-27T13:19:55.796809+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 노무사",
-    "오산 노무법인"
+    "오산 건축사사무소",
+    "오산 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 10834,
-    "processed": 4380,
-    "pending": 6452,
+    "total": 11084,
+    "processed": 4414,
+    "pending": 6668,
     "processing": 2,
     "eligible": 90,
-    "review": 2950,
-    "rejected": 1336,
+    "review": 2976,
+    "rejected": 1344,
     "errors": 4,
     "ready": 51,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCO5dbV7k2ZTqD1hYhrf8s1g",
-        "name": "김종회Tony Kim TV"
+        "channel_id": "UCkfJx0CGgZCk2QMwFigws7Q",
+        "name": "H log"
       },
       {
-        "channel_id": "UCWVzGamuDzioiRQFdHMD36w",
-        "name": "김해영 박사의 세상만사"
+        "channel_id": "UCApfJZPeK-kzo9gOW1yMAsg",
+        "name": "중소기업 경영정보"
       }
     ]
   },
-  "queries_completed": 107,
-  "region_queries_completed": 29,
-  "region_channels": 3532,
-  "region_observed": 1059,
-  "channels_discovered": 10831,
-  "channels_observed": 4376,
-  "search_pages": 2009,
-  "search_results_read": 48345,
+  "queries_completed": 114,
+  "region_queries_completed": 36,
+  "region_channels": 3899,
+  "region_observed": 1120,
+  "channels_discovered": 11081,
+  "channels_observed": 4410,
+  "search_pages": 2072,
+  "search_results_read": 49409,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3166,
+      "observed": 3200,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3170,
+      "classified": 3204,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1080,
+      "observed": 1083,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1081,
+      "classified": 1084,
       "classification_errors": 1,
       "jobs": [
         {
@@ -618,13 +618,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 29,
+      "queries_completed": 36,
       "queries_total": 39,
-      "channels": 3532,
-      "observed": 1059,
+      "channels": 3899,
+      "observed": 1120,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1061,
+      "classified": 1122,
       "classification_errors": 2,
       "jobs": [
         {
@@ -832,66 +832,66 @@
         },
         {
           "name": "노무사",
-          "status": "running",
+          "status": "completed",
           "channels": 206,
           "results_read": 316,
-          "pages": 16
+          "pages": 17
         },
         {
           "name": "노무법인",
-          "status": "running",
+          "status": "completed",
           "channels": 51,
           "results_read": 64,
-          "pages": 4
+          "pages": 5
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 57,
+          "results_read": 145,
+          "pages": 9
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 116,
+          "results_read": 186,
+          "pages": 11
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 76,
+          "results_read": 93,
+          "pages": 6
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 35,
+          "results_read": 52,
+          "pages": 4
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 44,
+          "results_read": 68,
+          "pages": 5
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 173,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 119,
+          "results_read": 220,
+          "pages": 11
         },
         {
           "name": "필라테스",
