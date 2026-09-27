@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:29:51.273310+00:00",
+  "updated_at": "2026-09-27T15:30:53.425479+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 피부과",
-    "판교 성형외과"
+    "판교 안과",
+    "판교 정형외과"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 20994,
-    "processed": 7059,
-    "pending": 13933,
-    "processing": 2,
+    "total": 21042,
+    "processed": 7077,
+    "pending": 13965,
+    "processing": 0,
     "eligible": 115,
-    "review": 4778,
-    "rejected": 2159,
+    "review": 4785,
+    "rejected": 2170,
     "errors": 5,
     "ready": 74,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCKEFCtNcX947ymUW1bpPrDg",
-        "name": "알파경제TV",
-        "query": "동탄 피부과"
-      },
-      {
-        "channel_id": "UC7ZnVKsRo4IKbpU6VDWUj7Q",
-        "name": "청담동 금손 김원장",
-        "query": "동탄 피부과"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 297,
-  "region_queries_completed": 17,
-  "region_channels": 2706,
-  "region_observed": 971,
-  "channels_discovered": 20993,
-  "channels_observed": 7054,
-  "search_pages": 6497,
-  "search_results_read": 134029,
+  "queries_completed": 299,
+  "region_queries_completed": 19,
+  "region_channels": 2787,
+  "region_observed": 987,
+  "channels_discovered": 21041,
+  "channels_observed": 7072,
+  "search_pages": 6521,
+  "search_results_read": 134450,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2924,
+      "observed": 2942,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2925,
+      "classified": 2943,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1598,
+      "observed": 1600,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1600,
+      "classified": 1602,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2515,
+      "observed": 2516,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2517,
+      "classified": 2518,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1760,
+      "observed": 1762,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1760,
+      "classified": 1762,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2036,
+      "observed": 2040,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2038,
+      "classified": 2042,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,13 +2088,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 17,
+      "queries_completed": 19,
       "queries_total": 40,
-      "channels": 2706,
-      "observed": 971,
+      "channels": 2787,
+      "observed": 987,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 972,
+      "classified": 988,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2229,31 +2218,31 @@
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 212,
-          "results_read": 353,
-          "pages": 18
+          "status": "completed",
+          "channels": 234,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "성형외과",
-          "status": "running",
+          "status": "completed",
           "channels": 191,
           "results_read": 336,
-          "pages": 17
+          "pages": 18
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 101,
+          "results_read": 204,
+          "pages": 11
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 2,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 34,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "이비인후과",
