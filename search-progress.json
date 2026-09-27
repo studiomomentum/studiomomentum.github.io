@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:57:49.099921+00:00",
+  "updated_at": "2026-09-27T21:58:50.290276+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14190,
-    "pending": 13748,
-    "processing": 0,
+    "processed": 14206,
+    "pending": 13730,
+    "processing": 2,
     "eligible": 161,
-    "review": 9932,
-    "rejected": 4066,
+    "review": 9946,
+    "rejected": 4068,
     "errors": 28,
     "ready": 115,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC7grvUD2X0P7WvMq64Jnh_w",
+        "name": "복덕맘TV",
+        "query": "용인 공인중개사"
+      },
+      {
+        "channel_id": "UCHmFTpPgYT2wNazRJpDfy3Q",
+        "name": "양평 집 전문",
+        "query": "용인 공인중개사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1671,
   "channels_discovered": 27937,
-  "channels_observed": 14162,
+  "channels_observed": 14178,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3564,
+      "observed": 3580,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3566,
+      "classified": 3582,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2490,
+      "observed": 2494,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2492,
+      "classified": 2496,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1899,
+      "observed": 1901,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1902,
+      "classified": 1904,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1902,
+      "observed": 1903,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1903,
+      "classified": 1904,
       "classification_errors": 1,
       "jobs": [
         {
