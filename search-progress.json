@@ -2,37 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:00:21.999565+00:00",
+  "updated_at": "2026-09-27T13:01:23.205784+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 부동산중개",
-    "동탄 행정사"
+    "동탄 피부과",
+    "동탄 성형외과"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 6775,
-    "processed": 3690,
-    "pending": 3085,
-    "processing": 0,
+    "total": 7056,
+    "processed": 3730,
+    "pending": 3324,
+    "processing": 2,
     "eligible": 87,
-    "review": 2487,
-    "rejected": 1112,
+    "review": 2518,
+    "rejected": 1121,
     "errors": 4,
     "ready": 48,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCf1exParKZuwAlgS7n10i-Q",
+        "name": "삼성봄내과의원"
+      },
+      {
+        "channel_id": "UCvimBxn6iTZwTs1TWbi8T7A",
+        "name": "머리심는 의사"
+      }
+    ]
   },
-  "queries_completed": 53,
-  "region_queries_completed": 14,
-  "region_channels": 2157,
-  "region_observed": 671,
-  "channels_discovered": 6772,
-  "channels_observed": 3686,
-  "search_pages": 844,
-  "search_results_read": 25562,
+  "queries_completed": 56,
+  "region_queries_completed": 17,
+  "region_channels": 2494,
+  "region_observed": 719,
+  "channels_discovered": 7053,
+  "channels_observed": 3726,
+  "search_pages": 907,
+  "search_results_read": 27866,
   "query_errors": {},
   "regions": [
     {
@@ -40,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2476,
+      "observed": 2516,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2480,
+      "classified": 2520,
       "classification_errors": 4,
       "jobs": [
         {
@@ -323,13 +332,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 14,
+      "queries_completed": 17,
       "queries_total": 39,
-      "channels": 2157,
-      "observed": 671,
+      "channels": 2494,
+      "observed": 719,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 672,
+      "classified": 720,
       "classification_errors": 1,
       "jobs": [
         {
@@ -432,38 +441,38 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 95,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 126,
+          "results_read": 499,
+          "pages": 27
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 68,
-          "results_read": 184,
-          "pages": 2
+          "status": "completed",
+          "channels": 265,
+          "results_read": 1669,
+          "pages": 20
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 89,
+          "results_read": 141,
+          "pages": 9
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 145,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 118,
+          "results_read": 239,
+          "pages": 12
         },
         {
           "name": "안과",
