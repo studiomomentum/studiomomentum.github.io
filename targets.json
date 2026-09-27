@@ -3081,8 +3081,8 @@
     "channel_url": "https://www.youtube.com/channel/UCI8IHc78GS7MzAZ5w5CBsgw",
     "region": "강남",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 17:05:05",
     "views": "구독자 7570 / 최근 롱폼 10편 중앙값 389.5회",
     "point": "강남 법무법인 채널의 최근 롱폼 10편 중앙값 389.5회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "85",
@@ -3729,7 +3729,7 @@
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 34,
+    "ready_count": 33,
     "status_counts": {
       "REVIEW": 2154,
       "REJECTED": 186,
@@ -3745,6 +3745,6 @@
       "HIGH": 839,
       "VERY LOW": 154
     },
-    "updated_at": "2026-09-27T07:35:09.844558+00:00"
+    "updated_at": "2026-09-27T08:05:09.786660+00:00"
   }
 }
