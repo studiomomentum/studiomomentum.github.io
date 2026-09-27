@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:24:04.030214+00:00",
+  "updated_at": "2026-09-27T16:25:05.589941+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 심리상담센터",
-    "강남 필라테스"
+    "강남 필라테스",
+    "강남 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24798,
-    "processed": 7953,
-    "pending": 16843,
+    "total": 24847,
+    "processed": 7969,
+    "pending": 16876,
     "processing": 2,
     "eligible": 119,
-    "review": 5386,
-    "rejected": 2439,
+    "review": 5399,
+    "rejected": 2442,
     "errors": 6,
-    "ready": 77,
+    "ready": 78,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCEBu83wLpLXtvVkPoODoZtg",
-        "name": "JRe",
+        "channel_id": "UCWXWEA-JCL8qWqq5kAagSog",
+        "name": "보라리티비",
         "query": "동탄 동물병원"
       },
       {
-        "channel_id": "UC8maj7d8MZAoXHI_RhN8_QA",
-        "name": "플젝맨 Project Man",
+        "channel_id": "UClt2LXIcOzYHjy3yWkbTS-A",
+        "name": "해피애견타운",
         "query": "동탄 동물병원"
       }
     ]
   },
-  "queries_completed": 357,
-  "region_queries_completed": 37,
-  "region_channels": 4763,
-  "region_observed": 1606,
-  "channels_discovered": 24797,
-  "channels_observed": 7947,
-  "search_pages": 7961,
-  "search_results_read": 161402,
+  "queries_completed": 358,
+  "region_queries_completed": 38,
+  "region_channels": 4859,
+  "region_observed": 1620,
+  "channels_discovered": 24846,
+  "channels_observed": 7963,
+  "search_pages": 7987,
+  "search_results_read": 161879,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3817,
+      "observed": 3833,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3819,
+      "classified": 3835,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1726,
+      "observed": 1730,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1728,
+      "classified": 1732,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1639,
+      "observed": 1640,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1639,
+      "classified": 1640,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2557,
+      "observed": 2558,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2559,
+      "classified": 2560,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1891,
+      "observed": 1892,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1891,
+      "classified": 1892,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2119,
+      "observed": 2121,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2121,
+      "classified": 2123,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1440,
+      "observed": 1441,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1441,
+      "classified": 1442,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 37,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4763,
-      "observed": 1606,
+      "channels": 4859,
+      "observed": 1620,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1608,
+      "classified": 1622,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2662,24 +2662,24 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 57,
-          "results_read": 418,
-          "pages": 21
+          "status": "completed",
+          "channels": 66,
+          "results_read": 538,
+          "pages": 29
         },
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 40,
-          "results_read": 96,
-          "pages": 5
+          "channels": 109,
+          "results_read": 355,
+          "pages": 18
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 29,
+          "results_read": 98,
+          "pages": 5
         }
       ]
     },
