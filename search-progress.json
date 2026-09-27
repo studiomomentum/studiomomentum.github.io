@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:08:07.822615+00:00",
+  "updated_at": "2026-09-27T16:09:09.513133+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 이비인후과",
-    "강남 재활의학과"
+    "강남 재활의학과",
+    "강남 마취통증의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24048,
-    "processed": 7695,
-    "pending": 16353,
+    "total": 24101,
+    "processed": 7713,
+    "pending": 16388,
     "processing": 0,
     "eligible": 118,
-    "review": 5211,
-    "rejected": 2357,
+    "review": 5225,
+    "rejected": 2361,
     "errors": 6,
     "ready": 77,
     "status": "running",
     "active": []
   },
-  "queries_completed": 341,
-  "region_queries_completed": 21,
-  "region_channels": 3180,
-  "region_observed": 1103,
-  "channels_discovered": 24047,
-  "channels_observed": 7689,
-  "search_pages": 7543,
-  "search_results_read": 153536,
+  "queries_completed": 342,
+  "region_queries_completed": 22,
+  "region_channels": 3314,
+  "region_observed": 1150,
+  "channels_discovered": 24100,
+  "channels_observed": 7707,
+  "search_pages": 7575,
+  "search_results_read": 154143,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3559,
+      "observed": 3577,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3561,
+      "classified": 3579,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1862,
+      "observed": 1863,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1862,
+      "classified": 1863,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2104,
+      "observed": 2106,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2106,
+      "classified": 2108,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 21,
+      "queries_completed": 22,
       "queries_total": 40,
-      "channels": 3180,
-      "observed": 1103,
+      "channels": 3314,
+      "observed": 1150,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1105,
+      "classified": 1152,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2539,24 +2539,24 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 165,
-          "results_read": 397,
-          "pages": 20
+          "status": "completed",
+          "channels": 201,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 10,
-          "results_read": 40,
-          "pages": 2
+          "channels": 126,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 74,
+          "results_read": 198,
+          "pages": 10
         },
         {
           "name": "내과의원",
