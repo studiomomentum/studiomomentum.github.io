@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T23:12:11.214641+00:00",
+  "updated_at": "2026-09-27T23:13:12.607352+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15572,
-    "pending": 12364,
+    "processed": 15590,
+    "pending": 12346,
     "processing": 2,
-    "eligible": 171,
-    "review": 10898,
-    "rejected": 4470,
+    "eligible": 172,
+    "review": 10910,
+    "rejected": 4475,
     "errors": 30,
     "ready": 124,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCR5o_wWxmbHbuBqHuZVo1hQ",
-        "name": "열린한의원",
+        "channel_id": "UCjSzvtPVv3Fku-ZrVm4E4PQ",
+        "name": "부동산119",
         "query": "화성 한의원"
       },
       {
-        "channel_id": "UCUFLlI-ofE_W86KdDT-DHqg",
-        "name": "쓰미미🤗",
+        "channel_id": "UC_KjTyC5e0DFNxn6GIgBxcQ",
+        "name": "한의사트레이너",
         "query": "화성 한의원"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1769,
   "channels_discovered": 27937,
-  "channels_observed": 15542,
+  "channels_observed": 15560,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3287,
+      "observed": 3305,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3291,
+      "classified": 3309,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2007,
+      "observed": 2009,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2010,
+      "classified": 2012,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2161,
+      "observed": 2163,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2166,
+      "classified": 2168,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1989,
+      "observed": 1992,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1990,
+      "classified": 1993,
       "classification_errors": 1,
       "jobs": [
         {
