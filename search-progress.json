@@ -1,47 +1,35 @@
 {
   "sweep_id": "full-20260927-429",
   "region": "평택",
-  "phase": "parallel",
-  "updated_at": "2026-09-27T13:21:58.675406+00:00",
+  "phase": "incomplete",
+  "updated_at": "2026-09-27T13:22:37.077834+00:00",
   "run_id": "36320569240",
-  "active_queries": [
-    "평택 세무사",
-    "평택 세무법인"
-  ],
+  "active_queries": [],
   "search_stage": {
-    "status": "running",
+    "status": "incomplete",
     "region": "평택"
   },
   "classification": {
-    "total": 11512,
-    "processed": 4486,
-    "pending": 7024,
-    "processing": 2,
+    "total": 11554,
+    "processed": 4500,
+    "pending": 7054,
+    "processing": 0,
     "eligible": 92,
-    "review": 3032,
-    "rejected": 1358,
+    "review": 3041,
+    "rejected": 1363,
     "errors": 4,
-    "ready": 52,
-    "status": "running",
-    "active": [
-      {
-        "channel_id": "UCKlR-7Dd4tvEWYOu-h4RUkQ",
-        "name": "수원대학교 총학생회 Suwon-air"
-      },
-      {
-        "channel_id": "UCyKf89zymoo-th_XtWSkmlQ",
-        "name": "안성시의회"
-      }
-    ]
+    "ready": 53,
+    "status": "incomplete",
+    "active": []
   },
   "queries_completed": 119,
   "region_queries_completed": 2,
-  "region_channels": 695,
-  "region_observed": 351,
-  "channels_discovered": 11509,
-  "channels_observed": 4482,
-  "search_pages": 2172,
-  "search_results_read": 51274,
+  "region_channels": 791,
+  "region_observed": 380,
+  "channels_discovered": 11551,
+  "channels_observed": 4496,
+  "search_pages": 2194,
+  "search_results_read": 51702,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +37,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3272,
+      "observed": 3286,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3276,
+      "classified": 3290,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +323,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1095,
+      "observed": 1098,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1096,
+      "classified": 1099,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +609,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1154,
+      "observed": 1157,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1156,
+      "classified": 1159,
       "classification_errors": 2,
       "jobs": [
         {
@@ -906,11 +894,11 @@
       "name": "평택",
       "queries_completed": 2,
       "queries_total": 39,
-      "channels": 695,
-      "observed": 351,
+      "channels": 791,
+      "observed": 380,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 351,
+      "classified": 380,
       "classification_errors": 0,
       "jobs": [
         {
@@ -930,16 +918,16 @@
         {
           "name": "세무회계",
           "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "channels": 118,
+          "results_read": 217,
+          "pages": 11
         },
         {
           "name": "변호사",
           "status": "pending",
-          "channels": 2,
-          "results_read": 0,
-          "pages": 0
+          "channels": 60,
+          "results_read": 211,
+          "pages": 11
         },
         {
           "name": "법무법인",
