@@ -3404,8 +3404,8 @@
     "channel_url": "https://www.youtube.com/channel/UC54-nzKzMCtv3tmsdg9uNBw",
     "region": "평택",
     "category": "realty",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 16:35:05",
     "views": "구독자 1910 / 최근 롱폼 10편 중앙값 7900.0회",
     "point": "평택 공인중개사 채널의 최근 롱폼 10편 중앙값 7900.0회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "35",
@@ -3729,7 +3729,7 @@
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 35,
+    "ready_count": 34,
     "status_counts": {
       "REVIEW": 2154,
       "REJECTED": 186,
@@ -3745,6 +3745,6 @@
       "HIGH": 839,
       "VERY LOW": 154
     },
-    "updated_at": "2026-09-27T07:05:04.604901+00:00"
+    "updated_at": "2026-09-27T07:35:09.844558+00:00"
   }
 }
