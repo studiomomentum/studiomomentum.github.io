@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:59:36.193864+00:00",
+  "updated_at": "2026-09-27T23:00:38.126411+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15355,
-    "pending": 12582,
-    "processing": 1,
+    "processed": 15374,
+    "pending": 12562,
+    "processing": 2,
     "eligible": 171,
-    "review": 10747,
-    "rejected": 4404,
+    "review": 10759,
+    "rejected": 4411,
     "errors": 30,
     "ready": 124,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCAL8gpgD2EQ9kfXIFl-1BUA",
-        "name": "이수 페리오치과",
-        "query": "화성 치과"
+        "channel_id": "UCnNOOEDisVmSix6-S5Rs7ZQ",
+        "name": "ARUM DENTISTRY",
+        "query": "화성 치과의원"
+      },
+      {
+        "channel_id": "UCZ84MlThgtYjSfi4hD2ndpw",
+        "name": "문영인",
+        "query": "화성 치과의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1758,
+  "region_observed": 1761,
   "channels_discovered": 27937,
-  "channels_observed": 15325,
+  "channels_observed": 15344,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3070,
+      "observed": 3089,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3074,
+      "classified": 3093,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1995,
+      "observed": 1997,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1998,
+      "classified": 2000,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2145,
+      "observed": 2148,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2150,
+      "classified": 2153,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1977,
+      "observed": 1979,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1978,
+      "classified": 1980,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1758,
+      "observed": 1761,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1759,
+      "classified": 1762,
       "classification_errors": 1,
       "jobs": [
         {
