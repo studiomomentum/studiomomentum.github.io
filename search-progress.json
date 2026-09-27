@@ -2,37 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:10:35.123085+00:00",
+  "updated_at": "2026-09-27T13:11:36.354578+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 치과의원",
-    "오산 한의원"
+    "오산 한방병원",
+    "오산 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 9456,
-    "processed": 4086,
-    "pending": 5370,
-    "processing": 0,
+    "total": 9596,
+    "processed": 4124,
+    "pending": 5470,
+    "processing": 2,
     "eligible": 89,
-    "review": 2771,
-    "rejected": 1222,
+    "review": 2795,
+    "rejected": 1236,
     "errors": 4,
     "ready": 50,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCxPSdajCPBJCWK0NobkEtgw",
+        "name": "진오비 산부인과"
+      },
+      {
+        "channel_id": "UCEs4ZIu_o4kKFrmaXAMkzjg",
+        "name": "오지훈 라이브"
+      }
+    ]
   },
-  "queries_completed": 85,
-  "region_queries_completed": 7,
-  "region_channels": 1259,
-  "region_observed": 503,
-  "channels_discovered": 9453,
-  "channels_observed": 4082,
-  "search_pages": 1514,
-  "search_results_read": 39147,
+  "queries_completed": 88,
+  "region_queries_completed": 10,
+  "region_channels": 1509,
+  "region_observed": 580,
+  "channels_discovered": 9593,
+  "channels_observed": 4120,
+  "search_pages": 1572,
+  "search_results_read": 40216,
   "query_errors": {},
   "regions": [
     {
@@ -40,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2872,
+      "observed": 2910,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2876,
+      "classified": 2914,
       "classification_errors": 4,
       "jobs": [
         {
@@ -326,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1029,
+      "observed": 1045,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1030,
+      "classified": 1046,
       "classification_errors": 1,
       "jobs": [
         {
@@ -609,14 +618,14 @@
     },
     {
       "name": "오산",
-      "queries_completed": 7,
+      "queries_completed": 10,
       "queries_total": 39,
-      "channels": 1259,
-      "observed": 503,
-      "observation_errors": 0,
+      "channels": 1509,
+      "observed": 580,
+      "observation_errors": 1,
       "classified_at": null,
-      "classified": 503,
-      "classification_errors": 0,
+      "classified": 581,
+      "classification_errors": 1,
       "jobs": [
         {
           "name": "세무사",
@@ -669,38 +678,38 @@
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 56,
-          "results_read": 300,
-          "pages": 15
+          "status": "completed",
+          "channels": 77,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 64,
-          "results_read": 219,
-          "pages": 11
+          "status": "completed",
+          "channels": 175,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 162,
+          "results_read": 359,
+          "pages": 18
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 65,
+          "results_read": 179,
+          "pages": 11
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 24,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "어학원",
