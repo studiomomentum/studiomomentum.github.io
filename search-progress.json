@@ -2,46 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:28:48.371679+00:00",
+  "updated_at": "2026-09-27T13:29:49.980994+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 한의원",
-    "평택 한방병원"
+    "평택 학원",
+    "평택 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 11929,
-    "processed": 4576,
-    "pending": 7351,
-    "processing": 2,
+    "total": 12064,
+    "processed": 4603,
+    "pending": 7460,
+    "processing": 1,
     "eligible": 92,
-    "review": 3087,
-    "rejected": 1392,
+    "review": 3106,
+    "rejected": 1400,
     "errors": 4,
-    "ready": 52,
+    "ready": 53,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCkVWZSQWdUA4FvnfOf4sUJw",
-        "name": "법무법인 정률 형사특별팀"
-      },
-      {
-        "channel_id": "UC-zK8H55eEVjAMv8qgmo76g",
-        "name": "자유로 경매 NPL"
+        "channel_id": "UCP7rM_JZxhifVhVVXPCmEkw",
+        "name": "리얼매직 TV"
       }
     ]
   },
-  "queries_completed": 125,
-  "region_queries_completed": 8,
-  "region_channels": 1488,
-  "region_observed": 556,
-  "channels_discovered": 11927,
-  "channels_observed": 4572,
-  "search_pages": 2334,
-  "search_results_read": 54298,
+  "queries_completed": 127,
+  "region_queries_completed": 10,
+  "region_channels": 1712,
+  "region_observed": 601,
+  "channels_discovered": 12062,
+  "channels_observed": 4599,
+  "search_pages": 2382,
+  "search_results_read": 55206,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +45,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3362,
+      "observed": 3389,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3366,
+      "classified": 3393,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1109,
+      "observed": 1110,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1110,
+      "classified": 1111,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1163,
+      "observed": 1164,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1165,
+      "classified": 1166,
       "classification_errors": 2,
       "jobs": [
         {
@@ -904,13 +900,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 8,
+      "queries_completed": 10,
       "queries_total": 39,
-      "channels": 1488,
-      "observed": 556,
+      "channels": 1712,
+      "observed": 601,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 556,
+      "classified": 601,
       "classification_errors": 0,
       "jobs": [
         {
@@ -971,31 +967,31 @@
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 81,
-          "results_read": 398,
-          "pages": 20
+          "status": "completed",
+          "channels": 123,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 20,
-          "results_read": 60,
-          "pages": 3
+          "status": "completed",
+          "channels": 163,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 127,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 8,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "어학원",
