@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:02:24.636383+00:00",
+  "updated_at": "2026-09-27T13:03:26.041570+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 안과",
-    "동탄 정형외과"
+    "동탄 마취통증의학과",
+    "동탄 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 7293,
-    "processed": 3774,
-    "pending": 3517,
-    "processing": 2,
+    "total": 7467,
+    "processed": 3822,
+    "pending": 3645,
+    "processing": 0,
     "eligible": 87,
-    "review": 2551,
-    "rejected": 1132,
+    "review": 2589,
+    "rejected": 1142,
     "errors": 4,
     "ready": 48,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClWq4AToEhAWdCJluem6h3A",
-        "name": "뿅망치통후추_Shihtzu"
-      },
-      {
-        "channel_id": "UCZaWXgVFj4qC3WhTmqBqG_A",
-        "name": "우시기즘"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 58,
-  "region_queries_completed": 19,
-  "region_channels": 2775,
-  "region_observed": 761,
-  "channels_discovered": 7290,
-  "channels_observed": 3770,
-  "search_pages": 981,
-  "search_results_read": 29275,
+  "queries_completed": 62,
+  "region_queries_completed": 23,
+  "region_channels": 3009,
+  "region_observed": 816,
+  "channels_discovered": 7464,
+  "channels_observed": 3818,
+  "search_pages": 1047,
+  "search_results_read": 30488,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +40,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2560,
+      "observed": 2608,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2564,
+      "classified": 2612,
       "classification_errors": 4,
       "jobs": [
         {
@@ -332,13 +323,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 19,
+      "queries_completed": 23,
       "queries_total": 39,
-      "channels": 2775,
-      "observed": 761,
+      "channels": 3009,
+      "observed": 816,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 762,
+      "classified": 817,
       "classification_errors": 1,
       "jobs": [
         {
@@ -476,45 +467,45 @@
         },
         {
           "name": "안과",
-          "status": "running",
+          "status": "completed",
           "channels": 181,
           "results_read": 494,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 111,
-          "results_read": 460,
-          "pages": 23
+          "status": "completed",
+          "channels": 120,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 151,
+          "results_read": 311,
+          "pages": 17
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 160,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 155,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 53,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "산부인과",
