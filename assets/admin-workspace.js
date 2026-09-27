@@ -3,8 +3,15 @@ const workspaceEscape = value => String(value ?? '').replace(/[&<>"']/g, c => ({
 const deliveryLabels = {ALL:'전체',SENT:'발송 처리',READY:'발송 대기',BOUNCED:'반송',REVIEW:'검토',EXCLUDED:'제외'};
 const reactionLabels = {ALL:'모든 반응',OPENED_ALL:'메일 열람',OPENED_ONLY:'메일만 열람',UNOPENED:'메일 미열람',VISITED:'사이트 방문',HOT:'상담 클릭',SCROLL_90:'90% 스크롤'};
 let workspaceExtra = 'ALL';
+let workspaceOccupation = 'ALL';
+const occupationLabels = {legal:'변호사·법률',medical:'의료',realty:'부동산',tax:'세무',edu:'교육',admin:'행정사',arch:'건축',fitness:'피트니스',vet:'수의사',labor:'노무사',car:'자동차',UNKNOWN:'미분류'};
+const targetOccupation = t => String(t.category || '').trim() || 'UNKNOWN';
+function occupationOptions() {
+  const values = [...new Set(Object.values(targetsMap).filter(t=>t&&t.token).map(targetOccupation))];
+  return '<option value="ALL">전체 직업</option>' + values.sort((a,b)=>(occupationLabels[a]||a).localeCompare(occupationLabels[b]||b,'ko')).map(value=>`<option value="${workspaceEscape(value)}" ${value===workspaceOccupation?'selected':''}>${workspaceEscape(occupationLabels[value]||value)}</option>`).join('');
+}
 function setMainTab(tab) {
-  mainTab = tab; currentFilter = 'ALL'; workspaceExtra = 'ALL';
+  mainTab = tab; currentFilter = 'ALL'; workspaceExtra = 'ALL'; workspaceOccupation = 'ALL';
   document.getElementById('searchInput').value = '';
   updateFilterBar(); renderTable();
 }
@@ -29,7 +36,7 @@ function updateFilterBar() {
   document.querySelectorAll('.kpi-card').forEach(card => card.classList.toggle('active-kpi', card.id === 'kpiCard_' + activeKpi));
   const filters = inbound
     ? `<label>유입 경로<select id="reactionFilter">${workspaceOptions({ALL:'전체 유입',SEO:'검색',PSEO:'지역·업종',GEO:'AI 추천',AEO:'AI 답변',SNS:'소셜',DIRECT:'직접 방문',HOT:'상담 클릭'},currentFilter)}</select></label>`
-    : `<label>발송 상태<select id="deliveryFilter">${workspaceOptions(deliveryLabels,mainTab)}</select></label><label>고객 반응<select id="reactionFilter">${workspaceOptions(reactionLabels,currentFilter)}</select></label><label>추가 조건<select id="extraFilter">${workspaceOptions({ALL:'전체',JOB:'채용공고 타깃',ZONE_A:'경기 남부',ZONE_B:'서울·판교'},workspaceExtra)}</select></label>`;
+    : `<label>발송 상태<select id="deliveryFilter">${workspaceOptions(deliveryLabels,mainTab)}</select></label><label>고객 반응<select id="reactionFilter">${workspaceOptions(reactionLabels,currentFilter)}</select></label><label>직업<select id="occupationFilter">${occupationOptions()}</select></label><label>추가 조건<select id="extraFilter">${workspaceOptions({ALL:'전체',JOB:'채용공고 타깃',ZONE_A:'경기 남부',ZONE_B:'서울·판교'},workspaceExtra)}</select></label>`;
   Momentum.setHTML(document.getElementById('dynamicFilterGroup'),filters);
 }
 function workspaceReaction(s) {
@@ -84,6 +91,7 @@ function renderTable() {
     else {
       if(mainTab==='SENT'?!['SENT','BOUNCED'].includes(t.status):mainTab!=='ALL'&&t.status!==mainTab)return false;
       if(!workspaceReaction(s))return false;
+      if(workspaceOccupation!=='ALL'&&targetOccupation(t)!==workspaceOccupation)return false;
       if(workspaceExtra==='JOB'&&!isJobPostingTarget(t))return false;
       const zoneB=['서울','강남','서초','송파','판교','분당'].some(k=>(t.region||'').includes(k));
       if(workspaceExtra==='ZONE_B'&&!zoneB||workspaceExtra==='ZONE_A'&&zoneB)return false;
@@ -92,7 +100,7 @@ function renderTable() {
   });
   const sentTime=t=>Date.parse((t.sent_at||'').replace(/ \(.+\)/,''))||0;
   rows.sort((a,b)=>inbound?b.lastSeen-a.lastSeen:mainTab==='READY'?((Number(b.prospect_score||-1)-Number(a.prospect_score||-1))||Number(a.no)-Number(b.no)):(sentTime(b)-sentTime(a)||Number(b.no)-Number(a.no)));
-  summary.textContent=`${inbound?'유입':deliveryLabels[mainTab]||'타깃'} · ${inbound?'':(reactionLabels[currentFilter]||'')+' · '}${rows.length}건${query?' · 검색: '+query:''}`;
+  summary.textContent=`${inbound?'유입':deliveryLabels[mainTab]||'타깃'} · ${inbound?'':(reactionLabels[currentFilter]||'')+' · '}${rows.length}건${!inbound&&workspaceOccupation!=='ALL'?' · 직업: '+(occupationLabels[workspaceOccupation]||workspaceOccupation):''}${query?' · 검색: '+query:''}`;
   const heads=inbound?['유입 경로','최근 방문','탐색 반응','기기']:['업체 / 담당자','발송 상태','메일 열람','사이트 방문','최근 활동'];
   Momentum.setHTML(document.getElementById('tableHead'),'<tr>'+heads.map(h=>`<th>${h}</th>`).join('')+'</tr>');
   const cells=t=>{
@@ -122,6 +130,7 @@ document.getElementById('targetDetail').addEventListener('click',ev=>{if(ev.targ
 document.addEventListener('change',ev=>{
   if(ev.target.id==='deliveryFilter')setMainTab(ev.target.value);
   if(ev.target.id==='reactionFilter')setFilter(ev.target.value);
+  if(ev.target.id==='occupationFilter'){workspaceOccupation=ev.target.value;renderTable();}
   if(ev.target.id==='extraFilter'){workspaceExtra=ev.target.value;renderTable();}
 });
 

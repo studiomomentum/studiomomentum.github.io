@@ -1,6 +1,17 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE || 'playwright');const fs=require('fs'),path=require('path'),assert=require('assert');
 const artifactDir=process.env.UI_ARTIFACT_DIR||'/tmp/momentum-workspace-tests';fs.mkdirSync(artifactDir,{recursive:true});
 (async()=>{const b=await chromium.launch({headless:true});const c=await b.newContext({viewport:{width:1440,height:1000}});const errors=[];let writes=[];await c.route('**/*',r=>{const u=new URL(r.request().url());const f=path.join(process.cwd(),u.pathname==='/'?'index.html':u.pathname);if(u.hostname==='momentum.local'&&fs.existsSync(f)&&fs.statSync(f).isFile())return r.fulfill({path:f});if(r.request().method()==='POST')writes.push(u.href);return r.fulfill({body:u.hostname==='ntfy.sh'?'':'[]',contentType:'application/json'});});const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto('http://momentum.local/admin.html');await p.evaluate(async()=>{await loadTargets();document.getElementById('loginOverlay').style.display='none';document.getElementById('dashboardApp').style.display='block';updateKPIs();renderTable();});
+// Occupation filter combines with delivery/search and applies to both layouts.
+await p.evaluate(()=>{window.occupationBackup=targetsMap;targetsMap={a:{token:'a',company:'법률 대상',status:'READY',category:'legal'},b:{token:'b',company:'의료 대상',status:'READY',category:'medical'},c:{token:'c',company:'발송 법률',status:'SENT',category:'legal'},d:{token:'d',company:'분류 없음',status:'READY'}};setMainTab('READY');});
+await p.locator('#occupationFilter').selectOption('legal');
+assert.equal(await p.locator('#tableBody .target-link').count(),1);
+assert.equal(await p.locator('#mobileCardsContainer .target-link').count(),1);
+assert((await p.locator('#resultSummary').textContent()).includes('변호사·법률'));
+await p.locator('#searchInput').fill('의료');assert.equal(await p.locator('#tableBody .target-link').count(),0);
+await p.locator('#searchInput').fill('');await p.locator('#occupationFilter').selectOption('UNKNOWN');assert.equal(await p.locator('#tableBody .target-link').count(),1);
+for(const width of [320,390]){await p.setViewportSize({width,height:844});assert(await p.locator('#occupationFilter').isVisible());assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+await p.evaluate(()=>{setMainTab('INBOUND');});assert.equal(await p.locator('#occupationFilter').count(),0);
+await p.evaluate(()=>{targetsMap=window.occupationBackup;setMainTab('READY');});assert.equal(await p.locator('#occupationFilter').inputValue(),'ALL');await p.setViewportSize({width:1440,height:1000});
 await p.evaluate(()=>{window.scoreTestBackup=targetsMap;targetsMap={score_low:{token:'score_low',company:'Low fixture',status:'READY',prospect_score:'35',prospect_grade:'LOW',no:'1',is_priority:true},score_high:{token:'score_high',company:'High fixture',status:'READY',prospect_score:'85',prospect_grade:'HIGH',no:'2',score_snapshot:JSON.stringify({score_components:{activity:15,production:30,performance:40},score_penalty:0,sample_size:10,recent_longform_median:200})}};setMainTab('READY');});
 assert(await p.locator('#tableBody .prospect-score').count()>0);
 const ranked=await p.evaluate(()=>Object.values(targetsMap).filter(t=>t.status==='READY').map(t=>Number(t.prospect_score)).sort((a,b)=>b-a));
