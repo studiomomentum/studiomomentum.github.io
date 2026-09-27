@@ -11,7 +11,7 @@ reset();assert.equal(route({action:'classify.start',requestId:'0'.repeat(32)}).e
 assert.equal(route({action:'login',username:'admin',password:sandbox.adminHash_('test-password')}).error,'INVALID_LOGIN');
 for(let i=0;i<8;i++)route({action:'login',username:'admin',password:'wrong'});assert.equal(route({action:'login',username:'admin',password:'test-password'}).error,'LOGIN_RATE_LIMIT');
 reset();let token=login();assert(!store.ADMIN_SESSIONS.includes(token));assert(route({action:'session',session:token}).ok);assert(!JSON.stringify(route({action:'session',session:token})).includes(store.MOMENTUM_GITHUB_TOKEN));
-for(const flag of [false,undefined,null,'true']){enabled=flag;assert.equal(route({action:'classify.start',session:token,requestId:crypto.randomUUID()}).error,'SYSTEM_PAUSED');}enabled=true;
+enabled=false; // Mail OFF must still allow authenticated classification.
 let requestId=crypto.randomUUID();let result=route({action:'classify.start',session:token,requestId});assert.equal(result.result.phase,'accepted');route({action:'classify.start',session:token,requestId});assert.equal(calls.filter(c=>c.options.method==='post').length,1);
 runStatus='in_progress';assert.equal(route({action:'classify.status',session:token}).result.phase,'running');runStatus='completed';runConclusion='success';assert.equal(route({action:'classify.status',session:token}).result.phase,'success');runConclusion='failure';assert.equal(route({action:'classify.status',session:token}).result.phase,'failed');
 assert.equal(route({action:'settings.update',session:token,setting:'arbitrary',value:true}).error,'INVALID_REQUEST');assert.equal(route({action:'dispatch.mailer',session:token}).error,'INVALID_REQUEST');
@@ -21,7 +21,7 @@ reset();token=login();loseReceipt=true;result=route({action:'classify.start',ses
 const created_at=new Date().toISOString();runList=[{id:42,actor:{login:'operator'},created_at}];assert.equal(route({action:'classify.status',session:token}).result.runId,42);assert.equal(calls.filter(c=>c.options.method==='post').length,1);
 reset();token=login();loseReceipt=true;route({action:'classify.start',session:token,requestId:crypto.randomUUID()});runList=[{id:42,actor:{login:'operator'},created_at},{id:43,actor:{login:'operator'},created_at}];assert.equal(route({action:'classify.status',session:token}).result.phase,'unknown');
 lockAvailable=false;assert.equal(route({action:'classify.status',session:token}).error,'BUSY');
-console.log('PASS server authentication, hash replay rejection, expiry, logout, rate limit, fail-closed switch, dispatch allowlist, idempotency, status, ambiguous response recovery, no secret response.');
+console.log('PASS server authentication, hash replay rejection, expiry, logout, rate limit, mail-only stop switch, dispatch allowlist, idempotency, status, ambiguous response recovery, no secret response.');
 reset();token=login();let config={email_system_enabled:true},status='READY',senderBusy=false,putCount=0;
 sandbox.Utilities.parseCsv=s=>s.split('\n').map(r=>r.split(','));
 sandbox.UrlFetchApp.fetch=(url,options)=>{
@@ -42,3 +42,6 @@ result=route({action:'targets.exclude',session:token,token:'deadbeef',email:'att
 assert(route({action:'targets.exclude',session:token,token:'deadbeef'}).ok);assert.equal(putCount,1);
 assert(route({action:'targets.exclusions',session:token}).result.entries.deadbeef);assert.equal(config.email_system_enabled,true);
 console.log('PASS authenticated permanent exclusion, server identity, send-state protection, idempotence, preserved config.');
+
+assert.equal(route({action:'settings.status',session:token}).result.email_system_enabled,true);
+assert.equal(route({action:'settings.status'}).error,'UNAUTHORIZED');

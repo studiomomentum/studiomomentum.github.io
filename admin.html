@@ -1283,7 +1283,7 @@
         <a href="./?admin=1&amp;preview_mode=outbound&amp;vip" target="_blank" rel="noopener noreferrer">아웃바운드 페이지 <span aria-hidden="true">↗</span><small>새 창</small></a>
       </div>
       <div class="header-actions">
-        <button id="btnEmailSystemToggle" class="system-ctrl-btn btn-sys-active" onclick="toggleEmailSystem()" title="서치부터 발송까지의 전체 자동화 시스템을 일시 정지하거나 재개합니다">
+        <button id="btnEmailSystemToggle" class="system-ctrl-btn btn-sys-active" onclick="toggleEmailSystem()" title="메일 발송만 정지하거나 재개합니다. 서치·분류는 계속 실행됩니다.">
           <span id="iconEmailSystem">⚡</span>
           <span id="textEmailSystem">자동발송: 가동중 (ON)</span>
         </button>
@@ -1483,12 +1483,12 @@
 
     async function loadSystemConfig() {
       try {
-        const [mailRes, webRes] = await Promise.all([
-          fetch('https://raw.githubusercontent.com/studiomomentum/momentum-cold-mailer/main/system_config.json', {cache:'no-store'}),
+        const [mail, webRes] = await Promise.all([
+          MomentumAdmin.call('settings.status'),
           fetch('system_config.json?v='+Date.now(), {cache:'no-store'})
         ]);
-        if (!mailRes.ok || !webRes.ok) throw new Error('Control config unavailable');
-        const mail = await mailRes.json(), web = await webRes.json();
+        if (!webRes.ok) throw new Error('Control config unavailable');
+        const web = await webRes.json();
         systemConfig = Object.assign({}, web, {email_system_enabled: mail.email_system_enabled === true});
         updateSystemControlUI();
       } catch (err) {
@@ -1539,7 +1539,7 @@
     }
     async function toggleEmailSystem() {
       const next = systemConfig.email_system_enabled !== true;
-      if (!confirm('자동발송을 '+(next?'ON':'OFF')+'으로 저장할까요?')) return;
+      if (!confirm('자동발송을 '+(next?'ON':'OFF')+'으로 저장할까요? 서치·분류는 계속 실행됩니다.')) return;
       try {
         if (await updateRepositoryConfig('momentum-cold-mailer',{email_system_enabled:next}))
           alert('설정이 저장되었습니다. 발송기는 발송 전 설정을 다시 확인합니다.');

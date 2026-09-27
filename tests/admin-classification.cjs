@@ -12,6 +12,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
     const r=JSON.parse(req.postData());assert.equal(r.route,'momentum_admin');actions.push(r.action);
     if(r.action==='login'){loginCount++;if(r.password!=='demo-password')return json({ok:false,error:'INVALID_LOGIN'});return json({ok:true,result:{token,expiresAt:Date.now()+3600000}});}
     if(r.session!==token)return json({ok:false,error:'UNAUTHORIZED'});
+    if(r.action==='settings.status')return json({ok:true,result:{email_system_enabled:false}});
     if(r.action==='targets.exclusions')return json({ok:true,result:{entries:{}}});
     if(r.action==='session')return json({ok:true,result:{expiresAt:Date.now()+3600000}});
     if(r.action==='logout'){token='';return json({ok:true,result:{loggedOut:true}});}

@@ -79,7 +79,6 @@ function adminClassifyStart_(request) {
         if(run.status!=='completed'||previous.requestId===request.requestId)return run;
       }else if(previous.phase==='unknown')return {phase:'unknown',message:'접수 결과 확인 필요 · 자동 재실행하지 않습니다.'};
     }
-    if(adminConfig_('momentum-cold-mailer').value.email_system_enabled!==true)throw new Error('SYSTEM_PAUSED');
     const list=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+ADMIN_WORKFLOW_+'/runs?event=workflow_dispatch&branch=main&per_page=100');
     const active=(list.workflow_runs||[]).find(r=>r.status!=='completed');
     if(active){adminWrite_('ADMIN_CLASSIFY_LAST',{requestId:request.requestId,runId:active.id});return adminRun_(active.id);}
@@ -154,6 +153,7 @@ function adminRoute_(request) {
       case 'classify.status':return {ok:true,result:adminClassifyStatus_()};
       case 'targets.exclude':
       case 'targets.exclusions':return {ok:true,result:adminExclusions_(request)};
+      case 'settings.status':return {ok:true,result:{email_system_enabled:adminConfig_('momentum-cold-mailer').value.email_system_enabled===true}};
       case 'settings.update':return {ok:true,result:adminSettings_(request)};
       default:throw new Error('INVALID_REQUEST');
     }
