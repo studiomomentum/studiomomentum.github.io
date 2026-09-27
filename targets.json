@@ -3708,8 +3708,8 @@
     "channel_url": "https://www.youtube.com/channel/UCmgJ_ttvZIG6R9HlBAbg00A",
     "region": "수원",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 13:14:59",
     "views": "구독자 12600 / 최근 롱폼 10편 중앙값 4111.5회",
     "point": "수원 법무법인 채널의 최근 롱폼 10편 중앙값 4111.5회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "65",
@@ -3723,16 +3723,16 @@
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2133,
-    "rejected_count": 205,
+    "review_count": 2137,
+    "rejected_count": 201,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 42,
+    "ready_count": 41,
     "status_counts": {
-      "REVIEW": 2133,
-      "REJECTED": 205,
+      "REVIEW": 2137,
+      "REJECTED": 201,
       "REGISTERED": 122,
       "DUPLICATE": 6,
       "ERROR": 2,
@@ -3740,12 +3740,12 @@
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 534,
-      "UNSCORED": 690,
-      "LOW": 478,
-      "HIGH": 654,
-      "VERY LOW": 114
+      "MEDIUM": 566,
+      "UNSCORED": 585,
+      "LOW": 505,
+      "HIGH": 690,
+      "VERY LOW": 124
     },
-    "updated_at": "2026-09-27T03:59:28.446630+00:00"
+    "updated_at": "2026-09-27T04:20:08.676885+00:00"
   }
 }
