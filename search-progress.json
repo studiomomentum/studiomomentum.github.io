@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:42:09.861839+00:00",
+  "updated_at": "2026-09-27T17:43:11.606920+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 노무사",
-    "송파 노무법인"
+    "송파 노무법인",
+    "송파 법무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27657,
-    "processed": 9127,
-    "pending": 18528,
+    "total": 27659,
+    "processed": 9141,
+    "pending": 18516,
     "processing": 2,
-    "eligible": 121,
-    "review": 6240,
-    "rejected": 2752,
+    "eligible": 122,
+    "review": 6248,
+    "rejected": 2757,
     "errors": 11,
-    "ready": 80,
+    "ready": 81,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC4Obp-W4BO6pzZ6F6MXyQHw",
-        "name": "한종술변호사",
+        "channel_id": "UCphUTA3pXlImjE_oPOfdoYA",
+        "name": "Radio Korea",
         "query": "오산 변호사"
       },
       {
-        "channel_id": "UCl7ZwQhWBb8LEzbcpGmVMkA",
-        "name": "천안알콜아저씨",
+        "channel_id": "UCbb_brQ2fagVn-12uG9Ry0Q",
+        "name": "하나맘",
         "query": "오산 변호사"
       }
     ]
   },
-  "queries_completed": 429,
-  "region_queries_completed": 29,
-  "region_channels": 3337,
-  "region_observed": 1138,
-  "channels_discovered": 27656,
-  "channels_observed": 9116,
-  "search_pages": 9830,
-  "search_results_read": 198151,
+  "queries_completed": 430,
+  "region_queries_completed": 30,
+  "region_channels": 3359,
+  "region_observed": 1146,
+  "channels_discovered": 27658,
+  "channels_observed": 9130,
+  "search_pages": 9853,
+  "search_results_read": 198581,
   "query_errors": {},
   "regions": [
     {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2017,
+      "observed": 2031,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2020,
+      "classified": 2034,
       "classification_errors": 3,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1763,
+      "observed": 1768,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1764,
+      "classified": 1769,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2637,
+      "observed": 2639,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2639,
+      "classified": 2641,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2072,
+      "observed": 2073,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2072,
+      "classified": 2073,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1601,
+      "observed": 1603,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1603,
+      "classified": 1605,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2688,10 +2688,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1632,
+      "observed": 1633,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1633,
+      "classified": 1634,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,13 +2978,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 29,
+      "queries_completed": 30,
       "queries_total": 40,
-      "channels": 3337,
-      "observed": 1138,
+      "channels": 3359,
+      "observed": 1146,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1139,
+      "classified": 1147,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3192,24 +3192,24 @@
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 101,
-          "results_read": 447,
-          "pages": 23
+          "status": "completed",
+          "channels": 104,
+          "results_read": 477,
+          "pages": 26
         },
         {
           "name": "노무법인",
           "status": "running",
-          "channels": 27,
-          "results_read": 157,
-          "pages": 8
+          "channels": 51,
+          "results_read": 397,
+          "pages": 20
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 36,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "변리사",
