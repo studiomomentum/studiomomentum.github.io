@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:04:31.414550+00:00",
+  "updated_at": "2026-09-27T21:05:32.834657+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13154,
-    "pending": 14782,
+    "processed": 13172,
+    "pending": 14764,
     "processing": 2,
-    "eligible": 151,
-    "review": 9155,
-    "rejected": 3820,
+    "eligible": 152,
+    "review": 9168,
+    "rejected": 3824,
     "errors": 25,
     "ready": 106,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCHPHiAQf9MhHMzqAi3swFDA",
-        "name": "김해문화관광재단",
-        "query": "평택 노무사"
+        "channel_id": "UCEzJyhMaL1pfiAOt7SbHuoQ",
+        "name": "음악산책아로마",
+        "query": "평택 노무법인"
       },
       {
-        "channel_id": "UCNmApMxRqM7BjqqFyhEZ2VA",
-        "name": "또끼",
-        "query": "평택 노무사"
+        "channel_id": "UCRASmAj7Ggb2HmZ4hBQJ7vQ",
+        "name": "골드만 싹쓰리",
+        "query": "평택 노무법인"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1610,
+  "region_observed": 1612,
   "channels_discovered": 27937,
-  "channels_observed": 13129,
+  "channels_observed": 13147,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4014,
+      "observed": 4032,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4024,
+      "classified": 4042,
       "classification_errors": 10,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2538,
+      "observed": 2541,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2541,
+      "classified": 2544,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2405,
+      "observed": 2406,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2407,
+      "classified": 2408,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1848,
+      "observed": 1849,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1851,
+      "classified": 1852,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1851,
+      "observed": 1852,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1852,
+      "classified": 1853,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1610,
+      "observed": 1612,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1611,
+      "classified": 1613,
       "classification_errors": 1,
       "jobs": [
         {
