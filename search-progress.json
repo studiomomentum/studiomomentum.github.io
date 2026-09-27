@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:11:07.241851+00:00",
+  "updated_at": "2026-09-27T20:12:08.428313+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12040,
-    "pending": 15896,
-    "processing": 2,
+    "processed": 12057,
+    "pending": 15880,
+    "processing": 1,
     "eligible": 144,
-    "review": 8328,
-    "rejected": 3543,
+    "review": 8341,
+    "rejected": 3547,
     "errors": 22,
     "ready": 100,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCAZmKknGHYp2DzjHnHzJVmg",
-        "name": "파로스 수학학원",
-        "query": "평택 학원"
-      },
-      {
-        "channel_id": "UCfp9Gz9g2qdzeGGgbSb3BIA",
-        "name": "이정엽",
+        "channel_id": "UCPD1Q1S3-VnTkuVzlt5TLqA",
+        "name": "YONI DRUM 요니뮤직 실용음악학원",
         "query": "평택 학원"
       }
     ]
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1555,
   "channels_discovered": 27937,
-  "channels_observed": 12018,
+  "channels_observed": 12035,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2903,
+      "observed": 2920,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 2910,
+      "classified": 2927,
       "classification_errors": 7,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2907,
+      "observed": 2909,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2909,
+      "classified": 2911,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2426,
+      "observed": 2427,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2429,
+      "classified": 2430,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1884,
+      "observed": 1885,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1888,
+      "classified": 1889,
       "classification_errors": 4,
       "jobs": [
         {
