@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:46:31.950139+00:00",
+  "updated_at": "2026-09-27T13:47:33.585067+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 세무회계",
-    "용인 변호사"
+    "용인 법무법인",
+    "용인 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 13790,
-    "processed": 4990,
-    "pending": 8798,
+    "total": 13822,
+    "processed": 5018,
+    "pending": 8802,
     "processing": 2,
     "eligible": 95,
-    "review": 3365,
-    "rejected": 1524,
+    "review": 3382,
+    "rejected": 1535,
     "errors": 5,
-    "ready": 54,
+    "ready": 55,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0wG77ZwuHdoNZllP3LE6tA",
-        "name": "병아리콘"
+        "channel_id": "UCXAQmJgVwGZ5TKuOJxDR2pw",
+        "name": "시각장애 너무해박사 심리가 있는 라인댄스"
       },
       {
-        "channel_id": "UCYy6cZOZKhwzgeUGJIaahPg",
-        "name": "뚫어맨 하수구"
+        "channel_id": "UCSIdTmSVl7a6wlVUgpGO39A",
+        "name": "베트남세딸아빠"
       }
     ]
   },
-  "queries_completed": 158,
-  "region_queries_completed": 2,
-  "region_channels": 470,
-  "region_observed": 406,
-  "channels_discovered": 13789,
-  "channels_observed": 4985,
-  "search_pages": 3115,
-  "search_results_read": 68877,
+  "queries_completed": 160,
+  "region_queries_completed": 4,
+  "region_channels": 583,
+  "region_observed": 474,
+  "channels_discovered": 13821,
+  "channels_observed": 5013,
+  "search_pages": 3157,
+  "search_results_read": 69655,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3775,
+      "observed": 3803,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3780,
+      "classified": 3808,
       "classification_errors": 5,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1176,
+      "observed": 1178,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1177,
+      "classified": 1179,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1218,
+      "observed": 1223,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1220,
+      "classified": 1225,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1227,
+      "observed": 1234,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1227,
+      "classified": 1234,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1190,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 39,
-      "channels": 470,
-      "observed": 406,
+      "channels": 583,
+      "observed": 474,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 406,
+      "classified": 474,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1215,31 +1215,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 71,
-          "results_read": 353,
-          "pages": 18
+          "status": "completed",
+          "channels": 86,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 86,
-          "results_read": 357,
-          "pages": 18
+          "status": "completed",
+          "channels": 151,
+          "results_read": 527,
+          "pages": 28
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 66,
+          "results_read": 260,
+          "pages": 13
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 32,
+          "results_read": 212,
+          "pages": 11
         },
         {
           "name": "치과",
