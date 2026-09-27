@@ -2,37 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:48:39.358899+00:00",
+  "updated_at": "2026-09-27T15:49:41.399020+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 세무회계",
-    "강남 변호사"
+    "강남 변호사",
+    "강남 법무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 22648,
-    "processed": 7373,
-    "pending": 15275,
-    "processing": 0,
+    "total": 22763,
+    "processed": 7391,
+    "pending": 15370,
+    "processing": 2,
     "eligible": 115,
-    "review": 4990,
-    "rejected": 2259,
+    "review": 5004,
+    "rejected": 2263,
     "errors": 6,
     "ready": 74,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCjsKov3VpvZSgIbAvyiMP1Q",
+        "name": "TBC스마트교육원",
+        "query": "동탄 마취통증의학과"
+      },
+      {
+        "channel_id": "UCfGuFwIBD03CrS-SXYWu1kw",
+        "name": "우대하는 몸 (우대마취통증의학과)",
+        "query": "동탄 마취통증의학과"
+      }
+    ]
   },
-  "queries_completed": 322,
-  "region_queries_completed": 2,
-  "region_channels": 509,
-  "region_observed": 344,
-  "channels_discovered": 22647,
-  "channels_observed": 7367,
-  "search_pages": 7025,
-  "search_results_read": 143792,
+  "queries_completed": 323,
+  "region_queries_completed": 3,
+  "region_channels": 706,
+  "region_observed": 389,
+  "channels_discovered": 22762,
+  "channels_observed": 7385,
+  "search_pages": 7053,
+  "search_results_read": 144315,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3237,
+      "observed": 3255,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3239,
+      "classified": 3257,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1656,
+      "observed": 1662,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1658,
+      "classified": 1664,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1594,
+      "observed": 1595,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1594,
+      "classified": 1595,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1818,
+      "observed": 1820,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1818,
+      "classified": 1820,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2068,
+      "observed": 2070,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2070,
+      "classified": 2072,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 2,
+      "queries_completed": 3,
       "queries_total": 40,
-      "channels": 509,
-      "observed": 344,
+      "channels": 706,
+      "observed": 389,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 344,
+      "classified": 389,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2406,24 +2417,24 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 78,
-          "results_read": 316,
-          "pages": 16
+          "status": "completed",
+          "channels": 126,
+          "results_read": 504,
+          "pages": 27
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 44,
-          "results_read": 315,
-          "pages": 16
+          "channels": 197,
+          "results_read": 591,
+          "pages": 30
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 41,
+          "results_read": 59,
+          "pages": 3
         },
         {
           "name": "법률사무소",
