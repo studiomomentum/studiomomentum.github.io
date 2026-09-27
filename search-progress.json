@@ -2,10 +2,9 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:43:28.061877+00:00",
+  "updated_at": "2026-09-27T13:44:29.524205+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 건축사사무소",
     "평택 심리상담센터"
   ],
   "search_stage": {
@@ -13,31 +12,26 @@
     "region": "평택"
   },
   "classification": {
-    "total": 13612,
-    "processed": 4917,
-    "pending": 8694,
-    "processing": 1,
+    "total": 13753,
+    "processed": 4942,
+    "pending": 8811,
+    "processing": 0,
     "eligible": 94,
-    "review": 3321,
-    "rejected": 1496,
+    "review": 3339,
+    "rejected": 1503,
     "errors": 5,
     "ready": 54,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCTWoKbefNbb62h282fg85jQ",
-        "name": "즐거운자동차"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 153,
-  "region_queries_completed": 36,
-  "region_channels": 4390,
-  "region_observed": 1196,
-  "channels_discovered": 13610,
-  "channels_observed": 4912,
-  "search_pages": 2982,
-  "search_results_read": 66402,
+  "queries_completed": 155,
+  "region_queries_completed": 38,
+  "region_channels": 4618,
+  "region_observed": 1218,
+  "channels_discovered": 13751,
+  "channels_observed": 4937,
+  "search_pages": 3026,
+  "search_results_read": 67193,
   "query_errors": {},
   "regions": [
     {
@@ -45,10 +39,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3702,
+      "observed": 3727,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3707,
+      "classified": 3732,
       "classification_errors": 5,
       "jobs": [
         {
@@ -331,10 +325,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1164,
+      "observed": 1167,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1165,
+      "classified": 1168,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +611,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1202,
+      "observed": 1208,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1204,
+      "classified": 1210,
       "classification_errors": 2,
       "jobs": [
         {
@@ -900,13 +894,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 39,
-      "channels": 4390,
-      "observed": 1196,
+      "channels": 4618,
+      "observed": 1218,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1196,
+      "classified": 1218,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1163,24 +1157,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 136,
-          "results_read": 260,
-          "pages": 13
+          "status": "completed",
+          "channels": 253,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 46,
-          "results_read": 60,
-          "pages": 3
+          "channels": 226,
+          "results_read": 463,
+          "pages": 25
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 41,
+          "results_read": 150,
+          "pages": 9
         }
       ]
     },
