@@ -1,43 +1,43 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "동탄",
+  "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:07:30.996858+00:00",
+  "updated_at": "2026-09-27T13:08:32.226826+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 심리상담센터",
-    "동탄 필라테스"
+    "오산 세무회계",
+    "오산 변호사"
   ],
   "search_stage": {
     "status": "running",
-    "region": "동탄"
+    "region": "오산"
   },
   "classification": {
-    "total": 8831,
-    "processed": 3967,
-    "pending": 4863,
+    "total": 9112,
+    "processed": 4001,
+    "pending": 5110,
     "processing": 1,
     "eligible": 89,
-    "review": 2684,
-    "rejected": 1190,
+    "review": 2710,
+    "rejected": 1198,
     "errors": 4,
     "ready": 50,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCFzzQFz14CKDvVCiU6JyoeA",
-        "name": "김민수법무사-법무사호인사무소"
+        "channel_id": "UCoWbCNhHYTWO40SbVdT2stQ",
+        "name": "대방열림"
       }
     ]
   },
-  "queries_completed": 76,
-  "region_queries_completed": 37,
-  "region_channels": 4681,
-  "region_observed": 1006,
-  "channels_discovered": 8828,
-  "channels_observed": 3963,
-  "search_pages": 1319,
-  "search_results_read": 35518,
+  "queries_completed": 80,
+  "region_queries_completed": 2,
+  "region_channels": 628,
+  "region_observed": 326,
+  "channels_discovered": 9109,
+  "channels_observed": 3997,
+  "search_pages": 1382,
+  "search_results_read": 36666,
   "query_errors": {},
   "regions": [
     {
@@ -45,10 +45,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2753,
+      "observed": 2787,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2757,
+      "classified": 2791,
       "classification_errors": 4,
       "jobs": [
         {
@@ -328,13 +328,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 37,
+      "queries_completed": 39,
       "queries_total": 39,
-      "channels": 4681,
-      "observed": 1006,
+      "channels": 4780,
+      "observed": 1012,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1007,
+      "classified": 1013,
       "classification_errors": 1,
       "jobs": [
         {
@@ -598,55 +598,55 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 289,
-          "results_read": 480,
-          "pages": 24
+          "status": "completed",
+          "channels": 295,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 216,
-          "results_read": 338,
-          "pages": 17
+          "status": "completed",
+          "channels": 326,
+          "results_read": 495,
+          "pages": 26
         }
       ]
     },
     {
       "name": "오산",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 39,
-      "channels": 237,
-      "observed": 237,
+      "channels": 628,
+      "observed": 326,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 237,
+      "classified": 326,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 271,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 211,
+          "results_read": 328,
+          "pages": 18
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 2,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 79,
+          "results_read": 158,
+          "pages": 8
         },
         {
           "name": "변호사",
-          "status": "pending",
+          "status": "running",
           "channels": 10,
           "results_read": 0,
           "pages": 0
