@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:56:47.165805+00:00",
+  "updated_at": "2026-09-27T21:57:49.099921+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14168,
-    "pending": 13768,
-    "processing": 2,
+    "processed": 14190,
+    "pending": 13748,
+    "processing": 0,
     "eligible": 161,
-    "review": 9914,
-    "rejected": 4062,
+    "review": 9932,
+    "rejected": 4066,
     "errors": 28,
     "ready": 115,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCfLSIWneOl_1_VNhYZNHkeg",
-        "name": "동백사랑 공인중개사 사무소",
-        "query": "용인 공인중개사"
-      },
-      {
-        "channel_id": "UCWGicbsIQR8XJh07LZjYLFg",
-        "name": "Hyungjin Lee",
-        "query": "용인 어학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1669,
+  "region_observed": 1671,
   "channels_discovered": 27937,
-  "channels_observed": 14140,
+  "channels_observed": 14162,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3542,
+      "observed": 3564,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3544,
+      "classified": 3566,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2615,
+      "observed": 2616,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2618,
+      "classified": 2619,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2483,
+      "observed": 2490,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2485,
+      "classified": 2492,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1897,
+      "observed": 1899,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1900,
+      "classified": 1902,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2032,
+      "observed": 2033,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2037,
+      "classified": 2038,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1669,
+      "observed": 1671,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1670,
+      "classified": 1672,
       "classification_errors": 1,
       "jobs": [
         {
