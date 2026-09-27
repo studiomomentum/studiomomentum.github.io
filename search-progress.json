@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:49:37.960449+00:00",
+  "updated_at": "2026-09-27T17:50:47.969341+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 건축사사무소",
-    "송파 심리상담센터"
+    "송파 심리상담센터",
+    "송파 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27812,
-    "processed": 9229,
-    "pending": 18583,
+    "total": 27846,
+    "processed": 9245,
+    "pending": 18601,
     "processing": 0,
     "eligible": 122,
-    "review": 6313,
-    "rejected": 2779,
+    "review": 6319,
+    "rejected": 2789,
     "errors": 12,
     "ready": 81,
     "status": "running",
     "active": []
   },
-  "queries_completed": 436,
-  "region_queries_completed": 36,
-  "region_channels": 3828,
-  "region_observed": 1318,
-  "channels_discovered": 27811,
-  "channels_observed": 9217,
-  "search_pages": 9995,
-  "search_results_read": 201227,
+  "queries_completed": 437,
+  "region_queries_completed": 37,
+  "region_channels": 3956,
+  "region_observed": 1360,
+  "channels_discovered": 27845,
+  "channels_observed": 9233,
+  "search_pages": 10023,
+  "search_results_read": 201756,
   "query_errors": {},
   "regions": [
     {
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2118,
+      "observed": 2134,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2122,
+      "classified": 2138,
       "classification_errors": 4,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1778,
+      "observed": 1782,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1779,
+      "classified": 1783,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2206,
+      "observed": 2207,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2208,
+      "classified": 2209,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1604,
+      "observed": 1605,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1606,
+      "classified": 1607,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2677,10 +2677,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1636,
+      "observed": 1637,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1637,
+      "classified": 1638,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,13 +2967,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 36,
+      "queries_completed": 37,
       "queries_total": 40,
-      "channels": 3828,
-      "observed": 1318,
+      "channels": 3956,
+      "observed": 1360,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1319,
+      "classified": 1361,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3230,24 +3230,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 91,
-          "results_read": 258,
-          "pages": 13
+          "status": "completed",
+          "channels": 172,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 19,
-          "results_read": 20,
-          "pages": 1
+          "channels": 87,
+          "results_read": 299,
+          "pages": 15
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 11,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "중고차",
