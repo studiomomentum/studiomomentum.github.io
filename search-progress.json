@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:05:57.279339+00:00",
+  "updated_at": "2026-09-27T20:06:58.445212+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11934,
-    "pending": 16002,
+    "processed": 11952,
+    "pending": 15984,
     "processing": 2,
     "eligible": 144,
-    "review": 8238,
-    "rejected": 3530,
+    "review": 8254,
+    "rejected": 3532,
     "errors": 19,
     "ready": 100,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9WzJmnbgmx-Gm_q_hBpnOw",
-        "name": "소람한방병원",
+        "channel_id": "UC6SICWxTgZwK1xV9bKM9H8w",
+        "name": "연산당당한방병원",
         "query": "평택 한방병원"
       },
       {
-        "channel_id": "UCxPYCBlg3TftsOSBM8vrYyg",
-        "name": "스텔스차박",
-        "query": "평택 한방병원"
+        "channel_id": "UCYctpFdbNesJqtA5-SZ4CBg",
+        "name": "지아언니튜브",
+        "query": "평택 한의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1550,
+  "region_observed": 1552,
   "channels_discovered": 27937,
-  "channels_observed": 11915,
+  "channels_observed": 11933,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2800,
+      "observed": 2818,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2804,
+      "classified": 2822,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2887,
+      "observed": 2890,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2889,
+      "classified": 2892,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2410,
+      "observed": 2414,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2412,
+      "classified": 2416,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2350,
+      "observed": 2354,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2352,
+      "classified": 2356,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1793,
+      "observed": 1794,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1796,
+      "classified": 1797,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1874,
+      "observed": 1878,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1878,
+      "classified": 1882,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1784,
+      "observed": 1787,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1785,
+      "classified": 1788,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1550,
+      "observed": 1552,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1551,
+      "classified": 1553,
       "classification_errors": 1,
       "jobs": [
         {
