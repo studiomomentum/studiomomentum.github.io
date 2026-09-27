@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:07:23.052238+00:00",
+  "updated_at": "2026-09-27T22:08:24.120450+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14370,
-    "pending": 13566,
+    "processed": 14388,
+    "pending": 13548,
     "processing": 2,
     "eligible": 163,
-    "review": 10045,
-    "rejected": 4131,
+    "review": 10061,
+    "rejected": 4133,
     "errors": 28,
     "ready": 117,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCGwonfa1hPPwmVm7JLltPWQ",
-        "name": "행정사 가맹거래사",
-        "query": "용인 행정사사무소"
+        "channel_id": "UCuhLs3ryE8pnYaNJMCJnYgQ",
+        "name": "굿라인성형외과",
+        "query": "용인 성형외과"
       },
       {
-        "channel_id": "UCBn2itCS4zSLMOjfn9ZuqIg",
-        "name": "aimakingcivilization",
-        "query": "용인 피부과"
+        "channel_id": "UCrhAMfR_bZREv57wuk_ZLew",
+        "name": "barun",
+        "query": "용인 안과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1694,
+  "region_observed": 1695,
   "channels_discovered": 27937,
-  "channels_observed": 14342,
+  "channels_observed": 14360,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3744,
+      "observed": 3762,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3746,
+      "classified": 3764,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2641,
+      "observed": 2648,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2644,
+      "classified": 2651,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2537,
+      "observed": 2547,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2539,
+      "classified": 2549,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2053,
+      "observed": 2055,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2058,
+      "classified": 2060,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1916,
+      "observed": 1918,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1917,
+      "classified": 1919,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1694,
+      "observed": 1695,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1695,
+      "classified": 1696,
       "classification_errors": 1,
       "jobs": [
         {
