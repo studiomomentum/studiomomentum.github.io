@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:59:29.363387+00:00",
+  "updated_at": "2026-09-27T16:00:31.403410+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 공인중개사",
-    "강남 부동산중개"
+    "강남 부동산중개",
+    "강남 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 23503,
-    "processed": 7555,
-    "pending": 15946,
-    "processing": 2,
+    "total": 23543,
+    "processed": 7569,
+    "pending": 15974,
+    "processing": 0,
     "eligible": 117,
-    "review": 5116,
-    "rejected": 2313,
+    "review": 5129,
+    "rejected": 2314,
     "errors": 6,
     "ready": 76,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCPQB5P8cOM7bqAoSVULKEPA",
-        "name": "미즈맘병원대구",
-        "query": "동탄 산부인과"
-      },
-      {
-        "channel_id": "UCPSm95RDy3zM_ykdQ0lAm7g",
-        "name": "HeonTV",
-        "query": "동탄 산부인과"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 333,
-  "region_queries_completed": 13,
-  "region_channels": 2101,
-  "region_observed": 779,
-  "channels_discovered": 23502,
-  "channels_observed": 7549,
-  "search_pages": 7325,
-  "search_results_read": 149440,
+  "queries_completed": 334,
+  "region_queries_completed": 14,
+  "region_channels": 2205,
+  "region_observed": 820,
+  "channels_discovered": 23542,
+  "channels_observed": 7563,
+  "search_pages": 7349,
+  "search_results_read": 149895,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3419,
+      "observed": 3433,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3421,
+      "classified": 3435,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1692,
+      "observed": 1696,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1694,
+      "classified": 1698,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1616,
+      "observed": 1617,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1616,
+      "classified": 1617,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2543,
+      "observed": 2544,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2545,
+      "classified": 2546,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1849,
+      "observed": 1852,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1849,
+      "classified": 1852,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2088,
+      "observed": 2090,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2090,
+      "classified": 2092,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1391,
+      "observed": 1392,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1392,
+      "classified": 1393,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 13,
+      "queries_completed": 14,
       "queries_total": 40,
-      "channels": 2101,
-      "observed": 779,
+      "channels": 2205,
+      "observed": 820,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 781,
+      "classified": 822,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2494,24 +2483,24 @@
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 140,
-          "results_read": 473,
-          "pages": 24
+          "status": "completed",
+          "channels": 171,
+          "results_read": 553,
+          "pages": 29
         },
         {
           "name": "부동산중개",
           "status": "running",
-          "channels": 17,
-          "results_read": 20,
-          "pages": 1
+          "channels": 86,
+          "results_read": 258,
+          "pages": 13
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 51,
+          "results_read": 137,
+          "pages": 7
         },
         {
           "name": "행정사사무소",
