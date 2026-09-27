@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:47:20.607817+00:00",
+  "updated_at": "2026-09-27T14:48:26.058296+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 부동산중개",
-    "분당 행정사"
+    "분당 행정사사무소",
+    "분당 피부과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 18097,
-    "processed": 6332,
-    "pending": 11763,
-    "processing": 2,
+    "total": 18143,
+    "processed": 6356,
+    "pending": 11787,
+    "processing": 0,
     "eligible": 105,
-    "review": 4268,
-    "rejected": 1953,
+    "review": 4289,
+    "rejected": 1956,
     "errors": 5,
     "ready": 64,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCwR98xK4jMs6_sG1jXeM7AQ",
-        "name": "중앙한방병원"
-      },
-      {
-        "channel_id": "UCSSvLauiaYFBmUOUmB3TNPw",
-        "name": "소람한방병원"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 248,
-  "region_queries_completed": 14,
-  "region_channels": 1534,
-  "region_observed": 934,
-  "channels_discovered": 18096,
-  "channels_observed": 6327,
-  "search_pages": 5315,
-  "search_results_read": 111935,
+  "queries_completed": 250,
+  "region_queries_completed": 16,
+  "region_channels": 1666,
+  "region_observed": 983,
+  "channels_discovered": 18142,
+  "channels_observed": 6351,
+  "search_pages": 5352,
+  "search_results_read": 112609,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2192,
+      "observed": 2216,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2193,
+      "classified": 2217,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1474,
+      "observed": 1478,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1476,
+      "classified": 1480,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +898,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1443,
+      "observed": 1446,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1443,
+      "classified": 1446,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1184,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2444,
+      "observed": 2447,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2446,
+      "classified": 2449,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1479,10 +1470,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1627,
+      "observed": 1630,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1627,
+      "classified": 1630,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1762,13 +1753,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 14,
+      "queries_completed": 16,
       "queries_total": 39,
-      "channels": 1534,
-      "observed": 934,
+      "channels": 1666,
+      "observed": 983,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 935,
+      "classified": 984,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1871,31 +1862,31 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 169,
-          "results_read": 478,
-          "pages": 24
+          "status": "completed",
+          "channels": 181,
+          "results_read": 508,
+          "pages": 27
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 54,
-          "results_read": 260,
-          "pages": 13
+          "status": "completed",
+          "channels": 156,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 85,
+          "results_read": 294,
+          "pages": 15
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 47,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "성형외과",
