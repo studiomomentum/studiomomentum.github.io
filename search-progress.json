@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:00:31.403410+00:00",
+  "updated_at": "2026-09-27T16:01:33.460121+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "강남 부동산중개",
@@ -13,13 +13,13 @@
     "region": "강남"
   },
   "classification": {
-    "total": 23543,
-    "processed": 7569,
-    "pending": 15974,
+    "total": 23600,
+    "processed": 7587,
+    "pending": 16013,
     "processing": 0,
     "eligible": 117,
-    "review": 5129,
-    "rejected": 2314,
+    "review": 5141,
+    "rejected": 2320,
     "errors": 6,
     "ready": 76,
     "status": "running",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 334,
   "region_queries_completed": 14,
-  "region_channels": 2205,
-  "region_observed": 820,
-  "channels_discovered": 23542,
-  "channels_observed": 7563,
-  "search_pages": 7349,
-  "search_results_read": 149895,
+  "region_channels": 2321,
+  "region_observed": 861,
+  "channels_discovered": 23599,
+  "channels_observed": 7581,
+  "search_pages": 7377,
+  "search_results_read": 150452,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3433,
+      "observed": 3451,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3435,
+      "classified": 3453,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1696,
+      "observed": 1698,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1698,
+      "classified": 1700,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2544,
+      "observed": 2545,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2546,
+      "classified": 2547,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1852,
+      "observed": 1856,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1852,
+      "classified": 1856,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2090,
+      "observed": 2093,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2092,
+      "classified": 2095,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1392,
+      "observed": 1396,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1393,
+      "classified": 1397,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2383,11 +2383,11 @@
       "name": "강남",
       "queries_completed": 14,
       "queries_total": 40,
-      "channels": 2205,
-      "observed": 820,
+      "channels": 2321,
+      "observed": 861,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 822,
+      "classified": 863,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2491,16 +2491,16 @@
         {
           "name": "부동산중개",
           "status": "running",
-          "channels": 86,
-          "results_read": 258,
-          "pages": 13
+          "channels": 199,
+          "results_read": 535,
+          "pages": 27
         },
         {
           "name": "행정사",
           "status": "running",
-          "channels": 51,
-          "results_read": 137,
-          "pages": 7
+          "channels": 129,
+          "results_read": 417,
+          "pages": 21
         },
         {
           "name": "행정사사무소",
