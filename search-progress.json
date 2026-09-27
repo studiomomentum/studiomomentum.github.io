@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:07:21.791792+00:00",
+  "updated_at": "2026-09-27T17:08:32.013412+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "서초 필라테스",
@@ -13,37 +13,26 @@
     "region": "서초"
   },
   "classification": {
-    "total": 26624,
-    "processed": 8619,
-    "pending": 18003,
-    "processing": 2,
+    "total": 26675,
+    "processed": 8637,
+    "pending": 18038,
+    "processing": 0,
     "eligible": 120,
-    "review": 5868,
-    "rejected": 2618,
+    "review": 5884,
+    "rejected": 2620,
     "errors": 10,
     "ready": 79,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCq4jckvIGYbC9fD73KPp6tw",
-        "name": "서울시교육청TV",
-        "query": "동탄 심리상담센터"
-      },
-      {
-        "channel_id": "UCMziEFtvotwIgo9dBrmj_Vw",
-        "name": "고덕진",
-        "query": "동탄 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 398,
   "region_queries_completed": 38,
-  "region_channels": 4591,
-  "region_observed": 1588,
-  "channels_discovered": 26623,
-  "channels_observed": 8609,
-  "search_pages": 9012,
-  "search_results_read": 182903,
+  "region_channels": 4730,
+  "region_observed": 1606,
+  "channels_discovered": 26674,
+  "channels_observed": 8627,
+  "search_pages": 9040,
+  "search_results_read": 183458,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4479,
+      "observed": 4497,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4485,
+      "classified": 4503,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2017,
+      "observed": 2020,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2017,
+      "classified": 2020,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1541,
+      "observed": 1544,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1542,
+      "classified": 1545,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2395,10 +2384,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1667,
+      "observed": 1669,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1670,
+      "classified": 1672,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2687,11 +2676,11 @@
       "name": "서초",
       "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4591,
-      "observed": 1588,
+      "channels": 4730,
+      "observed": 1606,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1589,
+      "classified": 1607,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2963,16 +2952,16 @@
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 76,
-          "results_read": 220,
-          "pages": 11
+          "channels": 172,
+          "results_read": 495,
+          "pages": 25
         },
         {
           "name": "중고차",
           "status": "running",
-          "channels": 73,
-          "results_read": 180,
-          "pages": 9
+          "channels": 129,
+          "results_read": 460,
+          "pages": 23
         }
       ]
     },
