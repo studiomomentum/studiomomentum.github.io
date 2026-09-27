@@ -2,49 +2,58 @@
   "sweep_id": "full-20260927-429",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:48:18.555980+00:00",
+  "updated_at": "2026-09-27T12:49:19.460926+00:00",
   "run_id": "36320123849",
   "active_queries": [
-    "수원 동물병원",
-    "수원 의원"
+    "수원 노무사",
+    "수원 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 4149,
-    "processed": 3511,
-    "pending": 638,
-    "processing": 0,
+    "total": 4434,
+    "processed": 3509,
+    "pending": 923,
+    "processing": 2,
     "eligible": 84,
-    "review": 2287,
-    "rejected": 1019,
-    "errors": 121,
-    "ready": 45,
+    "review": 2299,
+    "rejected": 1028,
+    "errors": 98,
+    "ready": 46,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCNyNYgk6iSRXg3AoElkPE7Q",
+        "name": "라온마케팅"
+      },
+      {
+        "channel_id": "UCxdABiMRPu3yqB0ho9TUtsg",
+        "name": "MEDIHUB, i-JECT"
+      }
+    ]
   },
-  "queries_completed": 27,
-  "region_queries_completed": 27,
-  "region_channels": 2803,
-  "region_observed": 2044,
-  "channels_discovered": 4143,
-  "channels_observed": 3390,
-  "search_pages": 203,
-  "search_results_read": 13372,
+  "queries_completed": 29,
+  "region_queries_completed": 29,
+  "region_channels": 3134,
+  "region_observed": 2111,
+  "channels_discovered": 4429,
+  "channels_observed": 3411,
+  "search_pages": 273,
+  "search_results_read": 14707,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 27,
+      "queries_completed": 29,
       "queries_total": 39,
-      "channels": 2803,
-      "observed": 2044,
-      "observation_errors": 121,
+      "channels": 3134,
+      "observed": 2111,
+      "observation_errors": 100,
       "classified_at": null,
-      "classified": 2165,
-      "classification_errors": 121,
+      "classified": 2209,
+      "classification_errors": 98,
       "jobs": [
         {
           "name": "세무사",
@@ -237,31 +246,31 @@
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 141,
-          "results_read": 200,
-          "pages": 10
+          "status": "completed",
+          "channels": 253,
+          "results_read": 525,
+          "pages": 28
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 66,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 214,
+          "results_read": 558,
+          "pages": 29
         },
         {
           "name": "노무사",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 169,
+          "results_read": 339,
+          "pages": 17
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 20,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 114,
+          "results_read": 293,
+          "pages": 15
         },
         {
           "name": "법무사",
