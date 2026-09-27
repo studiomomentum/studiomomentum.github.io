@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:34:58.168432+00:00",
+  "updated_at": "2026-09-27T13:36:03.002191+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 성형외과",
-    "평택 안과"
+    "평택 정형외과",
+    "평택 이비인후과"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 12621,
-    "processed": 4724,
-    "pending": 7897,
+    "total": 12673,
+    "processed": 4754,
+    "pending": 7919,
     "processing": 0,
     "eligible": 94,
-    "review": 3191,
-    "rejected": 1434,
+    "review": 3215,
+    "rejected": 1440,
     "errors": 4,
     "ready": 54,
     "status": "running",
     "active": []
   },
-  "queries_completed": 135,
-  "region_queries_completed": 18,
-  "region_channels": 2661,
-  "region_observed": 820,
-  "channels_discovered": 12619,
-  "channels_observed": 4720,
-  "search_pages": 2608,
-  "search_results_read": 59458,
+  "queries_completed": 137,
+  "region_queries_completed": 20,
+  "region_channels": 2786,
+  "region_observed": 845,
+  "channels_discovered": 12671,
+  "channels_observed": 4750,
+  "search_pages": 2654,
+  "search_results_read": 60310,
   "query_errors": {},
   "regions": [
     {
@@ -40,10 +40,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3510,
+      "observed": 3540,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3514,
+      "classified": 3544,
       "classification_errors": 4,
       "jobs": [
         {
@@ -326,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1126,
+      "observed": 1133,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1127,
+      "classified": 1134,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1181,
+      "observed": 1185,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1183,
+      "classified": 1187,
       "classification_errors": 2,
       "jobs": [
         {
@@ -895,13 +895,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 18,
+      "queries_completed": 20,
       "queries_total": 39,
-      "channels": 2661,
-      "observed": 820,
+      "channels": 2786,
+      "observed": 845,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 820,
+      "classified": 845,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1032,31 +1032,31 @@
         },
         {
           "name": "성형외과",
-          "status": "running",
-          "channels": 188,
-          "results_read": 477,
-          "pages": 24
+          "status": "completed",
+          "channels": 189,
+          "results_read": 480,
+          "pages": 26
         },
         {
           "name": "안과",
-          "status": "running",
-          "channels": 18,
-          "results_read": 127,
-          "pages": 7
+          "status": "completed",
+          "channels": 127,
+          "results_read": 477,
+          "pages": 26
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 91,
+          "results_read": 419,
+          "pages": 21
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "재활의학과",
