@@ -3643,33 +3643,52 @@
     "token": "74b94229",
     "is_priority": false
   },
+  "44c4bbf8": {
+    "no": "202",
+    "company": "Operation Ceremony Dr. Park's - 박천진",
+    "rep": "대표님",
+    "email": "gnjurology@naver.com",
+    "channel_url": "https://www.youtube.com/channel/UCU-wl-PZYxpWeDl1OIiE_hQ",
+    "region": "강남",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 52300 / 최근 롱폼 10편 중앙값 894.5회",
+    "point": "강남 비뇨기과 채널의 최근 롱폼 10편 중앙값 894.5회. 조회수 개선을 위한 기획 검토 제안",
+    "prospect_score": "85",
+    "prospect_grade": "HIGH",
+    "score_version": "searcher-v1",
+    "score_snapshot": "{\"score_version\": \"searcher-v1\", \"score_as_of\": \"2026-09-27T00:01:23.033819+00:00\", \"prospect_score\": 85, \"priority_grade\": \"HIGH\", \"score_components\": {\"activity\": 25, \"production\": 30, \"performance\": 30}, \"recent_longform_views\": [745, 751, 476, 758, 2300, 1600, 1000, 1000, 2000, 789], \"recent_longform_median\": 894.5, \"sample_size\": 10, \"score_provisional\": true, \"longform_count\": null, \"longform_count_lower_bound\": 100, \"uploads_30d\": 4, \"uploads_60d\": 6, \"uploads_90d\": 9, \"last_longform_upload\": \"2026-09-18T00:00:00+00:00\"}",
+    "token": "44c4bbf8",
+    "is_priority": false
+  },
   "_search_db_stats": {
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2127,
+    "review_count": 2126,
     "rejected_count": 215,
     "error_count": 2,
     "duplicate_count": 6,
-    "registered_count": 118,
-    "verified_count": 118,
-    "ready_count": 47,
+    "registered_count": 119,
+    "verified_count": 119,
+    "ready_count": 48,
     "status_counts": {
-      "REVIEW": 2127,
+      "REVIEW": 2126,
       "REJECTED": 215,
-      "REGISTERED": 118,
+      "REGISTERED": 119,
       "DUPLICATE": 6,
       "ERROR": 2,
       "DISCOVERED": 2
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 243,
-      "UNSCORED": 1670,
-      "LOW": 217,
-      "HIGH": 283,
-      "VERY LOW": 57
+      "MEDIUM": 278,
+      "UNSCORED": 1549,
+      "LOW": 257,
+      "HIGH": 322,
+      "VERY LOW": 64
     },
-    "updated_at": "2026-09-26T23:57:14.421034+00:00"
+    "updated_at": "2026-09-27T00:01:25.736992+00:00"
   }
 }
