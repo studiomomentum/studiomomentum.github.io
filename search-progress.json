@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:08:27.049618+00:00",
+  "updated_at": "2026-09-27T15:09:28.644499+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "분당 노무사",
-    "분당 노무법인"
+    "분당 법무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 19094,
-    "processed": 6699,
-    "pending": 12393,
+    "total": 19150,
+    "processed": 6709,
+    "pending": 12439,
     "processing": 2,
     "eligible": 109,
-    "review": 4532,
-    "rejected": 2052,
+    "review": 4540,
+    "rejected": 2054,
     "errors": 5,
     "ready": 68,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCgWK34k-nYfwOES71xRA9ZQ",
-        "name": "국제신문부동산TV",
+        "channel_id": "UC49vP5dcNS_jIGHRLeJlkCg",
+        "name": "하단장원고시학원",
         "query": "동탄 공인중개사"
       },
       {
-        "channel_id": "UCN7MhPoALIyr_UmsP-5W4WA",
-        "name": "까치TV [까치부동산]",
+        "channel_id": "UC6y5ImpEB5jcHQP-SbcrtOA",
+        "name": "김공인TV",
         "query": "동탄 공인중개사"
       }
     ]
   },
-  "queries_completed": 269,
-  "region_queries_completed": 29,
-  "region_channels": 2929,
-  "region_observed": 1512,
-  "channels_discovered": 19093,
-  "channels_observed": 6694,
-  "search_pages": 5836,
-  "search_results_read": 121700,
+  "queries_completed": 270,
+  "region_queries_completed": 30,
+  "region_channels": 3110,
+  "region_observed": 1618,
+  "channels_discovered": 19149,
+  "channels_observed": 6704,
+  "search_pages": 5874,
+  "search_results_read": 122426,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2564,
+      "observed": 2574,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2565,
+      "classified": 2575,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1545,
+      "observed": 1547,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1547,
+      "classified": 1549,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1505,
+      "observed": 1508,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1505,
+      "classified": 1508,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2490,
+      "observed": 2491,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2492,
+      "classified": 2493,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1701,
+      "observed": 1702,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1701,
+      "classified": 1702,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,13 +1806,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 29,
+      "queries_completed": 30,
       "queries_total": 40,
-      "channels": 2929,
-      "observed": 1512,
+      "channels": 3110,
+      "observed": 1618,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1514,
+      "classified": 1620,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2021,23 +2021,23 @@
         {
           "name": "노무사",
           "status": "running",
-          "channels": 38,
-          "results_read": 119,
-          "pages": 6
+          "channels": 220,
+          "results_read": 493,
+          "pages": 25
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 141,
+          "results_read": 272,
+          "pages": 15
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "변리사",
