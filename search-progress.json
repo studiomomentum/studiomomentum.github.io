@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:06:12.525687+00:00",
+  "updated_at": "2026-09-27T17:07:21.791792+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 건축사사무소",
-    "서초 심리상담센터"
+    "서초 필라테스",
+    "서초 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 26554,
-    "processed": 8603,
-    "pending": 17949,
+    "total": 26624,
+    "processed": 8619,
+    "pending": 18003,
     "processing": 2,
     "eligible": 120,
-    "review": 5853,
-    "rejected": 2617,
+    "review": 5868,
+    "rejected": 2618,
     "errors": 10,
     "ready": 79,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCMQv4IzyyeX8Sba3Av_cvSw",
-        "name": "새말초등학교방송부",
+        "channel_id": "UCq4jckvIGYbC9fD73KPp6tw",
+        "name": "서울시교육청TV",
         "query": "동탄 심리상담센터"
       },
       {
-        "channel_id": "UCOozqNhXDcb6gg6oaU7uImA",
-        "name": "한국불교 대표방송 BTN",
+        "channel_id": "UCMziEFtvotwIgo9dBrmj_Vw",
+        "name": "고덕진",
         "query": "동탄 심리상담센터"
       }
     ]
   },
-  "queries_completed": 396,
-  "region_queries_completed": 36,
-  "region_channels": 4399,
-  "region_observed": 1556,
-  "channels_discovered": 26553,
-  "channels_observed": 8593,
-  "search_pages": 8982,
-  "search_results_read": 182371,
+  "queries_completed": 398,
+  "region_queries_completed": 38,
+  "region_channels": 4591,
+  "region_observed": 1588,
+  "channels_discovered": 26623,
+  "channels_observed": 8609,
+  "search_pages": 9012,
+  "search_results_read": 182903,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4463,
+      "observed": 4479,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4469,
+      "classified": 4485,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1787,
+      "observed": 1788,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1789,
+      "classified": 1790,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2610,
+      "observed": 2611,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2612,
+      "classified": 2613,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2015,
+      "observed": 2017,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2015,
+      "classified": 2017,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2180,
+      "observed": 2182,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2182,
+      "classified": 2184,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1539,
+      "observed": 1541,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1540,
+      "classified": 1542,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,13 +2685,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4399,
-      "observed": 1556,
+      "channels": 4591,
+      "observed": 1588,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1557,
+      "classified": 1589,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2948,31 +2948,31 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 160,
-          "results_read": 436,
-          "pages": 22
+          "status": "completed",
+          "channels": 175,
+          "results_read": 481,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 139,
-          "results_read": 439,
-          "pages": 22
+          "status": "completed",
+          "channels": 199,
+          "results_read": 526,
+          "pages": 28
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 220,
+          "pages": 11
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 73,
+          "results_read": 180,
+          "pages": 9
         }
       ]
     },
