@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:30:26.133490+00:00",
+  "updated_at": "2026-09-27T20:31:27.796801+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12436,
-    "pending": 15500,
+    "processed": 12458,
+    "pending": 15478,
     "processing": 2,
     "eligible": 147,
-    "review": 8632,
-    "rejected": 3631,
+    "review": 8653,
+    "rejected": 3632,
     "errors": 23,
     "ready": 103,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC8Ur9jg7BrvnvbqX4Gz0Uhw",
-        "name": "푸른부동산",
-        "query": "평택 행정사사무소"
+        "channel_id": "UCFpCvfYHYZHoLlCx3ejwAbw",
+        "name": "닥터룩스미 ; 알기 쉬운 의학상식",
+        "query": "평택 피부과"
       },
       {
-        "channel_id": "UCRvMLydcyPZ6wm29D2Gdweg",
-        "name": "특트럭 삼보특수차",
+        "channel_id": "UCbfDuLpQj4lF-FssWhFB9uw",
+        "name": "인생은한번뿐",
         "query": "평택 행정사사무소"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1570,
   "channels_discovered": 27937,
-  "channels_observed": 12413,
+  "channels_observed": 12435,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3298,
+      "observed": 3320,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3306,
+      "classified": 3328,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2968,
+      "observed": 2969,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2970,
+      "classified": 2971,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2458,
+      "observed": 2466,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2461,
+      "classified": 2469,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1813,
+      "observed": 1814,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1814,
+      "classified": 1815,
       "classification_errors": 1,
       "jobs": [
         {
