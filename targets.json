@@ -3062,8 +3062,8 @@
     "channel_url": "https://www.youtube.com/channel/UCKIfffwCKFoijMU4IjRG3GQ",
     "region": "서초",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 14:14:58",
     "views": "구독자 9930 / 최근 롱폼 10편 중앙값 269.5회",
     "point": "서초 법무법인 채널의 최근 롱폼 10편 중앙값 269.5회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "95",
@@ -3723,16 +3723,16 @@
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2143,
-    "rejected_count": 195,
+    "review_count": 2146,
+    "rejected_count": 192,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 40,
+    "ready_count": 39,
     "status_counts": {
-      "REVIEW": 2143,
-      "REJECTED": 195,
+      "REVIEW": 2146,
+      "REJECTED": 192,
       "REGISTERED": 122,
       "DUPLICATE": 6,
       "ERROR": 2,
@@ -3740,12 +3740,12 @@
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 594,
-      "UNSCORED": 499,
-      "LOW": 533,
-      "HIGH": 709,
-      "VERY LOW": 135
+      "MEDIUM": 621,
+      "UNSCORED": 397,
+      "LOW": 558,
+      "HIGH": 752,
+      "VERY LOW": 142
     },
-    "updated_at": "2026-09-27T04:51:03.523655+00:00"
+    "updated_at": "2026-09-27T05:19:57.606849+00:00"
   }
 }
