@@ -1,38 +1,49 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "판교",
+  "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:44:31.753647+00:00",
+  "updated_at": "2026-09-27T15:45:33.488333+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 필라테스",
-    "판교 중고차"
+    "강남 세무사",
+    "강남 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "판교"
+    "region": "강남"
   },
   "classification": {
-    "total": 22412,
-    "processed": 7301,
-    "pending": 15111,
-    "processing": 0,
+    "total": 22532,
+    "processed": 7323,
+    "pending": 15207,
+    "processing": 2,
     "eligible": 115,
-    "review": 4936,
-    "rejected": 2241,
+    "review": 4951,
+    "rejected": 2248,
     "errors": 6,
     "ready": 74,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCNe9T69eTkSupCPwDW6Bvpw",
+        "name": "신나는 여행과 사진 - 로티박 - RottyPark",
+        "query": "동탄 이비인후과"
+      },
+      {
+        "channel_id": "UC-WgKsvqQoMJHcfpcYOZ1ZQ",
+        "name": "소리디자이너 [난청보청기전문채널]",
+        "query": "동탄 이비인후과"
+      }
+    ]
   },
-  "queries_completed": 318,
-  "region_queries_completed": 38,
-  "region_channels": 4993,
-  "region_observed": 1344,
-  "channels_discovered": 22411,
-  "channels_observed": 7295,
-  "search_pages": 6919,
-  "search_results_read": 141793,
+  "queries_completed": 320,
+  "region_queries_completed": 0,
+  "region_channels": 284,
+  "region_observed": 274,
+  "channels_discovered": 22531,
+  "channels_observed": 7317,
+  "search_pages": 6943,
+  "search_results_read": 142228,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3165,
+      "observed": 3187,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3167,
+      "classified": 3189,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1632,
+      "observed": 1641,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1634,
+      "classified": 1643,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1583,
+      "observed": 1588,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1583,
+      "classified": 1588,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2527,
+      "observed": 2530,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2529,
+      "classified": 2532,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1803,
+      "observed": 1808,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1803,
+      "classified": 1808,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2059,
+      "observed": 2062,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2061,
+      "classified": 2064,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,13 +2099,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 38,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4993,
-      "observed": 1344,
+      "channels": 5148,
+      "observed": 1354,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1345,
+      "classified": 1355,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2365,17 +2376,17 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 317,
-          "results_read": 460,
-          "pages": 23
+          "status": "completed",
+          "channels": 333,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 111,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 262,
+          "results_read": 497,
+          "pages": 26
         }
       ]
     },
@@ -2383,26 +2394,26 @@
       "name": "강남",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 258,
-      "observed": 258,
+      "channels": 284,
+      "observed": 274,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 258,
+      "classified": 274,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 28,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 29,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "세무회계",
