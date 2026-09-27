@@ -2758,8 +2758,8 @@
     "channel_url": "https://www.youtube.com/channel/UCL1AIgIlN8sIFkhojy9Z6Aw",
     "region": "송파",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 09:04:57",
     "views": "구독자 8720 / 최근 롱폼 10편 중앙값 310.5회",
     "point": "송파 변호사 채널의 최근 롱폼 10편 중앙값 310.5회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "100",
@@ -3662,33 +3662,52 @@
     "token": "44c4bbf8",
     "is_priority": false
   },
+  "8b865400": {
+    "no": "203",
+    "company": "상상특허법률사무소",
+    "rep": "대표님",
+    "email": "sspat@sspat.net",
+    "channel_url": "https://www.youtube.com/channel/UCwM5I6sKdxGMfnlHFI1n_lw",
+    "region": "강남",
+    "category": "legal",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 13000 / 최근 롱폼 10편 중앙값 85.0회",
+    "point": "강남 법률사무소 채널의 최근 롱폼 10편 중앙값 85.0회. 조회수 개선을 위한 기획 검토 제안",
+    "prospect_score": "85",
+    "prospect_grade": "HIGH",
+    "score_version": "searcher-v1",
+    "score_snapshot": "{\"score_version\": \"searcher-v1\", \"score_as_of\": \"2026-09-27T00:08:06.745767+00:00\", \"prospect_score\": 85, \"priority_grade\": \"HIGH\", \"score_components\": {\"activity\": 15, \"production\": 30, \"performance\": 40}, \"recent_longform_views\": [74, 96, 284, 59, 102, 2400, 51, 37, 114, 49], \"recent_longform_median\": 85.0, \"sample_size\": 10, \"score_provisional\": true, \"longform_count\": null, \"longform_count_lower_bound\": 100, \"uploads_30d\": 0, \"uploads_60d\": 2, \"uploads_90d\": 5, \"last_longform_upload\": \"2026-08-27T00:00:00+00:00\"}",
+    "token": "8b865400",
+    "is_priority": false
+  },
   "_search_db_stats": {
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2126,
+    "review_count": 2125,
     "rejected_count": 215,
     "error_count": 2,
     "duplicate_count": 6,
-    "registered_count": 119,
-    "verified_count": 119,
+    "registered_count": 120,
+    "verified_count": 120,
     "ready_count": 48,
     "status_counts": {
-      "REVIEW": 2126,
+      "REVIEW": 2125,
       "REJECTED": 215,
-      "REGISTERED": 119,
+      "REGISTERED": 120,
       "DUPLICATE": 6,
       "ERROR": 2,
       "DISCOVERED": 2
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 278,
-      "UNSCORED": 1549,
-      "LOW": 257,
-      "HIGH": 322,
-      "VERY LOW": 64
+      "MEDIUM": 304,
+      "UNSCORED": 1425,
+      "LOW": 289,
+      "HIGH": 375,
+      "VERY LOW": 77
     },
-    "updated_at": "2026-09-27T00:01:25.736992+00:00"
+    "updated_at": "2026-09-27T00:08:09.014956+00:00"
   }
 }
