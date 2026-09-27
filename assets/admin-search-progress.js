@@ -1,7 +1,7 @@
 /* Public aggregate progress only; credentials and channel evidence stay server-side. */
 (() => {
   const endpoint='https://raw.githubusercontent.com/studiomomentum/studiomomentum.github.io/main/search-progress.json';
-  let data=null,selected='',loading=false,failed=false;
+  let data=null,selected='',loading=false,failed=false,lastActive=[];
   const e=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const n=value=>Number.isFinite(Number(value))?Number(value):0;
   const date=value=>new Date(value).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
@@ -28,6 +28,12 @@
     const status={pending:'대기',running:'검색 중',completed:'검색 완료',error:'오류'};
     const stageLabels={starting:'준비',running:'진행 중',waiting:'새 후보 대기',complete:'완료',incomplete:'중단·미완료',not_running:'미실행'};
     const classification=data?.classification||{}, searchStage=data?.search_stage||{};
+    const active=Array.isArray(classification.active)?classification.active:[];
+    if(active.length)lastActive=active;
+    const recent=lastActive.length?lastActive:(typeof targetsMap!=='undefined'?targetsMap._classification_recent||[]:[]);
+    const emptyState=classification.status==='complete'?'분류 완료':classification.status==='incomplete'?'분류 중단 · 실행 상태 확인 필요':n(classification.pending)>0?'분류 결과 저장·다음 후보 준비 중':'새 검색 후보 대기 중';
+    const activeMarkup=active.length?active.map(activeLabel).join(''):`<li>${e(emptyState)} · 대기 ${n(classification.pending).toLocaleString()}건</li>`;
+    const recentMarkup=!active.length&&recent.length?`<p class="search-progress-note">마지막 처리 기록 · 현재 처리 중인 채널과 구분됩니다.</p><ul>${recent.map(activeLabel).join('')}</ul>`:'';
     const banner=!data?'진행 정보 대기':failed?'갱신 실패 · 마지막 기록 표시':data.phase==='complete'?'작업 종료':stale?'갱신 지연 · 실행 상태 확인 필요':`${searchStage.region||data.region||''} · ${stageLabels[searchStage.status]||phases[data.phase]||'진행 중'}`;
     Momentum.setHTML(host,`<div class="search-progress-heading"><div><h3>서치 진행 상황</h3><p>다음 정기 서치 <strong>${e(date(nextSearch()))}</strong> · 매주 일요일 23:00 KST</p></div><button type="button" id="refreshSearchProgress">새로고침</button></div>
       <p class="search-live-state ${stale?'is-stale':''}" role="status">${e(banner)}${data?.updated_at?` · 서버 갱신 ${e(date(data.updated_at))}`:''}</p>
@@ -37,8 +43,8 @@
         <p>처리 완료 <strong>${n(classification.processed).toLocaleString()} / ${n(classification.total).toLocaleString()}</strong> · ${classification.total?Math.min(100,n(classification.processed)/n(classification.total)*100).toFixed(1):'0.0'}%</p>
         <progress max="${n(classification.total)||1}" value="${n(classification.processed)}" aria-label="전체 분류 진행률"></progress>
         <div class="classification-metrics">${[['대기',classification.pending],['처리 중',classification.processing],['조건 통과',classification.eligible],['정보 부족·보류',classification.review],['조건 탈락',classification.rejected],['수집·분류 오류',classification.errors],['현재 발송대기',classification.ready]].map(([label,count])=>`<article><span>${e(label)}</span><strong>${n(count).toLocaleString()}</strong></article>`).join('')}</div>
-        <div class="classification-active"><strong>현재 처리 · 검색 지역 / 직업</strong><ul>${Array.isArray(classification.active)&&classification.active.length?classification.active.map(activeLabel).join(''):'<li>처리 중인 후보 없음</li>'}</ul></div>
-        <p class="search-progress-note">지역·직업은 후보를 발견한 검색어 기준이며, 실제 소재지는 분류에서 별도로 확인합니다. 후보는 발견 순서에 따라 병렬 처리하므로 한 지역의 직업을 순차 완료하는 표시는 아닙니다. 조회수·점수·소재지·이메일을 확인합니다. 조건 통과에는 기존 등록 후보도 포함되며, 중복·발송 이력 확인 후 실제 발송대기를 갱신합니다. 서치에서 후보가 추가되면 전체 대상 수가 늘어납니다.</p></section>
+        <div class="classification-active"><strong>현재 처리 · 검색 지역 / 직업</strong><ul>${activeMarkup}</ul>${recentMarkup}</div>
+        <p class="search-progress-note">검색어 기준 지역·직업입니다. 실제 소재지·조회수·이메일은 분류에서 검증합니다.</p></section>
       <div class="search-region-grid">${regions.map(r=>`<button type="button" class="search-region ${r.name===selected?'selected':''}" data-search-region="${e(r.name)}" aria-pressed="${r.name===selected}"><strong>${e(r.name)}</strong><span>${n(r.queries_completed)}/${n(r.queries_total)} 검색${r.classified_at?' · 분류 완료':''}</span><progress max="${n(r.queries_total)||39}" value="${n(r.queries_completed)}" aria-label="${e(r.name)} 검색 진행률"></progress><small>분류 ${n(r.classified??r.observed)}/${n(r.channels)} · 오류 ${n(r.classification_errors??r.observation_errors)}</small></button>`).join('')}</div>
       ${current?`<h4>${e(selected)} · 업종별 검색 진행</h4><div class="search-job-grid">${(current.jobs||[]).map(j=>`<article class="search-job ${e(j.status)}"><strong>${e(j.name)}</strong><span>${e(status[j.status]||'대기')}</span><small>채널 ${n(j.channels)} · 검색 결과 ${n(j.results_read)}</small></article>`).join('')}</div>`:''}`);
     host.querySelector('#refreshSearchProgress')?.addEventListener('click',refresh);

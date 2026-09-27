@@ -25103,5 +25103,19 @@
       "UNSCORED": 8072
     },
     "updated_at": "2026-09-27T13:37:13.111889+00:00"
-  }
+  },
+  "_classification_recent": [
+    {
+      "channel_id": "UCq3rS-dW0ZchAM8OciHDeUg",
+      "name": "책먹는여자디지털노마드TV",
+      "query": "수원 관세사",
+      "at": "2026-09-27T13:37:03.449817+00:00"
+    },
+    {
+      "channel_id": "UCaesrRdcoIqJBVFJgTkwflg",
+      "name": "4evertruevine",
+      "query": "수원 관세사",
+      "at": "2026-09-27T13:37:02.516459+00:00"
+    }
+  ]
 }

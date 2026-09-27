@@ -21,6 +21,11 @@ const fs=require('fs'),path=require('path'),assert=require('assert');
  await page.locator('[data-search-region="동탄"]').click();assert((await page.locator('#searchProgress h4').textContent()).includes('동탄'));
  assert((await page.locator('.search-progress-heading').textContent()).includes('23:00'));
  for(const width of [320,390,1440]){await page.setViewportSize({width,height:1000});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`/tmp/search-progress-${width}.png`,fullPage:true});}
+ fixture={...fixture,classification:{...fixture.classification,active:[],processing:0}};
+ await page.locator('#refreshSearchProgress').click();
+ await page.waitForFunction(()=>document.querySelector('.classification-active').textContent.includes('다음 후보 준비 중'));
+ assert((await page.locator('.classification-active').textContent()).includes('수원 · 세무사'));
+ assert((await page.locator('.classification-active').textContent()).includes('마지막 처리 기록'));
  fixture={...fixture,updated_at:new Date(Date.now()-600000).toISOString()};await page.locator('#refreshSearchProgress').click();await page.waitForFunction(()=>document.querySelector('.search-live-state').textContent.includes('갱신 지연'));
  assert.deepEqual(errors,[]);await browser.close();console.log('PASS: 11 regions, 39 jobs, selection, schedule, stale state, PC/mobile widths');
 })().catch(e=>{console.error(e);process.exit(1)});
