@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:12:55.681496+00:00",
+  "updated_at": "2026-09-27T14:14:00.314529+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 세무회계",
-    "화성 변호사"
+    "화성 법무법인",
+    "화성 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 15174,
-    "processed": 5630,
-    "pending": 9542,
-    "processing": 2,
+    "total": 15268,
+    "processed": 5656,
+    "pending": 9612,
+    "processing": 0,
     "eligible": 98,
-    "review": 3798,
-    "rejected": 1728,
+    "review": 3816,
+    "rejected": 1736,
     "errors": 5,
     "ready": 58,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCwtKKf_gLtY6RFIWVZRQV5A",
-        "name": "신섭"
-      },
-      {
-        "channel_id": "UCobOaTw9CdO4VGCHz4ETHBQ",
-        "name": "용무드 YONGmood"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 197,
-  "region_queries_completed": 2,
-  "region_channels": 823,
-  "region_observed": 519,
-  "channels_discovered": 15173,
-  "channels_observed": 5625,
-  "search_pages": 4107,
-  "search_results_read": 87499,
+  "queries_completed": 199,
+  "region_queries_completed": 4,
+  "region_channels": 1014,
+  "region_observed": 576,
+  "channels_discovered": 15267,
+  "channels_observed": 5651,
+  "search_pages": 4147,
+  "search_results_read": 88247,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1490,
+      "observed": 1516,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1491,
+      "classified": 1517,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1342,
+      "observed": 1345,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1344,
+      "classified": 1347,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +898,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1339,
+      "observed": 1342,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1339,
+      "classified": 1342,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1184,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2395,
+      "observed": 2396,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2397,
+      "classified": 2398,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1476,13 +1467,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 39,
-      "channels": 823,
-      "observed": 519,
+      "channels": 1014,
+      "observed": 576,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 519,
+      "classified": 576,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1501,31 +1492,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 157,
-          "results_read": 339,
-          "pages": 17
+          "status": "completed",
+          "channels": 230,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 107,
-          "results_read": 332,
-          "pages": 17
+          "status": "completed",
+          "channels": 191,
+          "results_read": 529,
+          "pages": 28
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 85,
+          "results_read": 215,
+          "pages": 11
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 58,
+          "results_read": 179,
+          "pages": 9
         },
         {
           "name": "치과",
