@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:26:20.309998+00:00",
+  "updated_at": "2026-09-27T20:27:21.944463+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12355,
-    "pending": 15582,
-    "processing": 1,
+    "processed": 12378,
+    "pending": 15558,
+    "processing": 2,
     "eligible": 146,
-    "review": 8583,
-    "rejected": 3600,
+    "review": 8599,
+    "rejected": 3607,
     "errors": 23,
     "ready": 102,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCgs3hb-_pqWFWEv2677BFvg",
-        "name": "코토러브",
-        "query": "평택 부동산중개"
+        "channel_id": "UC6V54Kv2RvWZBBDyWeYPqKQ",
+        "name": "햇살좋은집TV",
+        "query": "평택 공인중개사"
+      },
+      {
+        "channel_id": "UC6PxTv3qEmCz-2UW75i2D8Q",
+        "name": "내집마련 가이드 최소장",
+        "query": "평택 공인중개사"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1566,
   "channels_discovered": 27937,
-  "channels_observed": 12332,
+  "channels_observed": 12355,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3217,
+      "observed": 3240,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3225,
+      "classified": 3248,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2958,
+      "observed": 2959,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2960,
+      "classified": 2961,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2444,
+      "observed": 2446,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2447,
+      "classified": 2449,
       "classification_errors": 3,
       "jobs": [
         {
