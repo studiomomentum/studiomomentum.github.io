@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:27:22.707233+00:00",
+  "updated_at": "2026-09-27T17:28:24.865150+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 행정사사무소",
@@ -13,37 +13,37 @@
     "region": "송파"
   },
   "classification": {
-    "total": 27281,
-    "processed": 8919,
-    "pending": 18360,
+    "total": 27324,
+    "processed": 8933,
+    "pending": 18389,
     "processing": 2,
     "eligible": 121,
-    "review": 6095,
-    "rejected": 2689,
+    "review": 6105,
+    "rejected": 2693,
     "errors": 11,
     "ready": 80,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCy4L7nmciGQNmzQQN75bKwA",
-        "name": "오산대학교 세무회계과",
-        "query": "오산 세무사"
+        "channel_id": "UCjL8TRf_v9vmg_PHFI3fIwA",
+        "name": "sdatv Production Division 1",
+        "query": "오산 세무법인"
       },
       {
-        "channel_id": "UCQPVn407N6N_00pvZsLGtmg",
-        "name": "김소영",
+        "channel_id": "UClS1IXsoygwEnXrxsPj3e_g",
+        "name": "ch B tv 중부",
         "query": "오산 세무법인"
       }
     ]
   },
   "queries_completed": 416,
   "region_queries_completed": 16,
-  "region_channels": 2218,
-  "region_observed": 821,
-  "channels_discovered": 27280,
-  "channels_observed": 8908,
-  "search_pages": 9491,
-  "search_results_read": 191850,
+  "region_channels": 2338,
+  "region_observed": 846,
+  "channels_discovered": 27323,
+  "channels_observed": 8922,
+  "search_pages": 9515,
+  "search_results_read": 192327,
   "query_errors": {},
   "regions": [
     {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1809,
+      "observed": 1823,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1812,
+      "classified": 1826,
       "classification_errors": 3,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1703,
+      "observed": 1710,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1704,
+      "classified": 1711,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2621,
+      "observed": 2623,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2623,
+      "classified": 2625,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2043,
+      "observed": 2044,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2043,
+      "classified": 2044,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2189,
+      "observed": 2191,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2191,
+      "classified": 2193,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1579,
+      "observed": 1580,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1581,
+      "classified": 1582,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2688,10 +2688,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1624,
+      "observed": 1626,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1625,
+      "classified": 1627,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2980,11 +2980,11 @@
       "name": "송파",
       "queries_completed": 16,
       "queries_total": 40,
-      "channels": 2218,
-      "observed": 821,
+      "channels": 2338,
+      "observed": 846,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 821,
+      "classified": 846,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3102,16 +3102,16 @@
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 47,
-          "results_read": 211,
-          "pages": 11
+          "channels": 144,
+          "results_read": 451,
+          "pages": 23
         },
         {
           "name": "피부과",
           "status": "running",
-          "channels": 97,
-          "results_read": 195,
-          "pages": 10
+          "channels": 181,
+          "results_read": 432,
+          "pages": 22
         },
         {
           "name": "성형외과",
