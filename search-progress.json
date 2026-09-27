@@ -2,46 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:42:26.232496+00:00",
+  "updated_at": "2026-09-27T13:43:28.061877+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 관세사",
-    "평택 감정평가사"
+    "평택 건축사사무소",
+    "평택 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 13465,
-    "processed": 4894,
-    "pending": 8569,
-    "processing": 2,
+    "total": 13612,
+    "processed": 4917,
+    "pending": 8694,
+    "processing": 1,
     "eligible": 94,
-    "review": 3310,
-    "rejected": 1484,
+    "review": 3321,
+    "rejected": 1496,
     "errors": 5,
     "ready": 54,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCQak5sXJcBWBoGxdOG4nThA",
-        "name": "오늘의경매"
-      },
-      {
-        "channel_id": "UCBKH9RNlTvOFbXtlE9Wt7OA",
-        "name": "따뜻한바람"
+        "channel_id": "UCTWoKbefNbb62h282fg85jQ",
+        "name": "즐거운자동차"
       }
     ]
   },
-  "queries_completed": 150,
-  "region_queries_completed": 33,
-  "region_channels": 4154,
-  "region_observed": 1138,
-  "channels_discovered": 13463,
-  "channels_observed": 4889,
-  "search_pages": 2944,
-  "search_results_read": 65744,
+  "queries_completed": 153,
+  "region_queries_completed": 36,
+  "region_channels": 4390,
+  "region_observed": 1196,
+  "channels_discovered": 13610,
+  "channels_observed": 4912,
+  "search_pages": 2982,
+  "search_results_read": 66402,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +45,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3679,
+      "observed": 3702,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3684,
+      "classified": 3707,
       "classification_errors": 5,
       "jobs": [
         {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1158,
+      "observed": 1164,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1159,
+      "classified": 1165,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1197,
+      "observed": 1202,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1199,
+      "classified": 1204,
       "classification_errors": 2,
       "jobs": [
         {
@@ -904,13 +900,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 33,
+      "queries_completed": 36,
       "queries_total": 39,
-      "channels": 4154,
-      "observed": 1138,
+      "channels": 4390,
+      "observed": 1196,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1138,
+      "classified": 1196,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1146,38 +1142,38 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 143,
-          "results_read": 220,
-          "pages": 11
+          "status": "completed",
+          "channels": 191,
+          "results_read": 273,
+          "pages": 15
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 122,
-          "results_read": 199,
-          "pages": 10
+          "status": "completed",
+          "channels": 171,
+          "results_read": 283,
+          "pages": 16
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 123,
+          "results_read": 201,
+          "pages": 12
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 136,
+          "results_read": 260,
+          "pages": 13
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 46,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "필라테스",
