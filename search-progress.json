@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:36:45.074299+00:00",
+  "updated_at": "2026-09-27T22:37:46.175938+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14958,
-    "pending": 12978,
-    "processing": 2,
+    "processed": 14969,
+    "pending": 12968,
+    "processing": 1,
     "eligible": 166,
-    "review": 10470,
-    "rejected": 4290,
+    "review": 10480,
+    "rejected": 4291,
     "errors": 29,
     "ready": 119,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCyX1asToClLZWu7yd9UM3Yg",
-        "name": "센트리얼 필라테스",
-        "query": "용인 필라테스"
-      },
-      {
-        "channel_id": "UC8xPaNShKu4rVbcbSJ3msng",
-        "name": "찌애쌤 (愛) - 숨 쉬듯,매일 Pilates",
+        "channel_id": "UC_YCsnU4WG_H99DA5E77zkA",
+        "name": "코어필라테스협회",
         "query": "용인 필라테스"
       }
     ]
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1743,
   "channels_discovered": 27937,
-  "channels_observed": 14929,
+  "channels_observed": 14940,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4331,
+      "observed": 4342,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4334,
+      "classified": 4345,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2687,
+      "observed": 2692,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2689,
+      "classified": 2694,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1950,
+      "observed": 1951,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1951,
+      "classified": 1952,
       "classification_errors": 1,
       "jobs": [
         {
