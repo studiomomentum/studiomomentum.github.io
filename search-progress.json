@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:22:03.039898+00:00",
+  "updated_at": "2026-09-27T17:23:13.975842+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 학원",
-    "송파 어학원"
+    "송파 어학원",
+    "송파 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27079,
-    "processed": 8839,
-    "pending": 18238,
-    "processing": 2,
+    "total": 27129,
+    "processed": 8857,
+    "pending": 18272,
+    "processing": 0,
     "eligible": 121,
-    "review": 6043,
-    "rejected": 2661,
+    "review": 6054,
+    "rejected": 2668,
     "errors": 11,
     "ready": 80,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC8C3cCkxRpzonk9TVAoRCYg",
-        "name": "디자인루디",
-        "query": "동탄 필라테스"
-      },
-      {
-        "channel_id": "UCVtIBsnFgiFIM_4bMW_mYaA",
-        "name": "김민희",
-        "query": "동탄 필라테스"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 411,
-  "region_queries_completed": 11,
-  "region_channels": 1582,
-  "region_observed": 658,
-  "channels_discovered": 27078,
-  "channels_observed": 8828,
-  "search_pages": 9363,
-  "search_results_read": 189458,
+  "queries_completed": 412,
+  "region_queries_completed": 12,
+  "region_channels": 1726,
+  "region_observed": 690,
+  "channels_discovered": 27128,
+  "channels_observed": 8846,
+  "search_pages": 9387,
+  "search_results_read": 189909,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4698,
+      "observed": 4716,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4705,
+      "classified": 4723,
       "classification_errors": 7,
       "jobs": [
         {
@@ -930,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1702,
+      "observed": 1703,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1703,
+      "classified": 1704,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2618,
+      "observed": 2619,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2620,
+      "classified": 2621,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1569,
+      "observed": 1571,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1571,
+      "classified": 1573,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2978,13 +2967,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 11,
+      "queries_completed": 12,
       "queries_total": 40,
-      "channels": 1582,
-      "observed": 658,
+      "channels": 1726,
+      "observed": 690,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 658,
+      "classified": 690,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3059,10 +3048,10 @@
         },
         {
           "name": "학원",
-          "status": "running",
+          "status": "completed",
           "channels": 184,
           "results_read": 516,
-          "pages": 27
+          "pages": 28
         },
         {
           "name": "입시학원",
@@ -3074,16 +3063,16 @@
         {
           "name": "어학원",
           "status": "running",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "channels": 95,
+          "results_read": 231,
+          "pages": 12
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 91,
+          "results_read": 220,
+          "pages": 11
         },
         {
           "name": "부동산중개",
