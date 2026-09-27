@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:34:38.819308+00:00",
+  "updated_at": "2026-09-27T20:35:39.905420+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12530,
-    "pending": 15406,
+    "processed": 12548,
+    "pending": 15388,
     "processing": 2,
-    "eligible": 147,
-    "review": 8705,
-    "rejected": 3652,
+    "eligible": 149,
+    "review": 8716,
+    "rejected": 3657,
     "errors": 23,
     "ready": 103,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxR4o2eiQz_nc2dUXGyysCw",
-        "name": "잠티",
+        "channel_id": "UCbhsMbBEOm1vIpOZXbaZR7g",
+        "name": "한국장기조직기증원[KODA][코다]",
         "query": "평택 피부과"
       },
       {
-        "channel_id": "UCrpDdPoetCDyg20f670e6CQ",
-        "name": "뷰네뜨TV - 왁싱,반영구,속눈썹 아카데미",
-        "query": "평택 피부과"
+        "channel_id": "UCEy7N4OQZoFWg68cRzWCm1A",
+        "name": "237미디어 ㅣ 237MEDIA",
+        "query": "평택 성형외과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1573,
+  "region_observed": 1574,
   "channels_discovered": 27937,
-  "channels_observed": 12507,
+  "channels_observed": 12525,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3392,
+      "observed": 3410,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3400,
+      "classified": 3418,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2988,
+      "observed": 2989,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2990,
+      "classified": 2991,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2478,
+      "observed": 2480,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2481,
+      "classified": 2483,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1904,
+      "observed": 1905,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1908,
+      "classified": 1909,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1818,
+      "observed": 1820,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1819,
+      "classified": 1821,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1573,
+      "observed": 1574,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1574,
+      "classified": 1575,
       "classification_errors": 1,
       "jobs": [
         {
