@@ -2,37 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:38:03.764038+00:00",
+  "updated_at": "2026-09-27T14:39:06.179928+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 세무회계",
-    "분당 변호사"
+    "분당 법무법인",
+    "분당 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 17741,
-    "processed": 6152,
-    "pending": 11589,
-    "processing": 0,
+    "total": 17787,
+    "processed": 6169,
+    "pending": 11617,
+    "processing": 1,
     "eligible": 105,
-    "review": 4147,
-    "rejected": 1894,
+    "review": 4161,
+    "rejected": 1897,
     "errors": 5,
     "ready": 64,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCp52tt3bAKsVao6iw4taseg",
+        "name": "oullim2010"
+      }
+    ]
   },
-  "queries_completed": 236,
-  "region_queries_completed": 2,
-  "region_channels": 492,
-  "region_observed": 404,
-  "channels_discovered": 17740,
-  "channels_observed": 6147,
-  "search_pages": 5006,
-  "search_results_read": 106104,
+  "queries_completed": 238,
+  "region_queries_completed": 4,
+  "region_channels": 612,
+  "region_observed": 460,
+  "channels_discovered": 17786,
+  "channels_observed": 6164,
+  "search_pages": 5044,
+  "search_results_read": 106799,
   "query_errors": {},
   "regions": [
     {
@@ -326,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2012,
+      "observed": 2029,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2013,
+      "classified": 2030,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1440,
+      "observed": 1441,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1442,
+      "classified": 1443,
       "classification_errors": 2,
       "jobs": [
         {
@@ -898,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1409,
+      "observed": 1415,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1409,
+      "classified": 1415,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1184,10 +1189,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2427,
+      "observed": 2428,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2429,
+      "classified": 2430,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1470,10 +1475,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1597,
+      "observed": 1599,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1597,
+      "classified": 1599,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1753,13 +1758,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 39,
-      "channels": 492,
-      "observed": 404,
+      "channels": 612,
+      "observed": 460,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 404,
+      "classified": 460,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1778,31 +1783,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 60,
-          "results_read": 359,
-          "pages": 18
+          "status": "completed",
+          "channels": 74,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 131,
-          "results_read": 357,
-          "pages": 18
+          "status": "completed",
+          "channels": 210,
+          "results_read": 540,
+          "pages": 29
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 67,
+          "results_read": 214,
+          "pages": 11
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 41,
+          "results_read": 159,
+          "pages": 8
         },
         {
           "name": "치과",
