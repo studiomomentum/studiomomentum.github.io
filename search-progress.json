@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:41:09.966060+00:00",
+  "updated_at": "2026-09-27T21:42:16.458879+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13878,
-    "pending": 14058,
-    "processing": 2,
-    "eligible": 155,
-    "review": 9694,
-    "rejected": 3998,
+    "processed": 13900,
+    "pending": 14038,
+    "processing": 0,
+    "eligible": 156,
+    "review": 9714,
+    "rejected": 3999,
     "errors": 28,
-    "ready": 110,
+    "ready": 111,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC2LZckioxeuCeIRBAA3na5g",
-        "name": "수원 서울더리본치과",
-        "query": "용인 치과"
-      },
-      {
-        "channel_id": "UCwyIoZbC_c5nGe0LcZcCDBQ",
-        "name": "양평루트치과",
-        "query": "용인 치과의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1643,
   "channels_discovered": 27937,
-  "channels_observed": 13850,
+  "channels_observed": 13872,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3252,
+      "observed": 3274,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3254,
+      "classified": 3276,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2590,
+      "observed": 2591,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2593,
+      "classified": 2594,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2458,
+      "observed": 2459,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2460,
+      "classified": 2461,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1882,
+      "observed": 1883,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1885,
+      "classified": 1886,
       "classification_errors": 3,
       "jobs": [
         {
