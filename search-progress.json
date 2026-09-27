@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T19:38:14.049420+00:00",
+  "updated_at": "2026-09-27T19:39:15.711898+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11476,
-    "pending": 16461,
-    "processing": 1,
+    "processed": 11497,
+    "pending": 16441,
+    "processing": 0,
     "eligible": 141,
-    "review": 7895,
-    "rejected": 3420,
+    "review": 7907,
+    "rejected": 3429,
     "errors": 17,
-    "ready": 96,
+    "ready": 97,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCxCHQDee6h0IgYq34_pmSGg",
-        "name": "알쓸부썰",
-        "query": "평택 세무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1523,
   "channels_discovered": 27937,
-  "channels_observed": 11459,
+  "channels_observed": 11480,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2344,
+      "observed": 2365,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2346,
+      "classified": 2367,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2835,
+      "observed": 2837,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2837,
+      "classified": 2839,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2361,
+      "observed": 2364,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2363,
+      "classified": 2366,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2328,
+      "observed": 2329,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2330,
+      "classified": 2331,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1744,
+      "observed": 1746,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1747,
+      "classified": 1749,
       "classification_errors": 3,
       "jobs": [
         {
