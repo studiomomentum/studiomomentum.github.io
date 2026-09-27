@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:45:24.034843+00:00",
+  "updated_at": "2026-09-27T21:46:25.396959+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13954,
-    "pending": 13982,
-    "processing": 2,
+    "processed": 13975,
+    "pending": 13962,
+    "processing": 1,
     "eligible": 157,
-    "review": 9758,
-    "rejected": 4008,
+    "review": 9778,
+    "rejected": 4009,
     "errors": 28,
     "ready": 112,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC2l_IOxTH1Z-YxoYm7NLUvg",
-        "name": "이천하늘애한방병원",
-        "query": "용인 한방병원"
-      },
-      {
-        "channel_id": "UCsKE9LJXqL1P5xBAIiKC_bw",
-        "name": "CM SSOG",
+        "channel_id": "UC9Pv30SyPk96XmN9lMyu_OA",
+        "name": "박철진",
         "query": "용인 한의원"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1652,
+  "region_observed": 1653,
   "channels_discovered": 27937,
-  "channels_observed": 13926,
+  "channels_observed": 13947,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3328,
+      "observed": 3349,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3330,
+      "classified": 3351,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2602,
+      "observed": 2606,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2605,
+      "classified": 2609,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2466,
+      "observed": 2467,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2468,
+      "classified": 2469,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1889,
+      "observed": 1891,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1892,
+      "classified": 1894,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2001,
+      "observed": 2004,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2006,
+      "classified": 2009,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1652,
+      "observed": 1653,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1653,
+      "classified": 1654,
       "classification_errors": 1,
       "jobs": [
         {
