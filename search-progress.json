@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:31:57.391337+00:00",
+  "updated_at": "2026-09-27T21:32:58.636343+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13708,
-    "pending": 14230,
-    "processing": 0,
+    "processed": 13735,
+    "pending": 14202,
+    "processing": 1,
     "eligible": 154,
-    "review": 9567,
-    "rejected": 3956,
+    "review": 9590,
+    "rejected": 3960,
     "errors": 28,
     "ready": 109,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCf199IzMyGhCV1kKHJfuBXw",
+        "name": "hanna Um",
+        "query": "평택 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1631,
+  "region_observed": 1632,
   "channels_discovered": 27937,
-  "channels_observed": 13680,
+  "channels_observed": 13707,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4565,
+      "observed": 4592,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4578,
+      "classified": 4605,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3123,
+      "observed": 3126,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3125,
+      "classified": 3128,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2585,
+      "observed": 2586,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2588,
+      "classified": 2589,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1874,
+      "observed": 1876,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1877,
+      "classified": 1879,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1631,
+      "observed": 1632,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1632,
+      "classified": 1633,
       "classification_errors": 1,
       "jobs": [
         {
