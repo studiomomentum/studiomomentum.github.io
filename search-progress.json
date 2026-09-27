@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:16:47.351422+00:00",
+  "updated_at": "2026-09-27T21:17:48.455292+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13400,
-    "pending": 14536,
+    "processed": 13418,
+    "pending": 14518,
     "processing": 2,
     "eligible": 154,
-    "review": 9339,
-    "rejected": 3878,
+    "review": 9351,
+    "rejected": 3884,
     "errors": 26,
     "ready": 109,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCZsIEOKOZ0ESJYgddwKNFTQ",
-        "name": "이유정설송철학원",
+        "channel_id": "UCK-keSnnW3YMX2rN-sHG5FA",
+        "name": "동서대학교",
         "query": "평택 관세사"
       },
       {
-        "channel_id": "UCS4Qj5yDLa-Xsm8sCDsRY-A",
-        "name": "한국무역정보통신",
+        "channel_id": "UCQxKB10A9zf0xawkakKTJOA",
+        "name": "지제이솔",
         "query": "평택 관세사"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1623,
   "channels_discovered": 27937,
-  "channels_observed": 13374,
+  "channels_observed": 13392,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4259,
+      "observed": 4277,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 4270,
+      "classified": 4288,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2562,
+      "observed": 2565,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2565,
+      "classified": 2568,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2415,
+      "observed": 2416,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2417,
+      "classified": 2418,
       "classification_errors": 2,
       "jobs": [
         {
