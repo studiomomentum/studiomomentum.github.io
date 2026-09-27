@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:06:53.101921+00:00",
+  "updated_at": "2026-09-27T18:07:54.915206+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 9553,
-    "pending": 18383,
-    "processing": 2,
+    "processed": 9578,
+    "pending": 18359,
+    "processing": 1,
     "eligible": 126,
-    "review": 6539,
-    "rejected": 2873,
+    "review": 6553,
+    "rejected": 2884,
     "errors": 12,
     "ready": 85,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCyBc143A4SWGw1xvshFOwlA",
-        "name": "하나방송",
+        "channel_id": "UCtLM7Jqwk2hpB6NQdmJ6LeQ",
+        "name": "삿대질TV",
         "query": "오산 한방병원"
-      },
-      {
-        "channel_id": "UCiUGixkUlxVKYJc1tMEbNYQ",
-        "name": "花ハ一卜劇場",
-        "query": "오산 학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1437,
+  "region_observed": 1438,
   "channels_discovered": 27937,
-  "channels_observed": 9541,
+  "channels_observed": 9566,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -634,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2442,
+      "observed": 2467,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2446,
+      "classified": 2471,
       "classification_errors": 4,
       "jobs": [
         {
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1842,
+      "observed": 1846,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1843,
+      "classified": 1847,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2676,
+      "observed": 2677,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2678,
+      "classified": 2679,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2122,
+      "observed": 2125,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2122,
+      "classified": 2125,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2220,
+      "observed": 2221,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2222,
+      "classified": 2223,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1723,
+      "observed": 1724,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1726,
+      "classified": 1727,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1437,
+      "observed": 1438,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1438,
+      "classified": 1439,
       "classification_errors": 1,
       "jobs": [
         {
