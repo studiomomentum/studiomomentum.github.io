@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T23:01:39.699635+00:00",
+  "updated_at": "2026-09-27T23:02:41.470775+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15385,
-    "pending": 12552,
-    "processing": 1,
+    "processed": 15398,
+    "pending": 12540,
+    "processing": 0,
     "eligible": 171,
-    "review": 10768,
-    "rejected": 4413,
+    "review": 10780,
+    "rejected": 4414,
     "errors": 30,
     "ready": 124,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCR2osVqtxRBER4U8KFrn6VQ",
-        "name": "아이샘 어린이치과",
-        "query": "화성 치과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1761,
   "channels_discovered": 27937,
-  "channels_observed": 15355,
+  "channels_observed": 15368,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3100,
+      "observed": 3113,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3104,
+      "classified": 3117,
       "classification_errors": 4,
       "jobs": [
         {
