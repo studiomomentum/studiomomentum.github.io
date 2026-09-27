@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:50:52.418143+00:00",
+  "updated_at": "2026-09-27T20:51:53.620302+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12879,
-    "pending": 15058,
-    "processing": 1,
+    "processed": 12900,
+    "pending": 15036,
+    "processing": 2,
     "eligible": 150,
-    "review": 8968,
-    "rejected": 3735,
+    "review": 8981,
+    "rejected": 3743,
     "errors": 23,
     "ready": 105,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCZNLabppQ2SJt1k9mew5HdQ",
-        "name": "김지명",
+        "channel_id": "UCAAoaMPVjMZR_Dmk6uYixjw",
+        "name": "Aga Mer",
         "query": "평택 내과의원"
+      },
+      {
+        "channel_id": "UCF71NPZHyIo50-KsmIZPs0g",
+        "name": "방울tv 한유미",
+        "query": "평택 비뇨기과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1599,
+  "region_observed": 1601,
   "channels_discovered": 27937,
-  "channels_observed": 12856,
+  "channels_observed": 12877,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3741,
+      "observed": 3762,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3749,
+      "classified": 3770,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2512,
+      "observed": 2513,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2515,
+      "classified": 2516,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2393,
+      "observed": 2395,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2395,
+      "classified": 2397,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1832,
+      "observed": 1835,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1835,
+      "classified": 1838,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1938,
+      "observed": 1941,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1942,
+      "classified": 1945,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1842,
+      "observed": 1843,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1843,
+      "classified": 1844,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1599,
+      "observed": 1601,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1600,
+      "classified": 1602,
       "classification_errors": 1,
       "jobs": [
         {
