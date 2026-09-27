@@ -2,42 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:11:54.095802+00:00",
+  "updated_at": "2026-09-27T14:12:55.681496+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 세무사",
-    "화성 세무법인"
+    "화성 세무회계",
+    "화성 변호사"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 15111,
-    "processed": 5605,
-    "pending": 9505,
-    "processing": 1,
+    "total": 15174,
+    "processed": 5630,
+    "pending": 9542,
+    "processing": 2,
     "eligible": 98,
-    "review": 3780,
-    "rejected": 1721,
+    "review": 3798,
+    "rejected": 1728,
     "errors": 5,
     "ready": 58,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC7qMjGNBzRiyspQtCd7MX1A",
-        "name": "인테리어최박사 [interior Choi]"
+        "channel_id": "UCwtKKf_gLtY6RFIWVZRQV5A",
+        "name": "신섭"
+      },
+      {
+        "channel_id": "UCobOaTw9CdO4VGCHz4ETHBQ",
+        "name": "용무드 YONGmood"
       }
     ]
   },
-  "queries_completed": 195,
-  "region_queries_completed": 0,
-  "region_channels": 673,
-  "region_observed": 461,
-  "channels_discovered": 15110,
-  "channels_observed": 5600,
-  "search_pages": 4069,
-  "search_results_read": 86796,
+  "queries_completed": 197,
+  "region_queries_completed": 2,
+  "region_channels": 823,
+  "region_observed": 519,
+  "channels_discovered": 15173,
+  "channels_observed": 5625,
+  "search_pages": 4107,
+  "search_results_read": 87499,
   "query_errors": {},
   "regions": [
     {
@@ -331,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1465,
+      "observed": 1490,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1466,
+      "classified": 1491,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1338,
+      "observed": 1342,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1340,
+      "classified": 1344,
       "classification_errors": 2,
       "jobs": [
         {
@@ -903,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1334,
+      "observed": 1339,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1334,
+      "classified": 1339,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1472,42 +1476,42 @@
     },
     {
       "name": "화성",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 39,
-      "channels": 673,
-      "observed": 461,
+      "channels": 823,
+      "observed": 519,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 461,
+      "classified": 519,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
-          "channels": 237,
-          "results_read": 479,
-          "pages": 24
+          "status": "completed",
+          "channels": 242,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "세무법인",
-          "status": "running",
-          "channels": 277,
-          "results_read": 478,
-          "pages": 24
+          "status": "completed",
+          "channels": 288,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 157,
+          "results_read": 339,
+          "pages": 17
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 107,
+          "results_read": 332,
+          "pages": 17
         },
         {
           "name": "법무법인",
