@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:03:40.702590+00:00",
+  "updated_at": "2026-09-27T14:04:42.756940+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 의원",
-    "용인 노무사"
+    "용인 노무법인",
+    "용인 법무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 14556,
-    "processed": 5416,
-    "pending": 9138,
-    "processing": 2,
-    "eligible": 96,
-    "review": 3670,
-    "rejected": 1644,
+    "total": 14599,
+    "processed": 5442,
+    "pending": 9157,
+    "processing": 0,
+    "eligible": 97,
+    "review": 3682,
+    "rejected": 1657,
     "errors": 5,
     "ready": 56,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UChJRFEK4vb9_NnsdmwaxmPw",
-        "name": "엄근진기자대유잼뉴스"
-      },
-      {
-        "channel_id": "UCqv_hV-Edf6Ex3jKUa6tXDg",
-        "name": "류창헌세무사와 부동산세금들"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 184,
-  "region_queries_completed": 28,
-  "region_channels": 3079,
-  "region_observed": 1779,
-  "channels_discovered": 14555,
-  "channels_observed": 5411,
-  "search_pages": 3783,
-  "search_results_read": 81382,
+  "queries_completed": 186,
+  "region_queries_completed": 30,
+  "region_channels": 3272,
+  "region_observed": 1901,
+  "channels_discovered": 14598,
+  "channels_observed": 5437,
+  "search_pages": 3823,
+  "search_results_read": 82135,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1276,
+      "observed": 1302,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1277,
+      "classified": 1303,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1286,
+      "observed": 1296,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1288,
+      "classified": 1298,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +898,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1288,
+      "observed": 1295,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1288,
+      "classified": 1295,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1181,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 28,
+      "queries_completed": 30,
       "queries_total": 39,
-      "channels": 3079,
-      "observed": 1779,
+      "channels": 3272,
+      "observed": 1901,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1781,
+      "classified": 1903,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1397,28 +1388,28 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 106,
-          "results_read": 279,
-          "pages": 14
+          "status": "completed",
+          "channels": 203,
+          "results_read": 518,
+          "pages": 27
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 46,
-          "results_read": 120,
-          "pages": 6
+          "status": "completed",
+          "channels": 210,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 64,
+          "results_read": 139,
+          "pages": 7
         },
         {
           "name": "법무사",
-          "status": "pending",
+          "status": "running",
           "channels": 7,
           "results_read": 0,
           "pages": 0
