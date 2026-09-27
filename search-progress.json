@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:53:15.273555+00:00",
+  "updated_at": "2026-09-27T18:54:17.336044+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 10529,
-    "pending": 17407,
-    "processing": 2,
+    "processed": 10545,
+    "pending": 17393,
+    "processing": 0,
     "eligible": 132,
-    "review": 7243,
-    "rejected": 3137,
-    "errors": 14,
+    "review": 7254,
+    "rejected": 3141,
+    "errors": 15,
     "ready": 89,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCojDca-kl47W1eowVuxo5lg",
-        "name": "김민철",
-        "query": "오산 비뇨기과"
-      },
-      {
-        "channel_id": "UCD7aJe12evrK-j6tvSprqCA",
-        "name": "점점tv",
-        "query": "오산 비뇨기과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1489,
   "channels_discovered": 27937,
-  "channels_observed": 10515,
+  "channels_observed": 10530,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -634,11 +623,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 3416,
-      "observation_errors": 6,
+      "observed": 3431,
+      "observation_errors": 7,
       "classified_at": null,
-      "classified": 3422,
-      "classification_errors": 6,
+      "classified": 3438,
+      "classification_errors": 7,
       "jobs": [
         {
           "name": "세무사",
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2038,
+      "observed": 2039,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2040,
+      "classified": 2041,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2245,
+      "observed": 2247,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2247,
+      "classified": 2249,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1790,
+      "observed": 1791,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1793,
+      "classified": 1794,
       "classification_errors": 3,
       "jobs": [
         {
