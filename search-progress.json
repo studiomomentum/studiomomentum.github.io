@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:15:46.344615+00:00",
+  "updated_at": "2026-09-27T21:16:47.351422+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13376,
-    "pending": 14562,
-    "processing": 0,
+    "processed": 13400,
+    "pending": 14536,
+    "processing": 2,
     "eligible": 154,
-    "review": 9320,
-    "rejected": 3873,
+    "review": 9339,
+    "rejected": 3878,
     "errors": 26,
     "ready": 109,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCZsIEOKOZ0ESJYgddwKNFTQ",
+        "name": "이유정설송철학원",
+        "query": "평택 관세사"
+      },
+      {
+        "channel_id": "UCS4Qj5yDLa-Xsm8sCDsRY-A",
+        "name": "한국무역정보통신",
+        "query": "평택 관세사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1621,
+  "region_observed": 1623,
   "channels_discovered": 27937,
-  "channels_observed": 13350,
+  "channels_observed": 13374,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4235,
+      "observed": 4259,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 4246,
+      "classified": 4270,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2559,
+      "observed": 2562,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2562,
+      "classified": 2565,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2414,
+      "observed": 2415,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2416,
+      "classified": 2417,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1857,
+      "observed": 1858,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1860,
+      "classified": 1861,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1959,
+      "observed": 1962,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1964,
+      "classified": 1967,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1859,
+      "observed": 1860,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1860,
+      "classified": 1861,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1621,
+      "observed": 1623,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1622,
+      "classified": 1624,
       "classification_errors": 1,
       "jobs": [
         {
