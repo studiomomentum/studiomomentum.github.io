@@ -2,37 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:12:38.970443+00:00",
+  "updated_at": "2026-09-27T17:13:40.898580+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 세무회계",
-    "송파 변호사"
+    "송파 법무법인",
+    "송파 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 26768,
-    "processed": 8699,
-    "pending": 18069,
-    "processing": 0,
-    "eligible": 120,
-    "review": 5929,
-    "rejected": 2637,
+    "total": 26796,
+    "processed": 8713,
+    "pending": 18081,
+    "processing": 2,
+    "eligible": 121,
+    "review": 5939,
+    "rejected": 2640,
     "errors": 10,
-    "ready": 79,
+    "ready": 80,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCxm-GXt6qF2x-gdDZ5HjZhQ",
+        "name": "서청주청소년상담복지센터",
+        "query": "동탄 심리상담센터"
+      },
+      {
+        "channel_id": "UCsZTB_r7ffbXIcnZmav2AFg",
+        "name": "멘탈탄탄 | 정신과의사의 멘탈 관리 채널 ",
+        "query": "동탄 심리상담센터"
+      }
+    ]
   },
-  "queries_completed": 402,
-  "region_queries_completed": 2,
-  "region_channels": 607,
-  "region_observed": 400,
-  "channels_discovered": 26767,
-  "channels_observed": 8689,
-  "search_pages": 9139,
-  "search_results_read": 185313,
+  "queries_completed": 404,
+  "region_queries_completed": 4,
+  "region_channels": 690,
+  "region_observed": 419,
+  "channels_discovered": 26795,
+  "channels_observed": 8703,
+  "search_pages": 9163,
+  "search_results_read": 185731,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4559,
+      "observed": 4573,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4565,
+      "classified": 4579,
       "classification_errors": 6,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1793,
+      "observed": 1795,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1795,
+      "classified": 1797,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1699,
+      "observed": 1700,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1699,
+      "classified": 1700,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2025,
+      "observed": 2026,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2025,
+      "classified": 2026,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1554,
+      "observed": 1556,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1555,
+      "classified": 1557,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2677,10 +2688,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1612,
+      "observed": 1614,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1613,
+      "classified": 1615,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,13 +2978,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 607,
-      "observed": 400,
+      "channels": 690,
+      "observed": 419,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 400,
+      "classified": 419,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2992,31 +3003,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 119,
-          "results_read": 389,
-          "pages": 20
+          "status": "completed",
+          "channels": 139,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 121,
-          "results_read": 387,
-          "pages": 20
+          "status": "completed",
+          "channels": 161,
+          "results_read": 487,
+          "pages": 27
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 43,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 32,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "치과",
