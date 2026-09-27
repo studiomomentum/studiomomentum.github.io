@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:31:27.796801+00:00",
+  "updated_at": "2026-09-27T20:32:36.458997+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12458,
-    "pending": 15478,
-    "processing": 2,
+    "processed": 12482,
+    "pending": 15456,
+    "processing": 0,
     "eligible": 147,
-    "review": 8653,
-    "rejected": 3632,
+    "review": 8669,
+    "rejected": 3640,
     "errors": 23,
     "ready": 103,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCFpCvfYHYZHoLlCx3ejwAbw",
-        "name": "닥터룩스미 ; 알기 쉬운 의학상식",
-        "query": "평택 피부과"
-      },
-      {
-        "channel_id": "UCbfDuLpQj4lF-FssWhFB9uw",
-        "name": "인생은한번뿐",
-        "query": "평택 행정사사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1570,
+  "region_observed": 1572,
   "channels_discovered": 27937,
-  "channels_observed": 12435,
+  "channels_observed": 12459,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3320,
+      "observed": 3344,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3328,
+      "classified": 3352,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2969,
+      "observed": 2978,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2971,
+      "classified": 2980,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2466,
+      "observed": 2472,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2469,
+      "classified": 2475,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2372,
+      "observed": 2373,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2374,
+      "classified": 2375,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1812,
+      "observed": 1813,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1815,
+      "classified": 1816,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1900,
+      "observed": 1902,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1904,
+      "classified": 1906,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1814,
+      "observed": 1816,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1815,
+      "classified": 1817,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1570,
+      "observed": 1572,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1571,
+      "classified": 1573,
       "classification_errors": 1,
       "jobs": [
         {
