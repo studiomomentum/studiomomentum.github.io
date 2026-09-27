@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:47:50.585547+00:00",
+  "updated_at": "2026-09-27T18:48:51.953936+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 10407,
-    "pending": 17531,
-    "processing": 0,
+    "processed": 10429,
+    "pending": 17507,
+    "processing": 2,
     "eligible": 132,
-    "review": 7146,
-    "rejected": 3112,
+    "review": 7166,
+    "rejected": 3114,
     "errors": 14,
     "ready": 89,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCchCbWi1Mvibb6ddcZrrOHQ",
+        "name": "일요서울TV",
+        "query": "오산 내과의원"
+      },
+      {
+        "channel_id": "UCsMy1faGzBRFWw8oR-Z3wZw",
+        "name": "아이디미디어코어",
+        "query": "오산 내과의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1484,
   "channels_discovered": 27937,
-  "channels_observed": 10393,
+  "channels_observed": 10415,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 3294,
+      "observed": 3316,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3300,
+      "classified": 3322,
       "classification_errors": 6,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2017,
+      "observed": 2021,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2019,
+      "classified": 2023,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2760,
+      "observed": 2762,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2762,
+      "classified": 2764,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2231,
+      "observed": 2235,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2233,
+      "classified": 2237,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2265,
+      "observed": 2266,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2267,
+      "classified": 2268,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1675,
+      "observed": 1680,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1677,
+      "classified": 1682,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1785,
+      "observed": 1786,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1788,
+      "classified": 1789,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1718,
+      "observed": 1719,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1719,
+      "classified": 1720,
       "classification_errors": 1,
       "jobs": [
         {
