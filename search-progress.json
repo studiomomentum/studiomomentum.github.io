@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:38:06.440025+00:00",
+  "updated_at": "2026-09-27T21:39:07.461802+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13828,
-    "pending": 14108,
-    "processing": 2,
+    "processed": 13842,
+    "pending": 14096,
+    "processing": 0,
     "eligible": 154,
-    "review": 9648,
-    "rejected": 3995,
+    "review": 9661,
+    "rejected": 3996,
     "errors": 28,
     "ready": 109,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCvk_G6CceY49-nChdTCYgiA",
-        "name": "악바리 변호사",
-        "query": "용인 법무법인"
-      },
-      {
-        "channel_id": "UCHTNA-fe26ucZuN96daapKg",
-        "name": "성공파트너 산하:부동산법무팀",
-        "query": "용인 법무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1642,
+  "region_observed": 1643,
   "channels_discovered": 27937,
-  "channels_observed": 13800,
+  "channels_observed": 13814,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3202,
+      "observed": 3216,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3204,
+      "classified": 3218,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2589,
+      "observed": 2590,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2592,
+      "classified": 2593,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2455,
+      "observed": 2456,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2457,
+      "classified": 2458,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1881,
+      "observed": 1882,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1884,
+      "classified": 1885,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1986,
+      "observed": 1987,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1991,
+      "classified": 1992,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1875,
+      "observed": 1877,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1876,
+      "classified": 1878,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1642,
+      "observed": 1643,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1643,
+      "classified": 1644,
       "classification_errors": 1,
       "jobs": [
         {
