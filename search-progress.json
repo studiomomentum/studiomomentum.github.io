@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:20:53.457136+00:00",
+  "updated_at": "2026-09-27T21:22:02.145593+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13476,
-    "pending": 14460,
-    "processing": 2,
+    "processed": 13502,
+    "pending": 14436,
+    "processing": 0,
     "eligible": 154,
-    "review": 9394,
-    "rejected": 3898,
+    "review": 9416,
+    "rejected": 3902,
     "errors": 27,
     "ready": 109,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCXSkH7qsTEkKl1pYKrKOvog",
-        "name": "토박이 해원부동산",
-        "query": "평택 감정평가사"
-      },
-      {
-        "channel_id": "UCeSsnuG9AemrselZuz1mA3Q",
-        "name": "마가렛 ",
-        "query": "평택 감정평가사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1625,
+  "region_observed": 1626,
   "channels_discovered": 27937,
-  "channels_observed": 13449,
+  "channels_observed": 13475,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4334,
+      "observed": 4360,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4346,
+      "classified": 4372,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3083,
+      "observed": 3085,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3085,
+      "classified": 3087,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2570,
+      "observed": 2574,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2573,
+      "classified": 2577,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2419,
+      "observed": 2421,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2421,
+      "classified": 2423,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1861,
+      "observed": 1863,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1864,
+      "classified": 1866,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1963,
+      "observed": 1966,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1968,
+      "classified": 1971,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1863,
+      "observed": 1866,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1864,
+      "classified": 1867,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1625,
+      "observed": 1626,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1626,
+      "classified": 1627,
       "classification_errors": 1,
       "jobs": [
         {
