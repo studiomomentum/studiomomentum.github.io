@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:58:19.149052+00:00",
+  "updated_at": "2026-09-27T12:59:20.594555+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 한의원",
-    "동탄 한방병원"
+    "동탄 학원",
+    "동탄 어학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 6310,
-    "processed": 3606,
-    "pending": 2702,
-    "processing": 2,
-    "eligible": 85,
-    "review": 2427,
-    "rejected": 1090,
+    "total": 6617,
+    "processed": 3646,
+    "pending": 2971,
+    "processing": 0,
+    "eligible": 86,
+    "review": 2461,
+    "rejected": 1095,
     "errors": 4,
-    "ready": 47,
+    "ready": 48,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCHqL43fyPZiyucyQMZfAKXA",
-        "name": "한국인재교육원"
-      },
-      {
-        "channel_id": "UCUYjVu3Z5R0sHwaWtp2QkEg",
-        "name": "군산성신병원"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 47,
-  "region_queries_completed": 8,
-  "region_channels": 1552,
-  "region_observed": 547,
-  "channels_discovered": 6306,
-  "channels_observed": 3602,
-  "search_pages": 689,
-  "search_results_read": 22492,
+  "queries_completed": 50,
+  "region_queries_completed": 11,
+  "region_channels": 1934,
+  "region_observed": 609,
+  "channels_discovered": 6614,
+  "channels_observed": 3642,
+  "search_pages": 769,
+  "search_results_read": 24001,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +40,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2392,
+      "observed": 2432,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2396,
+      "classified": 2436,
       "classification_errors": 4,
       "jobs": [
         {
@@ -332,13 +323,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 8,
+      "queries_completed": 11,
       "queries_total": 39,
-      "channels": 1552,
-      "observed": 547,
+      "channels": 1934,
+      "observed": 609,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 548,
+      "classified": 610,
       "classification_errors": 1,
       "jobs": [
         {
@@ -399,38 +390,38 @@
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 33,
-          "results_read": 99,
-          "pages": 5
+          "status": "completed",
+          "channels": 253,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 49,
-          "results_read": 80,
-          "pages": 4
+          "status": "completed",
+          "channels": 291,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 68,
+          "results_read": 378,
+          "pages": 19
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 41,
+          "results_read": 225,
+          "pages": 13
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 15,
+          "results_read": 97,
+          "pages": 5
         },
         {
           "name": "공인중개사",
