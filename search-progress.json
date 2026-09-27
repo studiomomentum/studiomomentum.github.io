@@ -2,37 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:21:01.532422+00:00",
+  "updated_at": "2026-09-27T17:22:03.039898+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 학원",
-    "송파 입시학원"
+    "송파 어학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27044,
-    "processed": 8823,
-    "pending": 18221,
-    "processing": 0,
+    "total": 27079,
+    "processed": 8839,
+    "pending": 18238,
+    "processing": 2,
     "eligible": 121,
-    "review": 6030,
-    "rejected": 2658,
+    "review": 6043,
+    "rejected": 2661,
     "errors": 11,
     "ready": 80,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC8C3cCkxRpzonk9TVAoRCYg",
+        "name": "디자인루디",
+        "query": "동탄 필라테스"
+      },
+      {
+        "channel_id": "UCVtIBsnFgiFIM_4bMW_mYaA",
+        "name": "김민희",
+        "query": "동탄 필라테스"
+      }
+    ]
   },
-  "queries_completed": 410,
-  "region_queries_completed": 10,
-  "region_channels": 1463,
-  "region_observed": 635,
-  "channels_discovered": 27043,
-  "channels_observed": 8812,
-  "search_pages": 9339,
-  "search_results_read": 189038,
+  "queries_completed": 411,
+  "region_queries_completed": 11,
+  "region_channels": 1582,
+  "region_observed": 658,
+  "channels_discovered": 27078,
+  "channels_observed": 8828,
+  "search_pages": 9363,
+  "search_results_read": 189458,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4682,
+      "observed": 4698,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4689,
+      "classified": 4705,
       "classification_errors": 7,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1801,
+      "observed": 1802,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1804,
+      "classified": 1805,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2036,
+      "observed": 2037,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2036,
+      "classified": 2037,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2967,13 +2978,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 10,
+      "queries_completed": 11,
       "queries_total": 40,
-      "channels": 1463,
-      "observed": 635,
+      "channels": 1582,
+      "observed": 658,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 635,
+      "classified": 658,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3049,20 +3060,20 @@
         {
           "name": "학원",
           "status": "running",
-          "channels": 113,
-          "results_read": 298,
-          "pages": 15
+          "channels": 184,
+          "results_read": 516,
+          "pages": 27
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 133,
-          "results_read": 298,
-          "pages": 15
+          "status": "completed",
+          "channels": 208,
+          "results_read": 500,
+          "pages": 27
         },
         {
           "name": "어학원",
-          "status": "pending",
+          "status": "running",
           "channels": 11,
           "results_read": 0,
           "pages": 0
