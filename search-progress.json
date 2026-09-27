@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:14:58.697976+00:00",
+  "updated_at": "2026-09-27T15:16:05.934752+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "분당 필라테스",
@@ -13,13 +13,13 @@
     "region": "분당"
   },
   "classification": {
-    "total": 19666,
-    "processed": 6809,
-    "pending": 12857,
+    "total": 19741,
+    "processed": 6827,
+    "pending": 12914,
     "processing": 0,
     "eligible": 111,
-    "review": 4606,
-    "rejected": 2086,
+    "review": 4619,
+    "rejected": 2091,
     "errors": 5,
     "ready": 70,
     "status": "running",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 278,
   "region_queries_completed": 38,
-  "region_channels": 4261,
-  "region_observed": 1972,
-  "channels_discovered": 19665,
-  "channels_observed": 6804,
-  "search_pages": 6042,
-  "search_results_read": 125531,
+  "region_channels": 4430,
+  "region_observed": 2019,
+  "channels_discovered": 19740,
+  "channels_observed": 6822,
+  "search_pages": 6078,
+  "search_results_read": 126244,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2674,
+      "observed": 2692,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2675,
+      "classified": 2693,
       "classification_errors": 1,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1528,
+      "observed": 1529,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1528,
+      "classified": 1529,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2500,
+      "observed": 2501,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2502,
+      "classified": 2503,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1728,
+      "observed": 1729,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1728,
+      "classified": 1729,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1797,11 +1797,11 @@
       "name": "분당",
       "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4261,
-      "observed": 1972,
+      "channels": 4430,
+      "observed": 2019,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1974,
+      "classified": 2021,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2073,16 +2073,16 @@
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 57,
-          "results_read": 137,
-          "pages": 7
+          "channels": 155,
+          "results_read": 494,
+          "pages": 25
         },
         {
           "name": "중고차",
           "status": "running",
-          "channels": 24,
-          "results_read": 60,
-          "pages": 3
+          "channels": 107,
+          "results_read": 416,
+          "pages": 21
         }
       ]
     },
