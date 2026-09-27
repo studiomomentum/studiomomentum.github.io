@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:59:04.969279+00:00",
+  "updated_at": "2026-09-27T15:00:06.744395+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "평택 중고차"
@@ -12,37 +12,37 @@
     "region": "평택"
   },
   "classification": {
-    "total": 18625,
-    "processed": 6519,
-    "pending": 12104,
+    "total": 18688,
+    "processed": 6539,
+    "pending": 12147,
     "processing": 2,
     "eligible": 106,
-    "review": 4406,
-    "rejected": 2001,
+    "review": 4419,
+    "rejected": 2008,
     "errors": 5,
     "ready": 65,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCEiLGrSN33GmIAbQB4rfiiQ",
-        "name": "YKTV global",
-        "query": "동탄 한방병원"
+        "channel_id": "UCL_BTmK0iP2QXPBPXD8SVwQ",
+        "name": "뷰티렐라tv",
+        "query": "동탄 한의원"
       },
       {
-        "channel_id": "UCZax1N7wBiTRVfeS1sz4NGw",
-        "name": "웰튼병원TV",
-        "query": "동탄 한방병원"
+        "channel_id": "UCHHUxQtQ_Drm1MzW9gjpVNg",
+        "name": "황보라 보라이어티",
+        "query": "동탄 한의원"
       }
     ]
   },
   "queries_completed": 260,
   "region_queries_completed": 39,
-  "region_channels": 4618,
-  "region_observed": 1473,
-  "channels_discovered": 18624,
-  "channels_observed": 6514,
-  "search_pages": 5593,
-  "search_results_read": 117127,
+  "region_channels": 4707,
+  "region_observed": 1482,
+  "channels_discovered": 18687,
+  "channels_observed": 6534,
+  "search_pages": 5615,
+  "search_results_read": 117563,
   "query_errors": {},
   "regions": [
     {
@@ -343,10 +343,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2384,
+      "observed": 2404,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2385,
+      "classified": 2405,
       "classification_errors": 1,
       "jobs": [
         {
@@ -636,10 +636,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1513,
+      "observed": 1514,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1515,
+      "classified": 1516,
       "classification_errors": 2,
       "jobs": [
         {
@@ -928,11 +928,11 @@
       "name": "평택",
       "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4618,
-      "observed": 1473,
+      "channels": 4707,
+      "observed": 1482,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1473,
+      "classified": 1482,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1211,9 +1211,9 @@
         {
           "name": "중고차",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 97,
+          "results_read": 436,
+          "pages": 22
         }
       ]
     },
@@ -1222,10 +1222,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 4348,
-      "observed": 2466,
+      "observed": 2468,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2468,
+      "classified": 2470,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1515,10 +1515,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 5393,
-      "observed": 1663,
+      "observed": 1665,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1663,
+      "classified": 1665,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1808,10 +1808,10 @@
       "queries_completed": 23,
       "queries_total": 40,
       "channels": 2298,
-      "observed": 1249,
+      "observed": 1250,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1251,
+      "classified": 1252,
       "classification_errors": 2,
       "jobs": [
         {
