@@ -30,6 +30,26 @@ await channelPage.waitForLoadState();assert.equal(channelPage.url(),'https://www
 assert.equal(await p.locator('#targetDetail').isVisible(),false);
 await p.evaluate(()=>{for(const channel_url of ['javascript:alert(1)','http://youtube.com/@name','https://youtube.com/watch?v=abc','https://evil.test/@name']){if(youtubeChannelButton({channel_url})!=='')throw Error('unsafe URL');}targetsMap=window.linkFixtureBackup;});
 
+// Permanent exclusion is available on desktop/mobile and persists across stale refresh.
+await p.evaluate(()=>{
+  targetsMap={deadbeef:{token:'deadbeef',company:'제외 테스트',status:'READY',no:'1',channel_url:'https://www.youtube.com/channel/UCaaaaaaaaaaaaaaaaaaaaaa',email:'test@example.com'}};
+  window.exclusionWrites=0;
+  MomentumAdmin.call=async(action,payload)=>{
+    if(action==='targets.exclude')window.exclusionWrites++;
+    return {entries:window.exclusionWrites?{deadbeef:{channel_url:'https://www.youtube.com/channel/UCaaaaaaaaaaaaaaaaaaaaaa',email:'test@example.com'}}:{}};
+  };setMainTab('READY');
+});
+assert.equal(await p.locator('#tableBody [data-exclude-token]').count(),1);
+assert.equal(await p.locator('#mobileCardsContainer [data-exclude-token]').count(),1);
+p.once('dialog',d=>d.dismiss());await p.locator('#mobileCardsContainer [data-exclude-token]').click();
+assert.equal(await p.evaluate(()=>window.exclusionWrites),0);
+p.once('dialog',d=>d.accept());await p.locator('#mobileCardsContainer [data-exclude-token]').click();
+await p.waitForFunction(()=>targetsMap.deadbeef.status==='EXCLUDED');assert.equal(await p.evaluate(()=>window.exclusionWrites),1);
+assert.equal(await p.locator('#mobileCardsContainer [data-exclude-token]').count(),0);
+await p.evaluate(()=>{targetsMap.deadbeef.status='READY';applyPermanentExclusions();setMainTab('EXCLUDED');});
+assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),1);
+await p.evaluate(()=>{permanentExclusions={};targetsMap=window.linkFixtureBackup;});
+
 // Schema v2 separates candidate dispositions, registration history and READY.
 await p.evaluate(()=>{window.fixtureBackup=targetsMap;targetsMap={_search_db_stats:{schema_version:2,total_candidates:100,discovered_count:10,review_count:20,rejected_count:30,error_count:5,duplicate_count:15,registered_count:20,ready_count:4}};setMainTab('SEARCH_DB');});
 assert.deepEqual(await p.locator('.prospect-card strong').allTextContents(),['100','10','20','30','5','15','20','4']);

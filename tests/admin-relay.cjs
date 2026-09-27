@@ -22,3 +22,23 @@ const created_at=new Date().toISOString();runList=[{id:42,actor:{login:'operator
 reset();token=login();loseReceipt=true;route({action:'classify.start',session:token,requestId:crypto.randomUUID()});runList=[{id:42,actor:{login:'operator'},created_at},{id:43,actor:{login:'operator'},created_at}];assert.equal(route({action:'classify.status',session:token}).result.phase,'unknown');
 lockAvailable=false;assert.equal(route({action:'classify.status',session:token}).error,'BUSY');
 console.log('PASS server authentication, hash replay rejection, expiry, logout, rate limit, fail-closed switch, dispatch allowlist, idempotency, status, ambiguous response recovery, no secret response.');
+reset();token=login();let config={email_system_enabled:true},status='READY',senderBusy=false,putCount=0;
+sandbox.Utilities.parseCsv=s=>s.split('\n').map(r=>r.split(','));
+sandbox.UrlFetchApp.fetch=(url,options)=>{
+  if(url.includes('/contents/system_config.json')){
+    if(options.method==='put'){config=JSON.parse(Buffer.from(JSON.parse(options.payload).content,'base64').toString());putCount++;}
+    return response({sha:'config-sha',content:Buffer.from(JSON.stringify(config)).toString('base64')});
+  }
+  if(url.includes('drip_sender.yml/runs'))return response({workflow_runs:senderBusy?[{status:'in_progress'}]:[]});
+  if(url.includes('targets_db.csv'))return response({content:Buffer.from('토큰,상태,채널URL,이메일,회사채널명\ndeadbeef,'+status+',https://www.youtube.com/channel/UCaaaaaaaaaaaaaaaaaaaaaa,office@example.com,Test').toString('base64')});
+  throw Error('Unexpected exclusion request');
+};
+assert.equal(route({action:'targets.exclude',token:'deadbeef'}).error,'UNAUTHORIZED');
+assert.equal(route({action:'targets.exclude',session:token,token:'invalid/path'}).error,'INVALID_REQUEST');
+assert.equal(route({action:'targets.exclude',session:token,token:'aaaaaaaa'}).error,'INVALID_TARGET');
+status='SENT';assert.equal(route({action:'targets.exclude',session:token,token:'deadbeef'}).error,'TARGET_NOT_READY');status='READY';
+senderBusy=true;assert.equal(route({action:'targets.exclude',session:token,token:'deadbeef'}).error,'SENDER_BUSY');senderBusy=false;
+result=route({action:'targets.exclude',session:token,token:'deadbeef',email:'attacker@example.com'});assert(result.ok);assert.equal(result.result.entries.deadbeef.email,'office@example.com');
+assert(route({action:'targets.exclude',session:token,token:'deadbeef'}).ok);assert.equal(putCount,1);
+assert(route({action:'targets.exclusions',session:token}).result.entries.deadbeef);assert.equal(config.email_system_enabled,true);
+console.log('PASS authenticated permanent exclusion, server identity, send-state protection, idempotence, preserved config.');

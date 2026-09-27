@@ -118,6 +118,31 @@ function adminSettings_(request) {
     return {setting:request.setting,value:request.value};
   });
 }
+// Server-side identities only: the browser supplies a tracking token, never an email/URL.
+function adminExclusions_(request) {
+  return adminLock_(()=>{
+    const config=adminConfig_('momentum-cold-mailer');
+    const entries=config.value.excluded_targets||{};
+    if(request.action==='targets.exclusions')return {entries:entries};
+    if(typeof request.token!=='string'||!/^[a-f0-9]{8,64}$/.test(request.token))throw new Error('INVALID_REQUEST');
+    if(entries[request.token])return {entries:entries,excluded:true};
+    // Do not promise cancellation of a message already being processed.
+    const runs=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/drip_sender.yml/runs?branch=main&per_page=20');
+    if((runs.workflow_runs||[]).some(r=>r.status!=='completed'))throw new Error('SENDER_BUSY');
+    const file=adminGithub_('repos/'+ADMIN_REPO_+'/contents/targets_db.csv?ref=main');
+    const csv=Utilities.newBlob(Utilities.base64Decode(file.content.replace(/\s/g,''))).getDataAsString('UTF-8').replace(/^\uFEFF/,'');
+    const rows=Utilities.parseCsv(csv),headers=rows.shift();
+    const matches=rows.filter(r=>r[headers.indexOf('토큰')]===request.token);
+    if(matches.length!==1)throw new Error('INVALID_TARGET');
+    const row=matches[0],get=k=>row[headers.indexOf(k)]||'';
+    if(get('상태')!=='READY')throw new Error('TARGET_NOT_READY');
+    entries[request.token]={channel_url:get('채널URL').replace(/\/$/,''),email:get('이메일').trim().toLowerCase(),company:get('회사채널명'),excluded_at:new Date().toISOString(),reason:'operator_not_target'};
+    config.value.excluded_targets=entries;config.value.updated_at=new Date().toISOString();
+    // CAS keeps a simultaneous configuration change intact. Repeating an exclusion is idempotent.
+    adminGithub_('repos/'+ADMIN_REPO_+'/contents/system_config.json','put',{message:'Permanently exclude reviewed outreach target',content:Utilities.base64Encode(JSON.stringify(config.value,null,2)+'\n',Utilities.Charset.UTF_8),sha:config.file.sha,branch:'main'});
+    return {entries:entries,excluded:true};
+  });
+}
 function adminRoute_(request) {
   try{
     if(request.action==='login')return {ok:true,result:adminLogin_(request)};
@@ -127,12 +152,14 @@ function adminRoute_(request) {
       case 'logout':adminLock_(()=>adminWrite_('ADMIN_SESSIONS',adminRead_('ADMIN_SESSIONS',[]).filter(s=>!adminEqual_(s.hash,session.hash))));return {ok:true,result:{loggedOut:true}};
       case 'classify.start':return {ok:true,result:adminClassifyStart_(request)};
       case 'classify.status':return {ok:true,result:adminClassifyStatus_()};
+      case 'targets.exclude':
+      case 'targets.exclusions':return {ok:true,result:adminExclusions_(request)};
       case 'settings.update':return {ok:true,result:adminSettings_(request)};
       default:throw new Error('INVALID_REQUEST');
     }
   }catch(error){
     const message=String(error.message||'');
-    const allowed=/^(UNAUTHORIZED|INVALID_LOGIN|LOGIN_RATE_LIMIT|SERVER_NOT_CONFIGURED|BUSY|SYSTEM_PAUSED|INVALID_REQUEST|INVALID_RUN|GITHUB_CONNECTION|GITHUB_\d{3})$/;
+    const allowed=/^(UNAUTHORIZED|INVALID_LOGIN|LOGIN_RATE_LIMIT|SERVER_NOT_CONFIGURED|BUSY|SENDER_BUSY|INVALID_TARGET|TARGET_NOT_READY|SYSTEM_PAUSED|INVALID_REQUEST|INVALID_RUN|GITHUB_CONNECTION|GITHUB_\d{3})$/;
     return {ok:false,error:allowed.test(message)?message:'SERVER_ERROR'};
   }
 }

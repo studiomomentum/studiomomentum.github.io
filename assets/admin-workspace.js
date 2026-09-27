@@ -99,7 +99,7 @@ function renderTable() {
     const s=stats[t.token]||{}, open=Number(s.openCount)||0,visit=Number(s.visitCount)||0;
     const button=`<button class="target-link" data-detail-token="${e(t.token)}">${e(inbound?t.channel_name:t.company)}</button>`;
     if(inbound)return [button+youtubeChannelButton(t)+prospectScoreBadge(t)+`<small>${e(t.channel_type)}</small>`,e(formatRelativeTime(t.lastSeen)),`${t.hot?'<span class="status-pill status-READY">상담 클릭</span>':''}<small>스크롤 ${e(t.maxScroll)}% · ${e(t.maxStaySec)}초</small>`,e(t.device)];
-    return [button+youtubeChannelButton(t)+prospectScoreBadge(t)+`<small>${e([t.rep,t.region,t.category].filter(Boolean).join(' · '))}</small>`,workspaceStatus(t)+`<small>${e(t.sent_at||'')}</small>`,`<span class="metric ${open?'metric-open':''}">${open}회</span>`,`<span class="metric ${visit?'metric-visit':''}">${visit}회</span>`,`${s.hot?'<span class="status-pill status-READY">상담 클릭</span>':''}<small>${e(s.lastSeen?formatRelativeTime(s.lastSeen):'활동 없음')}</small>`];
+    return [button+youtubeChannelButton(t)+prospectScoreBadge(t)+`<small>${e([t.rep,t.region,t.category].filter(Boolean).join(' · '))}</small>`,workspaceStatus(t)+excludeTargetButton(t)+`<small>${e(t.sent_at||'')}</small>`,`<span class="metric ${open?'metric-open':''}">${open}회</span>`,`<span class="metric ${visit?'metric-visit':''}">${visit}회</span>`,`${s.hot?'<span class="status-pill status-READY">상담 클릭</span>':''}<small>${e(s.lastSeen?formatRelativeTime(s.lastSeen):'활동 없음')}</small>`];
   };
   Momentum.setHTML(document.getElementById('tableBody'),rows.length?rows.map(t=>'<tr>'+cells(t).map(c=>`<td>${c}</td>`).join('')+'</tr>').join(''):`<tr><td colspan="${heads.length}" class="workspace-empty">조건에 일치하는 ${inbound?'방문':'타깃'}이 없습니다.</td></tr>`);
   Momentum.setHTML(document.getElementById('mobileCardsContainer'),rows.length?rows.map(t=>{const c=cells(t);return `<article class="target-card"><div class="compact-card-heading">${c[0]}</div><div class="compact-card-grid">${c.slice(1).map((v,i)=>`<div><span class="field-label">${heads[i+1]}</span>${v}</div>`).join('')}</div></article>`;}).join(''):'<div class="workspace-empty">조건에 일치하는 항목이 없습니다.</div>');
@@ -113,7 +113,7 @@ function openTargetDetail(token) {
   const facts=t.company?[['담당자',t.rep],['이메일',t.email],['업종 / 지역',[t.category,t.region].filter(Boolean).join(' / ')],['발송 상태',t.status==='SENT'?'발송 완료':deliveryLabels[t.status]||t.status],['발송일시',t.sent_at],['영업 포인트',t.point||t.views],['채널',t.channel_url||t.channel],['추적 토큰',token]]:[['유입 경로',t.channel_name],['기기',t.device],['유입 주소',t.ref_url],['세션',token]];
   const names={email_open:'메일 열람',open:'메일 열람',visit:'사이트 방문',view:'페이지 조회',scroll_50:'50% 스크롤',scroll_90:'90% 스크롤',kakao_click:'카카오톡 상담 클릭',cta_click:'버튼 클릭',payment_attempt:'결제 시도',pay_modal_open:'결제창 열기',roi_calc_change:'계산기 사용',leave:'페이지 떠남',pay_and_kakao_connect:'결제·상담 연결 클릭'};
   const events=Momentum.mergeEvents(liveEvents).filter(ev=>ev.ref===token&&!Momentum.isTestEvent(ev));
-  Momentum.setHTML(document.getElementById('detailBody'),`${youtubeChannelButton(t)}${prospectScoreBadge(t,true)}<dl>${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${e(v||'—')}</dd></div>`).join('')}</dl><div class="detail-metrics"><span>메일 열람 <strong>${Number(s.openCount)||0}회</strong></span><span>사이트 방문 <strong>${Number(s.visitCount)||0}회</strong></span><span>스크롤 <strong>${Number(s.maxScroll)||t.maxScroll||0}%</strong></span><span>체류 <strong>${Number(s.maxStaySec)||t.maxStaySec||0}초</strong></span></div><h3>활동 이력</h3><p class="field-label">현재 동기화된 기록 기준 · 메일 열람은 추적 이미지 요청 기준</p><ol class="detail-events">${events.map(ev=>`<li><span>${e(names[ev.event]||(/^duration_/.test(ev.event)?'체류 기록':ev.event))}</span><time>${e(new Date(ev.timestamp).toLocaleString('ko-KR'))}</time></li>`).join('')||'<li>동기화된 상세 활동 기록이 없습니다.</li>'}</ol>`);
+  Momentum.setHTML(document.getElementById('detailBody'),`${youtubeChannelButton(t)}${excludeTargetButton(t)}${prospectScoreBadge(t,true)}<dl>${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${e(v||'—')}</dd></div>`).join('')}</dl><div class="detail-metrics"><span>메일 열람 <strong>${Number(s.openCount)||0}회</strong></span><span>사이트 방문 <strong>${Number(s.visitCount)||0}회</strong></span><span>스크롤 <strong>${Number(s.maxScroll)||t.maxScroll||0}%</strong></span><span>체류 <strong>${Number(s.maxStaySec)||t.maxStaySec||0}초</strong></span></div><h3>활동 이력</h3><p class="field-label">현재 동기화된 기록 기준 · 메일 열람은 추적 이미지 요청 기준</p><ol class="detail-events">${events.map(ev=>`<li><span>${e(names[ev.event]||(/^duration_/.test(ev.event)?'체류 기록':ev.event))}</span><time>${e(new Date(ev.timestamp).toLocaleString('ko-KR'))}</time></li>`).join('')||'<li>동기화된 상세 활동 기록이 없습니다.</li>'}</ol>`);
   activateYoutubeLinks(document.getElementById('detailBody'));
   document.getElementById('targetDetail').showModal();
 }
@@ -132,4 +132,37 @@ document.addEventListener('click',ev=>{
 });
 document.addEventListener('keydown',ev=>{
   if((ev.key==='Enter'||ev.key===' ')&&ev.target.matches('[role="button"]')){ev.preventDefault();ev.target.click();}
+});
+
+let permanentExclusions = {};
+function excludeTargetButton(t) {
+  return t.status==='READY'?`<button type="button" class="exclude-target-button" data-exclude-token="${workspaceEscape(t.token)}">영구 제외</button>`:'';
+}
+function applyPermanentExclusions() {
+  const entries=Object.entries(permanentExclusions);
+  for(const t of Object.values(targetsMap)) {
+    if(!t||!['READY','REVIEW'].includes(t.status))continue;
+    if(entries.some(([token,x])=>token===t.token||(x.channel_url&&x.channel_url===(t.channel_url||'').replace(/\/$/,''))||(x.email&&x.email===(t.email||'').trim().toLowerCase())))t.status='EXCLUDED';
+  }
+}
+async function refreshPermanentExclusions() {
+  const result=await MomentumAdmin.call('targets.exclusions');
+  permanentExclusions=result.entries||{};applyPermanentExclusions();
+}
+let exclusionPending=false;
+document.addEventListener('click',async ev=>{
+  const button=ev.target.closest('[data-exclude-token]');if(!button||exclusionPending)return;
+  const token=button.dataset.excludeToken,t=targetsMap[token];if(!t||t.status!=='READY')return;
+  if(!confirm(`${t.company}을(를) 영구 제외할까요?\n발송대기에서 빠지고 같은 유튜브 채널·이메일은 이후 서치와 분류에서도 다시 발송대기로 등록되지 않습니다.\n이력은 ‘제외’ 목록에 보존됩니다.`))return;
+  exclusionPending=true;button.disabled=true;button.textContent='제외 저장 중…';
+  try {
+    const result=await MomentumAdmin.call('targets.exclude',{token});
+    permanentExclusions=result.entries||{};applyPermanentExclusions();
+    document.getElementById('targetDetail').close();updateKPIs();renderTable();
+  } catch(error) {
+    // A lost response may still have committed. Read back; never repeat a write automatically.
+    try {await refreshPermanentExclusions();}catch(_){}
+    if(targetsMap[token]?.status==='EXCLUDED'){updateKPIs();renderTable();}
+    else {alert(error.message+'\n제외 완료가 확인되지 않았습니다. 목록을 새로고침한 후 확인해 주세요.');button.disabled=false;button.textContent='영구 제외';}
+  } finally {exclusionPending=false;}
 });

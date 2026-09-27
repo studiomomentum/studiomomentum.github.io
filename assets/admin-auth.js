@@ -2,7 +2,7 @@
 window.MomentumAdmin = (() => {
   const key='sm_admin_server_session_v1';
   let session=null;
-  const messages={UNAUTHORIZED:'로그인이 만료되었습니다. 다시 로그인해 주세요.',INVALID_LOGIN:'아이디 또는 비밀번호가 일치하지 않습니다.',LOGIN_RATE_LIMIT:'로그인 시도가 많습니다. 15분 후 다시 시도해 주세요.',SERVER_NOT_CONFIGURED:'서버 인증 설정을 확인해야 합니다.',SYSTEM_PAUSED:'전체 자동화가 정지되어 분류를 실행하지 않았습니다.',BUSY:'다른 요청을 처리 중입니다. 잠시 후 다시 시도해 주세요.',GITHUB_CONNECTION:'서버에서 GitHub 연결을 확인하지 못했습니다.'};
+  const messages={SENDER_BUSY:'메일 발송 작업이 진행 중입니다. 작업 종료 후 제외해 주세요.',TARGET_NOT_READY:'이미 발송대기 상태가 바뀌었습니다. 새로고침해 주세요.',INVALID_TARGET:'대상을 확인할 수 없습니다.',UNAUTHORIZED:'로그인이 만료되었습니다. 다시 로그인해 주세요.',INVALID_LOGIN:'아이디 또는 비밀번호가 일치하지 않습니다.',LOGIN_RATE_LIMIT:'로그인 시도가 많습니다. 15분 후 다시 시도해 주세요.',SERVER_NOT_CONFIGURED:'서버 인증 설정을 확인해야 합니다.',SYSTEM_PAUSED:'전체 자동화가 정지되어 분류를 실행하지 않았습니다.',BUSY:'다른 요청을 처리 중입니다. 잠시 후 다시 시도해 주세요.',GITHUB_CONNECTION:'서버에서 GitHub 연결을 확인하지 못했습니다.'};
   function clear(){session=null;localStorage.removeItem(key);sessionStorage.removeItem(key);localStorage.removeItem('sm_admin_persistent_auth');sessionStorage.removeItem('sm_admin_authenticated');}
   function loginScreen(message=''){
     document.getElementById('dashboardApp').style.display='none';document.getElementById('loginOverlay').style.display='flex';
