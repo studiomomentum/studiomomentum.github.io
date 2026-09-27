@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:18:50.244472+00:00",
+  "updated_at": "2026-09-27T21:19:52.124504+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13439,
-    "pending": 14498,
-    "processing": 1,
+    "processed": 13456,
+    "pending": 14480,
+    "processing": 2,
     "eligible": 154,
-    "review": 9366,
-    "rejected": 3889,
+    "review": 9379,
+    "rejected": 3893,
     "errors": 27,
     "ready": 109,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCi7uVVRTn1z8kmz8_kCAv8w",
-        "name": "김주호",
+        "channel_id": "UCF7KwCgKoeXLyg6jHz3Jmhg",
+        "name": "플라잉쟁구",
+        "query": "평택 관세사"
+      },
+      {
+        "channel_id": "UCJJPecSX_iaZXgH3XQm4Ejw",
+        "name": "edulime에듀라임 (라임 사이버 문화센터)",
         "query": "평택 관세사"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1624,
   "channels_discovered": 27937,
-  "channels_observed": 13412,
+  "channels_observed": 13429,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4297,
+      "observed": 4314,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4309,
+      "classified": 4326,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3078,
+      "observed": 3081,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3080,
+      "classified": 3083,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2567,
+      "observed": 2569,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2570,
+      "classified": 2572,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1859,
+      "observed": 1860,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1862,
+      "classified": 1863,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1860,
+      "observed": 1861,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1861,
+      "classified": 1862,
       "classification_errors": 1,
       "jobs": [
         {
