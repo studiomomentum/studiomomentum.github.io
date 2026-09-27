@@ -1,47 +1,43 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "화성",
+  "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:34:56.019705+00:00",
+  "updated_at": "2026-09-27T14:35:59.015689+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 심리상담센터",
-    "화성 필라테스"
+    "분당 세무사",
+    "분당 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "화성"
+    "region": "분당"
   },
   "classification": {
-    "total": 17492,
-    "processed": 6106,
-    "pending": 11384,
-    "processing": 2,
+    "total": 17685,
+    "processed": 6119,
+    "pending": 11565,
+    "processing": 1,
     "eligible": 105,
-    "review": 4110,
-    "rejected": 1885,
+    "review": 4121,
+    "rejected": 1887,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCh6lN2jm2I9IcfmI7SGhteA",
-        "name": "오플란트치과의원"
-      },
-      {
-        "channel_id": "UCERAiQrkoFIN7lsF9vXJZcA",
-        "name": "프렌디덴 김쌤"
+        "channel_id": "UCxvhVwC6Tuu1RVcsRSkQ8Lw",
+        "name": "치의학박사 김인수"
       }
     ]
   },
-  "queries_completed": 232,
-  "region_queries_completed": 37,
-  "region_channels": 5144,
-  "region_observed": 1574,
-  "channels_discovered": 17491,
-  "channels_observed": 6101,
-  "search_pages": 4887,
-  "search_results_read": 103834,
+  "queries_completed": 234,
+  "region_queries_completed": 0,
+  "region_channels": 255,
+  "region_observed": 250,
+  "channels_discovered": 17684,
+  "channels_observed": 6114,
+  "search_pages": 4926,
+  "search_results_read": 104569,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1966,
+      "observed": 1979,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1967,
+      "classified": 1980,
       "classification_errors": 1,
       "jobs": [
         {
@@ -907,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1401,
+      "observed": 1404,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1401,
+      "classified": 1404,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1476,13 +1472,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 37,
+      "queries_completed": 39,
       "queries_total": 39,
-      "channels": 5144,
-      "observed": 1574,
+      "channels": 5393,
+      "observed": 1591,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1574,
+      "classified": 1591,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1746,17 +1742,17 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 135,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 306,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 73,
-          "results_read": 120,
-          "pages": 6
+          "status": "completed",
+          "channels": 215,
+          "results_read": 377,
+          "pages": 20
         }
       ]
     },
@@ -1764,26 +1760,26 @@
       "name": "분당",
       "queries_completed": 0,
       "queries_total": 39,
-      "channels": 238,
-      "observed": 238,
+      "channels": 255,
+      "observed": 250,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 238,
+      "classified": 250,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 17,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "세무회계",
