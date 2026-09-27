@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>스튜디오 모멘텀 | 관제탑 어드민 대시보드</title>
+  <title>솟 모멘텀 | 관제탑 어드민 대시보드</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <style>
@@ -517,8 +517,8 @@
       cursor: pointer;
     }
 
-    .feed-item:hover { 
-      transform: translateX(4px); 
+    .feed-item:hover {
+      transform: translateX(4px);
       border-color: rgba(59, 130, 246, 0.4);
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
@@ -1231,7 +1231,9 @@
       background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.4));
       color: #fff;
     }
-  </style>
+
+.sot-wordmark{display:inline-flex;align-items:baseline;gap:7px;white-space:nowrap;line-height:1.2;background:#fff;border-radius:8px;padding:5px 9px}.sot-symbol{font-size:32px;font-weight:900;color:#1d4ed8;letter-spacing:-1px}.sot-momentum{font-size:14px;font-weight:800;color:#000;letter-spacing:.4px}
+</style>
 <script src="assets/purify.min.js"></script>
 <script src="assets/momentum-runtime.js?v=20260927-archive"></script>
 <link rel="stylesheet" href="assets/admin-workspace.css?v=20260927-classification-transition">
@@ -1242,8 +1244,8 @@
   <div id="loginOverlay">
     <div class="login-box">
       <div class="login-icon">🔒</div>
-      <h2 class="login-title">스튜디오 모멘텀 관제탑</h2>
-      <p class="login-desc">스튜디오 모멘텀 운영자 전용 로그인입니다.<br>모멘텀 전용 관리자 계정을 사용해 주세요.<br>Google·네이버 등 외부 서비스 비밀번호를 입력하지 마세요.</p>
+      <h2 class="login-title"><span class="sot-wordmark" aria-label="솟 모멘텀"><span class="sot-symbol">솟</span><span class="sot-momentum">MOMENTUM</span></span><br><small>관제탑</small></h2>
+      <p class="login-desc">솟 모멘텀 운영자 전용 로그인입니다.<br>모멘텀 전용 관리자 계정을 사용해 주세요.<br>Google·네이버 등 외부 서비스 비밀번호를 입력하지 마세요.</p>
 
       <form id="loginForm" onsubmit="handleLogin(event)">
         <div class="input-group">
@@ -1272,7 +1274,7 @@
     <!-- 헤더 -->
     <header class="top-header">
       <div class="brand-title-wrap">
-        <h1 style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px;">STUDIO MOMENTUM</h1>
+        <h1 style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px;"><span class="sot-wordmark" aria-label="솟 모멘텀"><span class="sot-symbol">솟</span><span class="sot-momentum">MOMENTUM</span></span></h1>
         <span class="brand-badge">LIVE TRACKING</span>
         <span class="brand-badge" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4);">🛡️ 내 방문 제외 필터 가동중</span>
       </div>
@@ -1383,7 +1385,7 @@
         </div>
         <span style="font-size: 12px; color: #94a3b8;" id="pseoToggleIcon">▼ 접기/펼치기</span>
       </div>
-      
+
       <div id="pseoBoardContent" class="pseo-board-grid">
         <!-- 좌측: 12대 핵심 권역별 유입 랭킹 -->
         <div class="pseo-card">
@@ -1857,7 +1859,7 @@
           totalPseo++;
           const r = ev.region || (ev.channel_name ? ev.channel_name.split(' ')[0] : '');
           const ind = ev.industry || (ev.channel_name ? ev.channel_name.split(' ')[1] : '');
-          
+
           PSEO_REGIONS.forEach(reg => {
             if (reg.includes(r) || (r && r.includes(reg.split('·')[0]))) regionCounts[reg] = (regionCounts[reg] || 0) + 1;
           });
@@ -2076,7 +2078,7 @@
       const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = `스튜디오모멘텀_타깃_방문추적_${new Date().toISOString().slice(0,10)}.csv`;
+      link.download = `솟 모멘텀_타깃_방문추적_${new Date().toISOString().slice(0,10)}.csv`;
       link.click();
     }
 
