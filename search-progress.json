@@ -2,10 +2,9 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:25:05.589941+00:00",
+  "updated_at": "2026-09-27T16:26:07.001055+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 필라테스",
     "강남 중고차"
   ],
   "search_stage": {
@@ -13,37 +12,37 @@
     "region": "강남"
   },
   "classification": {
-    "total": 24847,
-    "processed": 7969,
-    "pending": 16876,
+    "total": 24919,
+    "processed": 7987,
+    "pending": 16930,
     "processing": 2,
     "eligible": 119,
-    "review": 5399,
-    "rejected": 2442,
+    "review": 5411,
+    "rejected": 2448,
     "errors": 6,
     "ready": 78,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCWXWEA-JCL8qWqq5kAagSog",
-        "name": "보라리티비",
-        "query": "동탄 동물병원"
+        "channel_id": "UCAqPNh5Q9qI_dYg9g0vGxhQ",
+        "name": "부동산노트",
+        "query": "동탄 의원"
       },
       {
-        "channel_id": "UClt2LXIcOzYHjy3yWkbTS-A",
-        "name": "해피애견타운",
-        "query": "동탄 동물병원"
+        "channel_id": "UCL0oh2Qe6oocp_XFH0rt3Lw",
+        "name": "생명나무교회 이의원목사",
+        "query": "동탄 의원"
       }
     ]
   },
-  "queries_completed": 358,
-  "region_queries_completed": 38,
-  "region_channels": 4859,
-  "region_observed": 1620,
-  "channels_discovered": 24846,
-  "channels_observed": 7963,
-  "search_pages": 7987,
-  "search_results_read": 161879,
+  "queries_completed": 359,
+  "region_queries_completed": 39,
+  "region_channels": 4963,
+  "region_observed": 1629,
+  "channels_discovered": 24918,
+  "channels_observed": 7981,
+  "search_pages": 8010,
+  "search_results_read": 162310,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +343,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3833,
+      "observed": 3851,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3835,
+      "classified": 3853,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +636,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1730,
+      "observed": 1733,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1732,
+      "classified": 1735,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1515,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1892,
+      "observed": 1894,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1892,
+      "classified": 1894,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2101,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1441,
+      "observed": 1442,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1442,
+      "classified": 1443,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2391,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 38,
+      "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4859,
-      "observed": 1620,
+      "channels": 4963,
+      "observed": 1629,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1622,
+      "classified": 1631,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2669,17 +2668,17 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 109,
-          "results_read": 355,
-          "pages": 18
+          "status": "completed",
+          "channels": 157,
+          "results_read": 509,
+          "pages": 27
         },
         {
           "name": "중고차",
           "status": "running",
-          "channels": 29,
-          "results_read": 98,
-          "pages": 5
+          "channels": 107,
+          "results_read": 375,
+          "pages": 19
         }
       ]
     },
