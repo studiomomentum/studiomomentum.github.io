@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:07:25.506073+00:00",
+  "updated_at": "2026-09-27T15:08:27.049618+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "분당 동물병원",
-    "분당 의원"
+    "분당 노무사",
+    "분당 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 19020,
-    "processed": 6679,
-    "pending": 12339,
+    "total": 19094,
+    "processed": 6699,
+    "pending": 12393,
     "processing": 2,
     "eligible": 109,
-    "review": 4520,
-    "rejected": 2044,
+    "review": 4532,
+    "rejected": 2052,
     "errors": 5,
-    "ready": 67,
+    "ready": 68,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCu3UdBgjSn-RrdKnfJx6ycQ",
-        "name": "KBS 뉴스 부산",
+        "channel_id": "UCgWK34k-nYfwOES71xRA9ZQ",
+        "name": "국제신문부동산TV",
         "query": "동탄 공인중개사"
       },
       {
-        "channel_id": "UCn_38aaCktkBLPv3EtfmiUA",
-        "name": "KBS 경제한방",
-        "query": "동탄 부동산중개"
+        "channel_id": "UCN7MhPoALIyr_UmsP-5W4WA",
+        "name": "까치TV [까치부동산]",
+        "query": "동탄 공인중개사"
       }
     ]
   },
-  "queries_completed": 267,
-  "region_queries_completed": 27,
-  "region_channels": 2796,
-  "region_observed": 1470,
-  "channels_discovered": 19019,
-  "channels_observed": 6674,
-  "search_pages": 5805,
-  "search_results_read": 121159,
+  "queries_completed": 269,
+  "region_queries_completed": 29,
+  "region_channels": 2929,
+  "region_observed": 1512,
+  "channels_discovered": 19093,
+  "channels_observed": 6694,
+  "search_pages": 5836,
+  "search_results_read": 121700,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2544,
+      "observed": 2564,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2545,
+      "classified": 2565,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1542,
+      "observed": 1545,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1544,
+      "classified": 1547,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1500,
+      "observed": 1505,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1500,
+      "classified": 1505,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2487,
+      "observed": 2490,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2489,
+      "classified": 2492,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1699,
+      "observed": 1701,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1699,
+      "classified": 1701,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,13 +1806,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 27,
+      "queries_completed": 29,
       "queries_total": 40,
-      "channels": 2796,
-      "observed": 1470,
+      "channels": 2929,
+      "observed": 1512,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1472,
+      "classified": 1514,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2006,28 +2006,28 @@
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 186,
-          "results_read": 371,
-          "pages": 19
+          "status": "completed",
+          "channels": 251,
+          "results_read": 514,
+          "pages": 28
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 126,
-          "results_read": 272,
-          "pages": 14
+          "status": "completed",
+          "channels": 263,
+          "results_read": 551,
+          "pages": 30
         },
         {
           "name": "노무사",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 38,
+          "results_read": 119,
+          "pages": 6
         },
         {
           "name": "노무법인",
-          "status": "pending",
+          "status": "running",
           "channels": 4,
           "results_read": 0,
           "pages": 0
