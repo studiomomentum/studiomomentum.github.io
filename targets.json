@@ -3347,8 +3347,8 @@
     "channel_url": "https://www.youtube.com/channel/UC8asBYQ06WY9VN7Wr645LPw",
     "region": "수원",
     "category": "admin",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 16:04:59",
     "views": "구독자 None / 최근 롱폼 2편 중앙값 69.0회",
     "point": "수원 행정사 채널의 최근 롱폼 2편 중앙값 69.0회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "40",
@@ -3729,7 +3729,7 @@
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 36,
+    "ready_count": 35,
     "status_counts": {
       "REVIEW": 2154,
       "REJECTED": 186,
@@ -3745,6 +3745,6 @@
       "HIGH": 839,
       "VERY LOW": 154
     },
-    "updated_at": "2026-09-27T06:38:48.744754+00:00"
+    "updated_at": "2026-09-27T07:05:04.604901+00:00"
   }
 }
