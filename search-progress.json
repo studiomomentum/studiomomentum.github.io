@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:27:21.944463+00:00",
+  "updated_at": "2026-09-27T20:28:22.996277+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12378,
-    "pending": 15558,
-    "processing": 2,
+    "processed": 12396,
+    "pending": 15542,
+    "processing": 0,
     "eligible": 146,
-    "review": 8599,
-    "rejected": 3607,
+    "review": 8607,
+    "rejected": 3617,
     "errors": 23,
     "ready": 102,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC6V54Kv2RvWZBBDyWeYPqKQ",
-        "name": "햇살좋은집TV",
-        "query": "평택 공인중개사"
-      },
-      {
-        "channel_id": "UC6PxTv3qEmCz-2UW75i2D8Q",
-        "name": "내집마련 가이드 최소장",
-        "query": "평택 공인중개사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1566,
   "channels_discovered": 27937,
-  "channels_observed": 12355,
+  "channels_observed": 12373,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3240,
+      "observed": 3258,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3248,
+      "classified": 3266,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2959,
+      "observed": 2961,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2961,
+      "classified": 2963,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2446,
+      "observed": 2450,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2449,
+      "classified": 2453,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1807,
+      "observed": 1809,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1810,
+      "classified": 1812,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1809,
+      "observed": 1810,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1810,
+      "classified": 1811,
       "classification_errors": 1,
       "jobs": [
         {
