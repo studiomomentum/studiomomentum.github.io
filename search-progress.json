@@ -2,37 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:38:20.566975+00:00",
+  "updated_at": "2026-09-27T13:39:22.065846+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 내과의원",
-    "평택 산부인과"
+    "평택 동물병원",
+    "평택 의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 12854,
-    "processed": 4806,
-    "pending": 8048,
-    "processing": 0,
+    "total": 12982,
+    "processed": 4833,
+    "pending": 8148,
+    "processing": 1,
     "eligible": 94,
-    "review": 3250,
-    "rejected": 1456,
+    "review": 3266,
+    "rejected": 1467,
     "errors": 5,
     "ready": 54,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCAf971dUdfJJiYRgfLBy2WA",
+        "name": "황수정의 소리기록[SoojeongTape]"
+      }
+    ]
   },
-  "queries_completed": 141,
-  "region_queries_completed": 24,
-  "region_channels": 3149,
-  "region_observed": 947,
-  "channels_discovered": 12852,
-  "channels_observed": 4801,
-  "search_pages": 2750,
-  "search_results_read": 62117,
+  "queries_completed": 144,
+  "region_queries_completed": 27,
+  "region_channels": 3379,
+  "region_observed": 987,
+  "channels_discovered": 12980,
+  "channels_observed": 4828,
+  "search_pages": 2799,
+  "search_results_read": 63019,
   "query_errors": {},
   "regions": [
     {
@@ -40,10 +45,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3591,
+      "observed": 3618,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3596,
+      "classified": 3623,
       "classification_errors": 5,
       "jobs": [
         {
@@ -326,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1142,
+      "observed": 1146,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1143,
+      "classified": 1147,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1190,
+      "observed": 1192,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1192,
+      "classified": 1194,
       "classification_errors": 2,
       "jobs": [
         {
@@ -895,13 +900,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 24,
+      "queries_completed": 27,
       "queries_total": 39,
-      "channels": 3149,
-      "observed": 947,
+      "channels": 3379,
+      "observed": 987,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 947,
+      "classified": 987,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1074,35 +1079,35 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 185,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 266,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 58,
-          "results_read": 99,
-          "pages": 5
+          "status": "completed",
+          "channels": 78,
+          "results_read": 137,
+          "pages": 8
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 109,
+          "results_read": 393,
+          "pages": 21
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 188,
+          "results_read": 320,
+          "pages": 16
         },
         {
           "name": "의원",
-          "status": "pending",
+          "status": "running",
           "channels": 10,
           "results_read": 0,
           "pages": 0
