@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:03:48.585987+00:00",
+  "updated_at": "2026-09-27T18:04:50.027756+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 9489,
-    "pending": 18447,
+    "processed": 9513,
+    "pending": 18423,
     "processing": 2,
-    "eligible": 125,
-    "review": 6486,
-    "rejected": 2863,
+    "eligible": 126,
+    "review": 6504,
+    "rejected": 2868,
     "errors": 12,
     "ready": 84,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCvvnENXB7hhBymO5Zg-czew",
-        "name": "RL",
-        "query": "오산 한의원"
+        "channel_id": "UCAoFBqbp2G5VUBlyc2epUGA",
+        "name": "Planet8",
+        "query": "오산 학원"
       },
       {
-        "channel_id": "UCORwTDOJeXjlTN85b6ukTgQ",
-        "name": "최동률",
-        "query": "오산 한의원"
+        "channel_id": "UCzLmz4RueN828YOSoVbxdeA",
+        "name": "엠케이댄스",
+        "query": "오산 학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1434,
+  "region_observed": 1435,
   "channels_discovered": 27937,
-  "channels_observed": 9477,
+  "channels_observed": 9501,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2378,
+      "observed": 2402,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2382,
+      "classified": 2406,
       "classification_errors": 4,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1829,
+      "observed": 1835,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1830,
+      "classified": 1836,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2668,
+      "observed": 2673,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2670,
+      "classified": 2675,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2111,
+      "observed": 2117,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2111,
+      "classified": 2117,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2219,
+      "observed": 2220,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2221,
+      "classified": 2222,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1718,
+      "observed": 1719,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1721,
+      "classified": 1722,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1434,
+      "observed": 1435,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1435,
+      "classified": 1436,
       "classification_errors": 1,
       "jobs": [
         {
