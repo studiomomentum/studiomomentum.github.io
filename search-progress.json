@@ -1,30 +1,27 @@
 {
   "sweep_id": "full-20260927-429",
   "region": "수원",
-  "phase": "search",
-  "updated_at": "2026-09-27T12:29:34.981086+00:00",
+  "phase": "observe",
+  "updated_at": "2026-09-27T12:30:35.708496+00:00",
   "run_id": "36319007549",
-  "active_queries": [
-    "수원 심리상담센터",
-    "수원 필라테스"
-  ],
-  "queries_completed": 37,
-  "region_queries_completed": 37,
-  "region_channels": 4061,
-  "region_observed": 2168,
-  "channels_discovered": 5270,
-  "channels_observed": 3377,
-  "search_pages": 477,
-  "search_results_read": 18524,
+  "active_queries": [],
+  "queries_completed": 39,
+  "region_queries_completed": 39,
+  "region_channels": 4103,
+  "region_observed": 2194,
+  "channels_discovered": 5310,
+  "channels_observed": 3401,
+  "search_pages": 489,
+  "search_results_read": 18723,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 37,
+      "queries_completed": 39,
       "queries_total": 39,
-      "channels": 4061,
-      "observed": 2168,
-      "observation_errors": 128,
+      "channels": 4103,
+      "observed": 2194,
+      "observation_errors": 104,
       "classified_at": null,
       "jobs": [
         {
@@ -288,17 +285,17 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
+          "status": "completed",
           "channels": 254,
           "results_read": 491,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 92,
-          "results_read": 287,
-          "pages": 15
+          "status": "completed",
+          "channels": 135,
+          "results_read": 486,
+          "pages": 26
         }
       ]
     },
