@@ -2,37 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:50:47.969341+00:00",
+  "updated_at": "2026-09-27T17:51:50.231900+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 심리상담센터",
-    "송파 필라테스"
+    "송파 필라테스",
+    "송파 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27846,
-    "processed": 9245,
-    "pending": 18601,
-    "processing": 0,
+    "total": 27889,
+    "processed": 9260,
+    "pending": 18628,
+    "processing": 1,
     "eligible": 122,
-    "review": 6319,
-    "rejected": 2789,
+    "review": 6329,
+    "rejected": 2794,
     "errors": 12,
     "ready": 81,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC3GAYp0nGuwBcORJbgfhYrw",
+        "name": "爆爆恋剧社",
+        "query": "오산 변호사"
+      }
+    ]
   },
-  "queries_completed": 437,
-  "region_queries_completed": 37,
-  "region_channels": 3956,
-  "region_observed": 1360,
-  "channels_discovered": 27845,
-  "channels_observed": 9233,
-  "search_pages": 10023,
-  "search_results_read": 201756,
+  "queries_completed": 438,
+  "region_queries_completed": 38,
+  "region_channels": 4132,
+  "region_observed": 1406,
+  "channels_discovered": 27888,
+  "channels_observed": 9248,
+  "search_pages": 10051,
+  "search_results_read": 202291,
   "query_errors": {},
   "regions": [
     {
@@ -626,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2134,
+      "observed": 2149,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2138,
+      "classified": 2153,
       "classification_errors": 4,
       "jobs": [
         {
@@ -919,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1782,
+      "observed": 1787,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1783,
+      "classified": 1788,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1212,10 +1218,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2645,
+      "observed": 2646,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2647,
+      "classified": 2648,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2079,
+      "observed": 2084,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2079,
+      "classified": 2084,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1804,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2207,
+      "observed": 2208,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2209,
+      "classified": 2210,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1605,
+      "observed": 1607,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1607,
+      "classified": 1609,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2384,10 +2390,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1695,
+      "observed": 1696,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1698,
+      "classified": 1699,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2677,10 +2683,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1637,
+      "observed": 1639,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1638,
+      "classified": 1640,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,13 +2973,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 37,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 3956,
-      "observed": 1360,
+      "channels": 4132,
+      "observed": 1406,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1361,
+      "classified": 1407,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3237,24 +3243,24 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 87,
-          "results_read": 299,
-          "pages": 15
+          "status": "completed",
+          "channels": 148,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 11,
-          "results_read": 20,
-          "pages": 1
+          "channels": 113,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 32,
+          "results_read": 60,
+          "pages": 3
         }
       ]
     }
