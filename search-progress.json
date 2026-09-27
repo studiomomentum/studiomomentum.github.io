@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:35:45.738779+00:00",
+  "updated_at": "2026-09-27T17:36:48.029708+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 내과의원",
@@ -13,32 +13,37 @@
     "region": "송파"
   },
   "classification": {
-    "total": 27524,
-    "processed": 9036,
-    "pending": 18487,
-    "processing": 1,
+    "total": 27548,
+    "processed": 9049,
+    "pending": 18497,
+    "processing": 2,
     "eligible": 121,
-    "review": 6181,
-    "rejected": 2720,
+    "review": 6188,
+    "rejected": 2726,
     "errors": 11,
     "ready": 80,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9MfnGCw6ArIN9KzEIixCyg",
-        "name": "케어스토리",
+        "channel_id": "UCIOAtlQTXo4BlfIWaTbJo4A",
+        "name": "제영부동산",
+        "query": "오산 세무법인"
+      },
+      {
+        "channel_id": "UCXfA4pHupLN0cbXJ22x4Kow",
+        "name": "강원랜드 사회공헌재단",
         "query": "오산 세무법인"
       }
     ]
   },
   "queries_completed": 424,
   "region_queries_completed": 24,
-  "region_channels": 2907,
-  "region_observed": 1002,
-  "channels_discovered": 27523,
-  "channels_observed": 9025,
-  "search_pages": 9683,
-  "search_results_read": 195391,
+  "region_channels": 2977,
+  "region_observed": 1026,
+  "channels_discovered": 27547,
+  "channels_observed": 9038,
+  "search_pages": 9707,
+  "search_results_read": 195867,
   "query_errors": {},
   "regions": [
     {
@@ -632,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1926,
+      "observed": 1939,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1929,
+      "classified": 1942,
       "classification_errors": 3,
       "jobs": [
         {
@@ -925,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1734,
+      "observed": 1735,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1735,
+      "classified": 1736,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1218,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2632,
+      "observed": 2633,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2634,
+      "classified": 2635,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1511,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2053,
+      "observed": 2055,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2053,
+      "classified": 2055,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1804,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2196,
+      "observed": 2198,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2198,
+      "classified": 2200,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2097,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1592,
+      "observed": 1594,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1594,
+      "classified": 1596,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2390,10 +2395,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1688,
+      "observed": 1689,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1691,
+      "classified": 1692,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2975,11 +2980,11 @@
       "name": "송파",
       "queries_completed": 24,
       "queries_total": 40,
-      "channels": 2907,
-      "observed": 1002,
+      "channels": 2977,
+      "observed": 1026,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1003,
+      "classified": 1027,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3153,16 +3158,16 @@
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 38,
-          "results_read": 60,
-          "pages": 3
+          "channels": 92,
+          "results_read": 299,
+          "pages": 15
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 15,
-          "results_read": 20,
-          "pages": 1
+          "channels": 76,
+          "results_read": 257,
+          "pages": 13
         },
         {
           "name": "비뇨기과",
