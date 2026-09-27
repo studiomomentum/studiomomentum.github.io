@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:11:33.213272+00:00",
+  "updated_at": "2026-09-27T15:12:47.505709+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "분당 관세사",
-    "분당 감정평가사"
+    "분당 감정평가사",
+    "분당 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 19339,
-    "processed": 6747,
-    "pending": 12590,
-    "processing": 2,
-    "eligible": 109,
-    "review": 4568,
-    "rejected": 2064,
+    "total": 19442,
+    "processed": 6769,
+    "pending": 12673,
+    "processing": 0,
+    "eligible": 110,
+    "review": 4583,
+    "rejected": 2070,
     "errors": 5,
-    "ready": 68,
+    "ready": 69,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCC7AwyYTY-Y6apIj4iAOOXA",
-        "name": "TV러셀",
-        "query": "동탄 공인중개사"
-      },
-      {
-        "channel_id": "UCvDiU_-zeBNmRvY_fzMI_Ww",
-        "name": "공여사들",
-        "query": "동탄 공인중개사"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 273,
-  "region_queries_completed": 33,
-  "region_channels": 3558,
-  "region_observed": 1747,
-  "channels_discovered": 19338,
-  "channels_observed": 6742,
-  "search_pages": 5942,
-  "search_results_read": 123685,
+  "queries_completed": 274,
+  "region_queries_completed": 34,
+  "region_channels": 3776,
+  "region_observed": 1815,
+  "channels_discovered": 19441,
+  "channels_observed": 6764,
+  "search_pages": 5974,
+  "search_results_read": 124273,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2612,
+      "observed": 2634,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2613,
+      "classified": 2635,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1551,
+      "observed": 1558,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1553,
+      "classified": 1560,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1518,
+      "observed": 1524,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1518,
+      "classified": 1524,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2494,
+      "observed": 2496,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2496,
+      "classified": 2498,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1711,
+      "observed": 1717,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1711,
+      "classified": 1717,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,13 +1795,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 33,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 3558,
-      "observed": 1747,
+      "channels": 3776,
+      "observed": 1815,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1749,
+      "classified": 1817,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2048,24 +2037,24 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 170,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 178,
+          "results_read": 249,
+          "pages": 14
         },
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 96,
-          "results_read": 154,
-          "pages": 8
+          "channels": 252,
+          "results_read": 469,
+          "pages": 24
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 167,
+          "results_read": 264,
+          "pages": 14
         },
         {
           "name": "건축사사무소",
