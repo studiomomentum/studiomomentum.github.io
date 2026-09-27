@@ -1,46 +1,47 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "용인",
+  "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:09:50.982263+00:00",
+  "updated_at": "2026-09-27T14:10:52.328981+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 필라테스"
+    "화성 세무사",
+    "화성 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "용인"
+    "region": "화성"
   },
   "classification": {
-    "total": 14972,
-    "processed": 5556,
-    "pending": 9414,
+    "total": 15005,
+    "processed": 5578,
+    "pending": 9425,
     "processing": 2,
     "eligible": 98,
-    "review": 3753,
-    "rejected": 1699,
+    "review": 3766,
+    "rejected": 1708,
     "errors": 5,
     "ready": 58,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCPn8mR2FbQEF1ESrDBwItSA",
-        "name": "박빌딩"
+        "channel_id": "UC1_socDSc4ptev5eHKPfusQ",
+        "name": "원에스티"
       },
       {
-        "channel_id": "UCXbbu9zKr-vRdmoKbJVqiDQ",
-        "name": "젬스톤 GemStoneTV"
+        "channel_id": "UC1KdP386yiY5Gxuhx0swxFw",
+        "name": "행복이 가득한 집"
       }
     ]
   },
-  "queries_completed": 194,
-  "region_queries_completed": 38,
-  "region_channels": 4306,
-  "region_observed": 2361,
-  "channels_discovered": 14971,
-  "channels_observed": 5551,
-  "search_pages": 4011,
-  "search_results_read": 85660,
+  "queries_completed": 195,
+  "region_queries_completed": 0,
+  "region_channels": 393,
+  "region_observed": 343,
+  "channels_discovered": 15004,
+  "channels_observed": 5573,
+  "search_pages": 4037,
+  "search_results_read": 86158,
   "query_errors": {},
   "regions": [
     {
@@ -334,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1416,
+      "observed": 1438,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1417,
+      "classified": 1439,
       "classification_errors": 1,
       "jobs": [
         {
@@ -620,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1326,
+      "observed": 1332,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1328,
+      "classified": 1334,
       "classification_errors": 2,
       "jobs": [
         {
@@ -906,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1323,
+      "observed": 1328,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1323,
+      "classified": 1328,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1189,13 +1190,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 38,
+      "queries_completed": 39,
       "queries_total": 39,
-      "channels": 4306,
-      "observed": 2361,
+      "channels": 4348,
+      "observed": 2394,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2363,
+      "classified": 2396,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1466,10 +1467,10 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 111,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 155,
+          "results_read": 499,
+          "pages": 26
         }
       ]
     },
@@ -1477,26 +1478,26 @@
       "name": "화성",
       "queries_completed": 0,
       "queries_total": 39,
-      "channels": 278,
-      "observed": 278,
+      "channels": 393,
+      "observed": 343,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 278,
+      "classified": 343,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 89,
+          "results_read": 159,
+          "pages": 8
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 96,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "세무회계",
