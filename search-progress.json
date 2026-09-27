@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T23:03:42.717070+00:00",
+  "updated_at": "2026-09-27T23:04:55.149175+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15415,
-    "pending": 12522,
-    "processing": 1,
+    "processed": 15434,
+    "pending": 12504,
+    "processing": 0,
     "eligible": 171,
-    "review": 10791,
-    "rejected": 4420,
+    "review": 10807,
+    "rejected": 4423,
     "errors": 30,
     "ready": 124,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC_nCxWxbTgm4pJbJApK5dXA",
-        "name": "리얼바인부동산TV",
-        "query": "화성 치과의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1761,
   "channels_discovered": 27937,
-  "channels_observed": 15385,
+  "channels_observed": 15404,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3130,
+      "observed": 3149,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3134,
+      "classified": 3153,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1998,
+      "observed": 2000,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2001,
+      "classified": 2003,
       "classification_errors": 3,
       "jobs": [
         {
