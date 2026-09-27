@@ -1,37 +1,48 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "용인",
+  "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:01:14.735551+00:00",
+  "updated_at": "2026-09-27T15:02:16.540184+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "용인 중고차"
+    "화성 중고차"
   ],
   "search_stage": {
     "status": "running",
-    "region": "용인"
+    "region": "화성"
   },
   "classification": {
-    "total": 18718,
-    "processed": 6559,
-    "pending": 12159,
-    "processing": 0,
+    "total": 18753,
+    "processed": 6581,
+    "pending": 12170,
+    "processing": 2,
     "eligible": 106,
-    "review": 4428,
-    "rejected": 2019,
+    "review": 4447,
+    "rejected": 2022,
     "errors": 5,
     "ready": 65,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCAxFG0lmc5Uihjw-cZZkrFQ",
+        "name": "포인트미술학원",
+        "query": "동탄 학원"
+      },
+      {
+        "channel_id": "UCNZCZfYh65q9DsSV7rAfOtg",
+        "name": "정우희",
+        "query": "동탄 학원"
+      }
+    ]
   },
-  "queries_completed": 261,
+  "queries_completed": 262,
   "region_queries_completed": 39,
-  "region_channels": 4432,
-  "region_observed": 2472,
-  "channels_discovered": 18717,
-  "channels_observed": 6554,
-  "search_pages": 5634,
-  "search_results_read": 117910,
+  "region_channels": 5418,
+  "region_observed": 1678,
+  "channels_discovered": 18752,
+  "channels_observed": 6576,
+  "search_pages": 5653,
+  "search_results_read": 118264,
   "query_errors": {},
   "regions": [
     {
@@ -332,10 +343,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2424,
+      "observed": 2446,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2425,
+      "classified": 2447,
       "classification_errors": 1,
       "jobs": [
         {
@@ -625,10 +636,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1514,
+      "observed": 1522,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1516,
+      "classified": 1524,
       "classification_errors": 2,
       "jobs": [
         {
@@ -918,10 +929,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1483,
+      "observed": 1485,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1483,
+      "classified": 1485,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1208,13 +1219,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4432,
-      "observed": 2472,
+      "channels": 4483,
+      "observed": 2480,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2474,
+      "classified": 2482,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1492,10 +1503,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 90,
-          "results_read": 278,
-          "pages": 14
+          "status": "completed",
+          "channels": 143,
+          "results_read": 572,
+          "pages": 30
         }
       ]
     },
@@ -1503,11 +1514,11 @@
       "name": "화성",
       "queries_completed": 39,
       "queries_total": 40,
-      "channels": 5393,
-      "observed": 1668,
+      "channels": 5418,
+      "observed": 1678,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1668,
+      "classified": 1678,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1785,10 +1796,10 @@
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 27,
+          "results_read": 60,
+          "pages": 3
         }
       ]
     },
