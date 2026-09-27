@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:46:25.396959+00:00",
+  "updated_at": "2026-09-27T21:47:26.677987+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13975,
-    "pending": 13962,
+    "processed": 13989,
+    "pending": 13948,
     "processing": 1,
     "eligible": 157,
-    "review": 9778,
+    "review": 9792,
     "rejected": 4009,
     "errors": 28,
     "ready": 112,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9Pv30SyPk96XmN9lMyu_OA",
-        "name": "박철진",
+        "channel_id": "UC-BVxCopzUay2LsXWNrdkQA",
+        "name": "8617505",
         "query": "용인 한의원"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1653,
+  "region_observed": 1654,
   "channels_discovered": 27937,
-  "channels_observed": 13947,
+  "channels_observed": 13961,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1215,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3349,
+      "observed": 3363,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3351,
+      "classified": 3365,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2004,
+      "observed": 2006,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2009,
+      "classified": 2011,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1887,
+      "observed": 1888,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1888,
+      "classified": 1889,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1653,
+      "observed": 1654,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1654,
+      "classified": 1655,
       "classification_errors": 1,
       "jobs": [
         {
