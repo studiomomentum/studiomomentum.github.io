@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T23:00:38.126411+00:00",
+  "updated_at": "2026-09-27T23:01:39.699635+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,20 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15374,
-    "pending": 12562,
-    "processing": 2,
+    "processed": 15385,
+    "pending": 12552,
+    "processing": 1,
     "eligible": 171,
-    "review": 10759,
-    "rejected": 4411,
+    "review": 10768,
+    "rejected": 4413,
     "errors": 30,
     "ready": 124,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCnNOOEDisVmSix6-S5Rs7ZQ",
-        "name": "ARUM DENTISTRY",
-        "query": "화성 치과의원"
-      },
-      {
-        "channel_id": "UCZ84MlThgtYjSfi4hD2ndpw",
-        "name": "문영인",
-        "query": "화성 치과의원"
+        "channel_id": "UCR2osVqtxRBER4U8KFrn6VQ",
+        "name": "아이샘 어린이치과",
+        "query": "화성 치과"
       }
     ]
   },
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1761,
   "channels_discovered": 27937,
-  "channels_observed": 15344,
+  "channels_observed": 15355,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3089,
+      "observed": 3100,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3093,
+      "classified": 3104,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1997,
+      "observed": 1998,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2000,
+      "classified": 2001,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1979,
+      "observed": 1980,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1980,
+      "classified": 1981,
       "classification_errors": 1,
       "jobs": [
         {
