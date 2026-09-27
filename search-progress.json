@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:30:06.308042+00:00",
+  "updated_at": "2026-09-27T22:31:07.303052+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14827,
-    "pending": 13110,
-    "processing": 1,
+    "processed": 14848,
+    "pending": 13090,
+    "processing": 0,
     "eligible": 166,
-    "review": 10385,
-    "rejected": 4244,
+    "review": 10397,
+    "rejected": 4253,
     "errors": 29,
     "ready": 119,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCDTfJt5NwdNoZWg1ByySrAA",
-        "name": "세계사이버대학",
-        "query": "용인 감정평가사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1740,
   "channels_discovered": 27937,
-  "channels_observed": 14798,
+  "channels_observed": 14819,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4200,
+      "observed": 4221,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4203,
+      "classified": 4224,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2686,
+      "observed": 2688,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2689,
+      "classified": 2691,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2658,
+      "observed": 2660,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2660,
+      "classified": 2662,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1957,
+      "observed": 1959,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1960,
+      "classified": 1962,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2104,
+      "observed": 2106,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2109,
+      "classified": 2111,
       "classification_errors": 5,
       "jobs": [
         {
