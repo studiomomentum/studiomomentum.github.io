@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:31:53.080243+00:00",
+  "updated_at": "2026-09-27T13:32:54.269140+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 공인중개사",
-    "평택 부동산중개"
+    "평택 행정사",
+    "평택 행정사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 12366,
-    "processed": 4648,
-    "pending": 7716,
+    "total": 12421,
+    "processed": 4670,
+    "pending": 7749,
     "processing": 2,
     "eligible": 93,
-    "review": 3133,
-    "rejected": 1417,
+    "review": 3153,
+    "rejected": 1419,
     "errors": 4,
     "ready": 53,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCA5a9GZy76_Sy99GtRJoaig",
-        "name": "수원에이스경매학원"
+        "channel_id": "UCE5X8V6gl4KMdrZF_Jzk0fQ",
+        "name": "최손사의 보험클리닉"
       },
       {
-        "channel_id": "UCY_TB3M4RdasaON8aJ8Buug",
-        "name": "천명훈경매"
+        "channel_id": "UC1wvbKdF1cjIL-ubD_HdQkg",
+        "name": "김손사 보상체크"
       }
     ]
   },
-  "queries_completed": 130,
-  "region_queries_completed": 13,
-  "region_channels": 2172,
-  "region_observed": 691,
-  "channels_discovered": 12364,
-  "channels_observed": 4644,
-  "search_pages": 2472,
-  "search_results_read": 56902,
+  "queries_completed": 132,
+  "region_queries_completed": 15,
+  "region_channels": 2312,
+  "region_observed": 749,
+  "channels_discovered": 12419,
+  "channels_observed": 4666,
+  "search_pages": 2518,
+  "search_results_read": 57763,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3434,
+      "observed": 3456,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3438,
+      "classified": 3460,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1121,
+      "observed": 1122,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1122,
+      "classified": 1123,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1171,
+      "observed": 1173,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1173,
+      "classified": 1175,
       "classification_errors": 2,
       "jobs": [
         {
@@ -904,13 +904,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 13,
+      "queries_completed": 15,
       "queries_total": 39,
-      "channels": 2172,
-      "observed": 691,
+      "channels": 2312,
+      "observed": 749,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 691,
+      "classified": 749,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1006,31 +1006,31 @@
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 176,
-          "results_read": 378,
-          "pages": 19
+          "status": "completed",
+          "channels": 235,
+          "results_read": 533,
+          "pages": 28
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 81,
-          "results_read": 179,
-          "pages": 9
+          "status": "completed",
+          "channels": 166,
+          "results_read": 505,
+          "pages": 27
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 85,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "피부과",
