@@ -2,43 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:48:48.617154+00:00",
+  "updated_at": "2026-09-27T16:49:51.039082+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 정형외과",
-    "서초 이비인후과"
+    "서초 재활의학과",
+    "서초 마취통증의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 26063,
-    "processed": 8350,
-    "pending": 17712,
-    "processing": 1,
+    "total": 26085,
+    "processed": 8365,
+    "pending": 17718,
+    "processing": 2,
     "eligible": 120,
-    "review": 5667,
-    "rejected": 2551,
+    "review": 5675,
+    "rejected": 2558,
     "errors": 9,
     "ready": 79,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCwGcAX4e6WNJ1OezB2Urz6g",
-        "name": "스마일홈즈 행복과장",
-        "query": "동탄 법무사"
+        "channel_id": "UClin3RRq4nuMx6VJQMqdYcw",
+        "name": "하우패스 감정평가사",
+        "query": "동탄 감정평가사"
+      },
+      {
+        "channel_id": "UCgLqoSctVS5b7z9YbeTkfhw",
+        "name": "아힐스부동산",
+        "query": "동탄 감정평가사"
       }
     ]
   },
-  "queries_completed": 380,
-  "region_queries_completed": 20,
-  "region_channels": 3134,
-  "region_observed": 1100,
-  "channels_discovered": 26062,
-  "channels_observed": 8341,
-  "search_pages": 8556,
-  "search_results_read": 174404,
+  "queries_completed": 382,
+  "region_queries_completed": 22,
+  "region_channels": 3225,
+  "region_observed": 1138,
+  "channels_discovered": 26084,
+  "channels_observed": 8356,
+  "search_pages": 8582,
+  "search_results_read": 174856,
   "query_errors": {},
   "regions": [
     {
@@ -339,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4211,
+      "observed": 4226,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4216,
+      "classified": 4231,
       "classification_errors": 5,
       "jobs": [
         {
@@ -632,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1760,
+      "observed": 1762,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1762,
+      "classified": 1764,
       "classification_errors": 2,
       "jobs": [
         {
@@ -925,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1669,
+      "observed": 1670,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1669,
+      "classified": 1670,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1218,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2573,
+      "observed": 2574,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2575,
+      "classified": 2576,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1511,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1954,
+      "observed": 1956,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1954,
+      "classified": 1956,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1804,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2145,
+      "observed": 2148,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2147,
+      "classified": 2150,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2097,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1491,
+      "observed": 1495,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1492,
+      "classified": 1496,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2390,10 +2395,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1643,
+      "observed": 1644,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1645,
+      "classified": 1646,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2680,13 +2685,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 20,
+      "queries_completed": 22,
       "queries_total": 40,
-      "channels": 3134,
-      "observed": 1100,
+      "channels": 3225,
+      "observed": 1138,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1100,
+      "classified": 1138,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2831,31 +2836,31 @@
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 113,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 140,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 9,
-          "results_read": 20,
-          "pages": 1
+          "status": "completed",
+          "channels": 49,
+          "results_read": 165,
+          "pages": 10
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 43,
+          "results_read": 79,
+          "pages": 4
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 39,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "내과의원",
