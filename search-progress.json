@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:08:03.572192+00:00",
+  "updated_at": "2026-09-27T20:09:04.683436+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11976,
-    "pending": 15962,
-    "processing": 0,
+    "processed": 12000,
+    "pending": 15936,
+    "processing": 2,
     "eligible": 144,
-    "review": 8275,
-    "rejected": 3535,
+    "review": 8298,
+    "rejected": 3536,
     "errors": 19,
     "ready": 100,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCHcxq_wRQQ_q2zK7alhS1iw",
+        "name": "원광대학교한방병원",
+        "query": "평택 한방병원"
+      },
+      {
+        "channel_id": "UCo5Xe1XMx53Sn5LtfYW3-sg",
+        "name": "S M",
+        "query": "평택 학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1552,
   "channels_discovered": 27937,
-  "channels_observed": 11957,
+  "channels_observed": 11981,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2842,
+      "observed": 2866,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2846,
+      "classified": 2870,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2897,
+      "observed": 2902,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2899,
+      "classified": 2904,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2419,
+      "observed": 2422,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2421,
+      "classified": 2424,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2358,
+      "observed": 2359,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2360,
+      "classified": 2361,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1881,
+      "observed": 1882,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1885,
+      "classified": 1886,
       "classification_errors": 4,
       "jobs": [
         {
