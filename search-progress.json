@@ -2,42 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:05:28.486012+00:00",
+  "updated_at": "2026-09-27T13:06:29.785827+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 의원",
-    "동탄 노무사"
+    "동탄 감정평가사",
+    "동탄 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 8103,
-    "processed": 3889,
-    "pending": 4213,
-    "processing": 1,
+    "total": 8425,
+    "processed": 3932,
+    "pending": 4491,
+    "processing": 2,
     "eligible": 88,
-    "review": 2629,
-    "rejected": 1168,
+    "review": 2661,
+    "rejected": 1179,
     "errors": 4,
     "ready": 49,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCT3gjlfP0dst3cp5Bqq3MsQ",
-        "name": "우리가 본 동물병원 [본동물메디컬센터]"
+        "channel_id": "UCTeRKi3PkVwFa2pOg2Mh_dg",
+        "name": "박교서TV"
+      },
+      {
+        "channel_id": "UCkyWFHmOyOWacmQhR4q8krQ",
+        "name": "진표TV"
       }
     ]
   },
-  "queries_completed": 67,
-  "region_queries_completed": 28,
-  "region_channels": 3792,
-  "region_observed": 940,
-  "channels_discovered": 8100,
-  "channels_observed": 3885,
-  "search_pages": 1185,
-  "search_results_read": 33116,
+  "queries_completed": 73,
+  "region_queries_completed": 34,
+  "region_channels": 4164,
+  "region_observed": 960,
+  "channels_discovered": 8422,
+  "channels_observed": 3928,
+  "search_pages": 1249,
+  "search_results_read": 34205,
   "query_errors": {},
   "regions": [
     {
@@ -45,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2675,
+      "observed": 2718,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2679,
+      "classified": 2722,
       "classification_errors": 4,
       "jobs": [
         {
@@ -328,13 +332,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 28,
+      "queries_completed": 34,
       "queries_total": 39,
-      "channels": 3792,
-      "observed": 940,
+      "channels": 4164,
+      "observed": 960,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 941,
+      "classified": 961,
       "classification_errors": 1,
       "jobs": [
         {
@@ -535,59 +539,59 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 207,
-          "results_read": 415,
-          "pages": 21
+          "status": "completed",
+          "channels": 253,
+          "results_read": 507,
+          "pages": 27
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 131,
-          "results_read": 178,
-          "pages": 9
+          "status": "completed",
+          "channels": 314,
+          "results_read": 420,
+          "pages": 23
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 41,
+          "results_read": 47,
+          "pages": 4
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 88,
+          "results_read": 235,
+          "pages": 14
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 127,
+          "results_read": 178,
+          "pages": 10
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 65,
+          "results_read": 75,
+          "pages": 5
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 62,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 41,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "건축사사무소",
