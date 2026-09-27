@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:46:35.176198+00:00",
+  "updated_at": "2026-09-27T15:47:37.238258+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 세무사",
-    "강남 세무법인"
+    "강남 세무회계",
+    "강남 변호사"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 22580,
-    "processed": 7341,
-    "pending": 15237,
+    "total": 22625,
+    "processed": 7357,
+    "pending": 15266,
     "processing": 2,
     "eligible": 115,
-    "review": 4967,
-    "rejected": 2250,
+    "review": 4979,
+    "rejected": 2254,
     "errors": 6,
     "ready": 74,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCmQgUde2MmG2iWePxo5f7Fg",
-        "name": "연세노블재활요양원",
-        "query": "동탄 재활의학과"
+        "channel_id": "UCyetzNvyxHz8ALDd1nI7Pvw",
+        "name": "독립문역의 대중교통&일상 채널",
+        "query": "동탄 이비인후과"
       },
       {
-        "channel_id": "UC2us0JKXlLEeadTz_SrhKag",
-        "name": "연세로이재활의학과",
-        "query": "동탄 재활의학과"
+        "channel_id": "UCPAEaAdSagsTYVY7O1kOSog",
+        "name": "영광의한걸음 한걸음",
+        "query": "동탄 이비인후과"
       }
     ]
   },
-  "queries_completed": 320,
-  "region_queries_completed": 0,
-  "region_channels": 370,
-  "region_observed": 303,
-  "channels_discovered": 22579,
-  "channels_observed": 7335,
-  "search_pages": 6971,
-  "search_results_read": 142777,
+  "queries_completed": 322,
+  "region_queries_completed": 2,
+  "region_channels": 453,
+  "region_observed": 327,
+  "channels_discovered": 22624,
+  "channels_observed": 7351,
+  "search_pages": 7001,
+  "search_results_read": 143316,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3205,
+      "observed": 3221,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3207,
+      "classified": 3223,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1648,
+      "observed": 1653,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1650,
+      "classified": 1655,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1591,
+      "observed": 1592,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1591,
+      "classified": 1592,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2530,
+      "observed": 2532,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2532,
+      "classified": 2534,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1811,
+      "observed": 1815,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1811,
+      "classified": 1815,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2064,
+      "observed": 2066,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2066,
+      "classified": 2068,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1355,
+      "observed": 1360,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1356,
+      "classified": 1361,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,42 +2392,42 @@
     },
     {
       "name": "강남",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 40,
-      "channels": 370,
-      "observed": 303,
+      "channels": 453,
+      "observed": 327,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 303,
+      "classified": 327,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
-          "channels": 46,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 97,
+          "results_read": 510,
+          "pages": 27
         },
         {
           "name": "세무법인",
-          "status": "running",
-          "channels": 114,
-          "results_read": 309,
-          "pages": 16
+          "status": "completed",
+          "channels": 152,
+          "results_read": 503,
+          "pages": 27
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 21,
+          "results_read": 76,
+          "pages": 4
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 16,
+          "results_read": 79,
+          "pages": 4
         },
         {
           "name": "법무법인",
