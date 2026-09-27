@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:03:18.286374+00:00",
+  "updated_at": "2026-09-27T22:04:19.351098+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14292,
-    "pending": 13646,
-    "processing": 0,
-    "eligible": 162,
-    "review": 9990,
-    "rejected": 4109,
+    "processed": 14316,
+    "pending": 13620,
+    "processing": 2,
+    "eligible": 163,
+    "review": 10004,
+    "rejected": 4118,
     "errors": 28,
     "ready": 116,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCCVHfPAeMDzfRZAn_9ND4ow",
+        "name": "KOTITI시험연구원",
+        "query": "용인 행정사"
+      },
+      {
+        "channel_id": "UC4bXITq7pK7JUh6p8lH5B8w",
+        "name": "WECL│트레이드랜드",
+        "query": "용인 부동산중개"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1684,
+  "region_observed": 1689,
   "channels_discovered": 27937,
-  "channels_observed": 14264,
+  "channels_observed": 14288,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3666,
+      "observed": 3690,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3668,
+      "classified": 3692,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2509,
+      "observed": 2511,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2511,
+      "classified": 2513,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1914,
+      "observed": 1918,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1917,
+      "classified": 1921,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2041,
+      "observed": 2047,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2046,
+      "classified": 2052,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1907,
+      "observed": 1911,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1908,
+      "classified": 1912,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1684,
+      "observed": 1689,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1685,
+      "classified": 1690,
       "classification_errors": 1,
       "jobs": [
         {
