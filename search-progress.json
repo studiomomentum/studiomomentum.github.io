@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:51:53.620302+00:00",
+  "updated_at": "2026-09-27T20:52:55.011534+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12900,
-    "pending": 15036,
+    "processed": 12920,
+    "pending": 15016,
     "processing": 2,
     "eligible": 150,
-    "review": 8981,
-    "rejected": 3743,
+    "review": 8996,
+    "rejected": 3748,
     "errors": 23,
     "ready": 105,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCAAoaMPVjMZR_Dmk6uYixjw",
-        "name": "Aga Mer",
-        "query": "평택 내과의원"
+        "channel_id": "UCeFb8OZirVR7WOW719GPP-Q",
+        "name": "천사들의합창TV",
+        "query": "평택 동물병원"
       },
       {
-        "channel_id": "UCF71NPZHyIo50-KsmIZPs0g",
-        "name": "방울tv 한유미",
-        "query": "평택 비뇨기과"
+        "channel_id": "UC-_lOhDMdXDM82DJo9kOS9w",
+        "name": "평택 정해인의 주식 리밸런싱 연구소",
+        "query": "평택 동물병원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1601,
+  "region_observed": 1603,
   "channels_discovered": 27937,
-  "channels_observed": 12877,
+  "channels_observed": 12897,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3762,
+      "observed": 3782,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3770,
+      "classified": 3790,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3034,
+      "observed": 3039,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3036,
+      "classified": 3041,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2513,
+      "observed": 2516,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2516,
+      "classified": 2519,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2395,
+      "observed": 2397,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2397,
+      "classified": 2399,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1835,
+      "observed": 1836,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1838,
+      "classified": 1839,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1941,
+      "observed": 1942,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1945,
+      "classified": 1946,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1843,
+      "observed": 1844,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1844,
+      "classified": 1845,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1601,
+      "observed": 1603,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1602,
+      "classified": 1604,
       "classification_errors": 1,
       "jobs": [
         {
