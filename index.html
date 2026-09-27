@@ -1178,10 +1178,10 @@
       background: #edf2f7;
     }
 
-    /* 4단계 프로세스 */
+    /* 월간 운영 역할 안내 */
     .steps-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
 
@@ -1192,6 +1192,12 @@
       padding: 22px 18px;
       box-shadow: var(--shadow-card);
     }
+
+    .workflow-group { padding: 24px; border-radius: var(--radius-md); background: #f1f5f9; }
+    .workflow-group + .workflow-group { margin-top: 20px; background: #eff6ff; }
+    .workflow-group h3 { margin: 0 0 16px; font-size: 20px; color: var(--text-title); }
+    .workflow-group--momentum h3 { color: #1d4ed8; }
+    .workflow-note { margin: 14px 0 0; font-size: 13px; color: #64748b; }
 
     .step-num {
       width: 30px;
@@ -1703,7 +1709,8 @@
       .tripwire-price { text-align: left; }
       .tripwire-cta-box { flex-direction: column; align-items: stretch; text-align: center; }
       .pricing-grid { grid-template-columns: 1fr; gap: 16px; }
-      .steps-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .steps-grid { grid-template-columns: 1fr; gap: 10px; }
+      .workflow-group { padding: 18px 14px; }
       .cta-banner { padding: 34px 18px; }
       .cta-banner h3 { font-size: 23px; }
     }
@@ -2269,33 +2276,48 @@
     </div>
   </div>
 
-  <!-- 4단계 진행 프로세스 -->
-  <section class="section">
+  <!-- 월간 운영: 고객과 모멘텀의 역할 -->
+  <section class="section" id="monthly-workflow" aria-labelledby="monthly-workflow-title">
     <div class="section-header">
-      <div class="section-title">초간단 4단계 진행 프로세스</div>
+      <h2 class="section-title" id="monthly-workflow-title">대표님은 전문성에 집중하세요.<br>콘텐츠 운영은 모멘텀이 맡습니다.</h2>
+      <p class="section-sub">월간 유튜브 운영, 각자의 역할은 명확하고 간단하게.</p>
     </div>
 
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h4>주제 전달 (5분)</h4>
-        <p>"이번 주엔 이 이야기 해보고 싶어요" 카톡으로 편하게 키워드만 남겨주세요.</p>
+    <div class="workflow-group">
+      <h3>대표님이 하실 일</h3>
+      <div class="steps-grid">
+        <div class="step-card">
+          <h4>주제 선택</h4>
+          <p>매월 제안드리는 30개 주제 중 이번 달에 다룰 4개를 고르세요.</p>
+        </div>
+        <div class="step-card">
+          <h4>전문성 확인</h4>
+          <p>작성된 대본의 사실관계와 전문적 판단을 확인해주세요. 대본을 다시 쓰실 필요는 없습니다.</p>
+        </div>
+        <div class="step-card">
+          <h4>촬영</h4>
+          <p>확인한 대본으로 셀프촬영 후 원본을 전달하거나, 현장촬영에 참여하세요.</p>
+        </div>
       </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h4>대본 납품 (48시간)</h4>
-        <p>환자·의뢰인의 결핍을 파고드는 프롬프터 전용 맞춤 대본을 납품해 드립니다.</p>
+    </div>
+
+    <div class="workflow-group workflow-group--momentum">
+      <h3>모멘텀이 맡을 일</h3>
+      <div class="steps-grid">
+        <div class="step-card">
+          <h4>채널 분석·주제 제안</h4>
+          <p>기존 채널과 콘텐츠를 분석해 매월 주제 30개를 먼저 제안합니다.</p>
+        </div>
+        <div class="step-card">
+          <h4>대본·영상 제작</h4>
+          <p>대표님의 전문지식을 바탕으로 매주 대본을 작성합니다. 후킹과 구성부터 편집·자막·그래픽·썸네일까지 모멘텀이 설계하고 제작합니다.</p>
+        </div>
+        <div class="step-card">
+          <h4>업로드·게시 운영</h4>
+          <p>제목·설명·태그와 게시 일정을 모멘텀이 정하고, 업로드까지 관리합니다.</p>
+        </div>
       </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h4>대표님 촬영 (30분)</h4>
-        <p>스마트폰 속 프롬프터를 보며 편안하게 읽으신 후 영상 파일만 올려주세요.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
-        <h4>완제품 최종 납품</h4>
-        <p>고급 모션그래픽과 썸네일까지 얹어 유튜브에 바로 올릴 수 있는 완제품으로 드립니다.</p>
-      </div>
+      <p class="workflow-note">댓글·커뮤니티 관리는 포함되지 않습니다.</p>
     </div>
   <!-- AEO (Answer Engine Optimization) & 대표님 필수 확인 Q&A -->
   <section class="section" id="aeo-faq-section" style="margin-top: 48px;">
