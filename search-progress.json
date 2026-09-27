@@ -2,46 +2,45 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:08:49.185522+00:00",
+  "updated_at": "2026-09-27T14:09:50.982263+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 건축사사무소",
-    "용인 심리상담센터"
+    "용인 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 14924,
-    "processed": 5530,
-    "pending": 9392,
+    "total": 14972,
+    "processed": 5556,
+    "pending": 9414,
     "processing": 2,
     "eligible": 98,
-    "review": 3733,
-    "rejected": 1693,
+    "review": 3753,
+    "rejected": 1699,
     "errors": 5,
-    "ready": 57,
+    "ready": 58,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC4fd5rPxcnTnII5px0bo0xw",
-        "name": "땅수다"
+        "channel_id": "UCPn8mR2FbQEF1ESrDBwItSA",
+        "name": "박빌딩"
       },
       {
-        "channel_id": "UCOb4-fnvddcLAquT0UfDESQ",
-        "name": "일요닷컴"
+        "channel_id": "UCXbbu9zKr-vRdmoKbJVqiDQ",
+        "name": "젬스톤 GemStoneTV"
       }
     ]
   },
-  "queries_completed": 192,
-  "region_queries_completed": 36,
-  "region_channels": 4138,
-  "region_observed": 2264,
-  "channels_discovered": 14923,
-  "channels_observed": 5525,
-  "search_pages": 3979,
-  "search_results_read": 85071,
+  "queries_completed": 194,
+  "region_queries_completed": 38,
+  "region_channels": 4306,
+  "region_observed": 2361,
+  "channels_discovered": 14971,
+  "channels_observed": 5551,
+  "search_pages": 4011,
+  "search_results_read": 85660,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +334,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1390,
+      "observed": 1416,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1391,
+      "classified": 1417,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +620,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1322,
+      "observed": 1326,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1324,
+      "classified": 1328,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +906,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1317,
+      "observed": 1323,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1317,
+      "classified": 1323,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1189,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 39,
-      "channels": 4138,
-      "observed": 2264,
+      "channels": 4306,
+      "observed": 2361,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2266,
+      "classified": 2363,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1453,24 +1452,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 155,
-          "results_read": 399,
-          "pages": 20
+          "status": "completed",
+          "channels": 185,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 160,
-          "results_read": 314,
-          "pages": 16
+          "status": "completed",
+          "channels": 241,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 111,
+          "results_read": 320,
+          "pages": 16
         }
       ]
     },
