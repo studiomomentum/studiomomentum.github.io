@@ -1,13 +1,13 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "평택",
-  "phase": "incomplete",
-  "updated_at": "2026-09-27T13:22:37.077834+00:00",
-  "run_id": "36320569240",
+  "region": "",
+  "phase": "parallel",
+  "updated_at": "2026-09-27T13:24:10.809794+00:00",
+  "run_id": "36322224559",
   "active_queries": [],
   "search_stage": {
-    "status": "incomplete",
-    "region": "평택"
+    "status": "starting",
+    "region": ""
   },
   "classification": {
     "total": 11554,
@@ -19,13 +19,13 @@
     "rejected": 1363,
     "errors": 4,
     "ready": 53,
-    "status": "incomplete",
+    "status": "starting",
     "active": []
   },
   "queries_completed": 119,
-  "region_queries_completed": 2,
-  "region_channels": 791,
-  "region_observed": 380,
+  "region_queries_completed": 0,
+  "region_channels": 0,
+  "region_observed": 0,
   "channels_discovered": 11551,
   "channels_observed": 4496,
   "search_pages": 2194,
