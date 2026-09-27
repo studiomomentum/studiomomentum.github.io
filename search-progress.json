@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:32:57.189182+00:00",
+  "updated_at": "2026-09-27T15:33:59.556492+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 이비인후과",
-    "판교 재활의학과"
+    "판교 재활의학과",
+    "판교 마취통증의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 21208,
-    "processed": 7113,
-    "pending": 14093,
+    "total": 21319,
+    "processed": 7131,
+    "pending": 14186,
     "processing": 2,
     "eligible": 114,
-    "review": 4807,
-    "rejected": 2184,
+    "review": 4816,
+    "rejected": 2193,
     "errors": 5,
     "ready": 73,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCynSOK9S5HuUlrbpkiYgm5Q",
-        "name": "iMBC연예",
+        "channel_id": "UCB3BKKiUtMYuPoagCSTyn1Q",
+        "name": "삼성서울병원",
         "query": "동탄 피부과"
       },
       {
-        "channel_id": "UC00DJ04oplqj4IUUB5vSwZw",
-        "name": "유리아YuRia",
-        "query": "동탄 피부과"
+        "channel_id": "UCI6WUpuPd3hM3f0tKfOM3wg",
+        "name": "세진성형외과",
+        "query": "동탄 성형외과"
       }
     ]
   },
-  "queries_completed": 301,
-  "region_queries_completed": 21,
-  "region_channels": 3067,
-  "region_observed": 1042,
-  "channels_discovered": 21207,
-  "channels_observed": 7108,
-  "search_pages": 6580,
-  "search_results_read": 135577,
+  "queries_completed": 302,
+  "region_queries_completed": 22,
+  "region_channels": 3236,
+  "region_observed": 1062,
+  "channels_discovered": 21318,
+  "channels_observed": 7126,
+  "search_pages": 6611,
+  "search_results_read": 136176,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2978,
+      "observed": 2996,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2979,
+      "classified": 2997,
       "classification_errors": 1,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1557,
+      "observed": 1558,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1557,
+      "classified": 1558,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1768,
+      "observed": 1769,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1768,
+      "classified": 1769,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2099,13 +2099,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 21,
+      "queries_completed": 22,
       "queries_total": 40,
-      "channels": 3067,
-      "observed": 1042,
+      "channels": 3236,
+      "observed": 1062,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1043,
+      "classified": 1063,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2257,24 +2257,24 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 177,
-          "results_read": 298,
-          "pages": 15
+          "status": "completed",
+          "channels": 286,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 42,
-          "results_read": 140,
-          "pages": 7
+          "channels": 198,
+          "results_read": 460,
+          "pages": 23
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 51,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "내과의원",
