@@ -2,42 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:29:47.536584+00:00",
+  "updated_at": "2026-09-27T14:30:49.531969+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 동물병원",
-    "화성 의원"
+    "화성 노무사",
+    "화성 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 16913,
-    "processed": 6007,
-    "pending": 10905,
-    "processing": 1,
+    "total": 17007,
+    "processed": 6030,
+    "pending": 10977,
+    "processing": 0,
     "eligible": 104,
-    "review": 4041,
-    "rejected": 1856,
+    "review": 4057,
+    "rejected": 1863,
     "errors": 5,
     "ready": 63,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC5UVZncUA5_DrSMmm0XCsgw",
-        "name": "박사무장 부산경매"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 222,
-  "region_queries_completed": 27,
-  "region_channels": 4064,
-  "region_observed": 1319,
-  "channels_discovered": 16912,
-  "channels_observed": 6002,
-  "search_pages": 4707,
-  "search_results_read": 100529,
+  "queries_completed": 225,
+  "region_queries_completed": 30,
+  "region_channels": 4245,
+  "region_observed": 1373,
+  "channels_discovered": 17006,
+  "channels_observed": 6025,
+  "search_pages": 4743,
+  "search_results_read": 101160,
   "query_errors": {},
   "regions": [
     {
@@ -331,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1867,
+      "observed": 1890,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1868,
+      "classified": 1891,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1414,
+      "observed": 1420,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1416,
+      "classified": 1422,
       "classification_errors": 2,
       "jobs": [
         {
@@ -903,10 +898,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1385,
+      "observed": 1389,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1385,
+      "classified": 1389,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1189,10 +1184,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2416,
+      "observed": 2418,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2418,
+      "classified": 2420,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1472,13 +1467,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 27,
+      "queries_completed": 30,
       "queries_total": 39,
-      "channels": 4064,
-      "observed": 1319,
+      "channels": 4245,
+      "observed": 1373,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1319,
+      "classified": 1373,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1672,31 +1667,31 @@
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 186,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 288,
+          "results_read": 542,
+          "pages": 29
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 32,
-          "results_read": 56,
-          "pages": 3
+          "status": "completed",
+          "channels": 77,
+          "results_read": 145,
+          "pages": 9
         },
         {
           "name": "노무사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 137,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 68,
+          "results_read": 120,
+          "pages": 7
         },
         {
           "name": "법무사",
