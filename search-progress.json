@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:46:40.505943+00:00",
+  "updated_at": "2026-09-27T22:47:42.343044+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15136,
-    "pending": 12800,
+    "processed": 15156,
+    "pending": 12780,
     "processing": 2,
     "eligible": 167,
-    "review": 10601,
-    "rejected": 4335,
+    "review": 10618,
+    "rejected": 4338,
     "errors": 30,
-    "ready": 119,
+    "ready": 120,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCrxnP2mLFkRIQfw6KalVJGQ",
-        "name": "마이바씨의 회계이야기",
+        "channel_id": "UClubTW_6kgiINU_jhI84Nqw",
+        "name": "웅지",
         "query": "화성 세무회계"
       },
       {
-        "channel_id": "UCgFQod4mcKK2yvfugd1GkRQ",
-        "name": "법무법인(유한) 디엘지ㅣDLG Law LLC",
-        "query": "화성 변호사"
+        "channel_id": "UCgqyLnMUc1375s3ecg_1qKA",
+        "name": "김동영TV",
+        "query": "화성 세무회계"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1750,
+  "region_observed": 1751,
   "channels_discovered": 27937,
-  "channels_observed": 15106,
+  "channels_observed": 15126,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2851,
+      "observed": 2871,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2855,
+      "classified": 2875,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1982,
+      "observed": 1983,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1985,
+      "classified": 1986,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2123,
+      "observed": 2126,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2128,
+      "classified": 2131,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1961,
+      "observed": 1963,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1962,
+      "classified": 1964,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1750,
+      "observed": 1751,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1751,
+      "classified": 1752,
       "classification_errors": 1,
       "jobs": [
         {
