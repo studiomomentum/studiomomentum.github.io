@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:11:36.354578+00:00",
+  "updated_at": "2026-09-27T13:12:37.652214+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 한방병원",
-    "오산 입시학원"
+    "오산 어학원",
+    "오산 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 9596,
-    "processed": 4124,
-    "pending": 5470,
+    "total": 9768,
+    "processed": 4168,
+    "pending": 5598,
     "processing": 2,
-    "eligible": 89,
-    "review": 2795,
-    "rejected": 1236,
+    "eligible": 90,
+    "review": 2824,
+    "rejected": 1250,
     "errors": 4,
-    "ready": 50,
+    "ready": 51,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxPSdajCPBJCWK0NobkEtgw",
-        "name": "진오비 산부인과"
+        "channel_id": "UCxtMLxVv3PHYp3K8L9XvZaA",
+        "name": "마미랑 with mommy"
       },
       {
-        "channel_id": "UCEs4ZIu_o4kKFrmaXAMkzjg",
-        "name": "오지훈 라이브"
+        "channel_id": "UCuihyhqI5rgDwUaPQAf7GEQ",
+        "name": "나랑멍냥"
       }
     ]
   },
-  "queries_completed": 88,
-  "region_queries_completed": 10,
-  "region_channels": 1509,
-  "region_observed": 580,
-  "channels_discovered": 9593,
-  "channels_observed": 4120,
-  "search_pages": 1572,
-  "search_results_read": 40216,
+  "queries_completed": 90,
+  "region_queries_completed": 12,
+  "region_channels": 1797,
+  "region_observed": 659,
+  "channels_discovered": 9765,
+  "channels_observed": 4164,
+  "search_pages": 1633,
+  "search_results_read": 41367,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2910,
+      "observed": 2954,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2914,
+      "classified": 2958,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1045,
+      "observed": 1053,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1046,
+      "classified": 1054,
       "classification_errors": 1,
       "jobs": [
         {
@@ -618,13 +618,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 10,
+      "queries_completed": 12,
       "queries_total": 39,
-      "channels": 1509,
-      "observed": 580,
+      "channels": 1797,
+      "observed": 659,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 581,
+      "classified": 660,
       "classification_errors": 1,
       "jobs": [
         {
@@ -692,10 +692,10 @@
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 162,
-          "results_read": 359,
-          "pages": 18
+          "status": "completed",
+          "channels": 214,
+          "results_read": 501,
+          "pages": 27
         },
         {
           "name": "학원",
@@ -706,24 +706,24 @@
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 24,
-          "results_read": 60,
-          "pages": 3
+          "status": "completed",
+          "channels": 157,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 114,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 75,
+          "results_read": 135,
+          "pages": 7
         },
         {
           "name": "부동산중개",
