@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:59:02.529528+00:00",
+  "updated_at": "2026-09-27T21:00:03.651181+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13051,
-    "pending": 14886,
-    "processing": 1,
+    "processed": 13070,
+    "pending": 14866,
+    "processing": 2,
     "eligible": 150,
-    "review": 9090,
-    "rejected": 3785,
+    "review": 9099,
+    "rejected": 3795,
     "errors": 23,
     "ready": 105,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCzU2FEl4qrT-1NmMn5yHD4Q",
-        "name": "전남광주미래TV",
-        "query": "평택 의원"
+        "channel_id": "UCKDzong5C12GZkr-nlPNDqg",
+        "name": "문쌤과 이칠이들",
+        "query": "평택 노무사"
+      },
+      {
+        "channel_id": "UCmxtf_vLHvzakjheueVydZA",
+        "name": "공간디자인연구소 주식회사 예인",
+        "query": "평택 노무사"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1605,
   "channels_discovered": 27937,
-  "channels_observed": 13028,
+  "channels_observed": 13047,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3913,
+      "observed": 3932,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3921,
+      "classified": 3940,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2529,
+      "observed": 2531,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2532,
+      "classified": 2534,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1840,
+      "observed": 1842,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1843,
+      "classified": 1845,
       "classification_errors": 3,
       "jobs": [
         {
