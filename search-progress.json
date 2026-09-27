@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:26:30.732590+00:00",
+  "updated_at": "2026-09-27T21:27:31.836719+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13602,
-    "pending": 14334,
+    "processed": 13622,
+    "pending": 14314,
     "processing": 2,
     "eligible": 154,
-    "review": 9487,
-    "rejected": 3930,
+    "review": 9503,
+    "rejected": 3934,
     "errors": 28,
     "ready": 109,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCzS1d2r8ocvkfwpILi_OSOQ",
-        "name": "마음과배움심리상담센터",
-        "query": "평택 심리상담센터"
+        "channel_id": "UCTa8EFqUYxW6L17HpN3VGvw",
+        "name": "충청남도농업기술원",
+        "query": "평택 건축사사무소"
       },
       {
-        "channel_id": "UCJc2GWuTRWt7HuySZhOHDQw",
-        "name": "한경국립대학교재활심리치료교육센터",
-        "query": "평택 심리상담센터"
+        "channel_id": "UCCASojxb4ebDOp2EaXTUlRw",
+        "name": "홍구TV",
+        "query": "평택 건축사사무소"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1628,
+  "region_observed": 1629,
   "channels_discovered": 27937,
-  "channels_observed": 13574,
+  "channels_observed": 13594,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4459,
+      "observed": 4479,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4472,
+      "classified": 4492,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3104,
+      "observed": 3111,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3106,
+      "classified": 3113,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2580,
+      "observed": 2582,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2583,
+      "classified": 2585,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1865,
+      "observed": 1867,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1868,
+      "classified": 1870,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1869,
+      "observed": 1870,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1870,
+      "classified": 1871,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1628,
+      "observed": 1629,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1629,
+      "classified": 1630,
       "classification_errors": 1,
       "jobs": [
         {
