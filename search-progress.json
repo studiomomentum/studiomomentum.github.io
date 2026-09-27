@@ -1,46 +1,59 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "",
+  "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:54:58.371984+00:00",
+  "updated_at": "2026-09-27T14:56:00.177674+00:00",
   "run_id": "36327598909",
-  "active_queries": [],
+  "active_queries": [
+    "수원 중고차"
+  ],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "수원"
   },
   "classification": {
-    "total": 18371,
-    "processed": 6452,
-    "pending": 11919,
-    "processing": 0,
+    "total": 18437,
+    "processed": 6463,
+    "pending": 11972,
+    "processing": 2,
     "eligible": 106,
-    "review": 4360,
-    "rejected": 1980,
+    "review": 4369,
+    "rejected": 1982,
     "errors": 5,
     "ready": 65,
-    "status": "starting",
-    "active": []
+    "status": "running",
+    "active": [
+      {
+        "channel_id": "UCZPQaaGfRxn0suuikp76oCA",
+        "name": "부자창업스쿨 _  돈 버는 상권분석 인사이트",
+        "query": "동탄 한의원"
+      },
+      {
+        "channel_id": "UCG7zIlpYPrb5VOYe01YPg_Q",
+        "name": "동탄 허준",
+        "query": "동탄 한방병원"
+      }
+    ]
   },
   "queries_completed": 257,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
-  "channels_discovered": 18370,
-  "channels_observed": 6447,
-  "search_pages": 5510,
-  "search_results_read": 115555,
+  "region_queries_completed": 39,
+  "region_channels": 4245,
+  "region_observed": 4172,
+  "channels_discovered": 18436,
+  "channels_observed": 6458,
+  "search_pages": 5529,
+  "search_results_read": 115934,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
       "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4176,
-      "observed": 4171,
+      "channels": 4245,
+      "observed": 4172,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4176,
+      "classified": 4177,
       "classification_errors": 5,
       "jobs": [
         {
@@ -318,10 +331,10 @@
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 75,
+          "results_read": 379,
+          "pages": 19
         }
       ]
     },
@@ -330,10 +343,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 4780,
-      "observed": 2312,
+      "observed": 2323,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2313,
+      "classified": 2324,
       "classification_errors": 1,
       "jobs": [
         {
@@ -623,10 +636,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 4182,
-      "observed": 1499,
+      "observed": 1502,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1501,
+      "classified": 1504,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1209,10 +1222,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 4348,
-      "observed": 2462,
+      "observed": 2463,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2464,
+      "classified": 2465,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1515,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 5393,
-      "observed": 1653,
+      "observed": 1656,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1653,
+      "classified": 1656,
       "classification_errors": 0,
       "jobs": [
         {
