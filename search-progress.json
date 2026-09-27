@@ -1,48 +1,44 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "강남",
+  "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:26:07.001055+00:00",
+  "updated_at": "2026-09-27T16:27:09.271741+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 중고차"
+    "서초 세무사",
+    "서초 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "강남"
+    "region": "서초"
   },
   "classification": {
-    "total": 24919,
-    "processed": 7987,
-    "pending": 16930,
-    "processing": 2,
+    "total": 24960,
+    "processed": 8006,
+    "pending": 16953,
+    "processing": 1,
     "eligible": 119,
-    "review": 5411,
-    "rejected": 2448,
+    "review": 5427,
+    "rejected": 2451,
     "errors": 6,
     "ready": 78,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCAqPNh5Q9qI_dYg9g0vGxhQ",
-        "name": "부동산노트",
-        "query": "동탄 의원"
-      },
-      {
-        "channel_id": "UCL0oh2Qe6oocp_XFH0rt3Lw",
-        "name": "생명나무교회 이의원목사",
+        "channel_id": "UC05n8__mGtH3t7jiL8hOPaQ",
+        "name": "화성시정신건강복지센터",
         "query": "동탄 의원"
       }
     ]
   },
-  "queries_completed": 359,
-  "region_queries_completed": 39,
-  "region_channels": 4963,
-  "region_observed": 1629,
-  "channels_discovered": 24918,
-  "channels_observed": 7981,
-  "search_pages": 8010,
-  "search_results_read": 162310,
+  "queries_completed": 360,
+  "region_queries_completed": 0,
+  "region_channels": 343,
+  "region_observed": 315,
+  "channels_discovered": 24959,
+  "channels_observed": 8000,
+  "search_pages": 8028,
+  "search_results_read": 162642,
   "query_errors": {},
   "regions": [
     {
@@ -343,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3851,
+      "observed": 3870,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3853,
+      "classified": 3872,
       "classification_errors": 2,
       "jobs": [
         {
@@ -636,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1733,
+      "observed": 1735,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1735,
+      "classified": 1737,
       "classification_errors": 2,
       "jobs": [
         {
@@ -929,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1640,
+      "observed": 1642,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1640,
+      "classified": 1642,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1222,10 +1218,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2558,
+      "observed": 2560,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2560,
+      "classified": 2562,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1808,10 +1804,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2121,
+      "observed": 2123,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2123,
+      "classified": 2125,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2101,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1442,
+      "observed": 1446,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1443,
+      "classified": 1447,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2391,13 +2387,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4963,
-      "observed": 1629,
+      "channels": 5003,
+      "observed": 1630,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1631,
+      "classified": 1632,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2675,10 +2671,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 107,
-          "results_read": 375,
-          "pages": 19
+          "status": "completed",
+          "channels": 157,
+          "results_read": 512,
+          "pages": 27
         }
       ]
     },
@@ -2686,26 +2682,26 @@
       "name": "서초",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 291,
-      "observed": 291,
+      "channels": 343,
+      "observed": 315,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 291,
+      "classified": 315,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 95,
+          "pages": 5
         },
         {
           "name": "세무회계",
