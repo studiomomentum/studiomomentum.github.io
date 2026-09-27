@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:40:23.486192+00:00",
+  "updated_at": "2026-09-27T13:41:24.804903+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "평택 의원",
-    "평택 노무사"
+    "평택 법무사",
+    "평택 변리사"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 13090,
-    "processed": 4862,
-    "pending": 8226,
+    "total": 13248,
+    "processed": 4870,
+    "pending": 8376,
     "processing": 2,
     "eligible": 94,
-    "review": 3286,
-    "rejected": 1476,
+    "review": 3292,
+    "rejected": 1478,
     "errors": 5,
     "ready": 54,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCiEaqRasKuJnok2kK8DXbvQ",
-        "name": "미라클스토리TV"
+        "channel_id": "UCyNjzBhuknzzV7J-sCwBNSg",
+        "name": "송병현의 부자TV"
       },
       {
-        "channel_id": "UCvfZxlyPXY05BqvnWWwZ6wg",
-        "name": "유저씨 영어"
+        "channel_id": "UCBMwbjQkRWUAwN36o2rZdvw",
+        "name": "부동산재테크는 윤소장과"
       }
     ]
   },
-  "queries_completed": 145,
-  "region_queries_completed": 28,
-  "region_channels": 3575,
-  "region_observed": 1027,
-  "channels_discovered": 13088,
-  "channels_observed": 4857,
-  "search_pages": 2840,
-  "search_results_read": 63817,
+  "queries_completed": 148,
+  "region_queries_completed": 31,
+  "region_channels": 3837,
+  "region_observed": 1087,
+  "channels_discovered": 13246,
+  "channels_observed": 4865,
+  "search_pages": 2898,
+  "search_results_read": 64878,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3647,
+      "observed": 3655,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3652,
+      "classified": 3660,
       "classification_errors": 5,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1154,
+      "observed": 1155,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1155,
+      "classified": 1156,
       "classification_errors": 1,
       "jobs": [
         {
@@ -904,13 +904,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 28,
+      "queries_completed": 31,
       "queries_total": 39,
-      "channels": 3575,
-      "observed": 1027,
+      "channels": 3837,
+      "observed": 1087,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1027,
+      "classified": 1087,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1111,38 +1111,38 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 133,
-          "results_read": 420,
-          "pages": 21
+          "status": "completed",
+          "channels": 177,
+          "results_read": 507,
+          "pages": 27
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 128,
-          "results_read": 200,
-          "pages": 10
+          "status": "completed",
+          "channels": 309,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 101,
+          "results_read": 181,
+          "pages": 11
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 46,
+          "results_read": 259,
+          "pages": 13
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 111,
+          "results_read": 239,
+          "pages": 12
         },
         {
           "name": "관세사",
