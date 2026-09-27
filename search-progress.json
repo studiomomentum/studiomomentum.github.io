@@ -2,46 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:28:45.373281+00:00",
+  "updated_at": "2026-09-27T14:29:47.536584+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 내과의원",
-    "화성 비뇨기과"
+    "화성 동물병원",
+    "화성 의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 16777,
-    "processed": 5984,
-    "pending": 10791,
-    "processing": 2,
+    "total": 16913,
+    "processed": 6007,
+    "pending": 10905,
+    "processing": 1,
     "eligible": 104,
-    "review": 4026,
-    "rejected": 1848,
+    "review": 4041,
+    "rejected": 1856,
     "errors": 5,
     "ready": 63,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCksYYqQJKH1EakGu3wFmsbw",
-        "name": "이루니"
-      },
-      {
-        "channel_id": "UCfrDhdwghtjkMVGaHFGRs_w",
-        "name": "네오 사무용가구"
+        "channel_id": "UC5UVZncUA5_DrSMmm0XCsgw",
+        "name": "박사무장 부산경매"
       }
     ]
   },
-  "queries_completed": 220,
-  "region_queries_completed": 25,
-  "region_channels": 3840,
-  "region_observed": 1278,
-  "channels_discovered": 16776,
-  "channels_observed": 5979,
-  "search_pages": 4667,
-  "search_results_read": 99786,
+  "queries_completed": 222,
+  "region_queries_completed": 27,
+  "region_channels": 4064,
+  "region_observed": 1319,
+  "channels_discovered": 16912,
+  "channels_observed": 6002,
+  "search_pages": 4707,
+  "search_results_read": 100529,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1844,
+      "observed": 1867,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1845,
+      "classified": 1868,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1409,
+      "observed": 1414,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1411,
+      "classified": 1416,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1383,
+      "observed": 1385,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1383,
+      "classified": 1385,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1189,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2415,
+      "observed": 2416,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2417,
+      "classified": 2418,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1476,13 +1472,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 25,
+      "queries_completed": 27,
       "queries_total": 39,
-      "channels": 3840,
-      "observed": 1278,
+      "channels": 4064,
+      "observed": 1319,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1278,
+      "classified": 1319,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1655,10 +1651,10 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 223,
-          "results_read": 473,
-          "pages": 24
+          "status": "completed",
+          "channels": 233,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "산부인과",
@@ -1669,24 +1665,24 @@
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 19,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 148,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 186,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "의원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 32,
+          "results_read": 56,
+          "pages": 3
         },
         {
           "name": "노무사",
