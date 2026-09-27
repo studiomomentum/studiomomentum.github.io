@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:53:06.341080+00:00",
+  "updated_at": "2026-09-27T16:54:09.178008+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 내과의원",
-    "서초 산부인과"
+    "서초 비뇨기과",
+    "서초 동물병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 26199,
-    "processed": 8411,
-    "pending": 17788,
+    "total": 26228,
+    "processed": 8427,
+    "pending": 17801,
     "processing": 0,
     "eligible": 120,
-    "review": 5706,
-    "rejected": 2573,
-    "errors": 9,
+    "review": 5719,
+    "rejected": 2575,
+    "errors": 10,
     "ready": 79,
     "status": "running",
     "active": []
   },
-  "queries_completed": 384,
-  "region_queries_completed": 24,
-  "region_channels": 3517,
-  "region_observed": 1243,
-  "channels_discovered": 26198,
-  "channels_observed": 8402,
-  "search_pages": 8660,
-  "search_results_read": 176337,
+  "queries_completed": 386,
+  "region_queries_completed": 26,
+  "region_channels": 3611,
+  "region_observed": 1283,
+  "channels_discovered": 26227,
+  "channels_observed": 8417,
+  "search_pages": 8686,
+  "search_results_read": 176793,
   "query_errors": {},
   "regions": [
     {
@@ -333,11 +333,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4272,
-      "observation_errors": 5,
+      "observed": 4287,
+      "observation_errors": 6,
       "classified_at": null,
-      "classified": 4277,
-      "classification_errors": 5,
+      "classified": 4293,
+      "classification_errors": 6,
       "jobs": [
         {
           "name": "세무사",
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1768,
+      "observed": 1769,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1770,
+      "classified": 1771,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1675,
+      "observed": 1678,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1675,
+      "classified": 1678,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2588,
+      "observed": 2592,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2590,
+      "classified": 2594,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1972,
+      "observed": 1976,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1972,
+      "classified": 1976,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1499,
+      "observed": 1501,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1500,
+      "classified": 1502,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2384,11 +2384,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1648,
-      "observation_errors": 2,
+      "observed": 1649,
+      "observation_errors": 3,
       "classified_at": null,
-      "classified": 1650,
-      "classification_errors": 2,
+      "classified": 1652,
+      "classification_errors": 3,
       "jobs": [
         {
           "name": "세무사",
@@ -2674,13 +2674,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 24,
+      "queries_completed": 26,
       "queries_total": 40,
-      "channels": 3517,
-      "observed": 1243,
+      "channels": 3611,
+      "observed": 1283,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1244,
+      "classified": 1284,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2853,31 +2853,31 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 106,
-          "results_read": 324,
-          "pages": 17
+          "status": "completed",
+          "channels": 125,
+          "results_read": 466,
+          "pages": 26
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 110,
-          "results_read": 334,
-          "pages": 17
+          "status": "completed",
+          "channels": 144,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 32,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 77,
+          "pages": 4
         },
         {
           "name": "의원",
