@@ -19,3 +19,5 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
 @media(max-width:768px){.ready-card{grid-column:1/-1!important;display:grid;grid-template-columns:1fr minmax(140px,1fr);gap:0 14px;align-items:center;min-height:0!important}.ready-summary{grid-row:1/3}.ready-card #classifyButton{margin-top:0;font-size:14px;min-height:48px}.ready-card #classifyStatus{grid-column:2;margin-top:6px}.ready-card #classifyRunLink{grid-column:2}}
 
 .youtube-channel-link{display:inline-flex;align-items:center;margin:4px 0 4px 10px;padding:6px 10px;border:1px solid #ef444466;border-radius:8px;color:#f87171;text-decoration:none;font-size:12px;white-space:nowrap;min-height:32px}.youtube-channel-link:hover,.youtube-channel-link:focus-visible{background:#ef444422;color:#fca5a5;outline:2px solid #ef444477}.compact-card-heading .youtube-channel-link{min-height:40px}
+
+.prospect-score{display:inline-block;margin:6px 8px 4px 0;padding:5px 9px;border-radius:7px;background:#e0e7ff;color:#1e3a8a;font-size:12px;line-height:1.5}.prospect-score strong{font-size:15px}.score-breakdown{font-size:13px;line-height:1.7;color:#64748b;margin:8px 0 16px}
