@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:25:29.073996+00:00",
+  "updated_at": "2026-09-27T21:26:30.732590+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13580,
-    "pending": 14356,
+    "processed": 13602,
+    "pending": 14334,
     "processing": 2,
     "eligible": 154,
-    "review": 9475,
-    "rejected": 3920,
+    "review": 9487,
+    "rejected": 3930,
     "errors": 28,
     "ready": 109,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCH8aj-gZK7lNp8tlLFDIrEA",
-        "name": "프로 파크골프TV",
-        "query": "평택 건축사사무소"
+        "channel_id": "UCzS1d2r8ocvkfwpILi_OSOQ",
+        "name": "마음과배움심리상담센터",
+        "query": "평택 심리상담센터"
       },
       {
-        "channel_id": "UCG8LJzqja_Q14kZ4aEE_Frg",
-        "name": "안전서류작성법 마스터 고 MASTER GO",
-        "query": "평택 건축사사무소"
+        "channel_id": "UCJc2GWuTRWt7HuySZhOHDQw",
+        "name": "한경국립대학교재활심리치료교육센터",
+        "query": "평택 심리상담센터"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1626,
+  "region_observed": 1628,
   "channels_discovered": 27937,
-  "channels_observed": 13552,
+  "channels_observed": 13574,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4437,
+      "observed": 4459,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4450,
+      "classified": 4472,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3098,
+      "observed": 3104,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3100,
+      "classified": 3106,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2578,
+      "observed": 2580,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2581,
+      "classified": 2583,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2428,
+      "observed": 2429,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2430,
+      "classified": 2431,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1972,
+      "observed": 1973,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1977,
+      "classified": 1978,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1867,
+      "observed": 1869,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1868,
+      "classified": 1870,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1626,
+      "observed": 1628,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1627,
+      "classified": 1629,
       "classification_errors": 1,
       "jobs": [
         {
