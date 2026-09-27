@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:29:26.561343+00:00",
+  "updated_at": "2026-09-27T16:30:28.419205+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "서초 세무회계",
@@ -13,37 +13,37 @@
     "region": "서초"
   },
   "classification": {
-    "total": 25025,
-    "processed": 8041,
-    "pending": 16982,
+    "total": 25072,
+    "processed": 8057,
+    "pending": 17013,
     "processing": 2,
-    "eligible": 119,
-    "review": 5451,
-    "rejected": 2462,
+    "eligible": 120,
+    "review": 5458,
+    "rejected": 2470,
     "errors": 6,
-    "ready": 78,
+    "ready": 79,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCXSF49qMJ_Ih89nmmlJB8oA",
-        "name": "오투유티비 - 쉽게보는 부동산이야기!",
+        "channel_id": "UCcFwOPJt3DRS58kSsF_7ARw",
+        "name": "자동차매장 인테리어 쎈놈 ",
         "query": "동탄 노무사"
       },
       {
-        "channel_id": "UCL0uPEKEVdtm3xEk3I8BMMA",
-        "name": "로시컴",
+        "channel_id": "UCBD50cUZdzlQTkHNNEOePWw",
+        "name": "잇츠채이 It's chaii",
         "query": "동탄 노무사"
       }
     ]
   },
   "queries_completed": 362,
   "region_queries_completed": 2,
-  "region_channels": 574,
-  "region_observed": 393,
-  "channels_discovered": 25024,
-  "channels_observed": 8035,
-  "search_pages": 8086,
-  "search_results_read": 163744,
+  "region_channels": 699,
+  "region_observed": 443,
+  "channels_discovered": 25071,
+  "channels_observed": 8051,
+  "search_pages": 8112,
+  "search_results_read": 164257,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3905,
+      "observed": 3921,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3907,
+      "classified": 3923,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1739,
+      "observed": 1743,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1741,
+      "classified": 1745,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1898,
+      "observed": 1901,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1898,
+      "classified": 1901,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2124,
+      "observed": 2127,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2126,
+      "classified": 2129,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1450,
+      "observed": 1454,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1451,
+      "classified": 1455,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2395,10 +2395,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1633,
+      "observed": 1634,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1635,
+      "classified": 1636,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2687,11 +2687,11 @@
       "name": "서초",
       "queries_completed": 2,
       "queries_total": 40,
-      "channels": 574,
-      "observed": 393,
+      "channels": 699,
+      "observed": 443,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 393,
+      "classified": 443,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2711,16 +2711,16 @@
         {
           "name": "세무회계",
           "status": "running",
-          "channels": 40,
-          "results_read": 158,
-          "pages": 8
+          "channels": 91,
+          "results_read": 416,
+          "pages": 21
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 86,
-          "results_read": 138,
-          "pages": 7
+          "channels": 180,
+          "results_read": 393,
+          "pages": 20
         },
         {
           "name": "법무법인",
