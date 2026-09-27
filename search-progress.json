@@ -2,48 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:34:43.577943+00:00",
+  "updated_at": "2026-09-27T17:35:45.738779+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 재활의학과",
-    "송파 마취통증의학과"
+    "송파 내과의원",
+    "송파 산부인과"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27506,
-    "processed": 9025,
-    "pending": 18479,
-    "processing": 2,
+    "total": 27524,
+    "processed": 9036,
+    "pending": 18487,
+    "processing": 1,
     "eligible": 121,
-    "review": 6173,
-    "rejected": 2717,
+    "review": 6181,
+    "rejected": 2720,
     "errors": 11,
     "ready": 80,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCsNh13dYjW43vcoARzqiNhQ",
-        "name": "택시티비",
-        "query": "오산 세무법인"
-      },
-      {
-        "channel_id": "UCAyLTlsOTb17SUhx59gt1YA",
-        "name": "상속세무사(국세언니TV)_상속증여양도전문",
+        "channel_id": "UC9MfnGCw6ArIN9KzEIixCyg",
+        "name": "케어스토리",
         "query": "오산 세무법인"
       }
     ]
   },
-  "queries_completed": 422,
-  "region_queries_completed": 22,
-  "region_channels": 2837,
-  "region_observed": 981,
-  "channels_discovered": 27505,
-  "channels_observed": 9014,
-  "search_pages": 9661,
-  "search_results_read": 195000,
+  "queries_completed": 424,
+  "region_queries_completed": 24,
+  "region_channels": 2907,
+  "region_observed": 1002,
+  "channels_discovered": 27523,
+  "channels_observed": 9025,
+  "search_pages": 9683,
+  "search_results_read": 195391,
   "query_errors": {},
   "regions": [
     {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1915,
+      "observed": 1926,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1918,
+      "classified": 1929,
       "classification_errors": 3,
       "jobs": [
         {
@@ -930,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1732,
+      "observed": 1734,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1733,
+      "classified": 1735,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1516,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2052,
+      "observed": 2053,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2052,
+      "classified": 2053,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2395,10 +2390,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1687,
+      "observed": 1688,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1690,
+      "classified": 1691,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,14 +2973,14 @@
     },
     {
       "name": "송파",
-      "queries_completed": 22,
+      "queries_completed": 24,
       "queries_total": 40,
-      "channels": 2837,
-      "observed": 981,
-      "observation_errors": 0,
+      "channels": 2907,
+      "observed": 1002,
+      "observation_errors": 1,
       "classified_at": null,
-      "classified": 981,
-      "classification_errors": 0,
+      "classified": 1003,
+      "classification_errors": 1,
       "jobs": [
         {
           "name": "세무사",
@@ -3143,31 +3138,31 @@
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 135,
-          "results_read": 344,
-          "pages": 18
+          "status": "completed",
+          "channels": 174,
+          "results_read": 479,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 98,
-          "results_read": 313,
-          "pages": 16
+          "status": "completed",
+          "channels": 130,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 38,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 15,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "비뇨기과",
