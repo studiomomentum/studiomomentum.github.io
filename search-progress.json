@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:14:52.475449+00:00",
+  "updated_at": "2026-09-27T18:15:54.594100+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 9729,
-    "pending": 18209,
-    "processing": 0,
+    "processed": 9752,
+    "pending": 18185,
+    "processing": 1,
     "eligible": 127,
-    "review": 6673,
-    "rejected": 2913,
+    "review": 6692,
+    "rejected": 2917,
     "errors": 13,
     "ready": 86,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCnYhEcDyEZdcwZxlRXhaNjw",
+        "name": "아파트분양TV",
+        "query": "오산 공인중개사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1450,
   "channels_discovered": 27937,
-  "channels_observed": 9716,
+  "channels_observed": 9739,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2617,
+      "observed": 2640,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2622,
+      "classified": 2645,
       "classification_errors": 5,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1876,
+      "observed": 1877,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1878,
+      "classified": 1879,
       "classification_errors": 2,
       "jobs": [
         {
