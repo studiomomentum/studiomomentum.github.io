@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:46:17.892048+00:00",
+  "updated_at": "2026-09-27T17:47:24.931945+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 관세사",
-    "송파 감정평가사"
+    "송파 감정평가사",
+    "송파 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27713,
-    "processed": 9183,
-    "pending": 18528,
-    "processing": 2,
+    "total": 27764,
+    "processed": 9197,
+    "pending": 18567,
+    "processing": 0,
     "eligible": 122,
-    "review": 6280,
-    "rejected": 2767,
+    "review": 6290,
+    "rejected": 2771,
     "errors": 11,
     "ready": 81,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCo8LJs6klWbmXtkC8yUdGqw",
-        "name": "마장골 예인교회 Only Jesus",
-        "query": "오산 변호사"
-      },
-      {
-        "channel_id": "UCLKHv3po1CyOZqKX_pnSP1A",
-        "name": "김용숙",
-        "query": "오산 변호사"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 433,
-  "region_queries_completed": 33,
-  "region_channels": 3546,
-  "region_observed": 1219,
-  "channels_discovered": 27712,
-  "channels_observed": 9172,
-  "search_pages": 9925,
-  "search_results_read": 199919,
+  "queries_completed": 434,
+  "region_queries_completed": 34,
+  "region_channels": 3671,
+  "region_observed": 1255,
+  "channels_discovered": 27763,
+  "channels_observed": 9186,
+  "search_pages": 9947,
+  "search_results_read": 200328,
   "query_errors": {},
   "regions": [
     {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2073,
+      "observed": 2087,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2076,
+      "classified": 2090,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1809,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2203,
+      "observed": 2205,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2205,
+      "classified": 2207,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2688,10 +2677,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1634,
+      "observed": 1635,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1635,
+      "classified": 1636,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,13 +2967,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 33,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 3546,
-      "observed": 1219,
+      "channels": 3671,
+      "observed": 1255,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1220,
+      "classified": 1256,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3220,24 +3209,24 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 62,
-          "results_read": 359,
-          "pages": 18
+          "status": "completed",
+          "channels": 145,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 55,
-          "results_read": 80,
-          "pages": 4
+          "channels": 143,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 13,
+          "results_read": 55,
+          "pages": 3
         },
         {
           "name": "건축사사무소",
