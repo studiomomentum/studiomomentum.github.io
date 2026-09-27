@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:13:40.898580+00:00",
+  "updated_at": "2026-09-27T17:14:43.572617+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 법무법인",
@@ -13,37 +13,32 @@
     "region": "송파"
   },
   "classification": {
-    "total": 26796,
-    "processed": 8713,
-    "pending": 18081,
-    "processing": 2,
+    "total": 26825,
+    "processed": 8728,
+    "pending": 18096,
+    "processing": 1,
     "eligible": 121,
-    "review": 5939,
-    "rejected": 2640,
+    "review": 5952,
+    "rejected": 2642,
     "errors": 10,
     "ready": 80,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxm-GXt6qF2x-gdDZ5HjZhQ",
-        "name": "서청주청소년상담복지센터",
-        "query": "동탄 심리상담센터"
-      },
-      {
-        "channel_id": "UCsZTB_r7ffbXIcnZmav2AFg",
-        "name": "멘탈탄탄 | 정신과의사의 멘탈 관리 채널 ",
+        "channel_id": "UCvaok-KW9bE_0pFTChQId0g",
+        "name": "청소년공감TV",
         "query": "동탄 심리상담센터"
       }
     ]
   },
   "queries_completed": 404,
   "region_queries_completed": 4,
-  "region_channels": 690,
-  "region_observed": 419,
-  "channels_discovered": 26795,
-  "channels_observed": 8703,
-  "search_pages": 9163,
-  "search_results_read": 185731,
+  "region_channels": 781,
+  "region_observed": 449,
+  "channels_discovered": 26824,
+  "channels_observed": 8718,
+  "search_pages": 9188,
+  "search_results_read": 186217,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4573,
+      "observed": 4588,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4579,
+      "classified": 4594,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1795,
+      "observed": 1796,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1797,
+      "classified": 1798,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2026,
+      "observed": 2029,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2026,
+      "classified": 2029,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1556,
+      "observed": 1561,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1557,
+      "classified": 1562,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2688,10 +2683,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1614,
+      "observed": 1615,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1615,
+      "classified": 1616,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2980,11 +2975,11 @@
       "name": "송파",
       "queries_completed": 4,
       "queries_total": 40,
-      "channels": 690,
-      "observed": 419,
+      "channels": 781,
+      "observed": 449,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 419,
+      "classified": 449,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3018,16 +3013,16 @@
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 43,
-          "results_read": 120,
-          "pages": 6
+          "channels": 120,
+          "results_read": 373,
+          "pages": 19
         },
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 32,
-          "results_read": 100,
-          "pages": 5
+          "channels": 100,
+          "results_read": 333,
+          "pages": 17
         },
         {
           "name": "치과",
