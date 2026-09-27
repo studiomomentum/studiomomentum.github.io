@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:28:11.276186+00:00",
+  "updated_at": "2026-09-27T16:29:26.561343+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 세무사",
-    "서초 세무법인"
+    "서초 세무회계",
+    "서초 변호사"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 24986,
-    "processed": 8021,
-    "pending": 16963,
+    "total": 25025,
+    "processed": 8041,
+    "pending": 16982,
     "processing": 2,
     "eligible": 119,
-    "review": 5436,
-    "rejected": 2457,
+    "review": 5451,
+    "rejected": 2462,
     "errors": 6,
     "ready": 78,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC_oxUmkQJA__OM0bvVHtf6A",
-        "name": "황삿갓 방랑기",
-        "query": "동탄 의원"
+        "channel_id": "UCXSF49qMJ_Ih89nmmlJB8oA",
+        "name": "오투유티비 - 쉽게보는 부동산이야기!",
+        "query": "동탄 노무사"
       },
       {
-        "channel_id": "UCCLsKEicTnGIxuueI5euakw",
-        "name": "FC화성세메스",
-        "query": "동탄 의원"
+        "channel_id": "UCL0uPEKEVdtm3xEk3I8BMMA",
+        "name": "로시컴",
+        "query": "동탄 노무사"
       }
     ]
   },
-  "queries_completed": 360,
-  "region_queries_completed": 0,
-  "region_channels": 465,
-  "region_observed": 353,
-  "channels_discovered": 24985,
-  "channels_observed": 8015,
-  "search_pages": 8056,
-  "search_results_read": 163196,
+  "queries_completed": 362,
+  "region_queries_completed": 2,
+  "region_channels": 574,
+  "region_observed": 393,
+  "channels_discovered": 25024,
+  "channels_observed": 8035,
+  "search_pages": 8086,
+  "search_results_read": 163744,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3885,
+      "observed": 3905,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3887,
+      "classified": 3907,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1737,
+      "observed": 1739,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1739,
+      "classified": 1741,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1645,
+      "observed": 1647,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1645,
+      "classified": 1647,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2560,
+      "observed": 2561,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2562,
+      "classified": 2563,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1897,
+      "observed": 1898,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1897,
+      "classified": 1898,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1448,
+      "observed": 1450,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1449,
+      "classified": 1451,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,42 +2685,42 @@
     },
     {
       "name": "서초",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 40,
-      "channels": 465,
-      "observed": 353,
+      "channels": 574,
+      "observed": 393,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 353,
+      "classified": 393,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
-          "channels": 108,
-          "results_read": 380,
-          "pages": 19
+          "status": "completed",
+          "channels": 124,
+          "results_read": 515,
+          "pages": 27
         },
         {
           "name": "세무법인",
-          "status": "running",
-          "channels": 134,
-          "results_read": 369,
-          "pages": 19
+          "status": "completed",
+          "channels": 152,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 40,
+          "results_read": 158,
+          "pages": 8
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 86,
+          "results_read": 138,
+          "pages": 7
         },
         {
           "name": "법무법인",
