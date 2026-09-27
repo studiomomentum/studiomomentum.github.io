@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:39:58.494772+00:00",
+  "updated_at": "2026-09-27T16:41:17.766580+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 어학원",
-    "서초 공인중개사"
+    "서초 공인중개사",
+    "서초 부동산중개"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 25643,
-    "processed": 8211,
-    "pending": 17432,
+    "total": 25715,
+    "processed": 8231,
+    "pending": 17484,
     "processing": 0,
     "eligible": 120,
-    "review": 5563,
-    "rejected": 2519,
-    "errors": 6,
+    "review": 5578,
+    "rejected": 2523,
+    "errors": 7,
     "ready": 79,
     "status": "running",
     "active": []
   },
-  "queries_completed": 372,
-  "region_queries_completed": 12,
-  "region_channels": 2104,
-  "region_observed": 816,
-  "channels_discovered": 25642,
-  "channels_observed": 8205,
-  "search_pages": 8352,
-  "search_results_read": 168724,
+  "queries_completed": 373,
+  "region_queries_completed": 13,
+  "region_channels": 2272,
+  "region_observed": 860,
+  "channels_discovered": 25714,
+  "channels_observed": 8224,
+  "search_pages": 8382,
+  "search_results_read": 169293,
   "query_errors": {},
   "regions": [
     {
@@ -333,11 +333,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4075,
-      "observation_errors": 2,
+      "observed": 4094,
+      "observation_errors": 3,
       "classified_at": null,
-      "classified": 4077,
-      "classification_errors": 2,
+      "classified": 4097,
+      "classification_errors": 3,
       "jobs": [
         {
           "name": "세무사",
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1751,
+      "observed": 1752,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1753,
+      "classified": 1754,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1655,
+      "observed": 1656,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1655,
+      "classified": 1656,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2566,
+      "observed": 2568,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2568,
+      "classified": 2570,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1927,
+      "observed": 1931,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1927,
+      "classified": 1931,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2131,
+      "observed": 2136,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2133,
+      "classified": 2138,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1474,
+      "observed": 1476,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1475,
+      "classified": 1477,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2384,10 +2384,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1638,
+      "observed": 1639,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1640,
+      "classified": 1641,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2674,13 +2674,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 12,
+      "queries_completed": 13,
       "queries_total": 40,
-      "channels": 2104,
-      "observed": 816,
+      "channels": 2272,
+      "observed": 860,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 816,
+      "classified": 860,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2769,24 +2769,24 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 147,
-          "results_read": 430,
-          "pages": 22
+          "status": "completed",
+          "channels": 155,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 58,
-          "results_read": 99,
-          "pages": 5
+          "channels": 166,
+          "results_read": 398,
+          "pages": 20
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 99,
+          "results_read": 215,
+          "pages": 11
         },
         {
           "name": "행정사",
