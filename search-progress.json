@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:43:29.188890+00:00",
+  "updated_at": "2026-09-27T15:44:31.753647+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 심리상담센터",
-    "판교 필라테스"
+    "판교 필라테스",
+    "판교 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 22210,
-    "processed": 7283,
-    "pending": 14925,
-    "processing": 2,
+    "total": 22412,
+    "processed": 7301,
+    "pending": 15111,
+    "processing": 0,
     "eligible": 115,
-    "review": 4924,
-    "rejected": 2235,
+    "review": 4936,
+    "rejected": 2241,
     "errors": 6,
     "ready": 74,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCZeJWo10nquYDAuWu4GuEpw",
-        "name": "연세고든병원",
-        "query": "동탄 정형외과"
-      },
-      {
-        "channel_id": "UCVACuI_hASpxT4KwQ98Vtdg",
-        "name": "안경고수 최병무",
-        "query": "동탄 안과"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 317,
-  "region_queries_completed": 37,
-  "region_channels": 4688,
-  "region_observed": 1327,
-  "channels_discovered": 22209,
-  "channels_observed": 7277,
-  "search_pages": 6889,
-  "search_results_read": 141217,
+  "queries_completed": 318,
+  "region_queries_completed": 38,
+  "region_channels": 4993,
+  "region_observed": 1344,
+  "channels_discovered": 22411,
+  "channels_observed": 7295,
+  "search_pages": 6919,
+  "search_results_read": 141793,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3147,
+      "observed": 3165,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3149,
+      "classified": 3167,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1630,
+      "observed": 1632,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1632,
+      "classified": 1634,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1580,
+      "observed": 1583,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1580,
+      "classified": 1583,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2525,
+      "observed": 2527,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2527,
+      "classified": 2529,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1801,
+      "observed": 1803,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1801,
+      "classified": 1803,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2057,
+      "observed": 2059,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2059,
+      "classified": 2061,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,13 +2088,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 37,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4688,
-      "observed": 1327,
+      "channels": 4993,
+      "observed": 1344,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1328,
+      "classified": 1345,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2369,24 +2358,24 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 253,
-          "results_read": 392,
-          "pages": 20
+          "status": "completed",
+          "channels": 296,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 110,
-          "results_read": 160,
-          "pages": 8
+          "channels": 317,
+          "results_read": 460,
+          "pages": 23
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 111,
+          "results_read": 180,
+          "pages": 9
         }
       ]
     },
