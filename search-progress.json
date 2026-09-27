@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:05:44.268244+00:00",
+  "updated_at": "2026-09-27T14:06:45.478466+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 법무사",
-    "용인 변리사"
+    "용인 관세사",
+    "용인 감정평가사"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 14620,
-    "processed": 5464,
-    "pending": 9154,
+    "total": 14723,
+    "processed": 5486,
+    "pending": 9235,
     "processing": 2,
     "eligible": 97,
-    "review": 3694,
-    "rejected": 1667,
+    "review": 3705,
+    "rejected": 1678,
     "errors": 5,
     "ready": 57,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0wqMcE46XzZtW1NTv4t0Tw",
-        "name": "CAIDOGOLF"
+        "channel_id": "UC39isEY5r7Vv_VzQgPEWrZA",
+        "name": "법무법인정필"
       },
       {
-        "channel_id": "UC9bH8YvZhlKfdcKkE8TFDLg",
-        "name": "기독교포털뉴스"
+        "channel_id": "UCp2w-9HW28uwXJBdTX6enQA",
+        "name": "신화가족"
       }
     ]
   },
-  "queries_completed": 187,
-  "region_queries_completed": 31,
-  "region_channels": 3363,
-  "region_observed": 1958,
-  "channels_discovered": 14619,
-  "channels_observed": 5459,
-  "search_pages": 3857,
-  "search_results_read": 82783,
+  "queries_completed": 189,
+  "region_queries_completed": 33,
+  "region_channels": 3593,
+  "region_observed": 2022,
+  "channels_discovered": 14722,
+  "channels_observed": 5481,
+  "search_pages": 3897,
+  "search_results_read": 83520,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1324,
+      "observed": 1346,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1325,
+      "classified": 1347,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1304,
+      "observed": 1309,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1306,
+      "classified": 1311,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1300,
+      "observed": 1303,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1300,
+      "classified": 1303,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1190,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 31,
+      "queries_completed": 33,
       "queries_total": 39,
-      "channels": 3363,
-      "observed": 1958,
+      "channels": 3593,
+      "observed": 2022,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1960,
+      "classified": 2024,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1418,31 +1418,31 @@
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 67,
-          "results_read": 338,
-          "pages": 17
+          "status": "completed",
+          "channels": 113,
+          "results_read": 464,
+          "pages": 25
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 75,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 210,
+          "results_read": 451,
+          "pages": 24
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 124,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 58,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "손해사정사",
