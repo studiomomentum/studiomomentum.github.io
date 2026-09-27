@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:15:50.560380+00:00",
+  "updated_at": "2026-09-27T17:16:53.318705+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 치과",
@@ -13,37 +13,32 @@
     "region": "송파"
   },
   "classification": {
-    "total": 26850,
-    "processed": 8745,
-    "pending": 18103,
-    "processing": 2,
+    "total": 26894,
+    "processed": 8762,
+    "pending": 18131,
+    "processing": 1,
     "eligible": 121,
-    "review": 5964,
-    "rejected": 2647,
+    "review": 5980,
+    "rejected": 2648,
     "errors": 10,
     "ready": 80,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCLgtHZ__L1Zgn6o3U_e8pgg",
-        "name": "행복누리교회",
-        "query": "동탄 심리상담센터"
-      },
-      {
-        "channel_id": "UC3scd-9TYvPG2o8XxlOQEkQ",
-        "name": "명상심리무상사",
+        "channel_id": "UCgeQikg3HsAQCEZikTObB6g",
+        "name": "WOWCCM",
         "query": "동탄 심리상담센터"
       }
     ]
   },
   "queries_completed": 406,
   "region_queries_completed": 6,
-  "region_channels": 874,
-  "region_observed": 487,
-  "channels_discovered": 26849,
-  "channels_observed": 8735,
-  "search_pages": 9215,
-  "search_results_read": 186692,
+  "region_channels": 1008,
+  "region_observed": 525,
+  "channels_discovered": 26893,
+  "channels_observed": 8752,
+  "search_pages": 9245,
+  "search_results_read": 187286,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4605,
+      "observed": 4622,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4611,
+      "classified": 4628,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1796,
+      "observed": 1797,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1798,
+      "classified": 1799,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2030,
+      "observed": 2031,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2030,
+      "classified": 2031,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1804,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2186,
+      "observed": 2187,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2188,
+      "classified": 2189,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1563,
+      "observed": 1564,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1564,
+      "classified": 1565,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2395,10 +2390,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1676,
+      "observed": 1678,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1679,
+      "classified": 1681,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2688,10 +2683,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1616,
+      "observed": 1619,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1617,
+      "classified": 1620,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2980,11 +2975,11 @@
       "name": "송파",
       "queries_completed": 6,
       "queries_total": 40,
-      "channels": 874,
-      "observed": 487,
+      "channels": 1008,
+      "observed": 525,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 487,
+      "classified": 525,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3032,16 +3027,16 @@
         {
           "name": "치과",
           "status": "running",
-          "channels": 71,
-          "results_read": 119,
-          "pages": 6
+          "channels": 190,
+          "results_read": 417,
+          "pages": 21
         },
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 40,
-          "results_read": 100,
-          "pages": 5
+          "channels": 125,
+          "results_read": 396,
+          "pages": 20
         },
         {
           "name": "한의원",
