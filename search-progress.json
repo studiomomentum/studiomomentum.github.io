@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:05:32.834657+00:00",
+  "updated_at": "2026-09-27T21:06:34.214435+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13172,
-    "pending": 14764,
+    "processed": 13192,
+    "pending": 14744,
     "processing": 2,
     "eligible": 152,
-    "review": 9168,
-    "rejected": 3824,
+    "review": 9184,
+    "rejected": 3828,
     "errors": 25,
-    "ready": 106,
+    "ready": 107,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCEzJyhMaL1pfiAOt7SbHuoQ",
-        "name": "음악산책아로마",
-        "query": "평택 노무법인"
+        "channel_id": "UCrQFkX8_ajyCHuTnr-Sol-g",
+        "name": "김화현쌤의 부동산북두칠성",
+        "query": "평택 노무사"
       },
       {
-        "channel_id": "UCRASmAj7Ggb2HmZ4hBQJ7vQ",
-        "name": "골드만 싹쓰리",
-        "query": "평택 노무법인"
+        "channel_id": "UCnoMoEViyPVWsKch6X-N61w",
+        "name": "DreamSchool 이윤규",
+        "query": "평택 노무사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1612,
+  "region_observed": 1613,
   "channels_discovered": 27937,
-  "channels_observed": 13147,
+  "channels_observed": 13167,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4032,
+      "observed": 4052,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4042,
+      "classified": 4062,
       "classification_errors": 10,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3056,
+      "observed": 3058,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3058,
+      "classified": 3060,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2541,
+      "observed": 2544,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2544,
+      "classified": 2547,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2406,
+      "observed": 2407,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2408,
+      "classified": 2409,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1849,
+      "observed": 1850,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1852,
+      "classified": 1853,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1948,
+      "observed": 1949,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1953,
+      "classified": 1954,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1612,
+      "observed": 1613,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1613,
+      "classified": 1614,
       "classification_errors": 1,
       "jobs": [
         {
