@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:03:18.754935+00:00",
+  "updated_at": "2026-09-27T15:04:20.361349+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "분당 마취통증의학과",
@@ -13,32 +13,37 @@
     "region": "분당"
   },
   "classification": {
-    "total": 18825,
-    "processed": 6604,
-    "pending": 12220,
-    "processing": 1,
+    "total": 18852,
+    "processed": 6625,
+    "pending": 12225,
+    "processing": 2,
     "eligible": 108,
-    "review": 4466,
-    "rejected": 2024,
+    "review": 4485,
+    "rejected": 2026,
     "errors": 5,
-    "ready": 65,
+    "ready": 67,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCT12JR91EvQyoCuECP-Rikw",
-        "name": "동탄 칼수학학원",
-        "query": "동탄 입시학원"
+        "channel_id": "UCYR3l8kV2Bhn9zBCQITOxoA",
+        "name": "제이케이앤비 JKNV®",
+        "query": "동탄 공인중개사"
+      },
+      {
+        "channel_id": "UCyBasF9bs6pM7G1fxKluIMA",
+        "name": "더푸른교회",
+        "query": "동탄 공인중개사"
       }
     ]
   },
   "queries_completed": 263,
   "region_queries_completed": 23,
-  "region_channels": 2302,
-  "region_observed": 1254,
-  "channels_discovered": 18824,
-  "channels_observed": 6599,
-  "search_pages": 5678,
-  "search_results_read": 118735,
+  "region_channels": 2377,
+  "region_observed": 1288,
+  "channels_discovered": 18851,
+  "channels_observed": 6620,
+  "search_pages": 5710,
+  "search_results_read": 119375,
   "query_errors": {},
   "regions": [
     {
@@ -339,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2469,
+      "observed": 2490,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2470,
+      "classified": 2491,
       "classification_errors": 1,
       "jobs": [
         {
@@ -632,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1529,
+      "observed": 1535,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1531,
+      "classified": 1537,
       "classification_errors": 2,
       "jobs": [
         {
@@ -925,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1488,
+      "observed": 1491,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1488,
+      "classified": 1491,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1218,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2481,
+      "observed": 2483,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2483,
+      "classified": 2485,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1511,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1685,
+      "observed": 1690,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1685,
+      "classified": 1690,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1803,11 +1808,11 @@
       "name": "분당",
       "queries_completed": 23,
       "queries_total": 40,
-      "channels": 2302,
-      "observed": 1254,
+      "channels": 2377,
+      "observed": 1288,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1256,
+      "classified": 1290,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1974,16 +1979,16 @@
         {
           "name": "마취통증의학과",
           "status": "running",
-          "channels": 50,
-          "results_read": 139,
-          "pages": 7
+          "channels": 138,
+          "results_read": 459,
+          "pages": 23
         },
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 16,
-          "results_read": 56,
-          "pages": 3
+          "channels": 77,
+          "results_read": 376,
+          "pages": 19
         },
         {
           "name": "산부인과",
