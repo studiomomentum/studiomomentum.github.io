@@ -1,48 +1,37 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "평택",
+  "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:00:06.744395+00:00",
+  "updated_at": "2026-09-27T15:01:14.735551+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "평택 중고차"
+    "용인 중고차"
   ],
   "search_stage": {
     "status": "running",
-    "region": "평택"
+    "region": "용인"
   },
   "classification": {
-    "total": 18688,
-    "processed": 6539,
-    "pending": 12147,
-    "processing": 2,
+    "total": 18718,
+    "processed": 6559,
+    "pending": 12159,
+    "processing": 0,
     "eligible": 106,
-    "review": 4419,
-    "rejected": 2008,
+    "review": 4428,
+    "rejected": 2019,
     "errors": 5,
     "ready": 65,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCL_BTmK0iP2QXPBPXD8SVwQ",
-        "name": "뷰티렐라tv",
-        "query": "동탄 한의원"
-      },
-      {
-        "channel_id": "UCHHUxQtQ_Drm1MzW9gjpVNg",
-        "name": "황보라 보라이어티",
-        "query": "동탄 한의원"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 260,
+  "queries_completed": 261,
   "region_queries_completed": 39,
-  "region_channels": 4707,
-  "region_observed": 1482,
-  "channels_discovered": 18687,
-  "channels_observed": 6534,
-  "search_pages": 5615,
-  "search_results_read": 117563,
+  "region_channels": 4432,
+  "region_observed": 2472,
+  "channels_discovered": 18717,
+  "channels_observed": 6554,
+  "search_pages": 5634,
+  "search_results_read": 117910,
   "query_errors": {},
   "regions": [
     {
@@ -343,10 +332,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2404,
+      "observed": 2424,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2405,
+      "classified": 2425,
       "classification_errors": 1,
       "jobs": [
         {
@@ -926,13 +915,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4707,
-      "observed": 1482,
+      "channels": 4720,
+      "observed": 1483,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1482,
+      "classified": 1483,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1210,10 +1199,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 97,
-          "results_read": 436,
-          "pages": 22
+          "status": "completed",
+          "channels": 113,
+          "results_read": 505,
+          "pages": 27
         }
       ]
     },
@@ -1221,11 +1210,11 @@
       "name": "용인",
       "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4348,
-      "observed": 2468,
+      "channels": 4432,
+      "observed": 2472,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2470,
+      "classified": 2474,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1503,10 +1492,10 @@
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 90,
+          "results_read": 278,
+          "pages": 14
         }
       ]
     },
@@ -1515,10 +1504,10 @@
       "queries_completed": 39,
       "queries_total": 40,
       "channels": 5393,
-      "observed": 1665,
+      "observed": 1668,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1665,
+      "classified": 1668,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1808,10 +1797,10 @@
       "queries_completed": 23,
       "queries_total": 40,
       "channels": 2298,
-      "observed": 1250,
+      "observed": 1251,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1252,
+      "classified": 1253,
       "classification_errors": 2,
       "jobs": [
         {
