@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:36:46.819229+00:00",
+  "updated_at": "2026-09-27T16:37:49.020092+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 한방병원",
-    "서초 학원"
+    "서초 학원",
+    "서초 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 25397,
-    "processed": 8157,
-    "pending": 17240,
+    "total": 25475,
+    "processed": 8175,
+    "pending": 17300,
     "processing": 0,
     "eligible": 120,
-    "review": 5527,
-    "rejected": 2501,
+    "review": 5538,
+    "rejected": 2508,
     "errors": 6,
     "ready": 79,
     "status": "running",
     "active": []
   },
-  "queries_completed": 369,
-  "region_queries_completed": 9,
-  "region_channels": 1606,
-  "region_observed": 716,
-  "channels_discovered": 25396,
-  "channels_observed": 8151,
-  "search_pages": 8274,
-  "search_results_read": 167266,
+  "queries_completed": 370,
+  "region_queries_completed": 10,
+  "region_channels": 1807,
+  "region_observed": 761,
+  "channels_discovered": 25474,
+  "channels_observed": 8169,
+  "search_pages": 8300,
+  "search_results_read": 167759,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4021,
+      "observed": 4039,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 4023,
+      "classified": 4041,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1653,
+      "observed": 1654,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1653,
+      "classified": 1654,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1920,
+      "observed": 1921,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1920,
+      "classified": 1921,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2129,
+      "observed": 2131,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2131,
+      "classified": 2133,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1468,
+      "observed": 1471,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1469,
+      "classified": 1472,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2384,10 +2384,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1637,
+      "observed": 1638,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1639,
+      "classified": 1640,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2674,13 +2674,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 9,
+      "queries_completed": 10,
       "queries_total": 40,
-      "channels": 1606,
-      "observed": 716,
+      "channels": 1807,
+      "observed": 761,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 716,
+      "classified": 761,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2748,24 +2748,24 @@
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 110,
-          "results_read": 371,
-          "pages": 19
+          "status": "completed",
+          "channels": 158,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "학원",
           "status": "running",
-          "channels": 122,
-          "results_read": 216,
-          "pages": 11
+          "channels": 249,
+          "results_read": 473,
+          "pages": 24
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 71,
+          "results_read": 119,
+          "pages": 6
         },
         {
           "name": "어학원",
