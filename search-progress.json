@@ -2,37 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:23:01.582714+00:00",
+  "updated_at": "2026-09-27T16:24:04.030214+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 건축사사무소",
-    "강남 심리상담센터"
+    "강남 심리상담센터",
+    "강남 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24766,
-    "processed": 7941,
-    "pending": 16825,
-    "processing": 0,
-    "eligible": 118,
-    "review": 5380,
-    "rejected": 2434,
+    "total": 24798,
+    "processed": 7953,
+    "pending": 16843,
+    "processing": 2,
+    "eligible": 119,
+    "review": 5386,
+    "rejected": 2439,
     "errors": 6,
     "ready": 77,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCEBu83wLpLXtvVkPoODoZtg",
+        "name": "JRe",
+        "query": "동탄 동물병원"
+      },
+      {
+        "channel_id": "UC8maj7d8MZAoXHI_RhN8_QA",
+        "name": "플젝맨 Project Man",
+        "query": "동탄 동물병원"
+      }
+    ]
   },
-  "queries_completed": 356,
-  "region_queries_completed": 36,
-  "region_channels": 4686,
-  "region_observed": 1576,
-  "channels_discovered": 24765,
-  "channels_observed": 7935,
-  "search_pages": 7937,
-  "search_results_read": 160962,
+  "queries_completed": 357,
+  "region_queries_completed": 37,
+  "region_channels": 4763,
+  "region_observed": 1606,
+  "channels_discovered": 24797,
+  "channels_observed": 7947,
+  "search_pages": 7961,
+  "search_results_read": 161402,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3805,
+      "observed": 3817,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3807,
+      "classified": 3819,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1725,
+      "observed": 1726,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1727,
+      "classified": 1728,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1212,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2556,
+      "observed": 2557,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2558,
+      "classified": 2559,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1887,
+      "observed": 1891,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1887,
+      "classified": 1891,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1437,
+      "observed": 1440,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1438,
+      "classified": 1441,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 36,
+      "queries_completed": 37,
       "queries_total": 40,
-      "channels": 4686,
-      "observed": 1576,
+      "channels": 4763,
+      "observed": 1606,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1578,
+      "classified": 1608,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2644,24 +2655,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 130,
-          "results_read": 379,
-          "pages": 19
+          "status": "completed",
+          "channels": 171,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 35,
-          "results_read": 180,
-          "pages": 9
+          "channels": 57,
+          "results_read": 418,
+          "pages": 21
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 40,
+          "results_read": 96,
+          "pages": 5
         },
         {
           "name": "중고차",
