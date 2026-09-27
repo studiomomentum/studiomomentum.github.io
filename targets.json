@@ -3442,8 +3442,8 @@
     "channel_url": "https://www.youtube.com/channel/UC65sUXjzUeHPpKSwzG9x3Bg",
     "region": "수원",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 10:04:59",
     "views": "구독자 39200 / 최근 롱폼 10편 중앙값 412.0회",
     "point": "수원 법무법인 채널의 최근 롱폼 10편 중앙값 412.0회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "100",
@@ -3681,33 +3681,52 @@
     "token": "8b865400",
     "is_priority": false
   },
+  "b69bde98": {
+    "no": "204",
+    "company": "본질남 - 젊음의 본질을 알려주는 남자",
+    "rep": "대표님",
+    "email": "info@elementclinic.co.kr",
+    "channel_url": "https://www.youtube.com/channel/UCbgx2UTKb56ICoDpuaix2tQ",
+    "region": "강남",
+    "category": "medical",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 30800 / 최근 롱폼 10편 중앙값 656.0회",
+    "point": "강남 피부과 채널의 최근 롱폼 10편 중앙값 656.0회. 조회수 개선을 위한 기획 검토 제안",
+    "prospect_score": "75",
+    "prospect_grade": "HIGH",
+    "score_version": "searcher-v1",
+    "score_snapshot": "{\"score_version\": \"searcher-v1\", \"score_as_of\": \"2026-09-27T01:09:48.565187+00:00\", \"prospect_score\": 75, \"priority_grade\": \"HIGH\", \"score_components\": {\"activity\": 15, \"production\": 30, \"performance\": 30}, \"recent_longform_views\": [798, 523, 659, 686, 453, 4300, 277, 917, 158, 653], \"recent_longform_median\": 656.0, \"sample_size\": 10, \"score_provisional\": true, \"longform_count\": null, \"longform_count_lower_bound\": 100, \"uploads_30d\": 4, \"uploads_60d\": 4, \"uploads_90d\": 4, \"last_longform_upload\": \"2026-09-23T00:00:00+00:00\"}",
+    "token": "b69bde98",
+    "is_priority": false
+  },
   "_search_db_stats": {
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2125,
+    "review_count": 2124,
     "rejected_count": 215,
     "error_count": 2,
     "duplicate_count": 6,
-    "registered_count": 120,
-    "verified_count": 120,
+    "registered_count": 121,
+    "verified_count": 121,
     "ready_count": 48,
     "status_counts": {
-      "REVIEW": 2125,
+      "REVIEW": 2124,
       "REJECTED": 215,
-      "REGISTERED": 120,
+      "REGISTERED": 121,
       "DUPLICATE": 6,
       "ERROR": 2,
       "DISCOVERED": 2
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 304,
-      "UNSCORED": 1425,
-      "LOW": 289,
-      "HIGH": 375,
-      "VERY LOW": 77
+      "MEDIUM": 330,
+      "UNSCORED": 1347,
+      "LOW": 311,
+      "HIGH": 401,
+      "VERY LOW": 81
     },
-    "updated_at": "2026-09-27T00:54:54.423991+00:00"
+    "updated_at": "2026-09-27T01:09:51.628001+00:00"
   }
 }
