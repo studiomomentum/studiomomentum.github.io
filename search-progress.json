@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:43:13.890885+00:00",
+  "updated_at": "2026-09-27T14:44:15.854948+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 한방병원",
-    "분당 학원"
+    "분당 학원",
+    "분당 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 17952,
-    "processed": 6260,
-    "pending": 11690,
+    "total": 17979,
+    "processed": 6284,
+    "pending": 11693,
     "processing": 2,
     "eligible": 105,
-    "review": 4214,
-    "rejected": 1935,
+    "review": 4229,
+    "rejected": 1944,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCDzgo_tXNFZZLHGu_dUbiFA",
-        "name": "나비이사 MOVING"
+        "channel_id": "UCe9S5LAsyvu0sk7yV1qAeyQ",
+        "name": "영상제작업체 Breathe Media"
       },
       {
-        "channel_id": "UC2SY6uN6i0C3on6THfMMfgQ",
-        "name": "Yong Kang"
+        "channel_id": "UCIlB164VO3aQ8drek2fsICw",
+        "name": "더존한방병원"
       }
     ]
   },
-  "queries_completed": 243,
-  "region_queries_completed": 9,
-  "region_channels": 1075,
-  "region_observed": 681,
-  "channels_discovered": 17951,
-  "channels_observed": 6255,
-  "search_pages": 5177,
-  "search_results_read": 109301,
+  "queries_completed": 244,
+  "region_queries_completed": 10,
+  "region_channels": 1154,
+  "region_observed": 725,
+  "channels_discovered": 17978,
+  "channels_observed": 6279,
+  "search_pages": 5210,
+  "search_results_read": 109931,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2120,
+      "observed": 2144,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2121,
+      "classified": 2145,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1458,
+      "observed": 1463,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1460,
+      "classified": 1465,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1435,
+      "observed": 1437,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1435,
+      "classified": 1437,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2434,
+      "observed": 2435,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2436,
+      "classified": 2437,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1479,10 +1479,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1611,
+      "observed": 1616,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1611,
+      "classified": 1616,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1762,13 +1762,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 9,
+      "queries_completed": 10,
       "queries_total": 39,
-      "channels": 1075,
-      "observed": 681,
+      "channels": 1154,
+      "observed": 725,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 682,
+      "classified": 726,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1836,24 +1836,24 @@
         },
         {
           "name": "한방병원",
-          "status": "running",
+          "status": "completed",
           "channels": 184,
           "results_read": 503,
-          "pages": 26
+          "pages": 27
         },
         {
           "name": "학원",
           "status": "running",
-          "channels": 63,
-          "results_read": 179,
-          "pages": 9
+          "channels": 119,
+          "results_read": 516,
+          "pages": 26
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 54,
+          "results_read": 293,
+          "pages": 15
         },
         {
           "name": "어학원",
