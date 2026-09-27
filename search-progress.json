@@ -2,46 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:04:27.313958+00:00",
+  "updated_at": "2026-09-27T13:05:28.486012+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 비뇨기과",
-    "동탄 동물병원"
+    "동탄 의원",
+    "동탄 노무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 7818,
-    "processed": 3860,
-    "pending": 3956,
-    "processing": 2,
-    "eligible": 87,
-    "review": 2610,
-    "rejected": 1159,
+    "total": 8103,
+    "processed": 3889,
+    "pending": 4213,
+    "processing": 1,
+    "eligible": 88,
+    "review": 2629,
+    "rejected": 1168,
     "errors": 4,
-    "ready": 48,
+    "ready": 49,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCCXut6i26MbUhw2Wco2DYrw",
-        "name": "이윤정 산부인과"
-      },
-      {
-        "channel_id": "UCuxCRNyB6ToewSIHiei_nlA",
-        "name": "성형일타 이지영쌤"
+        "channel_id": "UCT3gjlfP0dst3cp5Bqq3MsQ",
+        "name": "우리가 본 동물병원 [본동물메디컬센터]"
       }
     ]
   },
-  "queries_completed": 65,
-  "region_queries_completed": 26,
-  "region_channels": 3453,
-  "region_observed": 898,
-  "channels_discovered": 7815,
-  "channels_observed": 3856,
-  "search_pages": 1115,
-  "search_results_read": 31776,
+  "queries_completed": 67,
+  "region_queries_completed": 28,
+  "region_channels": 3792,
+  "region_observed": 940,
+  "channels_discovered": 8100,
+  "channels_observed": 3885,
+  "search_pages": 1185,
+  "search_results_read": 33116,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +45,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2646,
+      "observed": 2675,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2650,
+      "classified": 2679,
       "classification_errors": 4,
       "jobs": [
         {
@@ -332,13 +328,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 26,
+      "queries_completed": 28,
       "queries_total": 39,
-      "channels": 3453,
-      "observed": 898,
+      "channels": 3792,
+      "observed": 940,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 899,
+      "classified": 941,
       "classification_errors": 1,
       "jobs": [
         {
@@ -525,31 +521,31 @@
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 66,
-          "results_read": 237,
-          "pages": 12
+          "status": "completed",
+          "channels": 143,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 251,
+          "results_read": 499,
+          "pages": 26
         },
         {
           "name": "의원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 207,
+          "results_read": 415,
+          "pages": 21
         },
         {
           "name": "노무사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 131,
+          "results_read": 178,
+          "pages": 9
         },
         {
           "name": "노무법인",
