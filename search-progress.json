@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:13:51.062380+00:00",
+  "updated_at": "2026-09-27T15:14:58.697976+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "분당 건축사사무소",
-    "분당 심리상담센터"
+    "분당 필라테스",
+    "분당 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 19554,
-    "processed": 6787,
-    "pending": 12767,
+    "total": 19666,
+    "processed": 6809,
+    "pending": 12857,
     "processing": 0,
-    "eligible": 110,
-    "review": 4592,
-    "rejected": 2079,
+    "eligible": 111,
+    "review": 4606,
+    "rejected": 2086,
     "errors": 5,
-    "ready": 69,
+    "ready": 70,
     "status": "running",
     "active": []
   },
-  "queries_completed": 276,
-  "region_queries_completed": 36,
-  "region_channels": 4029,
-  "region_observed": 1906,
-  "channels_discovered": 19553,
-  "channels_observed": 6782,
-  "search_pages": 6008,
-  "search_results_read": 124909,
+  "queries_completed": 278,
+  "region_queries_completed": 38,
+  "region_channels": 4261,
+  "region_observed": 1972,
+  "channels_discovered": 19665,
+  "channels_observed": 6804,
+  "search_pages": 6042,
+  "search_results_read": 125531,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2652,
+      "observed": 2674,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2653,
+      "classified": 2675,
       "classification_errors": 1,
       "jobs": [
         {
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1560,
+      "observed": 1563,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1562,
+      "classified": 1565,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1526,
+      "observed": 1528,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1526,
+      "classified": 1528,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2498,
+      "observed": 2500,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2500,
+      "classified": 2502,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1720,
+      "observed": 1728,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1720,
+      "classified": 1728,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1795,13 +1795,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4029,
-      "observed": 1906,
+      "channels": 4261,
+      "observed": 1972,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1908,
+      "classified": 1974,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2058,31 +2058,31 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 140,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 225,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 180,
-          "results_read": 297,
-          "pages": 15
+          "status": "completed",
+          "channels": 298,
+          "results_read": 544,
+          "pages": 29
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 57,
+          "results_read": 137,
+          "pages": 7
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 24,
+          "results_read": 60,
+          "pages": 3
         }
       ]
     },
