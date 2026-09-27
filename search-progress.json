@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:52:46.707196+00:00",
+  "updated_at": "2026-09-27T15:54:05.546705+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 치과",
-    "강남 치과의원"
+    "강남 한의원",
+    "강남 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 22951,
-    "processed": 7443,
-    "pending": 15508,
+    "total": 23032,
+    "processed": 7463,
+    "pending": 15569,
     "processing": 0,
-    "eligible": 116,
-    "review": 5042,
-    "rejected": 2276,
+    "eligible": 117,
+    "review": 5053,
+    "rejected": 2284,
     "errors": 6,
-    "ready": 75,
+    "ready": 76,
     "status": "running",
     "active": []
   },
-  "queries_completed": 326,
-  "region_queries_completed": 6,
-  "region_channels": 1121,
-  "region_observed": 546,
-  "channels_discovered": 22950,
-  "channels_observed": 7437,
-  "search_pages": 7139,
-  "search_results_read": 145939,
+  "queries_completed": 328,
+  "region_queries_completed": 8,
+  "region_channels": 1266,
+  "region_observed": 588,
+  "channels_discovered": 23031,
+  "channels_observed": 7457,
+  "search_pages": 7171,
+  "search_results_read": 146519,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3307,
+      "observed": 3327,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3309,
+      "classified": 3329,
       "classification_errors": 2,
       "jobs": [
         {
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1668,
+      "observed": 1669,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1670,
+      "classified": 1671,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1599,
+      "observed": 1601,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1599,
+      "classified": 1601,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2534,
+      "observed": 2535,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2536,
+      "classified": 2537,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1828,
+      "observed": 1832,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1828,
+      "classified": 1832,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2076,
+      "observed": 2078,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2078,
+      "classified": 2080,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1373,
+      "observed": 1377,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1374,
+      "classified": 1378,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 6,
+      "queries_completed": 8,
       "queries_total": 40,
-      "channels": 1121,
-      "observed": 546,
+      "channels": 1266,
+      "observed": 588,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 546,
+      "classified": 588,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2434,31 +2434,31 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 148,
-          "results_read": 380,
-          "pages": 19
+          "status": "completed",
+          "channels": 193,
+          "results_read": 544,
+          "pages": 29
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 105,
-          "results_read": 273,
-          "pages": 14
+          "status": "completed",
+          "channels": 152,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 45,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 51,
+          "results_read": 79,
+          "pages": 4
         },
         {
           "name": "학원",
