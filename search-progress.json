@@ -2,46 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:44:15.854948+00:00",
+  "updated_at": "2026-09-27T14:45:17.105504+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 학원",
-    "분당 입시학원"
+    "분당 어학원",
+    "분당 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 17979,
-    "processed": 6284,
-    "pending": 11693,
-    "processing": 2,
+    "total": 18018,
+    "processed": 6299,
+    "pending": 11718,
+    "processing": 1,
     "eligible": 105,
-    "review": 4229,
-    "rejected": 1944,
+    "review": 4241,
+    "rejected": 1947,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCe9S5LAsyvu0sk7yV1qAeyQ",
-        "name": "영상제작업체 Breathe Media"
-      },
-      {
-        "channel_id": "UCIlB164VO3aQ8drek2fsICw",
-        "name": "더존한방병원"
+        "channel_id": "UCBSmng-ExBNMqqhw0o40-Uw",
+        "name": "피부명의 하늘마음한의원"
       }
     ]
   },
-  "queries_completed": 244,
-  "region_queries_completed": 10,
-  "region_channels": 1154,
-  "region_observed": 725,
-  "channels_discovered": 17978,
-  "channels_observed": 6279,
-  "search_pages": 5210,
-  "search_results_read": 109931,
+  "queries_completed": 246,
+  "region_queries_completed": 12,
+  "region_channels": 1272,
+  "region_observed": 793,
+  "channels_discovered": 18017,
+  "channels_observed": 6294,
+  "search_pages": 5242,
+  "search_results_read": 110524,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2144,
+      "observed": 2159,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2145,
+      "classified": 2160,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1463,
+      "observed": 1466,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1465,
+      "classified": 1468,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1437,
+      "observed": 1440,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1437,
+      "classified": 1440,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1189,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2435,
+      "observed": 2437,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2437,
+      "classified": 2439,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1479,10 +1475,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1616,
+      "observed": 1621,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1616,
+      "classified": 1621,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1762,13 +1758,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 10,
+      "queries_completed": 12,
       "queries_total": 39,
-      "channels": 1154,
-      "observed": 725,
+      "channels": 1272,
+      "observed": 793,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 726,
+      "classified": 794,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1843,31 +1839,31 @@
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 119,
-          "results_read": 516,
-          "pages": 26
+          "status": "completed",
+          "channels": 141,
+          "results_read": 554,
+          "pages": 29
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 54,
-          "results_read": 293,
-          "pages": 15
+          "status": "completed",
+          "channels": 107,
+          "results_read": 511,
+          "pages": 27
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 60,
+          "results_read": 259,
+          "pages": 13
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 21,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "부동산중개",
