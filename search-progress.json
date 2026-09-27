@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:57:14.790883+00:00",
+  "updated_at": "2026-09-27T16:58:16.600948+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 의원",
-    "서초 노무사"
+    "서초 노무법인",
+    "서초 법무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 26316,
-    "processed": 8475,
-    "pending": 17839,
+    "total": 26343,
+    "processed": 8491,
+    "pending": 17850,
     "processing": 2,
     "eligible": 120,
-    "review": 5752,
-    "rejected": 2590,
+    "review": 5760,
+    "rejected": 2598,
     "errors": 10,
     "ready": 79,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCPToIsLSR1_aQ-p-Tc8EOIw",
-        "name": "맹진규",
-        "query": "동탄 건축사사무소"
+        "channel_id": "UCD9vzSxZ69pjcnf8hgCQXVQ",
+        "name": "채부심 - 채상욱의 부동산 심부름센터",
+        "query": "동탄 감정평가사"
       },
       {
-        "channel_id": "UCIZOLAFq5bybIhUUjY-phqQ",
-        "name": "건설워커",
-        "query": "동탄 건축사사무소"
+        "channel_id": "UCr9Q4yABDRZekuqeIgFplcg",
+        "name": "채널 박종진",
+        "query": "동탄 감정평가사"
       }
     ]
   },
-  "queries_completed": 388,
-  "region_queries_completed": 28,
-  "region_channels": 3817,
-  "region_observed": 1355,
-  "channels_discovered": 26315,
-  "channels_observed": 8465,
-  "search_pages": 8766,
-  "search_results_read": 178308,
+  "queries_completed": 390,
+  "region_queries_completed": 30,
+  "region_channels": 3876,
+  "region_observed": 1372,
+  "channels_discovered": 26342,
+  "channels_observed": 8481,
+  "search_pages": 8790,
+  "search_results_read": 178726,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4335,
+      "observed": 4351,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4341,
+      "classified": 4357,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1775,
+      "observed": 1777,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1777,
+      "classified": 1779,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1685,
+      "observed": 1687,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1685,
+      "classified": 1687,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2602,
+      "observed": 2603,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2604,
+      "classified": 2605,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1995,
+      "observed": 1998,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1995,
+      "classified": 1998,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2160,
+      "observed": 2167,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2162,
+      "classified": 2169,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1516,
+      "observed": 1525,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1517,
+      "classified": 1526,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2395,10 +2395,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1657,
+      "observed": 1661,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1660,
+      "classified": 1664,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,13 +2685,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 28,
+      "queries_completed": 30,
       "queries_total": 40,
-      "channels": 3817,
-      "observed": 1355,
+      "channels": 3876,
+      "observed": 1372,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1356,
+      "classified": 1373,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2892,31 +2892,31 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 90,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 158,
+          "results_read": 532,
+          "pages": 28
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 41,
-          "results_read": 337,
-          "pages": 17
+          "status": "completed",
+          "channels": 55,
+          "results_read": 484,
+          "pages": 26
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 25,
+          "results_read": 59,
+          "pages": 3
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 15,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "변리사",
