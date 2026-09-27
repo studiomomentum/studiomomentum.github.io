@@ -2,47 +2,45 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:52:52.380053+00:00",
+  "updated_at": "2026-09-27T17:53:54.333204+00:00",
   "run_id": "36327598909",
-  "active_queries": [
-    "송파 중고차"
-  ],
+  "active_queries": [],
   "search_stage": {
-    "status": "running",
+    "status": "complete",
     "region": "송파"
   },
   "classification": {
-    "total": 27914,
-    "processed": 9273,
-    "pending": 18639,
+    "total": 27938,
+    "processed": 9287,
+    "pending": 18649,
     "processing": 2,
     "eligible": 122,
-    "review": 6335,
-    "rejected": 2801,
+    "review": 6338,
+    "rejected": 2812,
     "errors": 12,
     "ready": 81,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC_BP6FXaPuoYBuqihtexPow",
-        "name": "巔峰劇場ShortTV",
+        "channel_id": "UCd5xOc9wGWoB5_yIL-N7DHQ",
+        "name": "Whisper Drama",
         "query": "오산 변호사"
       },
       {
-        "channel_id": "UCOzM_kTmMgul9xznM8Ba_iQ",
-        "name": "风云短剧",
+        "channel_id": "UC-tNChlJlgREwP8X7d4UWQA",
+        "name": "萬象劇場",
         "query": "오산 변호사"
       }
     ]
   },
-  "queries_completed": 439,
-  "region_queries_completed": 39,
-  "region_channels": 4239,
-  "region_observed": 1423,
-  "channels_discovered": 27913,
-  "channels_observed": 9261,
-  "search_pages": 10074,
-  "search_results_read": 202719,
+  "queries_completed": 440,
+  "region_queries_completed": 40,
+  "region_channels": 4300,
+  "region_observed": 1427,
+  "channels_discovered": 27937,
+  "channels_observed": 9275,
+  "search_pages": 10085,
+  "search_results_read": 202917,
   "query_errors": {},
   "regions": [
     {
@@ -636,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2162,
+      "observed": 2176,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2166,
+      "classified": 2180,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1515,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2086,
+      "observed": 2089,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2086,
+      "classified": 2089,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1808,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2209,
+      "observed": 2211,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2211,
+      "classified": 2213,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2394,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1699,
+      "observed": 1703,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1702,
+      "classified": 1706,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2977,13 +2975,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4239,
-      "observed": 1423,
+      "channels": 4300,
+      "observed": 1427,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1424,
+      "classified": 1428,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3261,10 +3259,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 108,
-          "results_read": 299,
-          "pages": 15
+          "status": "completed",
+          "channels": 172,
+          "results_read": 497,
+          "pages": 26
         }
       ]
     }
