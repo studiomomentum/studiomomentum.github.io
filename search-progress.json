@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:17:48.455292+00:00",
+  "updated_at": "2026-09-27T21:18:50.244472+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13418,
-    "pending": 14518,
-    "processing": 2,
+    "processed": 13439,
+    "pending": 14498,
+    "processing": 1,
     "eligible": 154,
-    "review": 9351,
-    "rejected": 3884,
-    "errors": 26,
+    "review": 9366,
+    "rejected": 3889,
+    "errors": 27,
     "ready": 109,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCK-keSnnW3YMX2rN-sHG5FA",
-        "name": "동서대학교",
-        "query": "평택 관세사"
-      },
-      {
-        "channel_id": "UCQxKB10A9zf0xawkakKTJOA",
-        "name": "지제이솔",
+        "channel_id": "UCi7uVVRTn1z8kmz8_kCAv8w",
+        "name": "김주호",
         "query": "평택 관세사"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1623,
+  "region_observed": 1624,
   "channels_discovered": 27937,
-  "channels_observed": 13392,
+  "channels_observed": 13412,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,11 +922,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4277,
-      "observation_errors": 11,
+      "observed": 4297,
+      "observation_errors": 12,
       "classified_at": null,
-      "classified": 4288,
-      "classification_errors": 11,
+      "classified": 4309,
+      "classification_errors": 12,
       "jobs": [
         {
           "name": "세무사",
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3074,
+      "observed": 3078,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3076,
+      "classified": 3080,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2565,
+      "observed": 2567,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2568,
+      "classified": 2570,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2416,
+      "observed": 2418,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2418,
+      "classified": 2420,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1858,
+      "observed": 1859,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1861,
+      "classified": 1862,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1623,
+      "observed": 1624,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1624,
+      "classified": 1625,
       "classification_errors": 1,
       "jobs": [
         {
