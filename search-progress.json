@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:54:55.805924+00:00",
+  "updated_at": "2026-09-27T17:55:57.349623+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 9309,
-    "pending": 18627,
+    "processed": 9335,
+    "pending": 18601,
     "processing": 2,
     "eligible": 122,
-    "review": 6348,
-    "rejected": 2824,
+    "review": 6369,
+    "rejected": 2829,
     "errors": 12,
     "ready": 81,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCvNaIyDBJvYkh7risnf7G6w",
-        "name": "팁변TV  - Lawyer TIP",
+        "channel_id": "UCCd-toV1a7vVWlz6yMzVz0g",
+        "name": "평택브레인시티방송국",
         "query": "오산 법률사무소"
       },
       {
-        "channel_id": "UCXVHou0-RIy8dEFyoEkZG-w",
-        "name": "최의곤 법률사무소",
+        "channel_id": "UCvsQrWoo3KGVz_dZHi1YcKw",
+        "name": "하나로법률경매",
         "query": "오산 법률사무소"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1427,
+  "region_observed": 1428,
   "channels_discovered": 27937,
-  "channels_observed": 9297,
+  "channels_observed": 9323,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2198,
+      "observed": 2224,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2202,
+      "classified": 2228,
       "classification_errors": 4,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1794,
+      "observed": 1800,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1795,
+      "classified": 1801,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2651,
+      "observed": 2654,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2653,
+      "classified": 2656,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2091,
+      "observed": 2096,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2091,
+      "classified": 2096,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2212,
+      "observed": 2214,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2214,
+      "classified": 2216,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1608,
+      "observed": 1611,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1610,
+      "classified": 1613,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1427,
+      "observed": 1428,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1428,
+      "classified": 1429,
       "classification_errors": 1,
       "jobs": [
         {
