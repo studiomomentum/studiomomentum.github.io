@@ -2,37 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:37:49.020092+00:00",
+  "updated_at": "2026-09-27T16:38:50.644773+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 학원",
-    "서초 입시학원"
+    "서초 입시학원",
+    "서초 어학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 25475,
-    "processed": 8175,
-    "pending": 17300,
-    "processing": 0,
+    "total": 25573,
+    "processed": 8192,
+    "pending": 17380,
+    "processing": 1,
     "eligible": 120,
-    "review": 5538,
-    "rejected": 2508,
+    "review": 5547,
+    "rejected": 2516,
     "errors": 6,
     "ready": 79,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCCyvOAisLpRFgsv6Dmb4m2Q",
+        "name": "HOJI 호지",
+        "query": "동탄 노무사"
+      }
+    ]
   },
-  "queries_completed": 370,
-  "region_queries_completed": 10,
-  "region_channels": 1807,
-  "region_observed": 761,
-  "channels_discovered": 25474,
-  "channels_observed": 8169,
-  "search_pages": 8300,
-  "search_results_read": 167759,
+  "queries_completed": 371,
+  "region_queries_completed": 11,
+  "region_channels": 1980,
+  "region_observed": 794,
+  "channels_discovered": 25572,
+  "channels_observed": 8186,
+  "search_pages": 8324,
+  "search_results_read": 168202,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4039,
+      "observed": 4056,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 4041,
+      "classified": 4058,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1921,
+      "observed": 1922,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1921,
+      "classified": 1922,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2091,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1471,
+      "observed": 1473,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1472,
+      "classified": 1474,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,13 +2680,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 10,
+      "queries_completed": 11,
       "queries_total": 40,
-      "channels": 1807,
-      "observed": 761,
+      "channels": 1980,
+      "observed": 794,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 761,
+      "classified": 794,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2755,24 +2761,24 @@
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 249,
-          "results_read": 473,
-          "pages": 24
+          "status": "completed",
+          "channels": 280,
+          "results_read": 522,
+          "pages": 28
         },
         {
           "name": "입시학원",
           "status": "running",
-          "channels": 71,
-          "results_read": 119,
-          "pages": 6
+          "channels": 169,
+          "results_read": 355,
+          "pages": 18
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 92,
+          "results_read": 158,
+          "pages": 8
         },
         {
           "name": "공인중개사",
