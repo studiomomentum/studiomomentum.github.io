@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:05:21.735817+00:00",
+  "updated_at": "2026-09-27T15:06:23.238205+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "분당 산부인과",
-    "분당 비뇨기과"
+    "분당 비뇨기과",
+    "분당 동물병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 18875,
-    "processed": 6645,
-    "pending": 12228,
+    "total": 18925,
+    "processed": 6663,
+    "pending": 12260,
     "processing": 2,
     "eligible": 108,
-    "review": 4500,
-    "rejected": 2031,
+    "review": 4508,
+    "rejected": 2041,
     "errors": 5,
     "ready": 67,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCN1XNElE0CWfVeTAChR694g",
-        "name": "스타부동산 TV",
+        "channel_id": "UCEssqeLtk6RTofg8LAf4Lqg",
+        "name": "작은천사의 부동산이야기",
         "query": "동탄 공인중개사"
       },
       {
-        "channel_id": "UCZCiOVgBEb7IHdSOjQrsmmw",
-        "name": "후스파파의 부동산 상식사전",
-        "query": "동탄 공인중개사"
+        "channel_id": "UCA3udt-kRs8pCnjmPphoBew",
+        "name": "피키마마 PickyMama",
+        "query": "동탄 어학원"
       }
     ]
   },
-  "queries_completed": 265,
-  "region_queries_completed": 25,
-  "region_channels": 2467,
-  "region_observed": 1341,
-  "channels_discovered": 18874,
-  "channels_observed": 6640,
-  "search_pages": 5742,
-  "search_results_read": 119962,
+  "queries_completed": 267,
+  "region_queries_completed": 27,
+  "region_channels": 2605,
+  "region_observed": 1398,
+  "channels_discovered": 18924,
+  "channels_observed": 6658,
+  "search_pages": 5776,
+  "search_results_read": 120596,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2510,
+      "observed": 2528,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2511,
+      "classified": 2529,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1538,
+      "observed": 1541,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1540,
+      "classified": 1543,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1495,
+      "observed": 1499,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1495,
+      "classified": 1499,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2486,
+      "observed": 2487,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2488,
+      "classified": 2489,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1693,
+      "observed": 1697,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1693,
+      "classified": 1697,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,13 +1806,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 25,
+      "queries_completed": 27,
       "queries_total": 40,
-      "channels": 2467,
-      "observed": 1341,
+      "channels": 2605,
+      "observed": 1398,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1343,
+      "classified": 1400,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1992,24 +1992,24 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 102,
-          "results_read": 259,
-          "pages": 13
+          "status": "completed",
+          "channels": 160,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 31,
-          "results_read": 177,
-          "pages": 9
+          "status": "completed",
+          "channels": 129,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "의원",
