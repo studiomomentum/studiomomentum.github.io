@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:19:59.454873+00:00",
+  "updated_at": "2026-09-27T17:21:01.532422+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 학원",
@@ -13,32 +13,26 @@
     "region": "송파"
   },
   "classification": {
-    "total": 26993,
-    "processed": 8806,
-    "pending": 18186,
-    "processing": 1,
+    "total": 27044,
+    "processed": 8823,
+    "pending": 18221,
+    "processing": 0,
     "eligible": 121,
-    "review": 6015,
-    "rejected": 2656,
+    "review": 6030,
+    "rejected": 2658,
     "errors": 11,
     "ready": 80,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCE1NJhZj5mEiD61a35EFjRA",
-        "name": "대구강북초등학교 Wee클래스",
-        "query": "동탄 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 410,
   "region_queries_completed": 10,
-  "region_channels": 1323,
-  "region_observed": 600,
-  "channels_discovered": 26992,
-  "channels_observed": 8795,
-  "search_pages": 9315,
-  "search_results_read": 188562,
+  "region_channels": 1463,
+  "region_observed": 635,
+  "channels_discovered": 27043,
+  "channels_observed": 8812,
+  "search_pages": 9339,
+  "search_results_read": 189038,
   "query_errors": {},
   "regions": [
     {
@@ -339,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4665,
+      "observed": 4682,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4672,
+      "classified": 4689,
       "classification_errors": 7,
       "jobs": [
         {
@@ -632,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1799,
+      "observed": 1801,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1802,
+      "classified": 1804,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1511,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2033,
+      "observed": 2036,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2033,
+      "classified": 2036,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2975,11 +2969,11 @@
       "name": "송파",
       "queries_completed": 10,
       "queries_total": 40,
-      "channels": 1323,
-      "observed": 600,
+      "channels": 1463,
+      "observed": 635,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 600,
+      "classified": 635,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3055,16 +3049,16 @@
         {
           "name": "학원",
           "status": "running",
-          "channels": 46,
-          "results_read": 60,
-          "pages": 3
+          "channels": 113,
+          "results_read": 298,
+          "pages": 15
         },
         {
           "name": "입시학원",
           "status": "running",
-          "channels": 28,
-          "results_read": 60,
-          "pages": 3
+          "channels": 133,
+          "results_read": 298,
+          "pages": 15
         },
         {
           "name": "어학원",
