@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T19:21:18.081672+00:00",
+  "updated_at": "2026-09-27T19:22:19.680046+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11123,
-    "pending": 16815,
-    "processing": 0,
+    "processed": 11150,
+    "pending": 16787,
+    "processing": 1,
     "eligible": 134,
-    "review": 7664,
-    "rejected": 3305,
+    "review": 7684,
+    "rejected": 3312,
     "errors": 17,
     "ready": 91,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCQFc3rOa2jhKf7yx7qvvY8g",
+        "name": "이의태",
+        "query": "오산 심리상담센터"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1510,
+  "region_observed": 1511,
   "channels_discovered": 27937,
-  "channels_observed": 11106,
+  "channels_observed": 11133,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 4007,
+      "observed": 4034,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4016,
+      "classified": 4043,
       "classification_errors": 9,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2152,
+      "observed": 2156,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2154,
+      "classified": 2158,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2815,
+      "observed": 2817,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2817,
+      "classified": 2819,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2307,
+      "observed": 2311,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2309,
+      "classified": 2313,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2312,
+      "observed": 2313,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2314,
+      "classified": 2315,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1718,
+      "observed": 1720,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1721,
+      "classified": 1723,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1821,
+      "observed": 1823,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1824,
+      "classified": 1826,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1510,
+      "observed": 1511,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1511,
+      "classified": 1512,
       "classification_errors": 1,
       "jobs": [
         {
