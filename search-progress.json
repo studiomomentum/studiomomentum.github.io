@@ -2,46 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:26:34.876045+00:00",
+  "updated_at": "2026-09-27T14:27:42.808477+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 이비인후과",
-    "화성 재활의학과"
+    "화성 마취통증의학과",
+    "화성 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 16605,
-    "processed": 5940,
-    "pending": 10663,
-    "processing": 2,
+    "total": 16698,
+    "processed": 5962,
+    "pending": 10736,
+    "processing": 0,
     "eligible": 103,
-    "review": 3990,
-    "rejected": 1841,
+    "review": 4009,
+    "rejected": 1844,
     "errors": 5,
     "ready": 62,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClN925p_80ad5pgDn4OzIyQ",
-        "name": "CBS매거진"
-      },
-      {
-        "channel_id": "UCOChg31xQBh6PQyF--n8hDQ",
-        "name": "분양상담사협회TV"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 216,
-  "region_queries_completed": 21,
-  "region_channels": 3537,
-  "region_observed": 1215,
-  "channels_discovered": 16604,
-  "channels_observed": 5935,
-  "search_pages": 4593,
-  "search_results_read": 98419,
+  "queries_completed": 218,
+  "region_queries_completed": 23,
+  "region_channels": 3701,
+  "region_observed": 1252,
+  "channels_discovered": 16697,
+  "channels_observed": 5957,
+  "search_pages": 4629,
+  "search_results_read": 99073,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +326,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1800,
+      "observed": 1822,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1801,
+      "classified": 1823,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +612,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1400,
+      "observed": 1406,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1402,
+      "classified": 1408,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +898,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1381,
+      "observed": 1383,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1381,
+      "classified": 1383,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1184,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2413,
+      "observed": 2414,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2415,
+      "classified": 2416,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1476,13 +1467,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 21,
+      "queries_completed": 23,
       "queries_total": 39,
-      "channels": 3537,
-      "observed": 1215,
+      "channels": 3701,
+      "observed": 1252,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1215,
+      "classified": 1252,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1634,31 +1625,31 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 161,
-          "results_read": 379,
-          "pages": 19
+          "status": "completed",
+          "channels": 191,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 105,
-          "results_read": 254,
-          "pages": 13
+          "status": "completed",
+          "channels": 230,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 124,
+          "results_read": 216,
+          "pages": 11
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 58,
+          "results_read": 99,
+          "pages": 5
         },
         {
           "name": "산부인과",
