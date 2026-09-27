@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T19:46:46.759473+00:00",
+  "updated_at": "2026-09-27T19:47:48.433665+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11639,
-    "pending": 16297,
+    "processed": 11657,
+    "pending": 16279,
     "processing": 2,
     "eligible": 144,
-    "review": 8008,
-    "rejected": 3465,
+    "review": 8023,
+    "rejected": 3468,
     "errors": 19,
-    "ready": 99,
+    "ready": 100,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCowKOHrA-r-dz_ODbdSdYVg",
-        "name": "사람사랑치과 평택지제점",
+        "channel_id": "UCQQFDxhbSciIoHu9nM3AxIg",
+        "name": "세종스타치과",
         "query": "평택 치과"
       },
       {
-        "channel_id": "UCLjXCciJuDJVr40uCI_MEcg",
-        "name": "복건생활 - 복지정보 건강정보 ",
-        "query": "평택 법률사무소"
+        "channel_id": "UC3-DCkFtul4gamC-HeoLRXw",
+        "name": "리젠치과의원",
+        "query": "평택 치과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1528,
+  "region_observed": 1529,
   "channels_discovered": 27937,
-  "channels_observed": 11620,
+  "channels_observed": 11638,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2505,
+      "observed": 2523,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2509,
+      "classified": 2527,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2857,
+      "observed": 2864,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2859,
+      "classified": 2866,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1759,
+      "observed": 1761,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1762,
+      "classified": 1764,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1857,
+      "observed": 1860,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1861,
+      "classified": 1864,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1757,
+      "observed": 1759,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1758,
+      "classified": 1760,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1528,
+      "observed": 1529,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1529,
+      "classified": 1530,
       "classification_errors": 1,
       "jobs": [
         {
