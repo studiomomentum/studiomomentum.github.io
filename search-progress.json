@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T23:15:15.043794+00:00",
+  "updated_at": "2026-09-27T23:16:16.763161+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15622,
-    "pending": 12314,
+    "processed": 15642,
+    "pending": 12294,
     "processing": 2,
     "eligible": 172,
-    "review": 10935,
-    "rejected": 4482,
-    "errors": 30,
+    "review": 10946,
+    "rejected": 4490,
+    "errors": 31,
     "ready": 125,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCgJbo_2uZ-t7yU3gil-pD1w",
-        "name": "라이프앤진TV - 건강과 아름다움을 전하는 전문채널",
+        "channel_id": "UC9sWXYfsfyG1A9oNGIe1Gjw",
+        "name": "스튜디오슬램",
         "query": "화성 한의원"
       },
       {
-        "channel_id": "UCNs-idGiBzIgtZ0F00VJgVQ",
-        "name": "튼살 흉터 치료하는 이미지한의원02-336-7100 한방 피부과 전문의 진료",
+        "channel_id": "UCVfGwS1QCv--LlGIjOLfBXQ",
+        "name": "스튜디오 경향",
         "query": "화성 한의원"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1770,
+  "region_observed": 1772,
   "channels_discovered": 27937,
-  "channels_observed": 15592,
+  "channels_observed": 15611,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,11 +1513,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3337,
-      "observation_errors": 4,
+      "observed": 3356,
+      "observation_errors": 5,
       "classified_at": null,
-      "classified": 3341,
-      "classification_errors": 4,
+      "classified": 3361,
+      "classification_errors": 5,
       "jobs": [
         {
           "name": "세무사",
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2715,
+      "observed": 2717,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2717,
+      "classified": 2719,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1994,
+      "observed": 1996,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1995,
+      "classified": 1997,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1770,
+      "observed": 1772,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1771,
+      "classified": 1773,
       "classification_errors": 1,
       "jobs": [
         {
