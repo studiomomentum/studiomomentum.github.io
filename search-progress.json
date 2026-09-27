@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:28:22.996277+00:00",
+  "updated_at": "2026-09-27T20:29:24.185509+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12396,
-    "pending": 15542,
-    "processing": 0,
-    "eligible": 146,
-    "review": 8607,
-    "rejected": 3617,
+    "processed": 12416,
+    "pending": 15520,
+    "processing": 2,
+    "eligible": 147,
+    "review": 8618,
+    "rejected": 3625,
     "errors": 23,
     "ready": 102,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCRjF0L38NJTv9dds1bpwVcw",
+        "name": "윤행정사 업무노트 (청주행정사 대표)",
+        "query": "평택 행정사"
+      },
+      {
+        "channel_id": "UC3gOuvLmB5Y2uVPZgONPf3Q",
+        "name": "국제행정사 정태영",
+        "query": "평택 행정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1566,
   "channels_discovered": 27937,
-  "channels_observed": 12373,
+  "channels_observed": 12393,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3258,
+      "observed": 3278,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3266,
+      "classified": 3286,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2961,
+      "observed": 2963,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2963,
+      "classified": 2965,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2450,
+      "observed": 2453,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2453,
+      "classified": 2456,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1810,
+      "observed": 1811,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1811,
+      "classified": 1812,
       "classification_errors": 1,
       "jobs": [
         {
