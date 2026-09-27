@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:47:24.931945+00:00",
+  "updated_at": "2026-09-27T17:48:29.296218+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 감정평가사",
-    "송파 손해사정사"
+    "송파 손해사정사",
+    "송파 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27764,
-    "processed": 9197,
-    "pending": 18567,
+    "total": 27788,
+    "processed": 9213,
+    "pending": 18575,
     "processing": 0,
     "eligible": 122,
-    "review": 6290,
-    "rejected": 2771,
-    "errors": 11,
+    "review": 6303,
+    "rejected": 2773,
+    "errors": 12,
     "ready": 81,
     "status": "running",
     "active": []
   },
-  "queries_completed": 434,
-  "region_queries_completed": 34,
-  "region_channels": 3671,
-  "region_observed": 1255,
-  "channels_discovered": 27763,
-  "channels_observed": 9186,
-  "search_pages": 9947,
-  "search_results_read": 200328,
+  "queries_completed": 435,
+  "region_queries_completed": 35,
+  "region_channels": 3726,
+  "region_observed": 1274,
+  "channels_discovered": 27787,
+  "channels_observed": 9201,
+  "search_pages": 9969,
+  "search_results_read": 200739,
   "query_errors": {},
   "regions": [
     {
@@ -626,11 +626,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2087,
-      "observation_errors": 3,
+      "observed": 2102,
+      "observation_errors": 4,
       "classified_at": null,
-      "classified": 2090,
-      "classification_errors": 3,
+      "classified": 2106,
+      "classification_errors": 4,
       "jobs": [
         {
           "name": "세무사",
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1776,
+      "observed": 1778,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1777,
+      "classified": 1779,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2076,
+      "observed": 2078,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2076,
+      "classified": 2078,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2967,13 +2967,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 34,
+      "queries_completed": 35,
       "queries_total": 40,
-      "channels": 3671,
-      "observed": 1255,
+      "channels": 3726,
+      "observed": 1274,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1256,
+      "classified": 1275,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3216,21 +3216,21 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 143,
-          "results_read": 300,
-          "pages": 15
+          "status": "completed",
+          "channels": 215,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "손해사정사",
           "status": "running",
-          "channels": 13,
-          "results_read": 55,
-          "pages": 3
+          "channels": 29,
+          "results_read": 272,
+          "pages": 14
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
+          "status": "running",
           "channels": 9,
           "results_read": 0,
           "pages": 0
