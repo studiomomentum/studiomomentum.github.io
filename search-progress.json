@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:10:52.328981+00:00",
+  "updated_at": "2026-09-27T14:11:54.095802+00:00",
   "run_id": "36322315094",
   "active_queries": [
     "화성 세무사",
@@ -13,35 +13,31 @@
     "region": "화성"
   },
   "classification": {
-    "total": 15005,
-    "processed": 5578,
-    "pending": 9425,
-    "processing": 2,
+    "total": 15111,
+    "processed": 5605,
+    "pending": 9505,
+    "processing": 1,
     "eligible": 98,
-    "review": 3766,
-    "rejected": 1708,
+    "review": 3780,
+    "rejected": 1721,
     "errors": 5,
     "ready": 58,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC1_socDSc4ptev5eHKPfusQ",
-        "name": "원에스티"
-      },
-      {
-        "channel_id": "UC1KdP386yiY5Gxuhx0swxFw",
-        "name": "행복이 가득한 집"
+        "channel_id": "UC7qMjGNBzRiyspQtCd7MX1A",
+        "name": "인테리어최박사 [interior Choi]"
       }
     ]
   },
   "queries_completed": 195,
   "region_queries_completed": 0,
-  "region_channels": 393,
-  "region_observed": 343,
-  "channels_discovered": 15004,
-  "channels_observed": 5573,
-  "search_pages": 4037,
-  "search_results_read": 86158,
+  "region_channels": 673,
+  "region_observed": 461,
+  "channels_discovered": 15110,
+  "channels_observed": 5600,
+  "search_pages": 4069,
+  "search_results_read": 86796,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1438,
+      "observed": 1465,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1439,
+      "classified": 1466,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1332,
+      "observed": 1338,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1334,
+      "classified": 1340,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1328,
+      "observed": 1334,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1328,
+      "classified": 1334,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1189,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2394,
+      "observed": 2395,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2396,
+      "classified": 2397,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1478,26 +1474,26 @@
       "name": "화성",
       "queries_completed": 0,
       "queries_total": 39,
-      "channels": 393,
-      "observed": 343,
+      "channels": 673,
+      "observed": 461,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 343,
+      "classified": 461,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
           "status": "running",
-          "channels": 89,
-          "results_read": 159,
-          "pages": 8
+          "channels": 237,
+          "results_read": 479,
+          "pages": 24
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 96,
-          "results_read": 160,
-          "pages": 8
+          "channels": 277,
+          "results_read": 478,
+          "pages": 24
         },
         {
           "name": "세무회계",
