@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:07:47.226534+00:00",
+  "updated_at": "2026-09-27T14:08:49.185522+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "용인 감정평가사",
-    "용인 손해사정사"
+    "용인 건축사사무소",
+    "용인 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 14848,
-    "processed": 5508,
-    "pending": 9338,
+    "total": 14924,
+    "processed": 5530,
+    "pending": 9392,
     "processing": 2,
-    "eligible": 97,
-    "review": 3721,
-    "rejected": 1684,
+    "eligible": 98,
+    "review": 3733,
+    "rejected": 1693,
     "errors": 5,
     "ready": 57,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCm6pbg_dXWOrTggt9zCECAQ",
-        "name": "부동산 경제학TV [랜드스타에셋]"
+        "channel_id": "UC4fd5rPxcnTnII5px0bo0xw",
+        "name": "땅수다"
       },
       {
-        "channel_id": "UComKM1pDZJX0BYst8sVdXyg",
-        "name": "밈먀"
+        "channel_id": "UCOb4-fnvddcLAquT0UfDESQ",
+        "name": "일요닷컴"
       }
     ]
   },
-  "queries_completed": 191,
-  "region_queries_completed": 35,
-  "region_channels": 3884,
-  "region_observed": 2123,
-  "channels_discovered": 14847,
-  "channels_observed": 5503,
-  "search_pages": 3939,
-  "search_results_read": 84302,
+  "queries_completed": 192,
+  "region_queries_completed": 36,
+  "region_channels": 4138,
+  "region_observed": 2264,
+  "channels_discovered": 14923,
+  "channels_observed": 5525,
+  "search_pages": 3979,
+  "search_results_read": 85071,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1368,
+      "observed": 1390,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1369,
+      "classified": 1391,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1314,
+      "observed": 1322,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1316,
+      "classified": 1324,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1308,
+      "observed": 1317,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1308,
+      "classified": 1317,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1190,13 +1190,13 @@
     },
     {
       "name": "용인",
-      "queries_completed": 35,
+      "queries_completed": 36,
       "queries_total": 39,
-      "channels": 3884,
-      "observed": 2123,
+      "channels": 4138,
+      "observed": 2264,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2125,
+      "classified": 2266,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1446,24 +1446,24 @@
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 152,
-          "results_read": 260,
-          "pages": 13
+          "status": "completed",
+          "channels": 197,
+          "results_read": 316,
+          "pages": 17
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 155,
+          "results_read": 399,
+          "pages": 20
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 160,
+          "results_read": 314,
+          "pages": 16
         },
         {
           "name": "필라테스",
