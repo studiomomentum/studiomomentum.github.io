@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:19:46.554917+00:00",
+  "updated_at": "2026-09-27T16:20:58.102881+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 관세사",
-    "강남 감정평가사"
+    "강남 감정평가사",
+    "강남 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24605,
-    "processed": 7883,
-    "pending": 16720,
-    "processing": 2,
+    "total": 24674,
+    "processed": 7903,
+    "pending": 16771,
+    "processing": 0,
     "eligible": 118,
-    "review": 5332,
-    "rejected": 2424,
+    "review": 5345,
+    "rejected": 2431,
     "errors": 6,
     "ready": 77,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC6zAXbgPxmKmKOVb0fXm7vA",
-        "name": "팀스완",
-        "query": "동탄 동물병원"
-      },
-      {
-        "channel_id": "UCXnnuSiNhCM6LpvrTvCibIA",
-        "name": "슬기로운데레사",
-        "query": "동탄 동물병원"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 353,
-  "region_queries_completed": 33,
-  "region_channels": 4300,
-  "region_observed": 1446,
-  "channels_discovered": 24604,
-  "channels_observed": 7877,
-  "search_pages": 7849,
-  "search_results_read": 159282,
+  "queries_completed": 354,
+  "region_queries_completed": 34,
+  "region_channels": 4438,
+  "region_observed": 1489,
+  "channels_discovered": 24673,
+  "channels_observed": 7897,
+  "search_pages": 7881,
+  "search_results_read": 159893,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3747,
+      "observed": 3767,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3749,
+      "classified": 3769,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1718,
+      "observed": 1719,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1720,
+      "classified": 1721,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2554,
+      "observed": 2555,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2556,
+      "classified": 2557,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1880,
+      "observed": 1883,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1880,
+      "classified": 1883,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1434,
+      "observed": 1435,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1435,
+      "classified": 1436,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 33,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 4300,
-      "observed": 1446,
+      "channels": 4438,
+      "observed": 1489,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1448,
+      "classified": 1491,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2634,24 +2623,24 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 114,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 216,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 5,
-          "results_read": 20,
-          "pages": 1
+          "channels": 87,
+          "results_read": 340,
+          "pages": 17
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 49,
+          "results_read": 138,
+          "pages": 7
         },
         {
           "name": "건축사사무소",
