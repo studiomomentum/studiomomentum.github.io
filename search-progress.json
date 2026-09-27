@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:15:58.046324+00:00",
+  "updated_at": "2026-09-27T22:17:02.450243+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14544,
-    "pending": 13392,
-    "processing": 2,
+    "processed": 14566,
+    "pending": 13372,
+    "processing": 0,
     "eligible": 163,
-    "review": 10175,
-    "rejected": 4175,
+    "review": 10188,
+    "rejected": 4184,
     "errors": 28,
     "ready": 117,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCEVXr0BKFizQkofsXvRlpOw",
-        "name": "김병민",
-        "query": "용인 의원"
-      },
-      {
-        "channel_id": "UCXda3-y9rYuVzkyWLCspkOA",
-        "name": "kisun kim",
-        "query": "용인 의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1704,
   "channels_discovered": 27937,
-  "channels_observed": 14516,
+  "channels_observed": 14538,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3918,
+      "observed": 3940,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3920,
+      "classified": 3942,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2668,
+      "observed": 2669,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2671,
+      "classified": 2672,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2587,
+      "observed": 2590,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2589,
+      "classified": 2592,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1940,
+      "observed": 1941,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1943,
+      "classified": 1944,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1929,
+      "observed": 1930,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1930,
+      "classified": 1931,
       "classification_errors": 1,
       "jobs": [
         {
