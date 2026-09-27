@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:59:18.938228+00:00",
+  "updated_at": "2026-09-27T17:00:21.117814+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 노무법인",
-    "서초 법무사"
+    "서초 변리사",
+    "서초 관세사"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 26365,
-    "processed": 8503,
-    "pending": 17860,
+    "total": 26376,
+    "processed": 8519,
+    "pending": 17855,
     "processing": 2,
     "eligible": 120,
-    "review": 5770,
-    "rejected": 2600,
+    "review": 5784,
+    "rejected": 2602,
     "errors": 10,
     "ready": 79,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCifawPG4aQSF8Sm8pvukx2w",
-        "name": "마음채널이정민",
-        "query": "동탄 심리상담센터"
+        "channel_id": "UCktEW_c57IZm4eUIcXBu9QQ",
+        "name": "양심중고차 이진영",
+        "query": "동탄 감정평가사"
       },
       {
-        "channel_id": "UCzwurctgyOBrHtwi2p94Y_A",
-        "name": "한마음복지관",
+        "channel_id": "UC_La205GU0WAKXxlKQexQxg",
+        "name": "샤인라이트",
         "query": "동탄 심리상담센터"
       }
     ]
   },
-  "queries_completed": 390,
-  "region_queries_completed": 30,
-  "region_channels": 3939,
-  "region_observed": 1388,
-  "channels_discovered": 26364,
-  "channels_observed": 8493,
-  "search_pages": 8814,
-  "search_results_read": 179189,
+  "queries_completed": 392,
+  "region_queries_completed": 32,
+  "region_channels": 3970,
+  "region_observed": 1399,
+  "channels_discovered": 26375,
+  "channels_observed": 8509,
+  "search_pages": 8838,
+  "search_results_read": 179609,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4363,
+      "observed": 4379,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4369,
+      "classified": 4385,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1777,
+      "observed": 1780,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1779,
+      "classified": 1782,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1687,
+      "observed": 1688,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1687,
+      "classified": 1688,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2604,
+      "observed": 2606,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2606,
+      "classified": 2608,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1999,
+      "observed": 2001,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1999,
+      "classified": 2001,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2170,
+      "observed": 2173,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2172,
+      "classified": 2175,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1528,
+      "observed": 1529,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1529,
+      "classified": 1530,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,13 +2685,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 30,
+      "queries_completed": 32,
       "queries_total": 40,
-      "channels": 3939,
-      "observed": 1388,
+      "channels": 3970,
+      "observed": 1399,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1389,
+      "classified": 1400,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2906,31 +2906,31 @@
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 62,
-          "results_read": 284,
-          "pages": 15
+          "status": "completed",
+          "channels": 84,
+          "results_read": 474,
+          "pages": 26
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 62,
-          "results_read": 258,
-          "pages": 13
+          "status": "completed",
+          "channels": 85,
+          "results_read": 428,
+          "pages": 23
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 24,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 5,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "감정평가사",
