@@ -2,37 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:03:26.041570+00:00",
+  "updated_at": "2026-09-27T13:04:27.313958+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "동탄 마취통증의학과",
-    "동탄 내과의원"
+    "동탄 비뇨기과",
+    "동탄 동물병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 7467,
-    "processed": 3822,
-    "pending": 3645,
-    "processing": 0,
+    "total": 7818,
+    "processed": 3860,
+    "pending": 3956,
+    "processing": 2,
     "eligible": 87,
-    "review": 2589,
-    "rejected": 1142,
+    "review": 2610,
+    "rejected": 1159,
     "errors": 4,
     "ready": 48,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCCXut6i26MbUhw2Wco2DYrw",
+        "name": "이윤정 산부인과"
+      },
+      {
+        "channel_id": "UCuxCRNyB6ToewSIHiei_nlA",
+        "name": "성형일타 이지영쌤"
+      }
+    ]
   },
-  "queries_completed": 62,
-  "region_queries_completed": 23,
-  "region_channels": 3009,
-  "region_observed": 816,
-  "channels_discovered": 7464,
-  "channels_observed": 3818,
-  "search_pages": 1047,
-  "search_results_read": 30488,
+  "queries_completed": 65,
+  "region_queries_completed": 26,
+  "region_channels": 3453,
+  "region_observed": 898,
+  "channels_discovered": 7815,
+  "channels_observed": 3856,
+  "search_pages": 1115,
+  "search_results_read": 31776,
   "query_errors": {},
   "regions": [
     {
@@ -40,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2608,
+      "observed": 2646,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2612,
+      "classified": 2650,
       "classification_errors": 4,
       "jobs": [
         {
@@ -323,13 +332,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 23,
+      "queries_completed": 26,
       "queries_total": 39,
-      "channels": 3009,
-      "observed": 816,
+      "channels": 3453,
+      "observed": 898,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 817,
+      "classified": 899,
       "classification_errors": 1,
       "jobs": [
         {
@@ -495,35 +504,35 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 155,
-          "results_read": 300,
-          "pages": 15
+          "status": "completed",
+          "channels": 228,
+          "results_read": 439,
+          "pages": 23
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 53,
-          "results_read": 80,
-          "pages": 4
+          "status": "completed",
+          "channels": 221,
+          "results_read": 499,
+          "pages": 26
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 364,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 66,
+          "results_read": 237,
+          "pages": 12
         },
         {
           "name": "동물병원",
-          "status": "pending",
+          "status": "running",
           "channels": 10,
           "results_read": 0,
           "pages": 0
