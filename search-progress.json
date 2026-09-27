@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:17:58.060470+00:00",
+  "updated_at": "2026-09-27T18:18:59.483488+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 9797,
-    "pending": 18139,
-    "processing": 2,
+    "processed": 9820,
+    "pending": 18117,
+    "processing": 1,
     "eligible": 128,
-    "review": 6725,
-    "rejected": 2928,
+    "review": 6736,
+    "rejected": 2940,
     "errors": 13,
     "ready": 86,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCYzseqB2FsNAW1pZqGol7rQ",
-        "name": "우리의 부동산",
-        "query": "오산 부동산중개"
-      },
-      {
-        "channel_id": "UCVy3_LiI8BmG4UVkwvnZpWw",
-        "name": "최우선부동산TV-전원주택 농가주택 토지매매",
+        "channel_id": "UCDmvuS_yxfb6JTcfN3otGTw",
+        "name": "최부자 부동산 연구소TV",
         "query": "오산 공인중개사"
       }
     ]
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1450,
   "channels_discovered": 27937,
-  "channels_observed": 9784,
+  "channels_observed": 9807,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -634,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2685,
+      "observed": 2708,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2690,
+      "classified": 2713,
       "classification_errors": 5,
       "jobs": [
         {
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1884,
+      "observed": 1890,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1886,
+      "classified": 1892,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2141,
+      "observed": 2143,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2142,
+      "classified": 2144,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1634,
+      "observed": 1635,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1636,
+      "classified": 1637,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1737,
+      "observed": 1738,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1740,
+      "classified": 1741,
       "classification_errors": 3,
       "jobs": [
         {
