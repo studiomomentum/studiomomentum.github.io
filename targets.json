@@ -2986,8 +2986,8 @@
     "channel_url": "https://www.youtube.com/channel/UCrEzFrQZR_zXp2K6Z5IRMDA",
     "region": "용인",
     "category": "medical",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 13:45:03",
     "views": "구독자 32600 / 최근 롱폼 10편 중앙값 1491.0회",
     "point": "용인 재활의학과 채널의 최근 롱폼 10편 중앙값 1491.0회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "55",
@@ -3723,16 +3723,16 @@
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2137,
-    "rejected_count": 201,
+    "review_count": 2143,
+    "rejected_count": 195,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 41,
+    "ready_count": 40,
     "status_counts": {
-      "REVIEW": 2137,
-      "REJECTED": 201,
+      "REVIEW": 2143,
+      "REJECTED": 195,
       "REGISTERED": 122,
       "DUPLICATE": 6,
       "ERROR": 2,
@@ -3740,12 +3740,12 @@
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 566,
-      "UNSCORED": 585,
-      "LOW": 505,
-      "HIGH": 690,
-      "VERY LOW": 124
+      "MEDIUM": 594,
+      "UNSCORED": 499,
+      "LOW": 533,
+      "HIGH": 709,
+      "VERY LOW": 135
     },
-    "updated_at": "2026-09-27T04:20:08.676885+00:00"
+    "updated_at": "2026-09-27T04:51:03.523655+00:00"
   }
 }
