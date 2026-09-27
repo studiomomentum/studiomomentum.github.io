@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:41:38.452010+00:00",
+  "updated_at": "2026-09-27T18:42:40.585534+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 10269,
-    "pending": 17669,
-    "processing": 0,
+    "processed": 10290,
+    "pending": 17647,
+    "processing": 1,
     "eligible": 131,
-    "review": 7039,
-    "rejected": 3082,
+    "review": 7057,
+    "rejected": 3085,
     "errors": 14,
     "ready": 88,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC6ItPzT1zBqk00_O888E9vA",
+        "name": "척온스 | 척추측만증 온라인 스쿨",
+        "query": "오산 재활의학과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1473,
   "channels_discovered": 27937,
-  "channels_observed": 10255,
+  "channels_observed": 10276,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 3156,
+      "observed": 3177,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3162,
+      "classified": 3183,
       "classification_errors": 6,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1998,
+      "observed": 2000,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2000,
+      "classified": 2002,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2744,
+      "observed": 2745,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2746,
+      "classified": 2747,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2207,
+      "observed": 2215,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2209,
+      "classified": 2217,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1658,
+      "observed": 1663,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1660,
+      "classified": 1665,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1774,
+      "observed": 1777,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1777,
+      "classified": 1780,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1703,
+      "observed": 1705,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1704,
+      "classified": 1706,
       "classification_errors": 1,
       "jobs": [
         {
