@@ -2,42 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:39:06.179928+00:00",
+  "updated_at": "2026-09-27T14:40:08.077107+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 법무법인",
-    "분당 법률사무소"
+    "분당 치과",
+    "분당 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 17787,
-    "processed": 6169,
-    "pending": 11617,
-    "processing": 1,
+    "total": 17814,
+    "processed": 6188,
+    "pending": 11624,
+    "processing": 2,
     "eligible": 105,
-    "review": 4161,
-    "rejected": 1897,
+    "review": 4176,
+    "rejected": 1901,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCp52tt3bAKsVao6iw4taseg",
-        "name": "oullim2010"
+        "channel_id": "UCEyiirimPS7c8LfXnBibFJQ",
+        "name": "온라인종합병원"
+      },
+      {
+        "channel_id": "UCEjvXxcHyNW0_w1wK5q9ZSg",
+        "name": "코코넛치과"
       }
     ]
   },
-  "queries_completed": 238,
-  "region_queries_completed": 4,
-  "region_channels": 612,
-  "region_observed": 460,
-  "channels_discovered": 17786,
-  "channels_observed": 6164,
-  "search_pages": 5044,
-  "search_results_read": 106799,
+  "queries_completed": 240,
+  "region_queries_completed": 6,
+  "region_channels": 711,
+  "region_observed": 522,
+  "channels_discovered": 17813,
+  "channels_observed": 6183,
+  "search_pages": 5076,
+  "search_results_read": 107390,
   "query_errors": {},
   "regions": [
     {
@@ -331,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2029,
+      "observed": 2048,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2030,
+      "classified": 2049,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1441,
+      "observed": 1444,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1443,
+      "classified": 1446,
       "classification_errors": 2,
       "jobs": [
         {
@@ -903,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1415,
+      "observed": 1418,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1415,
+      "classified": 1418,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1189,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2428,
+      "observed": 2430,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2430,
+      "classified": 2432,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1475,10 +1479,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1599,
+      "observed": 1600,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1599,
+      "classified": 1600,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1758,13 +1762,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 4,
+      "queries_completed": 6,
       "queries_total": 39,
-      "channels": 612,
-      "observed": 460,
+      "channels": 711,
+      "observed": 522,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 460,
+      "classified": 522,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1797,31 +1801,31 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 67,
-          "results_read": 214,
-          "pages": 11
+          "status": "completed",
+          "channels": 116,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 41,
-          "results_read": 159,
-          "pages": 8
+          "status": "completed",
+          "channels": 58,
+          "results_read": 219,
+          "pages": 12
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 82,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 14,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "한의원",
