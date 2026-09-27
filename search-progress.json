@@ -2,37 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:30:49.531969+00:00",
+  "updated_at": "2026-09-27T14:31:50.941926+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 노무사",
-    "화성 노무법인"
+    "화성 법무사",
+    "화성 변리사"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 17007,
-    "processed": 6030,
-    "pending": 10977,
-    "processing": 0,
+    "total": 17085,
+    "processed": 6051,
+    "pending": 11033,
+    "processing": 1,
     "eligible": 104,
-    "review": 4057,
-    "rejected": 1863,
+    "review": 4072,
+    "rejected": 1869,
     "errors": 5,
     "ready": 63,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC3Jlk833CQDszVUwB3QcUAA",
+        "name": "내 친구 김변 / 김웅변호사"
+      }
+    ]
   },
-  "queries_completed": 225,
-  "region_queries_completed": 30,
-  "region_channels": 4245,
-  "region_observed": 1373,
-  "channels_discovered": 17006,
-  "channels_observed": 6025,
-  "search_pages": 4743,
-  "search_results_read": 101160,
+  "queries_completed": 226,
+  "region_queries_completed": 31,
+  "region_channels": 4405,
+  "region_observed": 1409,
+  "channels_discovered": 17084,
+  "channels_observed": 6046,
+  "search_pages": 4779,
+  "search_results_read": 101856,
   "query_errors": {},
   "regions": [
     {
@@ -326,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1890,
+      "observed": 1911,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1891,
+      "classified": 1912,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1420,
+      "observed": 1424,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1422,
+      "classified": 1426,
       "classification_errors": 2,
       "jobs": [
         {
@@ -898,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1389,
+      "observed": 1393,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1389,
+      "classified": 1393,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1184,10 +1189,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2418,
+      "observed": 2419,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2420,
+      "classified": 2421,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1467,13 +1472,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 30,
+      "queries_completed": 31,
       "queries_total": 39,
-      "channels": 4245,
-      "observed": 1373,
+      "channels": 4405,
+      "observed": 1409,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1373,
+      "classified": 1409,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1681,10 +1686,10 @@
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 137,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 295,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "노무법인",
@@ -1695,17 +1700,17 @@
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 127,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 36,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "관세사",
