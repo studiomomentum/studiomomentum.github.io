@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:44:38.272296+00:00",
+  "updated_at": "2026-09-27T22:45:39.324634+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15098,
-    "pending": 12840,
-    "processing": 0,
+    "processed": 15122,
+    "pending": 12814,
+    "processing": 2,
     "eligible": 166,
-    "review": 10575,
-    "rejected": 4324,
+    "review": 10590,
+    "rejected": 4333,
     "errors": 30,
     "ready": 119,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCR-JTovFR1-A7ftesVRBtTA",
+        "name": "Study baromiter",
+        "query": "화성 세무회계"
+      },
+      {
+        "channel_id": "UChyJGMy4FTL5BPFwrFKRl9A",
+        "name": "글로벌아카데미",
+        "query": "화성 세무회계"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1747,
+  "region_observed": 1749,
   "channels_discovered": 27937,
-  "channels_observed": 15068,
+  "channels_observed": 15092,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2813,
+      "observed": 2837,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2817,
+      "classified": 2841,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2699,
+      "observed": 2700,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2701,
+      "classified": 2702,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1981,
+      "observed": 1982,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1984,
+      "classified": 1985,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2120,
+      "observed": 2122,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2125,
+      "classified": 2127,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1958,
+      "observed": 1960,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1959,
+      "classified": 1961,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1747,
+      "observed": 1749,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1748,
+      "classified": 1750,
       "classification_errors": 1,
       "jobs": [
         {
