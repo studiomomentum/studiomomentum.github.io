@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:35:02.173422+00:00",
+  "updated_at": "2026-09-27T21:36:04.184080+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13774,
-    "pending": 14164,
-    "processing": 0,
+    "processed": 13788,
+    "pending": 14148,
+    "processing": 2,
     "eligible": 154,
-    "review": 9616,
-    "rejected": 3973,
+    "review": 9628,
+    "rejected": 3975,
     "errors": 28,
     "ready": 109,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCM7elYzCE2qPqSdtevV243g",
+        "name": "로쇼 Losho",
+        "query": "용인 변호사"
+      },
+      {
+        "channel_id": "UCZztdw2iiCXK-R8seFrjFtA",
+        "name": "이슈모아",
+        "query": "용인 변호사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1634,
+  "region_observed": 1638,
   "channels_discovered": 27937,
-  "channels_observed": 13746,
+  "channels_observed": 13760,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3148,
+      "observed": 3162,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3150,
+      "classified": 3164,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2440,
+      "observed": 2443,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2442,
+      "classified": 2445,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1878,
+      "observed": 1879,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1881,
+      "classified": 1882,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1978,
+      "observed": 1980,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1983,
+      "classified": 1985,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1871,
+      "observed": 1872,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1872,
+      "classified": 1873,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1634,
+      "observed": 1638,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1635,
+      "classified": 1639,
       "classification_errors": 1,
       "jobs": [
         {
