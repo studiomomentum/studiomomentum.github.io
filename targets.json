@@ -2796,8 +2796,8 @@
     "channel_url": "https://www.youtube.com/channel/UC6Z8MWMAgCs25NoF36KVCTA",
     "region": "수원",
     "category": "edu",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 12:25:01",
     "views": "구독자 4220 / 최근 롱폼 10편 중앙값 3700.0회",
     "point": "수원 학원 채널의 최근 롱폼 10편 중앙값 3700.0회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "65",
@@ -3723,16 +3723,16 @@
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2129,
-    "rejected_count": 209,
+    "review_count": 2130,
+    "rejected_count": 208,
     "error_count": 2,
     "duplicate_count": 6,
     "registered_count": 122,
     "verified_count": 122,
-    "ready_count": 44,
+    "ready_count": 43,
     "status_counts": {
-      "REVIEW": 2129,
-      "REJECTED": 209,
+      "REVIEW": 2130,
+      "REJECTED": 208,
       "REGISTERED": 122,
       "DUPLICATE": 6,
       "ERROR": 2,
@@ -3740,12 +3740,12 @@
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 484,
-      "UNSCORED": 894,
-      "LOW": 405,
-      "HIGH": 588,
-      "VERY LOW": 99
+      "MEDIUM": 509,
+      "UNSCORED": 795,
+      "LOW": 437,
+      "HIGH": 621,
+      "VERY LOW": 108
     },
-    "updated_at": "2026-09-27T02:59:59.421681+00:00"
+    "updated_at": "2026-09-27T03:30:05.329609+00:00"
   }
 }
