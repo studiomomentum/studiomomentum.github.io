@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:43:31.219449+00:00",
+  "updated_at": "2026-09-27T16:44:39.390061+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 행정사",
-    "서초 행정사사무소"
+    "서초 행정사사무소",
+    "서초 피부과"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 25814,
-    "processed": 8267,
-    "pending": 17547,
+    "total": 25859,
+    "processed": 8283,
+    "pending": 17576,
     "processing": 0,
     "eligible": 120,
-    "review": 5608,
-    "rejected": 2529,
+    "review": 5617,
+    "rejected": 2536,
     "errors": 7,
     "ready": 79,
     "status": "running",
     "active": []
   },
-  "queries_completed": 375,
-  "region_queries_completed": 15,
-  "region_channels": 2490,
-  "region_observed": 940,
-  "channels_discovered": 25813,
-  "channels_observed": 8260,
-  "search_pages": 8436,
-  "search_results_read": 170288,
+  "queries_completed": 376,
+  "region_queries_completed": 16,
+  "region_channels": 2606,
+  "region_observed": 970,
+  "channels_discovered": 25858,
+  "channels_observed": 8276,
+  "search_pages": 8466,
+  "search_results_read": 170846,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4130,
+      "observed": 4146,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4133,
+      "classified": 4149,
       "classification_errors": 3,
       "jobs": [
         {
@@ -626,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1754,
+      "observed": 1756,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1756,
+      "classified": 1758,
       "classification_errors": 2,
       "jobs": [
         {
@@ -919,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1662,
+      "observed": 1664,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1662,
+      "classified": 1664,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1212,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2571,
+      "observed": 2572,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2573,
+      "classified": 2574,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1505,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1941,
+      "observed": 1945,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1941,
+      "classified": 1945,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1798,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2139,
+      "observed": 2141,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2141,
+      "classified": 2143,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1477,
+      "observed": 1479,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1478,
+      "classified": 1480,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2384,10 +2384,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1639,
+      "observed": 1640,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1641,
+      "classified": 1642,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2674,13 +2674,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 15,
+      "queries_completed": 16,
       "queries_total": 40,
-      "channels": 2490,
-      "observed": 940,
+      "channels": 2606,
+      "observed": 970,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 940,
+      "classified": 970,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2790,24 +2790,24 @@
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 133,
-          "results_read": 405,
-          "pages": 21
+          "status": "completed",
+          "channels": 156,
+          "results_read": 481,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 33,
-          "results_read": 193,
-          "pages": 10
+          "channels": 58,
+          "results_read": 484,
+          "pages": 25
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 12,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 103,
+          "results_read": 191,
+          "pages": 10
         },
         {
           "name": "성형외과",
