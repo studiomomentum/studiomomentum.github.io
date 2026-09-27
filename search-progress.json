@@ -1,13 +1,13 @@
 {
   "sweep_id": "full-20260927-429",
   "region": "",
-  "phase": "incomplete",
-  "updated_at": "2026-09-27T13:24:31.416982+00:00",
-  "run_id": "36322224559",
+  "phase": "parallel",
+  "updated_at": "2026-09-27T13:25:43.523398+00:00",
+  "run_id": "36322315094",
   "active_queries": [],
   "search_stage": {
-    "status": "incomplete",
-    "region": "평택"
+    "status": "starting",
+    "region": ""
   },
   "classification": {
     "total": 11573,
@@ -19,7 +19,7 @@
     "rejected": 1364,
     "errors": 4,
     "ready": 53,
-    "status": "incomplete",
+    "status": "starting",
     "active": []
   },
   "queries_completed": 119,
