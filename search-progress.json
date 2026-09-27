@@ -2,37 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:27:42.808477+00:00",
+  "updated_at": "2026-09-27T14:28:45.373281+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "화성 마취통증의학과",
-    "화성 내과의원"
+    "화성 내과의원",
+    "화성 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 16698,
-    "processed": 5962,
-    "pending": 10736,
-    "processing": 0,
-    "eligible": 103,
-    "review": 4009,
-    "rejected": 1844,
+    "total": 16777,
+    "processed": 5984,
+    "pending": 10791,
+    "processing": 2,
+    "eligible": 104,
+    "review": 4026,
+    "rejected": 1848,
     "errors": 5,
-    "ready": 62,
+    "ready": 63,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCksYYqQJKH1EakGu3wFmsbw",
+        "name": "이루니"
+      },
+      {
+        "channel_id": "UCfrDhdwghtjkMVGaHFGRs_w",
+        "name": "네오 사무용가구"
+      }
+    ]
   },
-  "queries_completed": 218,
-  "region_queries_completed": 23,
-  "region_channels": 3701,
-  "region_observed": 1252,
-  "channels_discovered": 16697,
-  "channels_observed": 5957,
-  "search_pages": 4629,
-  "search_results_read": 99073,
+  "queries_completed": 220,
+  "region_queries_completed": 25,
+  "region_channels": 3840,
+  "region_observed": 1278,
+  "channels_discovered": 16776,
+  "channels_observed": 5979,
+  "search_pages": 4667,
+  "search_results_read": 99786,
   "query_errors": {},
   "regions": [
     {
@@ -326,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1822,
+      "observed": 1844,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1823,
+      "classified": 1845,
       "classification_errors": 1,
       "jobs": [
         {
@@ -612,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1406,
+      "observed": 1409,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1408,
+      "classified": 1411,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1184,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2414,
+      "observed": 2415,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2416,
+      "classified": 2417,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1467,13 +1476,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 23,
+      "queries_completed": 25,
       "queries_total": 39,
-      "channels": 3701,
-      "observed": 1252,
+      "channels": 3840,
+      "observed": 1278,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1252,
+      "classified": 1278,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1639,31 +1648,31 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
+          "status": "completed",
           "channels": 124,
           "results_read": 216,
-          "pages": 11
+          "pages": 12
         },
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 58,
-          "results_read": 99,
-          "pages": 5
+          "channels": 223,
+          "results_read": 473,
+          "pages": 24
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 103,
+          "results_read": 159,
+          "pages": 9
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 2,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 19,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "동물병원",
