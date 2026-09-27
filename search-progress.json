@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:42:54.669535+00:00",
+  "updated_at": "2026-09-27T20:43:56.572821+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12696,
-    "pending": 15240,
+    "processed": 12718,
+    "pending": 15218,
     "processing": 2,
     "eligible": 150,
-    "review": 8819,
-    "rejected": 3701,
+    "review": 8840,
+    "rejected": 3702,
     "errors": 23,
     "ready": 105,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCGstlHk4uWsgcsMB9H1Stkg",
-        "name": "HiUSKOREA News",
+        "channel_id": "UCeHcw7LmjuSHzLWFJPisK6Q",
+        "name": "사강감리교회",
         "query": "평택 이비인후과"
       },
       {
-        "channel_id": "UCNIiW98XiVnSR7hDpURHg_A",
-        "name": "임재활재활의학과.",
+        "channel_id": "UCdkQ0nPA53E2hf0Du0DQgbg",
+        "name": "한가온TV",
         "query": "평택 재활의학과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1590,
+  "region_observed": 1591,
   "channels_discovered": 27937,
-  "channels_observed": 12673,
+  "channels_observed": 12695,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3558,
+      "observed": 3580,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3566,
+      "classified": 3588,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3013,
+      "observed": 3015,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3015,
+      "classified": 3017,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2492,
+      "observed": 2496,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2495,
+      "classified": 2499,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2383,
+      "observed": 2385,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2385,
+      "classified": 2387,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1926,
+      "observed": 1929,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1930,
+      "classified": 1933,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1834,
+      "observed": 1835,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1835,
+      "classified": 1836,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1590,
+      "observed": 1591,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1591,
+      "classified": 1592,
       "classification_errors": 1,
       "jobs": [
         {
