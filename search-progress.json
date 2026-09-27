@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:35:59.015689+00:00",
+  "updated_at": "2026-09-27T14:37:00.327889+00:00",
   "run_id": "36322315094",
   "active_queries": [
     "분당 세무사",
@@ -13,31 +13,35 @@
     "region": "분당"
   },
   "classification": {
-    "total": 17685,
-    "processed": 6119,
-    "pending": 11565,
-    "processing": 1,
+    "total": 17709,
+    "processed": 6134,
+    "pending": 11573,
+    "processing": 2,
     "eligible": 105,
-    "review": 4121,
-    "rejected": 1887,
+    "review": 4132,
+    "rejected": 1891,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxvhVwC6Tuu1RVcsRSkQ8Lw",
-        "name": "치의학박사 김인수"
+        "channel_id": "UCMaNRvL9qax5VccxMSKObCw",
+        "name": "인천고운미소"
+      },
+      {
+        "channel_id": "UC-Zp45bJw5SIc8Hvof82gwA",
+        "name": "winnerstideTV"
       }
     ]
   },
   "queries_completed": 234,
   "region_queries_completed": 0,
-  "region_channels": 255,
-  "region_observed": 250,
-  "channels_discovered": 17684,
-  "channels_observed": 6114,
-  "search_pages": 4926,
-  "search_results_read": 104569,
+  "region_channels": 340,
+  "region_observed": 298,
+  "channels_discovered": 17708,
+  "channels_observed": 6129,
+  "search_pages": 4964,
+  "search_results_read": 105324,
   "query_errors": {},
   "regions": [
     {
@@ -331,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1979,
+      "observed": 1994,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1980,
+      "classified": 1995,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1435,
+      "observed": 1438,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1437,
+      "classified": 1440,
       "classification_errors": 2,
       "jobs": [
         {
@@ -903,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1404,
+      "observed": 1406,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1404,
+      "classified": 1406,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1189,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2425,
+      "observed": 2426,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2427,
+      "classified": 2428,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1475,10 +1479,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1591,
+      "observed": 1594,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1591,
+      "classified": 1594,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1760,26 +1764,26 @@
       "name": "분당",
       "queries_completed": 0,
       "queries_total": 39,
-      "channels": 255,
-      "observed": 250,
+      "channels": 340,
+      "observed": 298,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 250,
+      "classified": 298,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
           "status": "running",
-          "channels": 20,
-          "results_read": 80,
-          "pages": 4
+          "channels": 111,
+          "results_read": 455,
+          "pages": 23
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 17,
-          "results_read": 80,
-          "pages": 4
+          "channels": 36,
+          "results_read": 460,
+          "pages": 23
         },
         {
           "name": "세무회계",
