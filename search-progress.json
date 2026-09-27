@@ -1,42 +1,47 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "오산",
+  "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:20:57.361006+00:00",
+  "updated_at": "2026-09-27T13:21:58.675406+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 필라테스"
+    "평택 세무사",
+    "평택 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "오산"
+    "region": "평택"
   },
   "classification": {
-    "total": 11285,
-    "processed": 4453,
-    "pending": 6831,
-    "processing": 1,
-    "eligible": 91,
-    "review": 3007,
-    "rejected": 1351,
+    "total": 11512,
+    "processed": 4486,
+    "pending": 7024,
+    "processing": 2,
+    "eligible": 92,
+    "review": 3032,
+    "rejected": 1358,
     "errors": 4,
-    "ready": 51,
+    "ready": 52,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCUGrKKlh8GJp6q-vemsP_Xg",
-        "name": "박영기TV"
+        "channel_id": "UCKlR-7Dd4tvEWYOu-h4RUkQ",
+        "name": "수원대학교 총학생회 Suwon-air"
+      },
+      {
+        "channel_id": "UCyKf89zymoo-th_XtWSkmlQ",
+        "name": "안성시의회"
       }
     ]
   },
-  "queries_completed": 116,
-  "region_queries_completed": 38,
-  "region_channels": 4169,
-  "region_observed": 1149,
-  "channels_discovered": 11282,
-  "channels_observed": 4449,
-  "search_pages": 2117,
-  "search_results_read": 50244,
+  "queries_completed": 119,
+  "region_queries_completed": 2,
+  "region_channels": 695,
+  "region_observed": 351,
+  "channels_discovered": 11509,
+  "channels_observed": 4482,
+  "search_pages": 2172,
+  "search_results_read": 51274,
   "query_errors": {},
   "regions": [
     {
@@ -44,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3239,
+      "observed": 3272,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3243,
+      "classified": 3276,
       "classification_errors": 4,
       "jobs": [
         {
@@ -330,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1092,
+      "observed": 1095,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1093,
+      "classified": 1096,
       "classification_errors": 1,
       "jobs": [
         {
@@ -613,13 +618,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 38,
+      "queries_completed": 39,
       "queries_total": 39,
-      "channels": 4169,
-      "observed": 1149,
+      "channels": 4182,
+      "observed": 1154,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1151,
+      "classified": 1156,
       "classification_errors": 2,
       "jobs": [
         {
@@ -890,37 +895,37 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 198,
-          "results_read": 459,
-          "pages": 23
+          "status": "completed",
+          "channels": 217,
+          "results_read": 497,
+          "pages": 26
         }
       ]
     },
     {
       "name": "평택",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 39,
-      "channels": 237,
-      "observed": 237,
+      "channels": 695,
+      "observed": 351,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 237,
+      "classified": 351,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 271,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 318,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "세무회계",
