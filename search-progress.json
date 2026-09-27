@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:53:15.254920+00:00",
+  "updated_at": "2026-09-27T22:54:16.473778+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15251,
-    "pending": 12686,
+    "processed": 15267,
+    "pending": 12670,
     "processing": 1,
     "eligible": 168,
-    "review": 10674,
-    "rejected": 4376,
+    "review": 10684,
+    "rejected": 4382,
     "errors": 30,
     "ready": 121,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCfrdY4cHJqUZEbZSZp-aF-Q",
-        "name": "판교팬칠칠이_아파트TV",
+        "channel_id": "UCd_8M1ReiYRGFIzHbFI7j9g",
+        "name": "윤변썰[법무법인 평안 윤정섭변호사]",
         "query": "화성 법무법인"
       }
     ]
@@ -33,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1753,
   "channels_discovered": 27937,
-  "channels_observed": 15221,
+  "channels_observed": 15237,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2966,
+      "observed": 2982,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2970,
+      "classified": 2986,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1801,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2702,
+      "observed": 2703,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2704,
+      "classified": 2705,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1985,
+      "observed": 1987,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1988,
+      "classified": 1990,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2132,
+      "observed": 2133,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2137,
+      "classified": 2138,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1965,
+      "observed": 1968,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1966,
+      "classified": 1969,
       "classification_errors": 1,
       "jobs": [
         {
