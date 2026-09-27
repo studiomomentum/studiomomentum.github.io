@@ -2,48 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:49:41.399020+00:00",
+  "updated_at": "2026-09-27T15:50:43.433626+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 변호사",
-    "강남 법무법인"
+    "강남 법무법인",
+    "강남 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 22763,
-    "processed": 7391,
-    "pending": 15370,
-    "processing": 2,
+    "total": 22832,
+    "processed": 7410,
+    "pending": 15421,
+    "processing": 1,
     "eligible": 115,
-    "review": 5004,
-    "rejected": 2263,
+    "review": 5020,
+    "rejected": 2266,
     "errors": 6,
     "ready": 74,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCjsKov3VpvZSgIbAvyiMP1Q",
-        "name": "TBC스마트교육원",
-        "query": "동탄 마취통증의학과"
-      },
-      {
-        "channel_id": "UCfGuFwIBD03CrS-SXYWu1kw",
-        "name": "우대하는 몸 (우대마취통증의학과)",
-        "query": "동탄 마취통증의학과"
+        "channel_id": "UCTS9jPQbnv3R_ErJDhJEzBw",
+        "name": "김수정",
+        "query": "동탄 재활의학과"
       }
     ]
   },
-  "queries_completed": 323,
-  "region_queries_completed": 3,
-  "region_channels": 706,
-  "region_observed": 389,
-  "channels_discovered": 22762,
-  "channels_observed": 7385,
-  "search_pages": 7053,
-  "search_results_read": 144315,
+  "queries_completed": 324,
+  "region_queries_completed": 4,
+  "region_channels": 848,
+  "region_observed": 440,
+  "channels_discovered": 22831,
+  "channels_observed": 7404,
+  "search_pages": 7081,
+  "search_results_read": 144854,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3255,
+      "observed": 3274,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3257,
+      "classified": 3276,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1662,
+      "observed": 1664,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1664,
+      "classified": 1666,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1595,
+      "observed": 1596,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1595,
+      "classified": 1596,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1516,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1820,
+      "observed": 1825,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1820,
+      "classified": 1825,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1804,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2070,
+      "observed": 2072,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2072,
+      "classified": 2074,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2097,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1363,
+      "observed": 1365,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1364,
+      "classified": 1366,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2387,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 3,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 706,
-      "observed": 389,
+      "channels": 848,
+      "observed": 440,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 389,
+      "classified": 440,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2424,24 +2419,24 @@
         },
         {
           "name": "변호사",
-          "status": "running",
+          "status": "completed",
           "channels": 197,
           "results_read": 591,
-          "pages": 30
+          "pages": 31
         },
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 41,
-          "results_read": 59,
-          "pages": 3
+          "channels": 154,
+          "results_read": 338,
+          "pages": 17
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 94,
+          "results_read": 260,
+          "pages": 13
         },
         {
           "name": "치과",
