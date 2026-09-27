@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:32:52.837769+00:00",
+  "updated_at": "2026-09-27T14:33:54.587008+00:00",
   "run_id": "36322315094",
   "active_queries": [
     "화성 감정평가사",
-    "화성 손해사정사"
+    "화성 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 17222,
-    "processed": 6072,
-    "pending": 11148,
+    "total": 17316,
+    "processed": 6092,
+    "pending": 11222,
     "processing": 2,
     "eligible": 104,
-    "review": 4084,
-    "rejected": 1878,
+    "review": 4100,
+    "rejected": 1882,
     "errors": 5,
     "ready": 63,
     "status": "running",
     "active": [
       {
-        "channel_id": "UChfcuaBEA0UcVp7D8OcBCPA",
-        "name": "인제대학교 백병원"
+        "channel_id": "UCi73UAv2ZLAnTWEKblOGA7g",
+        "name": "임플란트 요정현준"
       },
       {
-        "channel_id": "UCwcL0fGIYsWsXXFb2oD6W8A",
-        "name": "Sun Medical Center"
+        "channel_id": "UCOKaS8sntWSZT_U3GXsO14Q",
+        "name": "알짜배기"
       }
     ]
   },
-  "queries_completed": 229,
-  "region_queries_completed": 34,
-  "region_channels": 4638,
-  "region_observed": 1453,
-  "channels_discovered": 17221,
-  "channels_observed": 6067,
-  "search_pages": 4815,
-  "search_results_read": 102486,
+  "queries_completed": 230,
+  "region_queries_completed": 35,
+  "region_channels": 4831,
+  "region_observed": 1503,
+  "channels_discovered": 17315,
+  "channels_observed": 6087,
+  "search_pages": 4846,
+  "search_results_read": 103065,
   "query_errors": {},
   "regions": [
     {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1932,
+      "observed": 1952,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1933,
+      "classified": 1953,
       "classification_errors": 1,
       "jobs": [
         {
@@ -621,10 +621,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1430,
+      "observed": 1431,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1432,
+      "classified": 1433,
       "classification_errors": 2,
       "jobs": [
         {
@@ -907,10 +907,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1395,
+      "observed": 1399,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1395,
+      "classified": 1399,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1193,10 +1193,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2422,
+      "observed": 2424,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2424,
+      "classified": 2426,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1476,13 +1476,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 34,
+      "queries_completed": 35,
       "queries_total": 39,
-      "channels": 4638,
-      "observed": 1453,
+      "channels": 4831,
+      "observed": 1503,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1453,
+      "classified": 1503,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1726,23 +1726,23 @@
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 43,
-          "results_read": 60,
-          "pages": 3
+          "channels": 226,
+          "results_read": 377,
+          "pages": 19
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 27,
-          "results_read": 40,
-          "pages": 2
+          "status": "completed",
+          "channels": 50,
+          "results_read": 86,
+          "pages": 6
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 117,
+          "results_read": 216,
+          "pages": 11
         },
         {
           "name": "심리상담센터",
