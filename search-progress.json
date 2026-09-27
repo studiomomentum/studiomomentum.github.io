@@ -2,42 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:08:32.226826+00:00",
+  "updated_at": "2026-09-27T13:09:33.519963+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 세무회계",
-    "오산 변호사"
+    "오산 법률사무소",
+    "오산 치과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 9112,
-    "processed": 4001,
-    "pending": 5110,
-    "processing": 1,
+    "total": 9332,
+    "processed": 4044,
+    "pending": 5286,
+    "processing": 2,
     "eligible": 89,
-    "review": 2710,
-    "rejected": 1198,
+    "review": 2742,
+    "rejected": 1209,
     "errors": 4,
     "ready": 50,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCoWbCNhHYTWO40SbVdT2stQ",
-        "name": "대방열림"
+        "channel_id": "UCHbAlDk1ZVSmZojcbpNzzRA",
+        "name": "비움비건축"
+      },
+      {
+        "channel_id": "UCDGZRwAz2NHInm3cVRHRcSw",
+        "name": "전지적 건축사 시점"
       }
     ]
   },
-  "queries_completed": 80,
-  "region_queries_completed": 2,
-  "region_channels": 628,
-  "region_observed": 326,
-  "channels_discovered": 9109,
-  "channels_observed": 3997,
-  "search_pages": 1382,
-  "search_results_read": 36666,
+  "queries_completed": 83,
+  "region_queries_completed": 5,
+  "region_channels": 1006,
+  "region_observed": 424,
+  "channels_discovered": 9329,
+  "channels_observed": 4040,
+  "search_pages": 1450,
+  "search_results_read": 37925,
   "query_errors": {},
   "regions": [
     {
@@ -45,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2787,
+      "observed": 2830,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2791,
+      "classified": 2834,
       "classification_errors": 4,
       "jobs": [
         {
@@ -331,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1012,
+      "observed": 1021,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1013,
+      "classified": 1022,
       "classification_errors": 1,
       "jobs": [
         {
@@ -614,13 +618,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 2,
+      "queries_completed": 5,
       "queries_total": 39,
-      "channels": 628,
-      "observed": 326,
+      "channels": 1006,
+      "observed": 424,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 326,
+      "classified": 424,
       "classification_errors": 0,
       "jobs": [
         {
@@ -639,38 +643,38 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 79,
-          "results_read": 158,
-          "pages": 8
+          "status": "completed",
+          "channels": 279,
+          "results_read": 447,
+          "pages": 24
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 236,
+          "results_read": 550,
+          "pages": 29
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 31,
+          "results_read": 143,
+          "pages": 9
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 103,
+          "results_read": 177,
+          "pages": 9
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 30,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "치과의원",
