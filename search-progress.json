@@ -1,35 +1,47 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "",
+  "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-09-27T12:55:15.486911+00:00",
+  "updated_at": "2026-09-27T12:56:16.723272+00:00",
   "run_id": "36320569240",
-  "active_queries": [],
+  "active_queries": [
+    "동탄 세무회계",
+    "동탄 변호사"
+  ],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "동탄"
   },
   "classification": {
-    "total": 5386,
-    "processed": 3480,
-    "pending": 1906,
-    "processing": 0,
+    "total": 5712,
+    "processed": 3518,
+    "pending": 2192,
+    "processing": 2,
     "eligible": 85,
-    "review": 2347,
-    "rejected": 1048,
-    "errors": 0,
+    "review": 2371,
+    "rejected": 1059,
+    "errors": 3,
     "ready": 47,
-    "status": "starting",
-    "active": []
+    "status": "running",
+    "active": [
+      {
+        "channel_id": "UC3cLIyknY7CEbJUiBslUcMw",
+        "name": "교통사고는 한방병원"
+      },
+      {
+        "channel_id": "UCBRSUbWMq9hs0Jpt7mfyZPA",
+        "name": "아름다운목소리"
+      }
+    ]
   },
-  "queries_completed": 39,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
-  "channels_discovered": 5381,
-  "channels_observed": 3480,
-  "search_pages": 471,
-  "search_results_read": 18354,
+  "queries_completed": 41,
+  "region_queries_completed": 2,
+  "region_channels": 755,
+  "region_observed": 385,
+  "channels_discovered": 5708,
+  "channels_observed": 3515,
+  "search_pages": 539,
+  "search_results_read": 19661,
   "query_errors": {},
   "regions": [
     {
@@ -37,11 +49,11 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2270,
+      "observed": 2305,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2270,
-      "classification_errors": 0,
+      "classified": 2308,
+      "classification_errors": 3,
       "jobs": [
         {
           "name": "세무사",
@@ -320,42 +332,42 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 39,
-      "channels": 267,
-      "observed": 267,
+      "channels": 755,
+      "observed": 385,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 267,
+      "classified": 385,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 229,
+          "results_read": 499,
+          "pages": 26
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 309,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 104,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 89,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "법무법인",
@@ -2042,8 +2054,8 @@
       "observed": 237,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 237,
-      "classification_errors": 0,
+      "classified": 238,
+      "classification_errors": 1,
       "jobs": [
         {
           "name": "세무사",
