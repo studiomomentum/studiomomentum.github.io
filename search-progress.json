@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:04:20.361349+00:00",
+  "updated_at": "2026-09-27T15:05:21.735817+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "분당 마취통증의학과",
-    "분당 내과의원"
+    "분당 산부인과",
+    "분당 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 18852,
-    "processed": 6625,
-    "pending": 12225,
+    "total": 18875,
+    "processed": 6645,
+    "pending": 12228,
     "processing": 2,
     "eligible": 108,
-    "review": 4485,
-    "rejected": 2026,
+    "review": 4500,
+    "rejected": 2031,
     "errors": 5,
     "ready": 67,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCYR3l8kV2Bhn9zBCQITOxoA",
-        "name": "제이케이앤비 JKNV®",
+        "channel_id": "UCN1XNElE0CWfVeTAChR694g",
+        "name": "스타부동산 TV",
         "query": "동탄 공인중개사"
       },
       {
-        "channel_id": "UCyBasF9bs6pM7G1fxKluIMA",
-        "name": "더푸른교회",
+        "channel_id": "UCZCiOVgBEb7IHdSOjQrsmmw",
+        "name": "후스파파의 부동산 상식사전",
         "query": "동탄 공인중개사"
       }
     ]
   },
-  "queries_completed": 263,
-  "region_queries_completed": 23,
-  "region_channels": 2377,
-  "region_observed": 1288,
-  "channels_discovered": 18851,
-  "channels_observed": 6620,
-  "search_pages": 5710,
-  "search_results_read": 119375,
+  "queries_completed": 265,
+  "region_queries_completed": 25,
+  "region_channels": 2467,
+  "region_observed": 1341,
+  "channels_discovered": 18874,
+  "channels_observed": 6640,
+  "search_pages": 5742,
+  "search_results_read": 119962,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2490,
+      "observed": 2510,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2491,
+      "classified": 2511,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1535,
+      "observed": 1538,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1537,
+      "classified": 1540,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1491,
+      "observed": 1495,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1491,
+      "classified": 1495,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2483,
+      "observed": 2486,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2485,
+      "classified": 2488,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1690,
+      "observed": 1693,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1690,
+      "classified": 1693,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,13 +1806,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 23,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 2377,
-      "observed": 1288,
+      "channels": 2467,
+      "observed": 1341,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1290,
+      "classified": 1343,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1978,31 +1978,31 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 138,
-          "results_read": 459,
-          "pages": 23
+          "status": "completed",
+          "channels": 154,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 77,
-          "results_read": 376,
-          "pages": 19
+          "status": "completed",
+          "channels": 100,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 102,
+          "results_read": 259,
+          "pages": 13
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 31,
+          "results_read": 177,
+          "pages": 9
         },
         {
           "name": "동물병원",
