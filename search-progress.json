@@ -2,42 +2,42 @@
   "sweep_id": "full-20260927-429",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-09-27T14:45:17.105504+00:00",
+  "updated_at": "2026-09-27T14:46:18.449672+00:00",
   "run_id": "36322315094",
   "active_queries": [
-    "분당 어학원",
-    "분당 공인중개사"
+    "분당 공인중개사",
+    "분당 부동산중개"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 18018,
-    "processed": 6299,
-    "pending": 11718,
+    "total": 18044,
+    "processed": 6317,
+    "pending": 11726,
     "processing": 1,
     "eligible": 105,
-    "review": 4241,
-    "rejected": 1947,
+    "review": 4255,
+    "rejected": 1951,
     "errors": 5,
     "ready": 64,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCBSmng-ExBNMqqhw0o40-Uw",
-        "name": "피부명의 하늘마음한의원"
+        "channel_id": "UC_51JdOtmHpcT0qDiXgetpw",
+        "name": "유림일공"
       }
     ]
   },
-  "queries_completed": 246,
-  "region_queries_completed": 12,
-  "region_channels": 1272,
-  "region_observed": 793,
-  "channels_discovered": 18017,
-  "channels_observed": 6294,
-  "search_pages": 5242,
-  "search_results_read": 110524,
+  "queries_completed": 247,
+  "region_queries_completed": 13,
+  "region_channels": 1362,
+  "region_observed": 839,
+  "channels_discovered": 18043,
+  "channels_observed": 6312,
+  "search_pages": 5278,
+  "search_results_read": 111217,
   "query_errors": {},
   "regions": [
     {
@@ -331,10 +331,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 2159,
+      "observed": 2177,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2160,
+      "classified": 2178,
       "classification_errors": 1,
       "jobs": [
         {
@@ -617,10 +617,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4182,
-      "observed": 1466,
+      "observed": 1471,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1468,
+      "classified": 1473,
       "classification_errors": 2,
       "jobs": [
         {
@@ -903,10 +903,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4618,
-      "observed": 1440,
+      "observed": 1443,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1440,
+      "classified": 1443,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1189,10 +1189,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4348,
-      "observed": 2437,
+      "observed": 2441,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2439,
+      "classified": 2443,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1475,10 +1475,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 5393,
-      "observed": 1621,
+      "observed": 1625,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1621,
+      "classified": 1625,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1758,13 +1758,13 @@
     },
     {
       "name": "분당",
-      "queries_completed": 12,
+      "queries_completed": 13,
       "queries_total": 39,
-      "channels": 1272,
-      "observed": 793,
+      "channels": 1362,
+      "observed": 839,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 794,
+      "classified": 840,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1853,24 +1853,24 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 60,
-          "results_read": 259,
-          "pages": 13
+          "status": "completed",
+          "channels": 91,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 21,
-          "results_read": 78,
-          "pages": 4
+          "channels": 69,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 9,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 46,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "행정사",
