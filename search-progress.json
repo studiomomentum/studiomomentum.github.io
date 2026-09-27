@@ -2,48 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:18:37.357367+00:00",
+  "updated_at": "2026-09-27T16:19:46.554917+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 변리사",
-    "강남 관세사"
+    "강남 관세사",
+    "강남 감정평가사"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 24538,
-    "processed": 7865,
-    "pending": 16671,
+    "total": 24605,
+    "processed": 7883,
+    "pending": 16720,
     "processing": 2,
     "eligible": 118,
-    "review": 5319,
-    "rejected": 2419,
+    "review": 5332,
+    "rejected": 2424,
     "errors": 6,
     "ready": 77,
     "status": "running",
     "active": [
       {
-        "channel_id": "UChdJwk6ZulhE4ZzWHX4jF8Q",
-        "name": "모라동물병원",
+        "channel_id": "UC6zAXbgPxmKmKOVb0fXm7vA",
+        "name": "팀스완",
         "query": "동탄 동물병원"
       },
       {
-        "channel_id": "UC8s4oR9Tc9AxHWkFUp2LT2A",
-        "name": "플랫샵",
+        "channel_id": "UCXnnuSiNhCM6LpvrTvCibIA",
+        "name": "슬기로운데레사",
         "query": "동탄 동물병원"
       }
     ]
   },
-  "queries_completed": 352,
-  "region_queries_completed": 32,
-  "region_channels": 4163,
-  "region_observed": 1411,
-  "channels_discovered": 24537,
-  "channels_observed": 7859,
-  "search_pages": 7817,
-  "search_results_read": 158668,
+  "queries_completed": 353,
+  "region_queries_completed": 33,
+  "region_channels": 4300,
+  "region_observed": 1446,
+  "channels_discovered": 24604,
+  "channels_observed": 7877,
+  "search_pages": 7849,
+  "search_results_read": 159282,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +344,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3729,
+      "observed": 3747,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3731,
+      "classified": 3749,
       "classification_errors": 2,
       "jobs": [
         {
@@ -637,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1717,
+      "observed": 1718,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1719,
+      "classified": 1720,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1632,
+      "observed": 1635,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1632,
+      "classified": 1635,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1516,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1878,
+      "observed": 1880,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1878,
+      "classified": 1880,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1809,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2117,
+      "observed": 2118,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2119,
+      "classified": 2120,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2102,10 +2102,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1432,
+      "observed": 1434,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1433,
+      "classified": 1435,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,13 +2392,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 32,
+      "queries_completed": 33,
       "queries_total": 40,
-      "channels": 4163,
-      "observed": 1411,
+      "channels": 4300,
+      "observed": 1446,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1413,
+      "classified": 1448,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2627,24 +2627,24 @@
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 53,
-          "results_read": 217,
-          "pages": 11
+          "status": "completed",
+          "channels": 173,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "관세사",
           "status": "running",
-          "channels": 10,
-          "results_read": 20,
-          "pages": 1
+          "channels": 114,
+          "results_read": 340,
+          "pages": 17
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 3,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 5,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "손해사정사",
