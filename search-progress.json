@@ -2,43 +2,48 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:41:08.066700+00:00",
+  "updated_at": "2026-09-27T17:42:09.861839+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "송파 의원",
-    "송파 노무사"
+    "송파 노무사",
+    "송파 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 27649,
-    "processed": 9114,
-    "pending": 18534,
-    "processing": 1,
+    "total": 27657,
+    "processed": 9127,
+    "pending": 18528,
+    "processing": 2,
     "eligible": 121,
-    "review": 6228,
-    "rejected": 2751,
+    "review": 6240,
+    "rejected": 2752,
     "errors": 11,
     "ready": 80,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCUCSAJq6cBljLC3bYjUIQSw",
-        "name": "복기왕TV",
-        "query": "오산 세무회계"
+        "channel_id": "UC4Obp-W4BO6pzZ6F6MXyQHw",
+        "name": "한종술변호사",
+        "query": "오산 변호사"
+      },
+      {
+        "channel_id": "UCl7ZwQhWBb8LEzbcpGmVMkA",
+        "name": "천안알콜아저씨",
+        "query": "오산 변호사"
       }
     ]
   },
-  "queries_completed": 428,
-  "region_queries_completed": 28,
-  "region_channels": 3298,
-  "region_observed": 1123,
-  "channels_discovered": 27648,
-  "channels_observed": 9103,
-  "search_pages": 9811,
-  "search_results_read": 197794,
+  "queries_completed": 429,
+  "region_queries_completed": 29,
+  "region_channels": 3337,
+  "region_observed": 1138,
+  "channels_discovered": 27656,
+  "channels_observed": 9116,
+  "search_pages": 9830,
+  "search_results_read": 198151,
   "query_errors": {},
   "regions": [
     {
@@ -632,10 +637,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2004,
+      "observed": 2017,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2007,
+      "classified": 2020,
       "classification_errors": 3,
       "jobs": [
         {
@@ -925,10 +930,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1757,
+      "observed": 1763,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1758,
+      "classified": 1764,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1218,10 +1223,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2636,
+      "observed": 2637,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2638,
+      "classified": 2639,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1511,10 +1516,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2070,
+      "observed": 2072,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2070,
+      "classified": 2072,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2973,13 +2978,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 28,
+      "queries_completed": 29,
       "queries_total": 40,
-      "channels": 3298,
-      "observed": 1123,
+      "channels": 3337,
+      "observed": 1138,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1124,
+      "classified": 1139,
       "classification_errors": 1,
       "jobs": [
         {
@@ -3180,24 +3185,24 @@
         },
         {
           "name": "의원",
-          "status": "running",
+          "status": "completed",
           "channels": 100,
           "results_read": 258,
-          "pages": 13
+          "pages": 14
         },
         {
           "name": "노무사",
           "status": "running",
-          "channels": 60,
-          "results_read": 247,
-          "pages": 13
+          "channels": 101,
+          "results_read": 447,
+          "pages": 23
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 27,
+          "results_read": 157,
+          "pages": 8
         },
         {
           "name": "법무사",
