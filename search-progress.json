@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:49:51.220102+00:00",
+  "updated_at": "2026-09-27T20:50:52.418143+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 12852,
-    "pending": 15086,
-    "processing": 0,
+    "processed": 12879,
+    "pending": 15058,
+    "processing": 1,
     "eligible": 150,
-    "review": 8948,
-    "rejected": 3728,
+    "review": 8968,
+    "rejected": 3735,
     "errors": 23,
     "ready": 105,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCZNLabppQ2SJt1k9mew5HdQ",
+        "name": "김지명",
+        "query": "평택 내과의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1598,
+  "region_observed": 1599,
   "channels_discovered": 27937,
-  "channels_observed": 12829,
+  "channels_observed": 12856,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3714,
+      "observed": 3741,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3722,
+      "classified": 3749,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3029,
+      "observed": 3034,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3031,
+      "classified": 3036,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2510,
+      "observed": 2512,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2513,
+      "classified": 2515,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1937,
+      "observed": 1938,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1941,
+      "classified": 1942,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1598,
+      "observed": 1599,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1599,
+      "classified": 1600,
       "classification_errors": 1,
       "jobs": [
         {
