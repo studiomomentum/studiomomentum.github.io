@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T22:20:05.982394+00:00",
+  "updated_at": "2026-09-27T22:21:07.580093+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 14626,
-    "pending": 13310,
+    "processed": 14646,
+    "pending": 13290,
     "processing": 2,
-    "eligible": 164,
-    "review": 10232,
-    "rejected": 4199,
+    "eligible": 165,
+    "review": 10246,
+    "rejected": 4204,
     "errors": 28,
-    "ready": 117,
+    "ready": 118,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCXEu8xyS1u7POLvhhxq0fTA",
-        "name": "김정호TV",
+        "channel_id": "UCbb_Ue9FEjRYgz9UXtpnejQ",
+        "name": "콜라보뉴스TV",
         "query": "용인 변리사"
       },
       {
-        "channel_id": "UCkLb9uFSmxR6DZG5dZn8tNQ",
-        "name": "천연스토리",
+        "channel_id": "UC555jFF87WGM2PbaWukQBGQ",
+        "name": "INNODESIGN",
         "query": "용인 변리사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1714,
+  "region_observed": 1716,
   "channels_discovered": 27937,
-  "channels_observed": 14598,
+  "channels_observed": 14618,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4000,
+      "observed": 4020,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 4002,
+      "classified": 4022,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2671,
+      "observed": 2673,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2674,
+      "classified": 2676,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2606,
+      "observed": 2615,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2608,
+      "classified": 2617,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1947,
+      "observed": 1949,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1950,
+      "classified": 1952,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2083,
+      "observed": 2086,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2088,
+      "classified": 2091,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1936,
+      "observed": 1938,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1937,
+      "classified": 1939,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1714,
+      "observed": 1716,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1715,
+      "classified": 1717,
       "classification_errors": 1,
       "jobs": [
         {
