@@ -2,37 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:06:59.124348+00:00",
+  "updated_at": "2026-09-27T16:08:07.822615+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "강남 정형외과",
-    "강남 이비인후과"
+    "강남 이비인후과",
+    "강남 재활의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 23994,
-    "processed": 7675,
-    "pending": 16319,
+    "total": 24048,
+    "processed": 7695,
+    "pending": 16353,
     "processing": 0,
     "eligible": 118,
-    "review": 5198,
-    "rejected": 2350,
+    "review": 5211,
+    "rejected": 2357,
     "errors": 6,
     "ready": 77,
     "status": "running",
     "active": []
   },
-  "queries_completed": 340,
-  "region_queries_completed": 20,
-  "region_channels": 3034,
-  "region_observed": 1052,
-  "channels_discovered": 23993,
-  "channels_observed": 7669,
-  "search_pages": 7513,
-  "search_results_read": 152969,
+  "queries_completed": 341,
+  "region_queries_completed": 21,
+  "region_channels": 3180,
+  "region_observed": 1103,
+  "channels_discovered": 24047,
+  "channels_observed": 7689,
+  "search_pages": 7543,
+  "search_results_read": 153536,
   "query_errors": {},
   "regions": [
     {
@@ -333,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3539,
+      "observed": 3559,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3541,
+      "classified": 3561,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2091,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1414,
+      "observed": 1416,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1415,
+      "classified": 1417,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 20,
+      "queries_completed": 21,
       "queries_total": 40,
-      "channels": 3034,
-      "observed": 1052,
+      "channels": 3180,
+      "observed": 1103,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1054,
+      "classified": 1105,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2532,24 +2532,24 @@
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 122,
-          "results_read": 256,
-          "pages": 13
+          "status": "completed",
+          "channels": 186,
+          "results_read": 484,
+          "pages": 26
         },
         {
           "name": "이비인후과",
           "status": "running",
-          "channels": 45,
-          "results_read": 98,
-          "pages": 5
+          "channels": 165,
+          "results_read": 397,
+          "pages": 20
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 10,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "마취통증의학과",
