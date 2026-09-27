@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T20:57:00.287128+00:00",
+  "updated_at": "2026-09-27T20:58:01.345814+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13011,
-    "pending": 14926,
-    "processing": 1,
+    "processed": 13032,
+    "pending": 14904,
+    "processing": 2,
     "eligible": 150,
-    "review": 9066,
-    "rejected": 3769,
+    "review": 9077,
+    "rejected": 3779,
     "errors": 23,
     "ready": 105,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCFMhMQTWqBx196lOuD4yLMg",
-        "name": "LG재단",
-        "query": "평택 동물병원"
+        "channel_id": "UCDbiqUTDEqzGq9t-HWsSY-A",
+        "name": "뉴스앤조이",
+        "query": "평택 노무사"
+      },
+      {
+        "channel_id": "UC-UhycTuclqjdfwIuvQ_3FQ",
+        "name": "효원로299",
+        "query": "평택 노무사"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1605,
   "channels_discovered": 27937,
-  "channels_observed": 12988,
+  "channels_observed": 13009,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 3873,
+      "observed": 3894,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 3881,
+      "classified": 3902,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2525,
+      "observed": 2529,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2528,
+      "classified": 2532,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1837,
+      "observed": 1839,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1840,
+      "classified": 1842,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1945,
+      "observed": 1946,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1949,
+      "classified": 1950,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1845,
+      "observed": 1846,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1846,
+      "classified": 1847,
       "classification_errors": 1,
       "jobs": [
         {
