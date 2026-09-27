@@ -2,48 +2,37 @@
   "sweep_id": "full-20260927-429",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-09-27T16:34:42.654836+00:00",
+  "updated_at": "2026-09-27T16:35:44.857482+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "서초 치과",
-    "서초 치과의원"
+    "서초 한의원",
+    "서초 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 25295,
-    "processed": 8127,
-    "pending": 17166,
-    "processing": 2,
+    "total": 25345,
+    "processed": 8141,
+    "pending": 17204,
+    "processing": 0,
     "eligible": 120,
-    "review": 5503,
-    "rejected": 2495,
+    "review": 5515,
+    "rejected": 2497,
     "errors": 6,
     "ready": 79,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCBsjscyu5h_FQEOklI919xA",
-        "name": "화성맨 전성균",
-        "query": "동탄 의원"
-      },
-      {
-        "channel_id": "UCz3Cg0Wu8_3rhFYeG5lXiYg",
-        "name": "이탄희TV",
-        "query": "동탄 의원"
-      }
-    ]
+    "active": []
   },
-  "queries_completed": 366,
-  "region_queries_completed": 6,
-  "region_channels": 1304,
-  "region_observed": 624,
-  "channels_discovered": 25294,
-  "channels_observed": 8121,
-  "search_pages": 8224,
-  "search_results_read": 166363,
+  "queries_completed": 368,
+  "region_queries_completed": 8,
+  "region_channels": 1443,
+  "region_observed": 669,
+  "channels_discovered": 25344,
+  "channels_observed": 8135,
+  "search_pages": 8248,
+  "search_results_read": 166787,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 3991,
+      "observed": 4005,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3993,
+      "classified": 4007,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2565,
+      "observed": 2566,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2567,
+      "classified": 2568,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1916,
+      "observed": 1918,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1916,
+      "classified": 1918,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2102,10 +2091,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1465,
+      "observed": 1466,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1466,
+      "classified": 1467,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,13 +2674,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 6,
+      "queries_completed": 8,
       "queries_total": 40,
-      "channels": 1304,
-      "observed": 624,
+      "channels": 1443,
+      "observed": 669,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 624,
+      "classified": 669,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2738,31 +2727,31 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 191,
-          "results_read": 476,
-          "pages": 24
+          "status": "completed",
+          "channels": 196,
+          "results_read": 503,
+          "pages": 27
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 172,
-          "results_read": 397,
-          "pages": 20
+          "status": "completed",
+          "channels": 199,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 5,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 105,
+          "results_read": 179,
+          "pages": 9
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 33,
+          "results_read": 119,
+          "pages": 6
         },
         {
           "name": "학원",
