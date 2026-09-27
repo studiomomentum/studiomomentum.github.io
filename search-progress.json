@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T18:25:34.463841+00:00",
+  "updated_at": "2026-09-27T18:26:36.059010+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 9958,
-    "pending": 17979,
-    "processing": 1,
+    "processed": 9979,
+    "pending": 17957,
+    "processing": 2,
     "eligible": 129,
-    "review": 6821,
-    "rejected": 2992,
+    "review": 6831,
+    "rejected": 3003,
     "errors": 13,
     "ready": 86,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCVGjvxjJv3WRQi4hu_f-dMA",
-        "name": "가다TV - 건설 일용직 온라인 인력사무소",
+        "channel_id": "UCmhnSHU5zSj_76NvDtigwGg",
+        "name": "천리포수목원",
+        "query": "오산 행정사"
+      },
+      {
+        "channel_id": "UCSgkO2qcl673uPQI_k0Ixug",
+        "name": "에이치케이푸드 HK Food",
         "query": "오산 행정사사무소"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1455,
   "channels_discovered": 27937,
-  "channels_observed": 9945,
+  "channels_observed": 9966,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 2846,
+      "observed": 2867,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2851,
+      "classified": 2872,
       "classification_errors": 5,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1927,
+      "observed": 1931,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1929,
+      "classified": 1933,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2721,
+      "observed": 2724,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2723,
+      "classified": 2726,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2167,
+      "observed": 2172,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2168,
+      "classified": 2173,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2240,
+      "observed": 2242,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2242,
+      "classified": 2244,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1643,
+      "observed": 1645,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1645,
+      "classified": 1647,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1745,
+      "observed": 1747,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1748,
+      "classified": 1750,
       "classification_errors": 3,
       "jobs": [
         {
