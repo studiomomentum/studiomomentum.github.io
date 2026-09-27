@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T17:11:36.987887+00:00",
+  "updated_at": "2026-09-27T17:12:38.970443+00:00",
   "run_id": "36327598909",
   "active_queries": [
     "송파 세무회계",
@@ -13,37 +13,26 @@
     "region": "송파"
   },
   "classification": {
-    "total": 26728,
-    "processed": 8683,
-    "pending": 18043,
-    "processing": 2,
+    "total": 26768,
+    "processed": 8699,
+    "pending": 18069,
+    "processing": 0,
     "eligible": 120,
-    "review": 5917,
-    "rejected": 2633,
+    "review": 5929,
+    "rejected": 2637,
     "errors": 10,
     "ready": 79,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCi2T8xh5CFTRPkgDe4LMzUA",
-        "name": "GOODTV",
-        "query": "동탄 심리상담센터"
-      },
-      {
-        "channel_id": "UClyj8OyDo1Wbr57sMMMgoAg",
-        "name": "공터영어",
-        "query": "동탄 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 402,
   "region_queries_completed": 2,
-  "region_channels": 505,
-  "region_observed": 370,
-  "channels_discovered": 26727,
-  "channels_observed": 8673,
-  "search_pages": 9113,
-  "search_results_read": 184810,
+  "region_channels": 607,
+  "region_observed": 400,
+  "channels_discovered": 26767,
+  "channels_observed": 8689,
+  "search_pages": 9139,
+  "search_results_read": 185313,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +333,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4543,
+      "observed": 4559,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4549,
+      "classified": 4565,
       "classification_errors": 6,
       "jobs": [
         {
@@ -637,10 +626,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1791,
+      "observed": 1793,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1793,
+      "classified": 1795,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +919,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1698,
+      "observed": 1699,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1698,
+      "classified": 1699,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1212,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2612,
+      "observed": 2614,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2614,
+      "classified": 2616,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1505,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2022,
+      "observed": 2025,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2022,
+      "classified": 2025,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1798,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2183,
+      "observed": 2185,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2185,
+      "classified": 2187,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2980,11 +2969,11 @@
       "name": "송파",
       "queries_completed": 2,
       "queries_total": 40,
-      "channels": 505,
-      "observed": 370,
+      "channels": 607,
+      "observed": 400,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 370,
+      "classified": 400,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3004,16 +2993,16 @@
         {
           "name": "세무회계",
           "status": "running",
-          "channels": 62,
-          "results_read": 134,
-          "pages": 7
+          "channels": 119,
+          "results_read": 389,
+          "pages": 20
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 41,
-          "results_read": 139,
-          "pages": 7
+          "channels": 121,
+          "results_read": 387,
+          "pages": 20
         },
         {
           "name": "법무법인",
