@@ -2815,8 +2815,8 @@
     "channel_url": "https://www.youtube.com/channel/UCOP4_8cxeXPrMuug6JDP4NQ",
     "region": "서초",
     "category": "legal",
-    "status": "READY",
-    "sent_at": "",
+    "status": "SENT",
+    "sent_at": "2026-09-27 10:34:59",
     "views": "구독자 1740 / 최근 롱폼 10편 중앙값 392.5회",
     "point": "서초 변호사 채널의 최근 롱폼 10편 중앙값 392.5회. 조회수 개선을 위한 기획 검토 제안",
     "prospect_score": "100",
@@ -3700,33 +3700,52 @@
     "token": "b69bde98",
     "is_priority": false
   },
+  "cfddf3a3": {
+    "no": "205",
+    "company": "스마트 상속 전문 TV",
+    "rep": "대표님",
+    "email": "info@lawts.net",
+    "channel_url": "https://www.youtube.com/channel/UCmgJ_ttvZIG6R9HlBAbg00A",
+    "region": "수원",
+    "category": "legal",
+    "status": "READY",
+    "sent_at": "",
+    "views": "구독자 12600 / 최근 롱폼 10편 중앙값 4111.5회",
+    "point": "수원 법무법인 채널의 최근 롱폼 10편 중앙값 4111.5회. 조회수 개선을 위한 기획 검토 제안",
+    "prospect_score": "65",
+    "prospect_grade": "MEDIUM",
+    "score_version": "searcher-v1",
+    "score_snapshot": "{\"score_version\": \"searcher-v1\", \"score_as_of\": \"2026-09-27T01:41:18.750348+00:00\", \"prospect_score\": 65, \"priority_grade\": \"MEDIUM\", \"score_components\": {\"activity\": 30, \"production\": 30, \"performance\": 5}, \"recent_longform_views\": [163, 308, 325, 623, 7600, 98, 16000, 37000, 23000, 80000], \"recent_longform_median\": 4111.5, \"sample_size\": 10, \"score_provisional\": true, \"longform_count\": null, \"longform_count_lower_bound\": 300, \"uploads_30d\": 13, \"uploads_60d\": 25, \"uploads_90d\": 35, \"last_longform_upload\": \"2026-09-26T00:00:00+00:00\"}",
+    "token": "cfddf3a3",
+    "is_priority": false
+  },
   "_search_db_stats": {
     "schema_version": 2,
     "total_candidates": 2470,
     "discovered_count": 2,
-    "review_count": 2124,
+    "review_count": 2123,
     "rejected_count": 215,
     "error_count": 2,
     "duplicate_count": 6,
-    "registered_count": 121,
-    "verified_count": 121,
+    "registered_count": 122,
+    "verified_count": 122,
     "ready_count": 48,
     "status_counts": {
-      "REVIEW": 2124,
+      "REVIEW": 2123,
       "REJECTED": 215,
-      "REGISTERED": 121,
+      "REGISTERED": 122,
       "DUPLICATE": 6,
       "ERROR": 2,
       "DISCOVERED": 2
     },
     "evidence_count": 2466,
     "score_grade_counts": {
-      "MEDIUM": 330,
-      "UNSCORED": 1347,
-      "LOW": 311,
-      "HIGH": 401,
-      "VERY LOW": 81
+      "MEDIUM": 356,
+      "UNSCORED": 1283,
+      "LOW": 327,
+      "HIGH": 422,
+      "VERY LOW": 82
     },
-    "updated_at": "2026-09-27T01:09:51.628001+00:00"
+    "updated_at": "2026-09-27T01:41:21.742213+00:00"
   }
 }
