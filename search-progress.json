@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:13:39.157064+00:00",
+  "updated_at": "2026-09-27T13:14:40.318192+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 부동산중개",
-    "오산 행정사"
+    "오산 성형외과",
+    "오산 안과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 9935,
-    "processed": 4206,
-    "pending": 5727,
+    "total": 10111,
+    "processed": 4228,
+    "pending": 5881,
     "processing": 2,
     "eligible": 90,
-    "review": 2846,
-    "rejected": 1266,
+    "review": 2858,
+    "rejected": 1276,
     "errors": 4,
     "ready": 51,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCEB8TvA0kwy6CgikFOkRpeg",
-        "name": "광주시의회"
+        "channel_id": "UCB2shC2mCh-gVtI2c2PRd7Q",
+        "name": "guardclinic강남가드비뇨기과"
       },
       {
-        "channel_id": "UCseBATYY9WRWgBGuZ_yan1A",
-        "name": "정치판판"
+        "channel_id": "UCewCP8QJ8TBUpwi1dvofYhw",
+        "name": "길맨비뇨기과 GMTV"
       }
     ]
   },
-  "queries_completed": 92,
-  "region_queries_completed": 14,
-  "region_channels": 2085,
-  "region_observed": 746,
-  "channels_discovered": 9932,
-  "channels_observed": 4202,
-  "search_pages": 1694,
-  "search_results_read": 42529,
+  "queries_completed": 96,
+  "region_queries_completed": 18,
+  "region_channels": 2362,
+  "region_observed": 807,
+  "channels_discovered": 10108,
+  "channels_observed": 4224,
+  "search_pages": 1764,
+  "search_results_read": 43796,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2992,
+      "observed": 3014,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2996,
+      "classified": 3018,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1059,
+      "observed": 1063,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1060,
+      "classified": 1064,
       "classification_errors": 1,
       "jobs": [
         {
@@ -618,13 +618,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 14,
+      "queries_completed": 18,
       "queries_total": 39,
-      "channels": 2085,
-      "observed": 746,
+      "channels": 2362,
+      "observed": 807,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 747,
+      "classified": 808,
       "classification_errors": 1,
       "jobs": [
         {
@@ -727,45 +727,45 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 232,
-          "results_read": 478,
-          "pages": 24
+          "status": "completed",
+          "channels": 244,
+          "results_read": 500,
+          "pages": 27
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 107,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 205,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 96,
+          "results_read": 206,
+          "pages": 12
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 11,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 110,
+          "results_read": 276,
+          "pages": 15
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 7,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 132,
+          "results_read": 386,
+          "pages": 20
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 6,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 24,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "정형외과",
