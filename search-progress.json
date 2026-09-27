@@ -2,46 +2,46 @@
   "sweep_id": "full-20260927-429",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:12:37.652214+00:00",
+  "updated_at": "2026-09-27T13:13:39.157064+00:00",
   "run_id": "36320569240",
   "active_queries": [
-    "오산 어학원",
-    "오산 공인중개사"
+    "오산 부동산중개",
+    "오산 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 9768,
-    "processed": 4168,
-    "pending": 5598,
+    "total": 9935,
+    "processed": 4206,
+    "pending": 5727,
     "processing": 2,
     "eligible": 90,
-    "review": 2824,
-    "rejected": 1250,
+    "review": 2846,
+    "rejected": 1266,
     "errors": 4,
     "ready": 51,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxtMLxVv3PHYp3K8L9XvZaA",
-        "name": "마미랑 with mommy"
+        "channel_id": "UCEB8TvA0kwy6CgikFOkRpeg",
+        "name": "광주시의회"
       },
       {
-        "channel_id": "UCuihyhqI5rgDwUaPQAf7GEQ",
-        "name": "나랑멍냥"
+        "channel_id": "UCseBATYY9WRWgBGuZ_yan1A",
+        "name": "정치판판"
       }
     ]
   },
-  "queries_completed": 90,
-  "region_queries_completed": 12,
-  "region_channels": 1797,
-  "region_observed": 659,
-  "channels_discovered": 9765,
-  "channels_observed": 4164,
-  "search_pages": 1633,
-  "search_results_read": 41367,
+  "queries_completed": 92,
+  "region_queries_completed": 14,
+  "region_channels": 2085,
+  "region_observed": 746,
+  "channels_discovered": 9932,
+  "channels_observed": 4202,
+  "search_pages": 1694,
+  "search_results_read": 42529,
   "query_errors": {},
   "regions": [
     {
@@ -49,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 2954,
+      "observed": 2992,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2958,
+      "classified": 2996,
       "classification_errors": 4,
       "jobs": [
         {
@@ -335,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1053,
+      "observed": 1059,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1054,
+      "classified": 1060,
       "classification_errors": 1,
       "jobs": [
         {
@@ -618,13 +618,13 @@
     },
     {
       "name": "오산",
-      "queries_completed": 12,
+      "queries_completed": 14,
       "queries_total": 39,
-      "channels": 1797,
-      "observed": 659,
+      "channels": 2085,
+      "observed": 746,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 660,
+      "classified": 747,
       "classification_errors": 1,
       "jobs": [
         {
@@ -713,31 +713,31 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 114,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 150,
+          "results_read": 531,
+          "pages": 28
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 75,
-          "results_read": 135,
-          "pages": 7
+          "status": "completed",
+          "channels": 165,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 4,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 232,
+          "results_read": 478,
+          "pages": 24
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 10,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 107,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "행정사사무소",
