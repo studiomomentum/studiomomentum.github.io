@@ -1,35 +1,47 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "",
+  "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-09-27T13:25:43.523398+00:00",
+  "updated_at": "2026-09-27T13:26:45.371767+00:00",
   "run_id": "36322315094",
-  "active_queries": [],
+  "active_queries": [
+    "평택 법무법인",
+    "평택 법률사무소"
+  ],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "평택"
   },
   "classification": {
-    "total": 11573,
-    "processed": 4502,
-    "pending": 7071,
-    "processing": 0,
+    "total": 11637,
+    "processed": 4522,
+    "pending": 7113,
+    "processing": 2,
     "eligible": 92,
-    "review": 3042,
-    "rejected": 1364,
+    "review": 3054,
+    "rejected": 1372,
     "errors": 4,
     "ready": 53,
-    "status": "starting",
-    "active": []
+    "status": "running",
+    "active": [
+      {
+        "channel_id": "UCMihxgBVpbcHcn7YZ2e6pPw",
+        "name": "Naree Kim"
+      },
+      {
+        "channel_id": "UCzOPOEtjjCFzZcZ0j7m6fwg",
+        "name": "광교실장"
+      }
+    ]
   },
-  "queries_completed": 119,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
-  "channels_discovered": 11570,
-  "channels_observed": 4498,
-  "search_pages": 2200,
-  "search_results_read": 51809,
+  "queries_completed": 122,
+  "region_queries_completed": 5,
+  "region_channels": 975,
+  "region_observed": 431,
+  "channels_discovered": 11634,
+  "channels_observed": 4518,
+  "search_pages": 2242,
+  "search_results_read": 52546,
   "query_errors": {},
   "regions": [
     {
@@ -37,10 +49,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4176,
-      "observed": 3288,
+      "observed": 3308,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3292,
+      "classified": 3312,
       "classification_errors": 4,
       "jobs": [
         {
@@ -323,10 +335,10 @@
       "queries_completed": 39,
       "queries_total": 39,
       "channels": 4780,
-      "observed": 1099,
+      "observed": 1102,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1100,
+      "classified": 1103,
       "classification_errors": 1,
       "jobs": [
         {
@@ -892,13 +904,13 @@
     },
     {
       "name": "평택",
-      "queries_completed": 2,
+      "queries_completed": 5,
       "queries_total": 39,
-      "channels": 830,
-      "observed": 388,
+      "channels": 975,
+      "observed": 431,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 388,
+      "classified": 431,
       "classification_errors": 0,
       "jobs": [
         {
@@ -917,31 +929,31 @@
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 149,
-          "results_read": 264,
-          "pages": 14
+          "status": "completed",
+          "channels": 272,
+          "results_read": 481,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 86,
-          "results_read": 271,
-          "pages": 14
+          "status": "completed",
+          "channels": 189,
+          "results_read": 492,
+          "pages": 27
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 46,
+          "results_read": 141,
+          "pages": 9
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 1,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 7,
+          "results_read": 158,
+          "pages": 8
         },
         {
           "name": "치과",
