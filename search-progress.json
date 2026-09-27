@@ -2,48 +2,43 @@
   "sweep_id": "full-20260927-429",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-09-27T15:21:22.263934+00:00",
+  "updated_at": "2026-09-27T15:22:24.277668+00:00",
   "run_id": "36327598909",
   "active_queries": [
-    "판교 법률사무소",
-    "판교 치과의원"
+    "판교 치과의원",
+    "판교 한의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 20191,
-    "processed": 6921,
-    "pending": 13268,
-    "processing": 2,
-    "eligible": 112,
-    "review": 4687,
-    "rejected": 2116,
+    "total": 20264,
+    "processed": 6938,
+    "pending": 13325,
+    "processing": 1,
+    "eligible": 113,
+    "review": 4698,
+    "rejected": 2121,
     "errors": 5,
     "ready": 71,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCvmrt-GOa-bJt_0aCd8z1Fg",
-        "name": "지연쌤의 피부참견",
-        "query": "동탄 피부과"
-      },
-      {
-        "channel_id": "UCNTHCkhxg03_a5P4vnailbw",
-        "name": "엔의원",
+        "channel_id": "UCMmWT0Gn_Tfb1HGoXw3M5Ug",
+        "name": "닥터모네의 피부르박물관",
         "query": "동탄 피부과"
       }
     ]
   },
-  "queries_completed": 286,
-  "region_queries_completed": 6,
-  "region_channels": 1200,
-  "region_observed": 576,
-  "channels_discovered": 20190,
-  "channels_observed": 6916,
-  "search_pages": 6235,
-  "search_results_read": 129156,
+  "queries_completed": 287,
+  "region_queries_completed": 7,
+  "region_channels": 1401,
+  "region_observed": 657,
+  "channels_discovered": 20263,
+  "channels_observed": 6933,
+  "search_pages": 6267,
+  "search_results_read": 129759,
   "query_errors": {},
   "regions": [
     {
@@ -344,10 +339,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 2786,
+      "observed": 2803,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2787,
+      "classified": 2804,
       "classification_errors": 1,
       "jobs": [
         {
@@ -637,10 +632,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 1571,
+      "observed": 1577,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1573,
+      "classified": 1579,
       "classification_errors": 2,
       "jobs": [
         {
@@ -930,10 +925,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 1535,
+      "observed": 1539,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1535,
+      "classified": 1539,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1223,10 +1218,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2505,
+      "observed": 2508,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2507,
+      "classified": 2510,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1516,10 +1511,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 1741,
+      "observed": 1745,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1741,
+      "classified": 1745,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1809,10 +1804,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2024,
+      "observed": 2028,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2026,
+      "classified": 2030,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,13 +2094,13 @@
     },
     {
       "name": "판교",
-      "queries_completed": 6,
+      "queries_completed": 7,
       "queries_total": 40,
-      "channels": 1200,
-      "observed": 576,
+      "channels": 1401,
+      "observed": 657,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 577,
+      "classified": 658,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2145,10 +2140,10 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 299,
-          "results_read": 457,
-          "pages": 23
+          "status": "completed",
+          "channels": 325,
+          "results_read": 502,
+          "pages": 27
         },
         {
           "name": "치과",
@@ -2160,16 +2155,16 @@
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 9,
-          "results_read": 140,
-          "pages": 7
+          "channels": 131,
+          "results_read": 460,
+          "pages": 23
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 8,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 86,
+          "results_read": 238,
+          "pages": 12
         },
         {
           "name": "한방병원",
