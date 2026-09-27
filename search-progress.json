@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T21:06:34.214435+00:00",
+  "updated_at": "2026-09-27T21:07:35.499620+00:00",
   "run_id": "36346128028",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,20 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 13192,
-    "pending": 14744,
-    "processing": 2,
+    "processed": 13213,
+    "pending": 14724,
+    "processing": 1,
     "eligible": 152,
-    "review": 9184,
-    "rejected": 3828,
+    "review": 9198,
+    "rejected": 3835,
     "errors": 25,
     "ready": 107,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCrQFkX8_ajyCHuTnr-Sol-g",
-        "name": "김화현쌤의 부동산북두칠성",
-        "query": "평택 노무사"
-      },
-      {
-        "channel_id": "UCnoMoEViyPVWsKch6X-N61w",
-        "name": "DreamSchool 이윤규",
-        "query": "평택 노무사"
+        "channel_id": "UC8isfyfU-UxEGjFzofAve3Q",
+        "name": "중앙대 LINC 3.0사업단",
+        "query": "평택 변리사"
       }
     ]
   },
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1613,
   "channels_discovered": 27937,
-  "channels_observed": 13167,
+  "channels_observed": 13188,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4052,
+      "observed": 4073,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4062,
+      "classified": 4083,
       "classification_errors": 10,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 3058,
+      "observed": 3060,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3060,
+      "classified": 3062,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2544,
+      "observed": 2545,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2547,
+      "classified": 2548,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1850,
+      "observed": 1851,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1853,
+      "classified": 1854,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1949,
+      "observed": 1950,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1954,
+      "classified": 1955,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1852,
+      "observed": 1853,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1853,
+      "classified": 1854,
       "classification_errors": 1,
       "jobs": [
         {
