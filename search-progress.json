@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-27T19:41:19.557867+00:00",
+  "updated_at": "2026-09-27T19:42:24.175321+00:00",
   "run_id": "36327598909",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 11534,
-    "pending": 16403,
-    "processing": 1,
+    "processed": 11553,
+    "pending": 16385,
+    "processing": 0,
     "eligible": 141,
-    "review": 7937,
-    "rejected": 3435,
+    "review": 7952,
+    "rejected": 3439,
     "errors": 18,
     "ready": 97,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCDK902L0zzswWRC5626K69Q",
-        "name": "평택고덕부동산",
-        "query": "평택 세무회계"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1523,
+  "region_observed": 1524,
   "channels_discovered": 27937,
-  "channels_observed": 11516,
+  "channels_observed": 11535,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 2401,
+      "observed": 2420,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2404,
+      "classified": 2423,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 2844,
+      "observed": 2848,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2846,
+      "classified": 2850,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 2368,
+      "observed": 2372,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2370,
+      "classified": 2374,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 1749,
+      "observed": 1750,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1752,
+      "classified": 1753,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 1847,
+      "observed": 1848,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1851,
+      "classified": 1852,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1749,
+      "observed": 1750,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1750,
+      "classified": 1751,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1523,
+      "observed": 1524,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1524,
+      "classified": 1525,
       "classification_errors": 1,
       "jobs": [
         {
