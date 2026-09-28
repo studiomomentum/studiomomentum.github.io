@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:06:39.677480+00:00",
+  "updated_at": "2026-09-28T01:07:41.298261+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16793,
-    "pending": 11145,
-    "processing": 0,
+    "processed": 16822,
+    "pending": 11115,
+    "processing": 1,
     "eligible": 173,
-    "review": 11756,
-    "rejected": 4827,
+    "review": 11775,
+    "rejected": 4837,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCPaSQZ8euLENF1aVYNokQ6A",
+        "name": "함지연 (함지네 다둥이들)",
+        "query": "화성 동물병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1819,
+  "region_observed": 1822,
   "channels_discovered": 27937,
-  "channels_observed": 16759,
+  "channels_observed": 16788,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4504,
+      "observed": 4533,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4512,
+      "classified": 4541,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2755,
+      "observed": 2756,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2757,
+      "classified": 2758,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2074,
+      "observed": 2078,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2078,
+      "classified": 2082,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2229,
+      "observed": 2232,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2234,
+      "classified": 2237,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2052,
+      "observed": 2054,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2053,
+      "classified": 2055,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1819,
+      "observed": 1822,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1820,
+      "classified": 1823,
       "classification_errors": 1,
       "jobs": [
         {
