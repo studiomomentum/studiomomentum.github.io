@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:05:14.193488+00:00",
+  "updated_at": "2026-09-28T02:06:16.109311+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18105,
-    "pending": 9831,
+    "processed": 18115,
+    "pending": 9821,
     "processing": 2,
     "eligible": 178,
-    "review": 12690,
+    "review": 12700,
     "rejected": 5195,
     "errors": 39,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCFJUtMOfYddcO6iW2bLAqlA",
-        "name": "인강드림 행정사",
+        "channel_id": "UCrc1tGIrq8hiTSlNZNyaJcw",
+        "name": "황철운",
         "query": "분당 행정사"
       },
       {
-        "channel_id": "UCIa5hK9XF9vSmnkICdz6Ofg",
-        "name": "행정사&중개사",
+        "channel_id": "UC3LmRZty_d-DwxPFeYrq_EQ",
+        "name": "선호경매TV",
         "query": "분당 행정사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1929,
+  "region_observed": 1932,
   "channels_discovered": 27937,
-  "channels_observed": 18066,
+  "channels_observed": 18076,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3200,
+      "observed": 3210,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3204,
+      "classified": 3214,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2321,
+      "observed": 2322,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2326,
+      "classified": 2327,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1929,
+      "observed": 1932,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1930,
+      "classified": 1933,
       "classification_errors": 1,
       "jobs": [
         {
