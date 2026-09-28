@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:00:25.464338+00:00",
+  "updated_at": "2026-09-28T05:01:26.900917+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20750,
-    "pending": 7188,
-    "processing": 0,
+    "processed": 20770,
+    "pending": 7166,
+    "processing": 2,
     "eligible": 187,
-    "review": 14492,
-    "rejected": 6024,
+    "review": 14507,
+    "rejected": 6029,
     "errors": 44,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCWfg0TBlE87mIQVpHwVIi4Q",
+        "name": "목희수",
+        "query": "판교 부동산중개"
+      },
+      {
+        "channel_id": "UCBtMbIjcAWH8ts8ZcP7uVxQ",
+        "name": "두바퀴 TV",
+        "query": "판교 행정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2150,
+  "region_observed": 2151,
   "channels_discovered": 27937,
-  "channels_observed": 20706,
+  "channels_observed": 20726,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3369,
+      "observed": 3389,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3374,
+      "classified": 3394,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2515,
+      "observed": 2516,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2520,
+      "classified": 2521,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2295,
+      "observed": 2296,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2296,
+      "classified": 2297,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2150,
+      "observed": 2151,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2151,
+      "classified": 2152,
       "classification_errors": 1,
       "jobs": [
         {
