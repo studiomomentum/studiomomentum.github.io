@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:32:31.456654+00:00",
+  "updated_at": "2026-09-28T00:33:32.795706+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15979,
-    "pending": 11959,
-    "processing": 0,
+    "processed": 16009,
+    "pending": 11927,
+    "processing": 2,
     "eligible": 173,
-    "review": 11192,
-    "rejected": 4580,
+    "review": 11209,
+    "rejected": 4593,
     "errors": 31,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCgiB8w33csk_HfG9Y3Gns8A",
+        "name": "이사장의 부동산 돋보기",
+        "query": "화성 공인중개사"
+      },
+      {
+        "channel_id": "UCYv_fO9pQVL7Cq3uS2d1jtg",
+        "name": "도무스DOMUS공인중개사",
+        "query": "화성 공인중개사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1779,
+  "region_observed": 1780,
   "channels_discovered": 27937,
-  "channels_observed": 15948,
+  "channels_observed": 15978,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3693,
+      "observed": 3723,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3698,
+      "classified": 3728,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2019,
+      "observed": 2021,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2022,
+      "classified": 2024,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1779,
+      "observed": 1780,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1780,
+      "classified": 1781,
       "classification_errors": 1,
       "jobs": [
         {
