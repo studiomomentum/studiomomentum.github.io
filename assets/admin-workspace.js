@@ -3,6 +3,7 @@ const workspaceEscape = value => String(value ?? '').replace(/[&<>"']/g, c => ({
 const deliveryLabels = {ALL:'전체',SENT:'발송 처리',READY:'발송 대기',BOUNCED:'반송',REVIEW:'검토',EXCLUDED:'제외'};
 const reactionLabels = {ALL:'모든 반응',OPENED_ALL:'메일 열람',OPENED_ONLY:'메일만 열람',UNOPENED:'메일 미열람',VISITED:'사이트 방문',HOT:'상담 클릭',SCROLL_90:'90% 스크롤'};
 let workspaceExtra = 'ALL';
+let sentDateFrom='',sentDateTo='';
 let workspaceOccupation = 'ALL';
 const occupationLabels = {legal:'변호사·법률',medical:'의료',realty:'부동산',tax:'세무',edu:'교육',admin:'행정사',arch:'건축',fitness:'피트니스',vet:'수의사',labor:'노무사',car:'자동차',UNKNOWN:'미분류'};
 const targetOccupation = t => String(t.category || '').trim() || 'UNKNOWN';
@@ -16,7 +17,7 @@ function setMainTab(tab) {
   updateFilterBar(); renderTable();
 }
 function setFilter(filter) { currentFilter = filter; updateFilterBar(); renderTable(); }
-function resetWorkspaceFilters() { setMainTab(mainTab==='INBOUND'||mainTab==='SEARCH_DB'?mainTab:'SENT'); }
+function resetWorkspaceFilters() { sentDateFrom='';sentDateTo='';setMainTab(mainTab==='INBOUND'||mainTab==='SEARCH_DB'?mainTab:'SENT'); }
 function workspaceOptions(options, selected) {
   return Object.entries(options).map(([value,label])=>`<option value="${value}" ${value===selected?'selected':''}>${label}</option>`).join('');
 }
@@ -37,7 +38,7 @@ function updateFilterBar() {
   const filters = inbound
     ? `<label>유입 경로<select id="reactionFilter">${workspaceOptions({ALL:'전체 유입',SEO:'검색',PSEO:'지역·업종',GEO:'AI 추천',AEO:'AI 답변',SNS:'소셜',DIRECT:'직접 방문',HOT:'상담 클릭'},currentFilter)}</select></label>`
     : `<label>발송 상태<select id="deliveryFilter">${workspaceOptions(deliveryLabels,mainTab)}</select></label><label>고객 반응<select id="reactionFilter">${workspaceOptions(reactionLabels,currentFilter)}</select></label><label>직업<select id="occupationFilter">${occupationOptions()}</select></label><label>추가 조건<select id="extraFilter">${workspaceOptions({ALL:'전체',JOB:'채용공고 타깃',ZONE_A:'경기 남부',ZONE_B:'서울·판교'},workspaceExtra)}</select></label>`;
-  Momentum.setHTML(document.getElementById('dynamicFilterGroup'),filters);
+  Momentum.setHTML(document.getElementById('dynamicFilterGroup'),filters+(!inbound?`<label>발송일 시작<input type="date" id="sentDateFrom" value="${workspaceEscape(sentDateFrom)}"></label><label>발송일 종료<input type="date" id="sentDateTo" value="${workspaceEscape(sentDateTo)}"></label><button type="button" id="sentDateToday">오늘</button><button type="button" id="sentDateClear">날짜 해제</button>`:''));
 }
 function workspaceReaction(s) {
   return currentFilter==='ALL' || (currentFilter==='OPENED_ALL'&&s.opened) || (currentFilter==='OPENED_ONLY'&&s.opened&&!s.visited) || (currentFilter==='UNOPENED'&&!s.opened) || (currentFilter==='VISITED'&&s.visited) || (currentFilter==='HOT'&&s.hot) || (currentFilter==='SCROLL_90'&&s.maxScroll>=90);
@@ -91,6 +92,8 @@ function renderTable() {
     else {
       if(mainTab==='SENT'?!['SENT','BOUNCED'].includes(t.status):mainTab!=='ALL'&&t.status!==mainTab)return false;
       if(!workspaceReaction(s))return false;
+      const sentDate=(t.sent_at||'').slice(0,10);
+      if((sentDateFrom||sentDateTo)&&(!/^\d{4}-\d{2}-\d{2}$/.test(sentDate)||(sentDateFrom&&sentDate<sentDateFrom)||(sentDateTo&&sentDate>sentDateTo)))return false;
       if(workspaceOccupation!=='ALL'&&targetOccupation(t)!==workspaceOccupation)return false;
       if(workspaceExtra==='JOB'&&!isJobPostingTarget(t))return false;
       const zoneB=['서울','강남','서초','송파','판교','분당'].some(k=>(t.region||'').includes(k));
@@ -128,6 +131,8 @@ function openTargetDetail(token) {
 document.addEventListener('click',ev=>{const button=ev.target.closest('[data-detail-token]');if(button)openTargetDetail(button.dataset.detailToken);});
 document.getElementById('targetDetail').addEventListener('click',ev=>{if(ev.target===ev.currentTarget){const r=ev.currentTarget.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)ev.currentTarget.close();}});
 document.addEventListener('change',ev=>{
+  if(ev.target.id==='sentDateFrom'){sentDateFrom=ev.target.value;if(sentDateTo&&sentDateFrom>sentDateTo)sentDateTo=sentDateFrom;renderTable();}
+  if(ev.target.id==='sentDateTo'){sentDateTo=ev.target.value;if(sentDateFrom&&sentDateTo&&sentDateTo<sentDateFrom)sentDateFrom=sentDateTo;renderTable();}
   if(ev.target.id==='deliveryFilter')setMainTab(ev.target.value);
   if(ev.target.id==='reactionFilter')setFilter(ev.target.value);
   if(ev.target.id==='occupationFilter'){workspaceOccupation=ev.target.value;renderTable();}
@@ -174,4 +179,9 @@ document.addEventListener('click',async ev=>{
     if(targetsMap[token]?.status==='EXCLUDED'){updateKPIs();renderTable();}
     else {alert(error.message+'\n제외 완료가 확인되지 않았습니다. 목록을 새로고침한 후 확인해 주세요.');button.disabled=false;button.textContent='영구 제외';}
   } finally {exclusionPending=false;}
+});
+
+document.addEventListener('click',ev=>{
+  if(ev.target.closest('#sentDateToday')){sentDateFrom=sentDateTo=new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Seoul'});setMainTab('SENT');}
+  if(ev.target.closest('#sentDateClear')){sentDateFrom='';sentDateTo='';renderTable();}
 });

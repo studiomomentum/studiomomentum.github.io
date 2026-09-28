@@ -61,6 +61,16 @@ await p.evaluate(()=>{targetsMap.deadbeef.status='READY';applyPermanentExclusion
 assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),1);
 await p.evaluate(()=>{permanentExclusions={};targetsMap=window.linkFixtureBackup;});
 
+// Date range includes boundaries and excludes unsent rows; today uses KST.
+await p.evaluate(()=>{targetsMap={a:{token:'a',company:'First',status:'SENT',sent_at:'2026-09-27 09:00:00'},b:{token:'b',company:'Second',status:'SENT',sent_at:'2026-09-28 12:00:00'},c:{token:'c',company:'Unsent',status:'READY'}};setMainTab('ALL');});
+await p.locator('#sentDateFrom').fill('2026-09-28');
+assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),1);
+assert((await p.locator('#mobileCardsContainer').textContent()).includes('Second'));
+await p.locator('#sentDateClear').click();assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),3);
+await p.locator('#sentDateToday').click();assert.equal(await p.evaluate(()=>mainTab),'SENT');
+assert.equal(await p.locator('#sentDateFrom').inputValue(),await p.evaluate(()=>new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Seoul'})));
+await p.locator('#sentDateClear').click();
+
 // Schema v2 separates candidate dispositions, registration history and READY.
 await p.evaluate(()=>{window.fixtureBackup=targetsMap;targetsMap={_search_db_stats:{schema_version:2,total_candidates:100,discovered_count:10,review_count:20,rejected_count:30,error_count:5,duplicate_count:15,registered_count:20,ready_count:4}};setMainTab('SEARCH_DB');});
 assert.deepEqual(await p.locator('.prospect-card strong').allTextContents(),['100','10','20','30','5','15','20','4']);
