@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:57:59.615286+00:00",
+  "updated_at": "2026-09-28T03:59:03.199676+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19805,
-    "pending": 8132,
-    "processing": 1,
+    "processed": 19822,
+    "pending": 8116,
+    "processing": 0,
     "eligible": 184,
-    "review": 13825,
-    "rejected": 5750,
+    "review": 13837,
+    "rejected": 5755,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCQpTTep53kVX71lgAPyrC5g",
-        "name": "박춘호 TV",
-        "query": "판교 세무사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2111,
   "channels_discovered": 27937,
-  "channels_observed": 19762,
+  "channels_observed": 19779,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2425,
+      "observed": 2442,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2429,
+      "classified": 2446,
       "classification_errors": 4,
       "jobs": [
         {
