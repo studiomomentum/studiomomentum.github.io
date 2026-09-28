@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:21:45.475523+00:00",
+  "updated_at": "2026-09-28T02:22:47.063314+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18304,
-    "pending": 9632,
+    "processed": 18320,
+    "pending": 9616,
     "processing": 2,
     "eligible": 178,
-    "review": 12843,
-    "rejected": 5241,
+    "review": 12856,
+    "rejected": 5244,
     "errors": 39,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCo7JH6tjQNxvu5798fsn11g",
-        "name": "암 최신치료 뉴스",
-        "query": "분당 안과"
+        "channel_id": "UCE5kws34ITDBWkZTW-jqjuw",
+        "name": "삼육서울병원",
+        "query": "분당 이비인후과"
       },
       {
-        "channel_id": "UCYgVw3-ePPdegjvrrRTAPvw",
-        "name": "남자 간호사기중쌤",
-        "query": "분당 정형외과"
+        "channel_id": "UC8uKLzsquyl9KWQzUGo8VvA",
+        "name": "정보가득",
+        "query": "분당 이비인후과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1962,
+  "region_observed": 1963,
   "channels_discovered": 27937,
-  "channels_observed": 18265,
+  "channels_observed": 18281,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3399,
+      "observed": 3415,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3403,
+      "classified": 3419,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2184,
+      "observed": 2185,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2188,
+      "classified": 2189,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2345,
+      "observed": 2350,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2350,
+      "classified": 2355,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2143,
+      "observed": 2144,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2144,
+      "classified": 2145,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1962,
+      "observed": 1963,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1963,
+      "classified": 1964,
       "classification_errors": 1,
       "jobs": [
         {
