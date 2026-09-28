@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:10:45.589986+00:00",
+  "updated_at": "2026-09-28T01:11:47.350753+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,20 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16893,
-    "pending": 11043,
-    "processing": 2,
+    "processed": 16918,
+    "pending": 11019,
+    "processing": 1,
     "eligible": 173,
-    "review": 11826,
-    "rejected": 4857,
+    "review": 11844,
+    "rejected": 4864,
     "errors": 34,
     "ready": 126,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC8lS31fR0d3t2wmKezUW2DA",
-        "name": "Men Health 36",
-        "query": "화성 비뇨기과"
-      },
-      {
-        "channel_id": "UCkW89Y-iZ7C6pQyS7HlwHfQ",
-        "name": "칸스토리",
-        "query": "화성 동물병원"
+        "channel_id": "UCYacSeEgu5rFVkIzjHcpdCw",
+        "name": "복지방",
+        "query": "화성 의원"
       }
     ]
   },
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1825,
   "channels_discovered": 27937,
-  "channels_observed": 16859,
+  "channels_observed": 16884,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4604,
+      "observed": 4629,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4612,
+      "classified": 4637,
       "classification_errors": 8,
       "jobs": [
         {
