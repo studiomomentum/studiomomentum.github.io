@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:41:41.076307+00:00",
+  "updated_at": "2026-09-28T02:42:42.574602+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18607,
-    "pending": 9330,
-    "processing": 1,
+    "processed": 18618,
+    "pending": 9318,
+    "processing": 2,
     "eligible": 178,
-    "review": 13003,
-    "rejected": 5384,
+    "review": 13010,
+    "rejected": 5388,
     "errors": 39,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCUesERGyaI6Sz6Yi9GmVKEw",
-        "name": "차품딜",
+        "channel_id": "UCrsrg2zY_nz7k2tX1BpWysA",
+        "name": "중고차 여행",
+        "query": "오산 중고차"
+      },
+      {
+        "channel_id": "UCdV-EMx2iVtUsSVqOtWHNLA",
+        "name": "중고화물차빠세카",
         "query": "오산 중고차"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1986,
+  "region_observed": 1987,
   "channels_discovered": 27937,
-  "channels_observed": 18568,
+  "channels_observed": 18579,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -338,7 +343,7 @@
       "channels": 4936,
       "observed": 4929,
       "observation_errors": 7,
-      "classified_at": null,
+      "classified_at": "2026-09-28T02:41:58.046478+00:00",
       "classified": 4936,
       "classification_errors": 7,
       "jobs": [
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 4215,
+      "observed": 4226,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4224,
+      "classified": 4235,
       "classification_errors": 9,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4634,
+      "observed": 4636,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4647,
+      "classified": 4649,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4415,
+      "observed": 4416,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4418,
+      "classified": 4419,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5434,
+      "observed": 5437,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5445,
+      "classified": 5448,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3490,
+      "observed": 3495,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3494,
+      "classified": 3499,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2229,
+      "observed": 2232,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2233,
+      "classified": 2236,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1986,
+      "observed": 1987,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1987,
+      "classified": 1988,
       "classification_errors": 1,
       "jobs": [
         {
