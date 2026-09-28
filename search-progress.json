@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:17:54.511712+00:00",
+  "updated_at": "2026-09-28T04:18:55.880112+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20108,
-    "pending": 7830,
-    "processing": 0,
+    "processed": 20128,
+    "pending": 7808,
+    "processing": 2,
     "eligible": 185,
-    "review": 14026,
-    "rejected": 5851,
+    "review": 14041,
+    "rejected": 5856,
     "errors": 43,
     "ready": 132,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCTa09ST0mxlTHOJxEhkM7Eg",
+        "name": "판교힐부동산",
+        "query": "판교 법률사무소"
+      },
+      {
+        "channel_id": "UC_TgjeQSUNW4xPiDbGMN0qQ",
+        "name": "KiTalbum",
+        "query": "판교 법률사무소"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2117,
   "channels_discovered": 27937,
-  "channels_observed": 20065,
+  "channels_observed": 20085,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2728,
+      "observed": 2748,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2732,
+      "classified": 2752,
       "classification_errors": 4,
       "jobs": [
         {
