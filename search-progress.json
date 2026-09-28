@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:55:26.527022+00:00",
+  "updated_at": "2026-09-28T02:56:35.276652+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18798,
-    "pending": 9138,
-    "processing": 2,
+    "processed": 18814,
+    "pending": 9124,
+    "processing": 0,
     "eligible": 179,
-    "review": 13094,
-    "rejected": 5482,
+    "review": 13103,
+    "rejected": 5489,
     "errors": 40,
     "ready": 129,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCFzAG1m_6vV_ywiPvQkhZnw",
-        "name": "차바래",
-        "query": "화성 중고차"
-      },
-      {
-        "channel_id": "UCVwFQ4ITMJpHuySLOLCioLg",
-        "name": "중고차수출 부시맨 (조기폐차 환영)",
-        "query": "화성 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2007,
+  "region_observed": 2011,
   "channels_discovered": 27937,
-  "channels_observed": 18758,
+  "channels_observed": 18774,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5499,
+      "observed": 5515,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5511,
+      "classified": 5527,
       "classification_errors": 12,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2257,
+      "observed": 2259,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2261,
+      "classified": 2263,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2007,
+      "observed": 2011,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2008,
+      "classified": 2012,
       "classification_errors": 1,
       "jobs": [
         {
