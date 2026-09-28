@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T07:01:51.041797+00:00",
+  "updated_at": "2026-09-28T07:02:53.165862+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22639,
-    "pending": 5298,
+    "processed": 22653,
+    "pending": 5284,
     "processing": 1,
-    "eligible": 194,
-    "review": 15789,
+    "eligible": 196,
+    "review": 15801,
     "rejected": 6606,
     "errors": 47,
-    "ready": 133,
+    "ready": 134,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCUXAvq1PzWPXxSVI_po2HaA",
-        "name": "장미세무사의 절세정원",
-        "query": "강남 세무회계"
+        "channel_id": "UCgC5hyXJiVxvBa5jE66OppQ",
+        "name": "메콘TV",
+        "query": "강남 변호사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2234,
+  "region_observed": 2237,
   "channels_discovered": 27937,
-  "channels_observed": 22592,
+  "channels_observed": 22606,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2683,
+      "observed": 2697,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2688,
+      "classified": 2702,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2420,
+      "observed": 2423,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2421,
+      "classified": 2424,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2234,
+      "observed": 2237,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2235,
+      "classified": 2238,
       "classification_errors": 1,
       "jobs": [
         {
