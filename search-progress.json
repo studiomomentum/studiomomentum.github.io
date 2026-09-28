@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:16:36.378367+00:00",
+  "updated_at": "2026-09-28T02:17:37.718680+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18224,
-    "pending": 9712,
+    "processed": 18238,
+    "pending": 9698,
     "processing": 2,
     "eligible": 178,
-    "review": 12781,
-    "rejected": 5223,
+    "review": 12790,
+    "rejected": 5228,
     "errors": 39,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCOByc6akvw27KbJ1p9jn3BQ",
-        "name": "누가영Nugayoung",
-        "query": "분당 피부과"
+        "channel_id": "UCJF8sSpylBGP4Qymog1wfwg",
+        "name": "리드성형외과",
+        "query": "분당 성형외과"
       },
       {
-        "channel_id": "UC5H79onikpj7ddqX_0n0LKg",
-        "name": "더본안과",
-        "query": "분당 성형외과"
+        "channel_id": "UCgVnM9rX8n5RkbYF4l3xFEw",
+        "name": "한국녹내장학회 -Korean Glaucoma Society",
+        "query": "분당 안과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1957,
+  "region_observed": 1959,
   "channels_discovered": 27937,
-  "channels_observed": 18185,
+  "channels_observed": 18199,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3319,
+      "observed": 3333,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3323,
+      "classified": 3337,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2178,
+      "observed": 2179,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2182,
+      "classified": 2183,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2334,
+      "observed": 2338,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2339,
+      "classified": 2343,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2135,
+      "observed": 2138,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2136,
+      "classified": 2139,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1957,
+      "observed": 1959,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1958,
+      "classified": 1960,
       "classification_errors": 1,
       "jobs": [
         {
