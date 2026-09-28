@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:44:27.069068+00:00",
+  "updated_at": "2026-09-28T03:45:28.673644+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19592,
-    "pending": 8346,
-    "processing": 0,
+    "processed": 19605,
+    "pending": 8332,
+    "processing": 1,
     "eligible": 183,
-    "review": 13681,
-    "rejected": 5682,
+    "review": 13687,
+    "rejected": 5689,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCt8gs3fLCrQvLJ1IIGZEqsw",
+        "name": "아키프레소",
+        "query": "분당 건축사사무소"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2078,
+  "region_observed": 2079,
   "channels_discovered": 27937,
-  "channels_observed": 19549,
+  "channels_observed": 19562,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4280,
+      "observed": 4293,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4287,
+      "classified": 4300,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2343,
+      "observed": 2346,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2347,
+      "classified": 2350,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2454,
+      "observed": 2455,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2459,
+      "classified": 2460,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2228,
+      "observed": 2229,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2229,
+      "classified": 2230,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2078,
+      "observed": 2079,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2079,
+      "classified": 2080,
       "classification_errors": 1,
       "jobs": [
         {
