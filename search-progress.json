@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:12:18.586444+00:00",
+  "updated_at": "2026-09-28T02:13:20.787814+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18163,
-    "pending": 9775,
-    "processing": 0,
+    "processed": 18172,
+    "pending": 9764,
+    "processing": 2,
     "eligible": 178,
-    "review": 12736,
-    "rejected": 5207,
+    "review": 12743,
+    "rejected": 5209,
     "errors": 39,
     "ready": 129,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC-zrULggpDl7rfa1QYnJ_oQ",
+        "name": "법과생활 Law and Life",
+        "query": "분당 행정사사무소"
+      },
+      {
+        "channel_id": "UCQBZlOQwBie-3wzVfZD09AA",
+        "name": "전연규의 재건축 재개발TV",
+        "query": "분당 행정사사무소"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1947,
+  "region_observed": 1949,
   "channels_discovered": 27937,
-  "channels_observed": 18124,
+  "channels_observed": 18133,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3258,
+      "observed": 3267,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3262,
+      "classified": 3271,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2127,
+      "observed": 2128,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2128,
+      "classified": 2129,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1947,
+      "observed": 1949,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1948,
+      "classified": 1950,
       "classification_errors": 1,
       "jobs": [
         {
