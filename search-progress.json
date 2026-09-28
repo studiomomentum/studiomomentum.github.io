@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:26:57.482637+00:00",
+  "updated_at": "2026-09-28T04:27:58.971140+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20246,
-    "pending": 7690,
+    "processed": 20256,
+    "pending": 7680,
     "processing": 2,
     "eligible": 185,
-    "review": 14124,
+    "review": 14134,
     "rejected": 5891,
     "errors": 43,
     "ready": 132,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCYbF0rytO2OmvZpGoqJZTgA",
-        "name": "야뇨증 전문,  경희청정한의원",
+        "channel_id": "UCsAIL_BEWzyVQSIPE6CyBnA",
+        "name": "JI HOO YUN",
         "query": "판교 한의원"
       },
       {
-        "channel_id": "UCxnNOZbX3jfaDQ6M41r5BeA",
-        "name": "good bus",
-        "query": "판교 한의원"
+        "channel_id": "UCNI2vA5cNb6dNhJSEI28B0Q",
+        "name": "대구임플란트 라미네이트 잘하는곳 굿티스치과",
+        "query": "판교 치과의원"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2125,
   "channels_discovered": 27937,
-  "channels_observed": 20203,
+  "channels_observed": 20213,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2866,
+      "observed": 2876,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2870,
+      "classified": 2880,
       "classification_errors": 4,
       "jobs": [
         {
