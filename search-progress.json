@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:38:22.944988+00:00",
+  "updated_at": "2026-09-28T01:39:24.746422+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,20 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17538,
-    "pending": 10399,
+    "processed": 17562,
+    "pending": 10375,
     "processing": 1,
     "eligible": 174,
-    "review": 12274,
-    "rejected": 5050,
+    "review": 12293,
+    "rejected": 5055,
     "errors": 37,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCi2E6xPUtj6QW4WtcEMg4pw",
-        "name": "김실짱티비",
-        "query": "화성 필라테스"
+        "channel_id": "UClT4XbOwtPC32Sb-rcLNFyw",
+        "name": "유비쿼터스행복학 Ubiquitous Happiness Series",
+        "query": "화성 심리상담센터"
       }
     ]
   },
@@ -33,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1847,
   "channels_discovered": 27937,
-  "channels_observed": 17501,
+  "channels_observed": 17525,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5246,
+      "observed": 5270,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5257,
+      "classified": 5281,
       "classification_errors": 11,
       "jobs": [
         {
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2114,
+      "observed": 2115,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2118,
+      "classified": 2119,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2075,
+      "observed": 2076,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2076,
+      "classified": 2077,
       "classification_errors": 1,
       "jobs": [
         {
