@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:15:34.248291+00:00",
+  "updated_at": "2026-09-28T02:16:36.378367+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18213,
-    "pending": 9724,
-    "processing": 1,
+    "processed": 18224,
+    "pending": 9712,
+    "processing": 2,
     "eligible": 178,
-    "review": 12773,
-    "rejected": 5220,
+    "review": 12781,
+    "rejected": 5223,
     "errors": 39,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC2SDRgBy8Udqe6mrEiS2RFw",
-        "name": "엘레핀연세",
+        "channel_id": "UCOByc6akvw27KbJ1p9jn3BQ",
+        "name": "누가영Nugayoung",
         "query": "분당 피부과"
+      },
+      {
+        "channel_id": "UC5H79onikpj7ddqX_0n0LKg",
+        "name": "더본안과",
+        "query": "분당 성형외과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1954,
+  "region_observed": 1957,
   "channels_discovered": 27937,
-  "channels_observed": 18174,
+  "channels_observed": 18185,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3308,
+      "observed": 3319,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3312,
+      "classified": 3323,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2333,
+      "observed": 2334,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2338,
+      "classified": 2339,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2133,
+      "observed": 2135,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2134,
+      "classified": 2136,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1954,
+      "observed": 1957,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1955,
+      "classified": 1958,
       "classification_errors": 1,
       "jobs": [
         {
