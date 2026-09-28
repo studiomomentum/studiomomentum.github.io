@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:49:39.389879+00:00",
+  "updated_at": "2026-09-28T01:50:40.915581+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17782,
-    "pending": 10155,
+    "processed": 17798,
+    "pending": 10139,
     "processing": 1,
-    "eligible": 176,
-    "review": 12439,
-    "rejected": 5126,
+    "eligible": 177,
+    "review": 12453,
+    "rejected": 5127,
     "errors": 38,
-    "ready": 128,
+    "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCZxCbZAXye63nu0GqnN8sog",
-        "name": "산성역포레스티아 입주자대표회의",
-        "query": "분당 법무법인"
+        "channel_id": "UCav3tCYVVaC25UAapdm2r5w",
+        "name": "베스트치과의원",
+        "query": "분당 치과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1867,
+  "region_observed": 1871,
   "channels_discovered": 27937,
-  "channels_observed": 17744,
+  "channels_observed": 17760,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2878,
+      "observed": 2894,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2881,
+      "classified": 2897,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2131,
+      "observed": 2136,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2135,
+      "classified": 2140,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2277,
+      "observed": 2279,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2282,
+      "classified": 2284,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2087,
+      "observed": 2089,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2088,
+      "classified": 2090,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1867,
+      "observed": 1871,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1868,
+      "classified": 1872,
       "classification_errors": 1,
       "jobs": [
         {
