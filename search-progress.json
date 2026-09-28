@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:55:01.851313+00:00",
+  "updated_at": "2026-09-28T04:56:03.634504+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20670,
-    "pending": 7268,
-    "processing": 0,
+    "processed": 20689,
+    "pending": 7248,
+    "processing": 1,
     "eligible": 187,
-    "review": 14428,
-    "rejected": 6008,
+    "review": 14445,
+    "rejected": 6010,
     "errors": 44,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCoqAFF9lawx4PM1YeGILrhA",
+        "name": "허그부동산공인중개사사무소",
+        "query": "판교 공인중개사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2141,
+  "region_observed": 2143,
   "channels_discovered": 27937,
-  "channels_observed": 20626,
+  "channels_observed": 20645,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3289,
+      "observed": 3308,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3294,
+      "classified": 3313,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2508,
+      "observed": 2510,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2513,
+      "classified": 2515,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2286,
+      "observed": 2288,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2287,
+      "classified": 2289,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2141,
+      "observed": 2143,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2142,
+      "classified": 2144,
       "classification_errors": 1,
       "jobs": [
         {
