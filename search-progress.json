@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:14:41.065928+00:00",
+  "updated_at": "2026-09-28T04:15:42.695126+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20064,
-    "pending": 7872,
+    "processed": 20080,
+    "pending": 7856,
     "processing": 2,
     "eligible": 184,
-    "review": 14001,
-    "rejected": 5833,
+    "review": 14006,
+    "rejected": 5844,
     "errors": 43,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxdsw61ejaDnRq1d25r-jCg",
-        "name": "채널집이야",
-        "query": "판교 법무법인"
+        "channel_id": "UCsyL04EITTAg0UwG8_cABQA",
+        "name": "마음쉼표",
+        "query": "판교 변호사"
       },
       {
-        "channel_id": "UC-xA18iTGuR8A8KnsL06Owg",
-        "name": "Medical Korea Official",
-        "query": "판교 법무법인"
+        "channel_id": "UCeA0CpCYHrOdc6zX1WCdufw",
+        "name": "msg",
+        "query": "판교 변호사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2116,
+  "region_observed": 2117,
   "channels_discovered": 27937,
-  "channels_observed": 20021,
+  "channels_observed": 20037,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2684,
+      "observed": 2700,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2688,
+      "classified": 2704,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2489,
+      "observed": 2490,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2494,
+      "classified": 2495,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2263,
+      "observed": 2264,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2264,
+      "classified": 2265,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2116,
+      "observed": 2117,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2117,
+      "classified": 2118,
       "classification_errors": 1,
       "jobs": [
         {
