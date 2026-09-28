@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:23:47.169793+00:00",
+  "updated_at": "2026-09-28T03:24:48.988502+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19258,
-    "pending": 8678,
+    "processed": 19272,
+    "pending": 8664,
     "processing": 2,
     "eligible": 182,
-    "review": 13438,
-    "rejected": 5594,
+    "review": 13447,
+    "rejected": 5599,
     "errors": 41,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCDhRWc0hXN2hhqh5VBjpApw",
-        "name": "요기맛집 리뷰",
+        "channel_id": "UCsn7dew8Om6_HW-HIeUF9eQ",
+        "name": "수리술술",
         "query": "분당 변리사"
       },
       {
-        "channel_id": "UC7L8Pvp1cgcPFAo9-vguFEA",
-        "name": "찐달래",
-        "query": "분당 법무사"
+        "channel_id": "UCtCP49q9NAE51rLGH8cJ00Q",
+        "name": "네르고",
+        "query": "분당 변리사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2054,
+  "region_observed": 2055,
   "channels_discovered": 27937,
-  "channels_observed": 19217,
+  "channels_observed": 19231,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3948,
+      "observed": 3962,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3953,
+      "classified": 3967,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2304,
+      "observed": 2305,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2308,
+      "classified": 2309,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2431,
+      "observed": 2432,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2436,
+      "classified": 2437,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2054,
+      "observed": 2055,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2055,
+      "classified": 2056,
       "classification_errors": 1,
       "jobs": [
         {
