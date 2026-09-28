@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:28:16.531845+00:00",
+  "updated_at": "2026-09-28T06:29:17.967781+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22128,
-    "pending": 5810,
-    "processing": 0,
+    "processed": 22148,
+    "pending": 5788,
+    "processing": 2,
     "eligible": 188,
-    "review": 15462,
-    "rejected": 6428,
+    "review": 15476,
+    "rejected": 6434,
     "errors": 47,
     "ready": 129,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCgTK9zzhuu9MgAnDNL7eefQ",
+        "name": "NAUM TV",
+        "query": "판교 필라테스"
+      },
+      {
+        "channel_id": "UCO_J99D3NJlmKzSZrtcd16w",
+        "name": "바디케어필라테스",
+        "query": "판교 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2189,
   "channels_discovered": 27937,
-  "channels_observed": 22081,
+  "channels_observed": 22101,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4744,
+      "observed": 4764,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4752,
+      "classified": 4772,
       "classification_errors": 8,
       "jobs": [
         {
