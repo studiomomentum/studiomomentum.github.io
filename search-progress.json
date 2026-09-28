@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:49:03.546133+00:00",
+  "updated_at": "2026-09-28T02:50:05.094229+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18706,
-    "pending": 9230,
+    "processed": 18720,
+    "pending": 9216,
     "processing": 2,
     "eligible": 178,
-    "review": 13046,
-    "rejected": 5440,
+    "review": 13054,
+    "rejected": 5446,
     "errors": 39,
     "ready": 128,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCspMsHS6JC0D6CdGbTmMm3A",
-        "name": "수도광택사령부",
+        "channel_id": "UCX-Up3VNrObbGMXIIHuTsMQ",
+        "name": "채널광주",
         "query": "용인 중고차"
       },
       {
-        "channel_id": "UCeXOCmPwa35Zc-SgYx9bgNA",
-        "name": "킹카TV마스터",
+        "channel_id": "UCD0zowa33Mlh4aUfIJFFuRg",
+        "name": "전국최저카",
         "query": "용인 중고차"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1994,
   "channels_discovered": 27937,
-  "channels_observed": 18667,
+  "channels_observed": 18681,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4439,
+      "observed": 4453,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4442,
+      "classified": 4456,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2242,
+      "observed": 2243,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2246,
+      "classified": 2247,
       "classification_errors": 4,
       "jobs": [
         {
