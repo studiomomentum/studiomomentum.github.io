@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:27:36.008985+00:00",
+  "updated_at": "2026-09-28T02:28:55.016404+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,12 +11,12 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18392,
-    "pending": 9546,
+    "processed": 18412,
+    "pending": 9526,
     "processing": 0,
     "eligible": 178,
-    "review": 12895,
-    "rejected": 5277,
+    "review": 12902,
+    "rejected": 5290,
     "errors": 39,
     "ready": 129,
     "status": "running",
@@ -25,9 +25,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1968,
+  "region_observed": 1969,
   "channels_discovered": 27937,
-  "channels_observed": 18353,
+  "channels_observed": 18373,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -37,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4267,
-      "observed": 4195,
+      "observed": 4215,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4200,
+      "classified": 4220,
       "classification_errors": 5,
       "jobs": [
         {
@@ -330,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4788,
+      "observed": 4789,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4795,
+      "classified": 4796,
       "classification_errors": 7,
       "jobs": [
         {
@@ -1209,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4374,
+      "observed": 4386,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4377,
+      "classified": 4389,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1502,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5396,
+      "observed": 5399,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5407,
+      "classified": 5410,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1795,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3469,
+      "observed": 3470,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3473,
+      "classified": 3474,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2191,
+      "observed": 2195,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2195,
+      "classified": 2199,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2367,
+      "observed": 2368,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2372,
+      "classified": 2373,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2151,
+      "observed": 2152,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2152,
+      "classified": 2153,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1968,
+      "observed": 1969,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1969,
+      "classified": 1970,
       "classification_errors": 1,
       "jobs": [
         {
