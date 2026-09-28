@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:07:41.298261+00:00",
+  "updated_at": "2026-09-28T01:08:42.660209+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16822,
-    "pending": 11115,
-    "processing": 1,
+    "processed": 16847,
+    "pending": 11089,
+    "processing": 2,
     "eligible": 173,
-    "review": 11775,
-    "rejected": 4837,
+    "review": 11793,
+    "rejected": 4844,
     "errors": 34,
     "ready": 126,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCPaSQZ8euLENF1aVYNokQ6A",
-        "name": "함지연 (함지네 다둥이들)",
-        "query": "화성 동물병원"
+        "channel_id": "UCRSuXZWTZJ7anzs6LIAU6eg",
+        "name": "최정자대물나라낚시점010 8953 7747",
+        "query": "화성 비뇨기과"
+      },
+      {
+        "channel_id": "UC0etsJGnSTF1THk7LEWWkmw",
+        "name": "재마을  부자Jae Village",
+        "query": "화성 비뇨기과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1822,
+  "region_observed": 1823,
   "channels_discovered": 27937,
-  "channels_observed": 16788,
+  "channels_observed": 16813,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4533,
+      "observed": 4558,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4541,
+      "classified": 4566,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2078,
+      "observed": 2080,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2082,
+      "classified": 2084,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2232,
+      "observed": 2233,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2237,
+      "classified": 2238,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2054,
+      "observed": 2055,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2055,
+      "classified": 2056,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1822,
+      "observed": 1823,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1823,
+      "classified": 1824,
       "classification_errors": 1,
       "jobs": [
         {
