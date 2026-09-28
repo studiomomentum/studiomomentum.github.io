@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:52:20.615193+00:00",
+  "updated_at": "2026-09-28T02:53:22.761288+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18760,
-    "pending": 9176,
+    "processed": 18772,
+    "pending": 9164,
     "processing": 2,
     "eligible": 179,
-    "review": 13068,
-    "rejected": 5471,
+    "review": 13076,
+    "rejected": 5475,
     "errors": 39,
-    "ready": 128,
+    "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCd4qK9DFHKHBh2W0OxU_Pdg",
-        "name": "오롯이중고차",
+        "channel_id": "UCM6On7P9QHQesgjelAnv1gg",
+        "name": "[추영준중고차]추영준 팀장",
         "query": "화성 중고차"
       },
       {
-        "channel_id": "UC3waBREaQjBIe_YS5p0japg",
-        "name": "안산중고차 오토포유tv",
+        "channel_id": "UCSDvwGWIF-OV4D0BIxJND-Q",
+        "name": "차쟁이 빡군 / Park's Garage",
         "query": "화성 중고차"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2001,
+  "region_observed": 2002,
   "channels_discovered": 27937,
-  "channels_observed": 18721,
+  "channels_observed": 18733,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1222,7 +1222,7 @@
       "channels": 4483,
       "observed": 4480,
       "observation_errors": 3,
-      "classified_at": null,
+      "classified_at": "2026-09-28T02:52:38.766548+00:00",
       "classified": 4483,
       "classification_errors": 3,
       "jobs": [
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5462,
+      "observed": 5474,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5473,
+      "classified": 5485,
       "classification_errors": 11,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2391,
+      "observed": 2392,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2396,
+      "classified": 2397,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2170,
+      "observed": 2171,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2171,
+      "classified": 2172,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2001,
+      "observed": 2002,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2002,
+      "classified": 2003,
       "classification_errors": 1,
       "jobs": [
         {
