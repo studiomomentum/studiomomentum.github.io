@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:57:20.714778+00:00",
+  "updated_at": "2026-09-28T05:58:22.218401+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21634,
-    "pending": 6302,
+    "processed": 21650,
+    "pending": 6286,
     "processing": 2,
     "eligible": 188,
-    "review": 15121,
-    "rejected": 6277,
+    "review": 15127,
+    "rejected": 6287,
     "errors": 45,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCW3Mcw0R77e39A8gxe3quJA",
-        "name": "아이디위클리 idweekly",
+        "channel_id": "UCYZMPxBPhJFrsW4XKLvXvDg",
+        "name": "정양수 기자",
         "query": "판교 의원"
       },
       {
-        "channel_id": "UCK299tM2j86pzJ2AyGQqX3A",
-        "name": "채널S",
-        "query": "판교 노무사"
+        "channel_id": "UCDv85g9hJnldnY6Q7jFrOdQ",
+        "name": "김건우",
+        "query": "판교 의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2178,
+  "region_observed": 2179,
   "channels_discovered": 27937,
-  "channels_observed": 21589,
+  "channels_observed": 21605,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4252,
+      "observed": 4268,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4258,
+      "classified": 4274,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2178,
+      "observed": 2179,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2179,
+      "classified": 2180,
       "classification_errors": 1,
       "jobs": [
         {
