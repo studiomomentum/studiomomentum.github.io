@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:47:36.376106+00:00",
+  "updated_at": "2026-09-28T01:48:37.685980+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17735,
-    "pending": 10203,
-    "processing": 0,
+    "processed": 17757,
+    "pending": 10179,
+    "processing": 2,
     "eligible": 176,
-    "review": 12417,
-    "rejected": 5101,
+    "review": 12431,
+    "rejected": 5109,
     "errors": 38,
     "ready": 128,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC9mEeE55q4PCfGERt_PNYbg",
+        "name": "봉지욱의 오프더레코드",
+        "query": "분당 변호사"
+      },
+      {
+        "channel_id": "UClmFtdMKaJMEus0ji8VaqnQ",
+        "name": "Top Shelf Drama",
+        "query": "분당 변호사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1864,
+  "region_observed": 1867,
   "channels_discovered": 27937,
-  "channels_observed": 17697,
+  "channels_observed": 17719,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2831,
+      "observed": 2853,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2834,
+      "classified": 2856,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2128,
+      "observed": 2131,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2132,
+      "classified": 2135,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2271,
+      "observed": 2273,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2276,
+      "classified": 2278,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2085,
+      "observed": 2087,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2086,
+      "classified": 2088,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1864,
+      "observed": 1867,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1865,
+      "classified": 1868,
       "classification_errors": 1,
       "jobs": [
         {
