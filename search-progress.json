@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:46:30.293737+00:00",
+  "updated_at": "2026-09-28T03:47:40.558046+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19622,
-    "pending": 8314,
-    "processing": 2,
+    "processed": 19642,
+    "pending": 8296,
+    "processing": 0,
     "eligible": 183,
-    "review": 13698,
-    "rejected": 5695,
+    "review": 13706,
+    "rejected": 5707,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCqfF8ij_Bt9kwdxrWQ2ycIQ",
-        "name": "Sportsclub Phillip",
-        "query": "분당 심리상담센터"
-      },
-      {
-        "channel_id": "UC6QoUgxUDa4ea0CUA3HqNbw",
-        "name": "가야지",
-        "query": "분당 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2079,
+  "region_observed": 2081,
   "channels_discovered": 27937,
-  "channels_observed": 19579,
+  "channels_observed": 19599,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4310,
+      "observed": 4330,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4317,
+      "classified": 4337,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2351,
+      "observed": 2352,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2355,
+      "classified": 2356,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2457,
+      "observed": 2460,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2462,
+      "classified": 2465,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2230,
+      "observed": 2232,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2231,
+      "classified": 2233,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2079,
+      "observed": 2081,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2080,
+      "classified": 2082,
       "classification_errors": 1,
       "jobs": [
         {
