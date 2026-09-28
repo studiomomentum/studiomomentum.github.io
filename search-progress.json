@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:39:24.746422+00:00",
+  "updated_at": "2026-09-28T01:40:26.058298+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17562,
-    "pending": 10375,
-    "processing": 1,
+    "processed": 17583,
+    "pending": 10353,
+    "processing": 2,
     "eligible": 174,
-    "review": 12293,
-    "rejected": 5055,
+    "review": 12307,
+    "rejected": 5062,
     "errors": 37,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UClT4XbOwtPC32Sb-rcLNFyw",
-        "name": "유비쿼터스행복학 Ubiquitous Happiness Series",
-        "query": "화성 심리상담센터"
+        "channel_id": "UCkQsRf1CadLrTU0CPPpj1QQ",
+        "name": "Seungki Kim",
+        "query": "화성 필라테스"
+      },
+      {
+        "channel_id": "UCXbss0KE7wMBxECjNlD9I7Q",
+        "name": "cookieoppa",
+        "query": "화성 필라테스"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1847,
   "channels_discovered": 27937,
-  "channels_observed": 17525,
+  "channels_observed": 17546,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5270,
+      "observed": 5291,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5281,
+      "classified": 5302,
       "classification_errors": 11,
       "jobs": [
         {
