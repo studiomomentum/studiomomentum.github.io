@@ -1,31 +1,42 @@
 {
   "sweep_id": "full-20260927-429",
-  "region": "",
+  "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:10:13.327023+00:00",
+  "updated_at": "2026-09-28T02:11:15.049709+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "complete",
+    "region": "송파"
   },
   "classification": {
     "total": 27938,
-    "processed": 18163,
+    "processed": 18161,
     "pending": 9775,
-    "processing": 0,
+    "processing": 2,
     "eligible": 178,
     "review": 12736,
     "rejected": 5207,
-    "errors": 39,
+    "errors": 37,
     "ready": 129,
-    "status": "starting",
-    "active": []
+    "status": "running",
+    "active": [
+      {
+        "channel_id": "UCrm3BY6cl-xjgfxRFYvpv3w",
+        "name": "인셀덤화장품인셀덤사업오산대리점",
+        "query": "동탄 심리상담센터"
+      },
+      {
+        "channel_id": "UCyvlJUQjmZHaKInXCic_CZw",
+        "name": "윤혜진",
+        "query": "오산 세무회계"
+      }
+    ]
   },
   "queries_completed": 440,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
+  "region_queries_completed": 40,
+  "region_channels": 4300,
+  "region_observed": 1947,
   "channels_discovered": 27937,
   "channels_observed": 18124,
   "search_pages": 10085,
@@ -333,8 +344,8 @@
       "observed": 4785,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4792,
-      "classification_errors": 7,
+      "classified": 4791,
+      "classification_errors": 6,
       "jobs": [
         {
           "name": "세무사",
@@ -626,8 +637,8 @@
       "observed": 4182,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4191,
-      "classification_errors": 9,
+      "classified": 4189,
+      "classification_errors": 7,
       "jobs": [
         {
           "name": "세무사",
@@ -919,8 +930,8 @@
       "observed": 4613,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4626,
-      "classification_errors": 13,
+      "classified": 4625,
+      "classification_errors": 12,
       "jobs": [
         {
           "name": "세무사",
@@ -2091,8 +2102,8 @@
       "observed": 2176,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2180,
-      "classification_errors": 4,
+      "classified": 2179,
+      "classification_errors": 3,
       "jobs": [
         {
           "name": "세무사",
