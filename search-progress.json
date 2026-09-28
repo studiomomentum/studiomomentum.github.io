@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:23:48.939140+00:00",
+  "updated_at": "2026-09-28T01:24:50.713282+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17199,
-    "pending": 10737,
+    "processed": 17225,
+    "pending": 10711,
     "processing": 2,
     "eligible": 174,
-    "review": 12034,
-    "rejected": 4952,
+    "review": 12052,
+    "rejected": 4960,
     "errors": 36,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCUCdE5H8GRDHurU2fP6wbCw",
-        "name": "Emily Salvemini",
-        "query": "화성 변리사"
+        "channel_id": "UCuYUXUqZLgGjhSkk6YGxPcQ",
+        "name": "보상달인TV",
+        "query": "화성 손해사정사"
       },
       {
-        "channel_id": "UCV4lla-cpO_F3pXQ1jhdDmg",
-        "name": "이애숙",
-        "query": "화성 변리사"
+        "channel_id": "UCuPlEuN3EtlyJ7YaGFxjdEQ",
+        "name": "쿠키뉴스",
+        "query": "화성 손해사정사"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1833,
   "channels_discovered": 27937,
-  "channels_observed": 17163,
+  "channels_observed": 17189,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4908,
+      "observed": 4934,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4918,
+      "classified": 4944,
       "classification_errors": 10,
       "jobs": [
         {
