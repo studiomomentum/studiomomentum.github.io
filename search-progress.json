@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:53:08.230306+00:00",
+  "updated_at": "2026-09-28T03:54:19.461605+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19728,
-    "pending": 8208,
-    "processing": 2,
+    "processed": 19748,
+    "pending": 8190,
+    "processing": 0,
     "eligible": 183,
-    "review": 13771,
-    "rejected": 5728,
+    "review": 13782,
+    "rejected": 5737,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCVXx0ngEYSQOfsFKwon8ejw",
-        "name": "모빌팡 Mobilpang",
-        "query": "분당 중고차"
-      },
-      {
-        "channel_id": "UC6xlxS7RCQ5MoNfs5VT89cA",
-        "name": "양군모터스",
-        "query": "분당 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2104,
+  "region_observed": 2108,
   "channels_discovered": 27937,
-  "channels_observed": 19685,
+  "channels_observed": 19705,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4416,
+      "observed": 4436,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4423,
+      "classified": 4443,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2362,
+      "observed": 2369,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2366,
+      "classified": 2373,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2471,
+      "observed": 2472,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2476,
+      "classified": 2477,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2252,
+      "observed": 2254,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2253,
+      "classified": 2255,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2104,
+      "observed": 2108,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2105,
+      "classified": 2109,
       "classification_errors": 1,
       "jobs": [
         {
