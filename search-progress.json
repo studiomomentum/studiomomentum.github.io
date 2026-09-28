@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:45:26.997801+00:00",
+  "updated_at": "2026-09-28T05:46:28.856961+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21440,
-    "pending": 6496,
-    "processing": 2,
+    "processed": 21456,
+    "pending": 6482,
+    "processing": 0,
     "eligible": 188,
-    "review": 14986,
-    "rejected": 6218,
+    "review": 14995,
+    "rejected": 6225,
     "errors": 45,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCZq5L4eCBo-XUQL_5PwVGtg",
-        "name": "시기PD",
-        "query": "판교 산부인과"
-      },
-      {
-        "channel_id": "UCXvlKptQsYHGprbPDsnT84w",
-        "name": "슬다 seulda",
-        "query": "판교 산부인과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2173,
   "channels_discovered": 27937,
-  "channels_observed": 21395,
+  "channels_observed": 21411,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4058,
+      "observed": 4074,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4064,
+      "classified": 4080,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2546,
+      "observed": 2548,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2551,
+      "classified": 2553,
       "classification_errors": 5,
       "jobs": [
         {
