@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:45:49.146165+00:00",
+  "updated_at": "2026-09-28T04:46:56.346492+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20535,
-    "pending": 7402,
-    "processing": 1,
+    "processed": 20550,
+    "pending": 7388,
+    "processing": 0,
     "eligible": 186,
-    "review": 14322,
-    "rejected": 5980,
+    "review": 14336,
+    "rejected": 5981,
     "errors": 44,
     "ready": 132,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCJu2QvjxGHE2_zgZhf9MpaA",
-        "name": "프리덤아트스페이스freedom art space",
-        "query": "판교 입시학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2137,
+  "region_observed": 2139,
   "channels_discovered": 27937,
-  "channels_observed": 20491,
+  "channels_observed": 20506,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3154,
+      "observed": 3169,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3159,
+      "classified": 3174,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2281,
+      "observed": 2282,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2282,
+      "classified": 2283,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2137,
+      "observed": 2139,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2138,
+      "classified": 2140,
       "classification_errors": 1,
       "jobs": [
         {
