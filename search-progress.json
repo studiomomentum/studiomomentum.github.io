@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:37:26.923734+00:00",
+  "updated_at": "2026-09-28T05:38:29.081657+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21317,
-    "pending": 6620,
+    "processed": 21329,
+    "pending": 6608,
     "processing": 1,
     "eligible": 188,
-    "review": 14901,
-    "rejected": 6180,
+    "review": 14908,
+    "rejected": 6185,
     "errors": 45,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCmeDTrAKdHlQJMVl6prrr5A",
-        "name": "광교노인복지관 / 광복이TV",
-        "query": "판교 재활의학과"
+        "channel_id": "UCq2zkiuQ2x7b7fYLhjYL4DA",
+        "name": "도레미파썰하니도",
+        "query": "판교 마취통증의학과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2169,
+  "region_observed": 2170,
   "channels_discovered": 27937,
-  "channels_observed": 21272,
+  "channels_observed": 21284,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3935,
+      "observed": 3947,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3941,
+      "classified": 3953,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2169,
+      "observed": 2170,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2170,
+      "classified": 2171,
       "classification_errors": 1,
       "jobs": [
         {
