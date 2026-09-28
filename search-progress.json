@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:58:08.190543+00:00",
+  "updated_at": "2026-09-28T00:59:09.539281+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16589,
-    "pending": 11349,
-    "processing": 0,
+    "processed": 16611,
+    "pending": 11325,
+    "processing": 2,
     "eligible": 173,
-    "review": 11603,
-    "rejected": 4776,
+    "review": 11622,
+    "rejected": 4779,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCo1SUTTM6gehcAq-Tt9_I4A",
+        "name": "장애인차별금지추진연대",
+        "query": "화성 재활의학과"
+      },
+      {
+        "channel_id": "UCWhNQOkLHbMrcxciPu2zpBw",
+        "name": "정해룡 한결엔지니어링",
+        "query": "화성 재활의학과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1809,
   "channels_discovered": 27937,
-  "channels_observed": 16555,
+  "channels_observed": 16577,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4300,
+      "observed": 4322,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4308,
+      "classified": 4330,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2058,
+      "observed": 2060,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2062,
+      "classified": 2064,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2220,
+      "observed": 2221,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2225,
+      "classified": 2226,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2041,
+      "observed": 2042,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2042,
+      "classified": 2043,
       "classification_errors": 1,
       "jobs": [
         {
