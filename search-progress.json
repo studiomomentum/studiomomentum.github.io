@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:20:13.776009+00:00",
+  "updated_at": "2026-09-28T00:21:15.635415+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15693,
-    "pending": 12243,
-    "processing": 2,
+    "processed": 15718,
+    "pending": 12219,
+    "processing": 1,
     "eligible": 172,
-    "review": 10984,
-    "rejected": 4503,
+    "review": 11006,
+    "rejected": 4506,
     "errors": 31,
     "ready": 125,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCXwuQemkWpDyvc350QkyHkA",
-        "name": "한세훈",
-        "query": "화성 입시학원"
-      },
-      {
-        "channel_id": "UCmK3tI6CP_x3kdJsniwHwWA",
-        "name": "김문겸TV",
+        "channel_id": "UCo-zHXBwxOaUHs-efEvGJ9g",
+        "name": "락쌤수학",
         "query": "화성 입시학원"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1775,
+  "region_observed": 1777,
   "channels_discovered": 27937,
-  "channels_observed": 15662,
+  "channels_observed": 15687,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3407,
+      "observed": 3432,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3412,
+      "classified": 3437,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2170,
+      "observed": 2171,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2175,
+      "classified": 2176,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1997,
+      "observed": 1998,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1998,
+      "classified": 1999,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1775,
+      "observed": 1777,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1776,
+      "classified": 1778,
       "classification_errors": 1,
       "jobs": [
         {
