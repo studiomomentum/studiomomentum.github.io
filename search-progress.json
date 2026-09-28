@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:34:08.160542+00:00",
+  "updated_at": "2026-09-28T05:35:09.809303+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21262,
-    "pending": 6674,
+    "processed": 21276,
+    "pending": 6660,
     "processing": 2,
     "eligible": 188,
-    "review": 14860,
-    "rejected": 6166,
+    "review": 14869,
+    "rejected": 6171,
     "errors": 45,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCymosaLLl0UKFyRSc5Dh4mA",
-        "name": "영양교사 긍정옥",
-        "query": "판교 재활의학과"
+        "channel_id": "UCi2lR9MSMeWMJI-KQeexPeQ",
+        "name": "SH Cho, DDS, PhD. 세인트치과 조승헌",
+        "query": "판교 이비인후과"
       },
       {
-        "channel_id": "UCdstTA14P9YlObE_5a52Hfw",
-        "name": "피티인폼 PT INFORM",
-        "query": "판교 재활의학과"
+        "channel_id": "UCn36yIfE2OWN-fiTRjMkweA",
+        "name": "닥터벨",
+        "query": "판교 이비인후과"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2167,
   "channels_discovered": 27937,
-  "channels_observed": 21217,
+  "channels_observed": 21231,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3880,
+      "observed": 3894,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3886,
+      "classified": 3900,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2314,
+      "observed": 2316,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2315,
+      "classified": 2317,
       "classification_errors": 1,
       "jobs": [
         {
