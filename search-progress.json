@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:37:09.787431+00:00",
+  "updated_at": "2026-09-28T04:38:11.526775+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20401,
-    "pending": 7536,
-    "processing": 1,
+    "processed": 20414,
+    "pending": 7522,
+    "processing": 2,
     "eligible": 186,
-    "review": 14234,
-    "rejected": 5935,
+    "review": 14244,
+    "rejected": 5938,
     "errors": 43,
     "ready": 132,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCNTS0QASlqRUMP9jEJAlcKw",
-        "name": "one하우스",
+        "channel_id": "UCLQ_lTDcNOj7VzNeW0kZ17w",
+        "name": "tvN D STUDIO",
+        "query": "판교 한방병원"
+      },
+      {
+        "channel_id": "UCTAMm9Oz-axXHOPAlh7LUtw",
+        "name": "듀잇 dewit",
         "query": "판교 한방병원"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2132,
   "channels_discovered": 27937,
-  "channels_observed": 20358,
+  "channels_observed": 20371,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3021,
+      "observed": 3034,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3025,
+      "classified": 3038,
       "classification_errors": 4,
       "jobs": [
         {
