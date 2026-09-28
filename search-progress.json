@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:48:37.685980+00:00",
+  "updated_at": "2026-09-28T01:49:39.389879+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,20 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17757,
-    "pending": 10179,
-    "processing": 2,
+    "processed": 17782,
+    "pending": 10155,
+    "processing": 1,
     "eligible": 176,
-    "review": 12431,
-    "rejected": 5109,
+    "review": 12439,
+    "rejected": 5126,
     "errors": 38,
     "ready": 128,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9mEeE55q4PCfGERt_PNYbg",
-        "name": "봉지욱의 오프더레코드",
-        "query": "분당 변호사"
-      },
-      {
-        "channel_id": "UClmFtdMKaJMEus0ji8VaqnQ",
-        "name": "Top Shelf Drama",
-        "query": "분당 변호사"
+        "channel_id": "UCZxCbZAXye63nu0GqnN8sog",
+        "name": "산성역포레스티아 입주자대표회의",
+        "query": "분당 법무법인"
       }
     ]
   },
@@ -38,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1867,
   "channels_discovered": 27937,
-  "channels_observed": 17719,
+  "channels_observed": 17744,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2853,
+      "observed": 2878,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2856,
+      "classified": 2881,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2273,
+      "observed": 2277,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2278,
+      "classified": 2282,
       "classification_errors": 5,
       "jobs": [
         {
