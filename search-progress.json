@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:22:45.703278+00:00",
+  "updated_at": "2026-09-28T03:23:47.169793+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19236,
-    "pending": 8702,
-    "processing": 0,
+    "processed": 19258,
+    "pending": 8678,
+    "processing": 2,
     "eligible": 182,
-    "review": 13421,
-    "rejected": 5590,
-    "errors": 40,
+    "review": 13438,
+    "rejected": 5594,
+    "errors": 41,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCDhRWc0hXN2hhqh5VBjpApw",
+        "name": "요기맛집 리뷰",
+        "query": "분당 변리사"
+      },
+      {
+        "channel_id": "UC7L8Pvp1cgcPFAo9-vguFEA",
+        "name": "찐달래",
+        "query": "분당 법무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2052,
+  "region_observed": 2054,
   "channels_discovered": 27937,
-  "channels_observed": 19196,
+  "channels_observed": 19217,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,11 +1806,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3927,
-      "observation_errors": 4,
+      "observed": 3948,
+      "observation_errors": 5,
       "classified_at": null,
-      "classified": 3931,
-      "classification_errors": 4,
+      "classified": 3953,
+      "classification_errors": 5,
       "jobs": [
         {
           "name": "세무사",
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2301,
+      "observed": 2304,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2305,
+      "classified": 2308,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2429,
+      "observed": 2431,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2434,
+      "classified": 2436,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2208,
+      "observed": 2209,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2209,
+      "classified": 2210,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2052,
+      "observed": 2054,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2053,
+      "classified": 2055,
       "classification_errors": 1,
       "jobs": [
         {
