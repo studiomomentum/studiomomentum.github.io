@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:25:56.089179+00:00",
+  "updated_at": "2026-09-28T04:26:57.482637+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20228,
-    "pending": 7710,
-    "processing": 0,
+    "processed": 20246,
+    "pending": 7690,
+    "processing": 2,
     "eligible": 185,
-    "review": 14110,
-    "rejected": 5887,
+    "review": 14124,
+    "rejected": 5891,
     "errors": 43,
     "ready": 132,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCYbF0rytO2OmvZpGoqJZTgA",
+        "name": "야뇨증 전문,  경희청정한의원",
+        "query": "판교 한의원"
+      },
+      {
+        "channel_id": "UCxnNOZbX3jfaDQ6M41r5BeA",
+        "name": "good bus",
+        "query": "판교 한의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2122,
+  "region_observed": 2125,
   "channels_discovered": 27937,
-  "channels_observed": 20185,
+  "channels_observed": 20203,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2848,
+      "observed": 2866,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2852,
+      "classified": 2870,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2496,
+      "observed": 2498,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2501,
+      "classified": 2503,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2270,
+      "observed": 2273,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2271,
+      "classified": 2274,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2122,
+      "observed": 2125,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2123,
+      "classified": 2126,
       "classification_errors": 1,
       "jobs": [
         {
