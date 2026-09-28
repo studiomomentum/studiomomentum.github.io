@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:51:04.519341+00:00",
+  "updated_at": "2026-09-28T05:52:06.128310+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21526,
-    "pending": 6412,
-    "processing": 0,
+    "processed": 21549,
+    "pending": 6388,
+    "processing": 1,
     "eligible": 188,
-    "review": 15048,
-    "rejected": 6242,
+    "review": 15065,
+    "rejected": 6248,
     "errors": 45,
     "ready": 130,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCJTl7V9o737pXzk8UsfcEHg",
+        "name": "최세웅",
+        "query": "판교 비뇨기과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2175,
+  "region_observed": 2177,
   "channels_discovered": 27937,
-  "channels_observed": 21481,
+  "channels_observed": 21504,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4144,
+      "observed": 4167,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4150,
+      "classified": 4173,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2327,
+      "observed": 2328,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2328,
+      "classified": 2329,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2175,
+      "observed": 2177,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2176,
+      "classified": 2178,
       "classification_errors": 1,
       "jobs": [
         {
