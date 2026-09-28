@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:21:34.326013+00:00",
+  "updated_at": "2026-09-28T03:22:45.703278+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19216,
-    "pending": 8720,
-    "processing": 2,
+    "processed": 19236,
+    "pending": 8702,
+    "processing": 0,
     "eligible": 182,
-    "review": 13407,
-    "rejected": 5584,
+    "review": 13421,
+    "rejected": 5590,
     "errors": 40,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCiEAeiQTeSlNaory5RJE7tw",
-        "name": "FirstBuild Korea",
-        "query": "분당 변리사"
-      },
-      {
-        "channel_id": "UCN_90_BM5ozf3NBsZ5QheIA",
-        "name": "법무법인 담윤",
-        "query": "분당 변리사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2052,
   "channels_discovered": 27937,
-  "channels_observed": 19176,
+  "channels_observed": 19196,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3907,
+      "observed": 3927,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3911,
+      "classified": 3931,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2297,
+      "observed": 2301,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2301,
+      "classified": 2305,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2207,
+      "observed": 2208,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2208,
+      "classified": 2209,
       "classification_errors": 1,
       "jobs": [
         {
