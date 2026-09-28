@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:34:15.140021+00:00",
+  "updated_at": "2026-09-28T01:35:17.112849+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17440,
-    "pending": 10497,
-    "processing": 1,
+    "processed": 17461,
+    "pending": 10477,
+    "processing": 0,
     "eligible": 174,
-    "review": 12194,
-    "rejected": 5032,
+    "review": 12210,
+    "rejected": 5037,
     "errors": 37,
     "ready": 127,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCK9Ca8PVAxaQS8j0MvPy3kA",
-        "name": "상담심리사 함쌤",
-        "query": "화성 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1844,
   "channels_discovered": 27937,
-  "channels_observed": 17403,
+  "channels_observed": 17424,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5148,
+      "observed": 5169,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5159,
+      "classified": 5180,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2774,
+      "observed": 2776,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2776,
+      "classified": 2778,
       "classification_errors": 2,
       "jobs": [
         {
