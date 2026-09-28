@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:59:05.130046+00:00",
+  "updated_at": "2026-09-28T02:00:06.498875+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17974,
-    "pending": 9963,
-    "processing": 1,
+    "processed": 17993,
+    "pending": 9943,
+    "processing": 2,
     "eligible": 178,
-    "review": 12598,
-    "rejected": 5157,
-    "errors": 38,
+    "review": 12608,
+    "rejected": 5165,
+    "errors": 39,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCF2jnUjfkP93xQYMCAjQYug",
-        "name": "창조의아침미술학원_입시미술연구소",
-        "query": "분당 입시학원"
+        "channel_id": "UCmwfUI1ml6K32Fc1qILwzDw",
+        "name": "MyYellowBUS7506",
+        "query": "분당 어학원"
+      },
+      {
+        "channel_id": "UCoXHUacR_kTgK19Sw18wNlQ",
+        "name": "김영주",
+        "query": "분당 어학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1900,
+  "region_observed": 1901,
   "channels_discovered": 27937,
-  "channels_observed": 17936,
+  "channels_observed": 17954,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -43,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4267,
-      "observed": 4173,
+      "observed": 4174,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4178,
+      "classified": 4179,
       "classification_errors": 5,
       "jobs": [
         {
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4936,
-      "observed": 4784,
+      "observed": 4785,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4791,
+      "classified": 4792,
       "classification_errors": 7,
       "jobs": [
         {
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4242,
-      "observed": 4181,
+      "observed": 4182,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4190,
+      "classified": 4191,
       "classification_errors": 9,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4612,
+      "observed": 4613,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4625,
+      "classified": 4626,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5391,
+      "observed": 5392,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5402,
+      "classified": 5403,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1801,11 +1806,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3070,
-      "observation_errors": 3,
+      "observed": 3088,
+      "observation_errors": 4,
       "classified_at": null,
-      "classified": 3073,
-      "classification_errors": 3,
+      "classified": 3092,
+      "classification_errors": 4,
       "jobs": [
         {
           "name": "세무사",
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2149,
+      "observed": 2151,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2153,
+      "classified": 2155,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2305,
+      "observed": 2308,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2310,
+      "classified": 2313,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2110,
+      "observed": 2113,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2111,
+      "classified": 2114,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1900,
+      "observed": 1901,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1901,
+      "classified": 1902,
       "classification_errors": 1,
       "jobs": [
         {
