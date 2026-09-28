@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:50:01.104101+00:00",
+  "updated_at": "2026-09-28T03:51:03.700590+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19685,
-    "pending": 8252,
-    "processing": 1,
+    "processed": 19698,
+    "pending": 8240,
+    "processing": 0,
     "eligible": 183,
-    "review": 13739,
-    "rejected": 5717,
+    "review": 13750,
+    "rejected": 5719,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCpeTvsVJF3PfXU1H-2vm7HA",
-        "name": "GolfChosun",
-        "query": "분당 필라테스"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2095,
+  "region_observed": 2097,
   "channels_discovered": 27937,
-  "channels_observed": 19642,
+  "channels_observed": 19655,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4373,
+      "observed": 4386,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4380,
+      "classified": 4393,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2358,
+      "observed": 2359,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2362,
+      "classified": 2363,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2242,
+      "observed": 2245,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2243,
+      "classified": 2246,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2095,
+      "observed": 2097,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2096,
+      "classified": 2098,
       "classification_errors": 1,
       "jobs": [
         {
