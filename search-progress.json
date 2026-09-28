@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:08:50.785168+00:00",
+  "updated_at": "2026-09-28T05:10:11.027815+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20880,
-    "pending": 7056,
-    "processing": 2,
+    "processed": 20898,
+    "pending": 7040,
+    "processing": 0,
     "eligible": 187,
-    "review": 14586,
-    "rejected": 6060,
+    "review": 14597,
+    "rejected": 6067,
     "errors": 44,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCj5pA9gfqCHqtrG9UGfbayg",
-        "name": "YOONGDALOG",
-        "query": "판교 성형외과"
-      },
-      {
-        "channel_id": "UCYeatFsS7eIdwwdP2ef2qdg",
-        "name": "hanman0428",
-        "query": "판교 성형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2153,
   "channels_discovered": 27937,
-  "channels_observed": 20836,
+  "channels_observed": 20854,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3499,
+      "observed": 3517,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3504,
+      "classified": 3522,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2520,
+      "observed": 2523,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2525,
+      "classified": 2528,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2298,
+      "observed": 2300,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2299,
+      "classified": 2301,
       "classification_errors": 1,
       "jobs": [
         {
