@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T07:03:54.756978+00:00",
+  "updated_at": "2026-09-28T07:04:58.638898+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22663,
-    "pending": 5274,
-    "processing": 1,
-    "eligible": 197,
-    "review": 15809,
+    "processed": 22672,
+    "pending": 5266,
+    "processing": 0,
+    "eligible": 199,
+    "review": 15816,
     "rejected": 6607,
     "errors": 47,
-    "ready": 137,
+    "ready": 139,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCHx0AVGajUN8AmHxV3fYhrg",
-        "name": "안진혁 변호사",
-        "query": "강남 변호사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2240,
+  "region_observed": 2241,
   "channels_discovered": 27937,
-  "channels_observed": 22616,
+  "channels_observed": 22625,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2707,
+      "observed": 2716,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2712,
+      "classified": 2721,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2423,
+      "observed": 2424,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2424,
+      "classified": 2425,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2240,
+      "observed": 2241,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2241,
+      "classified": 2242,
       "classification_errors": 1,
       "jobs": [
         {
