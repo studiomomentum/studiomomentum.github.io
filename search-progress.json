@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:56:03.634504+00:00",
+  "updated_at": "2026-09-28T04:57:05.161914+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20689,
-    "pending": 7248,
-    "processing": 1,
+    "processed": 20702,
+    "pending": 7234,
+    "processing": 2,
     "eligible": 187,
-    "review": 14445,
-    "rejected": 6010,
+    "review": 14457,
+    "rejected": 6011,
     "errors": 44,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCoqAFF9lawx4PM1YeGILrhA",
-        "name": "허그부동산공인중개사사무소",
+        "channel_id": "UCBpabHBqpadv70J0981CU2g",
+        "name": "jooheon song (갈렙)",
+        "query": "판교 부동산중개"
+      },
+      {
+        "channel_id": "UCGSXMi_phim0iEHSVPTkaew",
+        "name": "화창공인중개사, 안양시 석수동",
         "query": "판교 공인중개사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2143,
+  "region_observed": 2145,
   "channels_discovered": 27937,
-  "channels_observed": 20645,
+  "channels_observed": 20658,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3308,
+      "observed": 3321,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3313,
+      "classified": 3326,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2510,
+      "observed": 2513,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2515,
+      "classified": 2518,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2288,
+      "observed": 2291,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2289,
+      "classified": 2292,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2143,
+      "observed": 2145,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2144,
+      "classified": 2146,
       "classification_errors": 1,
       "jobs": [
         {
