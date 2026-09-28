@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:41:40.865296+00:00",
+  "updated_at": "2026-09-28T04:42:42.716244+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20468,
-    "pending": 7470,
-    "processing": 0,
+    "processed": 20491,
+    "pending": 7446,
+    "processing": 1,
     "eligible": 186,
-    "review": 14280,
-    "rejected": 5956,
+    "review": 14293,
+    "rejected": 5966,
     "errors": 43,
     "ready": 132,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCiP77nznRR-SIhKGPOnoq_A",
+        "name": "술술아",
+        "query": "판교 학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2133,
+  "region_observed": 2134,
   "channels_discovered": 27937,
-  "channels_observed": 20425,
+  "channels_observed": 20448,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3088,
+      "observed": 3111,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3092,
+      "classified": 3115,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2500,
+      "observed": 2502,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2505,
+      "classified": 2507,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2278,
+      "observed": 2279,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2279,
+      "classified": 2280,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2133,
+      "observed": 2134,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2134,
+      "classified": 2135,
       "classification_errors": 1,
       "jobs": [
         {
