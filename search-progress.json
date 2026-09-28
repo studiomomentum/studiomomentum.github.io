@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:24:48.988502+00:00",
+  "updated_at": "2026-09-28T03:25:50.801045+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19272,
-    "pending": 8664,
+    "processed": 19290,
+    "pending": 8646,
     "processing": 2,
     "eligible": 182,
-    "review": 13447,
-    "rejected": 5599,
-    "errors": 41,
+    "review": 13460,
+    "rejected": 5603,
+    "errors": 42,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCsn7dew8Om6_HW-HIeUF9eQ",
-        "name": "수리술술",
-        "query": "분당 변리사"
+        "channel_id": "UCBtTHhKBsUIFr7qMU0TjAeA",
+        "name": "월세부자dadam",
+        "query": "분당 감정평가사"
       },
       {
-        "channel_id": "UCtCP49q9NAE51rLGH8cJ00Q",
-        "name": "네르고",
-        "query": "분당 변리사"
+        "channel_id": "UCaRiAA2ji7jwDDfQ_uvga7g",
+        "name": "봉천제14구역재개발정비사업",
+        "query": "분당 감정평가사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2055,
+  "region_observed": 2060,
   "channels_discovered": 27937,
-  "channels_observed": 19231,
+  "channels_observed": 19248,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,11 +1806,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3962,
-      "observation_errors": 5,
+      "observed": 3979,
+      "observation_errors": 6,
       "classified_at": null,
-      "classified": 3967,
-      "classification_errors": 5,
+      "classified": 3985,
+      "classification_errors": 6,
       "jobs": [
         {
           "name": "세무사",
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2305,
+      "observed": 2308,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2309,
+      "classified": 2312,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2055,
+      "observed": 2060,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2056,
+      "classified": 2061,
       "classification_errors": 1,
       "jobs": [
         {
