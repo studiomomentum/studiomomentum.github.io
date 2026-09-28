@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:47:30.963624+00:00",
+  "updated_at": "2026-09-28T05:48:36.302773+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21472,
-    "pending": 6464,
-    "processing": 2,
+    "processed": 21486,
+    "pending": 6452,
+    "processing": 0,
     "eligible": 188,
-    "review": 15004,
-    "rejected": 6232,
+    "review": 15015,
+    "rejected": 6235,
     "errors": 45,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCGIGS_0ETHkxmY3cQbOLX9A",
-        "name": "스냅타임",
-        "query": "판교 동물병원"
-      },
-      {
-        "channel_id": "UCmM6vixShlvo0plELw7dGeg",
-        "name": "방방 BangBang",
-        "query": "판교 동물병원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2174,
   "channels_discovered": 27937,
-  "channels_observed": 21427,
+  "channels_observed": 21441,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4090,
+      "observed": 4104,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4096,
+      "classified": 4110,
       "classification_errors": 6,
       "jobs": [
         {
