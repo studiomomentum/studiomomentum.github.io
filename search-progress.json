@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:06:16.109311+00:00",
+  "updated_at": "2026-09-28T02:07:17.761073+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18115,
-    "pending": 9821,
-    "processing": 2,
+    "processed": 18137,
+    "pending": 9801,
+    "processing": 0,
     "eligible": 178,
-    "review": 12700,
-    "rejected": 5195,
+    "review": 12718,
+    "rejected": 5199,
     "errors": 39,
     "ready": 130,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCrc1tGIrq8hiTSlNZNyaJcw",
-        "name": "황철운",
-        "query": "분당 행정사"
-      },
-      {
-        "channel_id": "UC3LmRZty_d-DwxPFeYrq_EQ",
-        "name": "선호경매TV",
-        "query": "분당 행정사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1932,
+  "region_observed": 1939,
   "channels_discovered": 27937,
-  "channels_observed": 18076,
+  "channels_observed": 18098,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3210,
+      "observed": 3232,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3214,
+      "classified": 3236,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2172,
+      "observed": 2175,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2176,
+      "classified": 2179,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2322,
+      "observed": 2323,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2327,
+      "classified": 2328,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2124,
+      "observed": 2125,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2125,
+      "classified": 2126,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1932,
+      "observed": 1939,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1933,
+      "classified": 1940,
       "classification_errors": 1,
       "jobs": [
         {
