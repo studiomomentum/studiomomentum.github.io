@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:56:19.195781+00:00",
+  "updated_at": "2026-09-28T05:57:20.714778+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21612,
-    "pending": 6326,
-    "processing": 0,
+    "processed": 21634,
+    "pending": 6302,
+    "processing": 2,
     "eligible": 188,
-    "review": 15109,
-    "rejected": 6267,
+    "review": 15121,
+    "rejected": 6277,
     "errors": 45,
     "ready": 130,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCW3Mcw0R77e39A8gxe3quJA",
+        "name": "아이디위클리 idweekly",
+        "query": "판교 의원"
+      },
+      {
+        "channel_id": "UCK299tM2j86pzJ2AyGQqX3A",
+        "name": "채널S",
+        "query": "판교 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2178,
   "channels_discovered": 27937,
-  "channels_observed": 21567,
+  "channels_observed": 21589,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4230,
+      "observed": 4252,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4236,
+      "classified": 4258,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2550,
+      "observed": 2551,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2555,
+      "classified": 2556,
       "classification_errors": 5,
       "jobs": [
         {
