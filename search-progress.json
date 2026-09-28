@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:08:36.899652+00:00",
+  "updated_at": "2026-09-28T03:09:42.956288+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19007,
-    "pending": 8930,
-    "processing": 1,
+    "processed": 19026,
+    "pending": 8912,
+    "processing": 0,
     "eligible": 180,
-    "review": 13253,
-    "rejected": 5531,
+    "review": 13268,
+    "rejected": 5535,
     "errors": 40,
     "ready": 130,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCt4X03FqW50SJTpvDnX0HLw",
-        "name": "고잉 온",
-        "query": "분당 의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2034,
   "channels_discovered": 27937,
-  "channels_observed": 18967,
+  "channels_observed": 18986,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3698,
+      "observed": 3717,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3702,
+      "classified": 3721,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2279,
+      "observed": 2280,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2283,
+      "classified": 2284,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2413,
+      "observed": 2414,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2418,
+      "classified": 2419,
       "classification_errors": 5,
       "jobs": [
         {
