@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:51:54.008283+00:00",
+  "updated_at": "2026-09-28T00:52:55.335085+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16437,
-    "pending": 11499,
+    "processed": 16455,
+    "pending": 11481,
     "processing": 2,
     "eligible": 173,
-    "review": 11496,
-    "rejected": 4731,
+    "review": 11510,
+    "rejected": 4735,
     "errors": 34,
     "ready": 126,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCv1yIrkC5a5VUKAAS47k-IQ",
-        "name": "의사 김용훈",
+        "channel_id": "UClOGdWUrGgL_4ZDOQBdQwOA",
+        "name": "인천터미널정형외과",
         "query": "화성 정형외과"
       },
       {
-        "channel_id": "UCYfj1VvUktaKarRNTf_WuxQ",
-        "name": "신동아방송 인천TV",
+        "channel_id": "UCqr2i6unlkKtSLvLhLNsotg",
+        "name": "인하정형외과",
         "query": "화성 정형외과"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1805,
   "channels_discovered": 27937,
-  "channels_observed": 16403,
+  "channels_observed": 16421,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4148,
+      "observed": 4166,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4156,
+      "classified": 4174,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2746,
+      "observed": 2747,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2748,
+      "classified": 2749,
       "classification_errors": 2,
       "jobs": [
         {
