@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:21:15.635415+00:00",
+  "updated_at": "2026-09-28T00:22:17.538723+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15718,
-    "pending": 12219,
+    "processed": 15738,
+    "pending": 12199,
     "processing": 1,
     "eligible": 172,
-    "review": 11006,
-    "rejected": 4506,
+    "review": 11025,
+    "rejected": 4507,
     "errors": 31,
     "ready": 125,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCo-zHXBwxOaUHs-efEvGJ9g",
-        "name": "락쌤수학",
+        "channel_id": "UC5ND7OLp4FVa9NEH-8LP3Jw",
+        "name": "왓섭! 공포라디오",
         "query": "화성 입시학원"
       }
     ]
@@ -33,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 1777,
   "channels_discovered": 27937,
-  "channels_observed": 15687,
+  "channels_observed": 15707,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3432,
+      "observed": 3452,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3437,
+      "classified": 3457,
       "classification_errors": 5,
       "jobs": [
         {
