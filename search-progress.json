@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:15:42.695126+00:00",
+  "updated_at": "2026-09-28T04:16:45.735829+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20080,
-    "pending": 7856,
-    "processing": 2,
+    "processed": 20094,
+    "pending": 7844,
+    "processing": 0,
     "eligible": 184,
-    "review": 14006,
-    "rejected": 5844,
+    "review": 14018,
+    "rejected": 5846,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCsyL04EITTAg0UwG8_cABQA",
-        "name": "마음쉼표",
-        "query": "판교 변호사"
-      },
-      {
-        "channel_id": "UCeA0CpCYHrOdc6zX1WCdufw",
-        "name": "msg",
-        "query": "판교 변호사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2117,
   "channels_discovered": 27937,
-  "channels_observed": 20037,
+  "channels_observed": 20051,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2700,
+      "observed": 2714,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2704,
+      "classified": 2718,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2490,
+      "observed": 2491,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2495,
+      "classified": 2496,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2264,
+      "observed": 2265,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2265,
+      "classified": 2266,
       "classification_errors": 1,
       "jobs": [
         {
