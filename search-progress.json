@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:50:52.900945+00:00",
+  "updated_at": "2026-09-28T00:51:54.008283+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16421,
-    "pending": 11517,
-    "processing": 0,
+    "processed": 16437,
+    "pending": 11499,
+    "processing": 2,
     "eligible": 173,
-    "review": 11483,
-    "rejected": 4728,
+    "review": 11496,
+    "rejected": 4731,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCv1yIrkC5a5VUKAAS47k-IQ",
+        "name": "의사 김용훈",
+        "query": "화성 정형외과"
+      },
+      {
+        "channel_id": "UCYfj1VvUktaKarRNTf_WuxQ",
+        "name": "신동아방송 인천TV",
+        "query": "화성 정형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1805,
   "channels_discovered": 27937,
-  "channels_observed": 16387,
+  "channels_observed": 16403,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4132,
+      "observed": 4148,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4140,
+      "classified": 4156,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2210,
+      "observed": 2211,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2215,
+      "classified": 2216,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2033,
+      "observed": 2034,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2034,
+      "classified": 2035,
       "classification_errors": 1,
       "jobs": [
         {
