@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:32:04.605635+00:00",
+  "updated_at": "2026-09-28T05:33:06.138047+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21237,
-    "pending": 6700,
-    "processing": 1,
+    "processed": 21248,
+    "pending": 6688,
+    "processing": 2,
     "eligible": 188,
-    "review": 14842,
-    "rejected": 6159,
+    "review": 14852,
+    "rejected": 6160,
     "errors": 45,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCi_ccH-SitNR67vSq5j7Eyg",
-        "name": "changrak Choi",
-        "query": "판교 재활의학과"
+        "channel_id": "UCmYChjCjU_ZS37-I2JNCPsA",
+        "name": "박컴시사",
+        "query": "판교 이비인후과"
+      },
+      {
+        "channel_id": "UC_zySnb8MlZT4703BBIscsg",
+        "name": "재테크 분석하는 남자",
+        "query": "판교 이비인후과"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2167,
   "channels_discovered": 27937,
-  "channels_observed": 21192,
+  "channels_observed": 21203,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3855,
+      "observed": 3866,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3861,
+      "classified": 3872,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2540,
+      "observed": 2541,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2545,
+      "classified": 2546,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2313,
+      "observed": 2314,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2314,
+      "classified": 2315,
       "classification_errors": 1,
       "jobs": [
         {
