@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:53:57.401556+00:00",
+  "updated_at": "2026-09-28T00:54:58.995704+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16481,
-    "pending": 11457,
-    "processing": 0,
+    "processed": 16506,
+    "pending": 11431,
+    "processing": 1,
     "eligible": 173,
-    "review": 11528,
-    "rejected": 4743,
+    "review": 11541,
+    "rejected": 4755,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCx1mLclFKuOjw0fTZ-LawjA",
+        "name": "造米剧场",
+        "query": "화성 안과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1805,
   "channels_discovered": 27937,
-  "channels_observed": 16447,
+  "channels_observed": 16472,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4192,
+      "observed": 4217,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4200,
+      "classified": 4225,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2050,
+      "observed": 2053,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2054,
+      "classified": 2057,
       "classification_errors": 4,
       "jobs": [
         {
