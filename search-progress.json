@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:26:53.859521+00:00",
+  "updated_at": "2026-09-28T01:27:55.160223+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17274,
-    "pending": 10663,
-    "processing": 1,
+    "processed": 17297,
+    "pending": 10639,
+    "processing": 2,
     "eligible": 174,
-    "review": 12087,
-    "rejected": 4974,
+    "review": 12102,
+    "rejected": 4982,
     "errors": 36,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0PYOgwoTI11Wt13NmCfs1Q",
-        "name": "이재우",
+        "channel_id": "UCYfw36Eu8UZLR5fADxuY0Qw",
+        "name": "s Park",
         "query": "화성 건축사사무소"
+      },
+      {
+        "channel_id": "UCY1SAJ05RFkF-Y718kicnjA",
+        "name": "땅파는 신사",
+        "query": "화성 감정평가사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1834,
+  "region_observed": 1835,
   "channels_discovered": 27937,
-  "channels_observed": 17238,
+  "channels_observed": 17261,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4983,
+      "observed": 5006,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4993,
+      "classified": 5016,
       "classification_errors": 10,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2096,
+      "observed": 2099,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2100,
+      "classified": 2103,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2246,
+      "observed": 2247,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2251,
+      "classified": 2252,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2065,
+      "observed": 2066,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2066,
+      "classified": 2067,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1834,
+      "observed": 1835,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1835,
+      "classified": 1836,
       "classification_errors": 1,
       "jobs": [
         {
