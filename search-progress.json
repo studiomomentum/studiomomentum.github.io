@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:41:27.368525+00:00",
+  "updated_at": "2026-09-28T01:42:28.580587+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17607,
-    "pending": 10329,
+    "processed": 17629,
+    "pending": 10307,
     "processing": 2,
     "eligible": 174,
-    "review": 12327,
-    "rejected": 5066,
+    "review": 12344,
+    "rejected": 5071,
     "errors": 37,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCaW47UD9d8xpbV2I8bTPyhA",
-        "name": "이데일리TV 상담소 ☏",
+        "channel_id": "UCVllaBMgHPk0u9VthsSnR4Q",
+        "name": "SETE 명상센터(구 자작나무 명상)",
         "query": "화성 심리상담센터"
       },
       {
-        "channel_id": "UCyh87ODJuMbhzEYXRLC4x2g",
-        "name": "선학원TV",
-        "query": "화성 심리상담센터"
+        "channel_id": "UCkb0fS2vQ39t9sBAdHN0eRA",
+        "name": "인테리어 공사할 땐 | 공간의힘",
+        "query": "화성 필라테스"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1849,
+  "region_observed": 1850,
   "channels_discovered": 27937,
-  "channels_observed": 17570,
+  "channels_observed": 17592,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5315,
+      "observed": 5337,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5326,
+      "classified": 5348,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2779,
+      "observed": 2780,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2781,
+      "classified": 2782,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2116,
+      "observed": 2119,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2120,
+      "classified": 2123,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1849,
+      "observed": 1850,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1850,
+      "classified": 1851,
       "classification_errors": 1,
       "jobs": [
         {
