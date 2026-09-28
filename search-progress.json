@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:00:43.283900+00:00",
+  "updated_at": "2026-09-28T03:01:52.196196+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18873,
-    "pending": 9064,
-    "processing": 1,
+    "processed": 18892,
+    "pending": 9046,
+    "processing": 0,
     "eligible": 179,
-    "review": 13156,
-    "rejected": 5495,
+    "review": 13167,
+    "rejected": 5503,
     "errors": 40,
     "ready": 129,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCRblk-cG0PRy43hSecqf4EA",
-        "name": "김태훈",
-        "query": "분당 산부인과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2019,
   "channels_discovered": 27937,
-  "channels_observed": 18833,
+  "channels_observed": 18852,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3564,
+      "observed": 3583,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3568,
+      "classified": 3587,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2260,
+      "observed": 2265,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2264,
+      "classified": 2269,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2405,
+      "observed": 2406,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2410,
+      "classified": 2411,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2179,
+      "observed": 2182,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2180,
+      "classified": 2183,
       "classification_errors": 1,
       "jobs": [
         {
