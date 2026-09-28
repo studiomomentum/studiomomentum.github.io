@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:47:33.435584+00:00",
+  "updated_at": "2026-09-28T06:48:36.216141+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22420,
-    "pending": 5516,
-    "processing": 2,
+    "processed": 22436,
+    "pending": 5502,
+    "processing": 0,
     "eligible": 188,
-    "review": 15660,
-    "rejected": 6522,
+    "review": 15666,
+    "rejected": 6532,
     "errors": 47,
-    "ready": 129,
+    "ready": 128,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC_tm0M7CjPdiGEVUQSrJS3Q",
-        "name": "고대오빠",
-        "query": "판교 중고차"
-      },
-      {
-        "channel_id": "UCg727zybXQBxK6tX1hV0jzg",
-        "name": "공실 Gongsil",
-        "query": "판교 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2198,
   "channels_discovered": 27937,
-  "channels_observed": 22373,
+  "channels_observed": 22389,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 5036,
+      "observed": 5052,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 5044,
+      "classified": 5060,
       "classification_errors": 8,
       "jobs": [
         {
