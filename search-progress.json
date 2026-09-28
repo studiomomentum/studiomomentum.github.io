@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:22:47.063314+00:00",
+  "updated_at": "2026-09-28T02:23:49.660552+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18320,
-    "pending": 9616,
-    "processing": 2,
+    "processed": 18337,
+    "pending": 9600,
+    "processing": 1,
     "eligible": 178,
-    "review": 12856,
-    "rejected": 5244,
+    "review": 12870,
+    "rejected": 5247,
     "errors": 39,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCE5kws34ITDBWkZTW-jqjuw",
-        "name": "삼육서울병원",
-        "query": "분당 이비인후과"
-      },
-      {
-        "channel_id": "UC8uKLzsquyl9KWQzUGo8VvA",
-        "name": "정보가득",
+        "channel_id": "UC67WJU6zrZRA7lMhyML91Lw",
+        "name": "원자력병원-한국원자력의학원",
         "query": "분당 이비인후과"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1963,
+  "region_observed": 1964,
   "channels_discovered": 27937,
-  "channels_observed": 18281,
+  "channels_observed": 18298,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3415,
+      "observed": 3432,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3419,
+      "classified": 3436,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2350,
+      "observed": 2358,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2355,
+      "classified": 2363,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2144,
+      "observed": 2145,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2145,
+      "classified": 2146,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1963,
+      "observed": 1964,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1964,
+      "classified": 1965,
       "classification_errors": 1,
       "jobs": [
         {
