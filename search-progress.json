@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T07:02:53.165862+00:00",
+  "updated_at": "2026-09-28T07:03:54.756978+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22653,
-    "pending": 5284,
+    "processed": 22663,
+    "pending": 5274,
     "processing": 1,
-    "eligible": 196,
-    "review": 15801,
-    "rejected": 6606,
+    "eligible": 197,
+    "review": 15809,
+    "rejected": 6607,
     "errors": 47,
-    "ready": 134,
+    "ready": 137,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCgC5hyXJiVxvBa5jE66OppQ",
-        "name": "메콘TV",
+        "channel_id": "UCHx0AVGajUN8AmHxV3fYhrg",
+        "name": "안진혁 변호사",
         "query": "강남 변호사"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2237,
+  "region_observed": 2240,
   "channels_discovered": 27937,
-  "channels_observed": 22606,
+  "channels_observed": 22616,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2697,
+      "observed": 2707,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2702,
+      "classified": 2712,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2237,
+      "observed": 2240,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2238,
+      "classified": 2241,
       "classification_errors": 1,
       "jobs": [
         {
