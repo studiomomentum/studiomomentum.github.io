@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:39:45.859694+00:00",
+  "updated_at": "2026-09-28T06:40:47.606006+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22310,
-    "pending": 5626,
-    "processing": 2,
+    "processed": 22324,
+    "pending": 5614,
+    "processing": 0,
     "eligible": 188,
-    "review": 15598,
-    "rejected": 6474,
+    "review": 15606,
+    "rejected": 6480,
     "errors": 47,
     "ready": 129,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCWdpiAwpDdpfh4BogKHnbnw",
-        "name": "네이버에정직카검색",
-        "query": "판교 중고차"
-      },
-      {
-        "channel_id": "UCVQEemjI1iDbe8XBjCYkn6g",
-        "name": "타본놈",
-        "query": "판교 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2195,
+  "region_observed": 2196,
   "channels_discovered": 27937,
-  "channels_observed": 22263,
+  "channels_observed": 22277,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4926,
+      "observed": 4940,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4934,
+      "classified": 4948,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2195,
+      "observed": 2196,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2196,
+      "classified": 2197,
       "classification_errors": 1,
       "jobs": [
         {
