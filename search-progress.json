@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:40:32.600057+00:00",
+  "updated_at": "2026-09-28T05:41:45.243204+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21360,
-    "pending": 6576,
-    "processing": 2,
+    "processed": 21378,
+    "pending": 6560,
+    "processing": 0,
     "eligible": 188,
-    "review": 14928,
-    "rejected": 6196,
+    "review": 14943,
+    "rejected": 6199,
     "errors": 45,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC64fUrE7RdHJjin8GUUpX6A",
-        "name": "투비글즈(Two Beagles)",
-        "query": "판교 산부인과"
-      },
-      {
-        "channel_id": "UCwDPC32bv06LIsdxafSpzYw",
-        "name": "제이네 ",
-        "query": "판교 산부인과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2170,
+  "region_observed": 2172,
   "channels_discovered": 27937,
-  "channels_observed": 21315,
+  "channels_observed": 21333,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3978,
+      "observed": 3996,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3984,
+      "classified": 4002,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2170,
+      "observed": 2172,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2171,
+      "classified": 2173,
       "classification_errors": 1,
       "jobs": [
         {
