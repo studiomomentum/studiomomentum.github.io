@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:31:02.278253+00:00",
+  "updated_at": "2026-09-28T05:32:04.605635+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21216,
-    "pending": 6722,
-    "processing": 0,
+    "processed": 21237,
+    "pending": 6700,
+    "processing": 1,
     "eligible": 188,
-    "review": 14826,
-    "rejected": 6154,
+    "review": 14842,
+    "rejected": 6159,
     "errors": 45,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCi_ccH-SitNR67vSq5j7Eyg",
+        "name": "changrak Choi",
+        "query": "판교 재활의학과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2167,
   "channels_discovered": 27937,
-  "channels_observed": 21171,
+  "channels_observed": 21192,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3834,
+      "observed": 3855,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3840,
+      "classified": 3861,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2312,
+      "observed": 2313,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2313,
+      "classified": 2314,
       "classification_errors": 1,
       "jobs": [
         {
