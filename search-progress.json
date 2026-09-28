@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:56:05.368900+00:00",
+  "updated_at": "2026-09-28T00:57:06.576825+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16535,
-    "pending": 11403,
-    "processing": 0,
+    "processed": 16563,
+    "pending": 11373,
+    "processing": 2,
     "eligible": 173,
-    "review": 11559,
-    "rejected": 4766,
+    "review": 11582,
+    "rejected": 4771,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCRNbTBwtu6kB3VY1wwq-RKw",
+        "name": "365다시재한방병원",
+        "query": "화성 재활의학과"
+      },
+      {
+        "channel_id": "UCv2-t5kWq2YYaTBQPmmrU1w",
+        "name": "UUCM Beast",
+        "query": "화성 재활의학과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1807,
+  "region_observed": 1808,
   "channels_discovered": 27937,
-  "channels_observed": 16501,
+  "channels_observed": 16529,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4246,
+      "observed": 4274,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4254,
+      "classified": 4282,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2055,
+      "observed": 2056,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2059,
+      "classified": 2060,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2215,
+      "observed": 2219,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2220,
+      "classified": 2224,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2039,
+      "observed": 2040,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2040,
+      "classified": 2041,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1807,
+      "observed": 1808,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1808,
+      "classified": 1809,
       "classification_errors": 1,
       "jobs": [
         {
