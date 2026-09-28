@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:01:08.704422+00:00",
+  "updated_at": "2026-09-28T02:02:10.049886+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18017,
-    "pending": 9919,
-    "processing": 2,
+    "processed": 18042,
+    "pending": 9895,
+    "processing": 1,
     "eligible": 178,
-    "review": 12626,
-    "rejected": 5171,
+    "review": 12649,
+    "rejected": 5173,
     "errors": 39,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC1SSG0GRiRanDeYJzwq2u1w",
-        "name": "개포사랑TV",
+        "channel_id": "UCLjfzVZbbitM5CleVWXNX1Q",
+        "name": "월계수 부동산중개법인(주)",
         "query": "분당 공인중개사"
-      },
-      {
-        "channel_id": "UCjRKYmHPYvdCVjCZ9BF5N_w",
-        "name": "문팀장의목조주택이야기",
-        "query": "분당 어학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1904,
+  "region_observed": 1907,
   "channels_discovered": 27937,
-  "channels_observed": 17978,
+  "channels_observed": 18003,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3112,
+      "observed": 3137,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3116,
+      "classified": 3141,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2156,
+      "observed": 2163,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2160,
+      "classified": 2167,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2310,
+      "observed": 2311,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2315,
+      "classified": 2316,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1904,
+      "observed": 1907,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1905,
+      "classified": 1908,
       "classification_errors": 1,
       "jobs": [
         {
