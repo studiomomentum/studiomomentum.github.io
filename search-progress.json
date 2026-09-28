@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:46:34.640589+00:00",
+  "updated_at": "2026-09-28T01:47:36.376106+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17714,
-    "pending": 10223,
-    "processing": 1,
-    "eligible": 175,
-    "review": 12401,
-    "rejected": 5097,
+    "processed": 17735,
+    "pending": 10203,
+    "processing": 0,
+    "eligible": 176,
+    "review": 12417,
+    "rejected": 5101,
     "errors": 38,
     "ready": 128,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCOP4_8cxeXPrMuug6JDP4NQ",
-        "name": "18층 변호사들",
-        "query": "분당 변호사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1856,
+  "region_observed": 1864,
   "channels_discovered": 27937,
-  "channels_observed": 17676,
+  "channels_observed": 17697,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2810,
+      "observed": 2831,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2813,
+      "classified": 2834,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2269,
+      "observed": 2271,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2274,
+      "classified": 2276,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2081,
+      "observed": 2085,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2082,
+      "classified": 2086,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1856,
+      "observed": 1864,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1857,
+      "classified": 1865,
       "classification_errors": 1,
       "jobs": [
         {
