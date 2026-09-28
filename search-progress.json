@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:19:31.727761+00:00",
+  "updated_at": "2026-09-28T03:20:33.038712+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19185,
-    "pending": 8752,
-    "processing": 1,
+    "processed": 19200,
+    "pending": 8736,
+    "processing": 2,
     "eligible": 182,
-    "review": 13385,
-    "rejected": 5575,
+    "review": 13397,
+    "rejected": 5578,
     "errors": 40,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC_IJ2OlHt3dS7uuEHu3Dvhw",
-        "name": "스타트업TV",
+        "channel_id": "UCjS7wbRxcapgeymHBJVYi8A",
+        "name": "허리튼튼법무사",
+        "query": "분당 법무사"
+      },
+      {
+        "channel_id": "UCgtqcRJQ6q_rQItiLSQBUnQ",
+        "name": "THE K BEAUTY SCIENCE 더케이뷰티사이언스",
         "query": "분당 변리사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2049,
+  "region_observed": 2052,
   "channels_discovered": 27937,
-  "channels_observed": 19145,
+  "channels_observed": 19160,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3876,
+      "observed": 3891,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3880,
+      "classified": 3895,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2292,
+      "observed": 2296,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2296,
+      "classified": 2300,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2426,
+      "observed": 2427,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2431,
+      "classified": 2432,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2205,
+      "observed": 2206,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2206,
+      "classified": 2207,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2049,
+      "observed": 2052,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2050,
+      "classified": 2053,
       "classification_errors": 1,
       "jobs": [
         {
