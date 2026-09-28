@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:52:55.335085+00:00",
+  "updated_at": "2026-09-28T00:53:57.401556+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16455,
-    "pending": 11481,
-    "processing": 2,
+    "processed": 16481,
+    "pending": 11457,
+    "processing": 0,
     "eligible": 173,
-    "review": 11510,
-    "rejected": 4735,
+    "review": 11528,
+    "rejected": 4743,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClOGdWUrGgL_4ZDOQBdQwOA",
-        "name": "인천터미널정형외과",
-        "query": "화성 정형외과"
-      },
-      {
-        "channel_id": "UCqr2i6unlkKtSLvLhLNsotg",
-        "name": "인하정형외과",
-        "query": "화성 정형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1805,
   "channels_discovered": 27937,
-  "channels_observed": 16421,
+  "channels_observed": 16447,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4166,
+      "observed": 4192,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4174,
+      "classified": 4200,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2034,
+      "observed": 2036,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2035,
+      "classified": 2037,
       "classification_errors": 1,
       "jobs": [
         {
