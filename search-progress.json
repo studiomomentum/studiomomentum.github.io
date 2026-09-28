@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:01:26.900917+00:00",
+  "updated_at": "2026-09-28T05:02:28.699872+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20770,
-    "pending": 7166,
+    "processed": 20786,
+    "pending": 7150,
     "processing": 2,
     "eligible": 187,
-    "review": 14507,
-    "rejected": 6029,
+    "review": 14518,
+    "rejected": 6034,
     "errors": 44,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCWfg0TBlE87mIQVpHwVIi4Q",
-        "name": "목희수",
-        "query": "판교 부동산중개"
+        "channel_id": "UCiJjZgJtNSwQEdjw_IUMoxQ",
+        "name": "혁신기획사 라이프스퀘어",
+        "query": "판교 행정사"
       },
       {
-        "channel_id": "UCBtMbIjcAWH8ts8ZcP7uVxQ",
-        "name": "두바퀴 TV",
+        "channel_id": "UCyus6_ITIraOE1sD8JcmT5A",
+        "name": "부동산은 닥터빌리",
         "query": "판교 행정사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2151,
+  "region_observed": 2152,
   "channels_discovered": 27937,
-  "channels_observed": 20726,
+  "channels_observed": 20742,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3389,
+      "observed": 3405,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3394,
+      "classified": 3410,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2516,
+      "observed": 2518,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2521,
+      "classified": 2523,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2151,
+      "observed": 2152,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2152,
+      "classified": 2153,
       "classification_errors": 1,
       "jobs": [
         {
