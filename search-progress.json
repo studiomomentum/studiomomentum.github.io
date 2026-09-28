@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:30:08.950462+00:00",
+  "updated_at": "2026-09-28T01:31:10.204758+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17345,
-    "pending": 10593,
-    "processing": 0,
+    "processed": 17373,
+    "pending": 10563,
+    "processing": 2,
     "eligible": 174,
-    "review": 12140,
-    "rejected": 4992,
-    "errors": 36,
+    "review": 12151,
+    "rejected": 5008,
+    "errors": 37,
     "ready": 127,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC0zGkIdm9YULDbWyiSNg_yQ",
+        "name": "가온파의 힐링하우스",
+        "query": "화성 건축사사무소"
+      },
+      {
+        "channel_id": "UCFRS4z2-iGIuAA185tpblcA",
+        "name": "Счастье в горошек",
+        "query": "화성 감정평가사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1836,
+  "region_observed": 1840,
   "channels_discovered": 27937,
-  "channels_observed": 17309,
+  "channels_observed": 17336,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,11 +1513,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5054,
-      "observation_errors": 10,
+      "observed": 5081,
+      "observation_errors": 11,
       "classified_at": null,
-      "classified": 5064,
-      "classification_errors": 10,
+      "classified": 5092,
+      "classification_errors": 11,
       "jobs": [
         {
           "name": "세무사",
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2768,
+      "observed": 2770,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2770,
+      "classified": 2772,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2102,
+      "observed": 2106,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2106,
+      "classified": 2110,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2248,
+      "observed": 2250,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2253,
+      "classified": 2255,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1836,
+      "observed": 1840,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1837,
+      "classified": 1841,
       "classification_errors": 1,
       "jobs": [
         {
