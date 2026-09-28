@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:59:09.539281+00:00",
+  "updated_at": "2026-09-28T01:00:11.582183+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16611,
-    "pending": 11325,
+    "processed": 16639,
+    "pending": 11297,
     "processing": 2,
     "eligible": 173,
-    "review": 11622,
-    "rejected": 4779,
+    "review": 11646,
+    "rejected": 4783,
     "errors": 34,
     "ready": 126,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCo1SUTTM6gehcAq-Tt9_I4A",
-        "name": "장애인차별금지추진연대",
+        "channel_id": "UC8UCw_NYEZ8ylyYmOmWIZjg",
+        "name": "청춘시대재활복지센터",
         "query": "화성 재활의학과"
       },
       {
-        "channel_id": "UCWhNQOkLHbMrcxciPu2zpBw",
-        "name": "정해룡 한결엔지니어링",
+        "channel_id": "UCoBFLOEQ_mDPv7_289QBV8A",
+        "name": "에디seo마케터",
         "query": "화성 재활의학과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1809,
+  "region_observed": 1810,
   "channels_discovered": 27937,
-  "channels_observed": 16577,
+  "channels_observed": 16605,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4322,
+      "observed": 4350,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4330,
+      "classified": 4358,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2748,
+      "observed": 2749,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2750,
+      "classified": 2751,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2060,
+      "observed": 2065,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2064,
+      "classified": 2069,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2221,
+      "observed": 2222,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2226,
+      "classified": 2227,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2042,
+      "observed": 2043,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2043,
+      "classified": 2044,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1809,
+      "observed": 1810,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1810,
+      "classified": 1811,
       "classification_errors": 1,
       "jobs": [
         {
