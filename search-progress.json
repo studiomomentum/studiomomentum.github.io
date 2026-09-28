@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:20:44.525578+00:00",
+  "updated_at": "2026-09-28T01:21:46.217077+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17125,
-    "pending": 10813,
-    "processing": 0,
+    "processed": 17154,
+    "pending": 10783,
+    "processing": 1,
     "eligible": 174,
-    "review": 11979,
-    "rejected": 4935,
-    "errors": 34,
+    "review": 11999,
+    "rejected": 4943,
+    "errors": 35,
     "ready": 127,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCPboJWI0Oys-R-iFt0MP6fQ",
+        "name": "토크브런치 TalkBrunch",
+        "query": "화성 변리사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1832,
+  "region_observed": 1833,
   "channels_discovered": 27937,
-  "channels_observed": 17091,
+  "channels_observed": 17119,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,11 +1508,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4836,
-      "observation_errors": 8,
+      "observed": 4864,
+      "observation_errors": 9,
       "classified_at": null,
-      "classified": 4844,
-      "classification_errors": 8,
+      "classified": 4873,
+      "classification_errors": 9,
       "jobs": [
         {
           "name": "세무사",
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2245,
+      "observed": 2246,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2250,
+      "classified": 2251,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2062,
+      "observed": 2063,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2063,
+      "classified": 2064,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1832,
+      "observed": 1833,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1833,
+      "classified": 1834,
       "classification_errors": 1,
       "jobs": [
         {
