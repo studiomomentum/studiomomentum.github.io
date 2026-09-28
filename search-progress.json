@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:31:10.204758+00:00",
+  "updated_at": "2026-09-28T01:32:11.396094+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17373,
-    "pending": 10563,
+    "processed": 17393,
+    "pending": 10543,
     "processing": 2,
     "eligible": 174,
-    "review": 12151,
-    "rejected": 5008,
+    "review": 12162,
+    "rejected": 5017,
     "errors": 37,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0zGkIdm9YULDbWyiSNg_yQ",
-        "name": "가온파의 힐링하우스",
-        "query": "화성 건축사사무소"
+        "channel_id": "UC0-h5IQbjZVXfr_CcTRDXYg",
+        "name": "클래시캣 | ClassiCat",
+        "query": "화성 감정평가사"
       },
       {
-        "channel_id": "UCFRS4z2-iGIuAA185tpblcA",
-        "name": "Счастье в горошек",
+        "channel_id": "UCl_CPIOXOJoT1CIG2s2O_EQ",
+        "name": "棠糖短剧NO1SWEETFILM",
         "query": "화성 감정평가사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1840,
+  "region_observed": 1841,
   "channels_discovered": 27937,
-  "channels_observed": 17336,
+  "channels_observed": 17356,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5081,
+      "observed": 5101,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5092,
+      "classified": 5112,
       "classification_errors": 11,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2250,
+      "observed": 2253,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2255,
+      "classified": 2258,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2067,
+      "observed": 2069,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2068,
+      "classified": 2070,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1840,
+      "observed": 1841,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1841,
+      "classified": 1842,
       "classification_errors": 1,
       "jobs": [
         {
