@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:44:46.286223+00:00",
+  "updated_at": "2026-09-28T04:45:49.146165+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20520,
-    "pending": 7416,
-    "processing": 2,
+    "processed": 20535,
+    "pending": 7402,
+    "processing": 1,
     "eligible": 186,
-    "review": 14313,
-    "rejected": 5974,
+    "review": 14322,
+    "rejected": 5980,
     "errors": 44,
     "ready": 132,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCquhTCtrqgUhgewRoyEhpBA",
-        "name": "맑은하늘음악학원",
-        "query": "판교 학원"
-      },
-      {
-        "channel_id": "UCPvEnJFiF1wcP76XAT-6yPA",
-        "name": "부돈산랩",
-        "query": "판교 학원"
+        "channel_id": "UCJu2QvjxGHE2_zgZhf9MpaA",
+        "name": "프리덤아트스페이스freedom art space",
+        "query": "판교 입시학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2136,
+  "region_observed": 2137,
   "channels_discovered": 27937,
-  "channels_observed": 20476,
+  "channels_observed": 20491,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3139,
+      "observed": 3154,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3144,
+      "classified": 3159,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2506,
+      "observed": 2508,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2511,
+      "classified": 2513,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2136,
+      "observed": 2137,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2137,
+      "classified": 2138,
       "classification_errors": 1,
       "jobs": [
         {
