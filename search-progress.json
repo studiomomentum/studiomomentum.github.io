@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:43:24.379583+00:00",
+  "updated_at": "2026-09-28T03:44:27.069068+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19577,
-    "pending": 8360,
-    "processing": 1,
+    "processed": 19592,
+    "pending": 8346,
+    "processing": 0,
     "eligible": 183,
-    "review": 13671,
-    "rejected": 5677,
+    "review": 13681,
+    "rejected": 5682,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCfB8IorWGOHIQSZS6oNZ5hg",
-        "name": "SoH심리영성센터",
-        "query": "분당 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2078,
   "channels_discovered": 27937,
-  "channels_observed": 19534,
+  "channels_observed": 19549,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4265,
+      "observed": 4280,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4272,
+      "classified": 4287,
       "classification_errors": 7,
       "jobs": [
         {
