@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:54:58.392178+00:00",
+  "updated_at": "2026-09-28T01:56:00.625116+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17890,
-    "pending": 10047,
-    "processing": 1,
+    "processed": 17913,
+    "pending": 10025,
+    "processing": 0,
     "eligible": 178,
-    "review": 12532,
-    "rejected": 5139,
+    "review": 12547,
+    "rejected": 5147,
     "errors": 38,
     "ready": 130,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC8pEus3AJADdcRFGZ0OH3iQ",
-        "name": "눈앞의 경제학",
-        "query": "분당 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1887,
+  "region_observed": 1889,
   "channels_discovered": 27937,
-  "channels_observed": 17852,
+  "channels_observed": 17875,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2986,
+      "observed": 3009,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2989,
+      "classified": 3012,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2289,
+      "observed": 2296,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2294,
+      "classified": 2301,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2097,
+      "observed": 2099,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2098,
+      "classified": 2100,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1887,
+      "observed": 1889,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1888,
+      "classified": 1890,
       "classification_errors": 1,
       "jobs": [
         {
