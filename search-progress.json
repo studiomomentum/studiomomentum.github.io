@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:34:35.122842+00:00",
+  "updated_at": "2026-09-28T00:35:36.625171+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16035,
-    "pending": 11903,
-    "processing": 0,
+    "processed": 16056,
+    "pending": 11881,
+    "processing": 1,
     "eligible": 173,
-    "review": 11224,
-    "rejected": 4604,
+    "review": 11237,
+    "rejected": 4612,
     "errors": 31,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCv7vl6inCv68Sz71uH2XjWA",
+        "name": "행정사한번에합격하기",
+        "query": "화성 행정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1781,
+  "region_observed": 1784,
   "channels_discovered": 27937,
-  "channels_observed": 16004,
+  "channels_observed": 16025,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3749,
+      "observed": 3770,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3754,
+      "classified": 3775,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2023,
+      "observed": 2024,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2026,
+      "classified": 2027,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2005,
+      "observed": 2006,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2006,
+      "classified": 2007,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1781,
+      "observed": 1784,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1782,
+      "classified": 1785,
       "classification_errors": 1,
       "jobs": [
         {
