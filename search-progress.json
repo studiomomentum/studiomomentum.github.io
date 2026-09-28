@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:49:36.090807+00:00",
+  "updated_at": "2026-09-28T04:50:37.382793+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20590,
-    "pending": 7348,
-    "processing": 0,
+    "processed": 20610,
+    "pending": 7326,
+    "processing": 2,
     "eligible": 186,
-    "review": 14371,
-    "rejected": 5986,
+    "review": 14386,
+    "rejected": 5991,
     "errors": 44,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCUPJ-XiaCzuB1SDx5WZqHSQ",
+        "name": "Inchul, Hong",
+        "query": "판교 어학원"
+      },
+      {
+        "channel_id": "UCJsp9f3A4iAArwLRFLj4Oug",
+        "name": "열린공간interior",
+        "query": "판교 어학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2140,
   "channels_discovered": 27937,
-  "channels_observed": 20546,
+  "channels_observed": 20566,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3209,
+      "observed": 3229,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3214,
+      "classified": 3234,
       "classification_errors": 5,
       "jobs": [
         {
