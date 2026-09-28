@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:38:40.683792+00:00",
+  "updated_at": "2026-09-28T00:39:42.504955+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16127,
-    "pending": 11809,
+    "processed": 16153,
+    "pending": 11783,
     "processing": 2,
     "eligible": 173,
-    "review": 11281,
-    "rejected": 4639,
+    "review": 11299,
+    "rejected": 4647,
     "errors": 31,
     "ready": 126,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCYefwjoAoqVsnnxfkR12NSQ",
-        "name": "TV이그린뉴스",
+        "channel_id": "UCG9u4X1zEL8Zy7GKD1PIz8Q",
+        "name": "thunykim",
         "query": "화성 행정사사무소"
       },
       {
-        "channel_id": "UC1QEpI-G0V_vSnlRFs5c2Wg",
-        "name": "밸류레이더",
+        "channel_id": "UCbRxdYqcGtnDZjZFwopSqPg",
+        "name": "우주돌떵이",
         "query": "화성 행정사사무소"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1787,
+  "region_observed": 1789,
   "channels_discovered": 27937,
-  "channels_observed": 16096,
+  "channels_observed": 16122,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3841,
+      "observed": 3867,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3846,
+      "classified": 3872,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2729,
+      "observed": 2735,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2731,
+      "classified": 2737,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2028,
+      "observed": 2031,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2031,
+      "classified": 2034,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2186,
+      "observed": 2187,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2191,
+      "classified": 2192,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2013,
+      "observed": 2014,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2014,
+      "classified": 2015,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1787,
+      "observed": 1789,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1788,
+      "classified": 1790,
       "classification_errors": 1,
       "jobs": [
         {
