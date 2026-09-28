@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:58:39.344015+00:00",
+  "updated_at": "2026-09-28T02:59:41.083919+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18840,
-    "pending": 9096,
+    "processed": 18856,
+    "pending": 9080,
     "processing": 2,
     "eligible": 179,
-    "review": 13126,
-    "rejected": 5492,
+    "review": 13141,
+    "rejected": 5493,
     "errors": 40,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC212tngcdwrDnTmeyFPNbeA",
-        "name": "SHK",
+        "channel_id": "UCpBsyyEtTDol3PaRgvEd0AA",
+        "name": "흉부학개론",
         "query": "분당 마취통증의학과"
       },
       {
-        "channel_id": "UCx0b2hUBVZr1unooI8MKIng",
-        "name": "Yeongjin Ahn",
+        "channel_id": "UCeXKyc2yhfuE33zMfdtAvvA",
+        "name": "조충열 기자의 ANDONGDAILY TV",
         "query": "분당 마취통증의학과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2014,
+  "region_observed": 2016,
   "channels_discovered": 27937,
-  "channels_observed": 18800,
+  "channels_observed": 18816,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3531,
+      "observed": 3547,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3535,
+      "classified": 3551,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2398,
+      "observed": 2402,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2403,
+      "classified": 2407,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2174,
+      "observed": 2178,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2175,
+      "classified": 2179,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2014,
+      "observed": 2016,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2015,
+      "classified": 2017,
       "classification_errors": 1,
       "jobs": [
         {
