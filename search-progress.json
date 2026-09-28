@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:22:47.483345+00:00",
+  "updated_at": "2026-09-28T01:23:48.939140+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17175,
-    "pending": 10761,
+    "processed": 17199,
+    "pending": 10737,
     "processing": 2,
     "eligible": 174,
-    "review": 12014,
-    "rejected": 4949,
-    "errors": 35,
+    "review": 12034,
+    "rejected": 4952,
+    "errors": 36,
     "ready": 127,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCd0MMYK31WOjVL3HUJ-5EyA",
-        "name": "하이디자인도어",
+        "channel_id": "UCUCdE5H8GRDHurU2fP6wbCw",
+        "name": "Emily Salvemini",
         "query": "화성 변리사"
       },
       {
-        "channel_id": "UChfvTNDwSmkGYsV2_8cXXpg",
-        "name": "최고라이브TV",
+        "channel_id": "UCV4lla-cpO_F3pXQ1jhdDmg",
+        "name": "이애숙",
         "query": "화성 변리사"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1833,
   "channels_discovered": 27937,
-  "channels_observed": 17140,
+  "channels_observed": 17163,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,11 +1513,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4885,
-      "observation_errors": 9,
+      "observed": 4908,
+      "observation_errors": 10,
       "classified_at": null,
-      "classified": 4894,
-      "classification_errors": 9,
+      "classified": 4918,
+      "classification_errors": 10,
       "jobs": [
         {
           "name": "세무사",
