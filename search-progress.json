@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:30:40.706577+00:00",
+  "updated_at": "2026-09-28T03:31:42.942443+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19368,
-    "pending": 8570,
-    "processing": 0,
+    "processed": 19389,
+    "pending": 8548,
+    "processing": 1,
     "eligible": 182,
-    "review": 13517,
-    "rejected": 5623,
+    "review": 13530,
+    "rejected": 5631,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCxuVcjcrNQ2kjhdSitA2jwg",
+        "name": "무척바른한의원",
+        "query": "분당 손해사정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2062,
+  "region_observed": 2063,
   "channels_discovered": 27937,
-  "channels_observed": 19325,
+  "channels_observed": 19346,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4056,
+      "observed": 4077,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4063,
+      "classified": 4084,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2316,
+      "observed": 2319,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2320,
+      "classified": 2323,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2441,
+      "observed": 2444,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2446,
+      "classified": 2449,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2214,
+      "observed": 2215,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2215,
+      "classified": 2216,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2062,
+      "observed": 2063,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2063,
+      "classified": 2064,
       "classification_errors": 1,
       "jobs": [
         {
