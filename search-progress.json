@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:19:07.483064+00:00",
+  "updated_at": "2026-09-28T05:20:09.752799+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21036,
-    "pending": 6902,
-    "processing": 0,
+    "processed": 21051,
+    "pending": 6886,
+    "processing": 1,
     "eligible": 188,
-    "review": 14688,
-    "rejected": 6112,
+    "review": 14699,
+    "rejected": 6116,
     "errors": 45,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UClnYUGi4iNuSjjhrvTRTMrQ",
+        "name": "문화예술교육사   김완규",
+        "query": "판교 정형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2160,
+  "region_observed": 2162,
   "channels_discovered": 27937,
-  "channels_observed": 20991,
+  "channels_observed": 21006,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3654,
+      "observed": 3669,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3660,
+      "classified": 3675,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2533,
+      "observed": 2535,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2538,
+      "classified": 2540,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2306,
+      "observed": 2308,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2307,
+      "classified": 2309,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2160,
+      "observed": 2162,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2161,
+      "classified": 2163,
       "classification_errors": 1,
       "jobs": [
         {
