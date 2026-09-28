@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:06:31.422404+00:00",
+  "updated_at": "2026-09-28T03:07:33.787894+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18974,
-    "pending": 8962,
+    "processed": 18992,
+    "pending": 8944,
     "processing": 2,
     "eligible": 180,
-    "review": 13225,
-    "rejected": 5526,
+    "review": 13240,
+    "rejected": 5529,
     "errors": 40,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCZ3Rs9tlGbIatlaIl7_mLGQ",
-        "name": "하준댕이",
+        "channel_id": "UC_HhfJ7VYSp3OII2qfXDWMw",
+        "name": "OBC더원미디어",
         "query": "분당 의원"
       },
       {
-        "channel_id": "UCzFMDafQcWxOrvRvTBRLfTg",
-        "name": "닥터펫",
-        "query": "분당 동물병원"
+        "channel_id": "UCP2qjM00utBlJkFNmlc_GJQ",
+        "name": "KOMENT",
+        "query": "분당 의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2033,
+  "region_observed": 2034,
   "channels_discovered": 27937,
-  "channels_observed": 18934,
+  "channels_observed": 18952,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3665,
+      "observed": 3683,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3669,
+      "classified": 3687,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2277,
+      "observed": 2278,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2281,
+      "classified": 2282,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2192,
+      "observed": 2193,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2193,
+      "classified": 2194,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2033,
+      "observed": 2034,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2034,
+      "classified": 2035,
       "classification_errors": 1,
       "jobs": [
         {
