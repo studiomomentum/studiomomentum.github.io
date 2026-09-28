@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:04:12.754193+00:00",
+  "updated_at": "2026-09-28T02:05:14.193488+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18083,
-    "pending": 9855,
-    "processing": 0,
+    "processed": 18105,
+    "pending": 9831,
+    "processing": 2,
     "eligible": 178,
-    "review": 12678,
-    "rejected": 5185,
+    "review": 12690,
+    "rejected": 5195,
     "errors": 39,
     "ready": 130,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCFJUtMOfYddcO6iW2bLAqlA",
+        "name": "인강드림 행정사",
+        "query": "분당 행정사"
+      },
+      {
+        "channel_id": "UCIa5hK9XF9vSmnkICdz6Ofg",
+        "name": "행정사&중개사",
+        "query": "분당 행정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1920,
+  "region_observed": 1929,
   "channels_discovered": 27937,
-  "channels_observed": 18044,
+  "channels_observed": 18066,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3178,
+      "observed": 3200,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3182,
+      "classified": 3204,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2169,
+      "observed": 2172,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2173,
+      "classified": 2176,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2319,
+      "observed": 2321,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2324,
+      "classified": 2326,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2123,
+      "observed": 2124,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2124,
+      "classified": 2125,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1920,
+      "observed": 1929,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1921,
+      "classified": 1930,
       "classification_errors": 1,
       "jobs": [
         {
