@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:48:01.816537+00:00",
+  "updated_at": "2026-09-28T02:49:03.546133+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18693,
-    "pending": 9244,
-    "processing": 1,
+    "processed": 18706,
+    "pending": 9230,
+    "processing": 2,
     "eligible": 178,
-    "review": 13041,
-    "rejected": 5432,
+    "review": 13046,
+    "rejected": 5440,
     "errors": 39,
-    "ready": 129,
+    "ready": 128,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCqDuGGYmWvFOK-K1fy8P-DA",
-        "name": "JOOBEA-TV",
-        "query": "평택 중고차"
+        "channel_id": "UCspMsHS6JC0D6CdGbTmMm3A",
+        "name": "수도광택사령부",
+        "query": "용인 중고차"
+      },
+      {
+        "channel_id": "UCeXOCmPwa35Zc-SgYx9bgNA",
+        "name": "킹카TV마스터",
+        "query": "용인 중고차"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 1994,
   "channels_discovered": 27937,
-  "channels_observed": 18654,
+  "channels_observed": 18667,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4720,
-      "observed": 4705,
+      "observed": 4707,
       "observation_errors": 13,
-      "classified_at": null,
-      "classified": 4718,
+      "classified_at": "2026-09-28T02:48:37.228380+00:00",
+      "classified": 4720,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4483,
-      "observed": 4428,
+      "observed": 4439,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4431,
+      "classified": 4442,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3505,
+      "observed": 3507,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3509,
+      "classified": 3511,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2240,
+      "observed": 2242,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2244,
+      "classified": 2246,
       "classification_errors": 4,
       "jobs": [
         {
