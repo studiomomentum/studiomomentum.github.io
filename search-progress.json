@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:31:42.942443+00:00",
+  "updated_at": "2026-09-28T03:32:44.378175+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19389,
-    "pending": 8548,
-    "processing": 1,
+    "processed": 19406,
+    "pending": 8530,
+    "processing": 2,
     "eligible": 182,
-    "review": 13530,
-    "rejected": 5631,
+    "review": 13545,
+    "rejected": 5633,
     "errors": 43,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCxuVcjcrNQ2kjhdSitA2jwg",
-        "name": "무척바른한의원",
+        "channel_id": "UCQCEaYeGKoMgKx8dLcRn77w",
+        "name": "김미영",
+        "query": "분당 손해사정사"
+      },
+      {
+        "channel_id": "UCECnUbYHA5Muecwm-klk6zQ",
+        "name": "INAUS ACADEMY",
         "query": "분당 손해사정사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2063,
+  "region_observed": 2064,
   "channels_discovered": 27937,
-  "channels_observed": 19346,
+  "channels_observed": 19363,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 4077,
+      "observed": 4094,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4084,
+      "classified": 4101,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2319,
+      "observed": 2320,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2323,
+      "classified": 2324,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2444,
+      "observed": 2445,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2449,
+      "classified": 2450,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2063,
+      "observed": 2064,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2064,
+      "classified": 2065,
       "classification_errors": 1,
       "jobs": [
         {
