@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:58:22.218401+00:00",
+  "updated_at": "2026-09-28T05:59:23.940160+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21650,
-    "pending": 6286,
+    "processed": 21662,
+    "pending": 6274,
     "processing": 2,
     "eligible": 188,
-    "review": 15127,
-    "rejected": 6287,
+    "review": 15137,
+    "rejected": 6289,
     "errors": 45,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCYZMPxBPhJFrsW4XKLvXvDg",
-        "name": "정양수 기자",
-        "query": "판교 의원"
+        "channel_id": "UCPfC19dGGmANH_JvgRR22ig",
+        "name": "만작 TV",
+        "query": "판교 노무사"
       },
       {
-        "channel_id": "UCDv85g9hJnldnY6Q7jFrOdQ",
-        "name": "김건우",
-        "query": "판교 의원"
+        "channel_id": "UCWqpEO_K7hUAPV_b2OKs51A",
+        "name": "원주시WonjuCity",
+        "query": "판교 노무사"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2179,
   "channels_discovered": 27937,
-  "channels_observed": 21605,
+  "channels_observed": 21617,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4268,
+      "observed": 4280,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4274,
+      "classified": 4286,
       "classification_errors": 6,
       "jobs": [
         {
