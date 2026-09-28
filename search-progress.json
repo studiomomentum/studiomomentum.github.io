@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:54:10.191070+00:00",
+  "updated_at": "2026-09-28T05:55:12.039921+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21578,
-    "pending": 6358,
-    "processing": 2,
+    "processed": 21594,
+    "pending": 6344,
+    "processing": 0,
     "eligible": 188,
-    "review": 15086,
-    "rejected": 6256,
+    "review": 15096,
+    "rejected": 6262,
     "errors": 45,
     "ready": 130,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCBWihGIpMzCcITgRJRD5GYA",
-        "name": "성호육묘장",
-        "query": "판교 동물병원"
-      },
-      {
-        "channel_id": "UC5BGQMhhJwPFjkAkFErGqMA",
-        "name": "단비 크리스천 TV",
-        "query": "판교 비뇨기과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2178,
   "channels_discovered": 27937,
-  "channels_observed": 21533,
+  "channels_observed": 21549,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4196,
+      "observed": 4212,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4202,
+      "classified": 4218,
       "classification_errors": 6,
       "jobs": [
         {
