@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:00:06.498875+00:00",
+  "updated_at": "2026-09-28T02:01:08.704422+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17993,
-    "pending": 9943,
+    "processed": 18017,
+    "pending": 9919,
     "processing": 2,
     "eligible": 178,
-    "review": 12608,
-    "rejected": 5165,
+    "review": 12626,
+    "rejected": 5171,
     "errors": 39,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCmwfUI1ml6K32Fc1qILwzDw",
-        "name": "MyYellowBUS7506",
-        "query": "분당 어학원"
+        "channel_id": "UC1SSG0GRiRanDeYJzwq2u1w",
+        "name": "개포사랑TV",
+        "query": "분당 공인중개사"
       },
       {
-        "channel_id": "UCoXHUacR_kTgK19Sw18wNlQ",
-        "name": "김영주",
+        "channel_id": "UCjRKYmHPYvdCVjCZ9BF5N_w",
+        "name": "문팀장의목조주택이야기",
         "query": "분당 어학원"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1901,
+  "region_observed": 1904,
   "channels_discovered": 27937,
-  "channels_observed": 17954,
+  "channels_observed": 17978,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3088,
+      "observed": 3112,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3092,
+      "classified": 3116,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2151,
+      "observed": 2156,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2155,
+      "classified": 2160,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2308,
+      "observed": 2310,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2313,
+      "classified": 2315,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2113,
+      "observed": 2114,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2114,
+      "classified": 2115,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1901,
+      "observed": 1904,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1902,
+      "classified": 1905,
       "classification_errors": 1,
       "jobs": [
         {
