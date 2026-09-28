@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:06:46.739100+00:00",
+  "updated_at": "2026-09-28T05:07:48.230063+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20850,
-    "pending": 7086,
+    "processed": 20864,
+    "pending": 7072,
     "processing": 2,
     "eligible": 187,
-    "review": 14563,
-    "rejected": 6053,
+    "review": 14574,
+    "rejected": 6056,
     "errors": 44,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC73NNet1sk_e6iADw_SyA5w",
-        "name": "우리연세안과",
-        "query": "판교 성형외과"
+        "channel_id": "UCqwa2Pgh37YccWsLvokJQnw",
+        "name": "피부언니윤정",
+        "query": "판교 피부과"
       },
       {
-        "channel_id": "UCtSJjxKTkhP051eZu1Fw_Kg",
-        "name": "헤일리데일리 : Vlog",
+        "channel_id": "UCJjpMF-XGHi4gNDsJFif41g",
+        "name": "꿀피부 꿀원장",
         "query": "판교 피부과"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2152,
   "channels_discovered": 27937,
-  "channels_observed": 20806,
+  "channels_observed": 20820,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3469,
+      "observed": 3483,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3474,
+      "classified": 3488,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2519,
+      "observed": 2520,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2524,
+      "classified": 2525,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2297,
+      "observed": 2298,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2298,
+      "classified": 2299,
       "classification_errors": 1,
       "jobs": [
         {
