@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:51:39.912117+00:00",
+  "updated_at": "2026-09-28T04:52:41.412471+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20624,
-    "pending": 7314,
-    "processing": 0,
+    "processed": 20634,
+    "pending": 7302,
+    "processing": 2,
     "eligible": 187,
-    "review": 14397,
-    "rejected": 5993,
+    "review": 14403,
+    "rejected": 5997,
     "errors": 44,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UClIeUpAOiiULZSVIqYWuZNg",
+        "name": "어라운즈.아카데미",
+        "query": "판교 어학원"
+      },
+      {
+        "channel_id": "UCD9PJByjxJOsIH_Or9nTfkQ",
+        "name": "노답 사형제간호학과",
+        "query": "판교 어학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2140,
   "channels_discovered": 27937,
-  "channels_observed": 20580,
+  "channels_observed": 20590,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 3243,
+      "observed": 3253,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3248,
+      "classified": 3258,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2285,
+      "observed": 2286,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2286,
+      "classified": 2287,
       "classification_errors": 1,
       "jobs": [
         {
