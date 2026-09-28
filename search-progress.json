@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:19:12.080546+00:00",
+  "updated_at": "2026-09-28T00:20:13.776009+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15670,
-    "pending": 12267,
-    "processing": 1,
+    "processed": 15693,
+    "pending": 12243,
+    "processing": 2,
     "eligible": 172,
-    "review": 10964,
-    "rejected": 4500,
+    "review": 10984,
+    "rejected": 4503,
     "errors": 31,
     "ready": 125,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCPvwqht-XvcbbaUavs53ejg",
-        "name": "입시덕후",
+        "channel_id": "UCXwuQemkWpDyvc350QkyHkA",
+        "name": "한세훈",
+        "query": "화성 입시학원"
+      },
+      {
+        "channel_id": "UCmK3tI6CP_x3kdJsniwHwWA",
+        "name": "김문겸TV",
         "query": "화성 입시학원"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1774,
+  "region_observed": 1775,
   "channels_discovered": 27937,
-  "channels_observed": 15639,
+  "channels_observed": 15662,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3384,
+      "observed": 3407,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3389,
+      "classified": 3412,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2718,
+      "observed": 2719,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2720,
+      "classified": 2721,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2011,
+      "observed": 2012,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2014,
+      "classified": 2015,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2169,
+      "observed": 2170,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2174,
+      "classified": 2175,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 1996,
+      "observed": 1997,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1997,
+      "classified": 1998,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1774,
+      "observed": 1775,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1775,
+      "classified": 1776,
       "classification_errors": 1,
       "jobs": [
         {
