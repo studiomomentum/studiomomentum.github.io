@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:35:36.625171+00:00",
+  "updated_at": "2026-09-28T00:36:37.979031+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16056,
-    "pending": 11881,
-    "processing": 1,
+    "processed": 16079,
+    "pending": 11857,
+    "processing": 2,
     "eligible": 173,
-    "review": 11237,
-    "rejected": 4612,
+    "review": 11257,
+    "rejected": 4615,
     "errors": 31,
     "ready": 126,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCv7vl6inCv68Sz71uH2XjWA",
-        "name": "행정사한번에합격하기",
-        "query": "화성 행정사"
+        "channel_id": "UCj0NOqYvufJigPy_kpfPwHQ",
+        "name": "박병채",
+        "query": "화성 부동산중개"
+      },
+      {
+        "channel_id": "UCbt9uCKmFTwI_13a8BO65Tg",
+        "name": "부동산 잘박군",
+        "query": "화성 부동산중개"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1784,
+  "region_observed": 1785,
   "channels_discovered": 27937,
-  "channels_observed": 16025,
+  "channels_observed": 16048,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3770,
+      "observed": 3793,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3775,
+      "classified": 3798,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2724,
+      "observed": 2725,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2726,
+      "classified": 2727,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2184,
+      "observed": 2185,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2189,
+      "classified": 2190,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2006,
+      "observed": 2011,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2007,
+      "classified": 2012,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1784,
+      "observed": 1785,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1785,
+      "classified": 1786,
       "classification_errors": 1,
       "jobs": [
         {
