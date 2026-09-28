@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:00:05.211236+00:00",
+  "updated_at": "2026-09-28T04:01:08.206506+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19838,
-    "pending": 8100,
-    "processing": 0,
+    "processed": 19850,
+    "pending": 8086,
+    "processing": 2,
     "eligible": 184,
-    "review": 13848,
-    "rejected": 5760,
+    "review": 13859,
+    "rejected": 5761,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCsUMHbmquMwsfZiUAviGktg",
+        "name": "플라츠TV",
+        "query": "판교 세무회계"
+      },
+      {
+        "channel_id": "UC94x44GD5bgnSXscJTpwouA",
+        "name": "인생멘토 차희연",
+        "query": "판교 세무회계"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2112,
+  "region_observed": 2113,
   "channels_discovered": 27937,
-  "channels_observed": 19795,
+  "channels_observed": 19807,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2458,
+      "observed": 2470,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2462,
+      "classified": 2474,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2258,
+      "observed": 2259,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2259,
+      "classified": 2260,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2112,
+      "observed": 2113,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2113,
+      "classified": 2114,
       "classification_errors": 1,
       "jobs": [
         {
