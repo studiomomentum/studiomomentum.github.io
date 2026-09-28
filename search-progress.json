@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:29:17.967781+00:00",
+  "updated_at": "2026-09-28T06:30:19.789188+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22148,
-    "pending": 5788,
+    "processed": 22164,
+    "pending": 5772,
     "processing": 2,
     "eligible": 188,
-    "review": 15476,
-    "rejected": 6434,
+    "review": 15489,
+    "rejected": 6437,
     "errors": 47,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCgTK9zzhuu9MgAnDNL7eefQ",
-        "name": "NAUM TV",
+        "channel_id": "UCHlWDA1Ail2gAjlKVtJFW9g",
+        "name": "필라테스스토리",
         "query": "판교 필라테스"
       },
       {
-        "channel_id": "UCO_J99D3NJlmKzSZrtcd16w",
-        "name": "바디케어필라테스",
+        "channel_id": "UC4-RLNOE5G_6CMfRTjFubEA",
+        "name": "SPOTV Golf",
         "query": "판교 필라테스"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2189,
   "channels_discovered": 27937,
-  "channels_observed": 22101,
+  "channels_observed": 22117,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4764,
+      "observed": 4780,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4772,
+      "classified": 4788,
       "classification_errors": 8,
       "jobs": [
         {
