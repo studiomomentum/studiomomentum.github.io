@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:31:21.112507+00:00",
+  "updated_at": "2026-09-28T00:32:31.456654+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,12 +11,12 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15949,
-    "pending": 11989,
+    "processed": 15979,
+    "pending": 11959,
     "processing": 0,
     "eligible": 173,
-    "review": 11167,
-    "rejected": 4575,
+    "review": 11192,
+    "rejected": 4580,
     "errors": 31,
     "ready": 126,
     "status": "running",
@@ -27,7 +27,7 @@
   "region_channels": 4300,
   "region_observed": 1779,
   "channels_discovered": 27937,
-  "channels_observed": 15918,
+  "channels_observed": 15948,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3663,
+      "observed": 3693,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3668,
+      "classified": 3698,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2088,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2017,
+      "observed": 2019,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2020,
+      "classified": 2022,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2182,
+      "observed": 2183,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2187,
+      "classified": 2188,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2002,
+      "observed": 2004,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2003,
+      "classified": 2005,
       "classification_errors": 1,
       "jobs": [
         {
