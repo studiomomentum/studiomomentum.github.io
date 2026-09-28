@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:51:15.315526+00:00",
+  "updated_at": "2026-09-28T06:52:17.549095+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22478,
-    "pending": 5460,
-    "processing": 0,
+    "processed": 22499,
+    "pending": 5438,
+    "processing": 1,
     "eligible": 188,
-    "review": 15684,
-    "rejected": 6556,
+    "review": 15692,
+    "rejected": 6569,
     "errors": 47,
     "ready": 128,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCEbRQLMKUZllUIkzG9fwyCQ",
+        "name": "마이마부",
+        "query": "판교 중고차"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2199,
   "channels_discovered": 27937,
-  "channels_observed": 22431,
+  "channels_observed": 22452,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 5094,
+      "observed": 5115,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 5102,
+      "classified": 5123,
       "classification_errors": 8,
       "jobs": [
         {
