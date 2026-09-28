@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:19:57.515882+00:00",
+  "updated_at": "2026-09-28T04:20:59.954586+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20144,
-    "pending": 7792,
-    "processing": 2,
+    "processed": 20162,
+    "pending": 7776,
+    "processing": 0,
     "eligible": 185,
-    "review": 14052,
-    "rejected": 5861,
+    "review": 14067,
+    "rejected": 5864,
     "errors": 43,
     "ready": 132,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCLbMgH8LzrEOnE8jMYvTe5Q",
-        "name": "충주모아부동산",
-        "query": "판교 법률사무소"
-      },
-      {
-        "channel_id": "UCxYoXG9IFOG0NgTZbjhuEug",
-        "name": "초이스부동산 TV",
-        "query": "판교 법률사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2118,
   "channels_discovered": 27937,
-  "channels_observed": 20101,
+  "channels_observed": 20119,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2764,
+      "observed": 2782,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2768,
+      "classified": 2786,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2492,
+      "observed": 2493,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2497,
+      "classified": 2498,
       "classification_errors": 5,
       "jobs": [
         {
