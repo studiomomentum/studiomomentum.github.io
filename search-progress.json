@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:32:11.396094+00:00",
+  "updated_at": "2026-09-28T01:33:13.572922+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17393,
-    "pending": 10543,
-    "processing": 2,
+    "processed": 17421,
+    "pending": 10517,
+    "processing": 0,
     "eligible": 174,
-    "review": 12162,
-    "rejected": 5017,
+    "review": 12178,
+    "rejected": 5029,
     "errors": 37,
     "ready": 127,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC0-h5IQbjZVXfr_CcTRDXYg",
-        "name": "클래시캣 | ClassiCat",
-        "query": "화성 감정평가사"
-      },
-      {
-        "channel_id": "UCl_CPIOXOJoT1CIG2s2O_EQ",
-        "name": "棠糖短剧NO1SWEETFILM",
-        "query": "화성 감정평가사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1841,
+  "region_observed": 1844,
   "channels_discovered": 27937,
-  "channels_observed": 17356,
+  "channels_observed": 17384,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 5101,
+      "observed": 5129,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 5112,
+      "classified": 5140,
       "classification_errors": 11,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2770,
+      "observed": 2771,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2772,
+      "classified": 2773,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2069,
+      "observed": 2071,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2070,
+      "classified": 2072,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1841,
+      "observed": 1844,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1842,
+      "classified": 1845,
       "classification_errors": 1,
       "jobs": [
         {
