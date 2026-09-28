@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:12:48.992699+00:00",
+  "updated_at": "2026-09-28T01:13:50.665655+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 16943,
-    "pending": 10995,
-    "processing": 0,
+    "processed": 16965,
+    "pending": 10971,
+    "processing": 2,
     "eligible": 173,
-    "review": 11860,
-    "rejected": 4873,
+    "review": 11867,
+    "rejected": 4888,
     "errors": 34,
     "ready": 126,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCBxmaVQC2_ToW5XBZF1Vmpg",
+        "name": "무사셋",
+        "query": "화성 노무사"
+      },
+      {
+        "channel_id": "UCU4NdktSD74pGiz-PJ08B1w",
+        "name": "민주노총",
+        "query": "화성 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1825,
+  "region_observed": 1826,
   "channels_discovered": 27937,
-  "channels_observed": 16909,
+  "channels_observed": 16931,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 4654,
+      "observed": 4676,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4662,
+      "classified": 4684,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2758,
+      "observed": 2759,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2760,
+      "classified": 2761,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2084,
+      "observed": 2085,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2088,
+      "classified": 2089,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2238,
+      "observed": 2239,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2243,
+      "classified": 2244,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1825,
+      "observed": 1826,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1826,
+      "classified": 1827,
       "classification_errors": 1,
       "jobs": [
         {
