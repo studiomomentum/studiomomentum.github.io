@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:53:19.375678+00:00",
+  "updated_at": "2026-09-28T06:54:21.225384+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22512,
-    "pending": 5426,
-    "processing": 0,
-    "eligible": 188,
-    "review": 15696,
-    "rejected": 6578,
+    "processed": 22526,
+    "pending": 5410,
+    "processing": 2,
+    "eligible": 189,
+    "review": 15698,
+    "rejected": 6589,
     "errors": 47,
     "ready": 128,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC3mV-Nya8m2NKREC6lXUf2w",
+        "name": "세무법인 비즈앤택스",
+        "query": "강남 세무법인"
+      },
+      {
+        "channel_id": "UC7LvipkFoBCrW8FLhqci-DQ",
+        "name": "이석인",
+        "query": "강남 세무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2199,
+  "region_observed": 2200,
   "channels_discovered": 27937,
-  "channels_observed": 22465,
+  "channels_observed": 22479,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 5128,
+      "observed": 5140,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 5136,
+      "classified": 5148,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2568,
+      "observed": 2570,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2573,
+      "classified": 2575,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2345,
+      "observed": 2347,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2346,
+      "classified": 2348,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2199,
+      "observed": 2200,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2200,
+      "classified": 2201,
       "classification_errors": 1,
       "jobs": [
         {
