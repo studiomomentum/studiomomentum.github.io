@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T05:52:06.128310+00:00",
+  "updated_at": "2026-09-28T05:53:07.838453+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,20 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 21549,
-    "pending": 6388,
+    "processed": 21565,
+    "pending": 6372,
     "processing": 1,
     "eligible": 188,
-    "review": 15065,
-    "rejected": 6248,
+    "review": 15075,
+    "rejected": 6254,
     "errors": 45,
     "ready": 130,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCJTl7V9o737pXzk8UsfcEHg",
-        "name": "최세웅",
-        "query": "판교 비뇨기과"
+        "channel_id": "UCc9Z171coM-ju9hTzyADiWA",
+        "name": "도레미캣",
+        "query": "판교 동물병원"
       }
     ]
   },
@@ -33,7 +33,7 @@
   "region_channels": 4300,
   "region_observed": 2177,
   "channels_discovered": 27937,
-  "channels_observed": 21504,
+  "channels_observed": 21520,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4167,
+      "observed": 4183,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4173,
+      "classified": 4189,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2549,
+      "observed": 2550,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2554,
+      "classified": 2555,
       "classification_errors": 5,
       "jobs": [
         {
