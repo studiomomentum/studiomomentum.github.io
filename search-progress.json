@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T06:37:41.402739+00:00",
+  "updated_at": "2026-09-28T06:38:43.164006+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22272,
-    "pending": 5666,
-    "processing": 0,
+    "processed": 22295,
+    "pending": 5642,
+    "processing": 1,
     "eligible": 188,
-    "review": 15575,
-    "rejected": 6459,
+    "review": 15589,
+    "rejected": 6468,
     "errors": 47,
     "ready": 129,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC7LUAghk37RU0g7kpBzZljQ",
+        "name": "하얀사과white Apple",
+        "query": "판교 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2192,
+  "region_observed": 2193,
   "channels_discovered": 27937,
-  "channels_observed": 22225,
+  "channels_observed": 22248,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 4888,
+      "observed": 4911,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4896,
+      "classified": 4919,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2564,
+      "observed": 2565,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2569,
+      "classified": 2570,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2192,
+      "observed": 2193,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2193,
+      "classified": 2194,
       "classification_errors": 1,
       "jobs": [
         {
