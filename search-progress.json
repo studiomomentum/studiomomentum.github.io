@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:19:42.512255+00:00",
+  "updated_at": "2026-09-28T02:20:43.925227+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18272,
-    "pending": 9666,
-    "processing": 0,
+    "processed": 18290,
+    "pending": 9646,
+    "processing": 2,
     "eligible": 178,
-    "review": 12818,
-    "rejected": 5234,
+    "review": 12831,
+    "rejected": 5239,
     "errors": 39,
     "ready": 129,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCYkzCYcBMkXFTNyuh2smxRw",
+        "name": "아이엠정형외과",
+        "query": "분당 정형외과"
+      },
+      {
+        "channel_id": "UCk37eUVUdJR5vYPAQW9TMvA",
+        "name": "John choi TV",
+        "query": "분당 안과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 1962,
   "channels_discovered": 27937,
-  "channels_observed": 18233,
+  "channels_observed": 18251,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3367,
+      "observed": 3385,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3371,
+      "classified": 3389,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2181,
+      "observed": 2183,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2185,
+      "classified": 2187,
       "classification_errors": 4,
       "jobs": [
         {
