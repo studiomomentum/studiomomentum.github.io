@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T00:18:10.372332+00:00",
+  "updated_at": "2026-09-28T00:19:12.080546+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 15654,
-    "pending": 12282,
-    "processing": 2,
+    "processed": 15670,
+    "pending": 12267,
+    "processing": 1,
     "eligible": 172,
-    "review": 10953,
-    "rejected": 4497,
-    "errors": 29,
+    "review": 10964,
+    "rejected": 4500,
+    "errors": 31,
     "ready": 125,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC-4kHc1nsH2VtTHQfTaPn2w",
-        "name": "이동환변호사TV",
-        "query": "평택 변호사"
-      },
-      {
-        "channel_id": "UCpipD1-WNRqKVmeT6rneNjg",
-        "name": "생활체육 배드민턴 17 - 오마이플레이",
-        "query": "평택 한방병원"
+        "channel_id": "UCPvwqht-XvcbbaUavs53ejg",
+        "name": "입시덕후",
+        "query": "화성 입시학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1773,
+  "region_observed": 1774,
   "channels_discovered": 27937,
-  "channels_observed": 15625,
+  "channels_observed": 15639,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -930,8 +925,8 @@
       "observed": 4611,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4622,
-      "classification_errors": 11,
+      "classified": 4624,
+      "classification_errors": 13,
       "jobs": [
         {
           "name": "세무사",
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5537,
-      "observed": 3370,
+      "observed": 3384,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3375,
+      "classified": 3389,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1773,
+      "observed": 1774,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1774,
+      "classified": 1775,
       "classification_errors": 1,
       "jobs": [
         {
