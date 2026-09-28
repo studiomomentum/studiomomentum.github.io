@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T02:57:36.923941+00:00",
+  "updated_at": "2026-09-28T02:58:39.344015+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 18826,
-    "pending": 9110,
+    "processed": 18840,
+    "pending": 9096,
     "processing": 2,
     "eligible": 179,
-    "review": 13112,
+    "review": 13126,
     "rejected": 5492,
     "errors": 40,
     "ready": 129,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCRNjgqCeun9fAf3ifbEE4kw",
-        "name": "고려대학교 안암병원",
+        "channel_id": "UC212tngcdwrDnTmeyFPNbeA",
+        "name": "SHK",
         "query": "분당 마취통증의학과"
       },
       {
-        "channel_id": "UCURENrpVc0zUnnYR72lZ3uA",
-        "name": "대한건강의료지원단",
-        "query": "분당 내과의원"
+        "channel_id": "UCx0b2hUBVZr1unooI8MKIng",
+        "name": "Yeongjin Ahn",
+        "query": "분당 마취통증의학과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2012,
+  "region_observed": 2014,
   "channels_discovered": 27937,
-  "channels_observed": 18786,
+  "channels_observed": 18800,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1515,7 +1515,7 @@
       "channels": 5537,
       "observed": 5525,
       "observation_errors": 12,
-      "classified_at": null,
+      "classified_at": "2026-09-28T02:57:55.722464+00:00",
       "classified": 5537,
       "classification_errors": 12,
       "jobs": [
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3517,
+      "observed": 3531,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3521,
+      "classified": 3535,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2395,
+      "observed": 2398,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2400,
+      "classified": 2403,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2173,
+      "observed": 2174,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2174,
+      "classified": 2175,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2012,
+      "observed": 2014,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2013,
+      "classified": 2015,
       "classification_errors": 1,
       "jobs": [
         {
