@@ -48,7 +48,7 @@
 
 관리자 로그인은 기존 비밀번호 원문을 HTTPS POST 본문으로 받아 서버에서 SHA-256 후 비밀키 HMAC 검증합니다. 기존 공개 해시나 로컬 로그인 플래그는 인증으로 인정하지 않습니다. 로그인 성공 시 무작위 세션을 발급하고 서버에는 그 해시와 만료시각만 보관합니다. 기본 만료 8시간, 자동 로그인 선택 시 7일, 로그아웃 시 서버 세션 폐기, 로그인 실패 15분간 8회 제한을 적용합니다. 비밀번호와 GitHub 토큰을 브라우저에 저장하지 않습니다. 브라우저에는 로그인 선택에 따라 만료되는 관리자 세션만 저장합니다.
 
-발송대기 버튼은 서버 세션으로 `classify.start`를 호출합니다. 서버는 `momentum-cold-mailer/auto_prospect.yml`만 `main`, `inputs.force=true`로 dispatch합니다. 전체 정지 설정이 명시적으로 `true`일 때만 실행합니다. `drip_sender.yml` 및 검색 워크플로는 호출하지 않습니다. 운영 스위치는 별도의 `settings.update`에서 두 개의 기존 boolean 설정만 허용합니다. 임의 저장소·경로·워크플로 입력은 받지 않습니다.
+발송대기 버튼은 서버 세션으로 `classify.start`를 호출합니다. 서버는 `momentum-cold-mailer/auto_prospect.yml`만 `main`, `inputs.force=true`로 dispatch합니다. 메일 OFF와 독립적으로 분류할 수 있습니다. 분류 요청은 `drip_sender.yml` 및 검색 워크플로를 실행하지 않습니다. 운영 스위치는 별도의 `settings.update`에서 두 개의 기존 boolean 설정만 허용합니다. 임의 저장소·경로·워크플로 입력은 받지 않습니다.
 
 서버 lock과 requestId로 중복을 차단하고, 반환된 실행 ID의 실제 conclusion으로 완료/실패를 구분합니다. 접수 응답 유실 시 자동 재발송하지 않습니다. 요청 전 실행 목록·요청시각·요청자를 비교해 새 실행이 하나일 때만 연결하며 여러 개이면 확인 필요로 유지합니다. 완료는 워크플로 종료이며 READY 증가를 보장하지 않습니다. 웹 집계는 기존 자동 동기화를 따릅니다.
 
@@ -62,3 +62,10 @@
 - 공통 telemetry meta에 visit_id, arrival_source/host, utm_source/medium, attribution_basis, applied_pricing 기록. 가격 혜택 및 기존 channel_type과 실제 이번 유입 경로를 분리합니다. VIP 재방문 혜택은 그대로 유지합니다.
 - visit_id는 페이지 로드 단위이며 동일 로드의 상담 클릭만 해당 방문에 연결합니다. 과거 기록은 유입 경로 미분리로 표시하며 추측 복원하지 않습니다. 직접 접속/리퍼러 누락, 전용 링크 전달은 구분 불가.
 - 서버는 기존 meta를 그대로 보존하므로 서버 재배포 및 봇 변경은 필요 없습니다.
+
+### 메일 스위치와 발송 예약 연동 (2026-09-28)
+
+- `settings.update(email_system_enabled)`는 `drip_sender.yml` 예약 상태도 함께 제어합니다. OFF는 설정 false 저장 후 workflow disable, ON은 workflow enable 검증 후 설정 true 저장 순서입니다.
+- 예약 상태 GET 확인 실패 또는 GitHub 오류를 성공으로 표시하지 않습니다. OFF의 예약 중지 실패 시에도 발송 설정은 false로 유지합니다. ON 활성화 실패 시 발송 설정을 true로 변경하지 않습니다. 부분 실패는 같은 스위치 요청으로 다시 맞출 수 있습니다.
+- 서치·분류 workflow는 변경하지 않습니다. 실제 메일 dispatch 및 진행 중 SMTP 강제 취소를 하지 않습니다. 이미 전송 중인 메일이나 이미 생성된 GitHub 알림은 회수할 수 없습니다.
+- 운영 발송 설정 false 및 sender `disabled_manually` 확인. ON/OFF 및 부분 실패는 mock 테스트로 검증하며, 실제 ON/메일 발송 시험은 하지 않습니다. 기존 Apps Script URL에 버전 8 배포.

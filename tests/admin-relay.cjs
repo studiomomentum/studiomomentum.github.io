@@ -45,3 +45,31 @@ console.log('PASS authenticated permanent exclusion, server identity, send-state
 
 assert.equal(route({action:'settings.status',session:token}).result.email_system_enabled,true);
 assert.equal(route({action:'settings.status'}).error,'UNAUTHORIZED');
+
+// Mail switch synchronizes only the sender workflow; partial failures stay safe.
+let schedule='active',failSchedule=false,failConfig=false,ops=[];
+sandbox.UrlFetchApp.fetch=(url,options)=>{
+  if(url.includes('/contents/system_config.json')){
+    if(options.method==='put'){
+      ops.push('config');if(failConfig)throw Error('connection');
+      config=JSON.parse(Buffer.from(JSON.parse(options.payload).content,'base64').toString());
+    }
+    return response({sha:'a',content:Buffer.from(JSON.stringify(config)).toString('base64')});
+  }
+  assert(url.includes('/actions/workflows/drip_sender.yml'));
+  if(options.method==='put'){
+    ops.push(url.endsWith('/enable')?'enable':'disable');
+    if(failSchedule)throw Error('connection');
+    schedule=url.endsWith('/enable')?'active':'disabled_manually';
+  }
+  return response({state:schedule});
+};
+const switchMail=value=>route({action:'settings.update',session:token,setting:'email_system_enabled',value});
+assert(switchMail(false).ok);assert.equal(config.email_system_enabled,false);assert.equal(schedule,'disabled_manually');assert.deepEqual(ops,['config','disable']);
+ops=[];assert(switchMail(true).ok);assert.deepEqual(ops,['enable','config']);assert.equal(config.email_system_enabled,true);assert.equal(schedule,'active');
+ops=[];failSchedule=true;assert.equal(switchMail(false).ok,false);assert.equal(config.email_system_enabled,false);assert.deepEqual(ops,['config','disable']);
+ops=[];assert.equal(switchMail(true).ok,false);assert.equal(config.email_system_enabled,false);assert.deepEqual(ops,['enable']);
+failSchedule=false;assert(switchMail(false).ok);assert.equal(schedule,'disabled_manually');
+failConfig=true;assert.equal(switchMail(true).ok,false);assert.equal(config.email_system_enabled,false);failConfig=false;
+ops=[];assert(route({action:'settings.update',session:token,setting:'client_access_blocked',value:true}).ok);assert.deepEqual(ops,['config']);
+console.log('PASS sender schedule OFF/ON ordering, partial failures, retry, client switch isolation.');

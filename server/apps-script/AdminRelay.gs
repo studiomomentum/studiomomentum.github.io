@@ -112,8 +112,20 @@ function adminSettings_(request) {
   const repo=request.setting==='email_system_enabled'?'momentum-cold-mailer':request.setting==='client_access_blocked'?'studiomomentum.github.io':null;
   if(!repo||typeof request.value!=='boolean')throw new Error('INVALID_REQUEST');
   return adminLock_(()=>{
-    const config=adminConfig_(repo);config.value[request.setting]=request.value;config.value.updated_at=new Date().toISOString();
+    const config=adminConfig_(repo);
+    const mail=request.setting==='email_system_enabled';
+    const workflow='repos/'+ADMIN_REPO_+'/actions/workflows/drip_sender.yml';
+    function syncSender(enabled) {
+      adminGithub_(workflow+(enabled?'/enable':'/disable'),'put');
+      const state=adminGithub_(workflow).state;
+      if(state!==(enabled?'active':'disabled_manually'))throw new Error('SENDER_SCHEDULE_SYNC_FAILED');
+    }
+    // ON: restore scheduling before opening the send guard. OFF: close the
+    // send guard before stopping scheduling. Never dispatch or cancel SMTP.
+    if(mail&&request.value)syncSender(true);
+    config.value[request.setting]=request.value;config.value.updated_at=new Date().toISOString();
     adminGithub_('repos/studiomomentum/'+repo+'/contents/system_config.json','put',{message:'Update operational switch',content:Utilities.base64Encode(JSON.stringify(config.value,null,2)+'\n',Utilities.Charset.UTF_8),sha:config.file.sha,branch:'main'});
+    if(mail&&!request.value)syncSender(false);
     return {setting:request.setting,value:request.value};
   });
 }
