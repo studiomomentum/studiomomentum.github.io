@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T01:50:40.915581+00:00",
+  "updated_at": "2026-09-28T01:51:43.561506+00:00",
   "run_id": "36361591455",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 17798,
-    "pending": 10139,
-    "processing": 1,
-    "eligible": 177,
-    "review": 12453,
-    "rejected": 5127,
+    "processed": 17817,
+    "pending": 10121,
+    "processing": 0,
+    "eligible": 178,
+    "review": 12467,
+    "rejected": 5131,
     "errors": 38,
-    "ready": 129,
+    "ready": 130,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCav3tCYVVaC25UAapdm2r5w",
-        "name": "베스트치과의원",
-        "query": "분당 치과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 1871,
+  "region_observed": 1873,
   "channels_discovered": 27937,
-  "channels_observed": 17760,
+  "channels_observed": 17779,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 2894,
+      "observed": 2913,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2897,
+      "classified": 2916,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2136,
+      "observed": 2139,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2140,
+      "classified": 2143,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2279,
+      "observed": 2280,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2284,
+      "classified": 2285,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2089,
+      "observed": 2091,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2090,
+      "classified": 2092,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 1871,
+      "observed": 1873,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1872,
+      "classified": 1874,
       "classification_errors": 1,
       "jobs": [
         {
