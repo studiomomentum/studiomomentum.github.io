@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T04:11:32.816142+00:00",
+  "updated_at": "2026-09-28T04:12:38.272253+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 20020,
-    "pending": 7916,
-    "processing": 2,
+    "processed": 20036,
+    "pending": 7902,
+    "processing": 0,
     "eligible": 184,
-    "review": 13973,
-    "rejected": 5817,
+    "review": 13982,
+    "rejected": 5824,
     "errors": 43,
     "ready": 131,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC5GgUR4r8SmH-Md1nttCJQQ",
-        "name": "김길동",
-        "query": "판교 변호사"
-      },
-      {
-        "channel_id": "UCBXt-8JsY7EfX_hZ91LYI5w",
-        "name": "  정성산TV",
-        "query": "판교 변호사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2115,
   "channels_discovered": 27937,
-  "channels_observed": 19977,
+  "channels_observed": 19993,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2640,
+      "observed": 2656,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2644,
+      "classified": 2660,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2484,
+      "observed": 2487,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2489,
+      "classified": 2492,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2259,
+      "observed": 2260,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2260,
+      "classified": 2261,
       "classification_errors": 1,
       "jobs": [
         {
