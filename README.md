@@ -55,3 +55,10 @@
 검증 명령: `node tests/admin-relay.cjs`, `node tests/admin-classification.cjs`, `node tests/admin-workspace.cjs`. 브라우저 검증은 Playwright 설치가 필요하며 별도 경로는 `PLAYWRIGHT_MODULE`로 지정합니다. 테스트는 외부 제어 요청을 mock 처리합니다.
 
 배포: 기존 Apps Script 프로젝트 `14TWuyAHdQlLFussAPnjZspaWGD-hARToY6LFJTtnwGCCcpY2m0ZWQam4`를 먼저 clone/백업한 뒤 서버 파일을 push하고, 기존 웹앱 배포 ID의 버전만 갱신합니다. 기존 Drive 파일 ID/배포 URL/접근 계약을 변경하지 않습니다. 서버 health는 기존 URL에 `?admin_health=1`을 붙여 확인합니다. 정상 telemetry 응답은 배열이어야 합니다. 운영 웹은 서버 검증 후 배포합니다. 서버 롤백은 기존 배포 ID를 이전 버전으로 돌리며, 세션 중계 전 웹 코드를 함께 복구해야 합니다.
+
+### 고객사 방문 프로필 (2026-09-28)
+
+- 고객사 상세에 첫/최근 방문, 상담 클릭, 최근 적용 가격과 방문별 카드 추가. 기존 토큰 연결을 보존하고 미확인 방문을 임의로 고객사에 연결하지 않습니다.
+- 공통 telemetry meta에 visit_id, arrival_source/host, utm_source/medium, attribution_basis, applied_pricing 기록. 가격 혜택 및 기존 channel_type과 실제 이번 유입 경로를 분리합니다. VIP 재방문 혜택은 그대로 유지합니다.
+- visit_id는 페이지 로드 단위이며 동일 로드의 상담 클릭만 해당 방문에 연결합니다. 과거 기록은 유입 경로 미분리로 표시하며 추측 복원하지 않습니다. 직접 접속/리퍼러 누락, 전용 링크 전달은 구분 불가.
+- 서버는 기존 meta를 그대로 보존하므로 서버 재배포 및 봇 변경은 필요 없습니다.

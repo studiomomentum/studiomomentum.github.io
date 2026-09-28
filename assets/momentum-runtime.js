@@ -56,7 +56,29 @@
     window.DOMPurify.sanitize(staging, {USE_PROFILES: {html: true}, IN_PLACE: true});
     el.replaceChildren(...staging.childNodes);
   }
+  let pageVisitId;
+  function visitContext(payload) {
+    const query = new URLSearchParams(window.location.search);
+    const hash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    const explicit = ['ref','v_ref'].some(k => query.get(k) || hash.get(k)) || query.has('vip') || query.get('pricing') === 'vip' || /vip/i.test(window.location.hash);
+    const source = (query.get('utm_source') || query.get('source') || query.get('src') || '').slice(0,100);
+    const medium = (query.get('utm_medium') || '').slice(0,60);
+    let host = '';
+    try { host = new URL(document.referrer).hostname; } catch (_) {}
+    let arrival = '직접 / 출처 미확인';
+    if (source || medium) arrival = '캠페인: ' + (source || medium);
+    else if (explicit) arrival = '제안 전용 링크';
+    else if (/(^|\.)(google\.(?:com|co\.kr|co\.jp|co\.uk|de|fr|ca|com\.au)|naver.com|bing.com|search.daum.net)$/.test(host)) arrival = '검색: ' + host;
+    else if (/(^|\.)(chatgpt.com|chat.openai.com|perplexity.ai|claude.ai|gemini.google.com|copilot.microsoft.com)$/.test(host)) arrival = 'AI 추천: ' + host;
+    else if (host === window.location.hostname) arrival = '사이트 내부 이동';
+    else if (host) arrival = '외부 링크: ' + host;
+    pageVisitId = pageVisitId || (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(16).slice(2));
+    return {visit_id:pageVisitId, arrival_source:arrival, arrival_host:host, utm_source:source, utm_medium:medium,
+      attribution_basis:explicit ? '전용 링크' : (payload.channel_type === 'OUTBOUND' ? '이전 제안 방문 이력' : '익명 방문'),
+      applied_pricing:payload.pricing_tier || (payload.meta && payload.meta.pricing) || ''};
+  }
   function sendTelemetry(payload, topic, gasUrl) {
+    payload.meta = Object.assign({}, payload.meta || {}, visitContext(payload));
     payload.event_id = payload.event_id || (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(16).slice(2));
     payload.time = payload.time || new Date().toISOString();
     payload.timestamp = payload.timestamp || Date.now();

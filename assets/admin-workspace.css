@@ -29,3 +29,5 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
 .classification-active ul{list-style:none;margin:8px 0;padding:0;display:grid;gap:8px}.classification-active li{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 12px;border:1px solid var(--border);border-radius:8px}.classification-active li strong{color:var(--text-primary);min-width:130px}.classification-active li span{overflow-wrap:anywhere}
 
 #dynamicFilterGroup input[type=date]{min-width:0;max-width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;background:var(--bg-card);color:inherit;font:inherit;color-scheme:dark}#sentDateToday,#sentDateClear{padding:8px 12px;border:1px solid var(--border);border-radius:6px;background:transparent;color:inherit;cursor:pointer;min-height:38px}
+
+.visit-cards{list-style:none;padding:0;display:grid;gap:12px}.visit-cards li{display:grid;gap:7px;padding:14px;background:#172438;border:1px solid #334155;border-radius:12px;overflow-wrap:anywhere;font-size:12px}.visit-cards time{color:#94a3b8;font-size:11px}.visit-cards strong{color:#93c5fd}.customer-visits .field-label{line-height:1.7}

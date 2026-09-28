@@ -84,6 +84,17 @@ assert.equal(await p.locator('.prospect-card strong').last().textContent(),'1');
 await p.evaluate(()=>{targetsMap=window.fixtureBackup;liveEvents=[{ref:'inbound_fixture',event:'visit',timestamp:Date.now(),event_id:'fixture-visit',channel_type:'PSEO',channel_name:'수원 병원',region:'수원',industry:'병원'},{ref:'inbound_fixture',event:'kakao_click',timestamp:Date.now(),event_id:'fixture-hot',channel_type:'PSEO'}];updateKPIs();setMainTab('INBOUND');});
 await p.locator('#reactionFilter').selectOption('PSEO');assert.equal(await p.locator('#mobileCardsContainer .target-card').count(),1);
 await p.locator('#mobileCardsContainer [data-detail-token]').click();assert((await p.locator('#detailBody').textContent()).includes('카카오톡 상담 클릭'));await p.keyboard.press('Escape');
+// Per-visit sources/pricing remain separate from customer attribution, including legacy history.
+await p.evaluate(()=>{targetsMap={customer:{token:'customer',company:'방문 프로필',status:'SENT'}};liveEvents=[
+{ref:'customer',event:'visit',timestamp:1000000000001,meta:{}},
+{ref:'customer',event:'visit',timestamp:1000000000002,pricing_tier:'OUTBOUND_VIP',meta:{visit_id:'new',arrival_source:'검색: www.google.com',attribution_basis:'이전 제안 방문 이력'}},
+{ref:'customer',event:'kakao_click',timestamp:1000000000003,meta:{visit_id:'new'}},
+{ref:'unknown',event:'visit',timestamp:1000000000004,meta:{visit_id:'other'}}];openTargetDetail('customer');});
+assert.equal(await p.locator('.visit-cards li').count(),2);
+const profile=await p.locator('.customer-visits').innerText();
+for(const text of ['검색: www.google.com','제휴가 · 50 / 280 / 360','이전 제안 방문 이력','상담 버튼 클릭 있음','과거 기록 · 유입 경로 미분리'])assert(profile.includes(text),text);
+for(const width of [320,390]){await p.setViewportSize({width,height:844});assert(await p.locator('#targetDetail').evaluate(el=>el.scrollWidth<=el.clientWidth));}
+await p.keyboard.press('Escape');
 for(const width of [320,390,768,1024,1440]){await p.setViewportSize({width,height:900});for(const tab of ['SENT','READY','SEARCH_DB','INBOUND']){await p.evaluate(t=>setMainTab(t),tab);assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow ${width} ${tab}`);}}
 await p.evaluate(()=>{liveEvents=[];saveStoredEvents();return fetchLiveTelemetry();});
 assert.deepEqual(errors,[]);assert.deepEqual(writes,[]);assert.equal(await p.evaluate(()=>typeof purgeTestTelemetry),'undefined');console.log('PASS',sent,'sent rows, desktop/mobile/filters/details/new tabs/attribution/no writes');await b.close();})().catch(error=>{console.error(error);process.exit(1);});
