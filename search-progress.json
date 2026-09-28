@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:17:28.127036+00:00",
+  "updated_at": "2026-09-28T03:18:29.930148+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19154,
-    "pending": 8784,
-    "processing": 0,
+    "processed": 19173,
+    "pending": 8764,
+    "processing": 1,
     "eligible": 181,
-    "review": 13362,
-    "rejected": 5568,
+    "review": 13378,
+    "rejected": 5571,
     "errors": 40,
     "ready": 131,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC70EyiDywHDPq0CW1jVlnzw",
+        "name": "이상섭 법무사",
+        "query": "분당 법무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2043,
+  "region_observed": 2045,
   "channels_discovered": 27937,
-  "channels_observed": 19114,
+  "channels_observed": 19133,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3845,
+      "observed": 3864,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3849,
+      "classified": 3868,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2287,
+      "observed": 2290,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2291,
+      "classified": 2294,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2422,
+      "observed": 2425,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2427,
+      "classified": 2430,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2199,
+      "observed": 2203,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2200,
+      "classified": 2204,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2043,
+      "observed": 2045,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2044,
+      "classified": 2046,
       "classification_errors": 1,
       "jobs": [
         {
