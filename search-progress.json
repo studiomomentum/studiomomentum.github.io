@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-09-28T03:25:50.801045+00:00",
+  "updated_at": "2026-09-28T03:26:53.256053+00:00",
   "run_id": "36368695686",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 19290,
-    "pending": 8646,
+    "processed": 19306,
+    "pending": 8630,
     "processing": 2,
     "eligible": 182,
-    "review": 13460,
-    "rejected": 5603,
-    "errors": 42,
+    "review": 13470,
+    "rejected": 5608,
+    "errors": 43,
     "ready": 131,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCBtTHhKBsUIFr7qMU0TjAeA",
-        "name": "월세부자dadam",
-        "query": "분당 감정평가사"
+        "channel_id": "UCNE5pgWIc-SuChiJI5nzePA",
+        "name": "가천대학교",
+        "query": "분당 관세사"
       },
       {
-        "channel_id": "UCaRiAA2ji7jwDDfQ_uvga7g",
-        "name": "봉천제14구역재개발정비사업",
-        "query": "분당 감정평가사"
+        "channel_id": "UCH_I508p5YKcbNAlhJUOxcQ",
+        "name": "오피스N",
+        "query": "분당 관세사"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2060,
   "channels_discovered": 27937,
-  "channels_observed": 19248,
+  "channels_observed": 19263,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -1806,11 +1806,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4446,
-      "observed": 3979,
-      "observation_errors": 6,
+      "observed": 3994,
+      "observation_errors": 7,
       "classified_at": null,
-      "classified": 3985,
-      "classification_errors": 6,
+      "classified": 4001,
+      "classification_errors": 7,
       "jobs": [
         {
           "name": "세무사",
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5148,
-      "observed": 2308,
+      "observed": 2311,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2312,
+      "classified": 2315,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2432,
+      "observed": 2433,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2437,
+      "classified": 2438,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2209,
+      "observed": 2210,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2210,
+      "classified": 2211,
       "classification_errors": 1,
       "jobs": [
         {
