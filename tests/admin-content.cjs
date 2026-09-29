@@ -13,11 +13,17 @@ const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{c
  await page.getByText('기획서 기반 추천 주제 · 검색 근거 미검증',{exact:true}).click();
  await page.getByRole('button',{name:'촬영 전에 대본에서 먼저 정할 세 가지',exact:true}).click();
  await page.getByRole('button',{name:'세 매체 초안 생성',exact:true}).click();
- await page.getByText('생성 요청이 대기 중입니다. 상태는 자동으로 갱신됩니다.',{exact:true}).waitFor();
+ await page.getByText('생성 요청을 접수했습니다.',{exact:true}).waitFor();
  const job=sandbox.contentRoute_({action:'content.worker.claim',requestId:crypto.randomUUID()}).job;
+ await page.evaluate(()=>window.generationEditorBefore=document.getElementById('contentEditor').firstChild);
+ await page.waitForFunction(()=>document.querySelector('#contentGenerationProgress progress').value===50);
+ assert(await page.evaluate(()=>window.generationEditorBefore===document.getElementById('contentEditor').firstChild));
+ for(const width of [320,1440]){await page.setViewportSize({width,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+
  sandbox.contentRoute_({action:'content.worker.complete',jobId:job.id,claim:job.claim,outputs:Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:p+' 제목',body:'실제 글 생성이 아닌 화면 검증 fixture.\nhttps://studiomomentum.github.io/'}]))});
  // Generation completion must appear through polling, without a manual reload.
  await page.getByLabel('네이버 본문',{exact:true}).waitFor({timeout:20000});assert.equal(await page.locator('.content-draft').count(),3);
+ assert.equal(await page.locator('#contentGenerationProgress progress').evaluate(el=>el.value),100);
  await page.getByLabel('네이버 본문',{exact:true}).fill('저장되지 않은 네이버 수정');
  await page.getByLabel('티스토리 본문',{exact:true}).fill('다른 매체 수정 보존');
  await page.evaluate(()=>renderTable());assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'저장되지 않은 네이버 수정');
@@ -66,6 +72,15 @@ const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{c
  page.once('dialog',dialog=>dialog.dismiss());
  await page.locator('.content-topic').nth(1).getByRole('button',{name:'글 열기',exact:true}).click();
  assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'편집 중 보호');
+ // A completed new version must not overwrite edits made while it was generating.
+ page.once('dialog',dialog=>dialog.accept());
+ await page.getByRole('button',{name:'새 버전 생성',exact:true}).click();
+ const backgroundJob=sandbox.contentRoute_({action:'content.worker.claim',requestId:crypto.randomUUID()}).job;
+ await page.getByLabel('네이버 본문',{exact:true}).fill('생성 중 사용자 편집 보존');
+ sandbox.contentRoute_({action:'content.worker.complete',jobId:backgroundJob.id,claim:backgroundJob.claim,outputs:Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:'새 결과',body:'완료된 새 결과'}]))});
+ await page.getByText('생성 작업이 끝났습니다. 편집 중인 내용을 저장한 뒤 결과를 불러오세요.',{exact:true}).waitFor({timeout:15000});
+ assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'생성 중 사용자 편집 보존');
+ assert.equal(await page.locator('#contentGenerationProgress progress').evaluate(el=>el.value),100);
  assert.deepEqual(errors,[]);console.log('Content UI desktop/mobile, queue, multi-editor persistence, review and escaped preview PASS');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

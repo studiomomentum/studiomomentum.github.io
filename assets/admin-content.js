@@ -1,6 +1,6 @@
 /* All content reads/writes use the existing authenticated relay. No public draft files. */
 window.MomentumContent=(()=>{
-  let data=null,selected=null,dirty=false,busy=false;
+  let data=null,selected=null,dirty=false,busy=false,checkingGeneration=false;
   const $=id=>document.getElementById(id), platforms={naver:'네이버',tistory:'티스토리',threads:'쓰레드'};
   const messages={INVALID_REQUEST:'콘텐츠 서버가 아직 배포되지 않았습니다.',CONTENT_CONFLICT:'다른 창에서 수정됐습니다. 입력을 복사해 보관한 뒤 다시 불러오세요.',CONTENT_BUSY:'생성·전송 작업 중입니다. 완료 후 다시 시도하세요.',CONTENT_EXISTS:'기존 초안이 있어 다시 생성하지 않았습니다.',CONTENT_RECONCILE_REQUIRED:'실패한 생성 작업의 결과를 실행기에서 확인해야 합니다.',CONTENT_DUPLICATE:'같은 제목의 주제가 있습니다.',CONTENT_INVALID:'입력 내용과 길이를 확인해 주세요.'};
   function notice(text){$('contentNotice').textContent=text;}
@@ -45,12 +45,42 @@ window.MomentumContent=(()=>{
     $('contentWorker').textContent=online?'실행기 최근 연결됨':'PC 실행기 연결 미확인 · PC 실행과 관리자 로그인을 확인하세요. 요청은 대기열에 보관됩니다.';
     drawEditor();
   }
+  function generationProgress(snapshot=data){
+    const area=$('contentGenerationProgress');if(!area)return;
+    const job=[...(snapshot.jobs||[])].reverse().find(j=>j.topicId===selected);
+    area.hidden=!job;if(!job)return;
+    const percent={queued:0,running:50,complete:100}[job.state];
+    const label={queued:'요청 대기',running:'글 생성 중',complete:'생성·저장 완료',failed:'생성 실패 · 다시 시도할 수 있습니다.'}[job.state]||'상태 확인 필요';
+    area.querySelector('span').textContent=percent===undefined?label:label+' · '+percent+'%';
+    const bar=area.querySelector('progress');bar.hidden=percent===undefined;
+    if(percent!==undefined)bar.value=percent;
+  }
+  async function checkGeneration(){
+    if(!data||busy||checkingGeneration||root().hidden||!(data.jobs||[]).some(j=>['queued','running'].includes(j.state)))return;
+    checkingGeneration=true;
+    try{
+      const next=await MomentumAdmin.call('content.get');if(busy)return;
+      generationProgress(next);
+      const ended=(data.jobs||[]).some(j=>['queued','running'].includes(j.state)&&next.jobs.some(n=>n.id===j.id&&['complete','failed'].includes(n.state)));
+      if(ended){
+        if(dirty){notice('생성 작업이 끝났습니다. 편집 중인 내용을 저장한 뒤 결과를 불러오세요.');return;}
+        await new Promise(resolve=>setTimeout(resolve,500));
+        if(dirty||busy||root().hidden)return;
+        data=next;draw();notice('생성 상태를 확인하고 결과를 불러왔습니다.');
+      }
+    }catch(e){const area=$('contentGenerationProgress');if(area&&!area.hidden)area.querySelector('span').textContent='연결 확인 중 · 작성 상태를 다시 확인합니다.';}
+    finally{checkingGeneration=false;}
+  }
   function drawEditor(){
     const editor=$('contentEditor');editor.replaceChildren();
     const topic=data?.topics.find(t=>t.id===selected);if(!topic){editor.append(node('p','주제를 선택하면 매체별 글을 생성하거나 편집할 수 있습니다.'));return;}
     editor.append(node('h3',topic.title));
+    const progress=node('section');progress.id='contentGenerationProgress';progress.className='content-generation-progress';
+    const label=node('span');label.setAttribute('aria-live','polite');
+    const bar=node('progress');bar.max=100;bar.setAttribute('aria-label','글 생성 단계 진행률');
+    progress.append(label,bar,node('small','단계 기준: 요청 대기 0% → 생성 중 50% → 저장 완료 100%'));editor.append(progress);generationProgress();
     const docs=Object.values(data.articles).filter(d=>d.topicId===selected);
-    if(!docs.length){const job=data.jobs.find(j=>j.topicId===selected);editor.append(node('p',job?({queued:'생성 요청이 대기 중입니다. 상태는 자동으로 갱신됩니다.',running:'글을 작성 중입니다. 완료되면 결과가 자동으로 표시됩니다.',failed:'생성 실패. 실행기 결과를 확인해 주세요.'}[job.state]||'결과 확인 필요'):'선택한 주제와 근거로 세 매체의 초안을 작성합니다.'));
+    if(!docs.length){const job=data.jobs.find(j=>j.topicId===selected);editor.append(node('p',job?({queued:'생성 요청을 접수했습니다.',running:'글을 작성 중입니다. 완료되면 결과가 자동으로 표시됩니다.',failed:'생성 실패. 실행기 결과를 확인해 주세요.'}[job.state]||'결과 확인 필요'):'선택한 주제와 근거로 세 매체의 초안을 작성합니다.'));
       if(!job)editor.append(button('세 매체 초안 생성',async()=>{data=await MomentumAdmin.call('content.generate',{topicId:selected});draw();notice('생성 요청을 저장했습니다. 발행은 하지 않습니다.');}));return;}
     editor.append(button('새 버전 생성',async()=>{if(!dirtyGuard())return;data=await MomentumAdmin.call('content.generate',{topicId:selected});dirty=false;draw();notice('이전 버전을 보존하고 새 버전 생성을 요청했습니다.');}));
     for(const group of [['블로그',['naver','tistory']],['쓰레드',['threads']]]){
@@ -122,7 +152,8 @@ window.MomentumContent=(()=>{
     const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,keywords,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
   }
   function open(){mount();if(!data)run(load);}
-  setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&[...(data.jobs||[]),...(data.deliveries||[])].some(j=>['queued','running'].includes(j.state)))run(load);},10000);
+  setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&(data.deliveries||[]).some(j=>['queued','running'].includes(j.state)))run(load);},10000);
+  setInterval(checkGeneration,3000);
   window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   return {open};
 })();
