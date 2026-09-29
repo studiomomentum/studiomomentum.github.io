@@ -1,8 +1,10 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {validateOutputs,makePrompt} from '../generator.mjs';
-test('generation requires all platforms and inbound links',()=>{
- const value=Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:p,body:'https://studiomomentum.github.io/'}]));
- assert.equal(validateOutputs(value),value);delete value.naver;assert.throws(()=>validateOutputs(value),/OUTPUT_INVALID/);
+test('generation requires all platforms, blog links and link-free Threads',()=>{
+ const value=Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:p,body:p==='threads'?'카메라 사기 전에 폰으로 한번 찍어봐.':'https://studiomomentum.github.io/'}]));
+ assert.equal(validateOutputs(value),value);
+ value.threads.body='확인해 https://studiomomentum.github.io/';assert.throws(()=>validateOutputs(value),/THREADS_LINK_NOT_ALLOWED/);value.threads.body='폰으로 한번 찍어봐.';
+ delete value.naver;assert.throws(()=>validateOutputs(value),/OUTPUT_INVALID/);
  value.naver={title:'제목',body:'https://studiomomentum.github.io/?vip'};assert.throws(()=>validateOutputs(value),/OUTBOUND_LINK/);
  value.naver.body='링크 없음';assert.throws(()=>validateOutputs(value),/LINK_MISSING/);
 });
