@@ -24,6 +24,17 @@ const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{c
  // Generation completion must appear through polling, without a manual reload.
  await page.getByLabel('네이버 본문',{exact:true}).waitFor({timeout:20000});assert.equal(await page.locator('.content-draft').count(),3);
  assert.equal(await page.locator('#contentGenerationProgress progress').evaluate(el=>el.value),100);
+ const beforeSingle=sandbox.contentRoute_({action:'content.get'});
+ const unchangedNaver=JSON.stringify(beforeSingle.articles[job.topic.id+':naver']);
+ const unchangedThreads=JSON.stringify(beforeSingle.articles[job.topic.id+':threads']);
+ await page.getByRole('button',{name:'티스토리만 새 버전 생성',exact:true}).click();
+ const single=sandbox.contentRoute_({action:'content.worker.claim',requestId:crypto.randomUUID()}).job;
+ assert.deepEqual(Array.from(single.platforms),['tistory']);
+ sandbox.contentRoute_({action:'content.worker.complete',jobId:single.id,claim:single.claim,outputs:{tistory:{title:'티스토리 새 제목',body:'티스토리만 새 본문'}}});
+ await page.waitForFunction(()=>document.querySelector('[aria-label="티스토리 본문"]').value==='티스토리만 새 본문');
+ const afterSingle=sandbox.contentRoute_({action:'content.get'});
+ assert.equal(JSON.stringify(afterSingle.articles[job.topic.id+':naver']),unchangedNaver);
+ assert.equal(JSON.stringify(afterSingle.articles[job.topic.id+':threads']),unchangedThreads);
  await page.getByLabel('네이버 본문',{exact:true}).fill('저장되지 않은 네이버 수정');
  await page.getByLabel('티스토리 본문',{exact:true}).fill('다른 매체 수정 보존');
  await page.evaluate(()=>renderTable());assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'저장되지 않은 네이버 수정');

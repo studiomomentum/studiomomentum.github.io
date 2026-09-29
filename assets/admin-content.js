@@ -51,7 +51,7 @@ window.MomentumContent=(()=>{
     area.hidden=!job;if(!job)return;
     const percent={queued:0,running:50,complete:100}[job.state];
     const label={queued:'요청 대기',running:'글 생성 중',complete:'생성·저장 완료',failed:'생성 실패 · 다시 시도할 수 있습니다.'}[job.state]||'상태 확인 필요';
-    area.querySelector('span').textContent=percent===undefined?label:label+' · '+percent+'%';
+    area.querySelector('span').textContent=percent===undefined?label:(job.platforms?.length===1?platforms[job.platforms[0]]+' · ':'')+label+' · '+percent+'%';
     const bar=area.querySelector('progress');bar.hidden=percent===undefined;
     if(percent!==undefined)bar.value=percent;
   }
@@ -107,6 +107,11 @@ window.MomentumContent=(()=>{
         title.dataset.saved=last.title;body.dataset.saved=last.body;title.disabled=body.disabled=save.disabled=locked;
         // Saving another card changes its version; redraw before review when all cards are clean.
         card.append(node('h4',platforms[platform]),status,title,body,save,review);
+        const regenerate=button(platforms[platform]+'만 새 버전 생성',async()=>{
+          if(dirty){notice('편집 중인 글을 먼저 저장한 뒤 새 버전을 생성하세요.');return;}
+          data=await MomentumAdmin.call('content.generate',{topicId:selected,platform});draw();notice(platforms[platform]+'만 새 버전 생성을 요청했습니다. 다른 매체의 글은 유지됩니다.');
+        });
+        regenerate.disabled=dirty||locked||data.jobs.some(j=>j.topicId===selected&&['queued','running'].includes(j.state));card.append(regenerate);
         if(platform==='naver'){card.append(node('p','네이버 연결 보류 · 블로그 설정 후 연결합니다.'));}
         else {
           const request=kind=>run(async()=>{if(!dirtyGuard())return;if(dirty){notice('변경한 글을 먼저 저장하세요.');return;}

@@ -31,9 +31,9 @@ async function once(config){
   const result=await rpc(config,'content.worker.claim',{requestId:receipt.requestId});if(!result.job){await fs.unlink(receiptFile);if(result.activeJobId)console.log('진행 중 생성 작업 확인 필요');return;}
   const job=result.job;receipt={jobId:job.id,claim:job.claim};await write(receiptFile,receipt);
   let outputs;
-  try{outputs=await generate(job.topic);}catch(e){await rpc(config,'content.worker.fail',receipt);await fs.unlink(receiptFile);throw e;}
+  try{outputs=await generate(job.topic,job.platforms);}catch(e){await rpc(config,'content.worker.fail',receipt);await fs.unlink(receiptFile);throw e;}
   receipt.outputs=outputs;await write(receiptFile,receipt);
-  await rpc(config,'content.worker.complete',receipt);await fs.unlink(receiptFile);console.log('세 매체 초안 저장 완료 · 발행 없음');
+  await rpc(config,'content.worker.complete',receipt);await fs.unlink(receiptFile);console.log('선택 매체 초안 저장 완료 · 발행 없음');
 }
 const lockPath=path.join(root,'worker.lock');let ownsLock=false;
 async function releaseLock(){if(ownsLock){await fs.rm(lockPath,{recursive:true,force:true});ownsLock=false;}}
