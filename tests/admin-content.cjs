@@ -38,6 +38,23 @@ const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{c
  for(const width of [390,320]){await page.setViewportSize({width,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert(await page.locator('.table-controls').isHidden());await page.screenshot({path:`/tmp/momentum-content-tests/mobile-${width}.png`,fullPage:true});}
  await page.evaluate(()=>setMainTab('INBOUND'));assert(await page.locator('#contentWorkspace').isHidden());
  await page.evaluate(()=>setMainTab('CONTENT'));assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'<img src=x onerror=alert(1)> 수정');
+ // New session opens the most recently generated topic, not newest registration or edit.
+ const newer=sandbox.contentRoute_({action:'content.topic.add',title:'두 번째 생성 주제',question:'질문',intent:'해결 탐색',evidence:'테스트'}).topics.at(-1);
+ sandbox.contentRoute_({action:'content.generate',topicId:newer.id});
+ const newerJob=sandbox.contentRoute_({action:'content.worker.claim',requestId:crypto.randomUUID()}).job;
+ sandbox.contentRoute_({action:'content.worker.complete',jobId:newerJob.id,claim:newerJob.claim,outputs:Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:'최근 생성 제목',body:'최근 생성 본문'}]))});
+ sandbox.contentRoute_({action:'content.topic.add',title:'아직 생성 안 한 최신 등록',question:'질문',intent:'해결 탐색',evidence:'테스트'});
+ const db=JSON.parse(raw);db.articles[job.topic.id+':naver'].versions.at(-1).createdAt=Date.now()+100000;raw=JSON.stringify(db);
+ await page.reload();
+ await page.evaluate(async()=>{MomentumAdmin.call=async(action,payload)=>{const r=await window.contentTestCall(action,payload);if(!r.ok){const e=Error(r.error);e.code=r.error;throw e;}return r.result};document.getElementById('loginOverlay').style.display='none';document.getElementById('dashboardApp').style.display='block';setMainTab('CONTENT');});
+ await page.getByLabel('네이버 본문',{exact:true}).waitFor();
+ assert.equal(await page.locator('.content-topic h3').first().textContent(),'두 번째 생성 주제');
+ assert.equal(await page.locator('.content-topic h3').last().textContent(),'아직 생성 안 한 최신 등록');
+ assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'최근 생성 본문');
+ await page.getByLabel('네이버 본문',{exact:true}).fill('편집 중 보호');
+ page.once('dialog',dialog=>dialog.dismiss());
+ await page.locator('.content-topic').nth(1).getByRole('button',{name:'글 열기',exact:true}).click();
+ assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'편집 중 보호');
  assert.deepEqual(errors,[]);console.log('Content UI desktop/mobile, queue, multi-editor persistence, review and escaped preview PASS');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

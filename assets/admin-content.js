@@ -10,16 +10,32 @@ window.MomentumContent=(()=>{
   function button(text,fn){const b=node('button',text);b.type='button';b.onclick=()=>run(fn);return b;}
   function dirtyGuard(){return !dirty||confirm('저장하지 않은 수정 내용이 있습니다. 다시 불러오면 사라집니다. 계속할까요?');}
   async function load(){if(!dirtyGuard())return;data=await MomentumAdmin.call('content.get');dirty=false;draw();notice('서버에 저장된 콘텐츠를 불러왔습니다.');}
-  function draw(){
+  function topicDates(t){
+    const versions=Object.values(data.articles).filter(d=>d.topicId===t.id).flatMap(d=>d.versions);
+    return {generated:Math.max(0,...versions.filter(v=>v.origin==='generated').map(v=>v.createdAt||0)),updated:Math.max(0,...versions.map(v=>v.createdAt||0))};
+  }
+  function sortedTopics(){return [...data.topics].sort((a,b)=>{const x=topicDates(a),y=topicDates(b);return y.generated-x.generated || b.createdAt-a.createdAt || a.id.localeCompare(b.id);});}
+  function dateLabel(time){return new Date(time).toLocaleString('ko-KR',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});}
+  function drawTopics(){
     const list=$('contentTopics');list.replaceChildren();
     if(!data.topics.length)list.append(node('p','아직 등록한 주제가 없습니다. 아래에서 중심 질문과 근거를 함께 등록하세요.'));
-    for(const t of data.topics){const card=node('article');card.className='content-topic';
+    for(const t of sortedTopics()){
+      const dates=topicDates(t),card=node('article');card.className='content-topic';card.dataset.topicId=t.id;card.classList.toggle('is-selected',selected===t.id);
       const state=data.jobs.find(j=>j.topicId===t.id&&['queued','running','failed'].includes(j.state));
-      card.append(node('h3',t.title),node('p',t.question),node('small',t.intent+' · 검색량 미확인 · '+({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state?.state]|| (t.state==='unused'?'미사용':'초안 생성됨'))));
-      const details=node('details');details.append(node('summary','근거·출처 보기'),node('p',t.evidence));card.append(details);
+      const heading=node('h3',t.title);card.append(heading);
+      const timestamp=node('p',dates.generated?'최근 생성 '+dateLabel(dates.generated):'아직 생성하지 않음 · 등록 '+dateLabel(t.createdAt));timestamp.className='content-topic-time';
+      if(dates.updated>dates.generated)timestamp.textContent+=' · 마지막 저장 '+dateLabel(dates.updated);card.append(timestamp);
+      const statuses=Object.keys(platforms).map(platform=>{const doc=data.articles[t.id+':'+platform];return platforms[platform]+' '+(!doc?'미생성':(doc.reviewedVersion===doc.versions.length?'검수 완료':'초안')+' v'+doc.versions.length);});
+      card.append(node('small',statuses.join(' · ')));
+      if(state)card.append(node('p',({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state.state])));
+      const details=node('details');details.append(node('summary','주제·근거 보기'),node('p',t.question),node('p',t.intent+' · 검색량 미확인'),node('p',t.evidence));card.append(details);
       if(state?.state==='failed')card.append(button('생성 재시도',async()=>{if(!dirtyGuard())return;data=await MomentumAdmin.call('content.retry',{topicId:t.id});dirty=false;draw();notice('실패한 생성 작업을 다시 요청했습니다.');}));
-      card.append(button('선택',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawEditor();}));list.append(card);
+      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'smooth'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);list.append(card);
     }
+  }
+  function draw(){
+    if(!data.topics.some(t=>t.id===selected))selected=sortedTopics()[0]?.id||null;
+    drawTopics();
     const online=data.workerSeenAt&&Date.now()-data.workerSeenAt<90000;
     $('contentWorker').textContent=online?'실행기 최근 연결됨':'실행기 연결 미확인 · 생성 요청은 대기열에 보관됩니다.';
     drawEditor();
@@ -39,7 +55,7 @@ window.MomentumContent=(()=>{
         const status=node('p',doc.reviewedVersion===version?'검수 완료 · v'+version:'초안 · v'+version);status.className='content-state';
         const title=node('input');title.value=last.title;title.maxLength=200;title.setAttribute('aria-label',platforms[platform]+' 제목');
         const body=node('textarea');body.value=last.body;body.maxLength=50000;body.rows=16;body.setAttribute('aria-label',platforms[platform]+' 본문');
-        const review=button('검수 완료',async()=>{data=await MomentumAdmin.call('content.review',{id:doc.id,version});drawEditor();notice('현재 저장 버전의 검수를 완료했습니다.');});
+        const review=button('검수 완료',async()=>{data=await MomentumAdmin.call('content.review',{id:doc.id,version});drawTopics();drawEditor();notice('현재 저장 버전의 검수를 완료했습니다.');});
         review.disabled=dirty;
         const onInput=()=>{dirty=true;status.textContent='저장하지 않은 수정 · 검수 필요';root().querySelectorAll('[data-review]').forEach(b=>b.disabled=true);};title.oninput=body.oninput=onInput;review.dataset.review='true';
         const save=button('저장',async()=>{
@@ -48,7 +64,7 @@ window.MomentumContent=(()=>{
           data=result;const next=result.articles[doc.id];doc.versions=next.versions;doc.reviewedVersion=next.reviewedVersion;version=next.versions.length;
           card.dataset.saved='true';title.dataset.saved=title.value;body.dataset.saved=body.value;
           dirty=[...root().querySelectorAll('input[data-saved],textarea[data-saved]')].some(e=>e.value!==e.dataset.saved);
-          if(!dirty)drawEditor();else status.textContent='저장 완료 · v'+next.versions.length;
+          drawTopics();if(!dirty)drawEditor();else status.textContent='저장 완료 · v'+next.versions.length;
           notice('새 버전을 저장했습니다. 수정한 글의 검수 상태를 해제했습니다.');
         });
         title.dataset.saved=last.title;body.dataset.saved=last.body;
@@ -73,7 +89,7 @@ window.MomentumContent=(()=>{
     for(const [title,question] of [ ['촬영 전에 대본에서 먼저 정할 세 가지','전문 지식은 많은데 카메라 앞에서 설명이 길어지는 이유는 무엇인가?'],['유튜브 편집 외주를 맡겨도 일이 줄지 않는 이유','수정 요청이 반복될 때 기획 단계에서 무엇을 합의해야 하는가?'],['대표님 셀프 촬영, 장비보다 먼저 확인할 것','혼자 촬영을 시작할 때 무엇부터 점검해야 하는가?']]){
       suggestions.append(button(title,async()=>{if(!dirtyGuard())return;data=await MomentumAdmin.call('content.topic.add',{title,question,intent:'해결 탐색',evidence:'v1 기획서의 고객 고민과 PD 제작 관점을 바탕으로 한 기획 가설. 외부 검색 근거·검색량·성과 수치는 미검증. 실제 고객 사례로 서술하지 않음.'});selected=data.topics[data.topics.length-1].id;dirty=false;draw();notice('기획 가설을 등록했습니다. 근거를 검토한 뒤 생성을 선택하세요.');}));
     }
-    const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,suggestions,topics,add,editor);
+    const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
   }
   function open(){mount();if(!data)run(load);}
   window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
