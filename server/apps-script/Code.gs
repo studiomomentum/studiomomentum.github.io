@@ -69,9 +69,12 @@ function doPost(e) {
   // Only the explicit admin envelope enters the authenticated relay.
   try {
     const body = e && e.postData && e.postData.contents;
-    if (typeof body === 'string' && body.length <= 12000) {
+    if (typeof body === 'string' && body.length <= MAX_BODY_BYTES) {
       const request = JSON.parse(body);
-      if (request && request.route === 'momentum_admin') return jsonResponse(adminRoute_(request));
+      if (request && request.route === 'momentum_admin') {
+        if (Utilities.newBlob(body).getBytes().length > MAX_BODY_BYTES) return jsonResponse({ok:false,error:'REQUEST_TOO_LARGE'});
+        return jsonResponse(adminRoute_(request));
+      }
     }
   } catch (_) { /* Ordinary telemetry retains its existing validation below. */ }
 
