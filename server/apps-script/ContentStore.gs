@@ -1,6 +1,6 @@
 /* Private content store. Only called after adminSession_ succeeds. */
 function contentDefault_() {
-  return {schema:1,revision:0,topics:[],articles:{},jobs:[],workerSeenAt:0};
+  return {schema:1,revision:0,topics:[],articles:{},jobs:[],deliveries:[],workerSeenAt:0};
 }
 function contentFile_() {
   const props=adminProps_(),id=props.getProperty('MOMENTUM_CONTENT_FILE_ID');
@@ -17,12 +17,13 @@ function contentTopic_(db,id) {const t=db.topics.find(t=>t.id===id);if(!t)throw 
 function contentDoc_(db,id) {const d=db.articles[id];if(!d)throw Error('CONTENT_NOT_FOUND');return d;}
 function contentVersion_(doc,version) {if(doc.versions.length!==version)throw Error('CONTENT_CONFLICT');}
 function contentView_(db) {
-  return {revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
+  return {deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
 }
 function contentRoute_(r) {
   return adminLock_(()=>{
     const file=contentFile_(),db=JSON.parse(file.getBlob().getDataAsString('UTF-8'));
     if(db.schema!==1||!Array.isArray(db.topics)||!Array.isArray(db.jobs)||!db.articles)throw Error('CONTENT_STORE_INVALID');
+    if(!db.deliveries)db.deliveries=[];if(!Array.isArray(db.deliveries))throw Error('CONTENT_STORE_INVALID');
     const now=Date.now();let result,changed=false;
     switch(r.action){
       case 'content.get': return contentView_(db);
@@ -33,6 +34,7 @@ function contentRoute_(r) {
       }
       case 'content.generate': {
         const topic=contentTopic_(db,contentId_(r.topicId));
+        if(db.deliveries.some(j=>j.topicId===topic.id&&['queued','running','unknown'].includes(j.state)))throw Error('CONTENT_BUSY');
         if(db.jobs.some(j=>j.topicId===topic.id&&['queued','running'].includes(j.state)))throw Error('CONTENT_BUSY');
         if(db.jobs.some(j=>j.topicId===topic.id&&j.state==='failed'))throw Error('CONTENT_RECONCILE_REQUIRED');
         const baseVersions={};['naver','tistory','threads'].forEach(p=>{baseVersions[p]=db.articles[topic.id+':'+p]?.versions.length||0;});
@@ -47,6 +49,7 @@ function contentRoute_(r) {
       }
       case 'content.save': {
         const doc=contentDoc_(db,contentId_(r.id));contentVersion_(doc,r.version);
+        if(db.deliveries.some(j=>j.docId===doc.id&&['queued','running','unknown'].includes(j.state)))throw Error('CONTENT_BUSY');
         const title=contentText_(r.title,200),body=contentText_(r.body,50000);
         const last=doc.versions[doc.versions.length-1];
         if(last.title!==title||last.body!==body){doc.versions.push({title,body,createdAt:now,origin:'user'});doc.reviewedVersion=null;changed=true;}break;
@@ -83,6 +86,57 @@ function contentRoute_(r) {
       case 'content.worker.fail': {
         const job=db.jobs.find(j=>j.id===r.jobId&&j.claim===r.claim&&j.state==='running');
         if(!job)throw Error('CONTENT_CONFLICT');job.state='failed';job.error='GENERATION_FAILED';changed=true;result={failed:true};break;
+      }
+            case 'content.delivery.request': {
+        const doc=contentDoc_(db,contentId_(r.id));contentVersion_(doc,r.version);
+        if(db.jobs.some(j=>j.topicId===doc.topicId&&['queued','running'].includes(j.state)))throw Error('CONTENT_BUSY');
+        if(!['tistory','threads'].includes(doc.platform))throw Error('CONTENT_PLATFORM_PAUSED');
+        if(!['draft','publish'].includes(r.kind))throw Error('CONTENT_INVALID');
+        if(r.kind==='publish'&&doc.reviewedVersion!==r.version)throw Error('CONTENT_REVIEW_REQUIRED');
+        if(doc.platform==='threads'&&(Array.from(doc.versions.at(-1).body).length>500||/(https?:\/\/|www\.)/i.test(doc.versions.at(-1).body)))throw Error('CONTENT_INVALID');
+        const same=db.deliveries.find(j=>j.docId===doc.id&&j.kind===r.kind&&j.version===r.version&&['queued','running','complete','unknown'].includes(j.state));
+        if(same)return contentView_(db);
+        if(db.deliveries.some(j=>j.docId===doc.id&&(j.kind==='publish'&&['complete','unknown'].includes(j.state)||['queued','running'].includes(j.state))))throw Error('CONTENT_RECONCILE_REQUIRED');
+        db.deliveries.push({id:Utilities.getUuid(),docId:doc.id,topicId:doc.topicId,platform:doc.platform,version:r.version,kind:r.kind,state:'queued',createdAt:now,snapshot:doc.versions.at(-1)});changed=true;break;
+      }
+      case 'content.delivery.cancel': {
+        const job=db.deliveries.find(j=>j.id===r.jobId);if(!job||job.state!=='queued')throw Error('CONTENT_CONFLICT');job.state='cancelled';changed=true;break;
+      }
+      case 'content.delivery.claim': {
+        const requestId=contentId_(r.requestId);db.workerSeenAt=now;changed=true;
+        let job=db.deliveries.find(j=>j.requestId===requestId&&j.state==='running');
+        if(!job&&db.deliveries.some(j=>j.state==='running')){result={job:null};break;}
+        if(!job){job=db.deliveries.find(j=>j.state==='queued');if(job){job.state='running';job.requestId=requestId;job.claim=Utilities.getUuid();job.startedAt=now;}}
+        result={job:job||null};break;
+      }
+      case 'content.delivery.authorize': {
+        const job=db.deliveries.find(j=>j.id===r.jobId&&j.claim===r.claim&&j.state==='running');if(!job)throw Error('CONTENT_CONFLICT');
+        const doc=contentDoc_(db,job.docId);contentVersion_(doc,job.version);
+        if(job.kind==='publish'&&doc.reviewedVersion!==job.version)throw Error('CONTENT_REVIEW_REQUIRED');
+        result={authorized:true};break;
+      }
+      case 'content.delivery.finish': {
+        const job=db.deliveries.find(j=>j.id===r.jobId&&j.claim===r.claim);if(!job)throw Error('CONTENT_CONFLICT');
+        if(job.state==='complete')return {completed:true};
+        if(job.state!=='running')throw Error('CONTENT_CONFLICT');
+        if(!['complete','failed','unknown'].includes(r.state))throw Error('CONTENT_INVALID');
+        if(r.state==='complete'&&job.kind==='publish'){
+          const url=contentText_(r.url,1000);
+          const valid=job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
+          if(!valid)throw Error('CONTENT_INVALID');job.url=url;
+        }
+        job.state=r.state;job.error=r.state==='complete'?null:contentText_(r.error||'CHECK_REQUIRED',100);job.completedAt=now;changed=true;result={completed:true};break;
+      }
+      case 'content.delivery.resolve': {
+        const job=db.deliveries.find(j=>j.id===r.jobId&&j.state==='unknown');if(!job)throw Error('CONTENT_CONFLICT');
+        // Only an explicit operator reconciliation can release an ambiguous click.
+        if(r.confirmed!==true)throw Error('CONTENT_INVALID');
+        if(r.resolution==='posted'&&job.kind==='publish'){
+          const url=contentText_(r.url,1000);const valid=job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
+          if(!valid)throw Error('CONTENT_INVALID');job.state='complete';job.url=url;job.error=null;
+        }else if(r.resolution==='not_posted'){job.state='failed';job.error='OPERATOR_CONFIRMED_NOT_POSTED';}
+        else throw Error('CONTENT_INVALID');
+        job.resolvedAt=now;changed=true;break;
       }
       default:throw Error('INVALID_REQUEST');
     }

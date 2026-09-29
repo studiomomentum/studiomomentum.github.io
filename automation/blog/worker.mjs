@@ -5,6 +5,7 @@ import readline from 'node:readline';
 import {Writable} from 'node:stream';
 import {root} from './browser.mjs';
 import {generate} from './generator.mjs';
+import {deliveryOnce} from './delivery-worker.mjs';
 const configFile=path.join(root,'worker-session.json'), receiptFile=path.join(root,'generation-receipt.json');
 async function read(file){try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT')return null;throw e;}}
 async function write(file,data){await fs.mkdir(root,{recursive:true,mode:0o700});const temp=file+'.tmp';await fs.writeFile(temp,JSON.stringify(data),{mode:0o600});await fs.rename(temp,file);}
@@ -27,13 +28,26 @@ async function once(config){
     if(!receipt.requestId)throw Error('RECEIPT_INVALID');
   }
   if(!receipt){receipt={requestId:randomUUID()};await write(receiptFile,receipt);}
-  const result=await rpc(config,'content.worker.claim',{requestId:receipt.requestId});if(!result.job){await fs.unlink(receiptFile);console.log(result.activeJobId?'진행 중 작업 확인 필요':'생성 대기 없음');return;}
+  const result=await rpc(config,'content.worker.claim',{requestId:receipt.requestId});if(!result.job){await fs.unlink(receiptFile);if(result.activeJobId)console.log('진행 중 생성 작업 확인 필요');return;}
   const job=result.job;receipt={jobId:job.id,claim:job.claim};await write(receiptFile,receipt);
   let outputs;
   try{outputs=await generate(job.topic);}catch(e){await rpc(config,'content.worker.fail',receipt);await fs.unlink(receiptFile);throw e;}
   receipt.outputs=outputs;await write(receiptFile,receipt);
   await rpc(config,'content.worker.complete',receipt);await fs.unlink(receiptFile);console.log('세 매체 초안 저장 완료 · 발행 없음');
 }
+const lockPath=path.join(root,'worker.lock');let ownsLock=false;
+async function releaseLock(){if(ownsLock){await fs.rm(lockPath,{recursive:true,force:true});ownsLock=false;}}
+async function acquireLock(){
+ await fs.mkdir(root,{recursive:true,mode:0o700});
+ try{await fs.mkdir(lockPath,{mode:0o700});}catch(e){
+  if(e.code!=='EEXIST')throw e;
+  const pid=Number(await fs.readFile(path.join(lockPath,'pid'),'utf8').catch(()=>''));if(!pid)throw Error('WORKER_LOCK_CHECK_REQUIRED');
+  try{process.kill(pid,0);throw Error('WORKER_ALREADY_RUNNING');}catch(error){if(error.code!=='ESRCH')throw error;}
+  await fs.rm(lockPath,{recursive:true});await fs.mkdir(lockPath,{mode:0o700});
+ }
+ ownsLock=true;await fs.writeFile(path.join(lockPath,'pid'),String(process.pid),{mode:0o600});
+}
+for(const signal of ['SIGINT','SIGTERM'])process.once(signal,()=>releaseLock().finally(()=>process.exit(0)));
 try{
   const command=process.argv[2]||'once';
   if(command==='login'){
@@ -41,7 +55,10 @@ try{
     const session=await rpc({url},'login',{username:'admin',password,remember:true});
     await write(configFile,{url,session:session.token,expiresAt:session.expiresAt});console.log('관리자 세션을 로컬 전용 파일에 저장했습니다.');
   }else if(['once','run'].includes(command)){
-    const config=await read(configFile);if(!config||config.expiresAt<=Date.now())throw Error('LOGIN_REQUIRED');
-    do{await once(config);if(command==='run')await new Promise(r=>setTimeout(r,15000));}while(command==='run');
+    await acquireLock();
+    do{const config=await read(configFile);if(!config||config.expiresAt<=Date.now())throw Error('LOGIN_REQUIRED');
+      await deliveryOnce(config,rpc);await once(config);if(command==='run')await new Promise(r=>setTimeout(r,15000));}while(command==='run');
   }else throw Error('COMMAND_INVALID');
 }catch(e){console.error('실행 중단: '+(/^[A-Z_]+$/.test(e.message)?e.message:'LOCAL_ERROR')+' · 재로그인 또는 작업 상태를 확인하세요.');process.exitCode=1;}
+
+finally{await releaseLock();}

@@ -51,6 +51,17 @@ const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{c
  assert.equal(await page.locator('.content-topic h3').first().textContent(),'두 번째 생성 주제');
  assert.equal(await page.locator('.content-topic h3').last().textContent(),'아직 생성 안 한 최신 등록');
  assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'최근 생성 본문');
+ const deliveryCard=page.locator('.content-draft').filter({has:page.getByRole('heading',{name:'티스토리',exact:true})});
+ assert(await deliveryCard.getByRole('button',{name:'공개 발행',exact:true}).isDisabled());
+ await deliveryCard.getByRole('button',{name:'검수 완료',exact:true}).click();
+ await deliveryCard.getByText('검수 완료 · v1',{exact:true}).waitFor();
+ assert(!(await deliveryCard.getByRole('button',{name:'공개 발행',exact:true}).isDisabled()));
+ page.once('dialog',dialog=>dialog.dismiss());await deliveryCard.getByRole('button',{name:'공개 발행',exact:true}).click();
+ assert.equal(sandbox.contentRoute_({action:'content.get'}).deliveries.length,0);
+ await deliveryCard.getByRole('button',{name:'임시저장 요청',exact:true}).click();await deliveryCard.getByText('임시저장 v1 · 대기',{exact:false}).waitFor();
+ assert(await deliveryCard.getByLabel('티스토리 본문',{exact:true}).isDisabled());
+ await deliveryCard.getByRole('button',{name:'요청 취소',exact:true}).click();await deliveryCard.getByText('임시저장 v1 · 취소',{exact:true}).waitFor();
+ assert(!(await deliveryCard.getByLabel('티스토리 본문',{exact:true}).isDisabled()));
  await page.getByLabel('네이버 본문',{exact:true}).fill('편집 중 보호');
  page.once('dialog',dialog=>dialog.dismiss());
  await page.locator('.content-topic').nth(1).getByRole('button',{name:'글 열기',exact:true}).click();
