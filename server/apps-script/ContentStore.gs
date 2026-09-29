@@ -17,7 +17,7 @@ function contentTopic_(db,id) {const t=db.topics.find(t=>t.id===id);if(!t)throw 
 function contentDoc_(db,id) {const d=db.articles[id];if(!d)throw Error('CONTENT_NOT_FOUND');return d;}
 function contentVersion_(doc,version) {if(doc.versions.length!==version)throw Error('CONTENT_CONFLICT');}
 function contentView_(db) {
-  return {deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
+  return {keywordBoard:(db.keywordBoards||[]).at(-1)||null,deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
 }
 function contentRoute_(r) {
   return adminLock_(()=>{
@@ -27,6 +27,13 @@ function contentRoute_(r) {
     const now=Date.now();let result,changed=false;
     switch(r.action){
       case 'content.get': return contentView_(db);
+      case 'content.keywords.save': {
+        const board=contentKeywordBoard_(r.board);
+        if(!db.keywordBoards)db.keywordBoards=[];
+        if(!Array.isArray(db.keywordBoards))throw Error('CONTENT_STORE_INVALID');
+        if(db.keywordBoards.some(b=>b.id===board.id))return {saved:true};
+        db.keywordBoards.push(board);changed=true;result={saved:true};break;
+      }
       case 'content.topic.add': {
         const title=contentText_(r.title,180),question=contentText_(r.question,1000),evidence=contentText_(r.evidence,10000);
         if(db.topics.some(t=>t.title.replace(/\s/g,'')===title.replace(/\s/g,'')))throw Error('CONTENT_DUPLICATE');
@@ -143,4 +150,20 @@ function contentRoute_(r) {
     if(changed){db.revision++;const raw=JSON.stringify(db);if(raw.length>4000000)throw Error('CONTENT_STORE_FULL');file.setContent(raw);}
     return result||contentView_(db);
   });
+}
+
+function contentKeywordBoard_(input){
+  if(!input||JSON.stringify(input).length>150000||!Array.isArray(input.groups)||input.groups.length!==3)throw Error('CONTENT_INVALID');
+  const text=(v,n)=>contentText_(v,n),date=v=>{text(v,40);if(!Number.isFinite(Date.parse(v)))throw Error('CONTENT_INVALID');return v;};
+  const ids=new Set();
+  return {id:contentId_(input.id),observedAt:date(input.observedAt),groups:input.groups.map(group=>{
+    if(!['naver','datalab','vidiq'].includes(group.id)||ids.has(group.id)||!Array.isArray(group.rows)||group.rows.length!==10)throw Error('CONTENT_INVALID');ids.add(group.id);
+    const seen=new Set();return {id:group.id,title:text(group.title,100),basis:text(group.basis,1500),limitations:text(group.limitations,1500),rows:group.rows.map(row=>{
+      const keyword=text(row.keyword,60),key=keyword.replace(/\s/g,'');if(seen.has(key))throw Error('CONTENT_DUPLICATE');seen.add(key);
+      if(!Array.isArray(row.links)||!row.links.length||row.links.length>5)throw Error('CONTENT_INVALID');
+      return {keyword,category:text(row.category,40),metric:text(row.metric,300),reason:text(row.reason,1200),question:text(row.question,1000),observedAt:date(row.observedAt),detail:text(row.detail,2000),links:row.links.map(link=>{
+        const url=text(link.url,2000);if(!/^https:\/\/(?:search\.naver\.com|datalab\.naver\.com|(?:m\.)?blog\.naver\.com|[^/.]+\.tistory\.com|app\.vidiq\.com|vidiq\.com|www\.youtube\.com)\//.test(url))throw Error('CONTENT_INVALID');return {label:text(link.label,200),url};
+      })};
+    })};
+  })};
 }

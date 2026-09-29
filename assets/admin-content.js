@@ -36,6 +36,11 @@ window.MomentumContent=(()=>{
   function draw(){
     if(!data.topics.some(t=>t.id===selected))selected=sortedTopics()[0]?.id||null;
     drawTopics();
+    if(window.MomentumKeywords)MomentumKeywords.render($('contentKeywords'),data.keywordBoard,(row,group)=>{
+      const form=$('contentTopicForm');if([...form.elements].some(e=>e.name&&e.value.trim())&&!confirm('주제 등록란의 기존 입력을 선택한 키워드로 바꿀까요?'))return;form.elements.title.value=row.keyword;form.elements.question.value=row.question;form.elements.intent.value='해결 탐색';
+      form.elements.evidence.value=[group.title+' · '+group.basis,'조회: '+row.observedAt,row.metric,row.detail,'기획 판단: '+row.reason,...row.links.map(l=>l.label+' '+l.url),group.limitations].join('\n');
+      form.closest('details').open=true;form.scrollIntoView({block:'center',behavior:'smooth'});notice('키워드와 근거를 주제 등록란에 채웠습니다. 제목·질문을 검토하고 저장하세요.');
+    });
     const online=data.workerSeenAt&&Date.now()-data.workerSeenAt<90000;
     $('contentWorker').textContent=online?'실행기 최근 연결됨':'PC 실행기 연결 미확인 · PC 실행과 관리자 로그인을 확인하세요. 요청은 대기열에 보관됩니다.';
     drawEditor();
@@ -106,14 +111,15 @@ window.MomentumContent=(()=>{
     const header=node('div');header.className='content-toolbar';header.append(node('h2','콘텐츠 관리'),button('결과 불러오기',load));
     const worker=node('p');worker.id='contentWorker';const msg=node('p','주제 선택 → 초안 생성 → 편집·저장 → 매체별 검수');msg.id='contentNotice';msg.setAttribute('role','status');
     const topics=node('div');topics.id='contentTopics';topics.className='content-topics';
-    const add=node('details');add.append(node('summary','주제 등록'));const form=node('form');
+    const add=node('details');add.append(node('summary','주제 등록'));const form=node('form');form.id='contentTopicForm';
     for(const [name,label,max] of [['title','주제',180],['question','독자의 고민·중심 질문',1000],['intent','검색 의도 (문제 인식 / 해결 탐색 / 구매 검토 / 업체 선택)',60],['evidence','근거·출처·확인일 (미검증이면 가설이라고 명시)',10000]]){const l=node('label',label),input=node(name==='evidence'?'textarea':'input');input.name=name;input.required=true;input.maxLength=max;l.append(input);form.append(l);}
     const submit=node('button','주제 저장');submit.type='submit';form.append(submit);form.onsubmit=e=>{e.preventDefault();run(async()=>{if(!dirtyGuard())return;data=await MomentumAdmin.call('content.topic.add',Object.fromEntries(new FormData(form)));dirty=false;form.reset();draw();notice('주제를 등록했습니다. 기존 글과 검색 의도 중복을 검토한 뒤 선택하세요.');});};add.append(form);
     const suggestions=node('details');suggestions.append(node('summary','기획서 기반 추천 주제 · 검색 근거 미검증'));
     for(const [title,question] of [ ['촬영 전에 대본에서 먼저 정할 세 가지','전문 지식은 많은데 카메라 앞에서 설명이 길어지는 이유는 무엇인가?'],['유튜브 편집 외주를 맡겨도 일이 줄지 않는 이유','수정 요청이 반복될 때 기획 단계에서 무엇을 합의해야 하는가?'],['대표님 셀프 촬영, 장비보다 먼저 확인할 것','혼자 촬영을 시작할 때 무엇부터 점검해야 하는가?']]){
       suggestions.append(button(title,async()=>{if(!dirtyGuard())return;data=await MomentumAdmin.call('content.topic.add',{title,question,intent:'해결 탐색',evidence:'v1 기획서의 고객 고민과 PD 제작 관점을 바탕으로 한 기획 가설. 외부 검색 근거·검색량·성과 수치는 미검증. 실제 고객 사례로 서술하지 않음.'});selected=data.topics[data.topics.length-1].id;dirty=false;draw();notice('기획 가설을 등록했습니다. 근거를 검토한 뒤 생성을 선택하세요.');}));
     }
-    const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
+    const keywords=node('section');keywords.id='contentKeywords';
+    const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,keywords,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
   }
   function open(){mount();if(!data)run(load);}
   setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&(data.deliveries||[]).some(j=>['queued','running'].includes(j.state)))run(load);},10000);

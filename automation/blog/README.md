@@ -98,3 +98,16 @@ node automation/blog/tistory-draft-cli.mjs <주제ID> <전용프로필명> <카�
 `node automation/blog/install-service.mjs`는 실행기를 저장소 밖 `~/Library/Application Support/MomentumBlog/runtime`에 복사하고 LaunchAgent `com.momentum.blog-worker`를 등록한다. PC 사용자 로그인 후 자동 실행하며 비정상 종료 시 재시작한다. Mac 종료·잠자기 중에는 작업할 수 없다. 관리자 세션은 7일 만료되므로 `worker.mjs login`으로 갱신해야 한다. 새 세션은 다음 루프에서 읽는다. 로그는 같은 비공개 폴더의 `worker.log`, 실제 전송 이력은 `delivery-history/`에 보관한다. 코드 수정 후 설치 명령을 다시 실행해 런타임을 갱신한다. 중지는 `node automation/blog/install-service.mjs stop`.
 
 검증: 사용자 승인된 v3를 두 매체에 각각 1건 공개 발행하고 본문 및 실제 URL을 대조했다. 티스토리 https://sotmomentum.tistory.com/1 · 쓰레드 https://www.threads.com/@sot_momentum/post/Dd34tXBgW6h . 최초 결과 조회 실패는 재게시 없이 실제 게시물 확인 후 서버 v12의 결과 복구로 완료 처리했다. 티스토리 숫자형 주소 탐색과 Threads 렌더링 개행 비교를 보완했다. 단위 테스트와 실제 게시 확인은 별도로 수행했다.
+
+
+## 출처별 키워드 TOP 10
+
+어드민 콘텐츠 상단에서 네이버 검색 결과·데이터랩·vidIQ를 각각 10개씩 본다. 목록별 선정 기준과 조회일을 유지하며, 모든 키워드의 보편적 검색 순위로 부르지 않는다. 네이버는 고객 문제와 검색 표본의 관련성으로 선정하고 검색량 미확인을 표시한다. 데이터랩은 최근 28일 평균 / 직전 28일 평균의 상대 변화율로 정렬한다. 기준값 0은 제외하고 0을 검색 없음으로 해석하지 않는다. vidIQ는 플러그인 조회 자료 중 사업 관련성·갱신일을 검토하고 기회 점수 순으로 정렬한다. 월간 검색수는 유튜브 전 세계 추정치로 표시한다.
+
+`research-sources.mjs`는 API 키 없이 헤드리스 Chrome에서 네이버 검색 링크·본문 앞부분과 데이터랩 화면 그래프에 연결된 일별 지수를 읽는 수집 함수다. 사이트 인증 요구나 수집 실패 시 미확인으로 남긴다. vidIQ는 이 대화의 연결 플러그인으로 조회한다. 별도 vidIQ 브라우저 로그인이나 PC 실행기 자동 호출은 사용하지 않는다. 현재 스냅샷은 자동 갱신되지 않는다.
+
+조사 원본과 작성된 board JSON은 `~/Library/Application Support/MomentumBlog/keyword-*-20260929.json`에 비공개 보관한다. 검토한 동일 형식의 결과는 `node automation/blog/import-keyword-board.mjs <board.json>`으로 저장한다. 같은 ID는 중복 저장하지 않고, 새로운 ID는 이전 스냅샷을 보존하며 현재 화면을 갱신한다. 세 그룹 각각 10개, 중복 키워드·비허용 출처 URL·과도한 입력을 서버에서 검증한다. 이 명령은 주제·글·검수·발행 이력을 변경하지 않는다.
+
+키워드의 ‘이 키워드로 주제 준비’는 주제 등록 폼에 질문과 출처를 채운다. 기존 입력이 있으면 교체 확인을 거치며, 저장·생성·발행은 기존 별도 버튼을 사용한다. 반복 게시 전에 같은 검색 의도의 기존 콘텐츠와 중복 여부를 검토한다.
+
+검증: `node tests/keyword-board.cjs`, `node --test automation/blog/tests/research-sources.test.mjs`. 픽스처 검증과 실제 운영 수집·화면 확인은 구분한다.
