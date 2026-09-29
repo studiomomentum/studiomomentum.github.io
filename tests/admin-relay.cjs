@@ -73,3 +73,6 @@ failSchedule=false;assert(switchMail(false).ok);assert.equal(schedule,'disabled_
 failConfig=true;assert.equal(switchMail(true).ok,false);assert.equal(config.email_system_enabled,false);failConfig=false;
 ops=[];assert(route({action:'settings.update',session:token,setting:'client_access_blocked',value:true}).ok);assert.deepEqual(ops,['config']);
 console.log('PASS sender schedule OFF/ON ordering, partial failures, retry, client switch isolation.');
+
+assert.equal(route({action:"content.get",session:""}).error,"UNAUTHORIZED");
+console.log("PASS content route rejects unauthenticated access before private storage.");

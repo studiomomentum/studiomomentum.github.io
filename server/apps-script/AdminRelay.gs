@@ -158,6 +158,7 @@ function adminRoute_(request) {
   try{
     if(request.action==='login')return {ok:true,result:adminLogin_(request)};
     const session=adminSession_(request.session);
+    if (typeof request.action==='string' && request.action.startsWith('content.')) return {ok:true,result:contentRoute_(request)};
     switch(request.action){
       case 'session':return {ok:true,result:{expiresAt:session.expiresAt}};
       case 'logout':adminLock_(()=>adminWrite_('ADMIN_SESSIONS',adminRead_('ADMIN_SESSIONS',[]).filter(s=>!adminEqual_(s.hash,session.hash))));return {ok:true,result:{loggedOut:true}};
@@ -171,7 +172,7 @@ function adminRoute_(request) {
     }
   }catch(error){
     const message=String(error.message||'');
-    const allowed=/^(UNAUTHORIZED|INVALID_LOGIN|LOGIN_RATE_LIMIT|SERVER_NOT_CONFIGURED|BUSY|SENDER_BUSY|INVALID_TARGET|TARGET_NOT_READY|SYSTEM_PAUSED|INVALID_REQUEST|INVALID_RUN|GITHUB_CONNECTION|GITHUB_\d{3})$/;
+    const allowed=/^(UNAUTHORIZED|INVALID_LOGIN|LOGIN_RATE_LIMIT|SERVER_NOT_CONFIGURED|BUSY|SENDER_BUSY|INVALID_TARGET|TARGET_NOT_READY|SYSTEM_PAUSED|INVALID_REQUEST|INVALID_RUN|GITHUB_CONNECTION|GITHUB_\d{3}|CONTENT_[A-Z_]+)$/;
     return {ok:false,error:allowed.test(message)?message:'SERVER_ERROR'};
   }
 }

@@ -15,6 +15,7 @@ function setMainTab(tab) {
   mainTab = tab; currentFilter = 'ALL'; workspaceExtra = 'ALL'; workspaceOccupation = 'ALL';
   document.getElementById('searchInput').value = '';
   updateFilterBar(); renderTable();
+  if(tab==='CONTENT')MomentumContent.open();
 }
 function setFilter(filter) { currentFilter = filter; updateFilterBar(); renderTable(); }
 function resetWorkspaceFilters() { sentDateFrom='';sentDateTo='';setMainTab(mainTab==='INBOUND'||mainTab==='SEARCH_DB'?mainTab:'SENT'); }
@@ -22,17 +23,20 @@ function workspaceOptions(options, selected) {
   return Object.entries(options).map(([value,label])=>`<option value="${value}" ${value===selected?'selected':''}>${label}</option>`).join('');
 }
 function updateFilterBar() {
-  const inbound = mainTab === 'INBOUND', prospect = mainTab === 'SEARCH_DB';
-  document.getElementById('workspaceTargets').classList.toggle('active',!inbound&&!prospect);
+  const inbound = mainTab === 'INBOUND', prospect = mainTab === 'SEARCH_DB', content = mainTab === 'CONTENT';
+  document.getElementById('contentWorkspace').hidden = !content;
+  document.getElementById('tabBtnContent').classList.toggle('active',content);
+  document.getElementById('resultSummary').hidden = content;
+  document.getElementById('workspaceTargets').classList.toggle('active',!inbound&&!prospect&&!content);
   document.getElementById('tabBtnInbound').classList.toggle('active',inbound);
   document.getElementById('tabBtnSearchDB').classList.toggle('active',prospect);
-  document.querySelector('.dashboard-body .panel-title span').textContent = inbound?'유입 분석':prospect?'발굴 현황':'타깃 관리';
+  document.querySelector('.dashboard-body .panel-title span').textContent = content?'콘텐츠 관리':inbound?'유입 분석':prospect?'발굴 현황':'타깃 관리';
   document.getElementById('pseoAnalyticsPanel').hidden = !inbound;
   document.getElementById('prospectSummary').hidden = !prospect;
   document.getElementById('searchProgress').hidden = !prospect;
-  document.querySelector('.table-controls').hidden = prospect;
-  document.getElementById('workspaceTable').classList.toggle('workspace-hidden',prospect);
-  document.getElementById('mobileCardsContainer').classList.toggle('workspace-hidden',prospect);
+  document.querySelector('.table-controls').hidden = prospect||content;
+  document.getElementById('workspaceTable').classList.toggle('workspace-hidden',prospect||content);
+  document.getElementById('mobileCardsContainer').classList.toggle('workspace-hidden',prospect||content);
   const activeKpi = mainTab === 'READY' ? 'READY' : mainTab === 'SENT' ? (currentFilter === 'ALL' ? 'SENT_ALL' : currentFilter) : '';
   document.querySelectorAll('.kpi-card').forEach(card => card.classList.toggle('active-kpi', card.id === 'kpiCard_' + activeKpi));
   const filters = inbound
@@ -71,6 +75,7 @@ function activateYoutubeLinks(container) {
 }
 function renderTable() {
   updateFilterBar();
+  if(mainTab==='CONTENT')return;
   const e=workspaceEscape, inbound=mainTab==='INBOUND', prospect=mainTab==='SEARCH_DB';
   const summary=document.getElementById('resultSummary');
   if(prospect) {

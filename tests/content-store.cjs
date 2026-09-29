@@ -1,0 +1,25 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+let raw,props={},writes=0;
+const file={getId:()=> 'private-file',getBlob:()=>({getDataAsString:()=>raw}),setContent:s=>{raw=s;writes++;}};
+const context={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{createFile:(name,s)=>{raw=s;return file;},getFileById:()=>file},adminProps_:()=>({getProperty:k=>props[k],setProperty:(k,v)=>props[k]=v}),adminLock_:fn=>fn()};
+vm.createContext(context);vm.runInContext(fs.readFileSync('server/apps-script/ContentStore.gs','utf8'),context);
+const call=(action,p={})=>JSON.parse(JSON.stringify(context.contentRoute_({action,...p})));
+let state=call('content.topic.add',{title:'검증 주제',question:'독자의 질문',intent:'해결 탐색',evidence:'가설: 검증 전'}),topicId=state.topics[0].id;
+assert.equal(call('content.get').topics.length,1);
+assert.throws(()=>call('content.topic.add',{title:'검증 주제',question:'질문',intent:'의도',evidence:'근거'}),/DUPLICATE/);
+call('content.generate',{topicId});assert.throws(()=>call('content.generate',{topicId}),/BUSY/);
+let {job}=call('content.worker.claim',{requestId:crypto.randomUUID()});assert(job);assert.equal(call('content.worker.claim',{requestId:crypto.randomUUID()}).job,null);
+const outputs=Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:p,body:'초안 https://studiomomentum.github.io/'}]));
+assert.throws(()=>call('content.worker.complete',{jobId:job.id,claim:'wrong',outputs}),/CONFLICT/);
+call('content.worker.complete',{jobId:job.id,claim:job.claim,outputs});
+const after=writes;call('content.worker.complete',{jobId:job.id,claim:job.claim,outputs});assert.equal(writes,after);
+const id=topicId+':naver';call('content.review',{id,version:1});
+state=call('content.save',{id,version:1,title:'수정 제목',body:'사용자 수정'});assert.equal(state.articles[id].reviewedVersion,null);assert.equal(state.articles[id].versions.length,2);assert.equal(state.articles[id].versions[0].title,'naver');
+assert.throws(()=>call('content.save',{id,version:1,title:'충돌',body:'충돌'}),/CONFLICT/);
+call('content.generate',{topicId});job=call('content.worker.claim',{requestId:crypto.randomUUID()}).job;
+call('content.save',{id,version:2,title:'생성 도중 사용자 편집',body:'보존 대상'});
+assert.throws(()=>call('content.worker.complete',{jobId:job.id,claim:job.claim,outputs}),/CONFLICT/);
+assert.equal(call('content.get').articles[id].versions.length,3);
+// Corrupt stores are not silently replaced with empty data.
+raw='broken';assert.throws(()=>call('content.get'));assert.equal(raw,'broken');
+console.log('Content store: versions, review invalidation, conflicts, queue, idempotence, corruption PASS');

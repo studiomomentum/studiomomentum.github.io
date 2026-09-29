@@ -1237,6 +1237,7 @@
 <script src="assets/purify.min.js"></script>
 <script src="assets/momentum-runtime.js?v=20260928-visit-profile"></script>
 <link rel="stylesheet" href="assets/admin-workspace.css?v=20260928-visit-profile">
+<link rel="stylesheet" href="assets/admin-content.css?v=1">
 </head>
 <body>
 
@@ -1374,8 +1375,10 @@
         <nav class="workspace-tabs" aria-label="관리 화면">
           <button class="active" id="workspaceTargets" onclick="setMainTab('SENT')">타깃 관리</button>
           <button id="tabBtnSearchDB" onclick="setMainTab('SEARCH_DB')">발굴 현황 <span id="tabSearchDBCount"></span></button>
+          <button id="tabBtnContent" onclick="setMainTab('CONTENT')">콘텐츠 관리</button>
           <button id="tabBtnInbound" onclick="setMainTab('INBOUND')">유입 분석 <span id="tabInboundCount"></span></button>
         </nav>
+        <section id="contentWorkspace" hidden aria-label="콘텐츠 관리"></section>
     <!-- pSEO & Inbound 실시간 지역/업종/AI(GEO·AEO) 분석 보드 -->
     <div class="pseo-analytics-panel" id="pseoAnalyticsPanel">
       <div class="panel-header" style="cursor: pointer; margin-bottom: 0;" onclick="togglePseoBoard()">
@@ -2087,6 +2090,7 @@
   </script>
 
   <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
+  <script src="assets/admin-content.js?v=1"></script>
   <script src="assets/admin-workspace.js?v=20260928-visit-profile"></script>
   <script src="assets/admin-search-progress.js?v=20260928-date-filter"></script>
   <script src="assets/admin-auth.js?v=server-session-1"></script>

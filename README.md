@@ -69,3 +69,10 @@
 - 예약 상태 GET 확인 실패 또는 GitHub 오류를 성공으로 표시하지 않습니다. OFF의 예약 중지 실패 시에도 발송 설정은 false로 유지합니다. ON 활성화 실패 시 발송 설정을 true로 변경하지 않습니다. 부분 실패는 같은 스위치 요청으로 다시 맞출 수 있습니다.
 - 서치·분류 workflow는 변경하지 않습니다. 실제 메일 dispatch 및 진행 중 SMTP 강제 취소를 하지 않습니다. 이미 전송 중인 메일이나 이미 생성된 GitHub 알림은 회수할 수 없습니다.
 - 운영 발송 설정 false 및 sender `disabled_manually` 확인. ON/OFF 및 부분 실패는 mock 테스트로 검증하며, 실제 ON/메일 발송 시험은 하지 않습니다. 기존 Apps Script URL에 버전 8 배포.
+
+
+### 블로그·쓰레드 콘텐츠 제작 (2026-09-29, 로컬 구현)
+
+기존 어드민의 콘텐츠 관리에서 주제 선택·생성 요청·매체별 편집·버전 저장·검수를 지원합니다. 비공개 초안은 기존 서버 세션을 검증한 뒤 `server/apps-script/ContentStore.gs`가 별도 Drive 파일에 저장합니다. 기존 telemetry·타깃 데이터와 분리합니다. 로컬 `automation/blog/worker.mjs`가 기존 ChatGPT 로그인 CLI로 생성 요청을 처리하며 플랫폼 API 키를 요구하지 않습니다.
+
+현재 운영 배포와 실제 글 생성/발행은 미검증입니다. 생성·편집 UI 테스트의 fixture를 AI 생성 또는 게시 결과로 해석하지 않습니다. [실행·복구 절차](automation/blog/README.md), [진행·검증 범위](docs/blog-automation-progress.md)를 확인하세요.

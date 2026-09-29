@@ -1,0 +1,43 @@
+const {chromium}=require('../automation/blog/node_modules/playwright');
+const vm=require('node:vm'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+let raw,props={};const file={getId:()=> 'fixture',getBlob:()=>({getDataAsString:()=>raw}),setContent:s=>raw=s};
+const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{createFile:(name,s)=>{raw=s;return file},getFileById:()=>file},adminProps_:()=>({getProperty:k=>props[k],setProperty:(k,v)=>props[k]=v}),adminLock_:fn=>fn()};vm.createContext(sandbox);vm.runInContext(fs.readFileSync('server/apps-script/ContentStore.gs','utf8'),sandbox);
+(async()=>{
+ const browser=await chromium.launch({channel:'chrome',headless:true});
+ try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/*',r=>{const u=new URL(r.request().url()),file=path.join(process.cwd(),u.pathname);if(u.hostname==='momentum.local'&&fs.existsSync(file)&&fs.statSync(file).isFile())return r.fulfill({path:file});return r.fulfill({body:'[]',contentType:'application/json'});});
+ await page.exposeFunction('contentTestCall',(action,payload)=>{try{return {ok:true,result:JSON.parse(JSON.stringify(sandbox.contentRoute_({action,...payload})))}}catch(e){return {ok:false,error:e.message}}});
+ await page.goto('http://momentum.local/admin.html');
+ await page.evaluate(async()=>{MomentumAdmin.call=async(action,payload)=>{const r=await window.contentTestCall(action,payload);if(!r.ok){const e=Error(r.error);e.code=r.error;throw e;}return r.result};document.getElementById('loginOverlay').style.display='none';document.getElementById('dashboardApp').style.display='block';setMainTab('CONTENT');});
+ await page.getByText('기획서 기반 추천 주제 · 검색 근거 미검증',{exact:true}).click();
+ await page.getByRole('button',{name:'촬영 전에 대본에서 먼저 정할 세 가지',exact:true}).click();
+ await page.getByRole('button',{name:'세 매체 초안 생성',exact:true}).click();
+ await page.getByText('실행기 연결을 기다리는 중입니다.',{exact:true}).waitFor();
+ const job=sandbox.contentRoute_({action:'content.worker.claim',requestId:crypto.randomUUID()}).job;
+ sandbox.contentRoute_({action:'content.worker.complete',jobId:job.id,claim:job.claim,outputs:Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:p+' 제목',body:'실제 글 생성이 아닌 화면 검증 fixture.\nhttps://studiomomentum.github.io/'}]))});
+ await page.getByRole('button',{name:'결과 불러오기',exact:true}).click();
+ await page.getByLabel('네이버 본문',{exact:true}).waitFor();assert.equal(await page.locator('.content-draft').count(),3);
+ await page.getByLabel('네이버 본문',{exact:true}).fill('저장되지 않은 네이버 수정');
+ await page.getByLabel('티스토리 본문',{exact:true}).fill('다른 매체 수정 보존');
+ await page.evaluate(()=>renderTable());assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'저장되지 않은 네이버 수정');
+ const naver=page.locator('.content-draft').filter({has:page.getByRole('heading',{name:'네이버',exact:true})});
+ await naver.getByRole('button',{name:'저장',exact:true}).click();
+ await page.getByText('새 버전을 저장했습니다. 수정한 글의 검수 상태를 해제했습니다.',{exact:true}).waitFor();
+ assert.equal(await page.getByLabel('티스토리 본문',{exact:true}).inputValue(),'다른 매체 수정 보존');
+ const tistory=page.locator('.content-draft').filter({has:page.getByRole('heading',{name:'티스토리',exact:true})});
+ await tistory.getByRole('button',{name:'저장',exact:true}).click();
+ await naver.getByRole('button',{name:'검수 완료',exact:true}).click();
+ await naver.getByText('검수 완료 · v2',{exact:true}).waitFor();
+ await page.getByLabel('네이버 본문',{exact:true}).fill('<img src=x onerror=alert(1)> 수정');
+ assert(await naver.getByRole('button',{name:'검수 완료',exact:true}).isDisabled());
+ await naver.getByRole('button',{name:'저장',exact:true}).click();await naver.getByText('초안 · v3',{exact:true}).waitFor();
+ assert.equal(await page.locator('#contentWorkspace img').count(),0);
+ fs.mkdirSync('/tmp/momentum-content-tests',{recursive:true});
+ await page.locator('#contentWorkspace').scrollIntoViewIfNeeded();await page.screenshot({path:'/tmp/momentum-content-tests/desktop.png',fullPage:true});
+ for(const width of [390,320]){await page.setViewportSize({width,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert(await page.locator('.table-controls').isHidden());await page.screenshot({path:`/tmp/momentum-content-tests/mobile-${width}.png`,fullPage:true});}
+ await page.evaluate(()=>setMainTab('INBOUND'));assert(await page.locator('#contentWorkspace').isHidden());
+ await page.evaluate(()=>setMainTab('CONTENT'));assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'<img src=x onerror=alert(1)> 수정');
+ assert.deepEqual(errors,[]);console.log('Content UI desktop/mobile, queue, multi-editor persistence, review and escaped preview PASS');
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});
