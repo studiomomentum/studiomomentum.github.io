@@ -1592,6 +1592,8 @@
       document.getElementById("loginOverlay").style.display = "none";
       document.getElementById("dashboardApp").style.display = "block";
 
+      window.MomentumContent?.preload();
+
       // 1. targets.json, 시스템 제어 config 및 백업 상태 확인
       await Promise.all([loadTargets(), loadSystemConfig(), checkBackupStatus()]);
 
@@ -2091,10 +2093,10 @@
 
   <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
   <script src="assets/admin-keywords.js?v=20260930-source-refresh-1"></script>
-  <script src="assets/admin-content.js?v=20260930-source-refresh-1"></script>
+  <script src="assets/admin-content.js?v=20260930-session-cache-1"></script>
   <script src="assets/admin-workspace.js?v=20260929-content"></script>
   <script src="assets/admin-search-progress.js?v=20260928-date-filter"></script>
-  <script src="assets/admin-auth.js?v=server-session-1"></script>
+  <script src="assets/admin-auth.js?v=20260930-session-cache-1"></script>
   <script src="assets/admin-classification.js?v=server-session-1"></script>
   <script>checkAuth();</script>
 </body>
