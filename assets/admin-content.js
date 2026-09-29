@@ -50,7 +50,7 @@ window.MomentumContent=(()=>{
     const topic=data?.topics.find(t=>t.id===selected);if(!topic){editor.append(node('p','주제를 선택하면 매체별 글을 생성하거나 편집할 수 있습니다.'));return;}
     editor.append(node('h3',topic.title));
     const docs=Object.values(data.articles).filter(d=>d.topicId===selected);
-    if(!docs.length){const job=data.jobs.find(j=>j.topicId===selected);editor.append(node('p',job?({queued:'실행기 연결을 기다리는 중입니다.',running:'글을 작성 중입니다. 잠시 뒤 결과를 불러오세요.',failed:'생성 실패. 실행기 결과를 확인해 주세요.'}[job.state]||'결과 확인 필요'):'선택한 주제와 근거로 세 매체의 초안을 작성합니다.'));
+    if(!docs.length){const job=data.jobs.find(j=>j.topicId===selected);editor.append(node('p',job?({queued:'생성 요청이 대기 중입니다. 상태는 자동으로 갱신됩니다.',running:'글을 작성 중입니다. 완료되면 결과가 자동으로 표시됩니다.',failed:'생성 실패. 실행기 결과를 확인해 주세요.'}[job.state]||'결과 확인 필요'):'선택한 주제와 근거로 세 매체의 초안을 작성합니다.'));
       if(!job)editor.append(button('세 매체 초안 생성',async()=>{data=await MomentumAdmin.call('content.generate',{topicId:selected});draw();notice('생성 요청을 저장했습니다. 발행은 하지 않습니다.');}));return;}
     editor.append(button('새 버전 생성',async()=>{if(!dirtyGuard())return;data=await MomentumAdmin.call('content.generate',{topicId:selected});dirty=false;draw();notice('이전 버전을 보존하고 새 버전 생성을 요청했습니다.');}));
     for(const group of [['블로그',['naver','tistory']],['쓰레드',['threads']]]){
@@ -122,7 +122,7 @@ window.MomentumContent=(()=>{
     const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,keywords,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
   }
   function open(){mount();if(!data)run(load);}
-  setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&(data.deliveries||[]).some(j=>['queued','running'].includes(j.state)))run(load);},10000);
+  setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&[...(data.jobs||[]),...(data.deliveries||[])].some(j=>['queued','running'].includes(j.state)))run(load);},10000);
   window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   return {open};
 })();

@@ -13,11 +13,11 @@ const sandbox={Date,JSON,Utilities:{getUuid:()=>crypto.randomUUID()},DriveApp:{c
  await page.getByText('기획서 기반 추천 주제 · 검색 근거 미검증',{exact:true}).click();
  await page.getByRole('button',{name:'촬영 전에 대본에서 먼저 정할 세 가지',exact:true}).click();
  await page.getByRole('button',{name:'세 매체 초안 생성',exact:true}).click();
- await page.getByText('실행기 연결을 기다리는 중입니다.',{exact:true}).waitFor();
+ await page.getByText('생성 요청이 대기 중입니다. 상태는 자동으로 갱신됩니다.',{exact:true}).waitFor();
  const job=sandbox.contentRoute_({action:'content.worker.claim',requestId:crypto.randomUUID()}).job;
  sandbox.contentRoute_({action:'content.worker.complete',jobId:job.id,claim:job.claim,outputs:Object.fromEntries(['naver','tistory','threads'].map(p=>[p,{title:p+' 제목',body:'실제 글 생성이 아닌 화면 검증 fixture.\nhttps://studiomomentum.github.io/'}]))});
- await page.getByRole('button',{name:'결과 불러오기',exact:true}).click();
- await page.getByLabel('네이버 본문',{exact:true}).waitFor();assert.equal(await page.locator('.content-draft').count(),3);
+ // Generation completion must appear through polling, without a manual reload.
+ await page.getByLabel('네이버 본문',{exact:true}).waitFor({timeout:20000});assert.equal(await page.locator('.content-draft').count(),3);
  await page.getByLabel('네이버 본문',{exact:true}).fill('저장되지 않은 네이버 수정');
  await page.getByLabel('티스토리 본문',{exact:true}).fill('다른 매체 수정 보존');
  await page.evaluate(()=>renderTable());assert.equal(await page.getByLabel('네이버 본문',{exact:true}).inputValue(),'저장되지 않은 네이버 수정');
