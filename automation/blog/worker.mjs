@@ -6,6 +6,7 @@ import {Writable} from 'node:stream';
 import {root} from './browser.mjs';
 import {generate} from './generator.mjs';
 import {deliveryOnce} from './delivery-worker.mjs';
+import {keywordOnce} from './keyword-worker.mjs';
 const configFile=path.join(root,'worker-session.json'), receiptFile=path.join(root,'generation-receipt.json');
 async function read(file){try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT')return null;throw e;}}
 async function write(file,data){await fs.mkdir(root,{recursive:true,mode:0o700});const temp=file+'.tmp';await fs.writeFile(temp,JSON.stringify(data),{mode:0o600});await fs.rename(temp,file);}
@@ -57,7 +58,7 @@ try{
   }else if(['once','run'].includes(command)){
     await acquireLock();
     do{const config=await read(configFile);if(!config||config.expiresAt<=Date.now())throw Error('LOGIN_REQUIRED');
-      await deliveryOnce(config,rpc);await once(config);if(command==='run')await new Promise(r=>setTimeout(r,15000));}while(command==='run');
+      await deliveryOnce(config,rpc);await once(config);await keywordOnce(config,rpc);if(command==='run')await new Promise(r=>setTimeout(r,15000));}while(command==='run');
   }else throw Error('COMMAND_INVALID');
 }catch(e){console.error('실행 중단: '+(/^[A-Z_]+$/.test(e.message)?e.message:'LOCAL_ERROR')+' · 재로그인 또는 작업 상태를 확인하세요.');process.exitCode=1;}
 

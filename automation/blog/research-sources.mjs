@@ -55,7 +55,7 @@ export async function trends(context,keywords){
 
 export async function collectNaver(keywords){
  if(!Array.isArray(keywords)||keywords.length<1||keywords.length>5||keywords.some(k=>typeof k!=='string'||!k.trim()||k.length>30))throw Error('RESEARCH_KEYWORDS_INVALID');
- const browser=await chromium.launch({channel:'chrome',headless:true});const context=await browser.newContext();context.setDefaultTimeout(20000);
+ const browser=await chromium.launch({channel:'chrome',chromiumSandbox:true,headless:true});const context=await browser.newContext();context.setDefaultTimeout(20000);
  try{
   const searches=[];for(const keyword of keywords){try{searches.push(await search(context,keyword));}catch{searches.push({keyword,state:'unavailable',results:[]});}}
   let trendRows;try{trendRows=await trends(context,keywords);}catch{trendRows=keywords.map(keyword=>({keyword,state:'unavailable',reason:'TREND_UNAVAILABLE'}));}

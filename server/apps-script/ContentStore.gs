@@ -17,7 +17,7 @@ function contentTopic_(db,id) {const t=db.topics.find(t=>t.id===id);if(!t)throw 
 function contentDoc_(db,id) {const d=db.articles[id];if(!d)throw Error('CONTENT_NOT_FOUND');return d;}
 function contentVersion_(doc,version) {if(doc.versions.length!==version)throw Error('CONTENT_CONFLICT');}
 function contentView_(db) {
-  return {keywordBoard:(db.keywordBoards||[]).at(-1)||null,deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,platforms:contentPlatforms_(j),state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
+  return {keywordRefreshes:['naver','datalab','vidiq'].map(source=>(db.keywordRefreshes||[]).filter(j=>j.source===source).map(j=>({id:j.id,source:j.source,state:j.state,createdAt:j.createdAt,completedAt:j.completedAt||null,results:j.results||[]})).at(-1)).filter(Boolean),keywordBoard:(db.keywordBoards||[]).at(-1)||null,deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,platforms:contentPlatforms_(j),state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
 }
 function contentPlatforms_(job) {return job.platforms||['naver','tistory','threads'];}
 function contentRoute_(r) {
@@ -28,6 +28,38 @@ function contentRoute_(r) {
     const now=Date.now();let result,changed=false;
     switch(r.action){
       case 'content.get': return contentView_(db);
+      case 'content.keywords.refresh': {
+        if(!['naver','datalab','vidiq'].includes(r.source))throw Error('CONTENT_INVALID');
+        if(!db.keywordBoards?.length)throw Error('CONTENT_NOT_FOUND');
+        if(!db.keywordRefreshes)db.keywordRefreshes=[];
+        if(db.keywordRefreshes.some(j=>j.source===r.source&&['queued','running'].includes(j.state)))return contentView_(db);
+        db.keywordRefreshes.push({id:Utilities.getUuid(),state:'queued',createdAt:now,source:r.source});
+        changed=true;break;
+      }
+      case 'content.keywords.claim': {
+        const requestId=contentId_(r.requestId);db.workerSeenAt=now;changed=true;
+        const jobs=db.keywordRefreshes||(db.keywordRefreshes=[]);
+        let job=jobs.find(j=>j.requestId===requestId&&j.state==='running');
+        if(!job&&jobs.some(j=>j.state==='running')){result={job:null};break;}
+        if(!job){job=jobs.find(j=>j.state==='queued');if(job){job.state='running';job.requestId=requestId;job.claim=Utilities.getUuid();job.startedAt=now;job.board=db.keywordBoards.at(-1);}}
+        result={job:job?{id:job.id,claim:job.claim,source:job.source,board:job.board}:null};break;
+      }
+      case 'content.keywords.finish': {
+        const job=(db.keywordRefreshes||[]).find(j=>j.id===r.jobId&&j.claim===r.claim);if(!job)throw Error('CONTENT_CONFLICT');
+        if(['complete','partial','failed'].includes(job.state))return {completed:true};if(job.state!=='running')throw Error('CONTENT_CONFLICT');
+        if(!Array.isArray(r.results)||r.results.length!==1)throw Error('CONTENT_INVALID');
+        const ids=new Set();let board=JSON.parse(JSON.stringify(db.keywordBoards.at(-1))),success=0;
+        const statuses=r.results.map(part=>{
+          if(part.id!==job.source||ids.has(part.id)||!['complete','failed'].includes(part.state))throw Error('CONTENT_INVALID');ids.add(part.id);
+          if(part.state==='complete'){
+            if(part.group?.id!==part.id||!Array.isArray(part.group.rows)||part.group.rows.some(row=>Date.parse(row.observedAt)<job.createdAt))throw Error('CONTENT_INVALID');
+            board.groups=board.groups.map(g=>g.id===part.id?part.group:g);success++;return {id:part.id,state:'complete'};
+          }
+          return {id:part.id,state:'failed',error:contentText_(part.error,100)};
+        });
+        if(success){board.id=Utilities.getUuid();board.observedAt=new Date(now).toISOString();board=contentKeywordBoard_(board);db.keywordBoards.push(board);}
+        job.results=statuses;job.state=success===1?'complete':'failed';job.completedAt=now;delete job.board;changed=true;result={completed:true};break;
+      }
       case 'content.keywords.save': {
         const board=contentKeywordBoard_(r.board);
         if(!db.keywordBoards)db.keywordBoards=[];

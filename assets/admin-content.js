@@ -36,14 +36,17 @@ window.MomentumContent=(()=>{
   function draw(){
     if(!data.topics.some(t=>t.id===selected))selected=sortedTopics()[0]?.id||null;
     drawTopics();
+    drawKeywordRefresh();
+    const online=data.workerSeenAt&&Date.now()-data.workerSeenAt<90000;
+    $('contentWorker').textContent=online?'실행기 최근 연결됨':'PC 실행기 연결 미확인 · PC 실행과 관리자 로그인을 확인하세요. 요청은 대기열에 보관됩니다.';
+    drawEditor();
+  }
+  function drawKeywordRefresh(){
     if(window.MomentumKeywords)MomentumKeywords.render($('contentKeywords'),data.keywordBoard,(row,group)=>{
       const form=$('contentTopicForm');if([...form.elements].some(e=>e.name&&e.value.trim())&&!confirm('주제 등록란의 기존 입력을 선택한 키워드로 바꿀까요?'))return;form.elements.title.value=row.keyword;form.elements.question.value=row.question;form.elements.intent.value='해결 탐색';
       form.elements.evidence.value=[group.title+' · '+group.basis,'조회: '+row.observedAt,row.metric,row.detail,'기획 판단: '+row.reason,...row.links.map(l=>l.label+' '+l.url),group.limitations].join('\n');
       form.closest('details').open=true;form.scrollIntoView({block:'center',behavior:'smooth'});notice('키워드와 근거를 주제 등록란에 채웠습니다. 제목·질문을 검토하고 저장하세요.');
-    });
-    const online=data.workerSeenAt&&Date.now()-data.workerSeenAt<90000;
-    $('contentWorker').textContent=online?'실행기 최근 연결됨':'PC 실행기 연결 미확인 · PC 실행과 관리자 로그인을 확인하세요. 요청은 대기열에 보관됩니다.';
-    drawEditor();
+    },data.keywordRefreshes,source=>run(async()=>{const title={naver:'네이버 검색',datalab:'데이터랩',vidiq:'vidIQ'}[source];if(!confirm(title+' TOP 10을 갱신할까요?'+(source==='vidiq'?'\n최대 20크레딧을 사용합니다.':'')))return;const next=await MomentumAdmin.call('content.keywords.refresh',{source});data.revision=next.revision;data.keywordBoard=next.keywordBoard;data.keywordRefreshes=next.keywordRefreshes;drawKeywordRefresh();notice(title+' 갱신을 요청했습니다. 완료되면 해당 항목의 경과 시간이 초기화됩니다.');}));
   }
   function generationProgress(snapshot=data){
     const area=$('contentGenerationProgress');if(!area)return;
@@ -159,6 +162,9 @@ window.MomentumContent=(()=>{
   function open(){mount();if(!data)run(load);}
   setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&(data.deliveries||[]).some(j=>['queued','running'].includes(j.state)))run(load);},10000);
   setInterval(checkGeneration,3000);
+  setInterval(()=>window.MomentumKeywords?.tick($('contentKeywords')),1000);
+  let checkingKeywords=false;
+  setInterval(async()=>{if(!data||busy||checkingKeywords||root().hidden)return;checkingKeywords=true;try{const next=await MomentumAdmin.call('content.get');if(!busy&&next.revision>=data.revision&&JSON.stringify([next.keywordBoard,next.keywordRefreshes])!==JSON.stringify([data.keywordBoard,data.keywordRefreshes])){data.revision=next.revision;data.keywordBoard=next.keywordBoard;data.keywordRefreshes=next.keywordRefreshes;drawKeywordRefresh();}}catch{}finally{checkingKeywords=false;}},30000);
   window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   return {open};
 })();

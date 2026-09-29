@@ -9,7 +9,7 @@ else{
  // Stop only this registered service before replacing its runtime.
  spawnSync('launchctl',['bootout',domain,plist],{stdio:'ignore'});
  await fs.mkdir(runtime,{recursive:true,mode:0o700});
- for(const name of ['worker.mjs','browser.mjs','generator.mjs','delivery-worker.mjs','delivery-adapters.mjs','tistory-draft.mjs','draft-format.mjs','package.json','package-lock.json'])await fs.copyFile(path.join(source,name),path.join(runtime,name));
+ for(const name of ['worker.mjs','keyword-worker.mjs','keyword-refresh.mjs','research-sources.mjs','vidiq-keywords.mjs','vidiq-mcp.mjs','keyword-framing.mjs','browser.mjs','generator.mjs','delivery-worker.mjs','delivery-adapters.mjs','tistory-draft.mjs','draft-format.mjs','package.json','package-lock.json'])await fs.copyFile(path.join(source,name),path.join(runtime,name));
  run('/opt/homebrew/bin/npm',['ci','--omit=dev','--prefix',runtime]);
  await fs.mkdir(path.dirname(plist),{recursive:true});
  const log=path.join(root,'worker.log');

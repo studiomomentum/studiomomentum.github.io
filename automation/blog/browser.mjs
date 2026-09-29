@@ -6,6 +6,7 @@ import path from 'node:path';
 // No option accepts an existing personal Chrome profile.
 export const root = path.join(os.homedir(), 'Library', 'Application Support', 'MomentumBlog');
 export const platforms = {
+  vidiq: {setup: 'https://app.vidiq.com/auth/login', home: 'https://app.vidiq.com/'},
   naver: {setup: 'https://nid.naver.com/nidlogin.login', home: 'https://blog.naver.com/'},
   tistory: {setup: 'https://www.tistory.com/auth/login', home: 'https://www.tistory.com/'},
   threads: {setup: 'https://www.threads.com/', home: 'https://www.threads.com/'},
@@ -24,7 +25,7 @@ export async function openBrowser(platform, mode = 'operate') {
   // Chrome's native profile lock prevents simultaneous setup/operation.
   // Never remove SingletonLock or kill another browser to recover a conflict.
   const context = await chromium.launchPersistentContext(profile, {
-    channel: 'chrome', headless: mode === 'operate',
+    channel: 'chrome', chromiumSandbox: true, headless: mode === 'operate',
     viewport: mode === 'setup' ? null : {width: 1440, height: 1000},
     acceptDownloads: false, timeout: 30000,
   });
