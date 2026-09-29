@@ -179,7 +179,7 @@ window.MomentumContent=(()=>{
           if(!posted&&doc.reviewedVersion!==version)card.append(node('p','저장한 버전을 검수 완료하면 공개 발행할 수 있습니다.'));
           for(const job of [...deliveryJobs].reverse()){
             const row=node('p',(job.kind==='publish'?'발행':'임시저장')+' v'+job.version+' · '+({queued:'대기',running:'처리 중',complete:'완료',failed:'실패',unknown:'결과 확인 필요',cancelled:'취소'}[job.state]||job.state));
-            if(job.error)row.append(document.createTextNode(' · '+({BROWSER_LOGIN_OR_EDITOR_CHECK_REQUIRED:'플랫폼 로그인 또는 편집기 확인 필요',LOGIN_REQUIRED:'플랫폼 재로그인 필요',DRAFT_VERSION_CONFLICT:'플랫폼 임시저장본과 현재 버전이 다릅니다',WRONG_ACCOUNT:'로그인 계정 확인 필요',RESULT_UNKNOWN:'플랫폼에서 실제 처리 여부를 확인하세요'}[job.error]||job.error)));
+            if(job.error)row.append(document.createTextNode(' · '+({BROWSER_PROFILE_IN_USE:'Mac의 자동화 Chrome 창을 닫은 뒤 다시 요청하세요',BROWSER_LOGIN_OR_EDITOR_CHECK_REQUIRED:'플랫폼 로그인 또는 편집기 확인 필요',LOGIN_REQUIRED:'플랫폼 재로그인 필요',DRAFT_VERSION_CONFLICT:'플랫폼 임시저장본과 현재 버전이 다릅니다',WRONG_ACCOUNT:'로그인 계정 확인 필요',RESULT_UNKNOWN:'플랫폼에서 실제 처리 여부를 확인하세요'}[job.error]||job.error)));
             if(job.url){const a=node('a','게시물 열기');a.href=job.url;a.target='_blank';a.rel='noopener noreferrer';row.append(' ',a);}
             if(job.state==='queued')row.append(button('요청 취소',async()=>{data=await contentCall('content.delivery.cancel',{jobId:job.id});draw();}));
             if(job.state==='unknown'&&job.kind==='publish')row.append(button('게시 주소로 결과 확인',async()=>{const url=prompt('직접 확인한 게시물 주소를 입력하세요.');if(!url)return;if(!confirm('이 주소가 해당 글의 실제 게시물임을 확인했나요?'))return;data=await contentCall('content.delivery.resolve',{jobId:job.id,resolution:'posted',url,confirmed:true});draw();}));

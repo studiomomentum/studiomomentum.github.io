@@ -24,11 +24,16 @@ export async function openBrowser(platform, mode = 'operate') {
   await fs.chmod(profile, 0o700);
   // Chrome's native profile lock prevents simultaneous setup/operation.
   // Never remove SingletonLock or kill another browser to recover a conflict.
-  const context = await chromium.launchPersistentContext(profile, {
+  let context;
+  try { context = await chromium.launchPersistentContext(profile, {
     channel: 'chrome', chromiumSandbox: true, headless: mode === 'operate',
     viewport: mode === 'setup' ? null : {width: 1440, height: 1000},
     acceptDownloads: false, timeout: 30000,
   });
+  } catch (error) {
+    if (/ProcessSingleton|SingletonLock|profile.*in use/i.test(error.message)) throw new Error('BROWSER_PROFILE_IN_USE');
+    throw error;
+  }
   if (mode === 'setup') {
     // A listener leaves native dialogs open for the user instead of Playwright
     // automatically dismissing them. Never auto-accept creation or deletion.

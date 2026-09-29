@@ -159,7 +159,13 @@ function contentRoute_(r) {
       }
       case 'content.delivery.finish': {
         const job=db.deliveries.find(j=>j.id===r.jobId&&j.claim===r.claim);if(!job)throw Error('CONTENT_CONFLICT');
-        if(job.state==='complete')return {completed:true};
+        if(['complete','failed','unknown'].includes(job.state)){
+          const same=job.state===r.state&&(job.state==='complete'
+            ? job.kind!=='publish'||job.url===contentText_(r.url,1000)
+            : job.error===contentText_(r.error||'CHECK_REQUIRED',100));
+          if(!same)throw Error('CONTENT_CONFLICT');
+          return {completed:true};
+        }
         if(job.state!=='running')throw Error('CONTENT_CONFLICT');
         if(!['complete','failed','unknown'].includes(r.state))throw Error('CONTENT_INVALID');
         if(r.state==='complete'&&job.kind==='publish'){

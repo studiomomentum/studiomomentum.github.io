@@ -13,3 +13,18 @@ const retry=call('content.delivery.claim',{requestId:'retry'}).job;call('content
 const state=call('content.get');assert(!JSON.stringify(state.deliveries).includes('snapshot'));assert(!JSON.stringify(state.deliveries).includes('claim'));assert.equal(state.deliveries.at(-1).url,'https://sotmomentum.tistory.com/1');
 call('content.save',{id,version:1,title:'v2',body:'v2'});call('content.review',{id,version:2});assert.throws(()=>call('content.delivery.request',{id,version:2,kind:'publish'}),/RECONCILE/);
 console.log('Delivery review gate, Naver pause, snapshots, locks, duplicate claims, ambiguous recovery, URL checks PASS');
+
+const tid=topic.id+':threads';call('content.review',{id:tid,version:1});
+for(const outcome of ['failed','unknown']){
+ call('content.delivery.request',{id:tid,version:1,kind:'publish'});
+ const job=call('content.delivery.claim',{requestId:'terminal-'+outcome}).job;
+ const payload={jobId:job.id,claim:job.claim,state:outcome,error:'BROWSER_PROFILE_IN_USE'};
+ call('content.delivery.finish',payload);
+ const revision=call('content.get').revision;
+ assert(call('content.delivery.finish',payload).completed);
+ assert.equal(call('content.get').revision,revision);
+ assert.throws(()=>call('content.delivery.finish',{...payload,error:'DIFFERENT'}),/CONFLICT/);
+ assert.throws(()=>call('content.delivery.finish',{...payload,state:'complete'}),/CONFLICT/);
+ assert.throws(()=>call('content.delivery.finish',{...payload,claim:'wrong'}),/CONFLICT/);
+}
+console.log('Identical failed/unknown acknowledgments are idempotent; conflicting outcomes rejected PASS');
