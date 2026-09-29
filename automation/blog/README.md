@@ -53,7 +53,7 @@ node worker.mjs run
 
 생성 요청 접수/완료 응답이 끊기면 로컬 `generation-receipt.json`의 요청 ID와 결과로 재확인한다. 다시 실행할 때 완료 결과가 있으면 재생성 없이 저장만 재시도한다. 실행 중 프로세스가 종료돼 결과가 없으면 실패로 표시한다. UI의 생성 재시도로 다시 요청할 수 있다. 완료 저장 충돌이 발생하면 로컬 결과를 보존하고 중단한다. 해당 결과와 사용자 편집본을 대조한 뒤 복구해야 하며 receipt를 임의로 지우면 안 된다.
 
-검증: `node tests/content-store.cjs`, `node tests/admin-content.cjs`, `node tests/admin-relay.cjs`를 저장소 루트에서 실행. `npm test --prefix automation/blog`는 Chrome 세션 및 출력 검사를 실행한다. UI 검사는 외부 요청을 차단하고 테스트 초안만 사용한다. 플랫폼 실제 발행은 구현하지 않았다.
+검증: `node tests/content-store.cjs`, `node tests/admin-content.cjs`, `node tests/admin-relay.cjs`를 저장소 루트에서 실행. `npm test --prefix automation/blog`는 Chrome 세션 및 출력 검사를 실행한다. UI 검사는 외부 요청을 차단하고 테스트 초안만 사용한다. 실제 발행 검증은 아래 전송 대기열 절차를 따른다.
 
 ## 글 구성 원칙 (2026-09-29 갱신)
 
@@ -68,7 +68,7 @@ node worker.mjs run
 - 네이버: 짧은 의미 단위 문단으로 질문·답·예시·실천을 구분한다.
 - 티스토리: 연결된 설명은 문단으로 유지하고 논점·단계 전환에 소제목과 여백을 쓴다.
 - 공통: 소제목과 문단 사이 빈 줄, 한 문단 한 논점. 글자 수에 따른 강제 줄바꿈이나 매 문장 일괄 분리는 하지 않는다. 실제 플랫폼 편집기의 자동 줄바꿈에 맡긴다.
-- 티스토리 임시저장 어댑터는 문단을 보존한다. 실제 공개 발행 및 플랫폼 미리보기의 모바일 렌더링은 별도 검증이 필요하다. 어드민은 `pre-wrap`으로 저장 개행을 보존한다.
+- 티스토리 임시저장 어댑터는 문단을 보존한다. 공개 글에는 문단별 여백과 줄간격을 명시해 스킨의 문단 여백 초기화에 대응한다. 어드민은 `pre-wrap`으로 저장 개행을 보존한다.
 
 참고: [네이버 유튜버아카데미](https://m.blog.naver.com/pji6000/223345800089)는 항목별 설명 문단, [네이버 아토즈](https://m.blog.naver.com/daennis/223785007219)는 짧은 문단·체크 항목을 사용한다. [티스토리 삼각대 후기](https://flowerdeer23.tistory.com/1075)는 설명 문단·사진, [티스토리 미니 스튜디오](https://milkyway2030.tistory.com/60)는 소제목·목록·문장 개행을 함께 사용한다.
 
@@ -82,7 +82,7 @@ node automation/blog/tistory-draft-cli.mjs <주제ID> <전용프로필명> <카�
 
 - 비공개 어드민 서버에서 티스토리의 현재 버전을 읽고 빈 편집기에만 입력한다. HTML 문자를 이스케이프하고 빈 줄은 문단, 문단 안 개행은 줄바꿈으로 변환한다.
 - 클릭 전 저장소 외부 `tistory-draft-receipt.json`(0600)에 원문·버전·지문·단계를 기록한다. 임시저장 후 새 글쓰기 화면의 임시저장 목록에서 다시 열어 제목과 문단별 텍스트를 대조한다.
-- 같은 원문으로 재실행하면 기존 임시저장만 확인하며 저장 버튼을 다시 누르지 않는다. 다른 원문이거나 상태가 불명확하면 중단한다. 현재는 첫 검증용 단일 receipt이며 다중 글 운영 대기열·어드민 버튼은 아직 연결하지 않았다. receipt를 임의 삭제하지 않는다.
+- 같은 원문으로 재실행하면 기존 임시저장만 확인하며 저장 버튼을 다시 누르지 않는다. 다른 원문이거나 상태가 불명확하면 중단한다. 현재는 첫 검증용 단일 receipt이며 운영에서는 아래 전송 대기열·어드민 버튼을 사용한다. receipt를 임의 삭제하지 않는다.
 - 2026-09-29 실제 티스토리 v3: 1건 임시저장, 16개 문단·제목 일치, Chrome 재시작 후 CLI 재검증 통과. 공개 발행은 하지 않았다.
 
 ## 티스토리·쓰레드 전송 대기열과 상주 실행기
@@ -97,4 +97,4 @@ node automation/blog/tistory-draft-cli.mjs <주제ID> <전용프로필명> <카�
 
 `node automation/blog/install-service.mjs`는 실행기를 저장소 밖 `~/Library/Application Support/MomentumBlog/runtime`에 복사하고 LaunchAgent `com.momentum.blog-worker`를 등록한다. PC 사용자 로그인 후 자동 실행하며 비정상 종료 시 재시작한다. Mac 종료·잠자기 중에는 작업할 수 없다. 관리자 세션은 7일 만료되므로 `worker.mjs login`으로 갱신해야 한다. 새 세션은 다음 루프에서 읽는다. 로그는 같은 비공개 폴더의 `worker.log`, 실제 전송 이력은 `delivery-history/`에 보관한다. 코드 수정 후 설치 명령을 다시 실행해 런타임을 갱신한다. 중지는 `node automation/blog/install-service.mjs stop`.
 
-검증 경계: 각 매체 실제 임시저장 재조회는 검증했다. 공개 발행은 사용자 최종 검수 후 실제 요청으로 별도 확인한다. 단위/브라우저 테스트 통과를 실제 게시 성공으로 간주하지 않는다.
+검증: 사용자 승인된 v3를 두 매체에 각각 1건 공개 발행하고 본문 및 실제 URL을 대조했다. 티스토리 https://sotmomentum.tistory.com/1 · 쓰레드 https://www.threads.com/@sot_momentum/post/Dd34tXBgW6h . 최초 결과 조회 실패는 재게시 없이 실제 게시물 확인 후 서버 v12의 결과 복구로 완료 처리했다. 티스토리 숫자형 주소 탐색과 Threads 렌더링 개행 비교를 보완했다. 단위 테스트와 실제 게시 확인은 별도로 수행했다.

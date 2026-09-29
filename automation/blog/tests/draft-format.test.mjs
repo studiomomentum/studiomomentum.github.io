@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {draftHTML,fingerprint,normalizedText} from '../draft-format.mjs';
 test('preserves Korean paragraph and intentional line boundaries, escapes editor HTML',()=>{
- assert.equal(draftHTML('첫 문단\r\n같은 문단\r\n\r\n둘째 <script> & "인용"'),'<p>첫 문단<br>같은 문단</p>\n<p>둘째 &lt;script&gt; &amp; &quot;인용&quot;</p>');
+ assert.equal(draftHTML('첫 문단\r\n같은 문단\r\n\r\n둘째 <script> & "인용"'),'<p style="margin:0 0 1.2em!important;line-height:1.8">첫 문단<br>같은 문단</p>\n<p style="margin:0 0 1.2em!important;line-height:1.8">둘째 &lt;script&gt; &amp; &quot;인용&quot;</p>');
  assert.throws(()=>draftHTML(' '),/EMPTY_DRAFT/);
 });
 test('receipt fingerprint distinguishes content revisions',()=>{

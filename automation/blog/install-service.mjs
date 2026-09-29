@@ -15,7 +15,7 @@ else{
  const log=path.join(root,'worker.log');
  await fs.writeFile(log,'',{flag:'a',mode:0o600});
  await fs.writeFile(plist,`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict>
- <key>Label</key><string>${label}</string><key>ProgramArguments</key><array><string>${xml(process.execPath)}</string><string>${xml(path.join(runtime,'worker.mjs'))}</string><string>run</string></array>
+ <key>Label</key><string>${label}</string><key>ProgramArguments</key><array><string>${xml("/opt/homebrew/bin/node")}</string><string>${xml(path.join(runtime,'worker.mjs'))}</string><string>run</string></array>
  <key>WorkingDirectory</key><string>${xml(runtime)}</string><key>RunAtLoad</key><true/><key>KeepAlive</key><true/><key>ThrottleInterval</key><integer>60</integer>
  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string></dict>
  <key>StandardOutPath</key><string>${xml(log)}</string><key>StandardErrorPath</key><string>${xml(log)}</string>

@@ -25,7 +25,7 @@ window.MomentumContent=(()=>{
       const heading=node('h3',t.title);card.append(heading);
       const timestamp=node('p',dates.generated?'최근 생성 '+dateLabel(dates.generated):'아직 생성하지 않음 · 등록 '+dateLabel(t.createdAt));timestamp.className='content-topic-time';
       if(dates.updated>dates.generated)timestamp.textContent+=' · 마지막 저장 '+dateLabel(dates.updated);card.append(timestamp);
-      const statuses=Object.keys(platforms).map(platform=>{const doc=data.articles[t.id+':'+platform];return platforms[platform]+' '+(!doc?'미생성':(doc.reviewedVersion===doc.versions.length?'검수 완료':'초안')+' v'+doc.versions.length);});
+      const statuses=Object.keys(platforms).map(platform=>{const doc=data.articles[t.id+':'+platform],posted=(data.deliveries||[]).find(j=>j.docId===doc?.id&&j.kind==='publish'&&j.state==='complete');if(posted)return platforms[platform]+' 발행 완료 v'+posted.version+(doc.versions.length!==posted.version?' · 수정본 v'+doc.versions.length:'');return platforms[platform]+' '+(!doc?'미생성':(doc.reviewedVersion===doc.versions.length?'검수 완료':'초안')+' v'+doc.versions.length);});
       card.append(node('small',statuses.join(' · ')));
       if(state)card.append(node('p',({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state.state])));
       const details=node('details');details.append(node('summary','주제·근거 보기'),node('p',t.question),node('p',t.intent+' · 검색량 미확인'),node('p',t.evidence));card.append(details);
@@ -37,7 +37,7 @@ window.MomentumContent=(()=>{
     if(!data.topics.some(t=>t.id===selected))selected=sortedTopics()[0]?.id||null;
     drawTopics();
     const online=data.workerSeenAt&&Date.now()-data.workerSeenAt<90000;
-    $('contentWorker').textContent=online?'실행기 최근 연결됨':'실행기 연결 미확인 · 생성 요청은 대기열에 보관됩니다.';
+    $('contentWorker').textContent=online?'실행기 최근 연결됨':'PC 실행기 연결 미확인 · PC 실행과 관리자 로그인을 확인하세요. 요청은 대기열에 보관됩니다.';
     drawEditor();
   }
   function drawEditor(){
