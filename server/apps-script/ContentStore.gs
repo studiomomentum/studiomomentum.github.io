@@ -17,7 +17,7 @@ function contentTopic_(db,id) {const t=db.topics.find(t=>t.id===id);if(!t)throw 
 function contentDoc_(db,id) {const d=db.articles[id];if(!d)throw Error('CONTENT_NOT_FOUND');return d;}
 function contentVersion_(doc,version) {if(doc.versions.length!==version)throw Error('CONTENT_CONFLICT');}
 function contentView_(db) {
-  return {keywordRefreshes:['naver','datalab','vidiq'].map(source=>(db.keywordRefreshes||[]).filter(j=>j.source===source).map(j=>({id:j.id,source:j.source,state:j.state,createdAt:j.createdAt,completedAt:j.completedAt||null,results:j.results||[]})).at(-1)).filter(Boolean),keywordBoard:(db.keywordBoards||[]).at(-1)||null,deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,platforms:contentPlatforms_(j),state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
+  return {keywordRefreshes:['naver','datalab','vidiq'].map(source=>(db.keywordRefreshes||[]).filter(j=>j.source===source).map(j=>({id:j.id,source:j.source,state:j.state,createdAt:j.createdAt,completedAt:j.completedAt||null,results:j.results||[]})).at(-1)).filter(Boolean),keywordBoard:(db.keywordBoards||[]).at(-1)||null,deliveries:(db.deliveries||[]).map(j=>({id:j.id,docId:j.docId,platform:j.platform,target:j.platform==='naver'?(j.target||'jungkkuckma'):null,version:j.version,kind:j.kind,state:j.state,createdAt:j.createdAt,error:j.error||null,url:j.url||null})),revision:db.revision,topics:db.topics,articles:db.articles,jobs:db.jobs.map(j=>({id:j.id,topicId:j.topicId,platforms:contentPlatforms_(j),state:j.state,createdAt:j.createdAt,error:j.error||null})),workerSeenAt:db.workerSeenAt};
 }
 function contentPlatforms_(job) {return job.platforms||['naver','tistory','threads'];}
 function contentRoute_(r) {
@@ -136,10 +136,10 @@ function contentRoute_(r) {
         if(!['draft','publish'].includes(r.kind))throw Error('CONTENT_INVALID');
         if(r.kind==='publish'&&doc.reviewedVersion!==r.version)throw Error('CONTENT_REVIEW_REQUIRED');
         if(doc.platform==='threads'&&(Array.from(doc.versions.at(-1).body).length>500||/(https?:\/\/|www\.)/i.test(doc.versions.at(-1).body)))throw Error('CONTENT_INVALID');
-        const same=db.deliveries.find(j=>j.docId===doc.id&&j.kind===r.kind&&j.version===r.version&&['queued','running','complete','unknown'].includes(j.state));
+        const same=db.deliveries.find(j=>j.docId===doc.id&&(doc.platform!=='naver'||j.target==='sot_momentum')&&j.kind===r.kind&&j.version===r.version&&['queued','running','complete','unknown'].includes(j.state));
         if(same)return contentView_(db);
         if(db.deliveries.some(j=>j.docId===doc.id&&(j.kind==='publish'&&['complete','unknown'].includes(j.state)||['queued','running'].includes(j.state))))throw Error('CONTENT_RECONCILE_REQUIRED');
-        db.deliveries.push({id:Utilities.getUuid(),docId:doc.id,topicId:doc.topicId,platform:doc.platform,version:r.version,kind:r.kind,state:'queued',createdAt:now,snapshot:doc.versions.at(-1)});changed=true;break;
+        db.deliveries.push({id:Utilities.getUuid(),docId:doc.id,topicId:doc.topicId,platform:doc.platform,target:doc.platform==='naver'?'sot_momentum':null,version:r.version,kind:r.kind,state:'queued',createdAt:now,snapshot:doc.versions.at(-1)});changed=true;break;
       }
       case 'content.delivery.cancel': {
         const job=db.deliveries.find(j=>j.id===r.jobId);if(!job||job.state!=='queued')throw Error('CONTENT_CONFLICT');job.state='cancelled';changed=true;break;
@@ -153,6 +153,7 @@ function contentRoute_(r) {
       }
       case 'content.delivery.authorize': {
         const job=db.deliveries.find(j=>j.id===r.jobId&&j.claim===r.claim&&j.state==='running');if(!job)throw Error('CONTENT_CONFLICT');
+        if(job.platform==='naver'&&job.target!=='sot_momentum')throw Error('WRONG_BLOG');
         const doc=contentDoc_(db,job.docId);contentVersion_(doc,job.version);
         if(job.kind==='publish'&&doc.reviewedVersion!==job.version)throw Error('CONTENT_REVIEW_REQUIRED');
         result={authorized:true};break;
@@ -170,7 +171,7 @@ function contentRoute_(r) {
         if(!['complete','failed','unknown'].includes(r.state))throw Error('CONTENT_INVALID');
         if(r.state==='complete'&&job.kind==='publish'){
           const url=contentText_(r.url,1000);
-          const valid=job.platform==='naver'?/^https:\/\/blog\.naver\.com\/jungkkuckma\/\d+$/.test(url):job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
+          const valid=job.platform==='naver'?/^https:\/\/blog\.naver\.com\/sot_momentum\/\d+$/.test(url):job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
           if(!valid)throw Error('CONTENT_INVALID');job.url=url;
         }
         job.state=r.state;job.error=r.state==='complete'?null:contentText_(r.error||'CHECK_REQUIRED',100);job.completedAt=now;changed=true;result={completed:true};break;
@@ -180,7 +181,7 @@ function contentRoute_(r) {
         // Only an explicit operator reconciliation can release an ambiguous click.
         if(r.confirmed!==true)throw Error('CONTENT_INVALID');
         if(r.resolution==='posted'&&job.kind==='publish'){
-          const url=contentText_(r.url,1000);const valid=job.platform==='naver'?/^https:\/\/blog\.naver\.com\/jungkkuckma\/\d+$/.test(url):job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
+          const url=contentText_(r.url,1000);const valid=job.platform==='naver'?/^https:\/\/blog\.naver\.com\/sot_momentum\/\d+$/.test(url):job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
           if(!valid)throw Error('CONTENT_INVALID');job.state='complete';job.url=url;job.error=null;
         }else if(r.resolution==='not_posted'){job.state='failed';job.error='OPERATOR_CONFIRMED_NOT_POSTED';}
         else throw Error('CONTENT_INVALID');

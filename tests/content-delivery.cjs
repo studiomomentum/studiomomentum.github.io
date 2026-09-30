@@ -30,12 +30,14 @@ for(const outcome of ['failed','unknown']){
 console.log('Identical failed/unknown acknowledgments are idempotent; conflicting outcomes rejected PASS');
 
 const nid=topic.id+':naver';
+const legacy=JSON.parse(raw);legacy.deliveries.push({id:'legacy-naver',docId:nid,platform:'naver',version:1,kind:'draft',state:'complete'});raw=JSON.stringify(legacy);
+assert.equal(call('content.get').deliveries.at(-1).target,'jungkkuckma');
 call('content.delivery.request',{id:nid,version:1,kind:'draft'});
 const nd=call('content.delivery.claim',{requestId:'naver-draft'}).job;
-assert.equal(nd.platform,'naver');call('content.delivery.finish',{jobId:nd.id,claim:nd.claim,state:'complete'});
+assert.equal(nd.platform,'naver');assert.equal(nd.target,'sot_momentum');assert.notEqual(nd.id,'legacy-naver');call('content.delivery.finish',{jobId:nd.id,claim:nd.claim,state:'complete'});
 call('content.review',{id:nid,version:1});call('content.delivery.request',{id:nid,version:1,kind:'publish'});
 const np=call('content.delivery.claim',{requestId:'naver-publish'}).job;
 for(const url of ['https://blog.naver.com/other/123','https://www.threads.com/@sot_momentum/post/123'])assert.throws(()=>call('content.delivery.finish',{jobId:np.id,claim:np.claim,state:'complete',url}),/INVALID/);
-call('content.delivery.finish',{jobId:np.id,claim:np.claim,state:'complete',url:'https://blog.naver.com/jungkkuckma/123'});
-assert.equal(call('content.get').deliveries.at(-1).url,'https://blog.naver.com/jungkkuckma/123');
+call('content.delivery.finish',{jobId:np.id,claim:np.claim,state:'complete',url:'https://blog.naver.com/sot_momentum/123'});
+assert.equal(call('content.get').deliveries.at(-1).url,'https://blog.naver.com/sot_momentum/123');
 console.log('Naver draft queue, review requirement and destination URL checks PASS');

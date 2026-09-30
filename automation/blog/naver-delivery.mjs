@@ -1,9 +1,9 @@
 // Uses the existing dedicated Chrome session; never stores credentials.
-export const naverBlogId='jungkkuckma';
+export const naverBlogId='sot_momentum';
 export const naverTarget='https://blog.naver.com/'+naverBlogId;
 const lines=s=>s.replace(/\r\n?/g,'\n').split('\n');
 export function sameNaverLines(actual,body){return JSON.stringify(actual)===JSON.stringify(lines(body));}
-export function naverPostURL(url){return /^https:\/\/blog\.naver\.com\/jungkkuckma\/\d+$/.test(url);}
+export function naverPostURL(url){return /^https:\/\/blog\.naver\.com\/sot_momentum\/\d+$/.test(url);}
 async function until(fn){for(let n=0;n<40;n++){if(await fn())return;await new Promise(r=>setTimeout(r,250));}throw Error('RESULT_NOT_VERIFIED');}
 export async function inspectNaver(page,source){
  const title=(await page.locator('.se-documentTitle .__se-node').allTextContents()).join('');
@@ -66,6 +66,7 @@ async function recoverPost(context,source){
 }
 export async function naverDelivery(context,job,control){
  if(!['draft','publish'].includes(job.kind))throw Error('DELIVERY_KIND_INVALID');
+ if(job.target!==naverBlogId)throw Error('WRONG_BLOG');
  if(control.receipt.clickStarted&&job.kind==='publish')return recoverPost(context,job.snapshot);
  const {page,existing}=await restore(context,job.snapshot,!!control.receipt.clickStarted);
  if(job.kind==='draft'){
