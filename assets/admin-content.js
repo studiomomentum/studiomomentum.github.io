@@ -165,8 +165,8 @@ window.MomentumContent=(()=>{
           data=await contentCall('content.generate',{topicId:selected,platform});draw();notice(platforms[platform]+'만 새 버전 생성을 요청했습니다. 다른 매체의 글은 유지됩니다.');
         });
         regenerate.disabled=dirty||locked||data.jobs.some(j=>j.topicId===selected&&['queued','running'].includes(j.state));card.append(regenerate);
-        if(platform==='naver'){card.append(node('p','네이버 연결 보류 · 블로그 설정 후 연결합니다.'));}
-        else {
+        {
+          if(platform==='naver')card.append(node('p','네이버 · 솟 모멘텀 연결됨 (jungkkuckma)'));
           const request=kind=>run(async()=>{if(!dirtyGuard())return;if(dirty){notice('변경한 글을 먼저 저장하세요.');return;}
             if(kind==='publish'&&!confirm(platforms[platform]+' v'+version+'을 지금 공개 발행할까요?'))return;
             data=await contentCall('content.delivery.request',{id:doc.id,version,kind});draw();notice(kind==='publish'?'공개 발행 요청을 접수했습니다.':'임시저장 요청을 접수했습니다.');});

@@ -132,7 +132,7 @@ function contentRoute_(r) {
             case 'content.delivery.request': {
         const doc=contentDoc_(db,contentId_(r.id));contentVersion_(doc,r.version);
         if(db.jobs.some(j=>j.topicId===doc.topicId&&['queued','running'].includes(j.state)))throw Error('CONTENT_BUSY');
-        if(!['tistory','threads'].includes(doc.platform))throw Error('CONTENT_PLATFORM_PAUSED');
+        if(!['naver','tistory','threads'].includes(doc.platform))throw Error('CONTENT_PLATFORM_PAUSED');
         if(!['draft','publish'].includes(r.kind))throw Error('CONTENT_INVALID');
         if(r.kind==='publish'&&doc.reviewedVersion!==r.version)throw Error('CONTENT_REVIEW_REQUIRED');
         if(doc.platform==='threads'&&(Array.from(doc.versions.at(-1).body).length>500||/(https?:\/\/|www\.)/i.test(doc.versions.at(-1).body)))throw Error('CONTENT_INVALID');
@@ -170,7 +170,7 @@ function contentRoute_(r) {
         if(!['complete','failed','unknown'].includes(r.state))throw Error('CONTENT_INVALID');
         if(r.state==='complete'&&job.kind==='publish'){
           const url=contentText_(r.url,1000);
-          const valid=job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
+          const valid=job.platform==='naver'?/^https:\/\/blog\.naver\.com\/jungkkuckma\/\d+$/.test(url):job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
           if(!valid)throw Error('CONTENT_INVALID');job.url=url;
         }
         job.state=r.state;job.error=r.state==='complete'?null:contentText_(r.error||'CHECK_REQUIRED',100);job.completedAt=now;changed=true;result={completed:true};break;
@@ -180,7 +180,7 @@ function contentRoute_(r) {
         // Only an explicit operator reconciliation can release an ambiguous click.
         if(r.confirmed!==true)throw Error('CONTENT_INVALID');
         if(r.resolution==='posted'&&job.kind==='publish'){
-          const url=contentText_(r.url,1000);const valid=job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
+          const url=contentText_(r.url,1000);const valid=job.platform==='naver'?/^https:\/\/blog\.naver\.com\/jungkkuckma\/\d+$/.test(url):job.platform==='tistory'?/^https:\/\/sotmomentum\.tistory\.com\/(?:\d+|entry\/[^?#]+)$/.test(url):/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(url);
           if(!valid)throw Error('CONTENT_INVALID');job.state='complete';job.url=url;job.error=null;
         }else if(r.resolution==='not_posted'){job.state='failed';job.error='OPERATOR_CONFIRMED_NOT_POSTED';}
         else throw Error('CONTENT_INVALID');

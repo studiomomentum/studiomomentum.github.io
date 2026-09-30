@@ -1,3 +1,4 @@
+import {naverDelivery} from './naver-delivery.mjs';
 import {openEditor,inspectEditor,target} from './tistory-draft.mjs';
 import {draftHTML,normalizedText} from './draft-format.mjs';
 const threadsURL='https://www.threads.com';
@@ -88,7 +89,7 @@ async function threads(context,job,control){
  await control.beforeClick({});await page.getByRole('dialog').getByRole('button',{name:'게시',exact:true}).click();await page.getByRole('dialog').waitFor({state:'hidden',timeout:30000});
  return {url:await threadsPostURL(context,source)};
 }
-export async function deliver(context,job,control){if(job.platform==='tistory')return tistory(context,job,control);if(job.platform==='threads')return threads(context,job,control);throw Error('PLATFORM_PAUSED');}
+export async function deliver(context,job,control){if(job.platform==='naver')return naverDelivery(context,job,control);if(job.platform==='tistory')return tistory(context,job,control);if(job.platform==='threads')return threads(context,job,control);throw Error('PLATFORM_PAUSED');}
 
 export function threadPostURLs(anchors,body){
  const norm=s=>(s||'').replace(/\s+/g,' ').trim(),expected=norm(body),found=new Set();
