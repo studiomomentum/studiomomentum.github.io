@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:16:27.598078+00:00",
+  "updated_at": "2026-10-01T08:17:28.868318+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27242,
-    "pending": 696,
-    "processing": 0,
+    "processed": 27262,
+    "pending": 674,
+    "processing": 2,
     "eligible": 265,
-    "review": 19092,
-    "rejected": 7819,
+    "review": 19109,
+    "rejected": 7822,
     "errors": 63,
     "ready": 172,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCZXaxDSY_3mX-CGz0UTk1gg",
+        "name": "범어로제피부과의원",
+        "query": "송파 피부과"
+      },
+      {
+        "channel_id": "UCj8WxgXfpc57aUL0FppvNag",
+        "name": "닥터 권의 피부이야기",
+        "query": "송파 피부과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3599,
+  "region_observed": 3619,
   "channels_discovered": 27937,
-  "channels_observed": 27179,
+  "channels_observed": 27199,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3599,
+      "observed": 3619,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3604,
+      "classified": 3624,
       "classification_errors": 5,
       "jobs": [
         {
