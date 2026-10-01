@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:09:01.689710+00:00",
+  "updated_at": "2026-10-01T05:10:04.062454+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24879,
-    "pending": 3057,
-    "processing": 2,
+    "processed": 24891,
+    "pending": 3047,
+    "processing": 0,
     "eligible": 224,
-    "review": 17299,
-    "rejected": 7298,
+    "review": 17307,
+    "rejected": 7302,
     "errors": 55,
     "ready": 145,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCe9Orv8eqgHkrMPGfLn76AQ",
-        "name": "Pilatesing 필라테싱",
-        "query": "강남 필라테스"
-      },
-      {
-        "channel_id": "UC75sVWlWL3V0678d5LGRFkA",
-        "name": "캐나다 인터뷰룸",
-        "query": "강남 필라테스"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2571,
+  "region_observed": 2574,
   "channels_discovered": 27937,
-  "channels_observed": 24824,
+  "channels_observed": 24836,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4915,
+      "observed": 4927,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4928,
+      "classified": 4940,
       "classification_errors": 13,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2983,
+      "observed": 2988,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2984,
+      "classified": 2989,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2571,
+      "observed": 2574,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2572,
+      "classified": 2575,
       "classification_errors": 1,
       "jobs": [
         {
