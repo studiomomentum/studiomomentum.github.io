@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:02:28.873271+00:00",
+  "updated_at": "2026-10-01T05:03:30.298474+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24783,
-    "pending": 3155,
-    "processing": 0,
-    "eligible": 222,
-    "review": 17236,
-    "rejected": 7267,
+    "processed": 24802,
+    "pending": 3135,
+    "processing": 1,
+    "eligible": 223,
+    "review": 17249,
+    "rejected": 7272,
     "errors": 55,
     "ready": 146,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCayzCSxMRI_jwIQQf4n475A",
+        "name": "지혜로운필라테스",
+        "query": "강남 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2538,
+  "region_observed": 2543,
   "channels_discovered": 27937,
-  "channels_observed": 24728,
+  "channels_observed": 24747,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4819,
+      "observed": 4838,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4832,
+      "classified": 4851,
       "classification_errors": 13,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2934,
+      "observed": 2945,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2935,
+      "classified": 2946,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2538,
+      "observed": 2543,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2539,
+      "classified": 2544,
       "classification_errors": 1,
       "jobs": [
         {
