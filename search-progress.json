@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:52:43.558958+00:00",
+  "updated_at": "2026-10-01T06:53:46.517115+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26224,
-    "pending": 1713,
+    "processed": 26234,
+    "pending": 1703,
     "processing": 1,
     "eligible": 243,
-    "review": 18298,
-    "rejected": 7619,
+    "review": 18305,
+    "rejected": 7622,
     "errors": 61,
     "ready": 157,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCNUGwU29TycQeRlozJy35Gg",
-        "name": "특수동물병원, 아크리스 동물의료센터",
+        "channel_id": "UCiCXuCmkt7kyiGJR7_HO0_A",
+        "name": "아언니",
         "query": "서초 동물병원"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2899,
+  "region_observed": 2903,
   "channels_discovered": 27937,
-  "channels_observed": 26163,
+  "channels_observed": 26173,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4289,
+      "observed": 4299,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4293,
+      "classified": 4303,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2899,
+      "observed": 2903,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2902,
+      "classified": 2906,
       "classification_errors": 3,
       "jobs": [
         {
