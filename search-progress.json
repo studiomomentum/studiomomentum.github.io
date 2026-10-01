@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:25:39.593555+00:00",
+  "updated_at": "2026-10-01T05:26:41.441775+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25092,
-    "pending": 2845,
-    "processing": 1,
+    "processed": 25107,
+    "pending": 2829,
+    "processing": 2,
     "eligible": 236,
-    "review": 17438,
-    "rejected": 7357,
+    "review": 17450,
+    "rejected": 7360,
     "errors": 58,
-    "ready": 154,
+    "ready": 155,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCLwfhEG8EcszVOkfxwwl5mA",
-        "name": "헤리티지TV",
+        "channel_id": "UCGZVaCPNCK1cH7RBFNKaCYQ",
+        "name": "자미니",
+        "query": "서초 법무법인"
+      },
+      {
+        "channel_id": "UC57BrL2KP2IKcm-styOTCoQ",
+        "name": "카도 CADO YouTube",
         "query": "서초 법무법인"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2621,
+  "region_observed": 2623,
   "channels_discovered": 27937,
-  "channels_observed": 25034,
+  "channels_observed": 25049,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3160,
+      "observed": 3175,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3161,
+      "classified": 3176,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2621,
+      "observed": 2623,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2622,
+      "classified": 2624,
       "classification_errors": 1,
       "jobs": [
         {
