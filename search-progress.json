@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:25:29.912938+00:00",
+  "updated_at": "2026-10-01T06:26:31.297135+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25888,
-    "pending": 2049,
-    "processing": 1,
+    "processed": 25899,
+    "pending": 2037,
+    "processing": 2,
     "eligible": 242,
-    "review": 18056,
-    "rejected": 7527,
+    "review": 18064,
+    "rejected": 7530,
     "errors": 60,
-    "ready": 155,
+    "ready": 156,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCufawLJmNutk3cGDXztvk3Q",
-        "name": "모차르트성형외과",
-        "query": "서초 성형외과"
+        "channel_id": "UCVShs1G84UPLu7OhjiapXRQ",
+        "name": "원셀의원",
+        "query": "서초 피부과"
+      },
+      {
+        "channel_id": "UCSi433vrRYXScAaOq8dKImQ",
+        "name": "마음에 드네 - Dr. Shin Nanda",
+        "query": "서초 피부과"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2812,
   "channels_discovered": 27937,
-  "channels_observed": 25828,
+  "channels_observed": 25839,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3954,
+      "observed": 3965,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3957,
+      "classified": 3968,
       "classification_errors": 3,
       "jobs": [
         {
