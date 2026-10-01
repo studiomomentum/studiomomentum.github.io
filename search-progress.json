@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:19:19.521524+00:00",
+  "updated_at": "2026-10-01T03:20:21.318232+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23336,
-    "pending": 4601,
+    "processed": 23350,
+    "pending": 4587,
     "processing": 1,
     "eligible": 211,
-    "review": 16272,
-    "rejected": 6802,
+    "review": 16280,
+    "rejected": 6808,
     "errors": 48,
-    "ready": 138,
+    "ready": 139,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCT6iXhqcV_IOMEsgNDiiAiw",
-        "name": "DUGAK: 두각학원",
+        "channel_id": "UCYglgy0-OA6cCfYlegMvZ7g",
+        "name": "일공교육 Youtube",
         "query": "강남 학원"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2357,
+  "region_observed": 2358,
   "channels_discovered": 27937,
-  "channels_observed": 23288,
+  "channels_observed": 23302,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3379,
+      "observed": 3393,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3385,
+      "classified": 3399,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2623,
+      "observed": 2630,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2624,
+      "classified": 2631,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2357,
+      "observed": 2358,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2358,
+      "classified": 2359,
       "classification_errors": 1,
       "jobs": [
         {
