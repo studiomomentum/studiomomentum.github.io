@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:19:32.488666+00:00",
+  "updated_at": "2026-10-01T08:21:00.563382+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27284,
-    "pending": 652,
-    "processing": 2,
+    "processed": 27304,
+    "pending": 634,
+    "processing": 0,
     "eligible": 265,
-    "review": 19127,
-    "rejected": 7826,
+    "review": 19145,
+    "rejected": 7828,
     "errors": 63,
     "ready": 172,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC9azyDO65fkyTOn0_m4CUAw",
-        "name": "바로해누",
-        "query": "송파 피부과"
-      },
-      {
-        "channel_id": "UC31kHmP56jtbWcd3KLbA8lA",
-        "name": "예스피부과",
-        "query": "송파 피부과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3641,
+  "region_observed": 3661,
   "channels_discovered": 27937,
-  "channels_observed": 27221,
+  "channels_observed": 27241,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3641,
+      "observed": 3661,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3646,
+      "classified": 3666,
       "classification_errors": 5,
       "jobs": [
         {
