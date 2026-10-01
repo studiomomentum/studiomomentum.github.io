@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:24:13.962195+00:00",
+  "updated_at": "2026-10-01T04:25:15.491695+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24215,
-    "pending": 3723,
-    "processing": 0,
+    "processed": 24236,
+    "pending": 3701,
+    "processing": 1,
     "eligible": 222,
-    "review": 16883,
-    "rejected": 7057,
+    "review": 16892,
+    "rejected": 7069,
     "errors": 50,
     "ready": 146,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCi79rpgaCwXHr-6CRCOdtiA",
+        "name": "오늘도 했냐옹🐾",
+        "query": "강남 동물병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2487,
+  "region_observed": 2488,
   "channels_discovered": 27937,
-  "channels_observed": 24165,
+  "channels_observed": 24186,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4256,
+      "observed": 4277,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4264,
+      "classified": 4285,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2872,
+      "observed": 2877,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2873,
+      "classified": 2878,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2487,
+      "observed": 2488,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2488,
+      "classified": 2489,
       "classification_errors": 1,
       "jobs": [
         {
