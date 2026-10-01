@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:55:41.609855+00:00",
+  "updated_at": "2026-10-01T02:56:42.832012+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23009,
-    "pending": 4929,
-    "processing": 0,
+    "processed": 23017,
+    "pending": 4919,
+    "processing": 2,
     "eligible": 208,
-    "review": 16031,
+    "review": 16039,
     "rejected": 6720,
     "errors": 47,
     "ready": 139,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC9FALxoTyMAfae-K_BNPs0A",
+        "name": "부산위담한의원TV",
+        "query": "강남 한방병원"
+      },
+      {
+        "channel_id": "UCPd7drAGUMT2H9trH-VN6Ig",
+        "name": "그랜드한의원",
+        "query": "강남 한의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2291,
+  "region_observed": 2294,
   "channels_discovered": 27937,
-  "channels_observed": 22962,
+  "channels_observed": 22970,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3053,
+      "observed": 3061,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3058,
+      "classified": 3066,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2528,
+      "observed": 2532,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2529,
+      "classified": 2533,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2291,
+      "observed": 2294,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2292,
+      "classified": 2295,
       "classification_errors": 1,
       "jobs": [
         {
