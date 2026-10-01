@@ -2,6 +2,7 @@
 const ADMIN_RELAY_VERSION_ = 1;
 const ADMIN_REPO_ = 'studiomomentum/momentum-cold-mailer';
 const ADMIN_WORKFLOW_ = 'auto_prospect.yml';
+const ADMIN_SEARCH_WORKFLOW_ = 'prospecting.yml';
 function adminProps_() { return PropertiesService.getScriptProperties(); }
 function adminHash_(value) {
   return Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, String(value), Utilities.Charset.UTF_8)
@@ -63,51 +64,56 @@ function adminConfig_(repo) {
   const value=JSON.parse(Utilities.newBlob(Utilities.base64Decode(file.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
   return {file:file,value:value};
 }
-function adminRun_(runId) {
+function adminRun_(runId,workflow) {
+  workflow=workflow||ADMIN_WORKFLOW_;
   if(!Number.isSafeInteger(runId)||runId<=0)throw new Error('INVALID_RUN');
   const run=adminGithub_('repos/'+ADMIN_REPO_+'/actions/runs/'+runId);
-  if(run.event!=='workflow_dispatch'||run.head_branch!=='main'||!/^\.github\/workflows\/auto_prospect\.yml(?:@|$)/.test(run.path||''))throw new Error('INVALID_RUN');
+  if(run.event!=='workflow_dispatch'||run.head_branch!=='main'||!((run.path||'')==='.github/workflows/'+workflow||(run.path||'').startsWith('.github/workflows/'+workflow+'@')))throw new Error('INVALID_RUN');
   return {runId:run.id,status:run.status,conclusion:run.conclusion||null,phase:run.status==='completed'?(run.conclusion==='success'?'success':'failed'):run.status==='in_progress'?'running':'accepted'};
 }
-function adminClassifyStart_(request) {
+function adminStageStart_(request,workflow,key) {
   if(typeof request.requestId!=='string'||!/^[a-zA-Z0-9-]{16,80}$/.test(request.requestId))throw new Error('INVALID_REQUEST');
   return adminLock_(()=>{
-    const previous=adminRead_('ADMIN_CLASSIFY_LAST',null);
+    const previous=adminRead_(key,null);
     if(previous){
       if(previous.runId){
-        const run=adminRun_(previous.runId);
+        const run=adminRun_(previous.runId,workflow);
         if(run.status!=='completed'||previous.requestId===request.requestId)return run;
       }else if(previous.phase==='unknown')return {phase:'unknown',message:'접수 결과 확인 필요 · 자동 재실행하지 않습니다.'};
     }
-    const list=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+ADMIN_WORKFLOW_+'/runs?event=workflow_dispatch&branch=main&per_page=100');
+    const list=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+workflow+'/runs?event=workflow_dispatch&branch=main&per_page=100');
     const active=(list.workflow_runs||[]).find(r=>r.status!=='completed');
-    if(active){adminWrite_('ADMIN_CLASSIFY_LAST',{requestId:request.requestId,runId:active.id});return adminRun_(active.id);}
+    if(active){adminWrite_(key,{requestId:request.requestId,runId:active.id});return adminRun_(active.id,workflow);}
     const actor=adminGithub_('user').login;
     const record={requestId:request.requestId,phase:'unknown',requestedAt:Date.now(),actor:actor,baseline:(list.workflow_runs||[]).map(r=>r.id)};
-    adminWrite_('ADMIN_CLASSIFY_LAST',record); // Write before POST; response loss must never produce a duplicate dispatch.
+    adminWrite_(key,record); // Write before POST; response loss must never produce a duplicate dispatch.
     try{
-      const receipt=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+ADMIN_WORKFLOW_+'/dispatches','post',{ref:'main',inputs:{force:true},return_run_details:true});
+      const receipt=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+workflow+'/dispatches','post',{ref:'main',inputs:workflow===ADMIN_WORKFLOW_?{force:true}:{},return_run_details:true});
       if(!Number.isSafeInteger(receipt&&receipt.workflow_run_id))return {phase:'unknown'};
-      record.runId=receipt.workflow_run_id;record.phase='accepted';adminWrite_('ADMIN_CLASSIFY_LAST',record);
+      record.runId=receipt.workflow_run_id;record.phase='accepted';adminWrite_(key,record);
       return {phase:'accepted',runId:record.runId,status:'queued'};
     }catch(error){
-      if(/^GITHUB_4\d\d$/.test(error.message)){adminProps_().deleteProperty('ADMIN_CLASSIFY_LAST');throw error;}
+      if(/^GITHUB_4\d\d$/.test(error.message)){adminProps_().deleteProperty(key);throw error;}
       return {phase:'unknown',message:'접수 결과 확인 필요 · 자동 재실행하지 않습니다.'};
     }
   });
 }
-function adminClassifyStatus_() {
+function adminStageStatus_(workflow,key) {
   return adminLock_(()=>{
-    const previous=adminRead_('ADMIN_CLASSIFY_LAST',null);
+    const previous=adminRead_(key,null);
     if(!previous)return {phase:'idle'};
     if(!previous.runId&&previous.baseline&&previous.actor){
-      const list=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+ADMIN_WORKFLOW_+'/runs?event=workflow_dispatch&branch=main&per_page=100');
+      const list=adminGithub_('repos/'+ADMIN_REPO_+'/actions/workflows/'+workflow+'/runs?event=workflow_dispatch&branch=main&per_page=100');
       const candidates=(list.workflow_runs||[]).filter(r=>!previous.baseline.includes(r.id)&&r.actor&&r.actor.login===previous.actor&&Date.parse(r.created_at)>=previous.requestedAt-5000);
-      if(candidates.length===1){previous.runId=candidates[0].id;previous.phase='accepted';adminWrite_('ADMIN_CLASSIFY_LAST',previous);}
+      if(candidates.length===1){previous.runId=candidates[0].id;previous.phase='accepted';adminWrite_(key,previous);}
     }
-    return previous.runId?adminRun_(previous.runId):{phase:'unknown'};
+    return previous.runId?adminRun_(previous.runId,workflow):{phase:'unknown'};
   });
 }
+function adminClassifyStart_(request) {return adminStageStart_(request,ADMIN_WORKFLOW_,'ADMIN_CLASSIFY_LAST');}
+function adminClassifyStatus_() {return adminStageStatus_(ADMIN_WORKFLOW_,'ADMIN_CLASSIFY_LAST');}
+function adminSearchStart_(request) {return adminStageStart_(request,ADMIN_SEARCH_WORKFLOW_,'ADMIN_SEARCH_LAST');}
+function adminSearchStatus_() {return adminStageStatus_(ADMIN_SEARCH_WORKFLOW_,'ADMIN_SEARCH_LAST');}
 function adminSettings_(request) {
   const repo=request.setting==='email_system_enabled'?'momentum-cold-mailer':request.setting==='client_access_blocked'?'studiomomentum.github.io':null;
   if(!repo||typeof request.value!=='boolean')throw new Error('INVALID_REQUEST');
@@ -164,6 +170,8 @@ function adminRoute_(request) {
       case 'logout':adminLock_(()=>adminWrite_('ADMIN_SESSIONS',adminRead_('ADMIN_SESSIONS',[]).filter(s=>!adminEqual_(s.hash,session.hash))));return {ok:true,result:{loggedOut:true}};
       case 'classify.start':return {ok:true,result:adminClassifyStart_(request)};
       case 'classify.status':return {ok:true,result:adminClassifyStatus_()};
+      case 'search.start':return {ok:true,result:adminSearchStart_(request)};
+      case 'search.status':return {ok:true,result:adminSearchStatus_()};
       case 'targets.exclude':
       case 'targets.exclusions':return {ok:true,result:adminExclusions_(request)};
       case 'settings.status':return {ok:true,result:{email_system_enabled:adminConfig_('momentum-cold-mailer').value.email_system_enabled===true}};

@@ -22,6 +22,29 @@ const created_at=new Date().toISOString();runList=[{id:42,actor:{login:'operator
 reset();token=login();loseReceipt=true;route({action:'classify.start',session:token,requestId:crypto.randomUUID()});runList=[{id:42,actor:{login:'operator'},created_at},{id:43,actor:{login:'operator'},created_at}];assert.equal(route({action:'classify.status',session:token}).result.phase,'unknown');
 lockAvailable=false;assert.equal(route({action:'classify.status',session:token}).error,'BUSY');
 console.log('PASS server authentication, hash replay rejection, expiry, logout, rate limit, mail-only stop switch, dispatch allowlist, idempotency, status, ambiguous response recovery, no secret response.');
+reset();token=login();let searchPosts=0,classificationPosts=0;
+sandbox.UrlFetchApp.fetch=(url,options)=>{
+  if(url.endsWith('/user'))return response({login:'operator'});
+  if(url.includes('/workflows/')&&url.includes('/runs?'))return response({workflow_runs:[]});
+  if(url.endsWith('/dispatches')){
+    const search=url.includes('/prospecting.yml/');
+    assert.deepEqual(JSON.parse(options.payload),{ref:'main',inputs:search?{}:{force:true},return_run_details:true});
+    if(search)searchPosts++;else classificationPosts++;
+    return response({workflow_run_id:search?84:42});
+  }
+  const id=url.endsWith('/84')?84:42;
+  return response({id,event:'workflow_dispatch',head_branch:'main',path:'.github/workflows/'+(id===84?'prospecting.yml':'auto_prospect.yml'),status:'in_progress'});
+};
+assert.equal(route({action:'search.start',requestId:'0'.repeat(32)}).error,'UNAUTHORIZED');
+const searchRequest={action:'search.start',session:token,requestId:crypto.randomUUID()};
+assert.equal(route(searchRequest).result.runId,84);assert.equal(route(searchRequest).result.runId,84);
+assert.equal(searchPosts,1);assert.equal(route({action:'search.status',session:token}).result.phase,'running');
+assert.equal(route({action:'classify.start',session:token,requestId:crypto.randomUUID()}).result.runId,42);
+assert.equal(classificationPosts,1);assert.equal(route({action:'classify.status',session:token}).result.runId,42);
+assert.equal(route({action:'search.start',session:token,requestId:'invalid'}).error,'INVALID_REQUEST');
+assert.throws(()=>sandbox.adminRun_(84,'auto_prospect.yml'),/INVALID_RUN/);
+console.log('PASS separate search/classification dispatch, authenticated access, one dispatch per request, independent tracking and run identity.');
+
 reset();token=login();let config={email_system_enabled:true},status='READY',senderBusy=false,putCount=0;
 sandbox.Utilities.parseCsv=s=>s.split('\n').map(r=>r.split(','));
 sandbox.UrlFetchApp.fetch=(url,options)=>{

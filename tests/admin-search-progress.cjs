@@ -1,7 +1,7 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const fs=require('fs'),path=require('path'),assert=require('assert');
 (async()=>{
- const browser=await chromium.launch({headless:true});const page=await browser.newPage();
+ const browser=await chromium.launch({headless:true,channel:process.env.PLAYWRIGHT_CHANNEL});const page=await browser.newPage();
  const regions=['수원','동탄','오산','평택','용인','화성','분당','판교','강남','서초','송파'];
  let fixture={region:'수원',phase:'search',updated_at:new Date().toISOString(),queries_completed:25,queries_total:429,channels_discovered:2750,channels_observed:1000,query_errors:{'수원 의원':'403'},search_stage:{status:'running',region:'동탄'},classification:{status:'running',total:100,processed:60,pending:38,processing:2,eligible:5,review:20,rejected:30,errors:5,ready:3,active:[{name:'수원 테스트 채널',query:'수원 세무사'},{name:'동탄 테스트 채널',channel_id:'context-test'}]},regions:regions.map(name=>({name,queries_completed:25,queries_total:39,channels:2750,observed:1000,observation_errors:2,jobs:Array.from({length:39},(_,i)=>({name:'업종 '+i,status:i<25?'completed':i===25?'running':i===26?'error':'pending',channels:20,results_read:100}))}))};
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -27,5 +27,15 @@ const fs=require('fs'),path=require('path'),assert=require('assert');
  assert((await page.locator('.classification-active').textContent()).includes('수원 · 세무사'));
  assert((await page.locator('.classification-active').textContent()).includes('마지막 처리 기록'));
  fixture={...fixture,updated_at:new Date(Date.now()-600000).toISOString()};await page.locator('#refreshSearchProgress').click();await page.waitForFunction(()=>document.querySelector('.search-live-state').textContent.includes('갱신 지연'));
- assert.deepEqual(errors,[]);await browser.close();console.log('PASS: 11 regions, 39 jobs, selection, schedule, stale state, PC/mobile widths');
+ assert.deepEqual(errors,[]);let calls=[];
+ await page.evaluate(()=>{window.manualCalls=[];MomentumAdmin.call=async(action)=>{if(action.startsWith('search.')||action.startsWith('classify.'))window.manualCalls.push(action);return {phase:'success',runId:84};};});
+ await page.evaluate(()=>Promise.all([MomentumSearch.start(),MomentumSearch.start()]));
+ calls=await page.evaluate(()=>window.manualCalls);assert.deepEqual(calls,['search.start']);
+ assert((await page.locator('#searchStatus').textContent()).includes('실행 완료'));
+ await page.locator('#refreshSearchProgress').click();
+ assert((await page.locator('#searchStatus').textContent()).includes('실행 완료'));
+ await page.locator('#progressClassifyButton').click();
+ calls=await page.evaluate(()=>window.manualCalls);assert.deepEqual(calls,['search.start','classify.start']);
+ console.log('PASS separate manual stage buttons, double-click deduplication and state preserved across progress refresh.');
+ await browser.close();console.log('PASS: 11 regions, 39 jobs, selection, schedule, stale state, PC/mobile widths');
 })().catch(e=>{console.error(e);process.exit(1)});
