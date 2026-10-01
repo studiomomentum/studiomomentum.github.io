@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:05:31.490335+00:00",
+  "updated_at": "2026-10-01T03:06:32.841246+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23148,
-    "pending": 4789,
+    "processed": 23160,
+    "pending": 4777,
     "processing": 1,
     "eligible": 208,
-    "review": 16155,
-    "rejected": 6735,
+    "review": 16166,
+    "rejected": 6736,
     "errors": 47,
     "ready": 139,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCyuxqVH6VEKffsiUc3iFO0Q",
-        "name": "ryukyuhyuk",
+        "channel_id": "UCShUFtxpwfidxWeMRwQ_nsA",
+        "name": "오도재한의원 허정구원장",
         "query": "강남 한의원"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2315,
+  "region_observed": 2318,
   "channels_discovered": 27937,
-  "channels_observed": 23101,
+  "channels_observed": 23113,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3192,
+      "observed": 3204,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3197,
+      "classified": 3209,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2551,
+      "observed": 2554,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2552,
+      "classified": 2555,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2315,
+      "observed": 2318,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2316,
+      "classified": 2319,
       "classification_errors": 1,
       "jobs": [
         {
