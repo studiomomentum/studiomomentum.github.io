@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:06:32.841246+00:00",
+  "updated_at": "2026-10-01T03:07:34.356299+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23160,
-    "pending": 4777,
-    "processing": 1,
+    "processed": 23175,
+    "pending": 4763,
+    "processing": 0,
     "eligible": 208,
-    "review": 16166,
-    "rejected": 6736,
+    "review": 16177,
+    "rejected": 6740,
     "errors": 47,
-    "ready": 139,
+    "ready": 136,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCShUFtxpwfidxWeMRwQ_nsA",
-        "name": "오도재한의원 허정구원장",
-        "query": "강남 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2318,
+  "region_observed": 2321,
   "channels_discovered": 27937,
-  "channels_observed": 23113,
+  "channels_observed": 23128,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3204,
+      "observed": 3219,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3209,
+      "classified": 3224,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2318,
+      "observed": 2321,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2319,
+      "classified": 2322,
       "classification_errors": 1,
       "jobs": [
         {
