@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:55:55.906008+00:00",
+  "updated_at": "2026-10-01T06:56:57.896777+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26265,
-    "pending": 1673,
-    "processing": 0,
+    "processed": 26286,
+    "pending": 1651,
+    "processing": 1,
     "eligible": 243,
-    "review": 18332,
-    "rejected": 7626,
+    "review": 18346,
+    "rejected": 7633,
     "errors": 61,
     "ready": 157,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCRLdyBg8qKHxqfByLjOstWQ",
+        "name": "고양이에 진심 백산동물병원",
+        "query": "서초 동물병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2919,
+  "region_observed": 2933,
   "channels_discovered": 27937,
-  "channels_observed": 26204,
+  "channels_observed": 26225,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4330,
+      "observed": 4351,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4334,
+      "classified": 4355,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2919,
+      "observed": 2933,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2922,
+      "classified": 2936,
       "classification_errors": 3,
       "jobs": [
         {
