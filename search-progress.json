@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:56:22.441902+00:00",
+  "updated_at": "2026-10-01T05:57:25.129175+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25499,
-    "pending": 2437,
-    "processing": 2,
+    "processed": 25511,
+    "pending": 2427,
+    "processing": 0,
     "eligible": 240,
-    "review": 17749,
-    "rejected": 7448,
+    "review": 17759,
+    "rejected": 7450,
     "errors": 59,
     "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCx2cl2hw2NdEbhbXaY5IPCw",
-        "name": "필수학학원",
-        "query": "서초 입시학원"
-      },
-      {
-        "channel_id": "UCF4hylUI0ae_c8Cd9kBzl-g",
-        "name": "건강한학습연구소",
-        "query": "서초 입시학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2712,
+  "region_observed": 2716,
   "channels_discovered": 27937,
-  "channels_observed": 25440,
+  "channels_observed": 25452,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3566,
+      "observed": 3578,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3568,
+      "classified": 3580,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2712,
+      "observed": 2716,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2714,
+      "classified": 2718,
       "classification_errors": 2,
       "jobs": [
         {
