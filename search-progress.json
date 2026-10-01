@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T09:02:59.984975+00:00",
+  "updated_at": "2026-10-01T09:04:02.363820+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27899,
-    "pending": 38,
-    "processing": 1,
+    "processed": 27912,
+    "pending": 24,
+    "processing": 2,
     "eligible": 267,
-    "review": 19627,
-    "rejected": 7938,
+    "review": 19635,
+    "rejected": 7943,
     "errors": 64,
     "ready": 174,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCeSqPTVME4BD5-9Pc5J2M7g",
-        "name": "웰니스홍wellness hong",
+        "channel_id": "UC99t9iYimpDIvTdI6yFlosw",
+        "name": "지식탐험대",
+        "query": "송파 중고차"
+      },
+      {
+        "channel_id": "UCtxILyV5pay_TcUu6BKoAYA",
+        "name": "중고차수출왕",
         "query": "송파 중고차"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 4255,
+  "region_observed": 4268,
   "channels_discovered": 27937,
-  "channels_observed": 27835,
+  "channels_observed": 27848,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 4255,
+      "observed": 4268,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4261,
+      "classified": 4274,
       "classification_errors": 6,
       "jobs": [
         {
