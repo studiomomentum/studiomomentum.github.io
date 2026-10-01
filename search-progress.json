@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:24:50.099796+00:00",
+  "updated_at": "2026-10-01T03:25:51.907283+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23416,
-    "pending": 4521,
-    "processing": 1,
+    "processed": 23431,
+    "pending": 4505,
+    "processing": 2,
     "eligible": 212,
-    "review": 16321,
-    "rejected": 6832,
+    "review": 16335,
+    "rejected": 6833,
     "errors": 48,
-    "ready": 139,
+    "ready": 140,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCe7C3kqjsuKYylr2iNt5d_g",
-        "name": "필리핀어학연수,필통유학",
+        "channel_id": "UCoqMsmA3w1F3qjQc_L7Anog",
+        "name": "청담스마트부동산",
+        "query": "강남 공인중개사"
+      },
+      {
+        "channel_id": "UCzq9UruuqAYNIo8Nr6wcvpg",
+        "name": "YBM어학원강남센터",
         "query": "강남 어학원"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2365,
+  "region_observed": 2366,
   "channels_discovered": 27937,
-  "channels_observed": 23368,
+  "channels_observed": 23383,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3459,
+      "observed": 3474,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3465,
+      "classified": 3480,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2647,
+      "observed": 2648,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2648,
+      "classified": 2649,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2365,
+      "observed": 2366,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2366,
+      "classified": 2367,
       "classification_errors": 1,
       "jobs": [
         {
