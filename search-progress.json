@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:22:15.619090+00:00",
+  "updated_at": "2026-10-01T05:23:35.888718+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25051,
-    "pending": 2885,
-    "processing": 2,
-    "eligible": 232,
-    "review": 17410,
-    "rejected": 7348,
+    "processed": 25067,
+    "pending": 2871,
+    "processing": 0,
+    "eligible": 233,
+    "review": 17421,
+    "rejected": 7352,
     "errors": 58,
-    "ready": 151,
+    "ready": 152,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC8fyUIruczZSBZ4MysNXnXg",
-        "name": "이선생(이선생)",
-        "query": "서초 세무회계"
-      },
-      {
-        "channel_id": "UCC_bArcuzq7OU8OTmDCFu0Q",
-        "name": "김준래 변호사·법학박사의 법률이야기",
-        "query": "서초 변호사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2615,
+  "region_observed": 2618,
   "channels_discovered": 27937,
-  "channels_observed": 24993,
+  "channels_observed": 25009,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3119,
+      "observed": 3135,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3120,
+      "classified": 3136,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2615,
+      "observed": 2618,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2616,
+      "classified": 2619,
       "classification_errors": 1,
       "jobs": [
         {
