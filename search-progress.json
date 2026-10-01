@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:46:23.500816+00:00",
+  "updated_at": "2026-10-01T04:47:29.257273+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24553,
-    "pending": 3383,
-    "processing": 2,
+    "processed": 24569,
+    "pending": 3369,
+    "processing": 0,
     "eligible": 222,
-    "review": 17085,
-    "rejected": 7191,
-    "errors": 52,
+    "review": 17094,
+    "rejected": 7197,
+    "errors": 53,
     "ready": 146,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCMz1mJc8SfrecL-Tb9TMJcA",
-        "name": "koreastartupforum",
-        "query": "강남 변리사"
-      },
-      {
-        "channel_id": "UC6S1ikas7vbGBJwbhSp49og",
-        "name": "정별하고싶은거다해",
-        "query": "강남 변리사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2518,
+  "region_observed": 2519,
   "channels_discovered": 27937,
-  "channels_observed": 24501,
+  "channels_observed": 24516,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,11 +2381,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4592,
-      "observation_errors": 10,
+      "observed": 4607,
+      "observation_errors": 11,
       "classified_at": null,
-      "classified": 4602,
-      "classification_errors": 10,
+      "classified": 4618,
+      "classification_errors": 11,
       "jobs": [
         {
           "name": "세무사",
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2904,
+      "observed": 2905,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2905,
+      "classified": 2906,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2518,
+      "observed": 2519,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2519,
+      "classified": 2520,
       "classification_errors": 1,
       "jobs": [
         {
