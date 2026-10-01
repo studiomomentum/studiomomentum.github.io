@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:33:04.599529+00:00",
+  "updated_at": "2026-10-01T06:34:06.146349+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25974,
-    "pending": 1963,
-    "processing": 1,
+    "processed": 25983,
+    "pending": 1953,
+    "processing": 2,
     "eligible": 242,
-    "review": 18105,
-    "rejected": 7564,
+    "review": 18111,
+    "rejected": 7567,
     "errors": 60,
     "ready": 156,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCksjyFcVX8SQ7GqL_B0_g1Q",
-        "name": "라이즈성형외과",
+        "channel_id": "UClRuqua1MBwtuuu5-ECvgYQ",
+        "name": "프라이빗성형외과 PRIVATE LOUNGE",
+        "query": "서초 성형외과"
+      },
+      {
+        "channel_id": "UCXpx1Lsgsq-xiiJ458pJLyQ",
+        "name": "규지니룸 (이룸성형외과) ",
         "query": "서초 성형외과"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2823,
   "channels_discovered": 27937,
-  "channels_observed": 25914,
+  "channels_observed": 25923,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4040,
+      "observed": 4049,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4043,
+      "classified": 4052,
       "classification_errors": 3,
       "jobs": [
         {
