@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:52:45.868233+00:00",
+  "updated_at": "2026-10-01T03:53:47.112710+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23789,
-    "pending": 4149,
-    "processing": 0,
-    "eligible": 216,
-    "review": 16569,
-    "rejected": 6952,
+    "processed": 23803,
+    "pending": 4133,
+    "processing": 2,
+    "eligible": 217,
+    "review": 16577,
+    "rejected": 6957,
     "errors": 49,
     "ready": 144,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCk_-R2GJzulKFUsjgDQtvWQ",
+        "name": "치유성형외과│Chiu Plastic Surgery Korea",
+        "query": "강남 성형외과"
+      },
+      {
+        "channel_id": "UC465Yj8IpEcazgIeLN2p4CQ",
+        "name": "슈어스성형외과",
+        "query": "강남 성형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2435,
+  "region_observed": 2437,
   "channels_discovered": 27937,
-  "channels_observed": 23740,
+  "channels_observed": 23754,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3831,
+      "observed": 3845,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 3838,
+      "classified": 3852,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2746,
+      "observed": 2757,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2747,
+      "classified": 2758,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2435,
+      "observed": 2437,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2436,
+      "classified": 2438,
       "classification_errors": 1,
       "jobs": [
         {
