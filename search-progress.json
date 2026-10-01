@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:41:31.964219+00:00",
+  "updated_at": "2026-10-01T02:42:33.234595+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22821,
-    "pending": 5117,
-    "processing": 0,
-    "eligible": 204,
-    "review": 15903,
-    "rejected": 6664,
+    "processed": 22836,
+    "pending": 5101,
+    "processing": 1,
+    "eligible": 207,
+    "review": 15913,
+    "rejected": 6666,
     "errors": 47,
     "ready": 135,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCV2X8Myz7pkzJZSqJLvzTOg",
+        "name": "기업회생 / 법인회생 법무법인 바를정",
+        "query": "강남 법무법인"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2262,
+  "region_observed": 2264,
   "channels_discovered": 27937,
-  "channels_observed": 22774,
+  "channels_observed": 22789,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2865,
+      "observed": 2880,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2870,
+      "classified": 2885,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2468,
+      "observed": 2476,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2469,
+      "classified": 2477,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2262,
+      "observed": 2264,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2263,
+      "classified": 2265,
       "classification_errors": 1,
       "jobs": [
         {
