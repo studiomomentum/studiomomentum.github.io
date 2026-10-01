@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:13:33.235797+00:00",
+  "updated_at": "2026-10-01T05:14:35.591995+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24939,
-    "pending": 2999,
-    "processing": 0,
+    "processed": 24960,
+    "pending": 2977,
+    "processing": 1,
     "eligible": 225,
-    "review": 17337,
-    "rejected": 7318,
-    "errors": 56,
+    "review": 17347,
+    "rejected": 7327,
+    "errors": 58,
     "ready": 146,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCW8-vY6DwHIY94VM_jtUb3Q",
+        "name": "시험왕 이형재",
+        "query": "서초 세무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2589,
+  "region_observed": 2595,
   "channels_discovered": 27937,
-  "channels_observed": 24883,
+  "channels_observed": 24902,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,11 +2387,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4974,
-      "observation_errors": 14,
+      "observed": 4987,
+      "observation_errors": 16,
       "classified_at": null,
-      "classified": 4988,
-      "classification_errors": 14,
+      "classified": 5003,
+      "classification_errors": 16,
       "jobs": [
         {
           "name": "세무사",
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3015,
+      "observed": 3028,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3016,
+      "classified": 3029,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2589,
+      "observed": 2595,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2590,
+      "classified": 2596,
       "classification_errors": 1,
       "jobs": [
         {
