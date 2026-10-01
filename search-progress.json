@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:44:36.778791+00:00",
+  "updated_at": "2026-10-01T06:45:38.351425+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26111,
-    "pending": 1827,
-    "processing": 0,
+    "processed": 26127,
+    "pending": 1809,
+    "processing": 2,
     "eligible": 242,
-    "review": 18210,
-    "rejected": 7595,
+    "review": 18224,
+    "rejected": 7597,
     "errors": 61,
     "ready": 156,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCom4azn3sL6dpDBaXLrT-cg",
+        "name": "나무아카데미NamuAcademy",
+        "query": "서초 마취통증의학과"
+      },
+      {
+        "channel_id": "UC-o7nrIt9MTHpfpXa10bcVA",
+        "name": "지브이의원_(구)심미안 코성형클리닉",
+        "query": "서초 마취통증의학과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2863,
+  "region_observed": 2865,
   "channels_discovered": 27937,
-  "channels_observed": 26050,
+  "channels_observed": 26066,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4176,
+      "observed": 4192,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4180,
+      "classified": 4196,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2863,
+      "observed": 2865,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2866,
+      "classified": 2868,
       "classification_errors": 3,
       "jobs": [
         {
