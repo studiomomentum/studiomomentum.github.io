@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:35:46.565152+00:00",
+  "updated_at": "2026-10-01T03:36:48.247237+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23570,
-    "pending": 4367,
+    "processed": 23582,
+    "pending": 4355,
     "processing": 1,
-    "eligible": 214,
-    "review": 16437,
-    "rejected": 6868,
+    "eligible": 215,
+    "review": 16445,
+    "rejected": 6871,
     "errors": 48,
     "ready": 142,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCywEN4WQwaqkI642yymZhEg",
-        "name": "소방관마술사  검색",
-        "query": "강남 행정사"
+        "channel_id": "UCARu95WiKt85wMVvJ_tx7tw",
+        "name": "이웃사람 《부동산TV》",
+        "query": "강남 부동산중개"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2395,
+  "region_observed": 2398,
   "channels_discovered": 27937,
-  "channels_observed": 23522,
+  "channels_observed": 23534,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3613,
+      "observed": 3625,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3619,
+      "classified": 3631,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2671,
+      "observed": 2676,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2672,
+      "classified": 2677,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2395,
+      "observed": 2398,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2396,
+      "classified": 2399,
       "classification_errors": 1,
       "jobs": [
         {
