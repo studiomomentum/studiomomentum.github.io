@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:22:09.737429+00:00",
+  "updated_at": "2026-10-01T04:23:11.822551+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24189,
-    "pending": 3747,
-    "processing": 2,
+    "processed": 24200,
+    "pending": 3737,
+    "processing": 1,
     "eligible": 222,
-    "review": 16864,
-    "rejected": 7050,
+    "review": 16872,
+    "rejected": 7053,
     "errors": 50,
     "ready": 146,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC-4yGit6ge_bXpyTqkCBxhA",
-        "name": "김경철의 웰케어: 잘먹고, 잘자기",
-        "query": "강남 내과의원"
-      },
-      {
-        "channel_id": "UCRC-TnEhbM_GhcsKOly_snw",
-        "name": "류마티스질환 궁금증해결",
-        "query": "강남 내과의원"
+        "channel_id": "UCsp7XmYxtHJyiJoluf3lz-g",
+        "name": "강남꽃집 라포레드희아틀리에",
+        "query": "강남 산부인과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2483,
+  "region_observed": 2486,
   "channels_discovered": 27937,
-  "channels_observed": 24139,
+  "channels_observed": 24150,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4230,
+      "observed": 4241,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4238,
+      "classified": 4249,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2862,
+      "observed": 2867,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2863,
+      "classified": 2868,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2483,
+      "observed": 2486,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2484,
+      "classified": 2487,
       "classification_errors": 1,
       "jobs": [
         {
