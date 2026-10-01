@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:37:49.720877+00:00",
+  "updated_at": "2026-10-01T03:39:15.074361+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23585,
-    "pending": 4351,
-    "processing": 2,
-    "eligible": 215,
-    "review": 16448,
-    "rejected": 6871,
+    "processed": 23605,
+    "pending": 4333,
+    "processing": 0,
+    "eligible": 216,
+    "review": 16458,
+    "rejected": 6880,
     "errors": 48,
-    "ready": 143,
+    "ready": 144,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCHlP5A8yDw0XsC-JRxZ36ng",
-        "name": "박문각출판",
-        "query": "강남 행정사"
-      },
-      {
-        "channel_id": "UCdk-xhKGSTI7LZ0iYL81wkA",
-        "name": "경제의 흐름",
-        "query": "강남 부동산중개"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2399,
+  "region_observed": 2402,
   "channels_discovered": 27937,
-  "channels_observed": 23537,
+  "channels_observed": 23557,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3628,
+      "observed": 3648,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3634,
+      "classified": 3654,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2676,
+      "observed": 2680,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2677,
+      "classified": 2681,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2399,
+      "observed": 2402,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2400,
+      "classified": 2403,
       "classification_errors": 1,
       "jobs": [
         {
