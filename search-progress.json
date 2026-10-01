@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:47:43.275271+00:00",
+  "updated_at": "2026-10-01T06:48:55.468725+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26149,
-    "pending": 1787,
-    "processing": 2,
+    "processed": 26167,
+    "pending": 1771,
+    "processing": 0,
     "eligible": 243,
-    "review": 18237,
-    "rejected": 7605,
+    "review": 18252,
+    "rejected": 7608,
     "errors": 61,
     "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCE33kQfe_UjjskKCUbL3_ng",
-        "name": "현명신경외과의원,현명내과의원",
-        "query": "서초 내과의원"
-      },
-      {
-        "channel_id": "UCOGUo_2krmUW8XydgjHck-g",
-        "name": "만세엄마 신나라",
-        "query": "서초 산부인과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2871,
+  "region_observed": 2879,
   "channels_discovered": 27937,
-  "channels_observed": 26088,
+  "channels_observed": 26106,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4214,
+      "observed": 4232,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4218,
+      "classified": 4236,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2871,
+      "observed": 2879,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2874,
+      "classified": 2882,
       "classification_errors": 3,
       "jobs": [
         {
