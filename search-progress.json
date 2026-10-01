@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:44:19.873776+00:00",
+  "updated_at": "2026-10-01T04:45:21.147675+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24526,
-    "pending": 3411,
-    "processing": 1,
+    "processed": 24537,
+    "pending": 3399,
+    "processing": 2,
     "eligible": 222,
-    "review": 17063,
-    "rejected": 7187,
+    "review": 17072,
+    "rejected": 7189,
     "errors": 51,
     "ready": 146,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCwFE3ul9fYEwedJg8TcOGQw",
-        "name": "변리사학원_합격의법학원",
+        "channel_id": "UCfOIrjGjHQLQTu2gNgRxg2w",
+        "name": "우선로지스틱스 포워딩",
+        "query": "강남 관세사"
+      },
+      {
+        "channel_id": "UCM56LYCpUWrWcBPE7unHsaQ",
+        "name": "비주얼요정 visualsalon 비주얼살롱",
         "query": "강남 변리사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2515,
+  "region_observed": 2517,
   "channels_discovered": 27937,
-  "channels_observed": 24475,
+  "channels_observed": 24486,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4566,
+      "observed": 4577,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4575,
+      "classified": 4586,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2903,
+      "observed": 2904,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2904,
+      "classified": 2905,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2515,
+      "observed": 2517,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2516,
+      "classified": 2518,
       "classification_errors": 1,
       "jobs": [
         {
