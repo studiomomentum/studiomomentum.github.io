@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:26:54.345735+00:00",
+  "updated_at": "2026-10-01T03:28:12.728110+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23444,
-    "pending": 4493,
-    "processing": 1,
+    "processed": 23459,
+    "pending": 4479,
+    "processing": 0,
     "eligible": 213,
-    "review": 16345,
-    "rejected": 6835,
+    "review": 16357,
+    "rejected": 6838,
     "errors": 48,
     "ready": 141,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCkzYR_9jgo7jHk4AcG8oDlQ",
-        "name": "오늘당장",
-        "query": "강남 공인중개사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2371,
+  "region_observed": 2373,
   "channels_discovered": 27937,
-  "channels_observed": 23396,
+  "channels_observed": 23411,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3487,
+      "observed": 3502,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3493,
+      "classified": 3508,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2650,
+      "observed": 2651,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2651,
+      "classified": 2652,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2371,
+      "observed": 2373,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2372,
+      "classified": 2374,
       "classification_errors": 1,
       "jobs": [
         {
