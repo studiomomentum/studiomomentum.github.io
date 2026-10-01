@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:16:09.189801+00:00",
+  "updated_at": "2026-10-01T06:17:10.698153+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25778,
-    "pending": 2159,
-    "processing": 1,
+    "processed": 25791,
+    "pending": 2147,
+    "processing": 0,
     "eligible": 241,
-    "review": 17977,
-    "rejected": 7497,
+    "review": 17988,
+    "rejected": 7499,
     "errors": 60,
     "ready": 155,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCkhqjaDDvfAIf4gO7krBX5g",
-        "name": "디에이치방배멘토부동산중개법인",
-        "query": "서초 부동산중개"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2783,
+  "region_observed": 2784,
   "channels_discovered": 27937,
-  "channels_observed": 25718,
+  "channels_observed": 25731,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3844,
+      "observed": 3857,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3847,
+      "classified": 3860,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2783,
+      "observed": 2784,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2786,
+      "classified": 2787,
       "classification_errors": 3,
       "jobs": [
         {
