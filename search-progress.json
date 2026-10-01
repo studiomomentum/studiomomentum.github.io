@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:40:28.111594+00:00",
+  "updated_at": "2026-10-01T03:41:29.608290+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23623,
-    "pending": 4315,
-    "processing": 0,
+    "processed": 23644,
+    "pending": 4293,
+    "processing": 1,
     "eligible": 216,
-    "review": 16462,
-    "rejected": 6893,
+    "review": 16474,
+    "rejected": 6902,
     "errors": 49,
     "ready": 144,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCA8T7RYgwh3sYt6kBIJYrOw",
+        "name": "815클리닉 박성은",
+        "query": "강남 피부과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2405,
+  "region_observed": 2406,
   "channels_discovered": 27937,
-  "channels_observed": 23574,
+  "channels_observed": 23595,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3665,
+      "observed": 3686,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 3672,
+      "classified": 3693,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2683,
+      "observed": 2686,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2684,
+      "classified": 2687,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2405,
+      "observed": 2406,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2406,
+      "classified": 2407,
       "classification_errors": 1,
       "jobs": [
         {
