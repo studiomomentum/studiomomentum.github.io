@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:00:33.695134+00:00",
+  "updated_at": "2026-10-01T06:01:34.982341+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25561,
-    "pending": 2375,
+    "processed": 25575,
+    "pending": 2361,
     "processing": 2,
     "eligible": 240,
-    "review": 17799,
-    "rejected": 7459,
+    "review": 17809,
+    "rejected": 7463,
     "errors": 60,
     "ready": 157,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCwCvu0ZD37ossZBiewIEhZw",
-        "name": "레드유학",
-        "query": "서초 어학원"
+        "channel_id": "UCjOws3gewCSdeJZTxxHHadQ",
+        "name": "다리연기학원 DARI ACADEMY",
+        "query": "서초 입시학원"
       },
       {
-        "channel_id": "UC-AMoKjMpwgyVahGUoradIg",
-        "name": "동국대학교 국제어학원",
+        "channel_id": "UCJL2dB_7gwcJisA6KqD-asA",
+        "name": "대치베스트어학원",
         "query": "서초 어학원"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2734,
+  "region_observed": 2740,
   "channels_discovered": 27937,
-  "channels_observed": 25501,
+  "channels_observed": 25515,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3627,
+      "observed": 3641,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3630,
+      "classified": 3644,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2734,
+      "observed": 2740,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2737,
+      "classified": 2743,
       "classification_errors": 3,
       "jobs": [
         {
