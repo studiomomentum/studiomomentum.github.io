@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:42:49.192258+00:00",
+  "updated_at": "2026-10-01T05:44:07.081451+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25307,
-    "pending": 2629,
-    "processing": 2,
+    "processed": 25327,
+    "pending": 2611,
+    "processing": 0,
     "eligible": 239,
-    "review": 17617,
-    "rejected": 7389,
+    "review": 17634,
+    "rejected": 7392,
     "errors": 59,
     "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC3olSE6K8XMEqBl2lmGWVmQ",
-        "name": "잠박사TV 허정원",
-        "query": "서초 한의원"
-      },
-      {
-        "channel_id": "UCwh-oOAy-_CII0r3ADtH4Iw",
-        "name": "Seojung Eastern Medicine Clinic",
-        "query": "서초 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2664,
+  "region_observed": 2670,
   "channels_discovered": 27937,
-  "channels_observed": 25248,
+  "channels_observed": 25268,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3374,
+      "observed": 3394,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3376,
+      "classified": 3396,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2664,
+      "observed": 2670,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2666,
+      "classified": 2672,
       "classification_errors": 2,
       "jobs": [
         {
