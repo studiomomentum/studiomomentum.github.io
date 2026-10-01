@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:55:50.642215+00:00",
+  "updated_at": "2026-10-01T03:56:53.878904+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23823,
-    "pending": 4113,
-    "processing": 2,
-    "eligible": 217,
-    "review": 16590,
-    "rejected": 6964,
+    "processed": 23831,
+    "pending": 4107,
+    "processing": 0,
+    "eligible": 218,
+    "review": 16596,
+    "rejected": 6965,
     "errors": 49,
-    "ready": 145,
+    "ready": 146,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCKRr7UOP_k6qFt9AGrR0_GQ",
-        "name": "강남서울안과 TV",
-        "query": "강남 안과"
-      },
-      {
-        "channel_id": "UCRp458BKTr3iwQLRTdB5t2A",
-        "name": "강남IOK안과",
-        "query": "강남 안과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2440,
   "channels_discovered": 27937,
-  "channels_observed": 23774,
+  "channels_observed": 23782,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3865,
+      "observed": 3873,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 3872,
+      "classified": 3880,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2764,
+      "observed": 2769,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2765,
+      "classified": 2770,
       "classification_errors": 1,
       "jobs": [
         {
