@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:36:39.400500+00:00",
+  "updated_at": "2026-10-01T08:37:59.457787+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27513,
-    "pending": 424,
-    "processing": 1,
+    "processed": 27530,
+    "pending": 408,
+    "processing": 0,
     "eligible": 266,
-    "review": 19311,
-    "rejected": 7870,
+    "review": 19324,
+    "rejected": 7874,
     "errors": 63,
     "ready": 173,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCy9BjNstq2qBB_8CvvhDdTw",
-        "name": "약손방문재활운동센터",
-        "query": "송파 재활의학과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3870,
+  "region_observed": 3887,
   "channels_discovered": 27937,
-  "channels_observed": 27450,
+  "channels_observed": 27467,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3870,
+      "observed": 3887,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3875,
+      "classified": 3892,
       "classification_errors": 5,
       "jobs": [
         {
