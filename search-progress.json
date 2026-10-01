@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:14:03.056803+00:00",
+  "updated_at": "2026-10-01T07:15:05.351961+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26515,
-    "pending": 1421,
-    "processing": 2,
-    "eligible": 247,
-    "review": 18528,
-    "rejected": 7676,
+    "processed": 26528,
+    "pending": 1409,
+    "processing": 1,
+    "eligible": 248,
+    "review": 18536,
+    "rejected": 7680,
     "errors": 61,
     "ready": 158,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCN4G74qjORasmSHddSRyt5A",
-        "name": "한국NLP코칭센터",
-        "query": "서초 심리상담센터"
-      },
-      {
-        "channel_id": "UCWudhN8zaGEeiSd3z2B1ijw",
-        "name": "세종대학교",
-        "query": "서초 심리상담센터"
+        "channel_id": "UCokUb50F3GD8Q4c8UPfhYwA",
+        "name": "제주특별자치도건축사회_연구위원회",
+        "query": "서초 건축사사무소"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2988,
+  "region_observed": 2994,
   "channels_discovered": 27937,
-  "channels_observed": 26454,
+  "channels_observed": 26467,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4580,
+      "observed": 4593,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4584,
+      "classified": 4597,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2988,
+      "observed": 2994,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2991,
+      "classified": 2997,
       "classification_errors": 3,
       "jobs": [
         {
