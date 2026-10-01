@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:59:03.822143+00:00",
+  "updated_at": "2026-10-01T03:00:05.874601+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23057,
-    "pending": 4879,
-    "processing": 2,
+    "processed": 23073,
+    "pending": 4865,
+    "processing": 0,
     "eligible": 208,
-    "review": 16076,
-    "rejected": 6723,
+    "review": 16091,
+    "rejected": 6724,
     "errors": 47,
     "ready": 139,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCSE3ijW7VhJSSGreiEFCHvg",
-        "name": "맥진고수 맹유숙",
-        "query": "강남 한의원"
-      },
-      {
-        "channel_id": "UC1Dsq-5omH--vrnCapppDaw",
-        "name": "강남청연한의원",
-        "query": "강남 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2299,
+  "region_observed": 2300,
   "channels_discovered": 27937,
-  "channels_observed": 23010,
+  "channels_observed": 23026,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3101,
+      "observed": 3117,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3106,
+      "classified": 3122,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2541,
+      "observed": 2543,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2542,
+      "classified": 2544,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2299,
+      "observed": 2300,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2300,
+      "classified": 2301,
       "classification_errors": 1,
       "jobs": [
         {
