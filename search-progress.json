@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:08:38.598861+00:00",
+  "updated_at": "2026-10-01T07:09:40.168483+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26439,
-    "pending": 1499,
-    "processing": 0,
-    "eligible": 246,
-    "review": 18463,
-    "rejected": 7666,
+    "processed": 26455,
+    "pending": 1481,
+    "processing": 2,
+    "eligible": 247,
+    "review": 18475,
+    "rejected": 7669,
     "errors": 61,
     "ready": 160,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCYY8HPg9BKkIfFjn5pQd-Kg",
+        "name": "나의 손해사정사",
+        "query": "서초 손해사정사"
+      },
+      {
+        "channel_id": "UCdjvPfjFPmRaiQBwBkBF0ow",
+        "name": "목4동 도심복합사업 추진위 공식계정",
+        "query": "서초 감정평가사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2965,
+  "region_observed": 2966,
   "channels_discovered": 27937,
-  "channels_observed": 26378,
+  "channels_observed": 26394,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4504,
+      "observed": 4520,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4508,
+      "classified": 4524,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2965,
+      "observed": 2966,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2968,
+      "classified": 2969,
       "classification_errors": 3,
       "jobs": [
         {
