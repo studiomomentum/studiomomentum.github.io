@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:29:46.852992+00:00",
+  "updated_at": "2026-10-01T06:30:49.343208+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25935,
-    "pending": 2001,
-    "processing": 2,
+    "processed": 25945,
+    "pending": 1993,
+    "processing": 0,
     "eligible": 242,
-    "review": 18083,
-    "rejected": 7547,
+    "review": 18090,
+    "rejected": 7550,
     "errors": 60,
     "ready": 156,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC6esg0xQw_AhuELiCbqarSA",
-        "name": "소다성형외과",
-        "query": "서초 성형외과"
-      },
-      {
-        "channel_id": "UCf_GXYuyl5DwtOqdCxAtioQ",
-        "name": "PDM박동만성형외과",
-        "query": "서초 성형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2817,
+  "region_observed": 2818,
   "channels_discovered": 27937,
-  "channels_observed": 25875,
+  "channels_observed": 25885,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4001,
+      "observed": 4011,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4004,
+      "classified": 4014,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2817,
+      "observed": 2818,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2820,
+      "classified": 2821,
       "classification_errors": 3,
       "jobs": [
         {
