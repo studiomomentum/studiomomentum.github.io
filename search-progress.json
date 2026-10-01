@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:58:41.481621+00:00",
+  "updated_at": "2026-10-01T08:59:45.523419+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27837,
-    "pending": 100,
-    "processing": 1,
+    "processed": 27852,
+    "pending": 86,
+    "processing": 0,
     "eligible": 266,
-    "review": 19575,
-    "rejected": 7929,
+    "review": 19588,
+    "rejected": 7931,
     "errors": 64,
     "ready": 173,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCrGBTS8cpd5ATOcxrlJE5-Q",
-        "name": "young dae kim (danny)",
-        "query": "송파 건축사사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 4193,
+  "region_observed": 4208,
   "channels_discovered": 27937,
-  "channels_observed": 27773,
+  "channels_observed": 27788,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 4193,
+      "observed": 4208,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4199,
+      "classified": 4214,
       "classification_errors": 6,
       "jobs": [
         {
