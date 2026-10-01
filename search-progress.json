@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:46:42.939453+00:00",
+  "updated_at": "2026-10-01T02:47:43.941947+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22891,
-    "pending": 5045,
+    "processed": 22905,
+    "pending": 5031,
     "processing": 2,
     "eligible": 208,
-    "review": 15948,
-    "rejected": 6685,
+    "review": 15954,
+    "rejected": 6693,
     "errors": 47,
     "ready": 139,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCuDuuJSFZPhzDnhXWZFuPTA",
-        "name": "YoungsamKimDDS치과의사김영삼",
+        "channel_id": "UCXIdnvNjv3Is1rrzo8TSc5Q",
+        "name": "치과의사 아저씨",
         "query": "강남 치과"
       },
       {
-        "channel_id": "UC8QqXoC_M-wi_UqjJ11663Q",
-        "name": "함께정치",
-        "query": "강남 치과"
+        "channel_id": "UCCCUENqAmPFzTqRytaH4mAQ",
+        "name": "강남365치과",
+        "query": "강남 치과의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2271,
+  "region_observed": 2272,
   "channels_discovered": 27937,
-  "channels_observed": 22844,
+  "channels_observed": 22858,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2935,
+      "observed": 2949,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2940,
+      "classified": 2954,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2490,
+      "observed": 2493,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2491,
+      "classified": 2494,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2271,
+      "observed": 2272,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2272,
+      "classified": 2273,
       "classification_errors": 1,
       "jobs": [
         {
