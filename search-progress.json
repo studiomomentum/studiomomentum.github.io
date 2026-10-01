@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:41:26.946628+00:00",
+  "updated_at": "2026-10-01T06:42:29.387261+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26074,
-    "pending": 1863,
+    "processed": 26084,
+    "pending": 1853,
     "processing": 1,
     "eligible": 242,
-    "review": 18183,
-    "rejected": 7585,
+    "review": 18190,
+    "rejected": 7588,
     "errors": 61,
     "ready": 156,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCQYbMtkVrcQ0KyqHAh6cKGQ",
-        "name": "Himrabbit Family",
-        "query": "서초 정형외과"
+        "channel_id": "UC2U2gEAh_vAdBst1BUlJGIw",
+        "name": "종로연세참재활의학과",
+        "query": "서초 재활의학과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2851,
+  "region_observed": 2853,
   "channels_discovered": 27937,
-  "channels_observed": 26013,
+  "channels_observed": 26023,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4139,
+      "observed": 4149,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4143,
+      "classified": 4153,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2851,
+      "observed": 2853,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2854,
+      "classified": 2856,
       "classification_errors": 3,
       "jobs": [
         {
