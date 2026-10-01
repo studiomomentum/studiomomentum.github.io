@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:54:48.885179+00:00",
+  "updated_at": "2026-10-01T06:55:55.906008+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26248,
-    "pending": 1689,
-    "processing": 1,
+    "processed": 26265,
+    "pending": 1673,
+    "processing": 0,
     "eligible": 243,
-    "review": 18317,
-    "rejected": 7624,
+    "review": 18332,
+    "rejected": 7626,
     "errors": 61,
     "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClKAL4UiD0vEdcnzGz36XGw",
-        "name": "이을동물병원 (IEUL animal clinic)",
-        "query": "서초 동물병원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2911,
+  "region_observed": 2919,
   "channels_discovered": 27937,
-  "channels_observed": 26187,
+  "channels_observed": 26204,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4313,
+      "observed": 4330,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4317,
+      "classified": 4334,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2911,
+      "observed": 2919,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2914,
+      "classified": 2922,
       "classification_errors": 3,
       "jobs": [
         {
