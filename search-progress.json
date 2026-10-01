@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:05:43.805876+00:00",
+  "updated_at": "2026-10-01T08:06:45.828867+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27097,
-    "pending": 840,
-    "processing": 1,
+    "processed": 27112,
+    "pending": 826,
+    "processing": 0,
     "eligible": 260,
-    "review": 18986,
-    "rejected": 7786,
-    "errors": 62,
+    "review": 18998,
+    "rejected": 7788,
+    "errors": 63,
     "ready": 170,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCD8v8DcyJIegJ78tyzoBVNQ",
-        "name": "Seung Jae Shin",
-        "query": "송파 어학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3455,
+  "region_observed": 3469,
   "channels_discovered": 27937,
-  "channels_observed": 27035,
+  "channels_observed": 27049,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,11 +2967,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3455,
-      "observation_errors": 4,
+      "observed": 3469,
+      "observation_errors": 5,
       "classified_at": null,
-      "classified": 3459,
-      "classification_errors": 4,
+      "classified": 3474,
+      "classification_errors": 5,
       "jobs": [
         {
           "name": "세무사",
