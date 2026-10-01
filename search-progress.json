@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:39:42.494610+00:00",
+  "updated_at": "2026-10-01T05:40:45.184930+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25276,
-    "pending": 2661,
-    "processing": 1,
+    "processed": 25285,
+    "pending": 2653,
+    "processing": 0,
     "eligible": 239,
-    "review": 17596,
-    "rejected": 7379,
+    "review": 17603,
+    "rejected": 7381,
     "errors": 59,
     "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC8amHjIPWctLTbMlIYN2KkA",
-        "name": "The EDAM",
-        "query": "서초 치과의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2658,
+  "region_observed": 2661,
   "channels_discovered": 27937,
-  "channels_observed": 25217,
+  "channels_observed": 25226,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3343,
+      "observed": 3352,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3345,
+      "classified": 3354,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2658,
+      "observed": 2661,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2660,
+      "classified": 2663,
       "classification_errors": 2,
       "jobs": [
         {
