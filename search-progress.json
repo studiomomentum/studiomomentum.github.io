@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:18:12.774929+00:00",
+  "updated_at": "2026-10-01T06:19:23.412725+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25802,
-    "pending": 2135,
-    "processing": 1,
+    "processed": 25815,
+    "pending": 2123,
+    "processing": 0,
     "eligible": 241,
-    "review": 17999,
-    "rejected": 7499,
+    "review": 18009,
+    "rejected": 7502,
     "errors": 60,
     "ready": 155,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCPvSaXJV9oqaJiE2qP2liQg",
-        "name": "이정민훈장의 디지털서당",
-        "query": "서초 행정사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2784,
+  "region_observed": 2787,
   "channels_discovered": 27937,
-  "channels_observed": 25742,
+  "channels_observed": 25755,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3868,
+      "observed": 3881,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3871,
+      "classified": 3884,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2784,
+      "observed": 2787,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2787,
+      "classified": 2790,
       "classification_errors": 3,
       "jobs": [
         {
