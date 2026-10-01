@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:53:40.304616+00:00",
+  "updated_at": "2026-10-01T08:55:00.199295+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27759,
-    "pending": 178,
-    "processing": 1,
+    "processed": 27776,
+    "pending": 162,
+    "processing": 0,
     "eligible": 266,
-    "review": 19512,
-    "rejected": 7914,
+    "review": 19527,
+    "rejected": 7916,
     "errors": 64,
     "ready": 173,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC6wr7uIJA-Wx3yJMDpO9lAg",
-        "name": "재건축 주민설명회",
-        "query": "송파 감정평가사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 4115,
+  "region_observed": 4132,
   "channels_discovered": 27937,
-  "channels_observed": 27695,
+  "channels_observed": 27712,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 4115,
+      "observed": 4132,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4121,
+      "classified": 4138,
       "classification_errors": 6,
       "jobs": [
         {
