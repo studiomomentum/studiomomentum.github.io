@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:11:31.806726+00:00",
+  "updated_at": "2026-10-01T06:12:35.706139+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25717,
-    "pending": 2219,
-    "processing": 2,
-    "eligible": 240,
-    "review": 17921,
-    "rejected": 7493,
+    "processed": 25731,
+    "pending": 2207,
+    "processing": 0,
+    "eligible": 241,
+    "review": 17932,
+    "rejected": 7495,
     "errors": 60,
-    "ready": 154,
+    "ready": 155,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCTytnNXf1SMdj_KmSh3SYoA",
-        "name": "검도하는원빌딩공인중개사",
-        "query": "서초 부동산중개"
-      },
-      {
-        "channel_id": "UCKaVluzbXea7oGorhyRVqRQ",
-        "name": "옥현탑부동산 TV - 울산무거동부동산전문",
-        "query": "서초 부동산중개"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2773,
   "channels_discovered": 27937,
-  "channels_observed": 25657,
+  "channels_observed": 25671,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3783,
+      "observed": 3797,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3786,
+      "classified": 3800,
       "classification_errors": 3,
       "jobs": [
         {
