@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:26:17.634444+00:00",
+  "updated_at": "2026-10-01T04:27:19.157076+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24251,
-    "pending": 3685,
+    "processed": 24265,
+    "pending": 3671,
     "processing": 2,
     "eligible": 222,
-    "review": 16899,
-    "rejected": 7077,
+    "review": 16908,
+    "rejected": 7082,
     "errors": 50,
     "ready": 146,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCWp7yNi1rS9f6oXsuEe64Ww",
-        "name": "강남애견유치원",
+        "channel_id": "UCNTSWI-FJQ9XbPmxolmW3JA",
+        "name": "이진우의 빌딩현장",
         "query": "강남 동물병원"
       },
       {
-        "channel_id": "UCmNzM-_acgScw3AJVkYQn5Q",
-        "name": "견생역전! 당근밭의 오름이들",
-        "query": "강남 동물병원"
+        "channel_id": "UC6_iZuTaDOrGpqF_k06y4kw",
+        "name": "퇴근길 기록 일지",
+        "query": "강남 비뇨기과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2490,
+  "region_observed": 2491,
   "channels_discovered": 27937,
-  "channels_observed": 24201,
+  "channels_observed": 24215,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4292,
+      "observed": 4306,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4300,
+      "classified": 4314,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2490,
+      "observed": 2491,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2491,
+      "classified": 2492,
       "classification_errors": 1,
       "jobs": [
         {
