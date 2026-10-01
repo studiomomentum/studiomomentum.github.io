@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:10:41.285778+00:00",
+  "updated_at": "2026-10-01T07:11:43.032699+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26461,
-    "pending": 1475,
+    "processed": 26475,
+    "pending": 1461,
     "processing": 2,
     "eligible": 247,
-    "review": 18479,
-    "rejected": 7671,
+    "review": 18491,
+    "rejected": 7673,
     "errors": 61,
-    "ready": 161,
+    "ready": 158,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCCYt5E7gRzjmCcs8rFZhehQ",
-        "name": "다올건축사사무소",
+        "channel_id": "UCmcqu1_8soznhfHyR4u8m4w",
+        "name": "종합건축사사무소 가인 에스앤케이 (가인 S&K)",
         "query": "서초 건축사사무소"
       },
       {
-        "channel_id": "UCRJrshbDEmkCF84TAEJR2iw",
-        "name": "디림건축",
+        "channel_id": "UCt3dS0LaWAJDVIYvEpU_ehw",
+        "name": "Sang Jin Kim",
         "query": "서초 건축사사무소"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2968,
+  "region_observed": 2972,
   "channels_discovered": 27937,
-  "channels_observed": 26400,
+  "channels_observed": 26414,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4526,
+      "observed": 4540,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4530,
+      "classified": 4544,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2968,
+      "observed": 2972,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2971,
+      "classified": 2975,
       "classification_errors": 3,
       "jobs": [
         {
