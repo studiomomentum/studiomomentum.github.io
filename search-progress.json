@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:04:30.286384+00:00",
+  "updated_at": "2026-10-01T03:05:31.490335+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23133,
-    "pending": 4803,
-    "processing": 2,
+    "processed": 23148,
+    "pending": 4789,
+    "processing": 1,
     "eligible": 208,
-    "review": 16141,
-    "rejected": 6734,
+    "review": 16155,
+    "rejected": 6735,
     "errors": 47,
     "ready": 139,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCfh_hd1GVA2j3kfjyPT4mGg",
-        "name": "JJPTV",
-        "query": "강남 한방병원"
-      },
-      {
-        "channel_id": "UC2sFvP2Mympf58PP81BDcag",
-        "name": "박소연",
+        "channel_id": "UCyuxqVH6VEKffsiUc3iFO0Q",
+        "name": "ryukyuhyuk",
         "query": "강남 한의원"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2312,
+  "region_observed": 2315,
   "channels_discovered": 27937,
-  "channels_observed": 23086,
+  "channels_observed": 23101,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3177,
+      "observed": 3192,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3182,
+      "classified": 3197,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2312,
+      "observed": 2315,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2313,
+      "classified": 2316,
       "classification_errors": 1,
       "jobs": [
         {
