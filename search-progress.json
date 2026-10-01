@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:42:29.387261+00:00",
+  "updated_at": "2026-10-01T06:43:32.066759+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26084,
-    "pending": 1853,
-    "processing": 1,
+    "processed": 26097,
+    "pending": 1839,
+    "processing": 2,
     "eligible": 242,
-    "review": 18190,
-    "rejected": 7588,
+    "review": 18200,
+    "rejected": 7591,
     "errors": 61,
     "ready": 156,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC2U2gEAh_vAdBst1BUlJGIw",
-        "name": "종로연세참재활의학과",
+        "channel_id": "UCTXfm-TklNz00whIil7pJog",
+        "name": "썩코치의 야구쑈",
+        "query": "서초 재활의학과"
+      },
+      {
+        "channel_id": "UCXjX0op5hIJXc5sUfeTEBwg",
+        "name": "서울아산 린 재활의학과의원",
         "query": "서초 재활의학과"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2853,
+  "region_observed": 2856,
   "channels_discovered": 27937,
-  "channels_observed": 26023,
+  "channels_observed": 26036,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4149,
+      "observed": 4162,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4153,
+      "classified": 4166,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2853,
+      "observed": 2856,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2856,
+      "classified": 2859,
       "classification_errors": 3,
       "jobs": [
         {
