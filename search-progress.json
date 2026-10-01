@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:30:27.887117+00:00",
+  "updated_at": "2026-10-01T05:31:30.484469+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25155,
-    "pending": 2783,
-    "processing": 0,
+    "processed": 25176,
+    "pending": 2761,
+    "processing": 1,
     "eligible": 237,
-    "review": 17493,
-    "rejected": 7364,
+    "review": 17512,
+    "rejected": 7366,
     "errors": 58,
     "ready": 156,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCdC970nMjQMXVodkHR_6p_w",
+        "name": "회생의기준 | 로움",
+        "query": "서초 법률사무소"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2629,
+  "region_observed": 2633,
   "channels_discovered": 27937,
-  "channels_observed": 25097,
+  "channels_observed": 25118,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3223,
+      "observed": 3244,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3224,
+      "classified": 3245,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2629,
+      "observed": 2633,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2630,
+      "classified": 2634,
       "classification_errors": 1,
       "jobs": [
         {
