@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:15:36.817609+00:00",
+  "updated_at": "2026-10-01T05:16:38.272042+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24973,
-    "pending": 2963,
+    "processed": 24987,
+    "pending": 2949,
     "processing": 2,
     "eligible": 225,
-    "review": 17356,
-    "rejected": 7331,
+    "review": 17367,
+    "rejected": 7334,
     "errors": 58,
     "ready": 146,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCMv7hVTjBr0H4noHoOuqBJw",
-        "name": "캐내네 스피치",
+        "channel_id": "UCEPnx9zfsbymnmNCgwV4P8Q",
+        "name": "짠돌이형제",
         "query": "서초 세무사"
       },
       {
-        "channel_id": "UCk-ya_ZutaR81iOXa3Rt0mQ",
-        "name": "한국전문대학교육협의회",
-        "query": "서초 세무사"
+        "channel_id": "UCgBSwiczAMiTsQkyr2kHAYA",
+        "name": "후암 제1구역 주택재건축 추진위원회",
+        "query": "서초 세무법인"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2600,
+  "region_observed": 2606,
   "channels_discovered": 27937,
-  "channels_observed": 24915,
+  "channels_observed": 24929,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3041,
+      "observed": 3055,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3042,
+      "classified": 3056,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2600,
+      "observed": 2606,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2601,
+      "classified": 2607,
       "classification_errors": 1,
       "jobs": [
         {
