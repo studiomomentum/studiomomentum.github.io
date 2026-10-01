@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:15:57.608286+00:00",
+  "updated_at": "2026-10-01T04:16:58.965467+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24095,
-    "pending": 3843,
-    "processing": 0,
+    "processed": 24113,
+    "pending": 3823,
+    "processing": 2,
     "eligible": 220,
-    "review": 16793,
-    "rejected": 7029,
+    "review": 16808,
+    "rejected": 7032,
     "errors": 50,
     "ready": 145,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCiFYUP4_TI70yCkkVJAlxoA",
+        "name": "EBS 컬렉션 - 사이언스",
+        "query": "강남 마취통증의학과"
+      },
+      {
+        "channel_id": "UCdRHj7MB7ITisuSr4aAf42Q",
+        "name": "신쌤재활운동",
+        "query": "강남 재활의학과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2468,
+  "region_observed": 2473,
   "channels_discovered": 27937,
-  "channels_observed": 24045,
+  "channels_observed": 24063,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4136,
+      "observed": 4154,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4144,
+      "classified": 4162,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2838,
+      "observed": 2843,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2839,
+      "classified": 2844,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2468,
+      "observed": 2473,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2469,
+      "classified": 2474,
       "classification_errors": 1,
       "jobs": [
         {
