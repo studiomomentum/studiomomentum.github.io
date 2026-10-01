@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:59:32.218569+00:00",
+  "updated_at": "2026-10-01T06:00:33.695134+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25541,
-    "pending": 2397,
-    "processing": 0,
+    "processed": 25561,
+    "pending": 2375,
+    "processing": 2,
     "eligible": 240,
-    "review": 17782,
-    "rejected": 7456,
+    "review": 17799,
+    "rejected": 7459,
     "errors": 60,
     "ready": 157,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCwCvu0ZD37ossZBiewIEhZw",
+        "name": "레드유학",
+        "query": "서초 어학원"
+      },
+      {
+        "channel_id": "UC-AMoKjMpwgyVahGUoradIg",
+        "name": "동국대학교 국제어학원",
+        "query": "서초 어학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2728,
+  "region_observed": 2734,
   "channels_discovered": 27937,
-  "channels_observed": 25481,
+  "channels_observed": 25501,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3607,
+      "observed": 3627,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3610,
+      "classified": 3630,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2728,
+      "observed": 2734,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2731,
+      "classified": 2737,
       "classification_errors": 3,
       "jobs": [
         {
