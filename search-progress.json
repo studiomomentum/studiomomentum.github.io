@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:09:37.098010+00:00",
+  "updated_at": "2026-10-01T03:10:38.434075+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23200,
-    "pending": 4737,
-    "processing": 1,
+    "processed": 23213,
+    "pending": 4723,
+    "processing": 2,
     "eligible": 209,
-    "review": 16186,
-    "rejected": 6755,
+    "review": 16196,
+    "rejected": 6758,
     "errors": 47,
     "ready": 137,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC-VBWahKHsLU9G8esK9n4kQ",
-        "name": "스토리아트 입시학원",
-        "query": "강남 입시학원"
+        "channel_id": "UCvQV8QEliQboc6jiCJem7Rg",
+        "name": "강남대성학원",
+        "query": "강남 학원"
+      },
+      {
+        "channel_id": "UCT_F3E0MHSA3IFrpgaZASPg",
+        "name": "Jinsoo Kim",
+        "query": "강남 학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2327,
+  "region_observed": 2331,
   "channels_discovered": 27937,
-  "channels_observed": 23153,
+  "channels_observed": 23166,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3244,
+      "observed": 3257,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3249,
+      "classified": 3262,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2562,
+      "observed": 2569,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2563,
+      "classified": 2570,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2327,
+      "observed": 2331,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2328,
+      "classified": 2332,
       "classification_errors": 1,
       "jobs": [
         {
