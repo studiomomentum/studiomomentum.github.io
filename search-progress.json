@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:11:05.301748+00:00",
+  "updated_at": "2026-10-01T05:12:18.318963+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24905,
-    "pending": 3031,
-    "processing": 2,
+    "processed": 24921,
+    "pending": 3017,
+    "processing": 0,
     "eligible": 224,
-    "review": 17317,
-    "rejected": 7306,
-    "errors": 55,
+    "review": 17326,
+    "rejected": 7312,
+    "errors": 56,
     "ready": 145,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCBh8GrMJGt45wOav9CzXrhg",
-        "name": "유카미카 (You car Me car)",
-        "query": "강남 중고차"
-      },
-      {
-        "channel_id": "UCJWqJI9_LSujgZheeIf5CNg",
-        "name": "토마토 김정연",
-        "query": "강남 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2580,
+  "region_observed": 2584,
   "channels_discovered": 27937,
-  "channels_observed": 24850,
+  "channels_observed": 24865,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,11 +2381,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4941,
-      "observation_errors": 13,
+      "observed": 4956,
+      "observation_errors": 14,
       "classified_at": null,
-      "classified": 4954,
-      "classification_errors": 13,
+      "classified": 4970,
+      "classification_errors": 14,
       "jobs": [
         {
           "name": "세무사",
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2995,
+      "observed": 3007,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2996,
+      "classified": 3008,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2580,
+      "observed": 2584,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2581,
+      "classified": 2585,
       "classification_errors": 1,
       "jobs": [
         {
