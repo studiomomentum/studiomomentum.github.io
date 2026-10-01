@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:10:30.242760+00:00",
+  "updated_at": "2026-10-01T06:11:31.806726+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25702,
-    "pending": 2235,
-    "processing": 1,
+    "processed": 25717,
+    "pending": 2219,
+    "processing": 2,
     "eligible": 240,
-    "review": 17907,
-    "rejected": 7492,
+    "review": 17921,
+    "rejected": 7493,
     "errors": 60,
     "ready": 154,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCDVtSLdgx9zL-ZiNoCFSgcw",
-        "name": "프라임부동산",
+        "channel_id": "UCTytnNXf1SMdj_KmSh3SYoA",
+        "name": "검도하는원빌딩공인중개사",
+        "query": "서초 부동산중개"
+      },
+      {
+        "channel_id": "UCKaVluzbXea7oGorhyRVqRQ",
+        "name": "옥현탑부동산 TV - 울산무거동부동산전문",
         "query": "서초 부동산중개"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2771,
+  "region_observed": 2773,
   "channels_discovered": 27937,
-  "channels_observed": 25642,
+  "channels_observed": 25657,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3768,
+      "observed": 3783,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3771,
+      "classified": 3786,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2771,
+      "observed": 2773,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2774,
+      "classified": 2776,
       "classification_errors": 3,
       "jobs": [
         {
