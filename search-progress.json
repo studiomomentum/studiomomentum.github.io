@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:33:00.684495+00:00",
+  "updated_at": "2026-10-01T02:34:02.456841+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,16 +11,27 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22750,
+    "processed": 22748,
     "pending": 5188,
-    "processing": 0,
+    "processing": 2,
     "eligible": 201,
     "review": 15846,
     "rejected": 6653,
-    "errors": 47,
+    "errors": 45,
     "ready": 132,
-    "status": "starting",
-    "active": []
+    "status": "running",
+    "active": [
+      {
+        "channel_id": "UCL5KncCPGINUENDl6I8r1Nw",
+        "name": "생활체육 배드민턴 10 - 오마이플레이",
+        "query": "오산 한방병원"
+      },
+      {
+        "channel_id": "UCAToGEbvlKDaIBGxUqVK6Tg",
+        "name": "생활체육 배드민턴 9 - 오마이플레이",
+        "query": "오산 성형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
@@ -626,8 +637,8 @@
       "observed": 4233,
       "observation_errors": 9,
       "classified_at": "2026-09-28T02:43:19.751965+00:00",
-      "classified": 4242,
-      "classification_errors": 9,
+      "classified": 4240,
+      "classification_errors": 7,
       "jobs": [
         {
           "name": "세무사",
@@ -919,8 +930,8 @@
       "observed": 4707,
       "observation_errors": 13,
       "classified_at": "2026-09-28T02:48:37.228380+00:00",
-      "classified": 4720,
-      "classification_errors": 13,
+      "classified": 4719,
+      "classification_errors": 12,
       "jobs": [
         {
           "name": "세무사",
@@ -1505,8 +1516,8 @@
       "observed": 5525,
       "observation_errors": 12,
       "classified_at": "2026-09-28T02:57:55.722464+00:00",
-      "classified": 5537,
-      "classification_errors": 12,
+      "classified": 5535,
+      "classification_errors": 10,
       "jobs": [
         {
           "name": "세무사",
