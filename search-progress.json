@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:21:08.328189+00:00",
+  "updated_at": "2026-10-01T04:22:09.737429+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24176,
-    "pending": 3761,
-    "processing": 1,
-    "eligible": 221,
-    "review": 16857,
-    "rejected": 7045,
+    "processed": 24189,
+    "pending": 3747,
+    "processing": 2,
+    "eligible": 222,
+    "review": 16864,
+    "rejected": 7050,
     "errors": 50,
-    "ready": 145,
+    "ready": 146,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCTuleJcXHRMiM8fmnZDNW8A",
-        "name": "똑똑한 그녀들의 선택_오마쥬의원",
-        "query": "강남 산부인과"
+        "channel_id": "UC-4yGit6ge_bXpyTqkCBxhA",
+        "name": "김경철의 웰케어: 잘먹고, 잘자기",
+        "query": "강남 내과의원"
+      },
+      {
+        "channel_id": "UCRC-TnEhbM_GhcsKOly_snw",
+        "name": "류마티스질환 궁금증해결",
+        "query": "강남 내과의원"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4300,
   "region_observed": 2483,
   "channels_discovered": 27937,
-  "channels_observed": 24126,
+  "channels_observed": 24139,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4217,
+      "observed": 4230,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4225,
+      "classified": 4238,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2859,
+      "observed": 2862,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2860,
+      "classified": 2863,
       "classification_errors": 1,
       "jobs": [
         {
