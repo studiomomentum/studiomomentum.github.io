@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T09:05:05.158447+00:00",
+  "updated_at": "2026-10-01T09:06:17.918474+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27925,
-    "pending": 12,
-    "processing": 1,
+    "processed": 27938,
+    "pending": 0,
+    "processing": 0,
     "eligible": 267,
-    "review": 19645,
-    "rejected": 7946,
+    "review": 19648,
+    "rejected": 7956,
     "errors": 64,
     "ready": 174,
-    "status": "running",
-    "active": [
-      {
-        "channel_id": "UCp-wa9xFqEufNiHmSlnl59g",
-        "name": "요즘뭐해 by 글라스틴트",
-        "query": "송파 중고차"
-      }
-    ]
+    "status": "waiting",
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 4281,
+  "region_observed": 4294,
   "channels_discovered": 27937,
-  "channels_observed": 27861,
+  "channels_observed": 27874,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 4281,
+      "observed": 4294,
       "observation_errors": 6,
-      "classified_at": null,
-      "classified": 4287,
+      "classified_at": "2026-10-01T09:06:06.871155+00:00",
+      "classified": 4300,
       "classification_errors": 6,
       "jobs": [
         {
