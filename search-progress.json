@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:15:05.351961+00:00",
+  "updated_at": "2026-10-01T07:16:06.833102+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26528,
-    "pending": 1409,
-    "processing": 1,
-    "eligible": 248,
-    "review": 18536,
-    "rejected": 7680,
+    "processed": 26537,
+    "pending": 1399,
+    "processing": 2,
+    "eligible": 249,
+    "review": 18540,
+    "rejected": 7684,
     "errors": 61,
-    "ready": 158,
+    "ready": 160,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCokUb50F3GD8Q4c8UPfhYwA",
-        "name": "제주특별자치도건축사회_연구위원회",
-        "query": "서초 건축사사무소"
+        "channel_id": "UCjN-vXNFhKoB5kGUa17_CSg",
+        "name": "탑골TV:서울노인복지센터",
+        "query": "서초 심리상담센터"
+      },
+      {
+        "channel_id": "UCnMtj2TOZjf1TzEstmUMn1w",
+        "name": "별이 빛나는 튜브 Byulbitube",
+        "query": "서초 심리상담센터"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2994,
+  "region_observed": 2997,
   "channels_discovered": 27937,
-  "channels_observed": 26467,
+  "channels_observed": 26476,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4593,
+      "observed": 4602,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4597,
+      "classified": 4606,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2994,
+      "observed": 2997,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2997,
+      "classified": 3000,
       "classification_errors": 3,
       "jobs": [
         {
