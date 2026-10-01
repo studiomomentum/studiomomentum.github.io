@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:07:34.356299+00:00",
+  "updated_at": "2026-10-01T03:08:35.745052+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23175,
-    "pending": 4763,
-    "processing": 0,
+    "processed": 23191,
+    "pending": 4745,
+    "processing": 2,
     "eligible": 208,
-    "review": 16177,
-    "rejected": 6740,
+    "review": 16181,
+    "rejected": 6752,
     "errors": 47,
     "ready": 136,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCO37zVs-_u1tf5HPECSTbJA",
+        "name": "강남디자인메이지",
+        "query": "강남 입시학원"
+      },
+      {
+        "channel_id": "UC4DgFN9dvM0DPXXvsS3FO-w",
+        "name": "SHINE DANCE Kids 키즈댄스학원 샤인댄스",
+        "query": "강남 학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2321,
+  "region_observed": 2324,
   "channels_discovered": 27937,
-  "channels_observed": 23128,
+  "channels_observed": 23144,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3219,
+      "observed": 3235,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3224,
+      "classified": 3240,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2554,
+      "observed": 2557,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2555,
+      "classified": 2558,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2321,
+      "observed": 2324,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2322,
+      "classified": 2325,
       "classification_errors": 1,
       "jobs": [
         {
