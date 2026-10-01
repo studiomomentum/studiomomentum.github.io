@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:35:08.267837+00:00",
+  "updated_at": "2026-10-01T06:36:27.139129+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25993,
-    "pending": 1943,
-    "processing": 2,
+    "processed": 26005,
+    "pending": 1933,
+    "processing": 0,
     "eligible": 242,
-    "review": 18120,
-    "rejected": 7568,
+    "review": 18129,
+    "rejected": 7571,
     "errors": 60,
     "ready": 156,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCYQeIGViJ_Gd6RRVEmiMs2A",
-        "name": "Dr. Kiyup Kim LIFF Seoul",
-        "query": "서초 성형외과"
-      },
-      {
-        "channel_id": "UCnramPzV9SIyFil0_0Rc5qA",
-        "name": "리뉴 ReNu",
-        "query": "서초 성형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2824,
+  "region_observed": 2825,
   "channels_discovered": 27937,
-  "channels_observed": 25933,
+  "channels_observed": 25945,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4059,
+      "observed": 4071,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4062,
+      "classified": 4074,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2824,
+      "observed": 2825,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2827,
+      "classified": 2828,
       "classification_errors": 3,
       "jobs": [
         {
