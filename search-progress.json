@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:30:57.653034+00:00",
+  "updated_at": "2026-10-01T07:31:58.984933+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26738,
-    "pending": 1199,
-    "processing": 1,
+    "processed": 26749,
+    "pending": 1187,
+    "processing": 2,
     "eligible": 252,
-    "review": 18695,
-    "rejected": 7727,
+    "review": 18704,
+    "rejected": 7729,
     "errors": 61,
     "ready": 163,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCid8uX0FkOuHebZstR45p3A",
-        "name": "세무회계 안정",
+        "channel_id": "UCGsBBWPDkROhkMbzkt8QbvQ",
+        "name": "빈에스테틱tv - 피부관리실의 모든 것",
+        "query": "송파 세무회계"
+      },
+      {
+        "channel_id": "UCOwdFYG_vmsT7BDi9dp8nKQ",
+        "name": "스튜디오 바이라인",
         "query": "송파 세무회계"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3097,
+  "region_observed": 3108,
   "channels_discovered": 27937,
-  "channels_observed": 26677,
+  "channels_observed": 26688,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3097,
+      "observed": 3108,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3100,
+      "classified": 3111,
       "classification_errors": 3,
       "jobs": [
         {
