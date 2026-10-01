@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:28:42.828641+00:00",
+  "updated_at": "2026-10-01T07:29:55.738068+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26701,
-    "pending": 1235,
-    "processing": 2,
+    "processed": 26719,
+    "pending": 1219,
+    "processing": 0,
     "eligible": 252,
-    "review": 18666,
-    "rejected": 7719,
+    "review": 18678,
+    "rejected": 7725,
     "errors": 61,
     "ready": 163,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClSmS-i5GnYLsY3tJITCZSA",
-        "name": "시정신문",
-        "query": "송파 세무사"
-      },
-      {
-        "channel_id": "UCWgzAvFVHyN9R7qaXqkR6Zg",
-        "name": "innistudy24",
-        "query": "송파 세무사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3060,
+  "region_observed": 3078,
   "channels_discovered": 27937,
-  "channels_observed": 26640,
+  "channels_observed": 26658,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3060,
+      "observed": 3078,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3063,
+      "classified": 3081,
       "classification_errors": 3,
       "jobs": [
         {
