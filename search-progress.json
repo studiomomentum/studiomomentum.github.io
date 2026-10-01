@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:44:36.480110+00:00",
+  "updated_at": "2026-10-01T02:45:41.917494+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22859,
-    "pending": 5077,
-    "processing": 2,
+    "processed": 22873,
+    "pending": 5065,
+    "processing": 0,
     "eligible": 208,
-    "review": 15928,
-    "rejected": 6673,
+    "review": 15938,
+    "rejected": 6677,
     "errors": 47,
     "ready": 139,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCk7gBQeJmBt6VlA_W0NpkZw",
-        "name": "스타 법무법인",
-        "query": "강남 법무법인"
-      },
-      {
-        "channel_id": "UCMVmOvg3eMUr8eD9zDOTUQw",
-        "name": "부장판사 출신 김익현 변호사",
-        "query": "강남 법무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2268,
+  "region_observed": 2269,
   "channels_discovered": 27937,
-  "channels_observed": 22812,
+  "channels_observed": 22826,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2903,
+      "observed": 2917,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2908,
+      "classified": 2922,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2484,
+      "observed": 2488,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2485,
+      "classified": 2489,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2268,
+      "observed": 2269,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2269,
+      "classified": 2270,
       "classification_errors": 1,
       "jobs": [
         {
