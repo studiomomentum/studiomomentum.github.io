@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:20:06.691546+00:00",
+  "updated_at": "2026-10-01T04:21:08.328189+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24155,
-    "pending": 3783,
-    "processing": 0,
+    "processed": 24176,
+    "pending": 3761,
+    "processing": 1,
     "eligible": 221,
-    "review": 16840,
-    "rejected": 7041,
+    "review": 16857,
+    "rejected": 7045,
     "errors": 50,
     "ready": 145,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCTuleJcXHRMiM8fmnZDNW8A",
+        "name": "똑똑한 그녀들의 선택_오마쥬의원",
+        "query": "강남 산부인과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2480,
+  "region_observed": 2483,
   "channels_discovered": 27937,
-  "channels_observed": 24105,
+  "channels_observed": 24126,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4196,
+      "observed": 4217,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4204,
+      "classified": 4225,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2855,
+      "observed": 2859,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2856,
+      "classified": 2860,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2480,
+      "observed": 2483,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2481,
+      "classified": 2484,
       "classification_errors": 1,
       "jobs": [
         {
