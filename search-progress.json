@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:20:12.162552+00:00",
+  "updated_at": "2026-10-01T05:21:13.735301+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25028,
-    "pending": 2909,
-    "processing": 1,
-    "eligible": 231,
-    "review": 17391,
-    "rejected": 7345,
+    "processed": 25039,
+    "pending": 2897,
+    "processing": 2,
+    "eligible": 232,
+    "review": 17400,
+    "rejected": 7346,
     "errors": 58,
-    "ready": 149,
+    "ready": 151,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCzVeGVQ1Yh9mu0UYsn8whmQ",
-        "name": "법무법인 수림",
+        "channel_id": "UCb9Z4cf61nuDw6C0RiXCUIg",
+        "name": "김희란변호사",
+        "query": "서초 변호사"
+      },
+      {
+        "channel_id": "UCkkSiAW7RShd5bzl35SF3ow",
+        "name": "KTK아카데미 [김기태 미국변호사]",
         "query": "서초 변호사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2610,
+  "region_observed": 2613,
   "channels_discovered": 27937,
-  "channels_observed": 24970,
+  "channels_observed": 24981,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3096,
+      "observed": 3107,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3097,
+      "classified": 3108,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2610,
+      "observed": 2613,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2611,
+      "classified": 2614,
       "classification_errors": 1,
       "jobs": [
         {
