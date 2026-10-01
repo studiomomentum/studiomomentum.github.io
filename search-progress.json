@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:42:31.950060+00:00",
+  "updated_at": "2026-10-01T03:43:33.102353+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23659,
-    "pending": 4279,
-    "processing": 0,
+    "processed": 23672,
+    "pending": 4265,
+    "processing": 1,
     "eligible": 216,
-    "review": 16485,
-    "rejected": 6906,
+    "review": 16491,
+    "rejected": 6913,
     "errors": 49,
     "ready": 144,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCAYVIaQ4FignsWtT1vTFKHQ",
+        "name": "[김서정 변호사] 야무진 변론 (형사전문)",
+        "query": "강남 행정사사무소"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2410,
+  "region_observed": 2412,
   "channels_discovered": 27937,
-  "channels_observed": 23610,
+  "channels_observed": 23623,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3701,
+      "observed": 3714,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 3708,
+      "classified": 3721,
       "classification_errors": 7,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2688,
+      "observed": 2691,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2689,
+      "classified": 2692,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2410,
+      "observed": 2412,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2411,
+      "classified": 2413,
       "classification_errors": 1,
       "jobs": [
         {
