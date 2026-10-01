@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:19:10.740472+00:00",
+  "updated_at": "2026-10-01T05:20:12.162552+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25015,
-    "pending": 2923,
-    "processing": 0,
-    "eligible": 229,
-    "review": 17384,
-    "rejected": 7341,
+    "processed": 25028,
+    "pending": 2909,
+    "processing": 1,
+    "eligible": 231,
+    "review": 17391,
+    "rejected": 7345,
     "errors": 58,
     "ready": 149,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCzVeGVQ1Yh9mu0UYsn8whmQ",
+        "name": "법무법인 수림",
+        "query": "서초 변호사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2608,
+  "region_observed": 2610,
   "channels_discovered": 27937,
-  "channels_observed": 24957,
+  "channels_observed": 24970,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3083,
+      "observed": 3096,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3084,
+      "classified": 3097,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2608,
+      "observed": 2610,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2609,
+      "classified": 2611,
       "classification_errors": 1,
       "jobs": [
         {
