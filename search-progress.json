@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:18:00.336346+00:00",
+  "updated_at": "2026-10-01T04:19:01.876141+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24127,
-    "pending": 3811,
-    "processing": 0,
-    "eligible": 220,
-    "review": 16818,
-    "rejected": 7036,
+    "processed": 24139,
+    "pending": 3797,
+    "processing": 2,
+    "eligible": 221,
+    "review": 16828,
+    "rejected": 7037,
     "errors": 50,
     "ready": 145,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCjq8_9odgdccGKsnQ4lboNw",
+        "name": "나도균 의사 한의사",
+        "query": "강남 내과의원"
+      },
+      {
+        "channel_id": "UCHzo3ugp2a2_NE80ViKHaRg",
+        "name": "cheil clinic",
+        "query": "강남 내과의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2476,
+  "region_observed": 2478,
   "channels_discovered": 27937,
-  "channels_observed": 24077,
+  "channels_observed": 24089,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4168,
+      "observed": 4180,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4176,
+      "classified": 4188,
       "classification_errors": 8,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2846,
+      "observed": 2850,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2847,
+      "classified": 2851,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2476,
+      "observed": 2478,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2477,
+      "classified": 2479,
       "classification_errors": 1,
       "jobs": [
         {
