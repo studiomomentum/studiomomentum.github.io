@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:42:33.234595+00:00",
+  "updated_at": "2026-10-01T02:43:34.624812+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22836,
-    "pending": 5101,
+    "processed": 22848,
+    "pending": 5089,
     "processing": 1,
-    "eligible": 207,
-    "review": 15913,
-    "rejected": 6666,
+    "eligible": 208,
+    "review": 15921,
+    "rejected": 6669,
     "errors": 47,
-    "ready": 135,
+    "ready": 139,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCV2X8Myz7pkzJZSqJLvzTOg",
-        "name": "기업회생 / 법인회생 법무법인 바를정",
-        "query": "강남 법무법인"
+        "channel_id": "UCiTlthdBhtFxoBU4b4N9aYw",
+        "name": "노동상담지담[노동법률상담]",
+        "query": "강남 법률사무소"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2264,
+  "region_observed": 2266,
   "channels_discovered": 27937,
-  "channels_observed": 22789,
+  "channels_observed": 22801,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2880,
+      "observed": 2892,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2885,
+      "classified": 2897,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2476,
+      "observed": 2479,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2477,
+      "classified": 2480,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2264,
+      "observed": 2266,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2265,
+      "classified": 2267,
       "classification_errors": 1,
       "jobs": [
         {
