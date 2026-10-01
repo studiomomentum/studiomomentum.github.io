@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:43:34.624812+00:00",
+  "updated_at": "2026-10-01T02:44:36.480110+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22848,
-    "pending": 5089,
-    "processing": 1,
+    "processed": 22859,
+    "pending": 5077,
+    "processing": 2,
     "eligible": 208,
-    "review": 15921,
-    "rejected": 6669,
+    "review": 15928,
+    "rejected": 6673,
     "errors": 47,
     "ready": 139,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCiTlthdBhtFxoBU4b4N9aYw",
-        "name": "노동상담지담[노동법률상담]",
-        "query": "강남 법률사무소"
+        "channel_id": "UCk7gBQeJmBt6VlA_W0NpkZw",
+        "name": "스타 법무법인",
+        "query": "강남 법무법인"
+      },
+      {
+        "channel_id": "UCMVmOvg3eMUr8eD9zDOTUQw",
+        "name": "부장판사 출신 김익현 변호사",
+        "query": "강남 법무법인"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2266,
+  "region_observed": 2268,
   "channels_discovered": 27937,
-  "channels_observed": 22801,
+  "channels_observed": 22812,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 2892,
+      "observed": 2903,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2897,
+      "classified": 2908,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2479,
+      "observed": 2484,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2480,
+      "classified": 2485,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2266,
+      "observed": 2268,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2267,
+      "classified": 2269,
       "classification_errors": 1,
       "jobs": [
         {
