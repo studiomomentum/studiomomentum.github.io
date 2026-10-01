@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:36:48.247237+00:00",
+  "updated_at": "2026-10-01T03:37:49.720877+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23582,
-    "pending": 4355,
-    "processing": 1,
+    "processed": 23585,
+    "pending": 4351,
+    "processing": 2,
     "eligible": 215,
-    "review": 16445,
+    "review": 16448,
     "rejected": 6871,
     "errors": 48,
-    "ready": 142,
+    "ready": 143,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCARu95WiKt85wMVvJ_tx7tw",
-        "name": "이웃사람 《부동산TV》",
+        "channel_id": "UCHlP5A8yDw0XsC-JRxZ36ng",
+        "name": "박문각출판",
+        "query": "강남 행정사"
+      },
+      {
+        "channel_id": "UCdk-xhKGSTI7LZ0iYL81wkA",
+        "name": "경제의 흐름",
         "query": "강남 부동산중개"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2398,
+  "region_observed": 2399,
   "channels_discovered": 27937,
-  "channels_observed": 23534,
+  "channels_observed": 23537,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3625,
+      "observed": 3628,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3631,
+      "classified": 3634,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2398,
+      "observed": 2399,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2399,
+      "classified": 2400,
       "classification_errors": 1,
       "jobs": [
         {
