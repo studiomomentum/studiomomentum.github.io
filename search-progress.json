@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:21:13.735301+00:00",
+  "updated_at": "2026-10-01T05:22:15.619090+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25039,
-    "pending": 2897,
+    "processed": 25051,
+    "pending": 2885,
     "processing": 2,
     "eligible": 232,
-    "review": 17400,
-    "rejected": 7346,
+    "review": 17410,
+    "rejected": 7348,
     "errors": 58,
     "ready": 151,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCb9Z4cf61nuDw6C0RiXCUIg",
-        "name": "김희란변호사",
-        "query": "서초 변호사"
+        "channel_id": "UC8fyUIruczZSBZ4MysNXnXg",
+        "name": "이선생(이선생)",
+        "query": "서초 세무회계"
       },
       {
-        "channel_id": "UCkkSiAW7RShd5bzl35SF3ow",
-        "name": "KTK아카데미 [김기태 미국변호사]",
+        "channel_id": "UCC_bArcuzq7OU8OTmDCFu0Q",
+        "name": "김준래 변호사·법학박사의 법률이야기",
         "query": "서초 변호사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2613,
+  "region_observed": 2615,
   "channels_discovered": 27937,
-  "channels_observed": 24981,
+  "channels_observed": 24993,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3107,
+      "observed": 3119,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3108,
+      "classified": 3120,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2613,
+      "observed": 2615,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2614,
+      "classified": 2616,
       "classification_errors": 1,
       "jobs": [
         {
