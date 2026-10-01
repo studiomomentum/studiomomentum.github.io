@@ -34,7 +34,26 @@ const fs=require('fs'),path=require('path'),assert=require('assert');
  assert((await page.locator('#searchStatus').textContent()).includes('실행 완료'));
  await page.locator('#refreshSearchProgress').click();
  assert((await page.locator('#searchStatus').textContent()).includes('실행 완료'));
+ await page.evaluate(()=>{
+   window.releaseManualRequest=null;
+   MomentumAdmin.call=async action=>{
+     if(action==='classify.start'){
+       window.manualCalls.push(action);
+       return new Promise(resolve=>window.releaseManualRequest=()=>resolve({phase:'success',runId:42}));
+     }
+     return {phase:'idle'};
+   };
+ });
  await page.locator('#progressClassifyButton').click();
+ assert(await page.locator('#progressClassifyButton').isDisabled());
+ assert((await page.locator('#progressClassifyStatus').textContent()).includes('실행 요청 중'));
+ await page.locator('#refreshSearchProgress').click();
+ assert(await page.locator('#progressClassifyButton').isDisabled());
+ assert((await page.locator('#progressClassifyStatus').textContent()).includes('실행 요청 중'));
+ await page.evaluate(()=>window.releaseManualRequest());
+ await page.waitForFunction(()=>document.getElementById('progressClassifyStatus').textContent.includes('실행 완료'));
+ assert(!(await page.locator('#progressClassifyButton').isDisabled()));
+ assert((await page.locator('#progressClassifyRunLink').getAttribute('href')).endsWith('/runs/42'));
  calls=await page.evaluate(()=>window.manualCalls);assert.deepEqual(calls,['search.start','classify.start']);
  console.log('PASS separate manual stage buttons, double-click deduplication and state preserved across progress refresh.');
  await browser.close();console.log('PASS: 11 regions, 39 jobs, selection, schedule, stale state, PC/mobile widths');

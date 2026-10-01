@@ -36,7 +36,7 @@
     const recentMarkup=!active.length&&recent.length?`<p class="search-progress-note">마지막 처리 기록 · 현재 처리 중인 채널과 구분됩니다.</p><ul>${recent.map(activeLabel).join('')}</ul>`:'';
     const banner=!data?'진행 정보 대기':failed?'갱신 실패 · 마지막 기록 표시':data.phase==='complete'?'작업 종료':stale?'갱신 지연 · 실행 상태 확인 필요':`${searchStage.region||data.region||''} · ${stageLabels[searchStage.status]||phases[data.phase]||'진행 중'}`;
     Momentum.setHTML(host,`<div class="search-progress-heading"><div><h3>서치 진행 상황</h3><p>다음 정기 서치 <strong>${e(date(nextSearch()))}</strong> · 매주 일요일 23:00 KST</p></div><button type="button" id="refreshSearchProgress">새로고침</button></div>
-      <div class="manual-prospect-controls"><button type="button" id="searchButton">수동 서치 · 이어하기</button><button type="button" id="progressClassifyButton">수동 분류 · 이어하기</button><p id="searchStatus" role="status" aria-live="polite">중단 검색 이어하기 · 메일 발송 없음</p><a id="searchRunLink" hidden target="_blank" rel="noopener noreferrer">서치 실행 상세 ↗</a><p class="search-progress-note">GitHub 실행 한도가 갱신된 뒤 필요한 단계를 눌러 재개하세요. 수동 실행도 Actions 시간을 사용합니다. 분류 실행 상태는 발송대기 카드에서 확인할 수 있습니다.</p></div>
+      <div class="manual-prospect-controls"><button type="button" id="searchButton">수동 서치 · 이어하기</button><button type="button" id="progressClassifyButton">수동 분류 · 이어하기</button><p id="progressClassifyStatus" role="status" aria-live="polite">기존 후보 근거 수집·분류 이어하기 · 메일 발송 없음</p><a id="progressClassifyRunLink" hidden target="_blank" rel="noopener noreferrer">분류 실행 상세 ↗</a><p id="searchStatus" role="status" aria-live="polite">중단 검색 이어하기 · 메일 발송 없음</p><a id="searchRunLink" hidden target="_blank" rel="noopener noreferrer">서치 실행 상세 ↗</a><p class="search-progress-note">GitHub 실행 한도가 갱신된 뒤 필요한 단계를 눌러 재개하세요. 수동 실행도 Actions 시간을 사용합니다. 접수·실행 상태와 실행 상세는 각 버튼 아래에 표시됩니다.</p></div>
       <p class="search-live-state ${stale?'is-stale':''}" role="status">${e(banner)}${data?.updated_at?` · 서버 갱신 ${e(date(data.updated_at))}`:''}</p>
       <div class="search-live-metrics"><span>검색 완료 <b>${n(data?.queries_completed)}/${n(data?.queries_total)||440}</b></span><span>발견 채널 <b>${n(data?.channels_discovered).toLocaleString()}</b></span><span>검색 오류 <b>${Object.keys(data?.query_errors||{}).length}</b></span></div>
       <p class="search-progress-note">30초마다 자동 확인 · 서버는 처리 진행 시 약 1분 간격으로 기록합니다. 서치와 분류는 독립 실행되며 분류 결과를 수시로 발송대기에 반영합니다. 예약은 실행 지연 또는 시스템 정지 시 달라질 수 있습니다.</p>
@@ -51,6 +51,7 @@
     host.querySelector('#searchButton')?.addEventListener('click',()=>window.MomentumSearch?.start());
     host.querySelector('#progressClassifyButton')?.addEventListener('click',()=>window.MomentumClassification?.start());
     window.MomentumSearch?.render();
+    window.MomentumClassification?.render();
     host.querySelector('#refreshSearchProgress')?.addEventListener('click',refresh);
     host.querySelectorAll('[data-search-region]').forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.searchRegion;render();}));
   }

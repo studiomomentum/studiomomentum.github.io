@@ -5,11 +5,19 @@ function momentumStageControl(action,key,prefix,workflow,label) {
   function read(){try{return JSON.parse(localStorage.getItem(key))||null;}catch(_){return null;}}
   function render(){
     const pending=state&&!['success','failed','idle'].includes(state.phase),button=document.getElementById(prefix+'Button');
-        if(!button)return;
+    if(!button)return;
     button.disabled=busy;button.textContent=busy?(state?.phase==='running'?label+' 실행 중':'처리 중'):pending?'실행 상태 확인':'수동 '+label+' · 이어하기';
     document.getElementById(prefix+'Status').textContent=state?.message||(action==='search'?'중단 검색 이어하기 · 메일 발송 없음':'기존 후보 근거 수집·분류 이어하기 · 메일 발송 없음');
     if(action==='classify')document.getElementById('kpiCard_READY').dataset.state=state?.phase||'idle';
     const link=document.getElementById(prefix+'RunLink');link.hidden=!state;link.href=Number.isSafeInteger(state?.runId)?runPage+'/runs/'+state.runId:runPage+'/workflows/'+workflow;
+    if(action==='classify'){
+      const mirror=document.getElementById('progressClassifyButton');
+      if(mirror){
+        mirror.disabled=button.disabled;mirror.textContent=button.textContent;
+        document.getElementById('progressClassifyStatus').textContent=document.getElementById(prefix+'Status').textContent;
+        const detail=document.getElementById('progressClassifyRunLink');detail.hidden=link.hidden;detail.href=link.href;
+      }
+    }
   }
   function save(next){state={...state,...next};localStorage.setItem(key,JSON.stringify(state));render();}
   function stop(){busy=false;clearTimeout(timer);timer=null;render();}
@@ -29,7 +37,7 @@ function momentumStageControl(action,key,prefix,workflow,label) {
     if(busy)return;busy=true;state=read();render();
     try{
       const pending=state&&!['success','failed','idle'].includes(state.phase);
-      save({watchStartedAt:Date.now(),requestId:pending?state.requestId:Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('')});
+      save({message:pending?'실행 상태 확인 중…':label+' 실행 요청 중…',watchStartedAt:Date.now(),requestId:pending?state.requestId:Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('')});
       const result=await MomentumAdmin.call(pending?action+'.status':action+'.start',pending?{}:{requestId:state.requestId});
       await track(result);
     }catch(e){save({phase:e.code==='NETWORK'?'unknown':'failed',message:(e.code==='NETWORK'?'접수/실행 결과 확인 필요 · ':'')+e.message});stop();}
