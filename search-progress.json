@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:08:14.789620+00:00",
+  "updated_at": "2026-10-01T06:09:27.811825+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25663,
-    "pending": 2273,
-    "processing": 2,
+    "processed": 25681,
+    "pending": 2257,
+    "processing": 0,
     "eligible": 240,
-    "review": 17872,
-    "rejected": 7488,
+    "review": 17887,
+    "rejected": 7491,
     "errors": 60,
-    "ready": 157,
+    "ready": 154,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCblw2a-kVYB5rMDBqrpC7Cw",
-        "name": "누구나부동산",
-        "query": "서초 공인중개사"
-      },
-      {
-        "channel_id": "UCl7kap8EzXIsG8dsvWTR0QA",
-        "name": "이경일",
-        "query": "서초 공인중개사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2763,
+  "region_observed": 2766,
   "channels_discovered": 27937,
-  "channels_observed": 25603,
+  "channels_observed": 25621,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3729,
+      "observed": 3747,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3732,
+      "classified": 3750,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2763,
+      "observed": 2766,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2766,
+      "classified": 2769,
       "classification_errors": 3,
       "jobs": [
         {
