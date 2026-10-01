@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:34:06.146349+00:00",
+  "updated_at": "2026-10-01T06:35:08.267837+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25983,
-    "pending": 1953,
+    "processed": 25993,
+    "pending": 1943,
     "processing": 2,
     "eligible": 242,
-    "review": 18111,
-    "rejected": 7567,
+    "review": 18120,
+    "rejected": 7568,
     "errors": 60,
     "ready": 156,
     "status": "running",
     "active": [
       {
-        "channel_id": "UClRuqua1MBwtuuu5-ECvgYQ",
-        "name": "프라이빗성형외과 PRIVATE LOUNGE",
+        "channel_id": "UCYQeIGViJ_Gd6RRVEmiMs2A",
+        "name": "Dr. Kiyup Kim LIFF Seoul",
         "query": "서초 성형외과"
       },
       {
-        "channel_id": "UCXpx1Lsgsq-xiiJ458pJLyQ",
-        "name": "규지니룸 (이룸성형외과) ",
+        "channel_id": "UCnramPzV9SIyFil0_0Rc5qA",
+        "name": "리뉴 ReNu",
         "query": "서초 성형외과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2823,
+  "region_observed": 2824,
   "channels_discovered": 27937,
-  "channels_observed": 25923,
+  "channels_observed": 25933,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4049,
+      "observed": 4059,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4052,
+      "classified": 4062,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2823,
+      "observed": 2824,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2826,
+      "classified": 2827,
       "classification_errors": 3,
       "jobs": [
         {
