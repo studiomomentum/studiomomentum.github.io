@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:27:42.153721+00:00",
+  "updated_at": "2026-10-01T06:28:44.514123+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25911,
-    "pending": 2027,
-    "processing": 0,
+    "processed": 25926,
+    "pending": 2011,
+    "processing": 1,
     "eligible": 242,
-    "review": 18071,
-    "rejected": 7535,
+    "review": 18078,
+    "rejected": 7543,
     "errors": 60,
     "ready": 156,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCPBUtJ1Il_8rNdLCXK1ranQ",
+        "name": "투비성형외과",
+        "query": "서초 성형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2814,
+  "region_observed": 2817,
   "channels_discovered": 27937,
-  "channels_observed": 25851,
+  "channels_observed": 25866,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3977,
+      "observed": 3992,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3980,
+      "classified": 3995,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2814,
+      "observed": 2817,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2817,
+      "classified": 2820,
       "classification_errors": 3,
       "jobs": [
         {
