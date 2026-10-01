@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:37:31.415896+00:00",
+  "updated_at": "2026-10-01T04:38:32.673940+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24422,
-    "pending": 3515,
-    "processing": 1,
+    "processed": 24437,
+    "pending": 3501,
+    "processing": 0,
     "eligible": 222,
-    "review": 16987,
-    "rejected": 7159,
+    "review": 16998,
+    "rejected": 7163,
     "errors": 51,
     "ready": 146,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCVQGhlznuijUljU1QxO5fgw",
-        "name": "gabje cho",
-        "query": "강남 의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
   "region_observed": 2499,
   "channels_discovered": 27937,
-  "channels_observed": 24371,
+  "channels_observed": 24386,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4462,
+      "observed": 4477,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4471,
+      "classified": 4486,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2887,
+      "observed": 2888,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2888,
+      "classified": 2889,
       "classification_errors": 1,
       "jobs": [
         {
