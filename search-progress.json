@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T04:38:32.673940+00:00",
+  "updated_at": "2026-10-01T04:39:34.439905+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24437,
-    "pending": 3501,
-    "processing": 0,
+    "processed": 24448,
+    "pending": 3489,
+    "processing": 1,
     "eligible": 222,
-    "review": 16998,
-    "rejected": 7163,
+    "review": 17004,
+    "rejected": 7168,
     "errors": 51,
     "ready": 146,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCcEQWphJokzRgszYS10U2kQ",
+        "name": "머리나는 TV",
+        "query": "강남 의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2499,
+  "region_observed": 2503,
   "channels_discovered": 27937,
-  "channels_observed": 24386,
+  "channels_observed": 24397,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4477,
+      "observed": 4488,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4486,
+      "classified": 4497,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2888,
+      "observed": 2890,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2889,
+      "classified": 2891,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2499,
+      "observed": 2503,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2500,
+      "classified": 2504,
       "classification_errors": 1,
       "jobs": [
         {
