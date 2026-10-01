@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:57:59.581616+00:00",
+  "updated_at": "2026-10-01T06:59:03.581675+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26297,
-    "pending": 1639,
-    "processing": 2,
+    "processed": 26307,
+    "pending": 1631,
+    "processing": 0,
     "eligible": 243,
-    "review": 18354,
-    "rejected": 7636,
+    "review": 18361,
+    "rejected": 7639,
     "errors": 61,
     "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCfYbvmQ9VyGROSCliw49NrQ",
-        "name": "박문각 공인노무사",
-        "query": "서초 노무사"
-      },
-      {
-        "channel_id": "UCAk-pK_LFTDjWtcSJhfRzVg",
-        "name": "노무법인 더휴먼TV",
-        "query": "서초 노무사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2935,
+  "region_observed": 2937,
   "channels_discovered": 27937,
-  "channels_observed": 26236,
+  "channels_observed": 26246,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4362,
+      "observed": 4372,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4366,
+      "classified": 4376,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2935,
+      "observed": 2937,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2938,
+      "classified": 2940,
       "classification_errors": 3,
       "jobs": [
         {
