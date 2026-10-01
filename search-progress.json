@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:28:09.014034+00:00",
+  "updated_at": "2026-10-01T08:29:25.694991+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27397,
-    "pending": 540,
-    "processing": 1,
+    "processed": 27410,
+    "pending": 528,
+    "processing": 0,
     "eligible": 266,
-    "review": 19216,
+    "review": 19229,
     "rejected": 7849,
     "errors": 63,
     "ready": 173,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCh4hYDI8vMBdV4f913wucvQ",
-        "name": "닥터첫번째",
-        "query": "송파 성형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3754,
+  "region_observed": 3767,
   "channels_discovered": 27937,
-  "channels_observed": 27334,
+  "channels_observed": 27347,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3754,
+      "observed": 3767,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3759,
+      "classified": 3772,
       "classification_errors": 5,
       "jobs": [
         {
