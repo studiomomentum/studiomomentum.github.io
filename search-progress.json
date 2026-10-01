@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:09:27.811825+00:00",
+  "updated_at": "2026-10-01T06:10:30.242760+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25681,
-    "pending": 2257,
-    "processing": 0,
+    "processed": 25702,
+    "pending": 2235,
+    "processing": 1,
     "eligible": 240,
-    "review": 17887,
-    "rejected": 7491,
+    "review": 17907,
+    "rejected": 7492,
     "errors": 60,
     "ready": 154,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCDVtSLdgx9zL-ZiNoCFSgcw",
+        "name": "프라임부동산",
+        "query": "서초 부동산중개"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2766,
+  "region_observed": 2771,
   "channels_discovered": 27937,
-  "channels_observed": 25621,
+  "channels_observed": 25642,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3747,
+      "observed": 3768,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3750,
+      "classified": 3771,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2766,
+      "observed": 2771,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2769,
+      "classified": 2774,
       "classification_errors": 3,
       "jobs": [
         {
