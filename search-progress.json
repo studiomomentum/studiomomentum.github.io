@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T03:20:21.318232+00:00",
+  "updated_at": "2026-10-01T03:21:23.204403+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 23350,
-    "pending": 4587,
-    "processing": 1,
+    "processed": 23365,
+    "pending": 4573,
+    "processing": 0,
     "eligible": 211,
-    "review": 16280,
-    "rejected": 6808,
+    "review": 16287,
+    "rejected": 6816,
     "errors": 48,
     "ready": 139,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCYglgy0-OA6cCfYlegMvZ7g",
-        "name": "일공교육 Youtube",
-        "query": "강남 학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2358,
+  "region_observed": 2360,
   "channels_discovered": 27937,
-  "channels_observed": 23302,
+  "channels_observed": 23317,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3393,
+      "observed": 3408,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3399,
+      "classified": 3414,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2630,
+      "observed": 2636,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2631,
+      "classified": 2637,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2358,
+      "observed": 2360,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2359,
+      "classified": 2361,
       "classification_errors": 1,
       "jobs": [
         {
