@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:12:49.872998+00:00",
+  "updated_at": "2026-10-01T08:13:53.493301+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27203,
-    "pending": 734,
-    "processing": 1,
-    "eligible": 261,
-    "review": 19070,
-    "rejected": 7806,
+    "processed": 27218,
+    "pending": 720,
+    "processing": 0,
+    "eligible": 262,
+    "review": 19081,
+    "rejected": 7809,
     "errors": 63,
-    "ready": 167,
+    "ready": 168,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UChDclta7Qdn6rI-XwCLMHUA",
-        "name": "타운리얼에스테잍",
-        "query": "송파 부동산중개"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3560,
+  "region_observed": 3575,
   "channels_discovered": 27937,
-  "channels_observed": 27140,
+  "channels_observed": 27155,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3560,
+      "observed": 3575,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3565,
+      "classified": 3580,
       "classification_errors": 5,
       "jobs": [
         {
