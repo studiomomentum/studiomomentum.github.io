@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:33:34.466676+00:00",
+  "updated_at": "2026-10-01T05:34:43.083147+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25201,
-    "pending": 2735,
-    "processing": 2,
+    "processed": 25209,
+    "pending": 2729,
+    "processing": 0,
     "eligible": 239,
-    "review": 17533,
-    "rejected": 7367,
+    "review": 17540,
+    "rejected": 7368,
     "errors": 59,
-    "ready": 156,
+    "ready": 157,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCHFdHdYR28ZwYuTpCtZ32wQ",
-        "name": "변호사 카페",
-        "query": "서초 법률사무소"
-      },
-      {
-        "channel_id": "UC6slUrvbLoVscVkQpzwUUtw",
-        "name": "짱태영 (대한민국 넘버원 벤츠. 김태영)",
-        "query": "서초 법무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2638,
+  "region_observed": 2641,
   "channels_discovered": 27937,
-  "channels_observed": 25142,
+  "channels_observed": 25150,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3268,
+      "observed": 3276,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3270,
+      "classified": 3278,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2638,
+      "observed": 2641,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2640,
+      "classified": 2643,
       "classification_errors": 2,
       "jobs": [
         {
