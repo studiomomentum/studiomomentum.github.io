@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T07:26:39.255275+00:00",
+  "updated_at": "2026-10-01T07:27:41.455083+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 26679,
-    "pending": 1257,
-    "processing": 2,
+    "processed": 26689,
+    "pending": 1249,
+    "processing": 0,
     "eligible": 251,
-    "review": 18650,
-    "rejected": 7714,
+    "review": 18658,
+    "rejected": 7716,
     "errors": 61,
     "ready": 162,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCooo6JdGz0geN3r2rTAKlWQ",
-        "name": "김택정중고차",
-        "query": "서초 중고차"
-      },
-      {
-        "channel_id": "UCwSF2AcYMMZmdjnXmpz0_0w",
-        "name": "아짓트",
-        "query": "서초 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3040,
+  "region_observed": 3048,
   "channels_discovered": 27937,
-  "channels_observed": 26618,
+  "channels_observed": 26628,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4744,
+      "observed": 4746,
       "observation_errors": 4,
-      "classified_at": null,
-      "classified": 4748,
+      "classified_at": "2026-10-01T07:27:05.457447+00:00",
+      "classified": 4750,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3040,
+      "observed": 3048,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3043,
+      "classified": 3051,
       "classification_errors": 3,
       "jobs": [
         {
