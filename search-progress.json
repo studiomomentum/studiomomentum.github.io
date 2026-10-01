@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T08:41:22.721106+00:00",
+  "updated_at": "2026-10-01T08:42:24.426011+00:00",
   "run_id": "36831076536",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 27585,
-    "pending": 352,
+    "processed": 27599,
+    "pending": 338,
     "processing": 1,
     "eligible": 266,
-    "review": 19371,
-    "rejected": 7882,
-    "errors": 63,
+    "review": 19382,
+    "rejected": 7884,
+    "errors": 64,
     "ready": 173,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCwz9OjuWmV7t_Wzk0xljLvw",
-        "name": "땅콩이 일기",
+        "channel_id": "UCb6a9uPj07YNk8PaWVMmbjw",
+        "name": "한양여대 반려동물보건과 학생회",
         "query": "송파 동물병원"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 3942,
+  "region_observed": 3955,
   "channels_discovered": 27937,
-  "channels_observed": 27522,
+  "channels_observed": 27535,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2973,11 +2973,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 3942,
-      "observation_errors": 5,
+      "observed": 3955,
+      "observation_errors": 6,
       "classified_at": null,
-      "classified": 3947,
-      "classification_errors": 5,
+      "classified": 3961,
+      "classification_errors": 6,
       "jobs": [
         {
           "name": "세무사",
