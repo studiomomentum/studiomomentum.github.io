@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T02:53:36.366699+00:00",
+  "updated_at": "2026-10-01T02:54:38.602990+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 22995,
-    "pending": 4941,
-    "processing": 2,
+    "processed": 23003,
+    "pending": 4935,
+    "processing": 0,
     "eligible": 208,
-    "review": 16019,
-    "rejected": 6718,
+    "review": 16025,
+    "rejected": 6720,
     "errors": 47,
     "ready": 139,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCkSiXQw7_a9DqpfusfiGFNA",
-        "name": "치과강남케이탑",
-        "query": "강남 치과의원"
-      },
-      {
-        "channel_id": "UC4Qv1IkLa2QgAaDeILgy47A",
-        "name": "김가은 한의사의 오늘치유",
-        "query": "강남 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2287,
+  "region_observed": 2290,
   "channels_discovered": 27937,
-  "channels_observed": 22948,
+  "channels_observed": 22956,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 3039,
+      "observed": 3047,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3044,
+      "classified": 3052,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2526,
+      "observed": 2527,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2527,
+      "classified": 2528,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2287,
+      "observed": 2290,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2288,
+      "classified": 2291,
       "classification_errors": 1,
       "jobs": [
         {
