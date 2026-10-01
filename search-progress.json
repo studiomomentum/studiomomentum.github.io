@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:04:31.757808+00:00",
+  "updated_at": "2026-10-01T05:05:33.372221+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24813,
-    "pending": 3123,
-    "processing": 2,
+    "processed": 24828,
+    "pending": 3109,
+    "processing": 1,
     "eligible": 224,
-    "review": 17256,
-    "rejected": 7275,
+    "review": 17268,
+    "rejected": 7278,
     "errors": 55,
-    "ready": 147,
+    "ready": 148,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCJyG-XYjwAx-Fc8o93NteoQ",
-        "name": "Pilatorial",
-        "query": "강남 필라테스"
-      },
-      {
-        "channel_id": "UCfizy9BrBLFSSgVcuiZwRjA",
-        "name": "다사남TV",
+        "channel_id": "UCxaH-ytzmu7amwuQerQpZhA",
+        "name": "rockpunk",
         "query": "강남 필라테스"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2547,
+  "region_observed": 2552,
   "channels_discovered": 27937,
-  "channels_observed": 24758,
+  "channels_observed": 24773,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5003,
-      "observed": 4849,
+      "observed": 4864,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 4862,
+      "classified": 4877,
       "classification_errors": 13,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 2951,
+      "observed": 2955,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2952,
+      "classified": 2956,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2547,
+      "observed": 2552,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2548,
+      "classified": 2553,
       "classification_errors": 1,
       "jobs": [
         {
