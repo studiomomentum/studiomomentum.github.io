@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:14:35.591995+00:00",
+  "updated_at": "2026-10-01T05:15:36.817609+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 24960,
-    "pending": 2977,
-    "processing": 1,
+    "processed": 24973,
+    "pending": 2963,
+    "processing": 2,
     "eligible": 225,
-    "review": 17347,
-    "rejected": 7327,
+    "review": 17356,
+    "rejected": 7331,
     "errors": 58,
     "ready": 146,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCW8-vY6DwHIY94VM_jtUb3Q",
-        "name": "시험왕 이형재",
+        "channel_id": "UCMv7hVTjBr0H4noHoOuqBJw",
+        "name": "캐내네 스피치",
+        "query": "서초 세무사"
+      },
+      {
+        "channel_id": "UCk-ya_ZutaR81iOXa3Rt0mQ",
+        "name": "한국전문대학교육협의회",
         "query": "서초 세무사"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2595,
+  "region_observed": 2600,
   "channels_discovered": 27937,
-  "channels_observed": 24902,
+  "channels_observed": 24915,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2389,7 +2394,7 @@
       "channels": 5003,
       "observed": 4987,
       "observation_errors": 16,
-      "classified_at": null,
+      "classified_at": "2026-10-01T05:14:56.591494+00:00",
       "classified": 5003,
       "classification_errors": 16,
       "jobs": [
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3028,
+      "observed": 3041,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3029,
+      "classified": 3042,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2595,
+      "observed": 2600,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2596,
+      "classified": 2601,
       "classification_errors": 1,
       "jobs": [
         {
