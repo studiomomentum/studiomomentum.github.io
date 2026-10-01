@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T05:50:41.405618+00:00",
+  "updated_at": "2026-10-01T05:51:43.427008+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25421,
-    "pending": 2515,
+    "processed": 25431,
+    "pending": 2505,
     "processing": 2,
     "eligible": 240,
-    "review": 17700,
-    "rejected": 7419,
+    "review": 17708,
+    "rejected": 7421,
     "errors": 59,
     "ready": 157,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCoDmztfkfbB3rtEa62BoUvw",
-        "name": "No.1 데프댄스스쿨 DEF DANCE SKOOL",
-        "query": "서초 학원"
+        "channel_id": "UCknW-i7lmZuddOAK4lA7CNA",
+        "name": "스포테이너즈 (SPORTAINERS)",
+        "query": "서초 한방병원"
       },
       {
-        "channel_id": "UCLsdRS4_PukZckLpZ9-86ow",
-        "name": "유림기 VLOG",
-        "query": "서초 학원"
+        "channel_id": "UClPxtl4GUerBZLPQHaLqP_w",
+        "name": "스티브집스",
+        "query": "서초 한방병원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2691,
+  "region_observed": 2695,
   "channels_discovered": 27937,
-  "channels_observed": 25362,
+  "channels_observed": 25372,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 3488,
+      "observed": 3498,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3490,
+      "classified": 3500,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2691,
+      "observed": 2695,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2693,
+      "classified": 2697,
       "classification_errors": 2,
       "jobs": [
         {
