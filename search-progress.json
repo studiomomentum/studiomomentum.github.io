@@ -2,7 +2,7 @@
   "sweep_id": "full-20260927-429",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-01T06:32:02.301106+00:00",
+  "updated_at": "2026-10-01T06:33:04.599529+00:00",
   "run_id": "36806314399",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 27938,
-    "processed": 25955,
-    "pending": 1983,
-    "processing": 0,
+    "processed": 25974,
+    "pending": 1963,
+    "processing": 1,
     "eligible": 242,
-    "review": 18094,
-    "rejected": 7556,
+    "review": 18105,
+    "rejected": 7564,
     "errors": 60,
     "ready": 156,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCksjyFcVX8SQ7GqL_B0_g1Q",
+        "name": "라이즈성형외과",
+        "query": "서초 성형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4300,
-  "region_observed": 2820,
+  "region_observed": 2823,
   "channels_discovered": 27937,
-  "channels_observed": 25895,
+  "channels_observed": 25914,
   "search_pages": 10085,
   "search_results_read": 202917,
   "query_errors": {},
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4750,
-      "observed": 4021,
+      "observed": 4040,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4024,
+      "classified": 4043,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4300,
-      "observed": 2820,
+      "observed": 2823,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2823,
+      "classified": 2826,
       "classification_errors": 3,
       "jobs": [
         {
