@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:02:41.069083+00:00",
+  "updated_at": "2026-10-03T06:03:42.589611+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "동탄 피부과",
@@ -13,9 +13,9 @@
     "region": "동탄"
   },
   "classification": {
-    "total": 28141,
+    "total": 28146,
     "processed": 3,
-    "pending": 28138,
+    "pending": 28143,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 57,
   "region_queries_completed": 17,
-  "region_channels": 2279,
+  "region_channels": 2435,
   "region_observed": 1,
-  "channels_discovered": 5942,
+  "channels_discovered": 6081,
   "channels_observed": 3,
-  "search_pages": 1406,
-  "search_results_read": 26376,
+  "search_pages": 1434,
+  "search_results_read": 26935,
   "query_errors": {},
   "regions": [
     {
@@ -332,7 +332,7 @@
       "name": "동탄",
       "queries_completed": 17,
       "queries_total": 40,
-      "channels": 2279,
+      "channels": 2435,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -461,16 +461,16 @@
         {
           "name": "피부과",
           "status": "running",
-          "channels": 123,
-          "results_read": 240,
-          "pages": 12
+          "channels": 218,
+          "results_read": 520,
+          "pages": 26
         },
         {
           "name": "성형외과",
           "status": "running",
-          "channels": 86,
-          "results_read": 180,
-          "pages": 9
+          "channels": 224,
+          "results_read": 459,
+          "pages": 23
         },
         {
           "name": "안과",
