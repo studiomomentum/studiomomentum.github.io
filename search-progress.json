@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:57:34.877926+00:00",
+  "updated_at": "2026-10-03T08:58:36.386724+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 재활의학과",
-    "분당 마취통증의학과"
+    "분당 마취통증의학과",
+    "분당 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29423,
+    "total": 29424,
     "processed": 3,
-    "pending": 29420,
+    "pending": 29421,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 262,
-  "region_queries_completed": 22,
-  "region_channels": 2272,
+  "queries_completed": 263,
+  "region_queries_completed": 23,
+  "region_channels": 2345,
   "region_observed": 1,
-  "channels_discovered": 18606,
+  "channels_discovered": 18632,
   "channels_observed": 3,
-  "search_pages": 6236,
-  "search_results_read": 116511,
+  "search_pages": 6264,
+  "search_results_read": 117035,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 22,
+      "queries_completed": 23,
       "queries_total": 40,
-      "channels": 2272,
+      "channels": 2345,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1960,24 +1960,24 @@
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 89,
-          "results_read": 298,
-          "pages": 15
+          "status": "completed",
+          "channels": 127,
+          "results_read": 482,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
           "status": "running",
-          "channels": 64,
-          "results_read": 200,
-          "pages": 10
+          "channels": 148,
+          "results_read": 480,
+          "pages": 24
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 12,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "산부인과",
