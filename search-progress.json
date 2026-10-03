@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:27:26.790829+00:00",
+  "updated_at": "2026-10-03T07:28:30.265147+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 세무회계",
@@ -13,9 +13,9 @@
     "region": "용인"
   },
   "classification": {
-    "total": 28856,
+    "total": 28858,
     "processed": 3,
-    "pending": 28853,
+    "pending": 28855,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 162,
   "region_queries_completed": 2,
-  "region_channels": 165,
+  "region_channels": 278,
   "region_observed": 0,
-  "channels_discovered": 13658,
+  "channels_discovered": 13674,
   "channels_observed": 3,
-  "search_pages": 3757,
-  "search_results_read": 70185,
+  "search_pages": 3787,
+  "search_results_read": 70772,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 2,
       "queries_total": 40,
-      "channels": 165,
+      "channels": 278,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1235,16 +1235,16 @@
         {
           "name": "세무회계",
           "status": "running",
-          "channels": 24,
-          "results_read": 154,
-          "pages": 8
+          "channels": 79,
+          "results_read": 452,
+          "pages": 23
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 25,
-          "results_read": 133,
-          "pages": 7
+          "channels": 106,
+          "results_read": 422,
+          "pages": 22
         },
         {
           "name": "법무법인",
