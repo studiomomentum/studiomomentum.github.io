@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:12:03.121778+00:00",
+  "updated_at": "2026-10-03T11:13:05.321484+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "송파 치과",
@@ -13,9 +13,9 @@
     "region": "송파"
   },
   "classification": {
-    "total": 30278,
+    "total": 30280,
     "processed": 3,
-    "pending": 30275,
+    "pending": 30277,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 406,
   "region_queries_completed": 6,
-  "region_channels": 639,
+  "region_channels": 779,
   "region_observed": 0,
-  "channels_discovered": 27057,
+  "channels_discovered": 27096,
   "channels_observed": 3,
-  "search_pages": 9792,
-  "search_results_read": 182991,
+  "search_pages": 9820,
+  "search_results_read": 183541,
   "query_errors": {},
   "regions": [
     {
@@ -2969,7 +2969,7 @@
       "name": "송파",
       "queries_completed": 6,
       "queries_total": 40,
-      "channels": 639,
+      "channels": 779,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -3021,16 +3021,16 @@
         {
           "name": "치과",
           "status": "running",
-          "channels": 41,
-          "results_read": 58,
-          "pages": 3
+          "channels": 139,
+          "results_read": 331,
+          "pages": 17
         },
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 14,
-          "results_read": 20,
-          "pages": 1
+          "channels": 111,
+          "results_read": 297,
+          "pages": 15
         },
         {
           "name": "한의원",
