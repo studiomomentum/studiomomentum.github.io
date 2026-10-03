@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:54:23.598962+00:00",
+  "updated_at": "2026-10-03T07:55:25.820345+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 변리사",
-    "용인 관세사"
+    "용인 감정평가사",
+    "용인 손해사정사"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 192,
-  "region_queries_completed": 32,
-  "region_channels": 3381,
+  "queries_completed": 194,
+  "region_queries_completed": 34,
+  "region_channels": 3589,
   "region_observed": 0,
-  "channels_discovered": 14601,
+  "channels_discovered": 14698,
   "channels_observed": 3,
-  "search_pages": 4505,
-  "search_results_read": 84143,
+  "search_pages": 4535,
+  "search_results_read": 84682,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 32,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 3381,
+      "channels": 3589,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1444,31 +1444,31 @@
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 178,
-          "results_read": 374,
-          "pages": 19
+          "status": "completed",
+          "channels": 208,
+          "results_read": 446,
+          "pages": 24
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 73,
-          "results_read": 140,
-          "pages": 7
+          "status": "completed",
+          "channels": 204,
+          "results_read": 370,
+          "pages": 20
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 112,
+          "results_read": 197,
+          "pages": 10
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "건축사사무소",
