@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:36:05.578281+00:00",
+  "updated_at": "2026-10-03T11:37:08.186274+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 노무사",
-    "송파 노무법인"
+    "송파 법무사",
+    "송파 변리사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30391,
+    "total": 30392,
     "processed": 3,
-    "pending": 30388,
+    "pending": 30389,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 430,
-  "region_queries_completed": 30,
-  "region_channels": 3322,
+  "queries_completed": 431,
+  "region_queries_completed": 31,
+  "region_channels": 3357,
   "region_observed": 1,
-  "channels_discovered": 27913,
+  "channels_discovered": 27918,
   "channels_observed": 3,
-  "search_pages": 10424,
-  "search_results_read": 196577,
+  "search_pages": 10452,
+  "search_results_read": 197099,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 30,
+      "queries_completed": 31,
       "queries_total": 40,
-      "channels": 3322,
+      "channels": 3357,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3188,24 +3188,24 @@
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 42,
-          "results_read": 257,
-          "pages": 13
+          "status": "completed",
+          "channels": 61,
+          "results_read": 479,
+          "pages": 26
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 48,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 8,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "관세사",
