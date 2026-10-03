@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:47:06.011264+00:00",
+  "updated_at": "2026-10-03T10:48:09.368273+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 정형외과",
-    "서초 이비인후과"
+    "서초 이비인후과",
+    "서초 재활의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30226,
+    "total": 30232,
     "processed": 3,
-    "pending": 30223,
+    "pending": 30229,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 380,
-  "region_queries_completed": 20,
-  "region_channels": 3198,
+  "queries_completed": 381,
+  "region_queries_completed": 21,
+  "region_channels": 3297,
   "region_observed": 1,
-  "channels_discovered": 26243,
+  "channels_discovered": 26274,
   "channels_observed": 3,
-  "search_pages": 9137,
-  "search_results_read": 170781,
+  "search_pages": 9165,
+  "search_results_read": 171310,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 20,
+      "queries_completed": 21,
       "queries_total": 40,
-      "channels": 3198,
+      "channels": 3297,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2825,24 +2825,24 @@
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 109,
-          "results_read": 315,
-          "pages": 16
+          "status": "completed",
+          "channels": 138,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "이비인후과",
           "status": "running",
-          "channels": 13,
-          "results_read": 40,
-          "pages": 2
+          "channels": 74,
+          "results_read": 316,
+          "pages": 16
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 30,
+          "results_read": 79,
+          "pages": 4
         },
         {
           "name": "마취통증의학과",
