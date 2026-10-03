@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:27:35.296770+00:00",
+  "updated_at": "2026-10-03T05:28:37.281214+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 피부과",
-    "수원 성형외과"
+    "수원 안과",
+    "수원 정형외과"
   ],
   "search_stage": {
     "status": "running",
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 17,
-  "region_queries_completed": 17,
-  "region_channels": 1715,
+  "queries_completed": 19,
+  "region_queries_completed": 19,
+  "region_channels": 1807,
   "region_observed": 1,
-  "channels_discovered": 1715,
+  "channels_discovered": 1807,
   "channels_observed": 1,
-  "search_pages": 430,
-  "search_results_read": 8052,
+  "search_pages": 460,
+  "search_results_read": 8592,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 17,
+      "queries_completed": 19,
       "queries_total": 40,
-      "channels": 1715,
+      "channels": 1807,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -167,31 +167,31 @@
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 25,
-          "results_read": 419,
-          "pages": 21
+          "status": "completed",
+          "channels": 32,
+          "results_read": 576,
+          "pages": 30
         },
         {
           "name": "성형외과",
-          "status": "running",
-          "channels": 70,
-          "results_read": 376,
-          "pages": 19
+          "status": "completed",
+          "channels": 94,
+          "results_read": 499,
+          "pages": 27
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 37,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "이비인후과",
