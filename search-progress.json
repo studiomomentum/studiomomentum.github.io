@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:18:16.335599+00:00",
+  "updated_at": "2026-10-03T09:19:17.675928+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 법률사무소",
-    "판교 치과"
+    "판교 치과의원",
+    "판교 한의원"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 286,
-  "region_queries_completed": 6,
-  "region_channels": 1138,
+  "queries_completed": 287,
+  "region_queries_completed": 7,
+  "region_channels": 1260,
   "region_observed": 0,
-  "channels_discovered": 20093,
+  "channels_discovered": 20133,
   "channels_observed": 3,
-  "search_pages": 6801,
-  "search_results_read": 127070,
+  "search_pages": 6829,
+  "search_results_read": 127597,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 6,
+      "queries_completed": 7,
       "queries_total": 40,
-      "channels": 1138,
+      "channels": 1260,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2141,24 +2141,24 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 5,
-          "results_read": 40,
-          "pages": 2
+          "status": "completed",
+          "channels": 17,
+          "results_read": 150,
+          "pages": 9
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 60,
+          "results_read": 277,
+          "pages": 14
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 69,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "한방병원",
