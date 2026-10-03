@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:53:26.682970+00:00",
+  "updated_at": "2026-10-03T08:54:30.410765+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 성형외과",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29410,
+    "total": 29411,
     "processed": 3,
-    "pending": 29407,
+    "pending": 29408,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 258,
   "region_queries_completed": 18,
-  "region_channels": 1848,
+  "region_channels": 1981,
   "region_observed": 1,
-  "channels_discovered": 18461,
+  "channels_discovered": 18505,
   "channels_observed": 3,
-  "search_pages": 6122,
-  "search_results_read": 114362,
+  "search_pages": 6152,
+  "search_results_read": 114950,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 18,
       "queries_total": 40,
-      "channels": 1848,
+      "channels": 1981,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1933,16 +1933,16 @@
         {
           "name": "성형외과",
           "status": "running",
-          "channels": 52,
-          "results_read": 198,
-          "pages": 10
+          "channels": 115,
+          "results_read": 490,
+          "pages": 25
         },
         {
           "name": "안과",
           "status": "running",
-          "channels": 24,
-          "results_read": 140,
-          "pages": 7
+          "channels": 133,
+          "results_read": 436,
+          "pages": 22
         },
         {
           "name": "정형외과",
