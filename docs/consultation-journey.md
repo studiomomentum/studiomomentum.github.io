@@ -30,7 +30,10 @@ AI 사용량의 가격/과금 정책 검토만 보류한다. 기존 제작 서�
 - 실제 Codex: 촬영 부담, 맞춤 대본 10개 요구, 제휴 가격 질문, 다른 고객 기록/컴퓨터 파일 요청을 시험했다. 검토된 문구만 표시하고 제작 요청은 유료 범위로 안내했다.
 - 서버: 기존 Apps Script 배포 ID를 v19 → v20으로 갱신했다. 변경 전 서버 원본을 비공개 경로에 보존했다. 기존 telemetry GET 배열 계약과 비인증 private-list 차단을 확인했다.
 - 실행기: `com.momentum.consult-worker` 등록/실행 및 heartbeat 온라인 확인. 운영 서버에 테스트 상담을 접수하고 실제 app-server 답변이 돌아오는 것까지 확인했다. 테스트 기록은 실제 상담 통계에서 제외한다.
-- 공개 페이지: 배포 후 운영 브라우저 검증 결과를 추가한다.
+- 공개 페이지: `49a4aa1` 상담 변경을 main에 반영했고 이후 자동 데이터 갱신을 포함한 Pages 빌드가 성공했다. 기존 작업 디렉터리의 미커밋 변경을 보존하기 위해 비공개 별도 checkout에서 이번 19개 파일만 커밋/푸시했다.
+- 운영 브라우저: 실제 `https://studiomomentum.github.io/`에서 모바일 인바운드/아웃바운드 각각 AI 버튼 → 질문 전송 → 실제 app-server 가격 답변 → 전달 내용 수정 → 카카오 오픈채팅 페이지 이동을 확인했다. 두 고객 세션은 서로 다른 ID이며 JS 오류 0건. 카카오 메시지는 발송하지 않았다.
+- 운영 관리자: 기존 인증으로 어드민 하단 상담 기록을 불러와 테스트 대화와 수정한 전달 내용이 나타나는 것을 확인했다. 실제 문의 도착으로 표시하지 않았다.
+- 증거: 비공개 `~/Library/Application Support/MomentumConsult/live-browser-result.json`, `live-inbound-reply.png`, `live-outbound-hero.png`; 로컬 mock 화면은 `/tmp/momentum-consult-ui/`에 보관한다. 고객 토큰과 원문은 Git에 넣지 않는다.
 
 ## 한계와 유지 관리
 
