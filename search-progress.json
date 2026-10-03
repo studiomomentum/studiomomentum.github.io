@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:40:01.822627+00:00",
+  "updated_at": "2026-10-03T05:41:03.109466+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "수원 법무사",
@@ -13,9 +13,9 @@
     "region": "수원"
   },
   "classification": {
-    "total": 28061,
+    "total": 28062,
     "processed": 2,
-    "pending": 28059,
+    "pending": 28060,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,19 +27,19 @@
   },
   "queries_completed": 31,
   "region_queries_completed": 31,
-  "region_channels": 3062,
+  "region_channels": 3125,
   "region_observed": 2,
-  "channels_discovered": 3062,
+  "channels_discovered": 3125,
   "channels_observed": 2,
-  "search_pages": 780,
-  "search_results_read": 14619,
+  "search_pages": 808,
+  "search_results_read": 15150,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
       "queries_completed": 31,
       "queries_total": 40,
-      "channels": 3062,
+      "channels": 3125,
       "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
@@ -266,16 +266,16 @@
         {
           "name": "법무사",
           "status": "running",
-          "channels": 57,
-          "results_read": 158,
-          "pages": 8
+          "channels": 88,
+          "results_read": 409,
+          "pages": 22
         },
         {
           "name": "변리사",
           "status": "running",
-          "channels": 43,
-          "results_read": 120,
-          "pages": 6
+          "channels": 117,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "관세사",
