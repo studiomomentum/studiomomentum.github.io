@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:20:12.569867+00:00",
+  "updated_at": "2026-10-03T07:21:14.381843+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 관세사",
-    "평택 감정평가사"
+    "평택 감정평가사",
+    "평택 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28736,
+    "total": 28747,
     "processed": 3,
-    "pending": 28733,
+    "pending": 28744,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 153,
-  "region_queries_completed": 33,
-  "region_channels": 4157,
+  "queries_completed": 154,
+  "region_queries_completed": 34,
+  "region_channels": 4356,
   "region_observed": 1,
-  "channels_discovered": 13129,
+  "channels_discovered": 13247,
   "channels_observed": 3,
-  "search_pages": 3562,
-  "search_results_read": 66558,
+  "search_pages": 3590,
+  "search_results_read": 67082,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 33,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 4157,
+      "channels": 4356,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1158,24 +1158,24 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 120,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 192,
+          "results_read": 274,
+          "pages": 15
         },
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 36,
-          "results_read": 60,
-          "pages": 3
+          "channels": 211,
+          "results_read": 339,
+          "pages": 17
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 90,
+          "results_read": 151,
+          "pages": 8
         },
         {
           "name": "건축사사무소",
