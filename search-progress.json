@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:06:39.933401+00:00",
+  "updated_at": "2026-10-03T07:07:42.337400+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 행정사사무소",
-    "평택 피부과"
+    "평택 안과",
+    "평택 정형외과"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28640,
+    "total": 28643,
     "processed": 3,
-    "pending": 28637,
+    "pending": 28640,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 136,
-  "region_queries_completed": 16,
-  "region_channels": 2408,
+  "queries_completed": 139,
+  "region_queries_completed": 19,
+  "region_channels": 2509,
   "region_observed": 1,
-  "channels_discovered": 12118,
+  "channels_discovered": 12175,
   "channels_observed": 3,
-  "search_pages": 3186,
-  "search_results_read": 59541,
+  "search_pages": 3214,
+  "search_results_read": 60023,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 16,
+      "queries_completed": 19,
       "queries_total": 40,
-      "channels": 2408,
+      "channels": 2509,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1039,38 +1039,38 @@
         },
         {
           "name": "행정사사무소",
-          "status": "running",
-          "channels": 142,
-          "results_read": 459,
-          "pages": 23
+          "status": "completed",
+          "channels": 160,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 162,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 227,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 55,
+          "results_read": 140,
+          "pages": 8
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 12,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 23,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "이비인후과",
