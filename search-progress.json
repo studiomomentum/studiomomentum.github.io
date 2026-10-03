@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:08:54.411189+00:00",
+  "updated_at": "2026-10-03T08:09:56.066495+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "화성 한의원",
@@ -13,9 +13,9 @@
     "region": "화성"
   },
   "classification": {
-    "total": 29033,
+    "total": 29048,
     "processed": 3,
-    "pending": 29030,
+    "pending": 29045,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 208,
   "region_queries_completed": 8,
-  "region_channels": 1448,
+  "region_channels": 1626,
   "region_observed": 1,
-  "channels_discovered": 15518,
+  "channels_discovered": 15610,
   "channels_observed": 3,
-  "search_pages": 4901,
-  "search_results_read": 91548,
+  "search_pages": 4929,
+  "search_results_read": 92090,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 8,
       "queries_total": 40,
-      "channels": 1448,
+      "channels": 1626,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1570,16 +1570,16 @@
         {
           "name": "한의원",
           "status": "running",
-          "channels": 136,
-          "results_read": 240,
-          "pages": 12
+          "channels": 265,
+          "results_read": 506,
+          "pages": 26
         },
         {
           "name": "한방병원",
           "status": "running",
-          "channels": 61,
-          "results_read": 220,
-          "pages": 11
+          "channels": 146,
+          "results_read": 496,
+          "pages": 25
         },
         {
           "name": "학원",
