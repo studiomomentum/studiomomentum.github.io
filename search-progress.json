@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:57:28.761750+00:00",
+  "updated_at": "2026-10-03T07:58:32.179094+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 건축사사무소",
-    "용인 심리상담센터"
+    "용인 필라테스",
+    "용인 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28995,
+    "total": 28996,
     "processed": 3,
-    "pending": 28992,
+    "pending": 28993,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 196,
-  "region_queries_completed": 36,
-  "region_channels": 3948,
+  "queries_completed": 198,
+  "region_queries_completed": 38,
+  "region_channels": 4139,
   "region_observed": 0,
-  "channels_discovered": 14811,
+  "channels_discovered": 14857,
   "channels_observed": 3,
-  "search_pages": 4591,
-  "search_results_read": 85737,
+  "search_pages": 4621,
+  "search_results_read": 86288,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 3948,
+      "channels": 4139,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1472,31 +1472,31 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 159,
-          "results_read": 419,
-          "pages": 21
+          "status": "completed",
+          "channels": 188,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 127,
-          "results_read": 239,
-          "pages": 12
+          "status": "completed",
+          "channels": 242,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 81,
+          "results_read": 199,
+          "pages": 10
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 14,
+          "results_read": 20,
+          "pages": 1
         }
       ]
     },
