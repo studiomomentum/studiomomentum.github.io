@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:35:51.888751+00:00",
+  "updated_at": "2026-10-03T05:36:54.200846+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "수원 동물병원",
@@ -27,19 +27,19 @@
   },
   "queries_completed": 27,
   "region_queries_completed": 27,
-  "region_channels": 2490,
+  "region_channels": 2654,
   "region_observed": 1,
-  "channels_discovered": 2490,
+  "channels_discovered": 2654,
   "channels_observed": 1,
-  "search_pages": 662,
-  "search_results_read": 12371,
+  "search_pages": 692,
+  "search_results_read": 12970,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
       "queries_completed": 27,
       "queries_total": 40,
-      "channels": 2490,
+      "channels": 2654,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -238,16 +238,16 @@
         {
           "name": "동물병원",
           "status": "running",
-          "channels": 41,
-          "results_read": 60,
-          "pages": 3
+          "channels": 164,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "의원",
           "status": "running",
-          "channels": 10,
-          "results_read": 60,
-          "pages": 3
+          "channels": 106,
+          "results_read": 359,
+          "pages": 18
         },
         {
           "name": "노무사",
