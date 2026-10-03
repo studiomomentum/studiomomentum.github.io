@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:00:41.455298+00:00",
+  "updated_at": "2026-10-03T11:01:43.337562+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "서초 손해사정사",
@@ -13,9 +13,9 @@
     "region": "서초"
   },
   "classification": {
-    "total": 30252,
+    "total": 30256,
     "processed": 3,
-    "pending": 30249,
+    "pending": 30253,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 395,
   "region_queries_completed": 35,
-  "region_channels": 4218,
+  "region_channels": 4358,
   "region_observed": 1,
-  "channels_discovered": 26622,
+  "channels_discovered": 26677,
   "channels_observed": 3,
-  "search_pages": 9499,
-  "search_results_read": 177513,
+  "search_pages": 9527,
+  "search_results_read": 178061,
   "query_errors": {},
   "regions": [
     {
@@ -2676,7 +2676,7 @@
       "name": "서초",
       "queries_completed": 35,
       "queries_total": 40,
-      "channels": 4218,
+      "channels": 4358,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2931,16 +2931,16 @@
         {
           "name": "손해사정사",
           "status": "running",
-          "channels": 18,
-          "results_read": 78,
-          "pages": 4
+          "channels": 49,
+          "results_read": 354,
+          "pages": 18
         },
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 123,
+          "results_read": 272,
+          "pages": 14
         },
         {
           "name": "심리상담센터",
