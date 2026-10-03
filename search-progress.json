@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:49:13.572516+00:00",
+  "updated_at": "2026-10-03T07:50:14.980256+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 비뇨기과",
-    "용인 동물병원"
+    "용인 의원",
+    "용인 노무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28963,
+    "total": 28968,
     "processed": 3,
-    "pending": 28960,
+    "pending": 28965,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 186,
-  "region_queries_completed": 26,
-  "region_channels": 2723,
+  "queries_completed": 188,
+  "region_queries_completed": 28,
+  "region_channels": 2847,
   "region_observed": 0,
-  "channels_discovered": 14403,
+  "channels_discovered": 14443,
   "channels_observed": 3,
-  "search_pages": 4361,
-  "search_results_read": 81439,
+  "search_pages": 4389,
+  "search_results_read": 81937,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 26,
+      "queries_completed": 28,
       "queries_total": 40,
-      "channels": 2723,
+      "channels": 2847,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1402,28 +1402,28 @@
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 60,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 72,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 131,
-          "results_read": 275,
-          "pages": 14
+          "status": "completed",
+          "channels": 239,
+          "results_read": 525,
+          "pages": 28
         },
         {
           "name": "의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 200,
+          "pages": 10
         },
         {
           "name": "노무사",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
