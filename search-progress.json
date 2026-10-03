@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:11:00.016003+00:00",
+  "updated_at": "2026-10-03T09:12:02.171336+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 필라테스",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29496,
+    "total": 29499,
     "processed": 3,
-    "pending": 29493,
+    "pending": 29496,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 278,
   "region_queries_completed": 38,
-  "region_channels": 4307,
-  "region_observed": 1,
-  "channels_discovered": 19500,
+  "region_channels": 4420,
+  "region_observed": 2,
+  "channels_discovered": 19546,
   "channels_observed": 3,
-  "search_pages": 6604,
-  "search_results_read": 123377,
+  "search_pages": 6632,
+  "search_results_read": 123935,
   "query_errors": {},
   "regions": [
     {
@@ -1797,11 +1797,11 @@
       "name": "분당",
       "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4307,
-      "observed": 1,
+      "channels": 4420,
+      "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1,
+      "classified": 2,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2073,16 +2073,16 @@
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 69,
-          "results_read": 180,
-          "pages": 9
+          "channels": 138,
+          "results_read": 459,
+          "pages": 23
         },
         {
           "name": "중고차",
           "status": "running",
-          "channels": 42,
-          "results_read": 99,
-          "pages": 5
+          "channels": 94,
+          "results_read": 378,
+          "pages": 19
         }
       ]
     },
