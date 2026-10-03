@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:46:12.228871+00:00",
+  "updated_at": "2026-10-03T08:47:13.436365+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 학원",
-    "분당 입시학원"
+    "분당 어학원",
+    "분당 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29382,
+    "total": 29395,
     "processed": 3,
-    "pending": 29379,
+    "pending": 29392,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 250,
-  "region_queries_completed": 10,
-  "region_channels": 1039,
+  "queries_completed": 252,
+  "region_queries_completed": 12,
+  "region_channels": 1155,
   "region_observed": 1,
-  "channels_discovered": 18159,
+  "channels_discovered": 18202,
   "channels_observed": 3,
-  "search_pages": 5922,
-  "search_results_read": 110620,
+  "search_pages": 5950,
+  "search_results_read": 111125,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 10,
+      "queries_completed": 12,
       "queries_total": 40,
-      "channels": 1039,
+      "channels": 1155,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1876,31 +1876,31 @@
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 71,
-          "results_read": 317,
-          "pages": 16
+          "status": "completed",
+          "channels": 125,
+          "results_read": 546,
+          "pages": 29
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 65,
-          "results_read": 300,
-          "pages": 15
+          "status": "completed",
+          "channels": 133,
+          "results_read": 516,
+          "pages": 27
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 12,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "부동산중개",
