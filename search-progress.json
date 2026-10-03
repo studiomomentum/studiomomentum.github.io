@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:09:57.800698+00:00",
+  "updated_at": "2026-10-03T09:11:00.016003+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 건축사사무소",
-    "분당 심리상담센터"
+    "분당 필라테스",
+    "분당 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29493,
+    "total": 29496,
     "processed": 3,
-    "pending": 29490,
+    "pending": 29493,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 276,
-  "region_queries_completed": 36,
-  "region_channels": 4137,
+  "queries_completed": 278,
+  "region_queries_completed": 38,
+  "region_channels": 4307,
   "region_observed": 1,
-  "channels_discovered": 19421,
+  "channels_discovered": 19500,
   "channels_observed": 3,
-  "search_pages": 6576,
-  "search_results_read": 122871,
+  "search_pages": 6604,
+  "search_results_read": 123377,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4137,
+      "channels": 4307,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2058,31 +2058,31 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 188,
-          "results_read": 415,
-          "pages": 21
+          "status": "completed",
+          "channels": 226,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 230,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 296,
+          "results_read": 549,
+          "pages": 29
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 69,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 99,
+          "pages": 5
         }
       ]
     },
