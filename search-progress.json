@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:09:46.102608+00:00",
+  "updated_at": "2026-10-03T07:10:48.670644+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 이비인후과",
@@ -13,9 +13,9 @@
     "region": "평택"
   },
   "classification": {
-    "total": 28650,
+    "total": 28651,
     "processed": 3,
-    "pending": 28647,
+    "pending": 28648,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 141,
   "region_queries_completed": 21,
-  "region_channels": 2680,
+  "region_channels": 2794,
   "region_observed": 1,
-  "channels_discovered": 12253,
+  "channels_discovered": 12313,
   "channels_observed": 3,
-  "search_pages": 3270,
-  "search_results_read": 61072,
+  "search_pages": 3300,
+  "search_results_read": 61671,
   "query_errors": {},
   "regions": [
     {
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 21,
       "queries_total": 40,
-      "channels": 2680,
+      "channels": 2794,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1075,16 +1075,16 @@
         {
           "name": "이비인후과",
           "status": "running",
-          "channels": 24,
-          "results_read": 120,
-          "pages": 6
+          "channels": 131,
+          "results_read": 420,
+          "pages": 21
         },
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 45,
-          "results_read": 94,
-          "pages": 5
+          "channels": 155,
+          "results_read": 393,
+          "pages": 20
         },
         {
           "name": "마취통증의학과",
