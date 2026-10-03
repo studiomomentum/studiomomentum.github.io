@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:13:11.022811+00:00",
+  "updated_at": "2026-10-03T05:14:12.217708+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 세무사",
-    "수원 세무회계"
+    "수원 세무회계",
+    "수원 변호사"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 27940,
+    "total": 27943,
     "processed": 0,
-    "pending": 27940,
+    "pending": 27943,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 1,
-  "region_queries_completed": 1,
-  "region_channels": 83,
+  "queries_completed": 2,
+  "region_queries_completed": 2,
+  "region_channels": 166,
   "region_observed": 0,
-  "channels_discovered": 83,
+  "channels_discovered": 166,
   "channels_observed": 0,
-  "search_pages": 28,
-  "search_results_read": 525,
+  "search_pages": 56,
+  "search_results_read": 1047,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 1,
+      "queries_completed": 2,
       "queries_total": 40,
-      "channels": 83,
+      "channels": 166,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -48,10 +48,10 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
-          "channels": 42,
-          "results_read": 277,
-          "pages": 14
+          "status": "completed",
+          "channels": 89,
+          "results_read": 503,
+          "pages": 27
         },
         {
           "name": "세무법인",
@@ -63,16 +63,16 @@
         {
           "name": "세무회계",
           "status": "running",
-          "channels": 39,
-          "results_read": 98,
-          "pages": 5
+          "channels": 76,
+          "results_read": 374,
+          "pages": 19
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 13,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "법무법인",
