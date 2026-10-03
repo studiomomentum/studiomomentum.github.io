@@ -78,3 +78,8 @@
 기존 어드민의 콘텐츠 관리에서 주제 선택·생성 요청·매체별 편집·버전 저장·검수를 지원합니다. 비공개 초안은 기존 서버 세션을 검증한 뒤 `server/apps-script/ContentStore.gs`가 별도 Drive 파일에 저장합니다. 기존 telemetry·타깃 데이터와 분리합니다. 로컬 `automation/blog/worker.mjs`가 기존 ChatGPT 로그인 CLI로 생성 요청을 처리하며 플랫폼 API 키를 요구하지 않습니다.
 
 2026-09-29 Apps Script v9와 콘텐츠 관리 웹 화면을 배포했습니다. 로컬 실행기를 연결하고 사용자 선택 주제로 실제 AI 초안 3개를 운영 서버에 저장했습니다. 플랫폼 발행은 아직 미구현입니다. 생성·편집 UI 테스트의 fixture를 AI 생성 또는 게시 결과로 해석하지 않습니다. [실행·복구 절차](automation/blog/README.md), [진행·검증 범위](docs/blog-automation-progress.md)를 확인하세요.
+
+
+### AI 제작 상담 및 상담 진입 개선 (2026-10-03)
+
+인바운드·아웃바운드의 주요 CTA는 결제 없는 AI 상담과 PD 직접 상담입니다. 제작 가격 차등은 유지합니다. 별도 Codex app-server 실행기가 비공개 상담 요청을 처리하고, 어드민 하단에서 고객 대화 및 실제 문의 도착을 확인합니다. [구현·검증 기록](docs/consultation-journey.md), [운영·복구 안내](automation/consult/README.md)를 참조하세요.

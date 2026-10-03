@@ -71,6 +71,10 @@ function doPost(e) {
     const body = e && e.postData && e.postData.contents;
     if (typeof body === 'string' && body.length <= MAX_BODY_BYTES) {
       const request = JSON.parse(body);
+      if (request && (request.route === 'momentum_consult' || request.route === 'momentum_consult_worker')) {
+        if (Utilities.newBlob(body).getBytes().length > 16000) return jsonResponse({ok:false,error:'CONSULT_INVALID_REQUEST'});
+        return jsonResponse(request.route === 'momentum_consult' ? consultPublic_(request) : consultWorker_(request));
+      }
       if (request && request.route === 'momentum_admin') {
         if (Utilities.newBlob(body).getBytes().length > MAX_BODY_BYTES) return jsonResponse({ok:false,error:'REQUEST_TOO_LARGE'});
         return jsonResponse(adminRoute_(request));
