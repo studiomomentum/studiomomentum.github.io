@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:26:24.519722+00:00",
+  "updated_at": "2026-10-03T06:27:26.169592+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "오산 치과의원",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 87,
   "region_queries_completed": 7,
-  "region_channels": 1085,
+  "region_channels": 1181,
   "region_observed": 1,
-  "channels_discovered": 8714,
+  "channels_discovered": 8754,
   "channels_observed": 3,
-  "search_pages": 2061,
-  "search_results_read": 38566,
+  "search_pages": 2090,
+  "search_results_read": 39143,
   "query_errors": {},
   "regions": [
     {
@@ -625,7 +625,7 @@
       "name": "오산",
       "queries_completed": 7,
       "queries_total": 40,
-      "channels": 1085,
+      "channels": 1181,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -684,16 +684,16 @@
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 39,
-          "results_read": 120,
-          "pages": 6
+          "channels": 70,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "한의원",
           "status": "running",
-          "channels": 17,
-          "results_read": 76,
-          "pages": 4
+          "channels": 119,
+          "results_read": 373,
+          "pages": 19
         },
         {
           "name": "한방병원",
