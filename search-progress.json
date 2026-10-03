@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:33:58.918163+00:00",
+  "updated_at": "2026-10-03T11:35:02.122041+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 동물병원",
-    "송파 의원"
+    "송파 의원",
+    "송파 노무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30373,
+    "total": 30391,
     "processed": 3,
-    "pending": 30370,
+    "pending": 30388,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 427,
-  "region_queries_completed": 27,
-  "region_channels": 3173,
+  "queries_completed": 428,
+  "region_queries_completed": 28,
+  "region_channels": 3281,
   "region_observed": 1,
-  "channels_discovered": 27874,
+  "channels_discovered": 27902,
   "channels_observed": 3,
-  "search_pages": 10368,
-  "search_results_read": 195538,
+  "search_pages": 10396,
+  "search_results_read": 196069,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 27,
+      "queries_completed": 28,
       "queries_total": 40,
-      "channels": 3173,
+      "channels": 3281,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3167,24 +3167,24 @@
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 152,
-          "results_read": 476,
-          "pages": 24
+          "status": "completed",
+          "channels": 156,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "의원",
           "status": "running",
-          "channels": 95,
-          "results_read": 260,
-          "pages": 13
+          "channels": 182,
+          "results_read": 539,
+          "pages": 27
         },
         {
           "name": "노무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 60,
+          "results_read": 235,
+          "pages": 12
         },
         {
           "name": "노무법인",
