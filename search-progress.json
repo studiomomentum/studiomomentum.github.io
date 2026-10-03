@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:44:58.985205+00:00",
+  "updated_at": "2026-10-03T06:46:01.343947+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 노무사",
-    "오산 노무법인"
+    "오산 변리사",
+    "오산 관세사"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28486,
+    "total": 28492,
     "processed": 3,
-    "pending": 28483,
+    "pending": 28489,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 109,
-  "region_queries_completed": 29,
-  "region_channels": 3457,
+  "queries_completed": 112,
+  "region_queries_completed": 32,
+  "region_channels": 3608,
   "region_observed": 1,
-  "channels_discovered": 10159,
+  "channels_discovered": 10263,
   "channels_observed": 3,
-  "search_pages": 2582,
-  "search_results_read": 48291,
+  "search_pages": 2612,
+  "search_results_read": 48807,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 29,
+      "queries_completed": 32,
       "queries_total": 40,
-      "channels": 3457,
+      "channels": 3608,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -837,35 +837,35 @@
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 91,
-          "results_read": 140,
-          "pages": 7
+          "status": "completed",
+          "channels": 208,
+          "results_read": 319,
+          "pages": 17
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 31,
-          "results_read": 40,
-          "pages": 2
+          "status": "completed",
+          "channels": 48,
+          "results_read": 61,
+          "pages": 5
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 80,
+          "results_read": 216,
+          "pages": 12
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 57,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "관세사",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
