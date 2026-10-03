@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:30:18.180773+00:00",
+  "updated_at": "2026-10-03T10:31:22.096523+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 변호사",
-    "서초 법무법인"
+    "서초 법무법인",
+    "서초 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30045,
+    "total": 30052,
     "processed": 3,
-    "pending": 30042,
+    "pending": 30049,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 363,
-  "region_queries_completed": 3,
-  "region_channels": 611,
+  "queries_completed": 364,
+  "region_queries_completed": 4,
+  "region_channels": 767,
   "region_observed": 0,
-  "channels_discovered": 25149,
+  "channels_discovered": 25220,
   "channels_observed": 3,
-  "search_pages": 8691,
-  "search_results_read": 162443,
+  "search_pages": 8719,
+  "search_results_read": 162965,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 3,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 611,
+      "channels": 767,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2706,24 +2706,24 @@
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 258,
-          "results_read": 574,
-          "pages": 29
+          "status": "completed",
+          "channels": 260,
+          "results_read": 576,
+          "pages": 31
         },
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 120,
-          "results_read": 257,
-          "pages": 13
+          "channels": 210,
+          "results_read": 537,
+          "pages": 27
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 125,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "치과",
