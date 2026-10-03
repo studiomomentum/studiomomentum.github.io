@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:59:39.706750+00:00",
+  "updated_at": "2026-10-03T11:00:41.455298+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 관세사",
-    "서초 감정평가사"
+    "서초 손해사정사",
+    "서초 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 393,
-  "region_queries_completed": 33,
-  "region_channels": 4174,
+  "queries_completed": 395,
+  "region_queries_completed": 35,
+  "region_channels": 4218,
   "region_observed": 1,
-  "channels_discovered": 26605,
+  "channels_discovered": 26622,
   "channels_observed": 3,
-  "search_pages": 9473,
-  "search_results_read": 177046,
+  "search_pages": 9499,
+  "search_results_read": 177513,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 33,
+      "queries_completed": 35,
       "queries_total": 40,
-      "channels": 4174,
+      "channels": 4218,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2916,28 +2916,28 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 18,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 25,
+          "results_read": 475,
+          "pages": 25
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 74,
-          "results_read": 259,
-          "pages": 13
+          "status": "completed",
+          "channels": 105,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 18,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
