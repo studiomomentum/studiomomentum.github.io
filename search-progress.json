@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:44:06.768903+00:00",
+  "updated_at": "2026-10-03T08:45:08.584373+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 한의원",
-    "분당 한방병원"
+    "분당 학원",
+    "분당 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29377,
+    "total": 29379,
     "processed": 3,
-    "pending": 29374,
+    "pending": 29376,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 248,
-  "region_queries_completed": 8,
-  "region_channels": 821,
+  "queries_completed": 250,
+  "region_queries_completed": 10,
+  "region_channels": 937,
   "region_observed": 1,
-  "channels_discovered": 18059,
+  "channels_discovered": 18117,
   "channels_observed": 3,
-  "search_pages": 5864,
-  "search_results_read": 109535,
+  "search_pages": 5892,
+  "search_results_read": 110023,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 8,
+      "queries_completed": 10,
       "queries_total": 40,
-      "channels": 821,
+      "channels": 937,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1862,28 +1862,28 @@
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 74,
-          "results_read": 278,
-          "pages": 14
+          "status": "completed",
+          "channels": 121,
+          "results_read": 502,
+          "pages": 27
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 98,
-          "results_read": 259,
-          "pages": 13
+          "status": "completed",
+          "channels": 191,
+          "results_read": 503,
+          "pages": 27
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 15,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "입시학원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
