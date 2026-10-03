@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:44:00.664368+00:00",
+  "updated_at": "2026-10-03T07:45:02.955458+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 정형외과",
-    "용인 이비인후과"
+    "용인 재활의학과",
+    "용인 마취통증의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28957,
+    "total": 28959,
     "processed": 3,
-    "pending": 28954,
+    "pending": 28956,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 180,
-  "region_queries_completed": 20,
-  "region_channels": 2277,
+  "queries_completed": 182,
+  "region_queries_completed": 22,
+  "region_channels": 2354,
   "region_observed": 0,
-  "channels_discovered": 14339,
+  "channels_discovered": 14348,
   "channels_observed": 3,
-  "search_pages": 4217,
-  "search_results_read": 78792,
+  "search_pages": 4245,
+  "search_results_read": 79278,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 20,
+      "queries_completed": 22,
       "queries_total": 40,
-      "channels": 2277,
+      "channels": 2354,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1360,31 +1360,31 @@
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 109,
-          "results_read": 420,
-          "pages": 21
+          "status": "completed",
+          "channels": 137,
+          "results_read": 501,
+          "pages": 27
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 83,
-          "results_read": 294,
-          "pages": 15
+          "status": "completed",
+          "channels": 115,
+          "results_read": 484,
+          "pages": 26
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 52,
+          "results_read": 156,
+          "pages": 8
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 21,
+          "results_read": 59,
+          "pages": 3
         },
         {
           "name": "내과의원",
