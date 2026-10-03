@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:16:10.266043+00:00",
+  "updated_at": "2026-10-03T09:17:14.265117+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 세무회계",
-    "판교 변호사"
+    "판교 법무법인",
+    "판교 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29555,
+    "total": 29559,
     "processed": 3,
-    "pending": 29552,
+    "pending": 29556,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 282,
-  "region_queries_completed": 2,
-  "region_channels": 799,
+  "queries_completed": 284,
+  "region_queries_completed": 4,
+  "region_channels": 962,
   "region_observed": 0,
-  "channels_discovered": 19938,
+  "channels_discovered": 20003,
   "channels_observed": 3,
-  "search_pages": 6743,
-  "search_results_read": 126031,
+  "search_pages": 6773,
+  "search_results_read": 126588,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 799,
+      "channels": 962,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2113,31 +2113,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
+          "status": "completed",
           "channels": 363,
           "results_read": 496,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 199,
-          "results_read": 472,
-          "pages": 24
+          "status": "completed",
+          "channels": 213,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 133,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 160,
+          "results_read": 259,
+          "pages": 13
         },
         {
           "name": "치과",
