@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:30:51.288805+00:00",
+  "updated_at": "2026-10-03T11:31:53.831247+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 내과의원",
-    "송파 산부인과"
+    "송파 산부인과",
+    "송파 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30364,
+    "total": 30365,
     "processed": 3,
-    "pending": 30361,
+    "pending": 30362,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 425,
   "region_queries_completed": 25,
-  "region_channels": 2879,
+  "region_channels": 2954,
   "region_observed": 1,
-  "channels_discovered": 27770,
+  "channels_discovered": 27795,
   "channels_observed": 3,
-  "search_pages": 10285,
-  "search_results_read": 193938,
+  "search_pages": 10312,
+  "search_results_read": 194476,
   "query_errors": {},
   "regions": [
     {
@@ -2969,7 +2969,7 @@
       "name": "송파",
       "queries_completed": 25,
       "queries_total": 40,
-      "channels": 2879,
+      "channels": 2954,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3154,16 +3154,16 @@
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 57,
-          "results_read": 160,
-          "pages": 8
+          "channels": 119,
+          "results_read": 439,
+          "pages": 22
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 47,
+          "results_read": 259,
+          "pages": 13
         },
         {
           "name": "동물병원",
