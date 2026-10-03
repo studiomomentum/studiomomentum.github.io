@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:39:48.884426+00:00",
+  "updated_at": "2026-10-03T06:40:51.145920+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 재활의학과",
-    "오산 마취통증의학과"
+    "오산 내과의원",
+    "오산 산부인과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28450,
+    "total": 28451,
     "processed": 3,
-    "pending": 28447,
+    "pending": 28448,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 102,
-  "region_queries_completed": 22,
-  "region_channels": 2700,
+  "queries_completed": 104,
+  "region_queries_completed": 24,
+  "region_channels": 2828,
   "region_observed": 1,
-  "channels_discovered": 9685,
+  "channels_discovered": 9737,
   "channels_observed": 3,
-  "search_pages": 2437,
-  "search_results_read": 45609,
+  "search_pages": 2466,
+  "search_results_read": 46130,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 22,
+      "queries_completed": 24,
       "queries_total": 40,
-      "channels": 2700,
+      "channels": 2828,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -788,31 +788,31 @@
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 132,
-          "results_read": 478,
-          "pages": 24
+          "status": "completed",
+          "channels": 133,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 23,
-          "results_read": 80,
-          "pages": 4
+          "status": "completed",
+          "channels": 113,
+          "results_read": 214,
+          "pages": 12
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 136,
+          "results_read": 238,
+          "pages": 12
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 64,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "비뇨기과",
