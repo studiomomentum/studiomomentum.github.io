@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:35:49.162096+00:00",
+  "updated_at": "2026-10-03T08:36:52.488943+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 세무사",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 240,
   "region_queries_completed": 0,
-  "region_channels": 35,
+  "region_channels": 103,
   "region_observed": 0,
-  "channels_discovered": 17822,
+  "channels_discovered": 17846,
   "channels_observed": 3,
-  "search_pages": 5634,
-  "search_results_read": 105198,
+  "search_pages": 5664,
+  "search_results_read": 105793,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 35,
+      "channels": 103,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1807,16 +1807,16 @@
         {
           "name": "세무사",
           "status": "running",
-          "channels": 20,
-          "results_read": 80,
-          "pages": 4
+          "channels": 84,
+          "results_read": 378,
+          "pages": 19
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 19,
-          "results_read": 80,
-          "pages": 4
+          "channels": 38,
+          "results_read": 377,
+          "pages": 19
         },
         {
           "name": "세무회계",
