@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:40:47.726213+00:00",
+  "updated_at": "2026-10-03T10:41:50.653044+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 공인중개사",
-    "서초 부동산중개"
+    "서초 부동산중개",
+    "서초 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30179,
+    "total": 30188,
     "processed": 3,
-    "pending": 30176,
+    "pending": 30185,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 374,
-  "region_queries_completed": 14,
-  "region_channels": 2302,
+  "queries_completed": 375,
+  "region_queries_completed": 15,
+  "region_channels": 2465,
   "region_observed": 1,
-  "channels_discovered": 25871,
+  "channels_discovered": 25949,
   "channels_observed": 3,
-  "search_pages": 8969,
-  "search_results_read": 167632,
+  "search_pages": 8997,
+  "search_results_read": 168163,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 14,
+      "queries_completed": 15,
       "queries_total": 40,
-      "channels": 2302,
+      "channels": 2465,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2783,17 +2783,17 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 129,
-          "results_read": 277,
-          "pages": 14
+          "status": "completed",
+          "channels": 219,
+          "results_read": 530,
+          "pages": 28
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 101,
+          "results_read": 278,
+          "pages": 14
         },
         {
           "name": "행정사사무소",
