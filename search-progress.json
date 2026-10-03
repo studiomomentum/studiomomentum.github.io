@@ -1,18 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "강남",
+  "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:26:04.660578+00:00",
+  "updated_at": "2026-10-03T10:27:07.409902+00:00",
   "run_id": "37115666923",
-  "active_queries": [],
+  "active_queries": [
+    "서초 세무사",
+    "서초 세무법인"
+  ],
   "search_stage": {
     "status": "running",
-    "region": "강남"
+    "region": "서초"
   },
   "classification": {
-    "total": 30028,
+    "total": 30030,
     "processed": 3,
-    "pending": 30025,
+    "pending": 30027,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -23,13 +26,13 @@
     "active": []
   },
   "queries_completed": 360,
-  "region_queries_completed": 40,
-  "region_channels": 5022,
-  "region_observed": 2,
-  "channels_discovered": 24976,
+  "region_queries_completed": 0,
+  "region_channels": 165,
+  "region_observed": 0,
+  "channels_discovered": 25011,
   "channels_observed": 3,
-  "search_pages": 8579,
-  "search_results_read": 160333,
+  "search_pages": 8607,
+  "search_results_read": 160889,
   "query_errors": {},
   "regions": [
     {
@@ -2673,7 +2676,7 @@
       "name": "서초",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 0,
+      "channels": 165,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2682,17 +2685,17 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 84,
+          "results_read": 278,
+          "pages": 14
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 107,
+          "results_read": 278,
+          "pages": 14
         },
         {
           "name": "세무회계",
