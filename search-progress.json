@@ -1,18 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "",
+  "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:13:35.127896+00:00",
+  "updated_at": "2026-10-03T10:14:38.000421+00:00",
   "run_id": "37115666923",
-  "active_queries": [],
+  "active_queries": [
+    "강남 동물병원",
+    "강남 의원"
+  ],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "강남"
   },
   "classification": {
-    "total": 29921,
+    "total": 29938,
     "processed": 3,
-    "pending": 29918,
+    "pending": 29935,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -23,13 +26,13 @@
     "active": []
   },
   "queries_completed": 347,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
-  "channels_discovered": 24318,
+  "region_queries_completed": 27,
+  "region_channels": 3858,
+  "region_observed": 1,
+  "channels_discovered": 24396,
   "channels_observed": 3,
-  "search_pages": 8263,
-  "search_results_read": 154406,
+  "search_pages": 8285,
+  "search_results_read": 154846,
   "query_errors": {},
   "regions": [
     {
@@ -2380,7 +2383,7 @@
       "name": "강남",
       "queries_completed": 27,
       "queries_total": 40,
-      "channels": 3729,
+      "channels": 3858,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2578,17 +2581,17 @@
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 183,
-          "results_read": 339,
-          "pages": 17
+          "status": "running",
+          "channels": 325,
+          "results_read": 559,
+          "pages": 28
         },
         {
           "name": "의원",
-          "status": "pending",
-          "channels": 67,
-          "results_read": 238,
-          "pages": 12
+          "status": "running",
+          "channels": 142,
+          "results_read": 458,
+          "pages": 23
         },
         {
           "name": "노무사",
