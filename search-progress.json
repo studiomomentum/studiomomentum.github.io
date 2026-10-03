@@ -2,20 +2,19 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:18:09.611409+00:00",
+  "updated_at": "2026-10-03T06:19:11.668380+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 심리상담센터",
-    "동탄 필라테스"
+    "동탄 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28259,
+    "total": 28264,
     "processed": 3,
-    "pending": 28256,
+    "pending": 28261,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +24,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 77,
-  "region_queries_completed": 37,
-  "region_channels": 4579,
+  "queries_completed": 79,
+  "region_queries_completed": 39,
+  "region_channels": 4845,
   "region_observed": 1,
-  "channels_discovered": 7817,
+  "channels_discovered": 8056,
   "channels_observed": 3,
-  "search_pages": 1839,
-  "search_results_read": 34406,
+  "search_pages": 1868,
+  "search_results_read": 34936,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +329,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 37,
+      "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4579,
+      "channels": 4845,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -600,24 +599,24 @@
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 221,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 297,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 158,
-          "results_read": 239,
-          "pages": 12
+          "status": "completed",
+          "channels": 326,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 140,
+          "pages": 7
         }
       ]
     },
