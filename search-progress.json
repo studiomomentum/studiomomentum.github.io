@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:31:33.168549+00:00",
+  "updated_at": "2026-10-03T06:32:34.398225+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 입시학원",
-    "오산 공인중개사"
+    "오산 공인중개사",
+    "오산 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28344,
+    "total": 28347,
     "processed": 3,
-    "pending": 28341,
+    "pending": 28344,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 92,
-  "region_queries_completed": 12,
-  "region_channels": 1686,
+  "queries_completed": 94,
+  "region_queries_completed": 14,
+  "region_channels": 1821,
   "region_observed": 1,
-  "channels_discovered": 9052,
+  "channels_discovered": 9133,
   "channels_observed": 3,
-  "search_pages": 2206,
-  "search_results_read": 41283,
+  "search_pages": 2234,
+  "search_results_read": 41794,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 12,
+      "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1686,
+      "channels": 1821,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -711,10 +711,10 @@
         },
         {
           "name": "입시학원",
-          "status": "running",
+          "status": "completed",
           "channels": 158,
           "results_read": 494,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "어학원",
@@ -726,20 +726,20 @@
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 63,
-          "results_read": 138,
-          "pages": 7
+          "channels": 131,
+          "results_read": 415,
+          "pages": 21
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 116,
+          "results_read": 234,
+          "pages": 13
         },
         {
           "name": "행정사",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
