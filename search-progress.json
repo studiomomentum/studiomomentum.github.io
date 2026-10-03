@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:52:25.009013+00:00",
+  "updated_at": "2026-10-03T08:53:26.682970+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 행정사사무소",
-    "분당 피부과"
+    "분당 성형외과",
+    "분당 안과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29408,
+    "total": 29410,
     "processed": 3,
-    "pending": 29405,
+    "pending": 29407,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 256,
-  "region_queries_completed": 16,
-  "region_channels": 1726,
+  "queries_completed": 258,
+  "region_queries_completed": 18,
+  "region_channels": 1848,
   "region_observed": 1,
-  "channels_discovered": 18419,
+  "channels_discovered": 18461,
   "channels_observed": 3,
-  "search_pages": 6094,
-  "search_results_read": 113851,
+  "search_pages": 6122,
+  "search_results_read": 114362,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 16,
+      "queries_completed": 18,
       "queries_total": 40,
-      "channels": 1726,
+      "channels": 1848,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1918,31 +1918,31 @@
         },
         {
           "name": "행정사사무소",
-          "status": "running",
-          "channels": 158,
-          "results_read": 408,
-          "pages": 21
+          "status": "completed",
+          "channels": 210,
+          "results_read": 467,
+          "pages": 25
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 127,
-          "results_read": 350,
-          "pages": 18
+          "status": "completed",
+          "channels": 156,
+          "results_read": 464,
+          "pages": 25
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 52,
+          "results_read": 198,
+          "pages": 10
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 24,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "정형외과",
