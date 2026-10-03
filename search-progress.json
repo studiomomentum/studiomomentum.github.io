@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:43:05.910759+00:00",
+  "updated_at": "2026-10-03T05:44:07.583881+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 감정평가사",
-    "수원 손해사정사"
+    "수원 손해사정사",
+    "수원 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 28064,
+    "total": 28065,
     "processed": 2,
-    "pending": 28062,
+    "pending": 28063,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 34,
-  "region_queries_completed": 34,
-  "region_channels": 3546,
+  "queries_completed": 35,
+  "region_queries_completed": 35,
+  "region_channels": 3738,
   "region_observed": 2,
-  "channels_discovered": 3546,
+  "channels_discovered": 3738,
   "channels_observed": 2,
-  "search_pages": 866,
-  "search_results_read": 16212,
+  "search_pages": 895,
+  "search_results_read": 16764,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 34,
+      "queries_completed": 35,
       "queries_total": 40,
-      "channels": 3546,
+      "channels": 3738,
       "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
@@ -286,24 +286,24 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
+          "status": "completed",
           "channels": 257,
           "results_read": 491,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "손해사정사",
           "status": "running",
-          "channels": 59,
-          "results_read": 200,
-          "pages": 10
+          "channels": 240,
+          "results_read": 496,
+          "pages": 25
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 81,
+          "results_read": 256,
+          "pages": 13
         },
         {
           "name": "심리상담센터",
