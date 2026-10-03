@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:46:11.268812+00:00",
+  "updated_at": "2026-10-03T09:47:14.669155+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "강남 세무회계",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 322,
   "region_queries_completed": 2,
-  "region_channels": 234,
+  "region_channels": 311,
   "region_observed": 0,
-  "channels_discovered": 22519,
+  "channels_discovered": 22549,
   "channels_observed": 3,
-  "search_pages": 7557,
-  "search_results_read": 141058,
+  "search_pages": 7587,
+  "search_results_read": 141652,
   "query_errors": {},
   "regions": [
     {
@@ -2383,7 +2383,7 @@
       "name": "강남",
       "queries_completed": 2,
       "queries_total": 40,
-      "channels": 234,
+      "channels": 311,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2407,16 +2407,16 @@
         {
           "name": "세무회계",
           "status": "running",
-          "channels": 10,
-          "results_read": 20,
-          "pages": 1
+          "channels": 76,
+          "results_read": 320,
+          "pages": 16
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 46,
+          "results_read": 294,
+          "pages": 15
         },
         {
           "name": "법무법인",
