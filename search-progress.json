@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:27:31.878037+00:00",
+  "updated_at": "2026-10-03T08:28:34.783757+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 의원",
-    "화성 노무사"
+    "화성 노무사",
+    "화성 법무사"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29232,
+    "total": 29235,
     "processed": 3,
-    "pending": 29229,
+    "pending": 29232,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 228,
-  "region_queries_completed": 28,
-  "region_channels": 4256,
+  "queries_completed": 231,
+  "region_queries_completed": 31,
+  "region_channels": 4404,
   "region_observed": 1,
-  "channels_discovered": 17060,
+  "channels_discovered": 17140,
   "channels_observed": 3,
-  "search_pages": 5415,
-  "search_results_read": 101188,
+  "search_pages": 5445,
+  "search_results_read": 101698,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 28,
+      "queries_completed": 31,
       "queries_total": 40,
-      "channels": 4256,
+      "channels": 4404,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1709,31 +1709,31 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 187,
-          "results_read": 520,
-          "pages": 26
+          "status": "completed",
+          "channels": 200,
+          "results_read": 571,
+          "pages": 30
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 125,
-          "results_read": 220,
-          "pages": 11
+          "status": "completed",
+          "channels": 297,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 69,
+          "results_read": 122,
+          "pages": 8
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 17,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "변리사",
