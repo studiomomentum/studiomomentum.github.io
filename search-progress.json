@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:55:29.698442+00:00",
+  "updated_at": "2026-10-03T05:56:31.372340+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "동탄 한방병원",
@@ -13,9 +13,9 @@
     "region": "동탄"
   },
   "classification": {
-    "total": 28100,
+    "total": 28101,
     "processed": 2,
-    "pending": 28098,
+    "pending": 28099,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 49,
   "region_queries_completed": 9,
-  "region_channels": 1484,
+  "region_channels": 1611,
   "region_observed": 0,
-  "channels_discovered": 5298,
+  "channels_discovered": 5401,
   "channels_observed": 2,
-  "search_pages": 1205,
-  "search_results_read": 22603,
+  "search_pages": 1233,
+  "search_results_read": 23159,
   "query_errors": {},
   "regions": [
     {
@@ -332,7 +332,7 @@
       "name": "동탄",
       "queries_completed": 9,
       "queries_total": 40,
-      "channels": 1484,
+      "channels": 1611,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -405,16 +405,16 @@
         {
           "name": "한방병원",
           "status": "running",
-          "channels": 97,
-          "results_read": 179,
-          "pages": 9
+          "channels": 266,
+          "results_read": 459,
+          "pages": 23
         },
         {
           "name": "학원",
           "status": "running",
-          "channels": 29,
-          "results_read": 60,
-          "pages": 3
+          "channels": 58,
+          "results_read": 336,
+          "pages": 17
         },
         {
           "name": "입시학원",
