@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:07:42.337400+00:00",
+  "updated_at": "2026-10-03T07:08:44.864563+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 안과",
@@ -13,9 +13,9 @@
     "region": "평택"
   },
   "classification": {
-    "total": 28643,
+    "total": 28644,
     "processed": 3,
-    "pending": 28640,
+    "pending": 28641,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 139,
   "region_queries_completed": 19,
-  "region_channels": 2509,
+  "region_channels": 2599,
   "region_observed": 1,
-  "channels_discovered": 12175,
+  "channels_discovered": 12210,
   "channels_observed": 3,
-  "search_pages": 3214,
-  "search_results_read": 60023,
+  "search_pages": 3244,
+  "search_results_read": 60613,
   "query_errors": {},
   "regions": [
     {
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 19,
       "queries_total": 40,
-      "channels": 2509,
+      "channels": 2599,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1061,16 +1061,16 @@
         {
           "name": "안과",
           "status": "running",
-          "channels": 12,
-          "results_read": 78,
-          "pages": 4
+          "channels": 80,
+          "results_read": 378,
+          "pages": 19
         },
         {
           "name": "정형외과",
           "status": "running",
-          "channels": 23,
-          "results_read": 60,
-          "pages": 3
+          "channels": 74,
+          "results_read": 350,
+          "pages": 18
         },
         {
           "name": "이비인후과",
