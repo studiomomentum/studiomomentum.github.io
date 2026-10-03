@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:31:35.224995+00:00",
+  "updated_at": "2026-10-03T07:32:36.641619+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 치과",
-    "용인 치과의원"
+    "용인 한의원",
+    "용인 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28879,
+    "total": 28885,
     "processed": 3,
-    "pending": 28876,
+    "pending": 28882,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 166,
-  "region_queries_completed": 6,
-  "region_channels": 602,
+  "queries_completed": 168,
+  "region_queries_completed": 8,
+  "region_channels": 703,
   "region_observed": 0,
-  "channels_discovered": 13764,
+  "channels_discovered": 13816,
   "channels_observed": 3,
-  "search_pages": 3873,
-  "search_results_read": 72367,
+  "search_pages": 3901,
+  "search_results_read": 72861,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 6,
+      "queries_completed": 8,
       "queries_total": 40,
-      "channels": 602,
+      "channels": 703,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1262,28 +1262,28 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 110,
-          "results_read": 277,
-          "pages": 14
+          "status": "completed",
+          "channels": 188,
+          "results_read": 496,
+          "pages": 27
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 109,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 166,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 17,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "한방병원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
