@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:20:22.166326+00:00",
+  "updated_at": "2026-10-03T11:21:24.238050+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 부동산중개",
-    "송파 행정사"
+    "송파 행정사",
+    "송파 행정사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30320,
+    "total": 30324,
     "processed": 3,
-    "pending": 30317,
+    "pending": 30321,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 414,
-  "region_queries_completed": 14,
-  "region_channels": 1826,
+  "queries_completed": 415,
+  "region_queries_completed": 15,
+  "region_channels": 1924,
   "region_observed": 1,
-  "channels_discovered": 27433,
+  "channels_discovered": 27461,
   "channels_observed": 3,
-  "search_pages": 10010,
-  "search_results_read": 187187,
+  "search_pages": 10036,
+  "search_results_read": 188709,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 14,
+      "queries_completed": 15,
       "queries_total": 40,
-      "channels": 1826,
+      "channels": 1924,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3076,24 +3076,24 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 203,
-          "results_read": 394,
-          "pages": 20
+          "status": "completed",
+          "channels": 258,
+          "results_read": 516,
+          "pages": 28
         },
         {
           "name": "행정사",
           "status": "running",
-          "channels": 59,
-          "results_read": 184,
-          "pages": 2
+          "channels": 136,
+          "results_read": 1484,
+          "pages": 15
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 21,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "피부과",
