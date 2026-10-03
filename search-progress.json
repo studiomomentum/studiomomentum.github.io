@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:17:12.261424+00:00",
+  "updated_at": "2026-10-03T08:18:13.679696+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "화성 피부과",
@@ -13,9 +13,9 @@
     "region": "화성"
   },
   "classification": {
-    "total": 29106,
+    "total": 29107,
     "processed": 3,
-    "pending": 29103,
+    "pending": 29104,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 217,
   "region_queries_completed": 17,
-  "region_channels": 2768,
+  "region_channels": 2903,
   "region_observed": 1,
-  "channels_discovered": 16240,
+  "channels_discovered": 16319,
   "channels_observed": 3,
-  "search_pages": 5131,
-  "search_results_read": 95816,
+  "search_pages": 5159,
+  "search_results_read": 96369,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 17,
       "queries_total": 40,
-      "channels": 2768,
+      "channels": 2903,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1633,16 +1633,16 @@
         {
           "name": "피부과",
           "status": "running",
-          "channels": 111,
-          "results_read": 295,
-          "pages": 15
+          "channels": 147,
+          "results_read": 568,
+          "pages": 29
         },
         {
           "name": "성형외과",
           "status": "running",
-          "channels": 102,
-          "results_read": 159,
-          "pages": 8
+          "channels": 230,
+          "results_read": 439,
+          "pages": 22
         },
         {
           "name": "안과",
