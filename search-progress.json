@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:30:33.934422+00:00",
+  "updated_at": "2026-10-03T07:31:35.224995+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 법무법인",
-    "용인 법률사무소"
+    "용인 치과",
+    "용인 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28873,
+    "total": 28879,
     "processed": 3,
-    "pending": 28870,
+    "pending": 28876,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 165,
-  "region_queries_completed": 5,
-  "region_channels": 444,
+  "queries_completed": 166,
+  "region_queries_completed": 6,
+  "region_channels": 602,
   "region_observed": 0,
-  "channels_discovered": 13718,
+  "channels_discovered": 13764,
   "channels_observed": 3,
-  "search_pages": 3845,
-  "search_results_read": 71839,
+  "search_pages": 3873,
+  "search_results_read": 72367,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 5,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 444,
+      "channels": 602,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1255,24 +1255,24 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 66,
-          "results_read": 428,
-          "pages": 22
+          "status": "completed",
+          "channels": 68,
+          "results_read": 439,
+          "pages": 24
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 110,
+          "results_read": 277,
+          "pages": 14
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 109,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "한의원",
