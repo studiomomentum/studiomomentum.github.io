@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:26:33.925863+00:00",
+  "updated_at": "2026-10-03T05:27:35.296770+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "수원 피부과",
@@ -27,19 +27,19 @@
   },
   "queries_completed": 17,
   "region_queries_completed": 17,
-  "region_channels": 1660,
+  "region_channels": 1715,
   "region_observed": 1,
-  "channels_discovered": 1660,
+  "channels_discovered": 1715,
   "channels_observed": 1,
-  "search_pages": 401,
-  "search_results_read": 7477,
+  "search_pages": 430,
+  "search_results_read": 8052,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
       "queries_completed": 17,
       "queries_total": 40,
-      "channels": 1660,
+      "channels": 1715,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -168,16 +168,16 @@
         {
           "name": "피부과",
           "status": "running",
-          "channels": 15,
-          "results_read": 140,
-          "pages": 7
+          "channels": 25,
+          "results_read": 419,
+          "pages": 21
         },
         {
           "name": "성형외과",
           "status": "running",
-          "channels": 13,
-          "results_read": 80,
-          "pages": 4
+          "channels": 70,
+          "results_read": 376,
+          "pages": 19
         },
         {
           "name": "안과",
