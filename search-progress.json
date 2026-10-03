@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:29:36.136751+00:00",
+  "updated_at": "2026-10-03T08:30:38.673435+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 법무사",
-    "화성 변리사"
+    "화성 감정평가사",
+    "화성 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29238,
+    "total": 29246,
     "processed": 3,
-    "pending": 29235,
+    "pending": 29243,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 231,
-  "region_queries_completed": 31,
-  "region_channels": 4537,
+  "queries_completed": 234,
+  "region_queries_completed": 34,
+  "region_channels": 4716,
   "region_observed": 1,
-  "channels_discovered": 17219,
+  "channels_discovered": 17298,
   "channels_observed": 3,
-  "search_pages": 5473,
-  "search_results_read": 102258,
+  "search_pages": 5503,
+  "search_results_read": 102751,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 31,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 4537,
+      "channels": 4716,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1730,38 +1730,38 @@
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 131,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 186,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 152,
-          "results_read": 280,
-          "pages": 14
+          "status": "completed",
+          "channels": 210,
+          "results_read": 362,
+          "pages": 20
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 100,
+          "results_read": 124,
+          "pages": 8
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 12,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "건축사사무소",
