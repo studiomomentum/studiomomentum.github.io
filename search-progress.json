@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:45:02.955458+00:00",
+  "updated_at": "2026-10-03T07:46:06.556710+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 재활의학과",
@@ -13,9 +13,9 @@
     "region": "용인"
   },
   "classification": {
-    "total": 28959,
+    "total": 28960,
     "processed": 3,
-    "pending": 28956,
+    "pending": 28957,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 182,
   "region_queries_completed": 22,
-  "region_channels": 2354,
+  "region_channels": 2436,
   "region_observed": 0,
-  "channels_discovered": 14348,
+  "channels_discovered": 14359,
   "channels_observed": 3,
-  "search_pages": 4245,
-  "search_results_read": 79278,
+  "search_pages": 4275,
+  "search_results_read": 79866,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 22,
       "queries_total": 40,
-      "channels": 2354,
+      "channels": 2436,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1375,16 +1375,16 @@
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 52,
-          "results_read": 156,
-          "pages": 8
+          "channels": 132,
+          "results_read": 445,
+          "pages": 23
         },
         {
           "name": "마취통증의학과",
           "status": "running",
-          "channels": 21,
-          "results_read": 59,
-          "pages": 3
+          "channels": 88,
+          "results_read": 358,
+          "pages": 18
         },
         {
           "name": "내과의원",
