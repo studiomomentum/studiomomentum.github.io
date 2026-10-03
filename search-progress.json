@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:06:48.003626+00:00",
+  "updated_at": "2026-10-03T06:07:50.017924+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 이비인후과",
-    "동탄 재활의학과"
+    "동탄 마취통증의학과",
+    "동탄 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28167,
+    "total": 28168,
     "processed": 3,
-    "pending": 28164,
+    "pending": 28165,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 61,
-  "region_queries_completed": 21,
-  "region_channels": 2708,
+  "queries_completed": 63,
+  "region_queries_completed": 23,
+  "region_channels": 2831,
   "region_observed": 1,
-  "channels_discovered": 6288,
+  "channels_discovered": 6383,
   "channels_observed": 3,
-  "search_pages": 1521,
-  "search_results_read": 28529,
+  "search_pages": 1551,
+  "search_results_read": 29081,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 21,
+      "queries_completed": 23,
       "queries_total": 40,
-      "channels": 2708,
+      "channels": 2831,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -488,31 +488,31 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
+          "status": "completed",
           "channels": 227,
           "results_read": 482,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 83,
-          "results_read": 252,
-          "pages": 13
+          "status": "completed",
+          "channels": 161,
+          "results_read": 484,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 145,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 30,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "산부인과",
