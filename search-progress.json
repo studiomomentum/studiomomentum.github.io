@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:43:56.218097+00:00",
+  "updated_at": "2026-10-03T10:44:59.200943+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 피부과",
-    "서초 성형외과"
+    "서초 성형외과",
+    "서초 안과"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30202,
+    "total": 30210,
     "processed": 3,
-    "pending": 30199,
+    "pending": 30207,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 377,
-  "region_queries_completed": 17,
-  "region_channels": 2724,
+  "queries_completed": 378,
+  "region_queries_completed": 18,
+  "region_channels": 2928,
   "region_observed": 1,
-  "channels_discovered": 26051,
+  "channels_discovered": 26129,
   "channels_observed": 3,
-  "search_pages": 9053,
-  "search_results_read": 169217,
+  "search_pages": 9081,
+  "search_results_read": 169743,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 17,
+      "queries_completed": 18,
       "queries_total": 40,
-      "channels": 2724,
+      "channels": 2928,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2804,24 +2804,24 @@
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 175,
-          "results_read": 315,
-          "pages": 16
+          "status": "completed",
+          "channels": 240,
+          "results_read": 522,
+          "pages": 28
         },
         {
           "name": "성형외과",
           "status": "running",
-          "channels": 33,
-          "results_read": 40,
-          "pages": 2
+          "channels": 162,
+          "results_read": 319,
+          "pages": 16
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 26,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "정형외과",
