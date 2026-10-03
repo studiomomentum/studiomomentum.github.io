@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:32:45.468345+00:00",
+  "updated_at": "2026-10-03T05:33:47.619602+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 마취통증의학과",
-    "수원 내과의원"
+    "수원 산부인과",
+    "수원 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 28045,
+    "total": 28046,
     "processed": 1,
-    "pending": 28044,
+    "pending": 28045,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 23,
-  "region_queries_completed": 23,
-  "region_channels": 2209,
+  "queries_completed": 25,
+  "region_queries_completed": 25,
+  "region_channels": 2267,
   "region_observed": 1,
-  "channels_discovered": 2209,
+  "channels_discovered": 2267,
   "channels_observed": 1,
-  "search_pages": 576,
-  "search_results_read": 10779,
+  "search_pages": 604,
+  "search_results_read": 11278,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 23,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 2209,
+      "channels": 2267,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -209,28 +209,28 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 63,
-          "results_read": 255,
-          "pages": 13
+          "status": "completed",
+          "channels": 113,
+          "results_read": 480,
+          "pages": 26
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 69,
-          "results_read": 239,
-          "pages": 12
+          "status": "completed",
+          "channels": 126,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 8,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
