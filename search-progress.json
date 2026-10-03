@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:40:53.161724+00:00",
+  "updated_at": "2026-10-03T07:41:56.657582+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 행정사사무소",
-    "용인 피부과"
+    "용인 성형외과",
+    "용인 안과"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 176,
-  "region_queries_completed": 16,
-  "region_channels": 1990,
+  "queries_completed": 178,
+  "region_queries_completed": 18,
+  "region_channels": 2068,
   "region_observed": 0,
-  "channels_discovered": 14301,
+  "channels_discovered": 14306,
   "channels_observed": 3,
-  "search_pages": 4129,
-  "search_results_read": 77159,
+  "search_pages": 4159,
+  "search_results_read": 77688,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 16,
+      "queries_completed": 18,
       "queries_total": 40,
-      "channels": 1990,
+      "channels": 2068,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1332,31 +1332,31 @@
         },
         {
           "name": "행정사사무소",
-          "status": "running",
-          "channels": 55,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 57,
+          "results_read": 467,
+          "pages": 25
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 92,
-          "results_read": 418,
-          "pages": 21
+          "status": "completed",
+          "channels": 97,
+          "results_read": 585,
+          "pages": 31
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 53,
+          "results_read": 234,
+          "pages": 12
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 34,
+          "results_read": 98,
+          "pages": 5
         },
         {
           "name": "정형외과",
