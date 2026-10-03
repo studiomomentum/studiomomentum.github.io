@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:40:51.145920+00:00",
+  "updated_at": "2026-10-03T06:41:53.223529+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 내과의원",
-    "오산 산부인과"
+    "오산 산부인과",
+    "오산 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28451,
+    "total": 28455,
     "processed": 3,
-    "pending": 28448,
+    "pending": 28452,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 104,
-  "region_queries_completed": 24,
-  "region_channels": 2828,
+  "queries_completed": 105,
+  "region_queries_completed": 25,
+  "region_channels": 3017,
   "region_observed": 1,
-  "channels_discovered": 9737,
+  "channels_discovered": 9847,
   "channels_observed": 3,
-  "search_pages": 2466,
-  "search_results_read": 46130,
+  "search_pages": 2495,
+  "search_results_read": 46681,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 24,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 2828,
+      "channels": 3017,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -802,21 +802,21 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 136,
-          "results_read": 238,
-          "pages": 12
+          "status": "completed",
+          "channels": 293,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 64,
-          "results_read": 140,
-          "pages": 7
+          "channels": 219,
+          "results_read": 435,
+          "pages": 22
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
