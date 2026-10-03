@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:49:17.867004+00:00",
+  "updated_at": "2026-10-03T05:50:19.107962+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 세무사",
-    "동탄 세무법인"
+    "동탄 세무회계",
+    "동탄 변호사"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28085,
+    "total": 28087,
     "processed": 2,
-    "pending": 28083,
+    "pending": 28085,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 40,
-  "region_queries_completed": 0,
-  "region_channels": 392,
+  "queries_completed": 42,
+  "region_queries_completed": 2,
+  "region_channels": 559,
   "region_observed": 0,
-  "channels_discovered": 4471,
+  "channels_discovered": 4589,
   "channels_observed": 2,
-  "search_pages": 1031,
-  "search_results_read": 19365,
+  "search_pages": 1059,
+  "search_results_read": 19874,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 40,
-      "channels": 392,
+      "channels": 559,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -341,31 +341,31 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
-          "channels": 208,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 236,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "세무법인",
-          "status": "running",
-          "channels": 266,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 316,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 105,
+          "results_read": 159,
+          "pages": 8
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 84,
+          "results_read": 155,
+          "pages": 8
         },
         {
           "name": "법무법인",
