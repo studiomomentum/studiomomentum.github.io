@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:51:21.769191+00:00",
+  "updated_at": "2026-10-03T09:52:23.260459+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "강남 치과",
-    "강남 치과의원"
+    "강남 치과의원",
+    "강남 한의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29749,
+    "total": 29762,
     "processed": 3,
-    "pending": 29746,
+    "pending": 29759,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 326,
-  "region_queries_completed": 6,
-  "region_channels": 925,
+  "queries_completed": 328,
+  "region_queries_completed": 8,
+  "region_channels": 1047,
   "region_observed": 1,
-  "channels_discovered": 22848,
+  "channels_discovered": 22928,
   "channels_observed": 3,
-  "search_pages": 7699,
-  "search_results_read": 143756,
+  "search_pages": 7727,
+  "search_results_read": 144256,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 6,
+      "queries_completed": 8,
       "queries_total": 40,
-      "channels": 925,
+      "channels": 1047,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2434,24 +2434,24 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 129,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 202,
+          "results_read": 566,
+          "pages": 30
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 92,
-          "results_read": 254,
-          "pages": 13
+          "status": "completed",
+          "channels": 156,
+          "results_read": 508,
+          "pages": 27
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 12,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "한방병원",
