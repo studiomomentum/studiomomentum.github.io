@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:32:44.770879+00:00",
+  "updated_at": "2026-10-03T09:33:46.378640+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 내과의원",
-    "판교 산부인과"
+    "판교 비뇨기과",
+    "판교 동물병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29620,
+    "total": 29630,
     "processed": 3,
-    "pending": 29617,
+    "pending": 29627,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 304,
-  "region_queries_completed": 24,
-  "region_channels": 3329,
+  "queries_completed": 306,
+  "region_queries_completed": 26,
+  "region_channels": 3469,
   "region_observed": 0,
-  "channels_discovered": 21261,
+  "channels_discovered": 21343,
   "channels_observed": 3,
-  "search_pages": 7199,
-  "search_results_read": 134483,
+  "search_pages": 7227,
+  "search_results_read": 134990,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 24,
+      "queries_completed": 26,
       "queries_total": 40,
-      "channels": 3329,
+      "channels": 3469,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2267,31 +2267,31 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 207,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 226,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 183,
-          "results_read": 340,
-          "pages": 17
+          "status": "completed",
+          "channels": 285,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 73,
+          "results_read": 197,
+          "pages": 10
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 81,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "의원",
