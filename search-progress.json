@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:55:17.989844+00:00",
+  "updated_at": "2026-10-03T06:56:20.161811+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 법무법인",
-    "평택 법률사무소"
+    "평택 치과"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28575,
+    "total": 28587,
     "processed": 3,
-    "pending": 28572,
+    "pending": 28584,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 124,
-  "region_queries_completed": 4,
-  "region_channels": 829,
+  "queries_completed": 125,
+  "region_queries_completed": 5,
+  "region_channels": 951,
   "region_observed": 0,
-  "channels_discovered": 11198,
+  "channels_discovered": 11247,
   "channels_observed": 3,
-  "search_pages": 2872,
-  "search_results_read": 53658,
+  "search_pages": 2900,
+  "search_results_read": 54171,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 4,
+      "queries_completed": 5,
       "queries_total": 40,
-      "channels": 829,
+      "channels": 951,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -956,23 +956,23 @@
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 57,
-          "results_read": 235,
-          "pages": 12
+          "channels": 117,
+          "results_read": 499,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 22,
-          "results_read": 198,
-          "pages": 10
+          "status": "completed",
+          "channels": 64,
+          "results_read": 290,
+          "pages": 16
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 68,
+          "results_read": 157,
+          "pages": 8
         },
         {
           "name": "치과의원",
