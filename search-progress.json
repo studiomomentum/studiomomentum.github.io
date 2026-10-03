@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:13:05.321484+00:00",
+  "updated_at": "2026-10-03T11:14:06.983804+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 치과",
-    "송파 치과의원"
+    "송파 한의원",
+    "송파 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30280,
+    "total": 30284,
     "processed": 3,
-    "pending": 30277,
+    "pending": 30281,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 406,
-  "region_queries_completed": 6,
-  "region_channels": 779,
-  "region_observed": 0,
-  "channels_discovered": 27096,
+  "queries_completed": 408,
+  "region_queries_completed": 8,
+  "region_channels": 905,
+  "region_observed": 1,
+  "channels_discovered": 27141,
   "channels_observed": 3,
-  "search_pages": 9820,
-  "search_results_read": 183541,
+  "search_pages": 9848,
+  "search_results_read": 184029,
   "query_errors": {},
   "regions": [
     {
@@ -2967,13 +2967,13 @@
     },
     {
       "name": "송파",
-      "queries_completed": 6,
+      "queries_completed": 8,
       "queries_total": 40,
-      "channels": 779,
-      "observed": 0,
+      "channels": 905,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -3020,31 +3020,31 @@
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 139,
-          "results_read": 331,
-          "pages": 17
+          "status": "completed",
+          "channels": 215,
+          "results_read": 502,
+          "pages": 27
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 111,
-          "results_read": 297,
-          "pages": 15
+          "status": "completed",
+          "channels": 141,
+          "results_read": 500,
+          "pages": 27
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 40,
+          "results_read": 74,
+          "pages": 4
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 23,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "학원",
