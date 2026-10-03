@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:05:50.302520+00:00",
+  "updated_at": "2026-10-03T09:06:51.462663+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 법무사",
-    "분당 변리사"
+    "분당 관세사",
+    "분당 감정평가사"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29476,
+    "total": 29478,
     "processed": 3,
-    "pending": 29473,
+    "pending": 29475,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 271,
-  "region_queries_completed": 31,
-  "region_channels": 3303,
+  "queries_completed": 273,
+  "region_queries_completed": 33,
+  "region_channels": 3468,
   "region_observed": 1,
-  "channels_discovered": 19052,
+  "channels_discovered": 19124,
   "channels_observed": 3,
-  "search_pages": 6462,
-  "search_results_read": 120737,
+  "search_pages": 6490,
+  "search_results_read": 121239,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 31,
+      "queries_completed": 33,
       "queries_total": 40,
-      "channels": 3303,
+      "channels": 3468,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2023,31 +2023,31 @@
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 180,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 233,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 154,
-          "results_read": 297,
-          "pages": 15
+          "status": "completed",
+          "channels": 246,
+          "results_read": 465,
+          "pages": 25
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 51,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "손해사정사",
