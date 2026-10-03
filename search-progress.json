@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:23:20.192505+00:00",
+  "updated_at": "2026-10-03T06:24:21.941045+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 변호사",
-    "오산 법무법인"
+    "오산 법률사무소",
+    "오산 치과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28278,
+    "total": 28301,
     "processed": 3,
-    "pending": 28275,
+    "pending": 28298,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 83,
-  "region_queries_completed": 3,
-  "region_channels": 660,
+  "queries_completed": 85,
+  "region_queries_completed": 5,
+  "region_channels": 807,
   "region_observed": 1,
-  "channels_discovered": 8489,
+  "channels_discovered": 8575,
   "channels_observed": 3,
-  "search_pages": 1975,
-  "search_results_read": 36962,
+  "search_pages": 2004,
+  "search_results_read": 37477,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 3,
+      "queries_completed": 5,
       "queries_total": 40,
-      "channels": 660,
+      "channels": 807,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -655,31 +655,31 @@
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 140,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 248,
+          "results_read": 575,
+          "pages": 30
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 7,
-          "results_read": 20,
-          "pages": 1
+          "status": "completed",
+          "channels": 49,
+          "results_read": 220,
+          "pages": 13
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 29,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "치과의원",
