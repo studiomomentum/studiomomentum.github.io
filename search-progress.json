@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:48:14.741745+00:00",
+  "updated_at": "2026-10-03T05:49:17.867004+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "동탄 세무사",
@@ -13,9 +13,9 @@
     "region": "동탄"
   },
   "classification": {
-    "total": 28078,
+    "total": 28085,
     "processed": 2,
-    "pending": 28076,
+    "pending": 28083,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 40,
   "region_queries_completed": 0,
-  "region_channels": 104,
+  "region_channels": 392,
   "region_observed": 0,
-  "channels_discovered": 4266,
+  "channels_discovered": 4471,
   "channels_observed": 2,
-  "search_pages": 1001,
-  "search_results_read": 18765,
+  "search_pages": 1031,
+  "search_results_read": 19365,
   "query_errors": {},
   "regions": [
     {
@@ -332,7 +332,7 @@
       "name": "동탄",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 104,
+      "channels": 392,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -342,16 +342,16 @@
         {
           "name": "세무사",
           "status": "running",
-          "channels": 67,
-          "results_read": 100,
-          "pages": 5
+          "channels": 208,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 60,
-          "results_read": 100,
-          "pages": 5
+          "channels": 266,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "세무회계",
