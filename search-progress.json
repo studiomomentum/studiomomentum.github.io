@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:49:16.230116+00:00",
+  "updated_at": "2026-10-03T08:50:19.510961+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 부동산중개",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29404,
+    "total": 29405,
     "processed": 3,
-    "pending": 29401,
+    "pending": 29402,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 254,
   "region_queries_completed": 14,
-  "region_channels": 1326,
+  "region_channels": 1460,
   "region_observed": 1,
-  "channels_discovered": 18265,
+  "channels_discovered": 18305,
   "channels_observed": 3,
-  "search_pages": 6006,
-  "search_results_read": 112184,
+  "search_pages": 6036,
+  "search_results_read": 112774,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1326,
+      "channels": 1460,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1905,16 +1905,16 @@
         {
           "name": "부동산중개",
           "status": "running",
-          "channels": 42,
-          "results_read": 79,
-          "pages": 4
+          "channels": 137,
+          "results_read": 370,
+          "pages": 19
         },
         {
           "name": "행정사",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 62,
+          "results_read": 299,
+          "pages": 15
         },
         {
           "name": "행정사사무소",
