@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:28:46.229053+00:00",
+  "updated_at": "2026-10-03T11:29:48.852224+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 재활의학과",
-    "송파 마취통증의학과"
+    "송파 마취통증의학과",
+    "송파 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30358,
+    "total": 30363,
     "processed": 3,
-    "pending": 30355,
+    "pending": 30360,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 422,
-  "region_queries_completed": 22,
-  "region_channels": 2737,
+  "queries_completed": 423,
+  "region_queries_completed": 23,
+  "region_channels": 2814,
   "region_observed": 1,
-  "channels_discovered": 27732,
+  "channels_discovered": 27750,
   "channels_observed": 3,
-  "search_pages": 10230,
-  "search_results_read": 192926,
+  "search_pages": 10258,
+  "search_results_read": 193457,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 22,
+      "queries_completed": 23,
       "queries_total": 40,
-      "channels": 2737,
+      "channels": 2814,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3132,24 +3132,24 @@
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 161,
-          "results_read": 451,
-          "pages": 24
+          "status": "completed",
+          "channels": 164,
+          "results_read": 465,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
           "status": "running",
-          "channels": 55,
-          "results_read": 140,
-          "pages": 7
+          "channels": 115,
+          "results_read": 418,
+          "pages": 21
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 81,
+          "results_read": 239,
+          "pages": 12
         },
         {
           "name": "산부인과",
