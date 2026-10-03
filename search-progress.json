@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:12:53.798511+00:00",
+  "updated_at": "2026-10-03T07:13:57.117618+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 내과의원",
-    "평택 산부인과"
+    "평택 산부인과",
+    "평택 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28653,
+    "total": 28678,
     "processed": 3,
-    "pending": 28650,
+    "pending": 28675,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 144,
-  "region_queries_completed": 24,
-  "region_channels": 3077,
+  "queries_completed": 145,
+  "region_queries_completed": 25,
+  "region_channels": 3182,
   "region_observed": 1,
-  "channels_discovered": 12457,
+  "channels_discovered": 12519,
   "channels_observed": 3,
-  "search_pages": 3358,
-  "search_results_read": 62736,
+  "search_pages": 3388,
+  "search_results_read": 63307,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 24,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 3077,
+      "channels": 3182,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1095,24 +1095,24 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 251,
-          "results_read": 458,
-          "pages": 23
+          "status": "completed",
+          "channels": 267,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 31,
-          "results_read": 60,
-          "pages": 3
+          "channels": 186,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 49,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "동물병원",
