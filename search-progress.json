@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:13:03.596159+00:00",
+  "updated_at": "2026-10-03T09:14:06.937234+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "판교 세무사",
@@ -13,9 +13,9 @@
     "region": "판교"
   },
   "classification": {
-    "total": 29504,
+    "total": 29545,
     "processed": 3,
-    "pending": 29501,
+    "pending": 29542,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 280,
   "region_queries_completed": 0,
-  "region_channels": 173,
+  "region_channels": 452,
   "region_observed": 0,
-  "channels_discovered": 19624,
+  "channels_discovered": 19740,
   "channels_observed": 3,
-  "search_pages": 6657,
-  "search_results_read": 124377,
+  "search_pages": 6687,
+  "search_results_read": 124974,
   "query_errors": {},
   "regions": [
     {
@@ -2090,7 +2090,7 @@
       "name": "판교",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 173,
+      "channels": 452,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2100,16 +2100,16 @@
         {
           "name": "세무사",
           "status": "running",
-          "channels": 101,
-          "results_read": 139,
-          "pages": 7
+          "channels": 247,
+          "results_read": 438,
+          "pages": 22
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 108,
-          "results_read": 140,
-          "pages": 7
+          "channels": 297,
+          "results_read": 438,
+          "pages": 22
         },
         {
           "name": "세무회계",
