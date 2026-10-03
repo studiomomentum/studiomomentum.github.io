@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:36:42.526334+00:00",
+  "updated_at": "2026-10-03T06:37:46.047389+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 안과",
-    "오산 정형외과"
+    "오산 정형외과",
+    "오산 이비인후과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28390,
+    "total": 28400,
     "processed": 3,
-    "pending": 28387,
+    "pending": 28397,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 99,
-  "region_queries_completed": 19,
-  "region_channels": 2342,
+  "queries_completed": 100,
+  "region_queries_completed": 20,
+  "region_channels": 2471,
   "region_observed": 1,
-  "channels_discovered": 9455,
+  "channels_discovered": 9532,
   "channels_observed": 3,
-  "search_pages": 2350,
-  "search_results_read": 43958,
+  "search_pages": 2380,
+  "search_results_read": 44531,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 19,
+      "queries_completed": 20,
       "queries_total": 40,
-      "channels": 2342,
+      "channels": 2471,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -767,24 +767,24 @@
         },
         {
           "name": "안과",
-          "status": "running",
-          "channels": 60,
-          "results_read": 280,
-          "pages": 14
+          "status": "completed",
+          "channels": 206,
+          "results_read": 513,
+          "pages": 27
         },
         {
           "name": "정형외과",
           "status": "running",
-          "channels": 23,
-          "results_read": 116,
-          "pages": 6
+          "channels": 74,
+          "results_read": 416,
+          "pages": 21
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 14,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "재활의학과",
