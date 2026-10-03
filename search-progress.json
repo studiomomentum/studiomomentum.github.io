@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:21:21.970156+00:00",
+  "updated_at": "2026-10-03T08:22:25.480171+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 이비인후과",
-    "화성 재활의학과"
+    "화성 마취통증의학과",
+    "화성 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29134,
+    "total": 29137,
     "processed": 3,
-    "pending": 29131,
+    "pending": 29134,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 221,
-  "region_queries_completed": 21,
-  "region_channels": 3444,
+  "queries_completed": 223,
+  "region_queries_completed": 23,
+  "region_channels": 3592,
   "region_observed": 1,
-  "channels_discovered": 16606,
+  "channels_discovered": 16693,
   "channels_observed": 3,
-  "search_pages": 5245,
-  "search_results_read": 97981,
+  "search_pages": 5275,
+  "search_results_read": 98528,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 21,
+      "queries_completed": 23,
       "queries_total": 40,
-      "channels": 3444,
+      "channels": 3592,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1660,31 +1660,31 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 118,
-          "results_read": 295,
-          "pages": 15
+          "status": "completed",
+          "channels": 191,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 117,
-          "results_read": 260,
-          "pages": 13
+          "status": "completed",
+          "channels": 205,
+          "results_read": 455,
+          "pages": 24
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 44,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "산부인과",
