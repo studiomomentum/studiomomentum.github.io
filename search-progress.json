@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:42:58.032824+00:00",
+  "updated_at": "2026-10-03T07:44:00.664368+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 정형외과",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 180,
   "region_queries_completed": 20,
-  "region_channels": 2174,
+  "region_channels": 2277,
   "region_observed": 0,
-  "channels_discovered": 14324,
+  "channels_discovered": 14339,
   "channels_observed": 3,
-  "search_pages": 4187,
-  "search_results_read": 78198,
+  "search_pages": 4217,
+  "search_results_read": 78792,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 20,
       "queries_total": 40,
-      "channels": 2174,
+      "channels": 2277,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1361,16 +1361,16 @@
         {
           "name": "정형외과",
           "status": "running",
-          "channels": 42,
-          "results_read": 120,
-          "pages": 6
+          "channels": 109,
+          "results_read": 420,
+          "pages": 21
         },
         {
           "name": "이비인후과",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 83,
+          "results_read": 294,
+          "pages": 15
         },
         {
           "name": "재활의학과",
