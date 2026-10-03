@@ -1,18 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "판교",
+  "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:44:06.772589+00:00",
+  "updated_at": "2026-10-03T09:45:09.163861+00:00",
   "run_id": "37099031291",
-  "active_queries": [],
+  "active_queries": [
+    "강남 세무사",
+    "강남 세무법인"
+  ],
   "search_stage": {
     "status": "running",
-    "region": "판교"
+    "region": "강남"
   },
   "classification": {
-    "total": 29686,
+    "total": 29687,
     "processed": 3,
-    "pending": 29683,
+    "pending": 29684,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -23,13 +26,13 @@
     "active": []
   },
   "queries_completed": 320,
-  "region_queries_completed": 40,
-  "region_channels": 5132,
+  "region_queries_completed": 0,
+  "region_channels": 130,
   "region_observed": 0,
-  "channels_discovered": 22399,
+  "channels_discovered": 22466,
   "channels_observed": 3,
-  "search_pages": 7501,
-  "search_results_read": 140023,
+  "search_pages": 7529,
+  "search_results_read": 140565,
   "query_errors": {},
   "regions": [
     {
@@ -2380,7 +2383,7 @@
       "name": "강남",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 0,
+      "channels": 130,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2389,17 +2392,17 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 43,
+          "results_read": 279,
+          "pages": 14
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 102,
+          "results_read": 263,
+          "pages": 14
         },
         {
           "name": "세무회계",
