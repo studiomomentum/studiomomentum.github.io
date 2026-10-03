@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:42:03.091542+00:00",
+  "updated_at": "2026-10-03T08:43:04.403813+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 치과",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29370,
+    "total": 29371,
     "processed": 3,
-    "pending": 29367,
+    "pending": 29368,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 246,
   "region_queries_completed": 6,
-  "region_channels": 592,
-  "region_observed": 0,
-  "channels_discovered": 17983,
+  "region_channels": 663,
+  "region_observed": 1,
+  "channels_discovered": 18014,
   "channels_observed": 3,
-  "search_pages": 5806,
-  "search_results_read": 108443,
+  "search_pages": 5834,
+  "search_results_read": 108990,
   "query_errors": {},
   "regions": [
     {
@@ -1797,11 +1797,11 @@
       "name": "분당",
       "queries_completed": 6,
       "queries_total": 40,
-      "channels": 592,
-      "observed": 0,
+      "channels": 663,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1849,16 +1849,16 @@
         {
           "name": "치과",
           "status": "running",
-          "channels": 63,
-          "results_read": 219,
-          "pages": 11
+          "channels": 151,
+          "results_read": 496,
+          "pages": 25
         },
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 78,
-          "results_read": 219,
-          "pages": 11
+          "channels": 117,
+          "results_read": 489,
+          "pages": 25
         },
         {
           "name": "한의원",
