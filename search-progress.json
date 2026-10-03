@@ -1,21 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "분당",
+  "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:12:02.171336+00:00",
+  "updated_at": "2026-10-03T09:13:03.596159+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 필라테스",
-    "분당 중고차"
+    "판교 세무사",
+    "판교 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "분당"
+    "region": "판교"
   },
   "classification": {
-    "total": 29499,
+    "total": 29504,
     "processed": 3,
-    "pending": 29496,
+    "pending": 29501,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 278,
-  "region_queries_completed": 38,
-  "region_channels": 4420,
-  "region_observed": 2,
-  "channels_discovered": 19546,
+  "queries_completed": 280,
+  "region_queries_completed": 0,
+  "region_channels": 173,
+  "region_observed": 0,
+  "channels_discovered": 19624,
   "channels_observed": 3,
-  "search_pages": 6632,
-  "search_results_read": 123935,
+  "search_pages": 6657,
+  "search_results_read": 124377,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 38,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4420,
+      "channels": 4458,
       "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
@@ -2072,17 +2072,17 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 138,
-          "results_read": 459,
-          "pages": 23
+          "status": "completed",
+          "channels": 144,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 94,
-          "results_read": 378,
-          "pages": 19
+          "status": "completed",
+          "channels": 132,
+          "results_read": 507,
+          "pages": 27
         }
       ]
     },
@@ -2090,7 +2090,7 @@
       "name": "판교",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 0,
+      "channels": 173,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2099,17 +2099,17 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 101,
+          "results_read": 139,
+          "pages": 7
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 108,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "세무회계",
