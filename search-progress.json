@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:28:34.858833+00:00",
+  "updated_at": "2026-10-03T09:29:37.084969+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 성형외과",
-    "판교 안과"
+    "판교 정형외과",
+    "판교 이비인후과"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29602,
+    "total": 29608,
     "processed": 3,
-    "pending": 29599,
+    "pending": 29605,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 299,
-  "region_queries_completed": 19,
-  "region_channels": 2761,
+  "queries_completed": 300,
+  "region_queries_completed": 20,
+  "region_channels": 2909,
   "region_observed": 0,
-  "channels_discovered": 20942,
+  "channels_discovered": 21011,
   "channels_observed": 3,
-  "search_pages": 7085,
-  "search_results_read": 132340,
+  "search_pages": 7113,
+  "search_results_read": 132878,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 19,
+      "queries_completed": 20,
       "queries_total": 40,
-      "channels": 2761,
+      "channels": 2909,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2225,10 +2225,10 @@
         },
         {
           "name": "성형외과",
-          "status": "running",
-          "channels": 239,
-          "results_read": 440,
-          "pages": 22
+          "status": "completed",
+          "channels": 254,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "안과",
@@ -2239,17 +2239,17 @@
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 145,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 123,
+          "results_read": 200,
+          "pages": 10
         },
         {
           "name": "재활의학과",
