@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:58:24.588618+00:00",
+  "updated_at": "2026-10-03T06:59:27.163227+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 한의원",
-    "평택 한방병원"
+    "평택 학원",
+    "평택 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28594,
+    "total": 28599,
     "processed": 3,
-    "pending": 28591,
+    "pending": 28596,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 128,
-  "region_queries_completed": 8,
-  "region_channels": 1354,
+  "queries_completed": 130,
+  "region_queries_completed": 10,
+  "region_channels": 1478,
   "region_observed": 1,
-  "channels_discovered": 11494,
+  "channels_discovered": 11571,
   "channels_observed": 3,
-  "search_pages": 2959,
-  "search_results_read": 55259,
+  "search_pages": 2988,
+  "search_results_read": 55785,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 8,
+      "queries_completed": 10,
       "queries_total": 40,
-      "channels": 1354,
+      "channels": 1478,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -983,28 +983,28 @@
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 57,
-          "results_read": 235,
-          "pages": 12
+          "status": "completed",
+          "channels": 130,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 17,
-          "results_read": 59,
-          "pages": 3
+          "status": "completed",
+          "channels": 54,
+          "results_read": 217,
+          "pages": 12
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 43,
+          "results_read": 115,
+          "pages": 6
         },
         {
           "name": "입시학원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
