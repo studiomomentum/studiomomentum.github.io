@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:26:30.041921+00:00",
+  "updated_at": "2026-10-03T09:27:33.422675+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 행정사",
-    "판교 행정사사무소"
+    "판교 피부과",
+    "판교 성형외과"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29582,
+    "total": 29588,
     "processed": 3,
-    "pending": 29579,
+    "pending": 29585,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 295,
-  "region_queries_completed": 15,
-  "region_channels": 2390,
+  "queries_completed": 297,
+  "region_queries_completed": 17,
+  "region_channels": 2603,
   "region_observed": 0,
-  "channels_discovered": 20721,
+  "channels_discovered": 20863,
   "channels_observed": 3,
-  "search_pages": 7027,
-  "search_results_read": 131324,
+  "search_pages": 7057,
+  "search_results_read": 131850,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 15,
+      "queries_completed": 17,
       "queries_total": 40,
-      "channels": 2390,
+      "channels": 2603,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2204,31 +2204,31 @@
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 129,
-          "results_read": 180,
-          "pages": 9
+          "status": "completed",
+          "channels": 189,
+          "results_read": 285,
+          "pages": 16
         },
         {
           "name": "행정사사무소",
-          "status": "running",
-          "channels": 50,
-          "results_read": 80,
-          "pages": 4
+          "status": "completed",
+          "channels": 51,
+          "results_read": 81,
+          "pages": 6
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 148,
+          "results_read": 260,
+          "pages": 13
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 99,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "안과",
