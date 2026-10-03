@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:31:40.743674+00:00",
+  "updated_at": "2026-10-03T08:32:42.960471+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 감정평가사",
-    "화성 건축사사무소"
+    "화성 심리상담센터",
+    "화성 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29280,
+    "total": 29297,
     "processed": 3,
-    "pending": 29277,
+    "pending": 29294,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 235,
-  "region_queries_completed": 35,
-  "region_channels": 4918,
+  "queries_completed": 237,
+  "region_queries_completed": 37,
+  "region_channels": 5154,
   "region_observed": 1,
-  "channels_discovered": 17373,
+  "channels_discovered": 17494,
   "channels_observed": 3,
-  "search_pages": 5531,
-  "search_results_read": 103281,
+  "search_pages": 5560,
+  "search_results_read": 103803,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 35,
+      "queries_completed": 37,
       "queries_total": 40,
-      "channels": 4918,
+      "channels": 5154,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1751,10 +1751,10 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 236,
-          "results_read": 397,
-          "pages": 20
+          "status": "completed",
+          "channels": 296,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "손해사정사",
@@ -1765,24 +1765,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 69,
-          "results_read": 120,
-          "pages": 6
+          "status": "completed",
+          "channels": 169,
+          "results_read": 295,
+          "pages": 16
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 129,
+          "results_read": 175,
+          "pages": 9
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 41,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "중고차",
