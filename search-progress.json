@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:25:28.588343+00:00",
+  "updated_at": "2026-10-03T09:26:30.041921+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 공인중개사",
-    "판교 부동산중개"
+    "판교 행정사",
+    "판교 행정사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29581,
+    "total": 29582,
     "processed": 3,
-    "pending": 29578,
+    "pending": 29579,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 293,
-  "region_queries_completed": 13,
-  "region_channels": 2256,
+  "queries_completed": 295,
+  "region_queries_completed": 15,
+  "region_channels": 2390,
   "region_observed": 0,
-  "channels_discovered": 20670,
+  "channels_discovered": 20721,
   "channels_observed": 3,
-  "search_pages": 6999,
-  "search_results_read": 130823,
+  "search_pages": 7027,
+  "search_results_read": 131324,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 13,
+      "queries_completed": 15,
       "queries_total": 40,
-      "channels": 2256,
+      "channels": 2390,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2190,31 +2190,31 @@
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 210,
-          "results_read": 412,
-          "pages": 21
+          "status": "completed",
+          "channels": 241,
+          "results_read": 476,
+          "pages": 26
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 131,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 169,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 129,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "피부과",
