@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:36:45.364048+00:00",
+  "updated_at": "2026-10-03T07:37:48.126555+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 어학원",
-    "용인 공인중개사"
+    "용인 부동산중개",
+    "용인 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28934,
+    "total": 28948,
     "processed": 3,
-    "pending": 28931,
+    "pending": 28945,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 172,
-  "region_queries_completed": 12,
-  "region_channels": 1506,
+  "queries_completed": 174,
+  "region_queries_completed": 14,
+  "region_channels": 1683,
   "region_observed": 0,
-  "channels_discovered": 14121,
+  "channels_discovered": 14190,
   "channels_observed": 3,
-  "search_pages": 4015,
-  "search_results_read": 75004,
+  "search_pages": 4045,
+  "search_results_read": 75538,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 12,
+      "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1506,
+      "channels": 1683,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1304,31 +1304,31 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 120,
-          "results_read": 369,
-          "pages": 19
+          "status": "completed",
+          "channels": 135,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 37,
-          "results_read": 99,
-          "pages": 5
+          "status": "completed",
+          "channels": 92,
+          "results_read": 242,
+          "pages": 14
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 104,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 37,
+          "results_read": 117,
+          "pages": 6
         },
         {
           "name": "행정사사무소",
