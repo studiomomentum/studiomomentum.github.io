@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:16:15.724360+00:00",
+  "updated_at": "2026-10-03T05:17:17.634452+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 변호사",
-    "수원 법무법인"
+    "수원 법률사무소",
+    "수원 치과"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 27973,
+    "total": 27974,
     "processed": 0,
-    "pending": 27973,
+    "pending": 27974,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 4,
-  "region_queries_completed": 4,
-  "region_channels": 456,
+  "queries_completed": 5,
+  "region_queries_completed": 5,
+  "region_channels": 571,
   "region_observed": 0,
-  "channels_discovered": 456,
+  "channels_discovered": 571,
   "channels_observed": 0,
-  "search_pages": 113,
-  "search_results_read": 2125,
+  "search_pages": 142,
+  "search_results_read": 2673,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 4,
+      "queries_completed": 5,
       "queries_total": 40,
-      "channels": 456,
+      "channels": 571,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -76,24 +76,24 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 131,
-          "results_read": 418,
-          "pages": 21
+          "status": "completed",
+          "channels": 160,
+          "results_read": 511,
+          "pages": 27
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 90,
+          "results_read": 275,
+          "pages": 14
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 57,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "치과의원",
