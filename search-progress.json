@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:46:01.343947+00:00",
+  "updated_at": "2026-10-03T06:47:03.184388+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 변리사",
-    "오산 관세사"
+    "오산 감정평가사",
+    "오산 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28492,
+    "total": 28514,
     "processed": 3,
-    "pending": 28489,
+    "pending": 28511,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 112,
-  "region_queries_completed": 32,
-  "region_channels": 3608,
+  "queries_completed": 115,
+  "region_queries_completed": 35,
+  "region_channels": 3839,
   "region_observed": 1,
-  "channels_discovered": 10263,
+  "channels_discovered": 10420,
   "channels_observed": 3,
-  "search_pages": 2612,
-  "search_results_read": 48807,
+  "search_pages": 2642,
+  "search_results_read": 49313,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 32,
+      "queries_completed": 35,
       "queries_total": 40,
-      "channels": 3608,
+      "channels": 3839,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -858,38 +858,38 @@
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 57,
-          "results_read": 100,
-          "pages": 5
+          "status": "completed",
+          "channels": 106,
+          "results_read": 169,
+          "pages": 10
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 76,
+          "results_read": 93,
+          "pages": 6
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 147,
+          "results_read": 197,
+          "pages": 10
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 46,
+          "results_read": 69,
+          "pages": 5
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "심리상담센터",
