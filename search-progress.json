@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:25:36.271267+00:00",
+  "updated_at": "2026-10-03T11:26:39.562493+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 안과",
-    "송파 정형외과"
+    "송파 정형외과",
+    "송파 이비인후과"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30352,
+    "total": 30355,
     "processed": 3,
-    "pending": 30349,
+    "pending": 30352,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 419,
-  "region_queries_completed": 19,
-  "region_channels": 2476,
+  "queries_completed": 420,
+  "region_queries_completed": 20,
+  "region_channels": 2548,
   "region_observed": 1,
-  "channels_discovered": 27652,
+  "channels_discovered": 27672,
   "channels_observed": 3,
-  "search_pages": 10146,
-  "search_results_read": 191381,
+  "search_pages": 10174,
+  "search_results_read": 191905,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 19,
+      "queries_completed": 20,
       "queries_total": 40,
-      "channels": 2476,
+      "channels": 2548,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3111,24 +3111,24 @@
         },
         {
           "name": "안과",
-          "status": "running",
-          "channels": 81,
-          "results_read": 332,
-          "pages": 17
+          "status": "completed",
+          "channels": 99,
+          "results_read": 480,
+          "pages": 26
         },
         {
           "name": "정형외과",
           "status": "running",
-          "channels": 58,
-          "results_read": 160,
-          "pages": 8
+          "channels": 108,
+          "results_read": 436,
+          "pages": 22
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 24,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "재활의학과",
