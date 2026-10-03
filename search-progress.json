@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:21:53.634833+00:00",
+  "updated_at": "2026-10-03T10:22:57.468558+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "강남 손해사정사",
-    "강남 건축사사무소"
+    "강남 건축사사무소",
+    "강남 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 355,
-  "region_queries_completed": 35,
-  "region_channels": 4543,
+  "queries_completed": 356,
+  "region_queries_completed": 36,
+  "region_channels": 4697,
   "region_observed": 1,
-  "channels_discovered": 24715,
+  "channels_discovered": 24776,
   "channels_observed": 3,
-  "search_pages": 8479,
-  "search_results_read": 158494,
+  "search_pages": 8507,
+  "search_results_read": 159016,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 35,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 4543,
+      "channels": 4697,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2637,24 +2637,24 @@
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 118,
-          "results_read": 332,
-          "pages": 17
+          "status": "completed",
+          "channels": 210,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 68,
-          "results_read": 218,
-          "pages": 11
+          "channels": 175,
+          "results_read": 485,
+          "pages": 25
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 16,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "필라테스",
