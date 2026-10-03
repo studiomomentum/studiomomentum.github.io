@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:03:42.589611+00:00",
+  "updated_at": "2026-10-03T06:04:44.439885+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 피부과",
-    "동탄 성형외과"
+    "동탄 안과",
+    "동탄 정형외과"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 57,
-  "region_queries_completed": 17,
-  "region_channels": 2435,
+  "queries_completed": 59,
+  "region_queries_completed": 19,
+  "region_channels": 2479,
   "region_observed": 1,
-  "channels_discovered": 6081,
+  "channels_discovered": 6110,
   "channels_observed": 3,
-  "search_pages": 1434,
-  "search_results_read": 26935,
+  "search_pages": 1463,
+  "search_results_read": 27455,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 17,
+      "queries_completed": 19,
       "queries_total": 40,
-      "channels": 2435,
+      "channels": 2479,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -460,31 +460,31 @@
         },
         {
           "name": "피부과",
-          "status": "running",
-          "channels": 218,
-          "results_read": 520,
-          "pages": 26
+          "status": "completed",
+          "channels": 222,
+          "results_read": 567,
+          "pages": 30
         },
         {
           "name": "성형외과",
-          "status": "running",
-          "channels": 224,
-          "results_read": 459,
-          "pages": 23
+          "status": "completed",
+          "channels": 229,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "안과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 36,
+          "results_read": 238,
+          "pages": 12
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 200,
+          "pages": 10
         },
         {
           "name": "이비인후과",
