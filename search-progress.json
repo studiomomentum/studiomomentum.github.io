@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:19:17.675928+00:00",
+  "updated_at": "2026-10-03T09:20:18.833505+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 치과의원",
-    "판교 한의원"
+    "판교 한의원",
+    "판교 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29562,
+    "total": 29566,
     "processed": 3,
-    "pending": 29559,
+    "pending": 29563,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 287,
-  "region_queries_completed": 7,
-  "region_channels": 1260,
+  "queries_completed": 288,
+  "region_queries_completed": 8,
+  "region_channels": 1440,
   "region_observed": 0,
-  "channels_discovered": 20133,
+  "channels_discovered": 20208,
   "channels_observed": 3,
-  "search_pages": 6829,
-  "search_results_read": 127597,
+  "search_pages": 6857,
+  "search_results_read": 128135,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 7,
+      "queries_completed": 8,
       "queries_total": 40,
-      "channels": 1260,
+      "channels": 1440,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2148,24 +2148,24 @@
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 60,
-          "results_read": 277,
-          "pages": 14
+          "status": "completed",
+          "channels": 136,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "한의원",
           "status": "running",
-          "channels": 69,
-          "results_read": 140,
-          "pages": 7
+          "channels": 183,
+          "results_read": 420,
+          "pages": 21
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 30,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "학원",
