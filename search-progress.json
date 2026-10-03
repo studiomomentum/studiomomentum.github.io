@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:06:54.700452+00:00",
+  "updated_at": "2026-10-03T10:07:57.142141+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "강남 이비인후과",
-    "강남 재활의학과"
+    "강남 마취통증의학과",
+    "강남 내과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29897,
+    "total": 29902,
     "processed": 3,
-    "pending": 29894,
+    "pending": 29899,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 341,
-  "region_queries_completed": 21,
-  "region_channels": 3193,
+  "queries_completed": 343,
+  "region_queries_completed": 23,
+  "region_channels": 3299,
   "region_observed": 1,
-  "channels_discovered": 24052,
+  "channels_discovered": 24098,
   "channels_observed": 3,
-  "search_pages": 8119,
-  "search_results_read": 151713,
+  "search_pages": 8147,
+  "search_results_read": 152214,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 21,
+      "queries_completed": 23,
       "queries_total": 40,
-      "channels": 3193,
+      "channels": 3299,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2539,31 +2539,31 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 204,
-          "results_read": 476,
-          "pages": 24
+          "status": "completed",
+          "channels": 210,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "재활의학과",
-          "status": "running",
-          "channels": 147,
-          "results_read": 418,
-          "pages": 21
+          "status": "completed",
+          "channels": 172,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 81,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "내과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 87,
+          "results_read": 179,
+          "pages": 9
         },
         {
           "name": "산부인과",
