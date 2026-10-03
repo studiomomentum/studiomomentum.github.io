@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:45:08.584373+00:00",
+  "updated_at": "2026-10-03T08:46:12.228871+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 학원",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29379,
+    "total": 29382,
     "processed": 3,
-    "pending": 29376,
+    "pending": 29379,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 250,
   "region_queries_completed": 10,
-  "region_channels": 937,
+  "region_channels": 1039,
   "region_observed": 1,
-  "channels_discovered": 18117,
+  "channels_discovered": 18159,
   "channels_observed": 3,
-  "search_pages": 5892,
-  "search_results_read": 110023,
+  "search_pages": 5922,
+  "search_results_read": 110620,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 10,
       "queries_total": 40,
-      "channels": 937,
+      "channels": 1039,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1877,16 +1877,16 @@
         {
           "name": "학원",
           "status": "running",
-          "channels": 15,
-          "results_read": 20,
-          "pages": 1
+          "channels": 71,
+          "results_read": 317,
+          "pages": 16
         },
         {
           "name": "입시학원",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 65,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "어학원",
