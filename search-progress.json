@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:08:55.539319+00:00",
+  "updated_at": "2026-10-03T09:09:57.800698+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 건축사사무소",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29487,
+    "total": 29493,
     "processed": 3,
-    "pending": 29484,
+    "pending": 29490,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 276,
   "region_queries_completed": 36,
-  "region_channels": 3902,
+  "region_channels": 4137,
   "region_observed": 1,
-  "channels_discovered": 19295,
+  "channels_discovered": 19421,
   "channels_observed": 3,
-  "search_pages": 6548,
-  "search_results_read": 122312,
+  "search_pages": 6576,
+  "search_results_read": 122871,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 36,
       "queries_total": 40,
-      "channels": 3902,
+      "channels": 4137,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2059,16 +2059,16 @@
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 62,
-          "results_read": 136,
-          "pages": 7
+          "channels": 188,
+          "results_read": 415,
+          "pages": 21
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 72,
-          "results_read": 120,
-          "pages": 6
+          "channels": 230,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "필라테스",
