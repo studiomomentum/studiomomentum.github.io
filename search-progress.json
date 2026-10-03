@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:38:50.344482+00:00",
+  "updated_at": "2026-10-03T07:39:51.886627+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 부동산중개",
-    "용인 행정사"
+    "용인 행정사사무소",
+    "용인 피부과"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28949,
+    "total": 28954,
     "processed": 3,
-    "pending": 28946,
+    "pending": 28951,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 174,
-  "region_queries_completed": 14,
-  "region_channels": 1823,
+  "queries_completed": 176,
+  "region_queries_completed": 16,
+  "region_channels": 1935,
   "region_observed": 0,
-  "channels_discovered": 14236,
+  "channels_discovered": 14280,
   "channels_observed": 3,
-  "search_pages": 4073,
-  "search_results_read": 76090,
+  "search_pages": 4101,
+  "search_results_read": 76603,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 14,
+      "queries_completed": 16,
       "queries_total": 40,
-      "channels": 1823,
+      "channels": 1935,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1318,31 +1318,31 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 190,
-          "results_read": 432,
-          "pages": 22
+          "status": "completed",
+          "channels": 224,
+          "results_read": 546,
+          "pages": 29
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 132,
-          "results_read": 397,
-          "pages": 20
+          "status": "completed",
+          "channels": 177,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 26,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 49,
+          "results_read": 139,
+          "pages": 7
         },
         {
           "name": "성형외과",
