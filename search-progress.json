@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:42:55.122704+00:00",
+  "updated_at": "2026-10-03T06:43:57.787416+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "오산 동물병원",
@@ -13,9 +13,9 @@
     "region": "오산"
   },
   "classification": {
-    "total": 28461,
+    "total": 28462,
     "processed": 3,
-    "pending": 28458,
+    "pending": 28459,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 107,
   "region_queries_completed": 27,
-  "region_channels": 3163,
+  "region_channels": 3302,
   "region_observed": 1,
-  "channels_discovered": 9944,
+  "channels_discovered": 10051,
   "channels_observed": 3,
-  "search_pages": 2524,
-  "search_results_read": 47203,
+  "search_pages": 2554,
+  "search_results_read": 47800,
   "query_errors": {},
   "regions": [
     {
@@ -625,7 +625,7 @@
       "name": "오산",
       "queries_completed": 27,
       "queries_total": 40,
-      "channels": 3163,
+      "channels": 3302,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -824,16 +824,16 @@
         {
           "name": "동물병원",
           "status": "running",
-          "channels": 74,
-          "results_read": 178,
-          "pages": 9
+          "channels": 195,
+          "results_read": 477,
+          "pages": 24
         },
         {
           "name": "의원",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 105,
+          "results_read": 298,
+          "pages": 15
         },
         {
           "name": "노무사",
