@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:11:01.181945+00:00",
+  "updated_at": "2026-10-03T11:12:03.121778+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 법무법인",
-    "송파 법률사무소"
+    "송파 치과",
+    "송파 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30276,
+    "total": 30278,
     "processed": 3,
-    "pending": 30273,
+    "pending": 30275,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 404,
-  "region_queries_completed": 4,
-  "region_channels": 543,
+  "queries_completed": 406,
+  "region_queries_completed": 6,
+  "region_channels": 639,
   "region_observed": 0,
-  "channels_discovered": 27039,
+  "channels_discovered": 27057,
   "channels_observed": 3,
-  "search_pages": 9764,
-  "search_results_read": 182490,
+  "search_pages": 9792,
+  "search_results_read": 182991,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 4,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 543,
+      "channels": 639,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -3006,31 +3006,31 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 99,
-          "results_read": 296,
-          "pages": 15
+          "status": "completed",
+          "channels": 150,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 85,
-          "results_read": 257,
-          "pages": 13
+          "status": "completed",
+          "channels": 129,
+          "results_read": 493,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 41,
+          "results_read": 58,
+          "pages": 3
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 14,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "한의원",
