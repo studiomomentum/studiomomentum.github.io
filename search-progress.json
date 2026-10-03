@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:58:34.659688+00:00",
+  "updated_at": "2026-10-03T05:59:36.949623+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 입시학원",
-    "동탄 어학원"
+    "동탄 공인중개사",
+    "동탄 부동산중개"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28124,
+    "total": 28128,
     "processed": 2,
-    "pending": 28122,
+    "pending": 28126,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 52,
-  "region_queries_completed": 12,
-  "region_channels": 1722,
+  "queries_completed": 53,
+  "region_queries_completed": 13,
+  "region_channels": 1826,
   "region_observed": 0,
-  "channels_discovered": 5480,
+  "channels_discovered": 5563,
   "channels_observed": 2,
-  "search_pages": 1291,
-  "search_results_read": 24234,
+  "search_pages": 1320,
+  "search_results_read": 24772,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 12,
+      "queries_completed": 13,
       "queries_total": 40,
-      "channels": 1722,
+      "channels": 1826,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -425,24 +425,24 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 17,
-          "results_read": 337,
-          "pages": 17
+          "status": "completed",
+          "channels": 22,
+          "results_read": 498,
+          "pages": 27
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 124,
+          "results_read": 297,
+          "pages": 15
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 45,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "행정사",
