@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:29:29.631477+00:00",
+  "updated_at": "2026-10-03T06:30:31.357129+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 한방병원",
-    "오산 학원"
+    "오산 입시학원",
+    "오산 어학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28329,
+    "total": 28343,
     "processed": 3,
-    "pending": 28326,
+    "pending": 28340,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 89,
-  "region_queries_completed": 9,
-  "region_channels": 1432,
+  "queries_completed": 91,
+  "region_queries_completed": 11,
+  "region_channels": 1569,
   "region_observed": 1,
-  "channels_discovered": 8902,
+  "channels_discovered": 8974,
   "channels_observed": 3,
-  "search_pages": 2148,
-  "search_results_read": 40247,
+  "search_pages": 2177,
+  "search_results_read": 40741,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 9,
+      "queries_completed": 11,
       "queries_total": 40,
-      "channels": 1432,
+      "channels": 1569,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -697,31 +697,31 @@
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 200,
-          "results_read": 455,
-          "pages": 23
+          "status": "completed",
+          "channels": 211,
+          "results_read": 496,
+          "pages": 27
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 70,
-          "results_read": 436,
-          "pages": 22
+          "status": "completed",
+          "channels": 111,
+          "results_read": 538,
+          "pages": 29
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 87,
+          "results_read": 218,
+          "pages": 11
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 43,
+          "results_read": 133,
+          "pages": 7
         },
         {
           "name": "공인중개사",
