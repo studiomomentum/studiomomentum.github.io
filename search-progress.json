@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:22:26.740758+00:00",
+  "updated_at": "2026-10-03T05:23:27.949846+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 입시학원",
-    "수원 어학원"
+    "수원 어학원",
+    "수원 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 28007,
+    "total": 28012,
     "processed": 1,
-    "pending": 28006,
+    "pending": 28011,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 11,
-  "region_queries_completed": 11,
-  "region_channels": 1222,
+  "queries_completed": 13,
+  "region_queries_completed": 13,
+  "region_channels": 1326,
   "region_observed": 1,
-  "channels_discovered": 1222,
+  "channels_discovered": 1326,
   "channels_observed": 1,
-  "search_pages": 286,
-  "search_results_read": 5368,
+  "search_pages": 314,
+  "search_results_read": 5876,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 11,
+      "queries_completed": 13,
       "queries_total": 40,
-      "channels": 1222,
+      "channels": 1326,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -125,24 +125,24 @@
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 109,
-          "results_read": 375,
-          "pages": 19
+          "status": "completed",
+          "channels": 159,
+          "results_read": 509,
+          "pages": 27
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 64,
-          "results_read": 236,
-          "pages": 12
+          "status": "completed",
+          "channels": 96,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 51,
+          "results_read": 116,
+          "pages": 6
         },
         {
           "name": "부동산중개",
