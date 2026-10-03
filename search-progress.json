@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:59:36.949623+00:00",
+  "updated_at": "2026-10-03T06:00:38.768231+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 공인중개사",
-    "동탄 부동산중개"
+    "동탄 부동산중개",
+    "동탄 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28128,
+    "total": 28136,
     "processed": 2,
-    "pending": 28126,
+    "pending": 28134,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 53,
-  "region_queries_completed": 13,
-  "region_channels": 1826,
+  "queries_completed": 54,
+  "region_queries_completed": 14,
+  "region_channels": 1929,
   "region_observed": 0,
-  "channels_discovered": 5563,
+  "channels_discovered": 5653,
   "channels_observed": 2,
-  "search_pages": 1320,
-  "search_results_read": 24772,
+  "search_pages": 1349,
+  "search_results_read": 25326,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 13,
+      "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1826,
+      "channels": 1929,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -432,24 +432,24 @@
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 124,
-          "results_read": 297,
-          "pages": 15
+          "status": "completed",
+          "channels": 209,
+          "results_read": 531,
+          "pages": 28
         },
         {
           "name": "부동산중개",
           "status": "running",
-          "channels": 45,
-          "results_read": 80,
-          "pages": 4
+          "channels": 107,
+          "results_read": 380,
+          "pages": 19
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 7,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "행정사사무소",
