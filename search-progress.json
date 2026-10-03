@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:07:52.671461+00:00",
+  "updated_at": "2026-10-03T09:08:55.539319+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 감정평가사",
-    "분당 손해사정사"
+    "분당 건축사사무소",
+    "분당 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29478,
+    "total": 29487,
     "processed": 3,
-    "pending": 29475,
+    "pending": 29484,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 274,
-  "region_queries_completed": 34,
-  "region_channels": 3680,
+  "queries_completed": 276,
+  "region_queries_completed": 36,
+  "region_channels": 3902,
   "region_observed": 1,
-  "channels_discovered": 19205,
+  "channels_discovered": 19295,
   "channels_observed": 3,
-  "search_pages": 6518,
-  "search_results_read": 121775,
+  "search_pages": 6548,
+  "search_results_read": 122312,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 34,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 3680,
+      "channels": 3902,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2044,31 +2044,31 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 206,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 266,
+          "results_read": 500,
+          "pages": 26
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 54,
-          "results_read": 117,
-          "pages": 6
+          "status": "completed",
+          "channels": 161,
+          "results_read": 258,
+          "pages": 15
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 62,
+          "results_read": 136,
+          "pages": 7
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 72,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "필라테스",
