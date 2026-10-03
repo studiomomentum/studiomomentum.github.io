@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:06:52.919780+00:00",
+  "updated_at": "2026-10-03T11:07:54.478063+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "송파 세무사",
@@ -13,9 +13,9 @@
     "region": "송파"
   },
   "classification": {
-    "total": 30271,
+    "total": 30272,
     "processed": 3,
-    "pending": 30268,
+    "pending": 30269,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 400,
   "region_queries_completed": 0,
-  "region_channels": 148,
+  "region_channels": 199,
   "region_observed": 0,
-  "channels_discovered": 26918,
+  "channels_discovered": 26928,
   "channels_observed": 3,
-  "search_pages": 9654,
-  "search_results_read": 180441,
+  "search_pages": 9680,
+  "search_results_read": 180950,
   "query_errors": {},
   "regions": [
     {
@@ -2969,7 +2969,7 @@
       "name": "송파",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 148,
+      "channels": 199,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2979,16 +2979,16 @@
         {
           "name": "세무사",
           "status": "running",
-          "channels": 106,
-          "results_read": 259,
-          "pages": 13
+          "channels": 154,
+          "results_read": 519,
+          "pages": 26
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 76,
-          "results_read": 255,
-          "pages": 13
+          "channels": 103,
+          "results_read": 504,
+          "pages": 26
         },
         {
           "name": "세무회계",
