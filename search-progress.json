@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:23:27.949846+00:00",
+  "updated_at": "2026-10-03T05:24:29.127935+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 어학원",
-    "수원 공인중개사"
+    "수원 공인중개사",
+    "수원 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 28012,
+    "total": 28021,
     "processed": 1,
-    "pending": 28011,
+    "pending": 28020,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 13,
-  "region_queries_completed": 13,
-  "region_channels": 1326,
+  "queries_completed": 14,
+  "region_queries_completed": 14,
+  "region_channels": 1476,
   "region_observed": 1,
-  "channels_discovered": 1326,
+  "channels_discovered": 1476,
   "channels_observed": 1,
-  "search_pages": 314,
-  "search_results_read": 5876,
+  "search_pages": 342,
+  "search_results_read": 6389,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 13,
+      "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1326,
+      "channels": 1476,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -140,23 +140,23 @@
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 51,
-          "results_read": 116,
-          "pages": 6
+          "channels": 121,
+          "results_read": 392,
+          "pages": 20
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 84,
+          "results_read": 177,
+          "pages": 11
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 29,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "행정사사무소",
