@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:41:01.340922+00:00",
+  "updated_at": "2026-10-03T08:42:03.091542+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 법무법인",
-    "분당 법률사무소"
+    "분당 치과",
+    "분당 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29368,
+    "total": 29370,
     "processed": 3,
-    "pending": 29365,
+    "pending": 29367,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 244,
-  "region_queries_completed": 4,
-  "region_channels": 487,
+  "queries_completed": 246,
+  "region_queries_completed": 6,
+  "region_channels": 592,
   "region_observed": 0,
-  "channels_discovered": 17950,
+  "channels_discovered": 17983,
   "channels_observed": 3,
-  "search_pages": 5778,
-  "search_results_read": 107944,
+  "search_pages": 5806,
+  "search_results_read": 108443,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 4,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 487,
+      "channels": 592,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1834,31 +1834,31 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 108,
-          "results_read": 476,
-          "pages": 24
+          "status": "completed",
+          "channels": 117,
+          "results_read": 500,
+          "pages": 27
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 86,
-          "results_read": 410,
-          "pages": 21
+          "status": "completed",
+          "channels": 98,
+          "results_read": 447,
+          "pages": 24
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 63,
+          "results_read": 219,
+          "pages": 11
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 78,
+          "results_read": 219,
+          "pages": 11
         },
         {
           "name": "한의원",
