@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:53:22.373279+00:00",
+  "updated_at": "2026-10-03T07:54:23.598962+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 법무사",
-    "용인 변리사"
+    "용인 변리사",
+    "용인 관세사"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28985,
+    "total": 28987,
     "processed": 3,
-    "pending": 28982,
+    "pending": 28984,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 191,
-  "region_queries_completed": 31,
-  "region_channels": 3226,
+  "queries_completed": 192,
+  "region_queries_completed": 32,
+  "region_channels": 3381,
   "region_observed": 0,
-  "channels_discovered": 14532,
+  "channels_discovered": 14601,
   "channels_observed": 3,
-  "search_pages": 4477,
-  "search_results_read": 83620,
+  "search_pages": 4505,
+  "search_results_read": 84143,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 31,
+      "queries_completed": 32,
       "queries_total": 40,
-      "channels": 3226,
+      "channels": 3381,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1437,24 +1437,24 @@
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 75,
-          "results_read": 355,
-          "pages": 18
+          "status": "completed",
+          "channels": 115,
+          "results_read": 464,
+          "pages": 25
         },
         {
           "name": "변리사",
           "status": "running",
-          "channels": 48,
-          "results_read": 100,
-          "pages": 5
+          "channels": 178,
+          "results_read": 374,
+          "pages": 19
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 73,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "감정평가사",
