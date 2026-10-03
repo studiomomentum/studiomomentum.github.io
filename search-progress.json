@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:04:44.879375+00:00",
+  "updated_at": "2026-10-03T08:05:47.085617+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "화성 법무법인",
@@ -13,9 +13,9 @@
     "region": "화성"
   },
   "classification": {
-    "total": 29020,
+    "total": 29022,
     "processed": 3,
-    "pending": 29017,
+    "pending": 29019,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 204,
   "region_queries_completed": 4,
-  "region_channels": 723,
+  "region_channels": 867,
   "region_observed": 0,
-  "channels_discovered": 15171,
+  "channels_discovered": 15235,
   "channels_observed": 3,
-  "search_pages": 4785,
-  "search_results_read": 89353,
+  "search_pages": 4813,
+  "search_results_read": 89913,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 4,
       "queries_total": 40,
-      "channels": 723,
+      "channels": 867,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1542,16 +1542,16 @@
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 64,
-          "results_read": 136,
-          "pages": 7
+          "channels": 157,
+          "results_read": 416,
+          "pages": 21
         },
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 34,
-          "results_read": 100,
-          "pages": 5
+          "channels": 156,
+          "results_read": 380,
+          "pages": 19
         },
         {
           "name": "치과",
