@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:20:23.064322+00:00",
+  "updated_at": "2026-10-03T05:21:24.252805+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 한방병원",
-    "수원 학원"
+    "수원 학원",
+    "수원 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 27990,
-    "processed": 0,
-    "pending": 27990,
+    "total": 28002,
+    "processed": 1,
+    "pending": 28001,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,25 +25,25 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 9,
-  "region_queries_completed": 9,
-  "region_channels": 947,
-  "region_observed": 0,
-  "channels_discovered": 947,
-  "channels_observed": 0,
-  "search_pages": 228,
-  "search_results_read": 4287,
+  "queries_completed": 10,
+  "region_queries_completed": 10,
+  "region_channels": 1090,
+  "region_observed": 1,
+  "channels_discovered": 1090,
+  "channels_observed": 1,
+  "search_pages": 256,
+  "search_results_read": 4814,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 9,
+      "queries_completed": 10,
       "queries_total": 40,
-      "channels": 947,
-      "observed": 0,
+      "channels": 1090,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -111,24 +111,24 @@
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 104,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 151,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "학원",
           "status": "running",
-          "channels": 82,
-          "results_read": 279,
-          "pages": 14
+          "channels": 171,
+          "results_read": 559,
+          "pages": 28
         },
         {
           "name": "입시학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 36,
+          "results_read": 78,
+          "pages": 4
         },
         {
           "name": "어학원",
