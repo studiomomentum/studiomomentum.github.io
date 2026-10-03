@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:50:19.107962+00:00",
+  "updated_at": "2026-10-03T05:51:20.683861+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 세무회계",
-    "동탄 변호사"
+    "동탄 변호사",
+    "동탄 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28087,
+    "total": 28091,
     "processed": 2,
-    "pending": 28085,
+    "pending": 28089,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 42,
-  "region_queries_completed": 2,
-  "region_channels": 559,
+  "queries_completed": 44,
+  "region_queries_completed": 4,
+  "region_channels": 716,
   "region_observed": 0,
-  "channels_discovered": 4589,
+  "channels_discovered": 4706,
   "channels_observed": 2,
-  "search_pages": 1059,
-  "search_results_read": 19874,
+  "search_pages": 1089,
+  "search_results_read": 20401,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 559,
+      "channels": 716,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -355,31 +355,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 105,
-          "results_read": 159,
-          "pages": 8
+          "status": "completed",
+          "channels": 110,
+          "results_read": 182,
+          "pages": 11
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 84,
-          "results_read": 155,
-          "pages": 8
+          "channels": 230,
+          "results_read": 453,
+          "pages": 23
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 76,
+          "results_read": 147,
+          "pages": 9
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 23,
+          "results_read": 59,
+          "pages": 3
         },
         {
           "name": "치과",
