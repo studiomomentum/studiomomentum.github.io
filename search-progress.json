@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:56:33.586133+00:00",
+  "updated_at": "2026-10-03T08:57:34.877926+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 이비인후과",
-    "분당 재활의학과"
+    "분당 재활의학과",
+    "분당 마취통증의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29421,
+    "total": 29423,
     "processed": 3,
-    "pending": 29418,
+    "pending": 29420,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 261,
-  "region_queries_completed": 21,
-  "region_channels": 2171,
+  "queries_completed": 262,
+  "region_queries_completed": 22,
+  "region_channels": 2272,
   "region_observed": 1,
-  "channels_discovered": 18566,
+  "channels_discovered": 18606,
   "channels_observed": 3,
-  "search_pages": 6208,
-  "search_results_read": 115974,
+  "search_pages": 6236,
+  "search_results_read": 116511,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 21,
+      "queries_completed": 22,
       "queries_total": 40,
-      "channels": 2171,
+      "channels": 2272,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1953,24 +1953,24 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 138,
-          "results_read": 446,
-          "pages": 23
+          "status": "completed",
+          "channels": 165,
+          "results_read": 505,
+          "pages": 27
         },
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 14,
-          "results_read": 20,
-          "pages": 1
+          "channels": 89,
+          "results_read": 298,
+          "pages": 15
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 64,
+          "results_read": 200,
+          "pages": 10
         },
         {
           "name": "내과의원",
