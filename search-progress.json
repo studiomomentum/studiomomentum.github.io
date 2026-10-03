@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:01:41.380808+00:00",
+  "updated_at": "2026-10-03T09:02:43.001357+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 동물병원",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29433,
+    "total": 29449,
     "processed": 3,
-    "pending": 29430,
+    "pending": 29446,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 267,
   "region_queries_completed": 27,
-  "region_channels": 2664,
+  "region_channels": 2837,
   "region_observed": 1,
-  "channels_discovered": 18736,
+  "channels_discovered": 18843,
   "channels_observed": 3,
-  "search_pages": 6348,
-  "search_results_read": 118601,
+  "search_pages": 6376,
+  "search_results_read": 119138,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 27,
       "queries_total": 40,
-      "channels": 2664,
+      "channels": 2837,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1996,16 +1996,16 @@
         {
           "name": "동물병원",
           "status": "running",
-          "channels": 122,
-          "results_read": 254,
-          "pages": 13
+          "channels": 257,
+          "results_read": 518,
+          "pages": 27
         },
         {
           "name": "의원",
           "status": "running",
-          "channels": 36,
-          "results_read": 60,
-          "pages": 3
+          "channels": 150,
+          "results_read": 333,
+          "pages": 17
         },
         {
           "name": "노무사",
