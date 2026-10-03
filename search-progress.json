@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:35:35.000373+00:00",
+  "updated_at": "2026-10-03T10:36:36.723613+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 한의원",
-    "서초 한방병원"
+    "서초 학원",
+    "서초 입시학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30130,
+    "total": 30135,
     "processed": 3,
-    "pending": 30127,
+    "pending": 30132,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 369,
-  "region_queries_completed": 9,
-  "region_channels": 1411,
+  "queries_completed": 370,
+  "region_queries_completed": 10,
+  "region_channels": 1618,
   "region_observed": 1,
-  "channels_discovered": 25478,
+  "channels_discovered": 25547,
   "channels_observed": 3,
-  "search_pages": 8831,
-  "search_results_read": 165047,
+  "search_pages": 8858,
+  "search_results_read": 165557,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 9,
+      "queries_completed": 10,
       "queries_total": 40,
-      "channels": 1411,
+      "channels": 1618,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2748,21 +2748,21 @@
         },
         {
           "name": "한방병원",
-          "status": "running",
-          "channels": 74,
-          "results_read": 260,
-          "pages": 13
+          "status": "completed",
+          "channels": 160,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 151,
+          "results_read": 276,
+          "pages": 14
         },
         {
           "name": "입시학원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
