@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:18:19.496163+00:00",
+  "updated_at": "2026-10-03T05:19:21.540996+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 치과의원",
-    "수원 한의원"
+    "수원 한의원",
+    "수원 한방병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 27978,
+    "total": 27984,
     "processed": 0,
-    "pending": 27978,
+    "pending": 27984,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 7,
-  "region_queries_completed": 7,
-  "region_channels": 681,
+  "queries_completed": 9,
+  "region_queries_completed": 9,
+  "region_channels": 805,
   "region_observed": 0,
-  "channels_discovered": 681,
+  "channels_discovered": 805,
   "channels_observed": 0,
-  "search_pages": 170,
-  "search_results_read": 3179,
+  "search_pages": 200,
+  "search_results_read": 3729,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 7,
+      "queries_completed": 9,
       "queries_total": 40,
-      "channels": 681,
+      "channels": 805,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -97,24 +97,24 @@
         },
         {
           "name": "치과의원",
-          "status": "running",
-          "channels": 77,
-          "results_read": 258,
-          "pages": 13
+          "status": "completed",
+          "channels": 136,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "한의원",
-          "status": "running",
-          "channels": 45,
-          "results_read": 120,
-          "pages": 6
+          "status": "completed",
+          "channels": 116,
+          "results_read": 398,
+          "pages": 21
         },
         {
           "name": "한방병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 27,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "학원",
