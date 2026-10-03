@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:54:30.410765+00:00",
+  "updated_at": "2026-10-03T08:55:31.715501+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 성형외과",
-    "분당 안과"
+    "분당 정형외과",
+    "분당 이비인후과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29411,
+    "total": 29418,
     "processed": 3,
-    "pending": 29408,
+    "pending": 29415,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 258,
-  "region_queries_completed": 18,
-  "region_channels": 1981,
+  "queries_completed": 260,
+  "region_queries_completed": 20,
+  "region_channels": 2076,
   "region_observed": 1,
-  "channels_discovered": 18505,
+  "channels_discovered": 18531,
   "channels_observed": 3,
-  "search_pages": 6152,
-  "search_results_read": 114950,
+  "search_pages": 6180,
+  "search_results_read": 115442,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 18,
+      "queries_completed": 20,
       "queries_total": 40,
-      "channels": 1981,
+      "channels": 2076,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1932,31 +1932,31 @@
         },
         {
           "name": "성형외과",
-          "status": "running",
+          "status": "completed",
           "channels": 115,
           "results_read": 490,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "안과",
-          "status": "running",
-          "channels": 133,
-          "results_read": 436,
-          "pages": 22
+          "status": "completed",
+          "channels": 172,
+          "results_read": 498,
+          "pages": 27
         },
         {
           "name": "정형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 70,
+          "results_read": 257,
+          "pages": 13
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 62,
+          "results_read": 173,
+          "pages": 9
         },
         {
           "name": "재활의학과",
