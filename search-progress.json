@@ -1,21 +1,18 @@
 {
   "sweep_id": "manual-37099031291",
   "region": "송파",
-  "phase": "parallel",
-  "updated_at": "2026-10-03T11:44:25.673501+00:00",
+  "phase": "incomplete",
+  "updated_at": "2026-10-03T11:45:03.958765+00:00",
   "run_id": "37115666923",
-  "active_queries": [
-    "송파 필라테스",
-    "송파 중고차"
-  ],
+  "active_queries": [],
   "search_stage": {
-    "status": "running",
+    "status": "complete",
     "region": "송파"
   },
   "classification": {
-    "total": 30413,
+    "total": 30418,
     "processed": 3,
-    "pending": 30410,
+    "pending": 30415,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +22,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 438,
-  "region_queries_completed": 38,
-  "region_channels": 4171,
+  "queries_completed": 440,
+  "region_queries_completed": 40,
+  "region_channels": 4214,
   "region_observed": 1,
-  "channels_discovered": 28132,
+  "channels_discovered": 28150,
   "channels_observed": 3,
-  "search_pages": 10642,
-  "search_results_read": 200676,
+  "search_pages": 10655,
+  "search_results_read": 200872,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2964,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 38,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4171,
+      "channels": 4214,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3244,17 +3241,17 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 148,
-          "results_read": 431,
-          "pages": 22
+          "status": "completed",
+          "channels": 162,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 135,
-          "results_read": 358,
-          "pages": 18
+          "status": "completed",
+          "channels": 170,
+          "results_read": 502,
+          "pages": 27
         }
       ]
     }
