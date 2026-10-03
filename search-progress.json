@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:42:21.921006+00:00",
+  "updated_at": "2026-10-03T11:43:23.875815+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 건축사사무소",
-    "송파 심리상담센터"
+    "송파 필라테스",
+    "송파 중고차"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30399,
+    "total": 30403,
     "processed": 3,
-    "pending": 30396,
+    "pending": 30400,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 436,
-  "region_queries_completed": 36,
-  "region_channels": 3860,
+  "queries_completed": 438,
+  "region_queries_completed": 38,
+  "region_channels": 4028,
   "region_observed": 1,
-  "channels_discovered": 28052,
+  "channels_discovered": 28090,
   "channels_observed": 3,
-  "search_pages": 10590,
-  "search_results_read": 199696,
+  "search_pages": 10616,
+  "search_results_read": 200157,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 36,
+      "queries_completed": 38,
       "queries_total": 40,
-      "channels": 3860,
+      "channels": 4028,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3230,31 +3230,31 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 153,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 174,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "running",
-          "channels": 103,
-          "results_read": 356,
-          "pages": 18
+          "status": "completed",
+          "channels": 149,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 80,
+          "results_read": 171,
+          "pages": 9
         },
         {
           "name": "중고차",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 47,
+          "results_read": 99,
+          "pages": 5
         }
       ]
     }
