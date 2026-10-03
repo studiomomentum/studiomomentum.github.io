@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:48:14.675600+00:00",
+  "updated_at": "2026-10-03T08:49:16.230116+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 어학원",
-    "분당 공인중개사"
+    "분당 부동산중개",
+    "분당 행정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29395,
+    "total": 29404,
     "processed": 3,
-    "pending": 29392,
+    "pending": 29401,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 252,
-  "region_queries_completed": 12,
-  "region_channels": 1238,
+  "queries_completed": 254,
+  "region_queries_completed": 14,
+  "region_channels": 1326,
   "region_observed": 1,
-  "channels_discovered": 18231,
+  "channels_discovered": 18265,
   "channels_observed": 3,
-  "search_pages": 5978,
-  "search_results_read": 111679,
+  "search_pages": 6006,
+  "search_results_read": 112184,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 12,
+      "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1238,
+      "channels": 1326,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1890,28 +1890,28 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 61,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 89,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 67,
-          "results_read": 295,
-          "pages": 15
+          "status": "completed",
+          "channels": 113,
+          "results_read": 543,
+          "pages": 29
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 79,
+          "pages": 4
         },
         {
           "name": "행정사",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
