@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:40:00.056951+00:00",
+  "updated_at": "2026-10-03T08:41:01.340922+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 법무법인",
@@ -13,9 +13,9 @@
     "region": "분당"
   },
   "classification": {
-    "total": 29366,
+    "total": 29368,
     "processed": 3,
-    "pending": 29363,
+    "pending": 29365,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 244,
   "region_queries_completed": 4,
-  "region_channels": 434,
+  "region_channels": 487,
   "region_observed": 0,
-  "channels_discovered": 17939,
+  "channels_discovered": 17950,
   "channels_observed": 3,
-  "search_pages": 5750,
-  "search_results_read": 107390,
+  "search_pages": 5778,
+  "search_results_read": 107944,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 4,
       "queries_total": 40,
-      "channels": 434,
+      "channels": 487,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1835,16 +1835,16 @@
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 55,
-          "results_read": 196,
-          "pages": 10
+          "channels": 108,
+          "results_read": 476,
+          "pages": 24
         },
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 41,
-          "results_read": 136,
-          "pages": 7
+          "channels": 86,
+          "results_read": 410,
+          "pages": 21
         },
         {
           "name": "치과",
