@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:22:23.364702+00:00",
+  "updated_at": "2026-10-03T09:23:24.845057+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 학원",
-    "판교 입시학원"
+    "판교 입시학원",
+    "판교 어학원"
   ],
   "search_stage": {
     "status": "running",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 291,
   "region_queries_completed": 11,
-  "region_channels": 1846,
+  "region_channels": 1959,
   "region_observed": 0,
-  "channels_discovered": 20435,
+  "channels_discovered": 20505,
   "channels_observed": 3,
-  "search_pages": 6915,
-  "search_results_read": 129212,
+  "search_pages": 6943,
+  "search_results_read": 129760,
   "query_errors": {},
   "regions": [
     {
@@ -2090,7 +2090,7 @@
       "name": "판교",
       "queries_completed": 11,
       "queries_total": 40,
-      "channels": 1846,
+      "channels": 1959,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2177,16 +2177,16 @@
         {
           "name": "입시학원",
           "status": "running",
-          "channels": 36,
-          "results_read": 100,
-          "pages": 5
+          "channels": 61,
+          "results_read": 379,
+          "pages": 19
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 117,
+          "results_read": 269,
+          "pages": 14
         },
         {
           "name": "공인중개사",
