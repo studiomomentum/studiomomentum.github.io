@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:49:06.557243+00:00",
+  "updated_at": "2026-10-03T06:50:08.117996+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "오산 필라테스",
@@ -13,9 +13,9 @@
     "region": "오산"
   },
   "classification": {
-    "total": 28548,
+    "total": 28550,
     "processed": 3,
-    "pending": 28545,
+    "pending": 28547,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 118,
   "region_queries_completed": 38,
-  "region_channels": 4255,
+  "region_channels": 4378,
   "region_observed": 1,
-  "channels_discovered": 10689,
+  "channels_discovered": 10781,
   "channels_observed": 3,
-  "search_pages": 2700,
-  "search_results_read": 50403,
+  "search_pages": 2729,
+  "search_results_read": 50982,
   "query_errors": {},
   "regions": [
     {
@@ -625,7 +625,7 @@
       "name": "오산",
       "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4255,
+      "channels": 4378,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -901,16 +901,16 @@
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 50,
-          "results_read": 139,
-          "pages": 7
+          "channels": 190,
+          "results_read": 438,
+          "pages": 22
         },
         {
           "name": "중고차",
           "status": "running",
-          "channels": 20,
-          "results_read": 40,
-          "pages": 2
+          "channels": 37,
+          "results_read": 320,
+          "pages": 16
         }
       ]
     },
