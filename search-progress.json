@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:32:34.398225+00:00",
+  "updated_at": "2026-10-03T06:33:37.039837+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 공인중개사",
-    "오산 행정사"
+    "오산 행정사",
+    "오산 행정사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28347,
+    "total": 28349,
     "processed": 3,
-    "pending": 28344,
+    "pending": 28346,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 94,
-  "region_queries_completed": 14,
-  "region_channels": 1821,
+  "queries_completed": 95,
+  "region_queries_completed": 15,
+  "region_channels": 1944,
   "region_observed": 1,
-  "channels_discovered": 9133,
+  "channels_discovered": 9208,
   "channels_observed": 3,
-  "search_pages": 2234,
-  "search_results_read": 41794,
+  "search_pages": 2264,
+  "search_results_read": 42370,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 14,
+      "queries_completed": 15,
       "queries_total": 40,
-      "channels": 1821,
+      "channels": 1944,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -725,10 +725,10 @@
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 131,
-          "results_read": 415,
-          "pages": 21
+          "status": "completed",
+          "channels": 154,
+          "results_read": 515,
+          "pages": 27
         },
         {
           "name": "부동산중개",
@@ -740,16 +740,16 @@
         {
           "name": "행정사",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 121,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 176,
+          "pages": 9
         },
         {
           "name": "피부과",
