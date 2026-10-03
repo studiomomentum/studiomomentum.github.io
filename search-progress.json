@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:56:27.468724+00:00",
+  "updated_at": "2026-10-03T07:57:28.761750+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 감정평가사",
-    "용인 건축사사무소"
+    "용인 건축사사무소",
+    "용인 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28993,
+    "total": 28995,
     "processed": 3,
-    "pending": 28990,
+    "pending": 28992,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 195,
-  "region_queries_completed": 35,
-  "region_channels": 3784,
+  "queries_completed": 196,
+  "region_queries_completed": 36,
+  "region_channels": 3948,
   "region_observed": 0,
-  "channels_discovered": 14763,
+  "channels_discovered": 14811,
   "channels_observed": 3,
-  "search_pages": 4563,
-  "search_results_read": 85205,
+  "search_pages": 4591,
+  "search_results_read": 85737,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 35,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 3784,
+      "channels": 3948,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1458,10 +1458,10 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 244,
-          "results_read": 474,
-          "pages": 24
+          "status": "completed",
+          "channels": 251,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "손해사정사",
@@ -1473,16 +1473,16 @@
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 73,
-          "results_read": 139,
-          "pages": 7
+          "channels": 159,
+          "results_read": 419,
+          "pages": 21
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 127,
+          "results_read": 239,
+          "pages": 12
         },
         {
           "name": "필라테스",
