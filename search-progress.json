@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:54:16.219060+00:00",
+  "updated_at": "2026-10-03T06:55:17.989844+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 세무회계",
-    "평택 변호사"
+    "평택 법무법인",
+    "평택 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28570,
+    "total": 28575,
     "processed": 3,
-    "pending": 28567,
+    "pending": 28572,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 122,
-  "region_queries_completed": 2,
-  "region_channels": 763,
+  "queries_completed": 124,
+  "region_queries_completed": 4,
+  "region_channels": 829,
   "region_observed": 0,
-  "channels_discovered": 11170,
+  "channels_discovered": 11198,
   "channels_observed": 3,
-  "search_pages": 2842,
-  "search_results_read": 53113,
+  "search_pages": 2872,
+  "search_results_read": 53658,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 763,
+      "channels": 829,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -941,31 +941,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 274,
-          "results_read": 458,
-          "pages": 23
+          "status": "completed",
+          "channels": 288,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 169,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 193,
+          "results_read": 513,
+          "pages": 27
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 57,
+          "results_read": 235,
+          "pages": 12
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 22,
+          "results_read": 198,
+          "pages": 10
         },
         {
           "name": "치과",
