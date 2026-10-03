@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:22:26.704050+00:00",
+  "updated_at": "2026-10-03T11:23:29.408271+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 행정사사무소",
-    "송파 피부과"
+    "송파 피부과",
+    "송파 성형외과"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30324,
+    "total": 30332,
     "processed": 3,
-    "pending": 30321,
+    "pending": 30329,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 416,
-  "region_queries_completed": 16,
-  "region_channels": 2004,
+  "queries_completed": 417,
+  "region_queries_completed": 17,
+  "region_channels": 2200,
   "region_observed": 1,
-  "channels_discovered": 27479,
+  "channels_discovered": 27546,
   "channels_observed": 3,
-  "search_pages": 10062,
-  "search_results_read": 189804,
+  "search_pages": 10090,
+  "search_results_read": 190324,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 16,
+      "queries_completed": 17,
       "queries_total": 40,
-      "channels": 2004,
+      "channels": 2200,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3090,24 +3090,24 @@
         },
         {
           "name": "행정사사무소",
-          "status": "running",
-          "channels": 116,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 158,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "피부과",
           "status": "running",
-          "channels": 26,
-          "results_read": 40,
-          "pages": 2
+          "channels": 154,
+          "results_read": 314,
+          "pages": 16
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 56,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "안과",
