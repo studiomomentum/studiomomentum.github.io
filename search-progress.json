@@ -2,19 +2,17 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:25:02.007919+00:00",
+  "updated_at": "2026-10-03T10:26:04.660578+00:00",
   "run_id": "37115666923",
-  "active_queries": [
-    "강남 중고차"
-  ],
+  "active_queries": [],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 30024,
+    "total": 30028,
     "processed": 3,
-    "pending": 30021,
+    "pending": 30025,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -24,14 +22,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 359,
-  "region_queries_completed": 39,
-  "region_channels": 4946,
+  "queries_completed": 360,
+  "region_queries_completed": 40,
+  "region_channels": 5022,
   "region_observed": 2,
-  "channels_discovered": 24920,
+  "channels_discovered": 24976,
   "channels_observed": 3,
-  "search_pages": 8560,
-  "search_results_read": 159990,
+  "search_pages": 8579,
+  "search_results_read": 160333,
   "query_errors": {},
   "regions": [
     {
@@ -2380,9 +2378,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4946,
+      "channels": 5022,
       "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
@@ -2664,10 +2662,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 61,
-          "results_read": 175,
-          "pages": 9
+          "status": "completed",
+          "channels": 157,
+          "results_read": 518,
+          "pages": 28
         }
       ]
     },
