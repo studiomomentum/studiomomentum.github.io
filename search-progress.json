@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:15:04.373001+00:00",
+  "updated_at": "2026-10-03T06:16:06.369807+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "동탄 감정평가사",
-    "동탄 손해사정사"
+    "동탄 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28196,
+    "total": 28208,
     "processed": 3,
-    "pending": 28193,
+    "pending": 28205,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 74,
-  "region_queries_completed": 34,
-  "region_channels": 3975,
+  "queries_completed": 75,
+  "region_queries_completed": 35,
+  "region_channels": 4120,
   "region_observed": 1,
-  "channels_discovered": 7349,
+  "channels_discovered": 7449,
   "channels_observed": 3,
-  "search_pages": 1753,
-  "search_results_read": 32775,
+  "search_pages": 1783,
+  "search_results_read": 33337,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 34,
+      "queries_completed": 35,
       "queries_total": 40,
-      "channels": 3975,
+      "channels": 4120,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -580,23 +580,23 @@
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 10,
-          "results_read": 20,
-          "pages": 1
+          "channels": 126,
+          "results_read": 320,
+          "pages": 16
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 47,
+          "results_read": 66,
+          "pages": 5
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 88,
+          "results_read": 196,
+          "pages": 10
         },
         {
           "name": "심리상담센터",
