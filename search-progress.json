@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:06:49.733444+00:00",
+  "updated_at": "2026-10-03T08:07:51.154367+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "화성 치과",
@@ -13,9 +13,9 @@
     "region": "화성"
   },
   "classification": {
-    "total": 29025,
+    "total": 29031,
     "processed": 3,
-    "pending": 29022,
+    "pending": 29028,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 206,
   "region_queries_completed": 6,
-  "region_channels": 1056,
+  "region_channels": 1253,
   "region_observed": 1,
-  "channels_discovered": 15327,
+  "channels_discovered": 15447,
   "channels_observed": 3,
-  "search_pages": 4843,
-  "search_results_read": 90454,
+  "search_pages": 4871,
+  "search_results_read": 91013,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 6,
       "queries_total": 40,
-      "channels": 1056,
+      "channels": 1253,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1556,16 +1556,16 @@
         {
           "name": "치과",
           "status": "running",
-          "channels": 110,
-          "results_read": 200,
-          "pages": 10
+          "channels": 244,
+          "results_read": 479,
+          "pages": 24
         },
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 92,
-          "results_read": 160,
-          "pages": 8
+          "channels": 200,
+          "results_read": 440,
+          "pages": 22
         },
         {
           "name": "한의원",
