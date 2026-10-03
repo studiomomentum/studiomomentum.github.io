@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:02:45.639528+00:00",
+  "updated_at": "2026-10-03T11:03:47.634765+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "서초 심리상담센터",
@@ -13,9 +13,9 @@
     "region": "서초"
   },
   "classification": {
-    "total": 30261,
+    "total": 30262,
     "processed": 3,
-    "pending": 30258,
+    "pending": 30259,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 397,
   "region_queries_completed": 37,
-  "region_channels": 4473,
-  "region_observed": 1,
-  "channels_discovered": 26726,
+  "region_channels": 4625,
+  "region_observed": 2,
+  "channels_discovered": 26788,
   "channels_observed": 3,
-  "search_pages": 9555,
-  "search_results_read": 178561,
+  "search_pages": 9582,
+  "search_results_read": 179095,
   "query_errors": {},
   "regions": [
     {
@@ -2676,11 +2676,11 @@
       "name": "서초",
       "queries_completed": 37,
       "queries_total": 40,
-      "channels": 4473,
-      "observed": 1,
+      "channels": 4625,
+      "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1,
+      "classified": 2,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2945,16 +2945,16 @@
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 36,
-          "results_read": 120,
-          "pages": 6
+          "channels": 122,
+          "results_read": 396,
+          "pages": 20
         },
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 20,
-          "results_read": 40,
-          "pages": 2
+          "channels": 107,
+          "results_read": 298,
+          "pages": 15
         },
         {
           "name": "중고차",
