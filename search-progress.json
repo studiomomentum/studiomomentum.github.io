@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:31:42.228624+00:00",
+  "updated_at": "2026-10-03T09:32:44.770879+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "판교 내과의원",
@@ -13,9 +13,9 @@
     "region": "판교"
   },
   "classification": {
-    "total": 29614,
+    "total": 29620,
     "processed": 3,
-    "pending": 29611,
+    "pending": 29617,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 304,
   "region_queries_completed": 24,
-  "region_channels": 3192,
+  "region_channels": 3329,
   "region_observed": 0,
-  "channels_discovered": 21177,
+  "channels_discovered": 21261,
   "channels_observed": 3,
-  "search_pages": 7171,
-  "search_results_read": 133923,
+  "search_pages": 7199,
+  "search_results_read": 134483,
   "query_errors": {},
   "regions": [
     {
@@ -2090,7 +2090,7 @@
       "name": "판교",
       "queries_completed": 24,
       "queries_total": 40,
-      "channels": 3192,
+      "channels": 3329,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2268,16 +2268,16 @@
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 98,
-          "results_read": 157,
-          "pages": 8
+          "channels": 207,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 24,
-          "results_read": 60,
-          "pages": 3
+          "channels": 183,
+          "results_read": 340,
+          "pages": 17
         },
         {
           "name": "비뇨기과",
