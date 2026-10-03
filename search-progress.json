@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:38:11.206899+00:00",
+  "updated_at": "2026-10-03T11:39:14.588347+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 변리사",
-    "송파 관세사"
+    "송파 감정평가사",
+    "송파 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30395,
+    "total": 30396,
     "processed": 3,
-    "pending": 30392,
+    "pending": 30393,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 432,
-  "region_queries_completed": 32,
-  "region_channels": 3444,
+  "queries_completed": 434,
+  "region_queries_completed": 34,
+  "region_channels": 3513,
   "region_observed": 1,
-  "channels_discovered": 27943,
+  "channels_discovered": 27962,
   "channels_observed": 3,
-  "search_pages": 10480,
-  "search_results_read": 197632,
+  "search_pages": 10508,
+  "search_results_read": 198119,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 32,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 3444,
+      "channels": 3513,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3202,31 +3202,31 @@
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 88,
-          "results_read": 298,
-          "pages": 15
+          "status": "completed",
+          "channels": 120,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 8,
-          "results_read": 40,
-          "pages": 2
+          "status": "completed",
+          "channels": 13,
+          "results_read": 144,
+          "pages": 9
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 70,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 12,
+          "results_read": 58,
+          "pages": 3
         },
         {
           "name": "건축사사무소",
