@@ -1,21 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "오산",
+  "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:50:08.117996+00:00",
+  "updated_at": "2026-10-03T06:51:10.493345+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 필라테스",
-    "오산 중고차"
+    "평택 세무사",
+    "평택 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "오산"
+    "region": "평택"
   },
   "classification": {
-    "total": 28550,
+    "total": 28552,
     "processed": 3,
-    "pending": 28547,
+    "pending": 28549,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 118,
-  "region_queries_completed": 38,
-  "region_channels": 4378,
-  "region_observed": 1,
-  "channels_discovered": 10781,
+  "queries_completed": 120,
+  "region_queries_completed": 0,
+  "region_channels": 132,
+  "region_observed": 0,
+  "channels_discovered": 10865,
   "channels_observed": 3,
-  "search_pages": 2729,
-  "search_results_read": 50982,
+  "search_pages": 2755,
+  "search_results_read": 51443,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 38,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4378,
+      "channels": 4416,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -900,17 +900,17 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
-          "channels": 190,
-          "results_read": 438,
-          "pages": 22
+          "status": "completed",
+          "channels": 212,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 37,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 70,
+          "results_read": 504,
+          "pages": 27
         }
       ]
     },
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 0,
+      "channels": 132,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -927,17 +927,17 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 78,
+          "results_read": 98,
+          "pages": 5
         },
         {
           "name": "세무회계",
