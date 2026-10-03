@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:43:57.787416+00:00",
+  "updated_at": "2026-10-03T06:44:58.985205+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 동물병원",
-    "오산 의원"
+    "오산 노무사",
+    "오산 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28462,
+    "total": 28486,
     "processed": 3,
-    "pending": 28459,
+    "pending": 28483,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 107,
-  "region_queries_completed": 27,
-  "region_channels": 3302,
+  "queries_completed": 109,
+  "region_queries_completed": 29,
+  "region_channels": 3457,
   "region_observed": 1,
-  "channels_discovered": 10051,
+  "channels_discovered": 10159,
   "channels_observed": 3,
-  "search_pages": 2554,
-  "search_results_read": 47800,
+  "search_pages": 2582,
+  "search_results_read": 48291,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 27,
+      "queries_completed": 29,
       "queries_total": 40,
-      "channels": 3302,
+      "channels": 3457,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -823,31 +823,31 @@
         },
         {
           "name": "동물병원",
-          "status": "running",
-          "channels": 195,
-          "results_read": 477,
-          "pages": 24
+          "status": "completed",
+          "channels": 282,
+          "results_read": 581,
+          "pages": 31
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 105,
-          "results_read": 298,
-          "pages": 15
+          "status": "completed",
+          "channels": 181,
+          "results_read": 505,
+          "pages": 27
         },
         {
           "name": "노무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 91,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 31,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "법무사",
