@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:39:59.207461+00:00",
+  "updated_at": "2026-10-03T09:41:00.807785+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 감정평가사",
-    "판교 건축사사무소"
+    "판교 건축사사무소",
+    "판교 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29672,
+    "total": 29680,
     "processed": 3,
-    "pending": 29669,
+    "pending": 29677,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 315,
-  "region_queries_completed": 35,
-  "region_channels": 4301,
+  "queries_completed": 316,
+  "region_queries_completed": 36,
+  "region_channels": 4447,
   "region_observed": 0,
-  "channels_discovered": 21873,
+  "channels_discovered": 21942,
   "channels_observed": 3,
-  "search_pages": 7397,
-  "search_results_read": 138081,
+  "search_pages": 7425,
+  "search_results_read": 138603,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 35,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 4301,
+      "channels": 4447,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2337,10 +2337,10 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 204,
-          "results_read": 357,
-          "pages": 18
+          "status": "completed",
+          "channels": 272,
+          "results_read": 502,
+          "pages": 27
         },
         {
           "name": "손해사정사",
@@ -2352,16 +2352,16 @@
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 72,
-          "results_read": 178,
-          "pages": 9
+          "channels": 153,
+          "results_read": 455,
+          "pages": 23
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 71,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "필라테스",
