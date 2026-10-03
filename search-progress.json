@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:01:41.011038+00:00",
+  "updated_at": "2026-10-03T10:02:44.642830+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "강남 피부과",
@@ -13,9 +13,9 @@
     "region": "강남"
   },
   "classification": {
-    "total": 29832,
+    "total": 29840,
     "processed": 3,
-    "pending": 29829,
+    "pending": 29837,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 337,
   "region_queries_completed": 17,
-  "region_channels": 2395,
+  "region_channels": 2587,
   "region_observed": 1,
-  "channels_discovered": 23640,
+  "channels_discovered": 23764,
   "channels_observed": 3,
-  "search_pages": 7979,
-  "search_results_read": 149027,
+  "search_pages": 8007,
+  "search_results_read": 149587,
   "query_errors": {},
   "regions": [
     {
@@ -2383,7 +2383,7 @@
       "name": "강남",
       "queries_completed": 17,
       "queries_total": 40,
-      "channels": 2395,
+      "channels": 2587,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2512,16 +2512,16 @@
         {
           "name": "피부과",
           "status": "running",
-          "channels": 117,
-          "results_read": 220,
-          "pages": 11
+          "channels": 215,
+          "results_read": 500,
+          "pages": 25
         },
         {
           "name": "성형외과",
           "status": "running",
-          "channels": 92,
-          "results_read": 179,
-          "pages": 9
+          "channels": 201,
+          "results_read": 459,
+          "pages": 23
         },
         {
           "name": "안과",
