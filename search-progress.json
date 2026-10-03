@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:16:06.369807+00:00",
+  "updated_at": "2026-10-03T06:17:08.035593+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 감정평가사",
-    "동탄 건축사사무소"
+    "동탄 건축사사무소",
+    "동탄 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28208,
+    "total": 28252,
     "processed": 3,
-    "pending": 28205,
+    "pending": 28249,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 75,
-  "region_queries_completed": 35,
-  "region_channels": 4120,
+  "queries_completed": 76,
+  "region_queries_completed": 36,
+  "region_channels": 4293,
   "region_observed": 1,
-  "channels_discovered": 7449,
+  "channels_discovered": 7584,
   "channels_observed": 3,
-  "search_pages": 1783,
-  "search_results_read": 33337,
+  "search_pages": 1811,
+  "search_results_read": 33871,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 35,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 4120,
+      "channels": 4293,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -579,10 +579,10 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 126,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 203,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "손해사정사",
@@ -594,16 +594,16 @@
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 88,
-          "results_read": 196,
-          "pages": 10
+          "channels": 209,
+          "results_read": 473,
+          "pages": 24
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 33,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "필라테스",
