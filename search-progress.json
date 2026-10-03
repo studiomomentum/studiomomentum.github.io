@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:41:50.653044+00:00",
+  "updated_at": "2026-10-03T10:42:53.096242+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 부동산중개",
-    "서초 행정사"
+    "서초 행정사사무소",
+    "서초 피부과"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30188,
+    "total": 30192,
     "processed": 3,
-    "pending": 30185,
+    "pending": 30189,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 375,
-  "region_queries_completed": 15,
-  "region_channels": 2465,
+  "queries_completed": 376,
+  "region_queries_completed": 16,
+  "region_channels": 2546,
   "region_observed": 1,
-  "channels_discovered": 25949,
+  "channels_discovered": 25980,
   "channels_observed": 3,
-  "search_pages": 8997,
-  "search_results_read": 168163,
+  "search_pages": 9025,
+  "search_results_read": 168688,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 15,
+      "queries_completed": 16,
       "queries_total": 40,
-      "channels": 2465,
+      "channels": 2546,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2790,24 +2790,24 @@
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 101,
-          "results_read": 278,
-          "pages": 14
+          "status": "completed",
+          "channels": 163,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 37,
+          "results_read": 276,
+          "pages": 14
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 28,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "성형외과",
