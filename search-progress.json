@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:51:17.981502+00:00",
+  "updated_at": "2026-10-03T10:52:20.155140+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 내과의원",
-    "서초 산부인과"
+    "서초 산부인과",
+    "서초 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 384,
-  "region_queries_completed": 24,
-  "region_channels": 3591,
+  "queries_completed": 385,
+  "region_queries_completed": 25,
+  "region_channels": 3686,
   "region_observed": 1,
-  "channels_discovered": 26380,
+  "channels_discovered": 26405,
   "channels_observed": 3,
-  "search_pages": 9249,
-  "search_results_read": 172888,
+  "search_pages": 9277,
+  "search_results_read": 173402,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 24,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 3591,
+      "channels": 3686,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2853,24 +2853,24 @@
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 108,
-          "results_read": 377,
-          "pages": 19
+          "status": "completed",
+          "channels": 126,
+          "results_read": 484,
+          "pages": 26
         },
         {
           "name": "산부인과",
           "status": "running",
-          "channels": 56,
-          "results_read": 140,
-          "pages": 7
+          "channels": 123,
+          "results_read": 407,
+          "pages": 21
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 40,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "동물병원",
