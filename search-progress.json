@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:34:49.764237+00:00",
+  "updated_at": "2026-10-03T05:35:51.888751+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 산부인과",
-    "수원 비뇨기과"
+    "수원 동물병원",
+    "수원 의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 28046,
+    "total": 28049,
     "processed": 1,
-    "pending": 28045,
+    "pending": 28048,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 25,
-  "region_queries_completed": 25,
-  "region_channels": 2366,
+  "queries_completed": 27,
+  "region_queries_completed": 27,
+  "region_channels": 2490,
   "region_observed": 1,
-  "channels_discovered": 2366,
+  "channels_discovered": 2490,
   "channels_observed": 1,
-  "search_pages": 634,
-  "search_results_read": 11875,
+  "search_pages": 662,
+  "search_results_read": 12371,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 25,
+      "queries_completed": 27,
       "queries_total": 40,
-      "channels": 2366,
+      "channels": 2490,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -223,31 +223,31 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 112,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 185,
+          "results_read": 502,
+          "pages": 27
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 51,
-          "results_read": 298,
-          "pages": 15
+          "status": "completed",
+          "channels": 92,
+          "results_read": 491,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 41,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 10,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "노무사",
