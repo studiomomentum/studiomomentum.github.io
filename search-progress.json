@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:37:55.969836+00:00",
+  "updated_at": "2026-10-03T05:38:58.131133+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "수원 노무사",
@@ -13,9 +13,9 @@
     "region": "수원"
   },
   "classification": {
-    "total": 28058,
+    "total": 28059,
     "processed": 1,
-    "pending": 28057,
+    "pending": 28058,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,19 +27,19 @@
   },
   "queries_completed": 29,
   "region_queries_completed": 29,
-  "region_channels": 2781,
+  "region_channels": 2909,
   "region_observed": 1,
-  "channels_discovered": 2781,
+  "channels_discovered": 2909,
   "channels_observed": 1,
-  "search_pages": 720,
-  "search_results_read": 13477,
+  "search_pages": 750,
+  "search_results_read": 14070,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
       "queries_completed": 29,
       "queries_total": 40,
-      "channels": 2781,
+      "channels": 2909,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -252,16 +252,16 @@
         {
           "name": "노무사",
           "status": "running",
-          "channels": 38,
-          "results_read": 80,
-          "pages": 4
+          "channels": 168,
+          "results_read": 376,
+          "pages": 19
         },
         {
           "name": "노무법인",
           "status": "running",
-          "channels": 6,
-          "results_read": 20,
-          "pages": 1
+          "channels": 120,
+          "results_read": 317,
+          "pages": 16
         },
         {
           "name": "법무사",
