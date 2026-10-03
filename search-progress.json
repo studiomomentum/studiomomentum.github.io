@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:28:28.449221+00:00",
+  "updated_at": "2026-10-03T06:29:29.631477+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "오산 한방병원",
@@ -13,9 +13,9 @@
     "region": "오산"
   },
   "classification": {
-    "total": 28318,
+    "total": 28329,
     "processed": 3,
-    "pending": 28315,
+    "pending": 28326,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 89,
   "region_queries_completed": 9,
-  "region_channels": 1318,
+  "region_channels": 1432,
   "region_observed": 1,
-  "channels_discovered": 8832,
+  "channels_discovered": 8902,
   "channels_observed": 3,
-  "search_pages": 2120,
-  "search_results_read": 39689,
+  "search_pages": 2148,
+  "search_results_read": 40247,
   "query_errors": {},
   "regions": [
     {
@@ -625,7 +625,7 @@
       "name": "오산",
       "queries_completed": 9,
       "queries_total": 40,
-      "channels": 1318,
+      "channels": 1432,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -698,16 +698,16 @@
         {
           "name": "한방병원",
           "status": "running",
-          "channels": 78,
-          "results_read": 175,
-          "pages": 9
+          "channels": 200,
+          "results_read": 455,
+          "pages": 23
         },
         {
           "name": "학원",
           "status": "running",
-          "channels": 44,
-          "results_read": 158,
-          "pages": 8
+          "channels": 70,
+          "results_read": 436,
+          "pages": 22
         },
         {
           "name": "입시학원",
