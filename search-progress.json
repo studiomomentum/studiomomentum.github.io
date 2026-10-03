@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:15:39.904970+00:00",
+  "updated_at": "2026-10-03T10:16:43.750533+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "강남 노무사",
@@ -13,9 +13,9 @@
     "region": "강남"
   },
   "classification": {
-    "total": 29959,
+    "total": 29971,
     "processed": 3,
-    "pending": 29956,
+    "pending": 29968,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 349,
-  "region_queries_completed": 29,
-  "region_channels": 3950,
+  "queries_completed": 350,
+  "region_queries_completed": 30,
+  "region_channels": 4006,
   "region_observed": 1,
-  "channels_discovered": 24451,
+  "channels_discovered": 24477,
   "channels_observed": 3,
-  "search_pages": 8312,
-  "search_results_read": 155339,
+  "search_pages": 8341,
+  "search_results_read": 155895,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 29,
+      "queries_completed": 30,
       "queries_total": 40,
-      "channels": 3950,
+      "channels": 4006,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2595,17 +2595,17 @@
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 70,
-          "results_read": 238,
-          "pages": 12
+          "status": "completed",
+          "channels": 144,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "노무법인",
           "status": "running",
-          "channels": 4,
-          "results_read": 100,
-          "pages": 5
+          "channels": 36,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "법무사",
