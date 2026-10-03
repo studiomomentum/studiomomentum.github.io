@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:27:07.409902+00:00",
+  "updated_at": "2026-10-03T10:28:11.225004+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 세무사",
-    "서초 세무법인"
+    "서초 세무회계",
+    "서초 변호사"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 360,
-  "region_queries_completed": 0,
-  "region_channels": 165,
+  "queries_completed": 362,
+  "region_queries_completed": 2,
+  "region_channels": 255,
   "region_observed": 0,
-  "channels_discovered": 25011,
+  "channels_discovered": 25034,
   "channels_observed": 3,
-  "search_pages": 8607,
-  "search_results_read": 160889,
+  "search_pages": 8635,
+  "search_results_read": 161371,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 40,
-      "channels": 165,
+      "channels": 255,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2685,31 +2685,31 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
+          "status": "completed",
           "channels": 84,
-          "results_read": 278,
-          "pages": 14
+          "results_read": 286,
+          "pages": 16
         },
         {
           "name": "세무법인",
-          "status": "running",
-          "channels": 107,
-          "results_read": 278,
-          "pages": 14
+          "status": "completed",
+          "channels": 153,
+          "results_read": 498,
+          "pages": 27
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 57,
+          "results_read": 234,
+          "pages": 12
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 17,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "법무법인",
