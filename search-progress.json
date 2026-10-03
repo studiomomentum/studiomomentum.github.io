@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:07:57.142141+00:00",
+  "updated_at": "2026-10-03T10:08:59.018959+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "강남 마취통증의학과",
-    "강남 내과의원"
+    "강남 내과의원",
+    "강남 산부인과"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29902,
+    "total": 29906,
     "processed": 3,
-    "pending": 29899,
+    "pending": 29903,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 343,
-  "region_queries_completed": 23,
-  "region_channels": 3299,
+  "queries_completed": 344,
+  "region_queries_completed": 24,
+  "region_channels": 3380,
   "region_observed": 1,
-  "channels_discovered": 24098,
+  "channels_discovered": 24142,
   "channels_observed": 3,
-  "search_pages": 8147,
-  "search_results_read": 152214,
+  "search_pages": 8175,
+  "search_results_read": 152750,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 23,
+      "queries_completed": 24,
       "queries_total": 40,
-      "channels": 3299,
+      "channels": 3380,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2553,21 +2553,21 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 81,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 125,
+          "results_read": 497,
+          "pages": 26
         },
         {
           "name": "내과의원",
           "status": "running",
-          "channels": 87,
-          "results_read": 179,
-          "pages": 9
+          "channels": 192,
+          "results_read": 458,
+          "pages": 23
         },
         {
           "name": "산부인과",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
