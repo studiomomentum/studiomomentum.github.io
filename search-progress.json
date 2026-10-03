@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:55:31.715501+00:00",
+  "updated_at": "2026-10-03T08:56:33.586133+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 정형외과",
-    "분당 이비인후과"
+    "분당 이비인후과",
+    "분당 재활의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29418,
+    "total": 29421,
     "processed": 3,
-    "pending": 29415,
+    "pending": 29418,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 260,
-  "region_queries_completed": 20,
-  "region_channels": 2076,
+  "queries_completed": 261,
+  "region_queries_completed": 21,
+  "region_channels": 2171,
   "region_observed": 1,
-  "channels_discovered": 18531,
+  "channels_discovered": 18566,
   "channels_observed": 3,
-  "search_pages": 6180,
-  "search_results_read": 115442,
+  "search_pages": 6208,
+  "search_results_read": 115974,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 20,
+      "queries_completed": 21,
       "queries_total": 40,
-      "channels": 2076,
+      "channels": 2171,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1946,24 +1946,24 @@
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 70,
-          "results_read": 257,
-          "pages": 13
+          "status": "completed",
+          "channels": 113,
+          "results_read": 496,
+          "pages": 26
         },
         {
           "name": "이비인후과",
           "status": "running",
-          "channels": 62,
-          "results_read": 173,
-          "pages": 9
+          "channels": 138,
+          "results_read": 446,
+          "pages": 23
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 14,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "마취통증의학과",
