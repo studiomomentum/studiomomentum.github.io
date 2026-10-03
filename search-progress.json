@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:51:20.683861+00:00",
+  "updated_at": "2026-10-03T05:52:24.180361+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 변호사",
-    "동탄 법률사무소"
+    "동탄 법률사무소",
+    "동탄 치과"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28091,
+    "total": 28094,
     "processed": 2,
-    "pending": 28089,
+    "pending": 28092,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 44,
-  "region_queries_completed": 4,
-  "region_channels": 716,
+  "queries_completed": 45,
+  "region_queries_completed": 5,
+  "region_channels": 912,
   "region_observed": 0,
-  "channels_discovered": 4706,
+  "channels_discovered": 4837,
   "channels_observed": 2,
-  "search_pages": 1089,
-  "search_results_read": 20401,
+  "search_pages": 1119,
+  "search_results_read": 20977,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 4,
+      "queries_completed": 5,
       "queries_total": 40,
-      "channels": 716,
+      "channels": 912,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -362,10 +362,10 @@
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 230,
-          "results_read": 453,
-          "pages": 23
+          "status": "completed",
+          "channels": 248,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "법무법인",
@@ -377,16 +377,16 @@
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 23,
-          "results_read": 59,
-          "pages": 3
+          "channels": 170,
+          "results_read": 359,
+          "pages": 18
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 91,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "치과의원",
