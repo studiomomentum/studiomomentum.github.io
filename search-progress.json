@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:04:49.700491+00:00",
+  "updated_at": "2026-10-03T11:05:51.292886+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "서초 중고차"
@@ -12,9 +12,9 @@
     "region": "서초"
   },
   "classification": {
-    "total": 30267,
+    "total": 30268,
     "processed": 3,
-    "pending": 30264,
+    "pending": 30265,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -26,12 +26,12 @@
   },
   "queries_completed": 399,
   "region_queries_completed": 39,
-  "region_channels": 4797,
+  "region_channels": 4887,
   "region_observed": 2,
-  "channels_discovered": 26856,
+  "channels_discovered": 26886,
   "channels_observed": 3,
-  "search_pages": 9608,
-  "search_results_read": 179548,
+  "search_pages": 9627,
+  "search_results_read": 179927,
   "query_errors": {},
   "regions": [
     {
@@ -2675,7 +2675,7 @@
       "name": "서초",
       "queries_completed": 39,
       "queries_total": 40,
-      "channels": 4797,
+      "channels": 4887,
       "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
@@ -2958,9 +2958,9 @@
         {
           "name": "중고차",
           "status": "running",
-          "channels": 55,
-          "results_read": 120,
-          "pages": 6
+          "channels": 154,
+          "results_read": 499,
+          "pages": 25
         }
       ]
     },
