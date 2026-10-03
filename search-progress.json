@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:37:48.126555+00:00",
+  "updated_at": "2026-10-03T07:38:50.344482+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 부동산중개",
@@ -13,9 +13,9 @@
     "region": "용인"
   },
   "classification": {
-    "total": 28948,
+    "total": 28949,
     "processed": 3,
-    "pending": 28945,
+    "pending": 28946,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 174,
   "region_queries_completed": 14,
-  "region_channels": 1683,
+  "region_channels": 1823,
   "region_observed": 0,
-  "channels_discovered": 14190,
+  "channels_discovered": 14236,
   "channels_observed": 3,
-  "search_pages": 4045,
-  "search_results_read": 75538,
+  "search_pages": 4073,
+  "search_results_read": 76090,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 14,
       "queries_total": 40,
-      "channels": 1683,
+      "channels": 1823,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1319,16 +1319,16 @@
         {
           "name": "부동산중개",
           "status": "running",
-          "channels": 104,
-          "results_read": 160,
-          "pages": 8
+          "channels": 190,
+          "results_read": 432,
+          "pages": 22
         },
         {
           "name": "행정사",
           "status": "running",
-          "channels": 37,
-          "results_read": 117,
-          "pages": 6
+          "channels": 132,
+          "results_read": 397,
+          "pages": 20
         },
         {
           "name": "행정사사무소",
