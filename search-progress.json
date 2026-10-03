@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:08:56.584638+00:00",
+  "updated_at": "2026-10-03T11:09:58.533224+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 세무회계",
-    "송파 변호사"
+    "송파 변호사",
+    "송파 법무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30272,
+    "total": 30274,
     "processed": 3,
-    "pending": 30269,
+    "pending": 30271,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 402,
-  "region_queries_completed": 2,
-  "region_channels": 322,
+  "queries_completed": 403,
+  "region_queries_completed": 3,
+  "region_channels": 434,
   "region_observed": 0,
-  "channels_discovered": 26970,
+  "channels_discovered": 27005,
   "channels_observed": 3,
-  "search_pages": 9708,
-  "search_results_read": 181435,
+  "search_pages": 9736,
+  "search_results_read": 181957,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 2,
+      "queries_completed": 3,
       "queries_total": 40,
-      "channels": 322,
+      "channels": 434,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2992,24 +2992,24 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 97,
-          "results_read": 255,
-          "pages": 13
+          "status": "completed",
+          "channels": 143,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 79,
-          "results_read": 227,
-          "pages": 12
+          "channels": 166,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 15,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "법률사무소",
