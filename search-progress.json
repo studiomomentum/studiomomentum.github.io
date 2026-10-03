@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:41:03.109466+00:00",
+  "updated_at": "2026-10-03T05:42:04.281255+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 법무사",
-    "수원 변리사"
+    "수원 관세사",
+    "수원 감정평가사"
   ],
   "search_stage": {
     "status": "running",
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 31,
-  "region_queries_completed": 31,
-  "region_channels": 3125,
+  "queries_completed": 33,
+  "region_queries_completed": 33,
+  "region_channels": 3352,
   "region_observed": 2,
-  "channels_discovered": 3125,
+  "channels_discovered": 3352,
   "channels_observed": 2,
-  "search_pages": 808,
-  "search_results_read": 15150,
+  "search_pages": 838,
+  "search_results_read": 15695,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 31,
+      "queries_completed": 33,
       "queries_total": 40,
-      "channels": 3125,
+      "channels": 3352,
       "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
@@ -265,31 +265,31 @@
         },
         {
           "name": "법무사",
-          "status": "running",
-          "channels": 88,
-          "results_read": 409,
-          "pages": 22
+          "status": "completed",
+          "channels": 95,
+          "results_read": 437,
+          "pages": 25
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 117,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 148,
+          "results_read": 459,
+          "pages": 24
         },
         {
           "name": "관세사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 173,
+          "results_read": 238,
+          "pages": 12
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 99,
+          "results_read": 220,
+          "pages": 11
         },
         {
           "name": "손해사정사",
