@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:03:41.437349+00:00",
+  "updated_at": "2026-10-03T08:04:44.879375+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 세무회계",
-    "화성 변호사"
+    "화성 법무법인",
+    "화성 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29009,
+    "total": 29020,
     "processed": 3,
-    "pending": 29006,
+    "pending": 29017,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 202,
-  "region_queries_completed": 2,
-  "region_channels": 594,
+  "queries_completed": 204,
+  "region_queries_completed": 4,
+  "region_channels": 723,
   "region_observed": 0,
-  "channels_discovered": 15117,
+  "channels_discovered": 15171,
   "channels_observed": 3,
-  "search_pages": 4755,
-  "search_results_read": 88824,
+  "search_pages": 4785,
+  "search_results_read": 89353,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 2,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 594,
+      "channels": 723,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1527,31 +1527,31 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
-          "channels": 162,
-          "results_read": 346,
-          "pages": 18
+          "status": "completed",
+          "channels": 210,
+          "results_read": 471,
+          "pages": 26
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 103,
-          "results_read": 358,
-          "pages": 18
+          "status": "completed",
+          "channels": 170,
+          "results_read": 526,
+          "pages": 28
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 64,
+          "results_read": 136,
+          "pages": 7
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 34,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "치과",
