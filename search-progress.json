@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:22:57.468558+00:00",
+  "updated_at": "2026-10-03T10:23:59.432899+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "강남 건축사사무소",
-    "강남 심리상담센터"
+    "강남 심리상담센터",
+    "강남 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29981,
+    "total": 29992,
     "processed": 3,
-    "pending": 29978,
+    "pending": 29989,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 356,
-  "region_queries_completed": 36,
-  "region_channels": 4697,
-  "region_observed": 1,
-  "channels_discovered": 24776,
+  "queries_completed": 357,
+  "region_queries_completed": 37,
+  "region_channels": 4805,
+  "region_observed": 2,
+  "channels_discovered": 24838,
   "channels_observed": 3,
-  "search_pages": 8507,
-  "search_results_read": 159016,
+  "search_pages": 8534,
+  "search_results_read": 159535,
   "query_errors": {},
   "regions": [
     {
@@ -2381,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 36,
+      "queries_completed": 37,
       "queries_total": 40,
-      "channels": 4697,
-      "observed": 1,
+      "channels": 4805,
+      "observed": 2,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1,
+      "classified": 2,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2644,24 +2644,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
+          "status": "completed",
           "channels": 175,
           "results_read": 485,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 16,
-          "results_read": 100,
-          "pages": 5
+          "channels": 39,
+          "results_read": 379,
+          "pages": 19
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 98,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "중고차",
