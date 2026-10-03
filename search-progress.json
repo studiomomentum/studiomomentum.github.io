@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:05:37.520690+00:00",
+  "updated_at": "2026-10-03T07:06:39.933401+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 행정사사무소",
@@ -13,9 +13,9 @@
     "region": "평택"
   },
   "classification": {
-    "total": 28638,
+    "total": 28640,
     "processed": 3,
-    "pending": 28635,
+    "pending": 28637,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 136,
   "region_queries_completed": 16,
-  "region_channels": 2274,
+  "region_channels": 2408,
   "region_observed": 1,
-  "channels_discovered": 12044,
+  "channels_discovered": 12118,
   "channels_observed": 3,
-  "search_pages": 3156,
-  "search_results_read": 58941,
+  "search_pages": 3186,
+  "search_results_read": 59541,
   "query_errors": {},
   "regions": [
     {
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 16,
       "queries_total": 40,
-      "channels": 2274,
+      "channels": 2408,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1040,16 +1040,16 @@
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 33,
-          "results_read": 159,
-          "pages": 8
+          "channels": 142,
+          "results_read": 459,
+          "pages": 23
         },
         {
           "name": "피부과",
           "status": "running",
-          "channels": 16,
-          "results_read": 20,
-          "pages": 1
+          "channels": 162,
+          "results_read": 320,
+          "pages": 16
         },
         {
           "name": "성형외과",
