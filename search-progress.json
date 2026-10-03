@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:12:01.572774+00:00",
+  "updated_at": "2026-10-03T08:13:04.005612+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "화성 어학원",
@@ -13,9 +13,9 @@
     "region": "화성"
   },
   "classification": {
-    "total": 29071,
+    "total": 29079,
     "processed": 3,
-    "pending": 29068,
+    "pending": 29076,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 212,
   "region_queries_completed": 12,
-  "region_channels": 2019,
+  "region_channels": 2141,
   "region_observed": 1,
-  "channels_discovered": 15892,
+  "channels_discovered": 15960,
   "channels_observed": 3,
-  "search_pages": 4987,
-  "search_results_read": 93128,
+  "search_pages": 5017,
+  "search_results_read": 93728,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 12,
       "queries_total": 40,
-      "channels": 2019,
+      "channels": 2141,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1598,16 +1598,16 @@
         {
           "name": "어학원",
           "status": "running",
-          "channels": 12,
-          "results_read": 20,
-          "pages": 1
+          "channels": 99,
+          "results_read": 320,
+          "pages": 16
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 145,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "부동산중개",
