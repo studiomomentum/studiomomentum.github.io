@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:41:18.621883+00:00",
+  "updated_at": "2026-10-03T11:42:21.921006+00:00",
   "run_id": "37115666923",
   "active_queries": [
     "송파 건축사사무소",
@@ -13,9 +13,9 @@
     "region": "송파"
   },
   "classification": {
-    "total": 30397,
+    "total": 30399,
     "processed": 3,
-    "pending": 30394,
+    "pending": 30396,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 436,
   "region_queries_completed": 36,
-  "region_channels": 3729,
+  "region_channels": 3860,
   "region_observed": 1,
-  "channels_discovered": 28020,
+  "channels_discovered": 28052,
   "channels_observed": 3,
-  "search_pages": 10562,
-  "search_results_read": 199140,
+  "search_pages": 10590,
+  "search_results_read": 199696,
   "query_errors": {},
   "regions": [
     {
@@ -2969,7 +2969,7 @@
       "name": "송파",
       "queries_completed": 36,
       "queries_total": 40,
-      "channels": 3729,
+      "channels": 3860,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3231,16 +3231,16 @@
         {
           "name": "건축사사무소",
           "status": "running",
-          "channels": 60,
-          "results_read": 160,
-          "pages": 8
+          "channels": 153,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 40,
-          "results_read": 77,
-          "pages": 4
+          "channels": 103,
+          "results_read": 356,
+          "pages": 18
         },
         {
           "name": "필라테스",
