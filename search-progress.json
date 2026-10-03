@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:16:10.911996+00:00",
+  "updated_at": "2026-10-03T08:17:12.261424+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 행정사사무소",
-    "화성 피부과"
+    "화성 피부과",
+    "화성 성형외과"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29104,
+    "total": 29106,
     "processed": 3,
-    "pending": 29101,
+    "pending": 29103,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 216,
-  "region_queries_completed": 16,
-  "region_channels": 2563,
+  "queries_completed": 217,
+  "region_queries_completed": 17,
+  "region_channels": 2768,
   "region_observed": 1,
-  "channels_discovered": 16140,
+  "channels_discovered": 16240,
   "channels_observed": 3,
-  "search_pages": 5103,
-  "search_results_read": 95299,
+  "search_pages": 5131,
+  "search_results_read": 95816,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 16,
+      "queries_completed": 17,
       "queries_total": 40,
-      "channels": 2563,
+      "channels": 2768,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1625,24 +1625,24 @@
         },
         {
           "name": "행정사사무소",
-          "status": "running",
-          "channels": 175,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 232,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "피부과",
           "status": "running",
-          "channels": 15,
-          "results_read": 20,
-          "pages": 1
+          "channels": 111,
+          "results_read": 295,
+          "pages": 15
         },
         {
           "name": "성형외과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 102,
+          "results_read": 159,
+          "pages": 8
         },
         {
           "name": "안과",
