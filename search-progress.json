@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:00:28.535687+00:00",
+  "updated_at": "2026-10-03T07:01:30.134569+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 학원",
-    "평택 입시학원"
+    "평택 어학원",
+    "평택 공인중개사"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28606,
+    "total": 28613,
     "processed": 3,
-    "pending": 28603,
+    "pending": 28610,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 130,
-  "region_queries_completed": 10,
-  "region_channels": 1614,
+  "queries_completed": 132,
+  "region_queries_completed": 12,
+  "region_channels": 1755,
   "region_observed": 1,
-  "channels_discovered": 11651,
+  "channels_discovered": 11739,
   "channels_observed": 3,
-  "search_pages": 3016,
-  "search_results_read": 56332,
+  "search_pages": 3044,
+  "search_results_read": 56839,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 10,
+      "queries_completed": 12,
       "queries_total": 40,
-      "channels": 1614,
+      "channels": 1755,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -997,31 +997,31 @@
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 125,
-          "results_read": 385,
-          "pages": 20
+          "status": "completed",
+          "channels": 178,
+          "results_read": 524,
+          "pages": 28
         },
         {
           "name": "입시학원",
-          "status": "running",
-          "channels": 91,
-          "results_read": 277,
-          "pages": 14
+          "status": "completed",
+          "channels": 145,
+          "results_read": 505,
+          "pages": 27
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 56,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "공인중개사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 18,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "부동산중개",
