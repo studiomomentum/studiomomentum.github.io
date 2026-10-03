@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:18:07.187953+00:00",
+  "updated_at": "2026-10-03T07:19:09.089785+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 노무사",
-    "평택 법무사"
+    "평택 법무사",
+    "평택 변리사"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 150,
-  "region_queries_completed": 30,
-  "region_channels": 3818,
+  "queries_completed": 151,
+  "region_queries_completed": 31,
+  "region_channels": 3924,
   "region_observed": 1,
-  "channels_discovered": 12894,
+  "channels_discovered": 12960,
   "channels_observed": 3,
-  "search_pages": 3504,
-  "search_results_read": 65472,
+  "search_pages": 3532,
+  "search_results_read": 66009,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 30,
+      "queries_completed": 31,
       "queries_total": 40,
-      "channels": 3818,
+      "channels": 3924,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1130,10 +1130,10 @@
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 296,
-          "results_read": 477,
-          "pages": 24
+          "status": "completed",
+          "channels": 308,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "노무법인",
@@ -1145,16 +1145,16 @@
         {
           "name": "법무사",
           "status": "running",
-          "channels": 19,
-          "results_read": 120,
-          "pages": 6
+          "channels": 107,
+          "results_read": 400,
+          "pages": 20
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 114,
+          "results_read": 239,
+          "pages": 12
         },
         {
           "name": "관세사",
