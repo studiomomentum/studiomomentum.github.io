@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:00:38.768231+00:00",
+  "updated_at": "2026-10-03T06:01:39.902087+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 부동산중개",
-    "동탄 행정사"
+    "동탄 행정사",
+    "동탄 행정사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28136,
-    "processed": 2,
-    "pending": 28134,
+    "total": 28140,
+    "processed": 3,
+    "pending": 28137,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 54,
-  "region_queries_completed": 14,
-  "region_channels": 1929,
-  "region_observed": 0,
-  "channels_discovered": 5653,
-  "channels_observed": 2,
-  "search_pages": 1349,
-  "search_results_read": 25326,
+  "queries_completed": 55,
+  "region_queries_completed": 15,
+  "region_channels": 2111,
+  "region_observed": 1,
+  "channels_discovered": 5795,
+  "channels_observed": 3,
+  "search_pages": 1377,
+  "search_results_read": 25859,
   "query_errors": {},
   "regions": [
     {
@@ -330,13 +330,13 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 14,
+      "queries_completed": 15,
       "queries_total": 40,
-      "channels": 1929,
-      "observed": 0,
+      "channels": 2111,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -439,24 +439,24 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 107,
-          "results_read": 380,
-          "pages": 19
+          "status": "completed",
+          "channels": 132,
+          "results_read": 513,
+          "pages": 27
         },
         {
           "name": "행정사",
           "status": "running",
-          "channels": 7,
-          "results_read": 20,
-          "pages": 1
+          "channels": 209,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 73,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "피부과",
