@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:12:59.917603+00:00",
+  "updated_at": "2026-10-03T06:14:02.161852+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 의원",
-    "동탄 노무사"
+    "동탄 법무사",
+    "동탄 변리사"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28189,
+    "total": 28192,
     "processed": 3,
-    "pending": 28186,
+    "pending": 28189,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 68,
-  "region_queries_completed": 28,
-  "region_channels": 3678,
+  "queries_completed": 71,
+  "region_queries_completed": 31,
+  "region_channels": 3816,
   "region_observed": 1,
-  "channels_discovered": 7091,
+  "channels_discovered": 7213,
   "channels_observed": 3,
-  "search_pages": 1695,
-  "search_results_read": 31805,
+  "search_pages": 1723,
+  "search_results_read": 32256,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 28,
+      "queries_completed": 31,
       "queries_total": 40,
-      "channels": 3678,
+      "channels": 3816,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -537,38 +537,38 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 212,
-          "results_read": 434,
-          "pages": 22
+          "status": "completed",
+          "channels": 243,
+          "results_read": 584,
+          "pages": 31
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 163,
-          "results_read": 199,
-          "pages": 10
+          "status": "completed",
+          "channels": 315,
+          "results_read": 418,
+          "pages": 23
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 38,
+          "results_read": 42,
+          "pages": 4
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 8,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 10,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "관세사",
