@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:52:20.310427+00:00",
+  "updated_at": "2026-10-03T07:53:22.373279+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 노무법인",
-    "용인 법무사"
+    "용인 법무사",
+    "용인 변리사"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28973,
+    "total": 28985,
     "processed": 3,
-    "pending": 28970,
+    "pending": 28982,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 190,
-  "region_queries_completed": 30,
-  "region_channels": 3094,
+  "queries_completed": 191,
+  "region_queries_completed": 31,
+  "region_channels": 3226,
   "region_observed": 0,
-  "channels_discovered": 14491,
+  "channels_discovered": 14532,
   "channels_observed": 3,
-  "search_pages": 4447,
-  "search_results_read": 83050,
+  "search_pages": 4477,
+  "search_results_read": 83620,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 30,
+      "queries_completed": 31,
       "queries_total": 40,
-      "channels": 3094,
+      "channels": 3226,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1430,24 +1430,24 @@
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 38,
-          "results_read": 158,
-          "pages": 8
+          "status": "completed",
+          "channels": 144,
+          "results_read": 333,
+          "pages": 18
         },
         {
           "name": "법무사",
           "status": "running",
-          "channels": 19,
-          "results_read": 60,
-          "pages": 3
+          "channels": 75,
+          "results_read": 355,
+          "pages": 18
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 48,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "관세사",
