@@ -1,20 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "서초",
+  "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:05:51.292886+00:00",
+  "updated_at": "2026-10-03T11:06:52.919780+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 중고차"
+    "송파 세무사",
+    "송파 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "서초"
+    "region": "송파"
   },
   "classification": {
-    "total": 30268,
+    "total": 30271,
     "processed": 3,
-    "pending": 30265,
+    "pending": 30268,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -24,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 399,
-  "region_queries_completed": 39,
-  "region_channels": 4887,
-  "region_observed": 2,
-  "channels_discovered": 26886,
+  "queries_completed": 400,
+  "region_queries_completed": 0,
+  "region_channels": 148,
+  "region_observed": 0,
+  "channels_discovered": 26918,
   "channels_observed": 3,
-  "search_pages": 9627,
-  "search_results_read": 179927,
+  "search_pages": 9654,
+  "search_results_read": 180441,
   "query_errors": {},
   "regions": [
     {
@@ -2673,7 +2674,7 @@
     },
     {
       "name": "서초",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
       "observed": 2,
@@ -2957,10 +2958,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
+          "status": "completed",
           "channels": 154,
           "results_read": 499,
-          "pages": 25
+          "pages": 26
         }
       ]
     },
@@ -2968,7 +2969,7 @@
       "name": "송파",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 0,
+      "channels": 148,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2977,17 +2978,17 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 106,
+          "results_read": 259,
+          "pages": 13
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 76,
+          "results_read": 255,
+          "pages": 13
         },
         {
           "name": "세무회계",
