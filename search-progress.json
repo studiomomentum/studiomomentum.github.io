@@ -1,20 +1,21 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "동탄",
+  "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:20:13.084902+00:00",
+  "updated_at": "2026-10-03T06:21:15.377364+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 중고차"
+    "오산 세무사",
+    "오산 세무법인"
   ],
   "search_stage": {
     "status": "running",
-    "region": "동탄"
+    "region": "오산"
   },
   "classification": {
-    "total": 28271,
+    "total": 28272,
     "processed": 3,
-    "pending": 28268,
+    "pending": 28269,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,13 +26,13 @@
     "active": []
   },
   "queries_completed": 80,
-  "region_queries_completed": 40,
-  "region_channels": 4938,
+  "region_queries_completed": 0,
+  "region_channels": 295,
   "region_observed": 1,
-  "channels_discovered": 8141,
+  "channels_discovered": 8280,
   "channels_observed": 3,
-  "search_pages": 1888,
-  "search_results_read": 35296,
+  "search_pages": 1916,
+  "search_results_read": 35856,
   "query_errors": {},
   "regions": [
     {
@@ -624,26 +625,26 @@
       "name": "오산",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 0,
-      "observed": 0,
+      "channels": 295,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 174,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "세무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 179,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "세무회계",
