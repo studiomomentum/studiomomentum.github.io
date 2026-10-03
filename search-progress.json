@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:48:16.335931+00:00",
+  "updated_at": "2026-10-03T09:49:17.724496+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "강남 변호사",
-    "강남 법무법인"
+    "강남 법무법인",
+    "강남 법률사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29728,
+    "total": 29736,
     "processed": 3,
-    "pending": 29725,
+    "pending": 29733,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 323,
-  "region_queries_completed": 3,
-  "region_channels": 520,
+  "queries_completed": 324,
+  "region_queries_completed": 4,
+  "region_channels": 671,
   "region_observed": 0,
-  "channels_discovered": 22659,
+  "channels_discovered": 22740,
   "channels_observed": 3,
-  "search_pages": 7615,
-  "search_results_read": 142175,
+  "search_pages": 7643,
+  "search_results_read": 142707,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 3,
+      "queries_completed": 4,
       "queries_total": 40,
-      "channels": 520,
+      "channels": 671,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2413,24 +2413,24 @@
         },
         {
           "name": "변호사",
-          "status": "running",
-          "channels": 193,
-          "results_read": 573,
-          "pages": 29
+          "status": "completed",
+          "channels": 207,
+          "results_read": 589,
+          "pages": 31
         },
         {
           "name": "법무법인",
           "status": "running",
-          "channels": 47,
-          "results_read": 60,
-          "pages": 3
+          "channels": 146,
+          "results_read": 336,
+          "pages": 17
         },
         {
           "name": "법률사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 95,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "치과",
