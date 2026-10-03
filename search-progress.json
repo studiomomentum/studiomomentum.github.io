@@ -2,20 +2,17 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:43:05.025271+00:00",
+  "updated_at": "2026-10-03T09:44:06.772589+00:00",
   "run_id": "37099031291",
-  "active_queries": [
-    "판교 필라테스",
-    "판교 중고차"
-  ],
+  "active_queries": [],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29685,
+    "total": 29686,
     "processed": 3,
-    "pending": 29682,
+    "pending": 29683,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +22,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 318,
-  "region_queries_completed": 38,
-  "region_channels": 4976,
+  "queries_completed": 320,
+  "region_queries_completed": 40,
+  "region_channels": 5132,
   "region_observed": 0,
-  "channels_discovered": 22293,
+  "channels_discovered": 22399,
   "channels_observed": 3,
-  "search_pages": 7481,
-  "search_results_read": 139667,
+  "search_pages": 7501,
+  "search_results_read": 140023,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2085,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 38,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4976,
+      "channels": 5132,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2365,17 +2362,17 @@
         },
         {
           "name": "필라테스",
-          "status": "running",
+          "status": "completed",
           "channels": 331,
           "results_read": 496,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 87,
-          "results_read": 140,
-          "pages": 7
+          "status": "completed",
+          "channels": 260,
+          "results_read": 496,
+          "pages": 26
         }
       ]
     },
