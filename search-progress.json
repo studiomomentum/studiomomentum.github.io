@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:48:11.543719+00:00",
+  "updated_at": "2026-10-03T07:49:13.572516+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 내과의원",
-    "용인 비뇨기과"
+    "용인 비뇨기과",
+    "용인 동물병원"
   ],
   "search_stage": {
     "status": "running",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 186,
   "region_queries_completed": 26,
-  "region_channels": 2604,
+  "region_channels": 2723,
   "region_observed": 0,
-  "channels_discovered": 14383,
+  "channels_discovered": 14403,
   "channels_observed": 3,
-  "search_pages": 4333,
-  "search_results_read": 80884,
+  "search_pages": 4361,
+  "search_results_read": 81439,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 26,
       "queries_total": 40,
-      "channels": 2604,
+      "channels": 2723,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1403,16 +1403,16 @@
         {
           "name": "비뇨기과",
           "status": "running",
-          "channels": 24,
-          "results_read": 157,
-          "pages": 8
+          "channels": 60,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 131,
+          "results_read": 275,
+          "pages": 14
         },
         {
           "name": "의원",
