@@ -1,3257 +1,3257 @@
 {
-  "sweep_id": "full-20260927-429",
-  "region": "송파",
-  "phase": "complete",
-  "updated_at": "2026-10-01T09:06:21.045514+00:00",
-  "run_id": "36831076536",
+  "sweep_id": "manual-37099031291",
+  "region": "",
+  "phase": "parallel",
+  "updated_at": "2026-10-03T05:12:09.229449+00:00",
+  "run_id": "37099031291",
   "active_queries": [],
   "search_stage": {
-    "status": "complete",
-    "region": "송파"
+    "status": "starting",
+    "region": ""
   },
   "classification": {
     "total": 27938,
-    "processed": 27938,
-    "pending": 0,
+    "processed": 0,
+    "pending": 27938,
     "processing": 0,
-    "eligible": 267,
-    "review": 19648,
-    "rejected": 7956,
-    "errors": 64,
-    "ready": 174,
-    "status": "complete",
+    "eligible": 0,
+    "review": 0,
+    "rejected": 0,
+    "errors": 0,
+    "ready": 119,
+    "status": "not_running",
     "active": []
   },
-  "queries_completed": 440,
-  "region_queries_completed": 40,
-  "region_channels": 4300,
-  "region_observed": 4294,
-  "channels_discovered": 27937,
-  "channels_observed": 27874,
-  "search_pages": 10085,
-  "search_results_read": 202917,
+  "queries_completed": 0,
+  "region_queries_completed": 0,
+  "region_channels": 0,
+  "region_observed": 0,
+  "channels_discovered": 0,
+  "channels_observed": 0,
+  "search_pages": 0,
+  "search_results_read": 0,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4267,
-      "observed": 4262,
-      "observation_errors": 5,
-      "classified_at": "2026-09-28T02:32:48.695215+00:00",
-      "classified": 4267,
-      "classification_errors": 5,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 55,
-          "results_read": 400,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 41,
-          "results_read": 489,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 81,
-          "results_read": 500,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 198,
-          "results_read": 550,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 139,
-          "results_read": 509,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 151,
-          "results_read": 467,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 157,
-          "results_read": 502,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 120,
-          "results_read": 495,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 105,
-          "results_read": 394,
-          "pages": 4
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 118,
-          "results_read": 493,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 185,
-          "results_read": 559,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 149,
-          "results_read": 502,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 84,
-          "results_read": 504,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 165,
-          "results_read": 509,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 181,
-          "results_read": 516,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 154,
-          "results_read": 495,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 144,
-          "results_read": 492,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 31,
-          "results_read": 481,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 78,
-          "results_read": 497,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 51,
-          "results_read": 200,
-          "pages": 3
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 109,
-          "results_read": 496,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 138,
-          "results_read": 478,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 126,
-          "results_read": 486,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 104,
-          "results_read": 482,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 122,
-          "results_read": 496,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 193,
-          "results_read": 505,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 90,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 255,
-          "results_read": 525,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 219,
-          "results_read": 558,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 266,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 212,
-          "results_read": 459,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 97,
-          "results_read": 466,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 158,
-          "results_read": 457,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 204,
-          "results_read": 285,
-          "pages": 16
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 297,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 248,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 139,
-          "results_read": 144,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 255,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 137,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 97,
-          "results_read": 577,
-          "pages": 30
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "동탄",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4936,
-      "observed": 4929,
-      "observation_errors": 7,
-      "classified_at": "2026-09-28T02:41:58.046478+00:00",
-      "classified": 4936,
-      "classification_errors": 7,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 229,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 309,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 309,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 244,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 192,
-          "results_read": 482,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 254,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 189,
-          "results_read": 506,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 209,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 253,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 291,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 84,
-          "results_read": 515,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 41,
-          "results_read": 225,
-          "pages": 13
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 20,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 207,
-          "results_read": 501,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 126,
-          "results_read": 499,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 265,
-          "results_read": 1669,
-          "pages": 20
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 89,
-          "results_read": 141,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 221,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 221,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 181,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 120,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 151,
-          "results_read": 311,
-          "pages": 17
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 160,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 228,
-          "results_read": 439,
-          "pages": 23
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 221,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 364,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 143,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 251,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 253,
-          "results_read": 507,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 314,
-          "results_read": 420,
-          "pages": 23
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 41,
-          "results_read": 47,
-          "pages": 4
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 88,
-          "results_read": 235,
-          "pages": 14
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 127,
-          "results_read": 178,
-          "pages": 10
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 65,
-          "results_read": 75,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 205,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 50,
-          "results_read": 70,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 71,
-          "results_read": 148,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 295,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 326,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "오산",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4242,
-      "observed": 4233,
-      "observation_errors": 9,
-      "classified_at": "2026-09-28T02:43:19.751965+00:00",
-      "classified": 4242,
-      "classification_errors": 9,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 271,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 211,
-          "results_read": 328,
-          "pages": 18
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 279,
-          "results_read": 447,
-          "pages": 24
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 236,
-          "results_read": 550,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 31,
-          "results_read": 143,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 270,
-          "results_read": 483,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 114,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 77,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 175,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 214,
-          "results_read": 501,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 65,
-          "results_read": 179,
-          "pages": 11
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 157,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 150,
-          "results_read": 531,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 165,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 244,
-          "results_read": 500,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 205,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 96,
-          "results_read": 206,
-          "pages": 12
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 110,
-          "results_read": 276,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 181,
-          "results_read": 480,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 210,
-          "results_read": 513,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 55,
-          "results_read": 327,
-          "pages": 18
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 125,
-          "results_read": 308,
-          "pages": 17
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 133,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 114,
-          "results_read": 215,
-          "pages": 12
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 300,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 260,
-          "results_read": 492,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 141,
-          "results_read": 276,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 272,
-          "results_read": 573,
-          "pages": 30
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 188,
-          "results_read": 504,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 206,
-          "results_read": 316,
-          "pages": 17
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 51,
-          "results_read": 64,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 57,
-          "results_read": 145,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 116,
-          "results_read": 186,
-          "pages": 11
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 76,
-          "results_read": 93,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 35,
-          "results_read": 52,
-          "pages": 4
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 44,
-          "results_read": 68,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 273,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 186,
-          "results_read": 405,
-          "pages": 22
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 217,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 71,
-          "results_read": 505,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "평택",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4720,
-      "observed": 4707,
-      "observation_errors": 13,
-      "classified_at": "2026-09-28T02:48:37.228380+00:00",
-      "classified": 4720,
-      "classification_errors": 13,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 271,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 318,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 272,
-          "results_read": 481,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 189,
-          "results_read": 492,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 46,
-          "results_read": 141,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 143,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 286,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 249,
-          "results_read": 475,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 123,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 163,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 174,
-          "results_read": 522,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 145,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 212,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 235,
-          "results_read": 533,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 166,
-          "results_read": 505,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 182,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 159,
-          "results_read": 487,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 220,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 189,
-          "results_read": 480,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 127,
-          "results_read": 477,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 106,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 167,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 165,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 208,
-          "results_read": 380,
-          "pages": 21
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 266,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 78,
-          "results_read": 137,
-          "pages": 8
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 109,
-          "results_read": 393,
-          "pages": 21
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 274,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 177,
-          "results_read": 507,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 309,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 101,
-          "results_read": 181,
-          "pages": 11
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 156,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 244,
-          "results_read": 459,
-          "pages": 24
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 191,
-          "results_read": 273,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 283,
-          "pages": 16
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 123,
-          "results_read": 201,
-          "pages": 12
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 253,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 226,
-          "results_read": 463,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 41,
-          "results_read": 150,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 113,
-          "results_read": 505,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "용인",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4483,
-      "observed": 4480,
-      "observation_errors": 3,
-      "classified_at": "2026-09-28T02:52:38.766548+00:00",
-      "classified": 4483,
-      "classification_errors": 3,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 106,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 30,
-          "results_read": 475,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 86,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 151,
-          "results_read": 527,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 109,
-          "results_read": 478,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 63,
-          "results_read": 422,
-          "pages": 23
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 194,
-          "results_read": 507,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 153,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 253,
-          "results_read": 375,
-          "pages": 20
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 133,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 242,
-          "results_read": 567,
-          "pages": 30
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 182,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 117,
-          "results_read": 493,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 166,
-          "results_read": 590,
-          "pages": 31
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 221,
-          "results_read": 530,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 183,
-          "results_read": 481,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 104,
-          "results_read": 465,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 100,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 103,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 111,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 133,
-          "results_read": 500,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 120,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 144,
-          "results_read": 482,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 106,
-          "results_read": 470,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 133,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 169,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 74,
-          "results_read": 477,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 236,
-          "results_read": 521,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 203,
-          "results_read": 518,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 210,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 97,
-          "results_read": 269,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 113,
-          "results_read": 464,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 210,
-          "results_read": 451,
-          "pages": 24
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 203,
-          "results_read": 371,
-          "pages": 20
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 249,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 197,
-          "results_read": 316,
-          "pages": 17
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 185,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 241,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 155,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 143,
-          "results_read": 572,
-          "pages": 30
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "화성",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 5537,
-      "observed": 5525,
-      "observation_errors": 12,
-      "classified_at": "2026-09-28T02:57:55.722464+00:00",
-      "classified": 5537,
-      "classification_errors": 12,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 242,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 288,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 230,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 191,
-          "results_read": 529,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 177,
-          "results_read": 480,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 211,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 255,
-          "results_read": 496,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 225,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 262,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 147,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 185,
-          "results_read": 520,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 277,
-          "results_read": 2294,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 196,
-          "results_read": 516,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 229,
-          "results_read": 507,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 232,
-          "results_read": 533,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 63,
-          "results_read": 134,
-          "pages": 8
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 234,
-          "results_read": 481,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 145,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 264,
-          "results_read": 500,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 316,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 183,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 191,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 230,
-          "results_read": 487,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 124,
-          "results_read": 216,
-          "pages": 12
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 233,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 103,
-          "results_read": 159,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 148,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 288,
-          "results_read": 542,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 77,
-          "results_read": 145,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 295,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 68,
-          "results_read": 120,
-          "pages": 7
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 208,
-          "results_read": 359,
-          "pages": 19
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 96,
-          "results_read": 123,
-          "pages": 8
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 351,
-          "results_read": 571,
-          "pages": 30
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 50,
-          "results_read": 86,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 259,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 306,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 215,
-          "results_read": 377,
-          "pages": 20
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 158,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "분당",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4446,
-      "observed": 4439,
-      "observation_errors": 7,
-      "classified_at": "2026-09-28T03:55:36.568609+00:00",
-      "classified": 4446,
-      "classification_errors": 7,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 129,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 37,
-          "results_read": 487,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 74,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 210,
-          "results_read": 540,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 116,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 58,
-          "results_read": 219,
-          "pages": 12
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 156,
-          "results_read": 511,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 115,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 114,
-          "results_read": 487,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 184,
-          "results_read": 503,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 141,
-          "results_read": 554,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 107,
-          "results_read": 511,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 91,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 103,
-          "results_read": 517,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 181,
-          "results_read": 508,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 156,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 209,
-          "results_read": 473,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 154,
-          "results_read": 462,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 114,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 176,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 115,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 166,
-          "results_read": 516,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 72,
-          "results_read": 260,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 154,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 100,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 160,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 129,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 251,
-          "results_read": 514,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 263,
-          "results_read": 551,
-          "pages": 30
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 220,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 141,
-          "results_read": 272,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 235,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 239,
-          "results_read": 454,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 178,
-          "results_read": 249,
-          "pages": 14
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 261,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 167,
-          "results_read": 264,
-          "pages": 15
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 225,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 298,
-          "results_read": 544,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 155,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 128,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "판교",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 5148,
-      "observed": 5140,
-      "observation_errors": 8,
-      "classified_at": "2026-09-28T06:55:22.211080+00:00",
-      "classified": 5148,
-      "classification_errors": 8,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 264,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 87,
-          "results_read": 112,
-          "pages": 7
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 360,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 219,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 228,
-          "results_read": 479,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 325,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 19,
-          "results_read": 145,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 137,
-          "results_read": 499,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 219,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 317,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 184,
-          "results_read": 453,
-          "pages": 24
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 79,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 199,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 251,
-          "results_read": 501,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 154,
-          "results_read": 495,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 182,
-          "results_read": 286,
-          "pages": 16
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 53,
-          "results_read": 82,
-          "pages": 6
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 234,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 191,
-          "results_read": 336,
-          "pages": 18
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 168,
-          "results_read": 478,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 266,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 286,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 214,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 123,
-          "results_read": 173,
-          "pages": 10
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 227,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 270,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 166,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 254,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 237,
-          "results_read": 479,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 289,
-          "results_read": 453,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 45,
-          "results_read": 53,
-          "pages": 4
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 35,
-          "results_read": 57,
-          "pages": 4
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 185,
-          "results_read": 281,
-          "pages": 16
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 39,
-          "results_read": 65,
-          "pages": 5
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 270,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 34,
-          "results_read": 43,
-          "pages": 4
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 163,
-          "results_read": 483,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 296,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 333,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 262,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "강남",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 5003,
-      "observed": 4987,
-      "observation_errors": 16,
-      "classified_at": "2026-10-01T05:14:56.591494+00:00",
-      "classified": 5003,
-      "classification_errors": 16,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 97,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 152,
-          "results_read": 503,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 126,
-          "results_read": 504,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 197,
-          "results_read": 591,
-          "pages": 31
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 197,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 189,
-          "results_read": 520,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 193,
-          "results_read": 544,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 152,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 211,
-          "results_read": 527,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 222,
-          "results_read": 509,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 294,
-          "results_read": 589,
-          "pages": 31
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 184,
-          "results_read": 508,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 127,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 553,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 202,
-          "results_read": 539,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 157,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 150,
-          "results_read": 453,
-          "pages": 24
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 240,
-          "results_read": 546,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 243,
-          "results_read": 540,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 161,
-          "results_read": 544,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 186,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 201,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 125,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 220,
-          "results_read": 500,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 155,
-          "results_read": 536,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 100,
-          "results_read": 523,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 359,
-          "results_read": 592,
-          "pages": 31
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 215,
-          "results_read": 588,
-          "pages": 31
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 27,
-          "results_read": 148,
-          "pages": 9
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 59,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 139,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 173,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 216,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 135,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 212,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 66,
-          "results_read": 538,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 157,
-          "results_read": 509,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 157,
-          "results_read": 512,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "서초",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4750,
-      "observed": 4746,
-      "observation_errors": 4,
-      "classified_at": "2026-10-01T07:27:05.457447+00:00",
-      "classified": 4750,
-      "classification_errors": 4,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 124,
-          "results_read": 515,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 152,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 106,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 234,
-          "results_read": 532,
-          "pages": 29
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 191,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 238,
-          "results_read": 506,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 196,
-          "results_read": 503,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 199,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 110,
-          "results_read": 190,
-          "pages": 11
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 158,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 280,
-          "results_read": 522,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 226,
-          "results_read": 506,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 155,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 198,
-          "results_read": 498,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 198,
-          "results_read": 512,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 156,
-          "results_read": 481,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 58,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 220,
-          "results_read": 509,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 234,
-          "results_read": 2384,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 131,
-          "results_read": 496,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 140,
-          "results_read": 490,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 49,
-          "results_read": 165,
-          "pages": 10
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 162,
-          "results_read": 496,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 162,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 125,
-          "results_read": 466,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 144,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 73,
-          "results_read": 502,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 171,
-          "results_read": 493,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 158,
-          "results_read": 532,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 55,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 84,
-          "results_read": 474,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 85,
-          "results_read": 428,
-          "pages": 23
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 102,
-          "results_read": 492,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 28,
-          "results_read": 474,
-          "pages": 25
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 112,
-          "results_read": 495,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 61,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 175,
-          "results_read": 481,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 199,
-          "results_read": 526,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 179,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 143,
-          "results_read": 500,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     },
     {
       "name": "송파",
-      "queries_completed": 40,
+      "queries_completed": 0,
       "queries_total": 40,
-      "channels": 4300,
-      "observed": 4294,
-      "observation_errors": 6,
-      "classified_at": "2026-10-01T09:06:06.871155+00:00",
-      "classified": 4300,
-      "classification_errors": 6,
+      "channels": 0,
+      "observed": 0,
+      "observation_errors": 0,
+      "classified_at": null,
+      "classified": 0,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
-          "status": "completed",
-          "channels": 151,
-          "results_read": 512,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무법인",
-          "status": "completed",
-          "channels": 98,
-          "results_read": 512,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "세무회계",
-          "status": "completed",
-          "channels": 139,
-          "results_read": 487,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변호사",
-          "status": "completed",
-          "channels": 161,
-          "results_read": 487,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무법인",
-          "status": "completed",
-          "channels": 140,
-          "results_read": 476,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법률사무소",
-          "status": "completed",
-          "channels": 125,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과",
-          "status": "completed",
-          "channels": 211,
-          "results_read": 504,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "치과의원",
-          "status": "completed",
-          "channels": 142,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한의원",
-          "status": "completed",
-          "channels": 161,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "한방병원",
-          "status": "completed",
-          "channels": 148,
-          "results_read": 486,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "학원",
-          "status": "completed",
-          "channels": 184,
-          "results_read": 516,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "입시학원",
-          "status": "completed",
-          "channels": 208,
-          "results_read": 500,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "어학원",
-          "status": "completed",
-          "channels": 155,
-          "results_read": 479,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "공인중개사",
-          "status": "completed",
-          "channels": 192,
-          "results_read": 508,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "부동산중개",
-          "status": "completed",
-          "channels": 250,
-          "results_read": 510,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사",
-          "status": "completed",
-          "channels": 160,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "행정사사무소",
-          "status": "completed",
-          "channels": 155,
-          "results_read": 476,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "피부과",
-          "status": "completed",
-          "channels": 196,
-          "results_read": 481,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "성형외과",
-          "status": "completed",
-          "channels": 159,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "안과",
-          "status": "completed",
-          "channels": 92,
-          "results_read": 494,
-          "pages": 27
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "정형외과",
-          "status": "completed",
-          "channels": 132,
-          "results_read": 485,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "이비인후과",
-          "status": "completed",
-          "channels": 83,
-          "results_read": 475,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "재활의학과",
-          "status": "completed",
-          "channels": 174,
-          "results_read": 479,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "마취통증의학과",
-          "status": "completed",
-          "channels": 130,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "내과의원",
-          "status": "completed",
-          "channels": 117,
-          "results_read": 484,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "산부인과",
-          "status": "completed",
-          "channels": 129,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "비뇨기과",
-          "status": "completed",
-          "channels": 86,
-          "results_read": 519,
-          "pages": 28
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "동물병원",
-          "status": "completed",
-          "channels": 148,
-          "results_read": 482,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "의원",
-          "status": "completed",
-          "channels": 100,
-          "results_read": 258,
-          "pages": 14
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무사",
-          "status": "completed",
-          "channels": 104,
-          "results_read": 477,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "노무법인",
-          "status": "completed",
-          "channels": 56,
-          "results_read": 482,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "법무사",
-          "status": "completed",
-          "channels": 98,
-          "results_read": 491,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "변리사",
-          "status": "completed",
-          "channels": 129,
-          "results_read": 483,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "관세사",
-          "status": "completed",
-          "channels": 145,
-          "results_read": 493,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "감정평가사",
-          "status": "completed",
-          "channels": 215,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "손해사정사",
-          "status": "completed",
-          "channels": 86,
-          "results_read": 482,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "건축사사무소",
-          "status": "completed",
-          "channels": 172,
-          "results_read": 488,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "심리상담센터",
-          "status": "completed",
-          "channels": 148,
-          "results_read": 494,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "필라테스",
-          "status": "completed",
-          "channels": 157,
-          "results_read": 489,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         },
         {
           "name": "중고차",
-          "status": "completed",
-          "channels": 172,
-          "results_read": 497,
-          "pages": 26
+          "status": "pending",
+          "channels": 0,
+          "results_read": 0,
+          "pages": 0
         }
       ]
     }
