@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:52:24.180361+00:00",
+  "updated_at": "2026-10-03T05:53:26.658537+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 법률사무소",
-    "동탄 치과"
+    "동탄 치과의원",
+    "동탄 한의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28094,
+    "total": 28098,
     "processed": 2,
-    "pending": 28092,
+    "pending": 28096,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 45,
-  "region_queries_completed": 5,
-  "region_channels": 912,
+  "queries_completed": 47,
+  "region_queries_completed": 7,
+  "region_channels": 1083,
   "region_observed": 0,
-  "channels_discovered": 4837,
+  "channels_discovered": 4976,
   "channels_observed": 2,
-  "search_pages": 1119,
-  "search_results_read": 20977,
+  "search_pages": 1147,
+  "search_results_read": 21492,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 5,
+      "queries_completed": 7,
       "queries_total": 40,
-      "channels": 912,
+      "channels": 1083,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -376,28 +376,28 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 170,
-          "results_read": 359,
-          "pages": 18
+          "status": "completed",
+          "channels": 254,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 91,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 189,
+          "results_read": 500,
+          "pages": 26
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 44,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "한의원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
