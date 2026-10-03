@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:50:19.510961+00:00",
+  "updated_at": "2026-10-03T08:51:21.821224+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 부동산중개",
-    "분당 행정사"
+    "분당 행정사사무소",
+    "분당 피부과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29405,
+    "total": 29407,
     "processed": 3,
-    "pending": 29402,
+    "pending": 29404,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 254,
-  "region_queries_completed": 14,
-  "region_channels": 1460,
+  "queries_completed": 256,
+  "region_queries_completed": 16,
+  "region_channels": 1571,
   "region_observed": 1,
-  "channels_discovered": 18305,
+  "channels_discovered": 18349,
   "channels_observed": 3,
-  "search_pages": 6036,
-  "search_results_read": 112774,
+  "search_pages": 6064,
+  "search_results_read": 113264,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 14,
+      "queries_completed": 16,
       "queries_total": 40,
-      "channels": 1460,
+      "channels": 1571,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1904,31 +1904,31 @@
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 137,
-          "results_read": 370,
-          "pages": 19
+          "status": "completed",
+          "channels": 169,
+          "results_read": 498,
+          "pages": 27
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 62,
-          "results_read": 299,
-          "pages": 15
+          "status": "completed",
+          "channels": 153,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 13,
+          "results_read": 111,
+          "pages": 6
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 25,
+          "results_read": 60,
+          "pages": 3
         },
         {
           "name": "성형외과",
