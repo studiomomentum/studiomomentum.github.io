@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:05:47.085617+00:00",
+  "updated_at": "2026-10-03T08:06:49.733444+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 법무법인",
-    "화성 법률사무소"
+    "화성 치과",
+    "화성 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29022,
+    "total": 29025,
     "processed": 3,
-    "pending": 29019,
+    "pending": 29022,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 204,
-  "region_queries_completed": 4,
-  "region_channels": 867,
-  "region_observed": 0,
-  "channels_discovered": 15235,
+  "queries_completed": 206,
+  "region_queries_completed": 6,
+  "region_channels": 1056,
+  "region_observed": 1,
+  "channels_discovered": 15327,
   "channels_observed": 3,
-  "search_pages": 4813,
-  "search_results_read": 89913,
+  "search_pages": 4843,
+  "search_results_read": 90454,
   "query_errors": {},
   "regions": [
     {
@@ -1502,13 +1502,13 @@
     },
     {
       "name": "화성",
-      "queries_completed": 4,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 867,
-      "observed": 0,
+      "channels": 1056,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1541,31 +1541,31 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 157,
-          "results_read": 416,
-          "pages": 21
+          "status": "completed",
+          "channels": 182,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 156,
-          "results_read": 380,
-          "pages": 19
+          "status": "completed",
+          "channels": 207,
+          "results_read": 489,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 110,
+          "results_read": 200,
+          "pages": 10
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 92,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "한의원",
