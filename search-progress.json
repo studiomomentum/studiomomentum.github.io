@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:18:47.918614+00:00",
+  "updated_at": "2026-10-03T10:19:49.640213+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "강남 변리사",
-    "강남 관세사"
+    "강남 관세사",
+    "강남 감정평가사"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29975,
+    "total": 29977,
     "processed": 3,
-    "pending": 29972,
+    "pending": 29974,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 352,
-  "region_queries_completed": 32,
-  "region_channels": 4198,
+  "queries_completed": 353,
+  "region_queries_completed": 33,
+  "region_channels": 4295,
   "region_observed": 1,
-  "channels_discovered": 24566,
+  "channels_discovered": 24604,
   "channels_observed": 3,
-  "search_pages": 8395,
-  "search_results_read": 156908,
+  "search_pages": 8423,
+  "search_results_read": 157441,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 32,
+      "queries_completed": 33,
       "queries_total": 40,
-      "channels": 4198,
+      "channels": 4295,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2616,24 +2616,24 @@
         },
         {
           "name": "변리사",
-          "status": "running",
-          "channels": 132,
-          "results_read": 411,
-          "pages": 21
+          "status": "completed",
+          "channels": 173,
+          "results_read": 484,
+          "pages": 26
         },
         {
           "name": "관세사",
           "status": "running",
-          "channels": 12,
-          "results_read": 20,
-          "pages": 1
+          "channels": 93,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "감정평가사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 58,
+          "results_read": 180,
+          "pages": 9
         },
         {
           "name": "손해사정사",
