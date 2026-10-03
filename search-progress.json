@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:53:14.807442+00:00",
+  "updated_at": "2026-10-03T06:54:16.219060+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 세무회계",
@@ -13,9 +13,9 @@
     "region": "평택"
   },
   "classification": {
-    "total": 28560,
+    "total": 28570,
     "processed": 3,
-    "pending": 28557,
+    "pending": 28567,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 122,
   "region_queries_completed": 2,
-  "region_channels": 573,
+  "region_channels": 763,
   "region_observed": 0,
-  "channels_discovered": 11075,
+  "channels_discovered": 11170,
   "channels_observed": 3,
-  "search_pages": 2814,
-  "search_results_read": 52554,
+  "search_pages": 2842,
+  "search_results_read": 53113,
   "query_errors": {},
   "regions": [
     {
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 2,
       "queries_total": 40,
-      "channels": 573,
+      "channels": 763,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -942,16 +942,16 @@
         {
           "name": "세무회계",
           "status": "running",
-          "channels": 99,
-          "results_read": 179,
-          "pages": 9
+          "channels": 274,
+          "results_read": 458,
+          "pages": 23
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 39,
-          "results_read": 157,
-          "pages": 8
+          "channels": 169,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "법무법인",
