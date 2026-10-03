@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:32:25.599339+00:00",
+  "updated_at": "2026-10-03T10:33:28.717589+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 법률사무소",
-    "서초 치과"
+    "서초 치과",
+    "서초 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30061,
+    "total": 30064,
     "processed": 3,
-    "pending": 30058,
+    "pending": 30061,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 365,
-  "region_queries_completed": 5,
-  "region_channels": 965,
+  "queries_completed": 366,
+  "region_queries_completed": 6,
+  "region_channels": 1077,
   "region_observed": 1,
-  "channels_discovered": 25285,
+  "channels_discovered": 25319,
   "channels_observed": 3,
-  "search_pages": 8747,
-  "search_results_read": 163490,
+  "search_pages": 8775,
+  "search_results_read": 164007,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 5,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 965,
+      "channels": 1077,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2720,24 +2720,24 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 239,
-          "results_read": 518,
-          "pages": 26
+          "status": "completed",
+          "channels": 240,
+          "results_read": 521,
+          "pages": 28
         },
         {
           "name": "치과",
           "status": "running",
-          "channels": 135,
-          "results_read": 236,
-          "pages": 12
+          "channels": 193,
+          "results_read": 510,
+          "pages": 26
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 119,
+          "results_read": 240,
+          "pages": 12
         },
         {
           "name": "한의원",
