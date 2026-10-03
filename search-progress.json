@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:02:32.569467+00:00",
+  "updated_at": "2026-10-03T07:03:33.912458+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 어학원",
-    "평택 공인중개사"
+    "평택 공인중개사",
+    "평택 부동산중개"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28619,
+    "total": 28635,
     "processed": 3,
-    "pending": 28616,
+    "pending": 28632,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 132,
-  "region_queries_completed": 12,
-  "region_channels": 1938,
+  "queries_completed": 133,
+  "region_queries_completed": 13,
+  "region_channels": 2088,
   "region_observed": 1,
-  "channels_discovered": 11869,
+  "channels_discovered": 11972,
   "channels_observed": 3,
-  "search_pages": 3072,
-  "search_results_read": 57392,
+  "search_pages": 3100,
+  "search_results_read": 57901,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 12,
+      "queries_completed": 13,
       "queries_total": 40,
-      "channels": 1938,
+      "channels": 2088,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1011,24 +1011,24 @@
         },
         {
           "name": "어학원",
-          "status": "running",
-          "channels": 157,
-          "results_read": 393,
-          "pages": 20
+          "status": "completed",
+          "channels": 214,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 150,
-          "results_read": 300,
-          "pages": 15
+          "channels": 250,
+          "results_read": 565,
+          "pages": 29
         },
         {
           "name": "부동산중개",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 68,
+          "results_read": 150,
+          "pages": 8
         },
         {
           "name": "행정사",
