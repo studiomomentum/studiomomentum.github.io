@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:01:43.337562+00:00",
+  "updated_at": "2026-10-03T11:02:45.639528+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 손해사정사",
-    "서초 건축사사무소"
+    "서초 심리상담센터",
+    "서초 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30256,
+    "total": 30261,
     "processed": 3,
-    "pending": 30253,
+    "pending": 30258,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 395,
-  "region_queries_completed": 35,
-  "region_channels": 4358,
+  "queries_completed": 397,
+  "region_queries_completed": 37,
+  "region_channels": 4473,
   "region_observed": 1,
-  "channels_discovered": 26677,
+  "channels_discovered": 26726,
   "channels_observed": 3,
-  "search_pages": 9527,
-  "search_results_read": 178061,
+  "search_pages": 9555,
+  "search_results_read": 178561,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 35,
+      "queries_completed": 37,
       "queries_total": 40,
-      "channels": 4358,
+      "channels": 4473,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2930,31 +2930,31 @@
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 49,
-          "results_read": 354,
-          "pages": 18
+          "status": "completed",
+          "channels": 64,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 123,
-          "results_read": 272,
-          "pages": 14
+          "status": "completed",
+          "channels": 185,
+          "results_read": 483,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 36,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 20,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "중고차",
