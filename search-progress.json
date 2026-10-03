@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:19:49.640213+00:00",
+  "updated_at": "2026-10-03T10:20:51.766877+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "강남 관세사",
-    "강남 감정평가사"
+    "강남 감정평가사",
+    "강남 손해사정사"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29977,
+    "total": 29980,
     "processed": 3,
-    "pending": 29974,
+    "pending": 29977,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 353,
-  "region_queries_completed": 33,
-  "region_channels": 4295,
+  "queries_completed": 354,
+  "region_queries_completed": 34,
+  "region_channels": 4422,
   "region_observed": 1,
-  "channels_discovered": 24604,
+  "channels_discovered": 24673,
   "channels_observed": 3,
-  "search_pages": 8423,
-  "search_results_read": 157441,
+  "search_pages": 8451,
+  "search_results_read": 157975,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 33,
+      "queries_completed": 34,
       "queries_total": 40,
-      "channels": 4295,
+      "channels": 4422,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2623,24 +2623,24 @@
         },
         {
           "name": "관세사",
-          "status": "running",
-          "channels": 93,
-          "results_read": 300,
-          "pages": 15
+          "status": "completed",
+          "channels": 213,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 58,
-          "results_read": 180,
-          "pages": 9
+          "channels": 117,
+          "results_read": 460,
+          "pages": 23
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 31,
+          "results_read": 59,
+          "pages": 3
         },
         {
           "name": "건축사사무소",
