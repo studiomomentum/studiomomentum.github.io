@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:29:14.725987+00:00",
+  "updated_at": "2026-10-03T10:30:18.180773+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 세무회계",
-    "서초 변호사"
+    "서초 변호사",
+    "서초 법무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30033,
+    "total": 30045,
     "processed": 3,
-    "pending": 30030,
+    "pending": 30042,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 362,
-  "region_queries_completed": 2,
-  "region_channels": 404,
+  "queries_completed": 363,
+  "region_queries_completed": 3,
+  "region_channels": 611,
   "region_observed": 0,
-  "channels_discovered": 25084,
+  "channels_discovered": 25149,
   "channels_observed": 3,
-  "search_pages": 8663,
-  "search_results_read": 161909,
+  "search_pages": 8691,
+  "search_results_read": 162443,
   "query_errors": {},
   "regions": [
     {
@@ -2674,9 +2674,9 @@
     },
     {
       "name": "서초",
-      "queries_completed": 2,
+      "queries_completed": 3,
       "queries_total": 40,
-      "channels": 404,
+      "channels": 611,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2699,24 +2699,24 @@
         },
         {
           "name": "세무회계",
-          "status": "running",
+          "status": "completed",
           "channels": 107,
           "results_read": 495,
-          "pages": 26
+          "pages": 27
         },
         {
           "name": "변호사",
           "status": "running",
-          "channels": 141,
-          "results_read": 297,
-          "pages": 15
+          "channels": 258,
+          "results_read": 574,
+          "pages": 29
         },
         {
           "name": "법무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 120,
+          "results_read": 257,
+          "pages": 13
         },
         {
           "name": "법률사무소",
