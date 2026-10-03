@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:53:26.658537+00:00",
+  "updated_at": "2026-10-03T05:54:28.098986+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "동탄 치과의원",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 47,
   "region_queries_completed": 7,
-  "region_channels": 1083,
+  "region_channels": 1285,
   "region_observed": 0,
-  "channels_discovered": 4976,
+  "channels_discovered": 5139,
   "channels_observed": 2,
-  "search_pages": 1147,
-  "search_results_read": 21492,
+  "search_pages": 1176,
+  "search_results_read": 22071,
   "query_errors": {},
   "regions": [
     {
@@ -332,7 +332,7 @@
       "name": "동탄",
       "queries_completed": 7,
       "queries_total": 40,
-      "channels": 1083,
+      "channels": 1285,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -391,16 +391,16 @@
         {
           "name": "치과의원",
           "status": "running",
-          "channels": 44,
-          "results_read": 120,
-          "pages": 6
+          "channels": 182,
+          "results_read": 420,
+          "pages": 21
         },
         {
           "name": "한의원",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 126,
+          "results_read": 279,
+          "pages": 14
         },
         {
           "name": "한방병원",
