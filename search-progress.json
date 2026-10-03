@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:50:19.214977+00:00",
+  "updated_at": "2026-10-03T09:51:21.769191+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "강남 법률사무소",
-    "강남 치과"
+    "강남 치과",
+    "강남 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29746,
+    "total": 29749,
     "processed": 3,
-    "pending": 29743,
+    "pending": 29746,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 325,
-  "region_queries_completed": 5,
-  "region_channels": 795,
-  "region_observed": 0,
-  "channels_discovered": 22798,
+  "queries_completed": 326,
+  "region_queries_completed": 6,
+  "region_channels": 925,
+  "region_observed": 1,
+  "channels_discovered": 22848,
   "channels_observed": 3,
-  "search_pages": 7671,
-  "search_results_read": 143222,
+  "search_pages": 7699,
+  "search_results_read": 143756,
   "query_errors": {},
   "regions": [
     {
@@ -2381,13 +2381,13 @@
     },
     {
       "name": "강남",
-      "queries_completed": 5,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 795,
-      "observed": 0,
+      "channels": 925,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2427,24 +2427,24 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
+          "status": "completed",
           "channels": 182,
           "results_read": 515,
-          "pages": 26
+          "pages": 27
         },
         {
           "name": "치과",
           "status": "running",
-          "channels": 27,
-          "results_read": 60,
-          "pages": 3
+          "channels": 129,
+          "results_read": 340,
+          "pages": 17
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 92,
+          "results_read": 254,
+          "pages": 13
         },
         {
           "name": "한의원",
