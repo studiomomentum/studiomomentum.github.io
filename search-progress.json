@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:38:47.469162+00:00",
+  "updated_at": "2026-10-03T06:39:48.884426+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 이비인후과",
-    "오산 재활의학과"
+    "오산 재활의학과",
+    "오산 마취통증의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28405,
+    "total": 28450,
     "processed": 3,
-    "pending": 28402,
+    "pending": 28447,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 101,
-  "region_queries_completed": 21,
-  "region_channels": 2559,
+  "queries_completed": 102,
+  "region_queries_completed": 22,
+  "region_channels": 2700,
   "region_observed": 1,
-  "channels_discovered": 9588,
+  "channels_discovered": 9685,
   "channels_observed": 3,
-  "search_pages": 2408,
-  "search_results_read": 45056,
+  "search_pages": 2437,
+  "search_results_read": 45609,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 21,
+      "queries_completed": 22,
       "queries_total": 40,
-      "channels": 2559,
+      "channels": 2700,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -781,24 +781,24 @@
         },
         {
           "name": "이비인후과",
-          "status": "running",
-          "channels": 158,
-          "results_read": 319,
-          "pages": 16
+          "status": "completed",
+          "channels": 283,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 57,
-          "results_read": 180,
-          "pages": 9
+          "channels": 132,
+          "results_read": 478,
+          "pages": 24
         },
         {
           "name": "마취통증의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 23,
+          "results_read": 80,
+          "pages": 4
         },
         {
           "name": "내과의원",
