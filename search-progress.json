@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:24:21.941045+00:00",
+  "updated_at": "2026-10-03T06:25:23.070177+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "오산 법률사무소",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 85,
   "region_queries_completed": 5,
-  "region_channels": 807,
+  "region_channels": 968,
   "region_observed": 1,
-  "channels_discovered": 8575,
+  "channels_discovered": 8639,
   "channels_observed": 3,
-  "search_pages": 2004,
-  "search_results_read": 37477,
+  "search_pages": 2032,
+  "search_results_read": 38034,
   "query_errors": {},
   "regions": [
     {
@@ -625,7 +625,7 @@
       "name": "오산",
       "queries_completed": 5,
       "queries_total": 40,
-      "channels": 807,
+      "channels": 968,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -670,16 +670,16 @@
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 29,
-          "results_read": 60,
-          "pages": 3
+          "channels": 189,
+          "results_read": 337,
+          "pages": 17
         },
         {
           "name": "치과",
           "status": "running",
-          "channels": 20,
-          "results_read": 40,
-          "pages": 2
+          "channels": 79,
+          "results_read": 320,
+          "pages": 16
         },
         {
           "name": "치과의원",
