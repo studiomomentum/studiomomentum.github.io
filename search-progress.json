@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:30:41.893848+00:00",
+  "updated_at": "2026-10-03T05:31:43.766902+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "수원 이비인후과",
@@ -13,9 +13,9 @@
     "region": "수원"
   },
   "classification": {
-    "total": 28034,
+    "total": 28042,
     "processed": 1,
-    "pending": 28033,
+    "pending": 28041,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,19 +27,19 @@
   },
   "queries_completed": 21,
   "region_queries_completed": 21,
-  "region_channels": 2004,
+  "region_channels": 2135,
   "region_observed": 1,
-  "channels_discovered": 2004,
+  "channels_discovered": 2135,
   "channels_observed": 1,
-  "search_pages": 518,
-  "search_results_read": 9688,
+  "search_pages": 548,
+  "search_results_read": 10278,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
       "queries_completed": 21,
       "queries_total": 40,
-      "channels": 2004,
+      "channels": 2135,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -196,16 +196,16 @@
         {
           "name": "이비인후과",
           "status": "running",
-          "channels": 61,
-          "results_read": 173,
-          "pages": 9
+          "channels": 156,
+          "results_read": 463,
+          "pages": 24
         },
         {
           "name": "재활의학과",
           "status": "running",
-          "channels": 53,
-          "results_read": 178,
-          "pages": 9
+          "channels": 148,
+          "results_read": 478,
+          "pages": 24
         },
         {
           "name": "마취통증의학과",
