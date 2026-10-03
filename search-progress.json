@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:29:31.735266+00:00",
+  "updated_at": "2026-10-03T07:30:33.934422+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 법무법인",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 164,
-  "region_queries_completed": 4,
-  "region_channels": 392,
+  "queries_completed": 165,
+  "region_queries_completed": 5,
+  "region_channels": 444,
   "region_observed": 0,
-  "channels_discovered": 13713,
+  "channels_discovered": 13718,
   "channels_observed": 3,
-  "search_pages": 3815,
-  "search_results_read": 71275,
+  "search_pages": 3845,
+  "search_results_read": 71839,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 4,
+      "queries_completed": 5,
       "queries_total": 40,
-      "channels": 392,
+      "channels": 444,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1248,17 +1248,17 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 65,
-          "results_read": 212,
-          "pages": 11
+          "status": "completed",
+          "channels": 113,
+          "results_read": 485,
+          "pages": 26
         },
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 24,
-          "results_read": 137,
-          "pages": 7
+          "channels": 66,
+          "results_read": 428,
+          "pages": 22
         },
         {
           "name": "치과",
