@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:28:34.783757+00:00",
+  "updated_at": "2026-10-03T08:29:36.136751+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 노무사",
-    "화성 법무사"
+    "화성 법무사",
+    "화성 변리사"
   ],
   "search_stage": {
     "status": "running",
     "region": "화성"
   },
   "classification": {
-    "total": 29235,
+    "total": 29238,
     "processed": 3,
-    "pending": 29232,
+    "pending": 29235,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 231,
   "region_queries_completed": 31,
-  "region_channels": 4404,
+  "region_channels": 4537,
   "region_observed": 1,
-  "channels_discovered": 17140,
+  "channels_discovered": 17219,
   "channels_observed": 3,
-  "search_pages": 5445,
-  "search_results_read": 101698,
+  "search_pages": 5473,
+  "search_results_read": 102258,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 31,
       "queries_total": 40,
-      "channels": 4404,
+      "channels": 4537,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1731,16 +1731,16 @@
         {
           "name": "법무사",
           "status": "running",
-          "channels": 17,
-          "results_read": 60,
-          "pages": 3
+          "channels": 131,
+          "results_read": 340,
+          "pages": 17
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 152,
+          "results_read": 280,
+          "pages": 14
         },
         {
           "name": "관세사",
