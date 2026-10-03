@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:38:56.739771+00:00",
+  "updated_at": "2026-10-03T09:39:59.207461+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 법무사",
-    "판교 감정평가사"
+    "판교 감정평가사",
+    "판교 건축사사무소"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 313,
-  "region_queries_completed": 33,
-  "region_channels": 4159,
+  "queries_completed": 315,
+  "region_queries_completed": 35,
+  "region_channels": 4301,
   "region_observed": 0,
-  "channels_discovered": 21810,
+  "channels_discovered": 21873,
   "channels_observed": 3,
-  "search_pages": 7369,
-  "search_results_read": 137589,
+  "search_pages": 7397,
+  "search_results_read": 138081,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 33,
+      "queries_completed": 35,
       "queries_total": 40,
-      "channels": 4159,
+      "channels": 4301,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2316,10 +2316,10 @@
         },
         {
           "name": "법무사",
-          "status": "running",
+          "status": "completed",
           "channels": 150,
           "results_read": 490,
-          "pages": 25
+          "pages": 26
         },
         {
           "name": "변리사",
@@ -2338,23 +2338,23 @@
         {
           "name": "감정평가사",
           "status": "running",
-          "channels": 50,
-          "results_read": 80,
-          "pages": 4
+          "channels": 204,
+          "results_read": 357,
+          "pages": 18
         },
         {
           "name": "손해사정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 31,
+          "results_read": 37,
+          "pages": 4
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 72,
+          "results_read": 178,
+          "pages": 9
         },
         {
           "name": "심리상담센터",
