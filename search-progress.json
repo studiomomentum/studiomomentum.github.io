@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:59:27.163227+00:00",
+  "updated_at": "2026-10-03T07:00:28.535687+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 학원",
@@ -13,9 +13,9 @@
     "region": "평택"
   },
   "classification": {
-    "total": 28599,
+    "total": 28606,
     "processed": 3,
-    "pending": 28596,
+    "pending": 28603,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 130,
   "region_queries_completed": 10,
-  "region_channels": 1478,
+  "region_channels": 1614,
   "region_observed": 1,
-  "channels_discovered": 11571,
+  "channels_discovered": 11651,
   "channels_observed": 3,
-  "search_pages": 2988,
-  "search_results_read": 55785,
+  "search_pages": 3016,
+  "search_results_read": 56332,
   "query_errors": {},
   "regions": [
     {
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 10,
       "queries_total": 40,
-      "channels": 1478,
+      "channels": 1614,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -998,16 +998,16 @@
         {
           "name": "학원",
           "status": "running",
-          "channels": 43,
-          "results_read": 115,
-          "pages": 6
+          "channels": 125,
+          "results_read": 385,
+          "pages": 20
         },
         {
           "name": "입시학원",
           "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "channels": 91,
+          "results_read": 277,
+          "pages": 14
         },
         {
           "name": "어학원",
