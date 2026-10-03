@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:35:49.511646+00:00",
+  "updated_at": "2026-10-03T09:36:51.591735+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 의원",
-    "판교 노무사"
+    "판교 노무사",
+    "판교 노무법인"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29641,
+    "total": 29652,
     "processed": 3,
-    "pending": 29638,
+    "pending": 29649,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 308,
-  "region_queries_completed": 28,
-  "region_channels": 3725,
+  "queries_completed": 309,
+  "region_queries_completed": 29,
+  "region_channels": 3918,
   "region_observed": 0,
-  "channels_discovered": 21511,
+  "channels_discovered": 21655,
   "channels_observed": 3,
-  "search_pages": 7283,
-  "search_results_read": 136046,
+  "search_pages": 7311,
+  "search_results_read": 136581,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 28,
+      "queries_completed": 29,
       "queries_total": 40,
-      "channels": 3725,
+      "channels": 3918,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2295,21 +2295,21 @@
         },
         {
           "name": "의원",
-          "status": "running",
-          "channels": 127,
-          "results_read": 239,
-          "pages": 12
+          "status": "completed",
+          "channels": 244,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "노무사",
           "status": "running",
-          "channels": 79,
-          "results_read": 137,
-          "pages": 7
+          "channels": 272,
+          "results_read": 417,
+          "pages": 21
         },
         {
           "name": "노무법인",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
