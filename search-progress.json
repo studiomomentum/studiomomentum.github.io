@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:58:32.179094+00:00",
+  "updated_at": "2026-10-03T07:59:34.272138+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 필라테스",
@@ -13,9 +13,9 @@
     "region": "용인"
   },
   "classification": {
-    "total": 28996,
+    "total": 28998,
     "processed": 3,
-    "pending": 28993,
+    "pending": 28995,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 198,
   "region_queries_completed": 38,
-  "region_channels": 4139,
+  "region_channels": 4263,
   "region_observed": 0,
-  "channels_discovered": 14857,
+  "channels_discovered": 14886,
   "channels_observed": 3,
-  "search_pages": 4621,
-  "search_results_read": 86288,
+  "search_pages": 4649,
+  "search_results_read": 86823,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 38,
       "queries_total": 40,
-      "channels": 4139,
+      "channels": 4263,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1487,16 +1487,16 @@
         {
           "name": "필라테스",
           "status": "running",
-          "channels": 81,
-          "results_read": 199,
-          "pages": 10
+          "channels": 143,
+          "results_read": 471,
+          "pages": 24
         },
         {
           "name": "중고차",
           "status": "running",
-          "channels": 14,
-          "results_read": 20,
-          "pages": 1
+          "channels": 86,
+          "results_read": 283,
+          "pages": 15
         }
       ]
     },
