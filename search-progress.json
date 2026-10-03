@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:21:24.238050+00:00",
+  "updated_at": "2026-10-03T11:22:26.704050+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 행정사",
-    "송파 행정사사무소"
+    "송파 행정사사무소",
+    "송파 피부과"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 415,
-  "region_queries_completed": 15,
-  "region_channels": 1924,
+  "queries_completed": 416,
+  "region_queries_completed": 16,
+  "region_channels": 2004,
   "region_observed": 1,
-  "channels_discovered": 27461,
+  "channels_discovered": 27479,
   "channels_observed": 3,
-  "search_pages": 10036,
-  "search_results_read": 188709,
+  "search_pages": 10062,
+  "search_results_read": 189804,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 15,
+      "queries_completed": 16,
       "queries_total": 40,
-      "channels": 1924,
+      "channels": 2004,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3083,24 +3083,24 @@
         },
         {
           "name": "행정사",
-          "status": "running",
-          "channels": 136,
-          "results_read": 1484,
-          "pages": 15
+          "status": "completed",
+          "channels": 163,
+          "results_read": 2279,
+          "pages": 26
         },
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 21,
-          "results_read": 100,
-          "pages": 5
+          "channels": 116,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "피부과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 26,
+          "results_read": 40,
+          "pages": 2
         },
         {
           "name": "성형외과",
