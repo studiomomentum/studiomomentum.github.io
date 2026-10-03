@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:13:57.117618+00:00",
+  "updated_at": "2026-10-03T07:14:59.481589+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 산부인과",
-    "평택 비뇨기과"
+    "평택 동물병원",
+    "평택 의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28678,
+    "total": 28724,
     "processed": 3,
-    "pending": 28675,
+    "pending": 28721,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 145,
-  "region_queries_completed": 25,
-  "region_channels": 3182,
+  "queries_completed": 147,
+  "region_queries_completed": 27,
+  "region_channels": 3334,
   "region_observed": 1,
-  "channels_discovered": 12519,
+  "channels_discovered": 12617,
   "channels_observed": 3,
-  "search_pages": 3388,
-  "search_results_read": 63307,
+  "search_pages": 3416,
+  "search_results_read": 63810,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 25,
+      "queries_completed": 27,
       "queries_total": 40,
-      "channels": 3182,
+      "channels": 3334,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1102,28 +1102,28 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 186,
-          "results_read": 360,
-          "pages": 18
+          "status": "completed",
+          "channels": 258,
+          "results_read": 490,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 49,
-          "results_read": 240,
-          "pages": 12
+          "status": "completed",
+          "channels": 152,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 72,
+          "results_read": 119,
+          "pages": 6
         },
         {
           "name": "의원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
