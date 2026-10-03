@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:56:20.161811+00:00",
+  "updated_at": "2026-10-03T06:57:22.012870+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "평택 법무법인",
-    "평택 치과"
+    "평택 치과",
+    "평택 치과의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "평택"
   },
   "classification": {
-    "total": 28587,
+    "total": 28592,
     "processed": 3,
-    "pending": 28584,
+    "pending": 28589,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 125,
-  "region_queries_completed": 5,
-  "region_channels": 951,
+  "queries_completed": 126,
+  "region_queries_completed": 6,
+  "region_channels": 1204,
   "region_observed": 0,
-  "channels_discovered": 11247,
+  "channels_discovered": 11407,
   "channels_observed": 3,
-  "search_pages": 2900,
-  "search_results_read": 54171,
+  "search_pages": 2930,
+  "search_results_read": 54743,
   "query_errors": {},
   "regions": [
     {
@@ -916,9 +916,9 @@
     },
     {
       "name": "평택",
-      "queries_completed": 5,
+      "queries_completed": 6,
       "queries_total": 40,
-      "channels": 951,
+      "channels": 1204,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -955,10 +955,10 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
+          "status": "completed",
           "channels": 117,
           "results_read": 499,
-          "pages": 26
+          "pages": 27
         },
         {
           "name": "법률사무소",
@@ -970,16 +970,16 @@
         {
           "name": "치과",
           "status": "running",
-          "channels": 68,
-          "results_read": 157,
-          "pages": 8
+          "channels": 272,
+          "results_read": 457,
+          "pages": 23
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 140,
+          "results_read": 272,
+          "pages": 14
         },
         {
           "name": "한의원",
