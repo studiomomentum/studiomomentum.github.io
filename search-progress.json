@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "평택",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:01:30.134569+00:00",
+  "updated_at": "2026-10-03T07:02:32.569467+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "평택 어학원",
@@ -13,9 +13,9 @@
     "region": "평택"
   },
   "classification": {
-    "total": 28613,
+    "total": 28619,
     "processed": 3,
-    "pending": 28610,
+    "pending": 28616,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 132,
   "region_queries_completed": 12,
-  "region_channels": 1755,
+  "region_channels": 1938,
   "region_observed": 1,
-  "channels_discovered": 11739,
+  "channels_discovered": 11869,
   "channels_observed": 3,
-  "search_pages": 3044,
-  "search_results_read": 56839,
+  "search_pages": 3072,
+  "search_results_read": 57392,
   "query_errors": {},
   "regions": [
     {
@@ -918,7 +918,7 @@
       "name": "평택",
       "queries_completed": 12,
       "queries_total": 40,
-      "channels": 1755,
+      "channels": 1938,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1012,16 +1012,16 @@
         {
           "name": "어학원",
           "status": "running",
-          "channels": 56,
-          "results_read": 120,
-          "pages": 6
+          "channels": 157,
+          "results_read": 393,
+          "pages": 20
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 18,
-          "results_read": 20,
-          "pages": 1
+          "channels": 150,
+          "results_read": 300,
+          "pages": 15
         },
         {
           "name": "부동산중개",
