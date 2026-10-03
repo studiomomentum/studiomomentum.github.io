@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:41:53.223529+00:00",
+  "updated_at": "2026-10-03T06:42:55.122704+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 산부인과",
-    "오산 비뇨기과"
+    "오산 동물병원",
+    "오산 의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28455,
+    "total": 28461,
     "processed": 3,
-    "pending": 28452,
+    "pending": 28458,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 105,
-  "region_queries_completed": 25,
-  "region_channels": 3017,
+  "queries_completed": 107,
+  "region_queries_completed": 27,
+  "region_channels": 3163,
   "region_observed": 1,
-  "channels_discovered": 9847,
+  "channels_discovered": 9944,
   "channels_observed": 3,
-  "search_pages": 2495,
-  "search_results_read": 46681,
+  "search_pages": 2524,
+  "search_results_read": 47203,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 25,
+      "queries_completed": 27,
       "queries_total": 40,
-      "channels": 3017,
+      "channels": 3163,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -809,28 +809,28 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 219,
-          "results_read": 435,
-          "pages": 22
+          "status": "completed",
+          "channels": 263,
+          "results_read": 501,
+          "pages": 27
         },
         {
           "name": "비뇨기과",
-          "status": "running",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "completed",
+          "channels": 143,
+          "results_read": 278,
+          "pages": 15
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 74,
+          "results_read": 178,
+          "pages": 9
         },
         {
           "name": "의원",
-          "status": "pending",
+          "status": "running",
           "channels": 0,
           "results_read": 0,
           "pages": 0
