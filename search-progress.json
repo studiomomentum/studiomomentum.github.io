@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:16:43.750533+00:00",
+  "updated_at": "2026-10-03T10:17:45.414643+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "강남 노무사",
-    "강남 노무법인"
+    "강남 법무사",
+    "강남 변리사"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 350,
-  "region_queries_completed": 30,
-  "region_channels": 4006,
+  "queries_completed": 351,
+  "region_queries_completed": 31,
+  "region_channels": 4076,
   "region_observed": 1,
-  "channels_discovered": 24477,
+  "channels_discovered": 24505,
   "channels_observed": 3,
-  "search_pages": 8341,
-  "search_results_read": 155895,
+  "search_pages": 8368,
+  "search_results_read": 156390,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 30,
+      "queries_completed": 31,
       "queries_total": 40,
-      "channels": 4006,
+      "channels": 4076,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2602,24 +2602,24 @@
         },
         {
           "name": "노무법인",
-          "status": "running",
-          "channels": 36,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 59,
+          "results_read": 488,
+          "pages": 26
         },
         {
           "name": "법무사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 54,
+          "results_read": 274,
+          "pages": 14
         },
         {
           "name": "변리사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 40,
+          "results_read": 133,
+          "pages": 7
         },
         {
           "name": "관세사",
