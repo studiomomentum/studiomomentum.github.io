@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:39:51.886627+00:00",
+  "updated_at": "2026-10-03T07:40:53.161724+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "용인 행정사사무소",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 176,
   "region_queries_completed": 16,
-  "region_channels": 1935,
+  "region_channels": 1990,
   "region_observed": 0,
-  "channels_discovered": 14280,
+  "channels_discovered": 14301,
   "channels_observed": 3,
-  "search_pages": 4101,
-  "search_results_read": 76603,
+  "search_pages": 4129,
+  "search_results_read": 77159,
   "query_errors": {},
   "regions": [
     {
@@ -1211,7 +1211,7 @@
       "name": "용인",
       "queries_completed": 16,
       "queries_total": 40,
-      "channels": 1935,
+      "channels": 1990,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1333,16 +1333,16 @@
         {
           "name": "행정사사무소",
           "status": "running",
-          "channels": 26,
-          "results_read": 160,
-          "pages": 8
+          "channels": 55,
+          "results_read": 437,
+          "pages": 22
         },
         {
           "name": "피부과",
           "status": "running",
-          "channels": 49,
-          "results_read": 139,
-          "pages": 7
+          "channels": 92,
+          "results_read": 418,
+          "pages": 21
         },
         {
           "name": "성형외과",
