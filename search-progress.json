@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "강남",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:58:35.291565+00:00",
+  "updated_at": "2026-10-03T09:59:36.474086+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "강남 공인중개사",
-    "강남 부동산중개"
+    "강남 행정사",
+    "강남 행정사사무소"
   ],
   "search_stage": {
     "status": "running",
     "region": "강남"
   },
   "classification": {
-    "total": 29817,
+    "total": 29823,
     "processed": 3,
-    "pending": 29814,
+    "pending": 29820,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 333,
-  "region_queries_completed": 13,
-  "region_channels": 1993,
+  "queries_completed": 335,
+  "region_queries_completed": 15,
+  "region_channels": 2111,
   "region_observed": 1,
-  "channels_discovered": 23448,
+  "channels_discovered": 23490,
   "channels_observed": 3,
-  "search_pages": 7895,
-  "search_results_read": 147463,
+  "search_pages": 7923,
+  "search_results_read": 147958,
   "query_errors": {},
   "regions": [
     {
@@ -2381,9 +2381,9 @@
     },
     {
       "name": "강남",
-      "queries_completed": 13,
+      "queries_completed": 15,
       "queries_total": 40,
-      "channels": 1993,
+      "channels": 2111,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -2483,31 +2483,31 @@
         },
         {
           "name": "공인중개사",
-          "status": "running",
-          "channels": 151,
-          "results_read": 517,
-          "pages": 26
+          "status": "completed",
+          "channels": 169,
+          "results_read": 579,
+          "pages": 31
         },
         {
           "name": "부동산중개",
-          "status": "running",
-          "channels": 139,
-          "results_read": 397,
-          "pages": 20
+          "status": "completed",
+          "channels": 209,
+          "results_read": 553,
+          "pages": 29
         },
         {
           "name": "행정사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 60,
+          "results_read": 177,
+          "pages": 9
         },
         {
           "name": "행정사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 38,
+          "results_read": 100,
+          "pages": 5
         },
         {
           "name": "피부과",
