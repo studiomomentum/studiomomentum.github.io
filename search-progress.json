@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:00:35.413103+00:00",
+  "updated_at": "2026-10-03T08:01:38.190897+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "화성 세무사",
@@ -13,9 +13,9 @@
     "region": "화성"
   },
   "classification": {
-    "total": 29006,
+    "total": 29007,
     "processed": 3,
-    "pending": 29003,
+    "pending": 29004,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -27,12 +27,12 @@
   },
   "queries_completed": 200,
   "region_queries_completed": 0,
-  "region_channels": 30,
+  "region_channels": 301,
   "region_observed": 0,
-  "channels_discovered": 14923,
+  "channels_discovered": 14999,
   "channels_observed": 3,
-  "search_pages": 4669,
-  "search_results_read": 87170,
+  "search_pages": 4699,
+  "search_results_read": 87767,
   "query_errors": {},
   "regions": [
     {
@@ -1504,7 +1504,7 @@
       "name": "화성",
       "queries_completed": 0,
       "queries_total": 40,
-      "channels": 30,
+      "channels": 301,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1514,16 +1514,16 @@
         {
           "name": "세무사",
           "status": "running",
-          "channels": 18,
-          "results_read": 20,
-          "pages": 1
+          "channels": 182,
+          "results_read": 319,
+          "pages": 16
         },
         {
           "name": "세무법인",
           "status": "running",
-          "channels": 17,
-          "results_read": 20,
-          "pages": 1
+          "channels": 181,
+          "results_read": 318,
+          "pages": 16
         },
         {
           "name": "세무회계",
