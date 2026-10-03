@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "오산",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:25:23.070177+00:00",
+  "updated_at": "2026-10-03T06:26:24.519722+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "오산 법률사무소",
-    "오산 치과"
+    "오산 치과의원",
+    "오산 한의원"
   ],
   "search_stage": {
     "status": "running",
     "region": "오산"
   },
   "classification": {
-    "total": 28301,
+    "total": 28312,
     "processed": 3,
-    "pending": 28298,
+    "pending": 28309,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 85,
-  "region_queries_completed": 5,
-  "region_channels": 968,
+  "queries_completed": 87,
+  "region_queries_completed": 7,
+  "region_channels": 1085,
   "region_observed": 1,
-  "channels_discovered": 8639,
+  "channels_discovered": 8714,
   "channels_observed": 3,
-  "search_pages": 2032,
-  "search_results_read": 38034,
+  "search_pages": 2061,
+  "search_results_read": 38566,
   "query_errors": {},
   "regions": [
     {
@@ -623,9 +623,9 @@
     },
     {
       "name": "오산",
-      "queries_completed": 5,
+      "queries_completed": 7,
       "queries_total": 40,
-      "channels": 968,
+      "channels": 1085,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -669,31 +669,31 @@
         },
         {
           "name": "법률사무소",
-          "status": "running",
-          "channels": 189,
-          "results_read": 337,
-          "pages": 17
+          "status": "completed",
+          "channels": 270,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "running",
-          "channels": 79,
-          "results_read": 320,
-          "pages": 16
+          "status": "completed",
+          "channels": 118,
+          "results_read": 499,
+          "pages": 26
         },
         {
           "name": "치과의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 39,
+          "results_read": 120,
+          "pages": 6
         },
         {
           "name": "한의원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 17,
+          "results_read": 76,
+          "pages": 4
         },
         {
           "name": "한방병원",
