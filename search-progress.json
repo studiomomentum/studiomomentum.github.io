@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "수원",
   "phase": "parallel",
-  "updated_at": "2026-10-03T05:29:39.525747+00:00",
+  "updated_at": "2026-10-03T05:30:41.893848+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "수원 안과",
-    "수원 정형외과"
+    "수원 이비인후과",
+    "수원 재활의학과"
   ],
   "search_stage": {
     "status": "running",
     "region": "수원"
   },
   "classification": {
-    "total": 28028,
+    "total": 28034,
     "processed": 1,
-    "pending": 28027,
+    "pending": 28033,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,21 +25,21 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 19,
-  "region_queries_completed": 19,
-  "region_channels": 1902,
+  "queries_completed": 21,
+  "region_queries_completed": 21,
+  "region_channels": 2004,
   "region_observed": 1,
-  "channels_discovered": 1902,
+  "channels_discovered": 2004,
   "channels_observed": 1,
-  "search_pages": 489,
-  "search_results_read": 9169,
+  "search_pages": 518,
+  "search_results_read": 9688,
   "query_errors": {},
   "regions": [
     {
       "name": "수원",
-      "queries_completed": 19,
+      "queries_completed": 21,
       "queries_total": 40,
-      "channels": 1902,
+      "channels": 2004,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -181,31 +181,31 @@
         },
         {
           "name": "안과",
-          "status": "running",
-          "channels": 120,
-          "results_read": 437,
-          "pages": 22
+          "status": "completed",
+          "channels": 154,
+          "results_read": 510,
+          "pages": 27
         },
         {
           "name": "정형외과",
-          "status": "running",
-          "channels": 90,
-          "results_read": 400,
-          "pages": 20
+          "status": "completed",
+          "channels": 111,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "이비인후과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 61,
+          "results_read": 173,
+          "pages": 9
         },
         {
           "name": "재활의학과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 53,
+          "results_read": 178,
+          "pages": 9
         },
         {
           "name": "마취통증의학과",
