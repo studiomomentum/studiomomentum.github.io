@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:40:17.268420+00:00",
+  "updated_at": "2026-10-03T11:41:18.621883+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 감정평가사",
-    "송파 손해사정사"
+    "송파 건축사사무소",
+    "송파 심리상담센터"
   ],
   "search_stage": {
     "status": "running",
     "region": "송파"
   },
   "classification": {
-    "total": 30396,
+    "total": 30397,
     "processed": 3,
-    "pending": 30393,
+    "pending": 30394,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 434,
-  "region_queries_completed": 34,
-  "region_channels": 3603,
+  "queries_completed": 436,
+  "region_queries_completed": 36,
+  "region_channels": 3729,
   "region_observed": 1,
-  "channels_discovered": 27990,
+  "channels_discovered": 28020,
   "channels_observed": 3,
-  "search_pages": 10536,
-  "search_results_read": 198678,
+  "search_pages": 10562,
+  "search_results_read": 199140,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 34,
+      "queries_completed": 36,
       "queries_total": 40,
-      "channels": 3603,
+      "channels": 3729,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3216,31 +3216,31 @@
         },
         {
           "name": "감정평가사",
-          "status": "running",
-          "channels": 189,
-          "results_read": 420,
-          "pages": 21
+          "status": "completed",
+          "channels": 216,
+          "results_read": 495,
+          "pages": 26
         },
         {
           "name": "손해사정사",
-          "status": "running",
-          "channels": 34,
-          "results_read": 337,
-          "pages": 17
+          "status": "completed",
+          "channels": 84,
+          "results_read": 487,
+          "pages": 26
         },
         {
           "name": "건축사사무소",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 60,
+          "results_read": 160,
+          "pages": 8
         },
         {
           "name": "심리상담센터",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 40,
+          "results_read": 77,
+          "pages": 4
         },
         {
           "name": "필라테스",
