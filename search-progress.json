@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:07:54.478063+00:00",
+  "updated_at": "2026-10-03T11:08:56.584638+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 세무사",
-    "송파 세무법인"
+    "송파 세무회계",
+    "송파 변호사"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 400,
-  "region_queries_completed": 0,
-  "region_channels": 199,
+  "queries_completed": 402,
+  "region_queries_completed": 2,
+  "region_channels": 322,
   "region_observed": 0,
-  "channels_discovered": 26928,
+  "channels_discovered": 26970,
   "channels_observed": 3,
-  "search_pages": 9680,
-  "search_results_read": 180950,
+  "search_pages": 9708,
+  "search_results_read": 181435,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 0,
+      "queries_completed": 2,
       "queries_total": 40,
-      "channels": 199,
+      "channels": 322,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2978,31 +2978,31 @@
       "jobs": [
         {
           "name": "세무사",
-          "status": "running",
-          "channels": 154,
-          "results_read": 519,
-          "pages": 26
+          "status": "completed",
+          "channels": 156,
+          "results_read": 522,
+          "pages": 28
         },
         {
           "name": "세무법인",
-          "status": "running",
+          "status": "completed",
           "channels": 103,
           "results_read": 504,
-          "pages": 26
+          "pages": 27
         },
         {
           "name": "세무회계",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 97,
+          "results_read": 255,
+          "pages": 13
         },
         {
           "name": "변호사",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 79,
+          "results_read": 227,
+          "pages": 12
         },
         {
           "name": "법무법인",
