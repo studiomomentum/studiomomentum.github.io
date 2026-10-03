@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:09:54.133581+00:00",
+  "updated_at": "2026-10-03T06:10:56.109231+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "동탄 산부인과",
-    "동탄 비뇨기과"
+    "동탄 비뇨기과",
+    "동탄 동물병원"
   ],
   "search_stage": {
     "status": "running",
     "region": "동탄"
   },
   "classification": {
-    "total": 28175,
+    "total": 28178,
     "processed": 3,
-    "pending": 28172,
+    "pending": 28175,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 65,
-  "region_queries_completed": 25,
-  "region_channels": 3163,
+  "queries_completed": 66,
+  "region_queries_completed": 26,
+  "region_channels": 3369,
   "region_observed": 1,
-  "channels_discovered": 6648,
+  "channels_discovered": 6821,
   "channels_observed": 3,
-  "search_pages": 1609,
-  "search_results_read": 30170,
+  "search_pages": 1637,
+  "search_results_read": 30706,
   "query_errors": {},
   "regions": [
     {
@@ -330,9 +330,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 25,
+      "queries_completed": 26,
       "queries_total": 40,
-      "channels": 3163,
+      "channels": 3369,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -516,24 +516,24 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
-          "channels": 262,
-          "results_read": 378,
-          "pages": 19
+          "status": "completed",
+          "channels": 367,
+          "results_read": 494,
+          "pages": 26
         },
         {
           "name": "비뇨기과",
           "status": "running",
-          "channels": 22,
-          "results_read": 96,
-          "pages": 5
+          "channels": 107,
+          "results_read": 376,
+          "pages": 19
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 89,
+          "results_read": 140,
+          "pages": 7
         },
         {
           "name": "의원",
