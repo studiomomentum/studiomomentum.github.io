@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-03T11:35:02.122041+00:00",
+  "updated_at": "2026-10-03T11:36:05.578281+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "송파 의원",
-    "송파 노무사"
+    "송파 노무사",
+    "송파 노무법인"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 428,
-  "region_queries_completed": 28,
-  "region_channels": 3281,
+  "queries_completed": 430,
+  "region_queries_completed": 30,
+  "region_channels": 3322,
   "region_observed": 1,
-  "channels_discovered": 27902,
+  "channels_discovered": 27913,
   "channels_observed": 3,
-  "search_pages": 10396,
-  "search_results_read": 196069,
+  "search_pages": 10424,
+  "search_results_read": 196577,
   "query_errors": {},
   "regions": [
     {
@@ -2967,9 +2967,9 @@
     },
     {
       "name": "송파",
-      "queries_completed": 28,
+      "queries_completed": 30,
       "queries_total": 40,
-      "channels": 3281,
+      "channels": 3322,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -3174,24 +3174,24 @@
         },
         {
           "name": "의원",
-          "status": "running",
+          "status": "completed",
           "channels": 182,
           "results_read": 539,
-          "pages": 27
+          "pages": 28
         },
         {
           "name": "노무사",
-          "status": "running",
-          "channels": 60,
-          "results_read": 235,
-          "pages": 12
+          "status": "completed",
+          "channels": 106,
+          "results_read": 486,
+          "pages": 26
         },
         {
           "name": "노무법인",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 42,
+          "results_read": 257,
+          "pages": 13
         },
         {
           "name": "법무사",
