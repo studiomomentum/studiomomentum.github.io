@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "동탄",
   "phase": "parallel",
-  "updated_at": "2026-10-03T06:19:11.668380+00:00",
+  "updated_at": "2026-10-03T06:20:13.084902+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "동탄 중고차"
@@ -12,9 +12,9 @@
     "region": "동탄"
   },
   "classification": {
-    "total": 28264,
+    "total": 28271,
     "processed": 3,
-    "pending": 28261,
+    "pending": 28268,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -24,14 +24,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 79,
-  "region_queries_completed": 39,
-  "region_channels": 4845,
+  "queries_completed": 80,
+  "region_queries_completed": 40,
+  "region_channels": 4938,
   "region_observed": 1,
-  "channels_discovered": 8056,
+  "channels_discovered": 8141,
   "channels_observed": 3,
-  "search_pages": 1868,
-  "search_results_read": 34936,
+  "search_pages": 1888,
+  "search_results_read": 35296,
   "query_errors": {},
   "regions": [
     {
@@ -329,9 +329,9 @@
     },
     {
       "name": "동탄",
-      "queries_completed": 39,
+      "queries_completed": 40,
       "queries_total": 40,
-      "channels": 4845,
+      "channels": 4938,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -613,10 +613,10 @@
         },
         {
           "name": "중고차",
-          "status": "running",
-          "channels": 76,
-          "results_read": 140,
-          "pages": 7
+          "status": "completed",
+          "channels": 176,
+          "results_read": 500,
+          "pages": 27
         }
       ]
     },
