@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "용인",
   "phase": "parallel",
-  "updated_at": "2026-10-03T07:34:41.560223+00:00",
+  "updated_at": "2026-10-03T07:35:42.831056+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "용인 학원",
-    "용인 입시학원"
+    "용인 입시학원",
+    "용인 어학원"
   ],
   "search_stage": {
     "status": "running",
     "region": "용인"
   },
   "classification": {
-    "total": 28917,
+    "total": 28923,
     "processed": 3,
-    "pending": 28914,
+    "pending": 28920,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 170,
-  "region_queries_completed": 10,
-  "region_channels": 1206,
+  "queries_completed": 171,
+  "region_queries_completed": 11,
+  "region_channels": 1365,
   "region_observed": 0,
-  "channels_discovered": 14027,
+  "channels_discovered": 14074,
   "channels_observed": 3,
-  "search_pages": 3959,
-  "search_results_read": 73950,
+  "search_pages": 3987,
+  "search_results_read": 74481,
   "query_errors": {},
   "regions": [
     {
@@ -1209,9 +1209,9 @@
     },
     {
       "name": "용인",
-      "queries_completed": 10,
+      "queries_completed": 11,
       "queries_total": 40,
-      "channels": 1206,
+      "channels": 1365,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -1290,24 +1290,24 @@
         },
         {
           "name": "학원",
-          "status": "running",
-          "channels": 188,
-          "results_read": 392,
-          "pages": 20
+          "status": "completed",
+          "channels": 244,
+          "results_read": 551,
+          "pages": 29
         },
         {
           "name": "입시학원",
           "status": "running",
-          "channels": 36,
-          "results_read": 80,
-          "pages": 4
+          "channels": 116,
+          "results_read": 360,
+          "pages": 18
         },
         {
           "name": "어학원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 50,
+          "results_read": 92,
+          "pages": 5
         },
         {
           "name": "공인중개사",
