@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:47:13.436365+00:00",
+  "updated_at": "2026-10-03T08:48:14.675600+00:00",
   "run_id": "37099031291",
   "active_queries": [
     "분당 어학원",
@@ -27,12 +27,12 @@
   },
   "queries_completed": 252,
   "region_queries_completed": 12,
-  "region_channels": 1155,
+  "region_channels": 1238,
   "region_observed": 1,
-  "channels_discovered": 18202,
+  "channels_discovered": 18231,
   "channels_observed": 3,
-  "search_pages": 5950,
-  "search_results_read": 111125,
+  "search_pages": 5978,
+  "search_results_read": 111679,
   "query_errors": {},
   "regions": [
     {
@@ -1797,7 +1797,7 @@
       "name": "분당",
       "queries_completed": 12,
       "queries_total": 40,
-      "channels": 1155,
+      "channels": 1238,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1891,16 +1891,16 @@
         {
           "name": "어학원",
           "status": "running",
-          "channels": 20,
-          "results_read": 40,
-          "pages": 2
+          "channels": 61,
+          "results_read": 319,
+          "pages": 16
         },
         {
           "name": "공인중개사",
           "status": "running",
-          "channels": 12,
-          "results_read": 20,
-          "pages": 1
+          "channels": 67,
+          "results_read": 295,
+          "pages": 15
         },
         {
           "name": "부동산중개",
