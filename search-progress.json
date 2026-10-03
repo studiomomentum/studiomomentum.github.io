@@ -2,11 +2,11 @@
   "sweep_id": "manual-37099031291",
   "region": "화성",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:24:28.036911+00:00",
+  "updated_at": "2026-10-03T08:25:29.546927+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "화성 산부인과",
-    "화성 비뇨기과"
+    "화성 비뇨기과",
+    "화성 동물병원"
   ],
   "search_stage": {
     "status": "running",
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 225,
-  "region_queries_completed": 25,
-  "region_channels": 3840,
+  "queries_completed": 226,
+  "region_queries_completed": 26,
+  "region_channels": 3983,
   "region_observed": 1,
-  "channels_discovered": 16826,
+  "channels_discovered": 16901,
   "channels_observed": 3,
-  "search_pages": 5331,
-  "search_results_read": 99592,
+  "search_pages": 5359,
+  "search_results_read": 100113,
   "query_errors": {},
   "regions": [
     {
@@ -1502,9 +1502,9 @@
     },
     {
       "name": "화성",
-      "queries_completed": 25,
+      "queries_completed": 26,
       "queries_total": 40,
-      "channels": 3840,
+      "channels": 3983,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1688,24 +1688,24 @@
         },
         {
           "name": "산부인과",
-          "status": "running",
+          "status": "completed",
           "channels": 213,
-          "results_read": 479,
-          "pages": 24
+          "results_read": 503,
+          "pages": 27
         },
         {
           "name": "비뇨기과",
           "status": "running",
-          "channels": 40,
-          "results_read": 120,
-          "pages": 6
+          "channels": 93,
+          "results_read": 397,
+          "pages": 20
         },
         {
           "name": "동물병원",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 146,
+          "results_read": 220,
+          "pages": 11
         },
         {
           "name": "의원",
