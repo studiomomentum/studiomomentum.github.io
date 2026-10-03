@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "판교",
   "phase": "parallel",
-  "updated_at": "2026-10-03T09:41:00.807785+00:00",
+  "updated_at": "2026-10-03T09:42:02.776801+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "판교 건축사사무소",
-    "판교 심리상담센터"
+    "판교 심리상담센터",
+    "판교 필라테스"
   ],
   "search_stage": {
     "status": "running",
     "region": "판교"
   },
   "classification": {
-    "total": 29680,
+    "total": 29683,
     "processed": 3,
-    "pending": 29677,
+    "pending": 29680,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 316,
-  "region_queries_completed": 36,
-  "region_channels": 4447,
+  "queries_completed": 317,
+  "region_queries_completed": 37,
+  "region_channels": 4697,
   "region_observed": 0,
-  "channels_discovered": 21942,
+  "channels_discovered": 22107,
   "channels_observed": 3,
-  "search_pages": 7425,
-  "search_results_read": 138603,
+  "search_pages": 7453,
+  "search_results_read": 139137,
   "query_errors": {},
   "regions": [
     {
@@ -2088,9 +2088,9 @@
     },
     {
       "name": "판교",
-      "queries_completed": 36,
+      "queries_completed": 37,
       "queries_total": 40,
-      "channels": 4447,
+      "channels": 4697,
       "observed": 0,
       "observation_errors": 0,
       "classified_at": null,
@@ -2351,24 +2351,24 @@
         },
         {
           "name": "건축사사무소",
-          "status": "running",
-          "channels": 153,
-          "results_read": 455,
-          "pages": 23
+          "status": "completed",
+          "channels": 166,
+          "results_read": 492,
+          "pages": 26
         },
         {
           "name": "심리상담센터",
           "status": "running",
-          "channels": 71,
-          "results_read": 100,
-          "pages": 5
+          "channels": 246,
+          "results_read": 379,
+          "pages": 19
         },
         {
           "name": "필라테스",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 146,
+          "results_read": 218,
+          "pages": 11
         },
         {
           "name": "중고차",
