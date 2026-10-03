@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "분당",
   "phase": "parallel",
-  "updated_at": "2026-10-03T08:58:36.386724+00:00",
+  "updated_at": "2026-10-03T08:59:37.708637+00:00",
   "run_id": "37099031291",
   "active_queries": [
-    "분당 마취통증의학과",
-    "분당 내과의원"
+    "분당 산부인과",
+    "분당 비뇨기과"
   ],
   "search_stage": {
     "status": "running",
     "region": "분당"
   },
   "classification": {
-    "total": 29424,
+    "total": 29426,
     "processed": 3,
-    "pending": 29421,
+    "pending": 29423,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 263,
-  "region_queries_completed": 23,
-  "region_channels": 2345,
+  "queries_completed": 265,
+  "region_queries_completed": 25,
+  "region_channels": 2419,
   "region_observed": 1,
-  "channels_discovered": 18632,
+  "channels_discovered": 18655,
   "channels_observed": 3,
-  "search_pages": 6264,
-  "search_results_read": 117035,
+  "search_pages": 6292,
+  "search_results_read": 117542,
   "query_errors": {},
   "regions": [
     {
@@ -1795,9 +1795,9 @@
     },
     {
       "name": "분당",
-      "queries_completed": 23,
+      "queries_completed": 25,
       "queries_total": 40,
-      "channels": 2345,
+      "channels": 2419,
       "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
@@ -1967,31 +1967,31 @@
         },
         {
           "name": "마취통증의학과",
-          "status": "running",
-          "channels": 148,
-          "results_read": 480,
-          "pages": 24
+          "status": "completed",
+          "channels": 155,
+          "results_read": 498,
+          "pages": 26
         },
         {
           "name": "내과의원",
-          "status": "running",
-          "channels": 12,
-          "results_read": 60,
-          "pages": 3
+          "status": "completed",
+          "channels": 48,
+          "results_read": 291,
+          "pages": 16
         },
         {
           "name": "산부인과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 82,
+          "results_read": 238,
+          "pages": 12
         },
         {
           "name": "비뇨기과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 6,
+          "results_read": 20,
+          "pages": 1
         },
         {
           "name": "동물병원",
