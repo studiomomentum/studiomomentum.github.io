@@ -2,20 +2,20 @@
   "sweep_id": "manual-37099031291",
   "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-03T10:31:22.096523+00:00",
+  "updated_at": "2026-10-03T10:32:25.599339+00:00",
   "run_id": "37115666923",
   "active_queries": [
-    "서초 법무법인",
-    "서초 법률사무소"
+    "서초 법률사무소",
+    "서초 치과"
   ],
   "search_stage": {
     "status": "running",
     "region": "서초"
   },
   "classification": {
-    "total": 30052,
+    "total": 30061,
     "processed": 3,
-    "pending": 30049,
+    "pending": 30058,
     "processing": 0,
     "eligible": 0,
     "review": 0,
@@ -25,14 +25,14 @@
     "status": "not_running",
     "active": []
   },
-  "queries_completed": 364,
-  "region_queries_completed": 4,
-  "region_channels": 767,
-  "region_observed": 0,
-  "channels_discovered": 25220,
+  "queries_completed": 365,
+  "region_queries_completed": 5,
+  "region_channels": 965,
+  "region_observed": 1,
+  "channels_discovered": 25285,
   "channels_observed": 3,
-  "search_pages": 8719,
-  "search_results_read": 162965,
+  "search_pages": 8747,
+  "search_results_read": 163490,
   "query_errors": {},
   "regions": [
     {
@@ -2674,13 +2674,13 @@
     },
     {
       "name": "서초",
-      "queries_completed": 4,
+      "queries_completed": 5,
       "queries_total": 40,
-      "channels": 767,
-      "observed": 0,
+      "channels": 965,
+      "observed": 1,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 0,
+      "classified": 1,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2713,24 +2713,24 @@
         },
         {
           "name": "법무법인",
-          "status": "running",
-          "channels": 210,
-          "results_read": 537,
-          "pages": 27
+          "status": "completed",
+          "channels": 213,
+          "results_read": 548,
+          "pages": 29
         },
         {
           "name": "법률사무소",
           "status": "running",
-          "channels": 125,
-          "results_read": 240,
-          "pages": 12
+          "channels": 239,
+          "results_read": 518,
+          "pages": 26
         },
         {
           "name": "치과",
-          "status": "pending",
-          "channels": 0,
-          "results_read": 0,
-          "pages": 0
+          "status": "running",
+          "channels": 135,
+          "results_read": 236,
+          "pages": 12
         },
         {
           "name": "치과의원",
