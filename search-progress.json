@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T20:43:13.737395+00:00",
+  "updated_at": "2026-10-04T20:44:15.916146+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 2160,
-    "pending": 28257,
-    "processing": 1,
+    "processed": 2171,
+    "pending": 28247,
+    "processing": 0,
     "eligible": 52,
-    "review": 1421,
-    "rejected": 679,
+    "review": 1431,
+    "rejected": 680,
     "errors": 5,
     "ready": 46,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCgi316cWTGJ3FtviNL7Rk4Q",
-        "name": "연성대학교 세무회계과",
-        "query": "수원 세무회계"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 709,
   "channels_discovered": 28150,
-  "channels_observed": 2155,
+  "channels_observed": 2166,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 932,
+      "observed": 943,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 933,
+      "classified": 944,
       "classification_errors": 1,
       "jobs": [
         {
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 694,
+      "observed": 696,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 694,
+      "classified": 696,
       "classification_errors": 0,
       "jobs": [
         {
@@ -629,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 654,
+      "observed": 655,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 654,
+      "classified": 655,
       "classification_errors": 0,
       "jobs": [
         {
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 721,
+      "observed": 722,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 721,
+      "classified": 722,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 945,
+      "observed": 950,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 946,
+      "classified": 951,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 714,
+      "observed": 715,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 715,
+      "classified": 716,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 804,
+      "observed": 809,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 805,
+      "classified": 810,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 792,
+      "observed": 793,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 793,
+      "classified": 794,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 841,
+      "observed": 842,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 841,
+      "classified": 842,
       "classification_errors": 0,
       "jobs": [
         {
