@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T21:22:11.515051+00:00",
+  "updated_at": "2026-10-04T21:23:13.143473+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 2655,
-    "pending": 27761,
+    "processed": 2667,
+    "pending": 27749,
     "processing": 2,
     "eligible": 76,
-    "review": 1752,
-    "rejected": 818,
+    "review": 1761,
+    "rejected": 821,
     "errors": 6,
     "ready": 49,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCWvujyWXZrF8FlcCXEPg6qg",
-        "name": "연우학원",
-        "query": "수원 학원"
+        "channel_id": "UCqhAeXwNcaVF-KO-6EAn3pw",
+        "name": "내몸사랑한의원",
+        "query": "수원 한의원"
       },
       {
-        "channel_id": "UCfjY2tPCi9NRjLNATq8z55A",
-        "name": "플로우교육",
-        "query": "수원 학원"
+        "channel_id": "UC2SE8R3ioTjlm44bBxcoZDA",
+        "name": "이전용",
+        "query": "수원 한의원"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 770,
   "channels_discovered": 28150,
-  "channels_observed": 2649,
+  "channels_observed": 2661,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 1324,
+      "observed": 1336,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1326,
+      "classified": 1338,
       "classification_errors": 2,
       "jobs": [
         {
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 785,
+      "observed": 787,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 785,
+      "classified": 787,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 764,
+      "observed": 766,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 764,
+      "classified": 766,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 818,
+      "observed": 821,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 818,
+      "classified": 821,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 1158,
+      "observed": 1161,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1159,
+      "classified": 1162,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 816,
+      "observed": 819,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 817,
+      "classified": 820,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 987,
+      "observed": 989,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 988,
+      "classified": 990,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 635,
+      "observed": 636,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 636,
+      "classified": 637,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 937,
+      "observed": 938,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 937,
+      "classified": 938,
       "classification_errors": 0,
       "jobs": [
         {
