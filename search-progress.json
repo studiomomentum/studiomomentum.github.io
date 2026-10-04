@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T18:49:46.665659+00:00",
+  "updated_at": "2026-10-04T18:50:48.336403+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 683,
-    "pending": 29735,
-    "processing": 0,
-    "eligible": 16,
-    "review": 445,
-    "rejected": 217,
+    "processed": 692,
+    "pending": 29725,
+    "processing": 1,
+    "eligible": 17,
+    "review": 451,
+    "rejected": 219,
     "errors": 2,
     "ready": 49,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCw5Ylc6Y-yObgKVcos5bWfw",
+        "name": "부동산참치",
+        "query": "평택 세무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 176,
+  "region_observed": 177,
   "channels_discovered": 28150,
-  "channels_observed": 681,
+  "channels_observed": 690,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 468,
+      "observed": 471,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 468,
+      "classified": 471,
       "classification_errors": 0,
       "jobs": [
         {
@@ -330,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 396,
+      "observed": 398,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 396,
+      "classified": 398,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 388,
+      "observed": 392,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 388,
+      "classified": 392,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 290,
+      "observed": 297,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 290,
+      "classified": 297,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 409,
+      "observed": 414,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 409,
+      "classified": 414,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 278,
+      "observed": 280,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 278,
+      "classified": 280,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 213,
+      "observed": 215,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 213,
+      "classified": 215,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 210,
+      "observed": 211,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 210,
+      "classified": 211,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 176,
+      "observed": 177,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 176,
+      "classified": 177,
       "classification_errors": 0,
       "jobs": [
         {
