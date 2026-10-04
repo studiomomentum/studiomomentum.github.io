@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T21:42:36.662895+00:00",
+  "updated_at": "2026-10-04T21:43:38.024379+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 2933,
-    "pending": 27483,
-    "processing": 2,
+    "processed": 2945,
+    "pending": 27473,
+    "processing": 0,
     "eligible": 79,
-    "review": 1948,
-    "rejected": 896,
+    "review": 1953,
+    "rejected": 903,
     "errors": 7,
     "ready": 49,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCJ45so0ew3HQtauEsqgQLEg",
-        "name": "어썸보컬",
-        "query": "수원 학원"
-      },
-      {
-        "channel_id": "UCur_ZiZhQKXWX0p7_moXQZA",
-        "name": "버프 댄스 스튜디오 / BUFF DANCE STUDIO",
-        "query": "수원 학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 817,
   "channels_discovered": 28150,
-  "channels_observed": 2926,
+  "channels_observed": 2938,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 1573,
+      "observed": 1580,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1575,
+      "classified": 1582,
       "classification_errors": 2,
       "jobs": [
         {
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 813,
+      "observed": 814,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 813,
+      "classified": 814,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 1294,
+      "observed": 1297,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1295,
+      "classified": 1298,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1097,
+      "observed": 1098,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1098,
+      "classified": 1099,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 663,
+      "observed": 666,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 664,
+      "classified": 667,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 930,
+      "observed": 931,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 931,
+      "classified": 932,
       "classification_errors": 1,
       "jobs": [
         {
