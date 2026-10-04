@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T18:01:17.230374+00:00",
+  "updated_at": "2026-10-04T18:02:18.188174+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 65,
-    "pending": 30353,
-    "processing": 0,
+    "processed": 73,
+    "pending": 30343,
+    "processing": 2,
     "eligible": 4,
-    "review": 41,
-    "rejected": 17,
+    "review": 48,
+    "rejected": 18,
     "errors": 0,
     "ready": 49,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCAVHVBlwhXvfsLOPkJW-NqA",
+        "name": "참잘함한방병원",
+        "query": "수원 한방병원"
+      },
+      {
+        "channel_id": "UCAhAxteV2-oD3tRSaAlknCg",
+        "name": "리더스도준한방병원",
+        "query": "수원 한방병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 20,
   "channels_discovered": 28150,
-  "channels_observed": 65,
+  "channels_observed": 73,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 59,
+      "observed": 67,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 59,
+      "classified": 67,
       "classification_errors": 0,
       "jobs": [
         {
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 28,
+      "observed": 31,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 28,
+      "classified": 31,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 22,
+      "observed": 25,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 22,
+      "classified": 25,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 24,
+      "observed": 25,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 24,
+      "classified": 25,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 44,
+      "observed": 47,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 44,
+      "classified": 47,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 23,
+      "observed": 25,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 23,
+      "classified": 25,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 41,
+      "observed": 43,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 41,
+      "classified": 43,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 18,
+      "observed": 20,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 18,
+      "classified": 20,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 25,
+      "observed": 26,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 25,
+      "classified": 26,
       "classification_errors": 0,
       "jobs": [
         {
