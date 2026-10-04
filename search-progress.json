@@ -1,31 +1,42 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "",
+  "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-04T22:56:48.730068+00:00",
+  "updated_at": "2026-10-04T22:57:51.935766+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "서초"
   },
   "classification": {
     "total": 30418,
-    "processed": 3913,
+    "processed": 3911,
     "pending": 26505,
-    "processing": 0,
+    "processing": 2,
     "eligible": 84,
     "review": 2636,
     "rejected": 1182,
-    "errors": 8,
-    "ready": 46,
-    "status": "starting",
-    "active": []
+    "errors": 6,
+    "ready": 44,
+    "status": "running",
+    "active": [
+      {
+        "channel_id": "UCxJt1sYKp92QIPCCiD6oqkw",
+        "name": "그감자서버",
+        "query": "수원 한의원"
+      },
+      {
+        "channel_id": "UC3cLIyknY7CEbJUiBslUcMw",
+        "name": "교통사고는 한방병원",
+        "query": "수원 정형외과"
+      }
+    ]
   },
   "queries_completed": 440,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
+  "region_queries_completed": 40,
+  "region_channels": 4887,
+  "region_observed": 1159,
   "channels_discovered": 28150,
   "channels_observed": 3905,
   "search_pages": 10655,
@@ -40,8 +51,8 @@
       "observed": 2377,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2380,
-      "classification_errors": 3,
+      "classified": 2379,
+      "classification_errors": 2,
       "jobs": [
         {
           "name": "세무사",
@@ -1212,8 +1223,8 @@
       "observed": 1748,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1750,
-      "classification_errors": 2,
+      "classified": 1749,
+      "classification_errors": 1,
       "jobs": [
         {
           "name": "세무사",
@@ -1798,8 +1809,8 @@
       "observed": 1454,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1456,
-      "classification_errors": 2,
+      "classified": 1455,
+      "classification_errors": 1,
       "jobs": [
         {
           "name": "세무사",
@@ -2677,8 +2688,8 @@
       "observed": 1159,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1160,
-      "classification_errors": 1,
+      "classified": 1159,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
@@ -2970,8 +2981,8 @@
       "observed": 965,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 966,
-      "classification_errors": 1,
+      "classified": 965,
+      "classification_errors": 0,
       "jobs": [
         {
           "name": "세무사",
