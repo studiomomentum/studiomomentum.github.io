@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T18:03:19.523757+00:00",
+  "updated_at": "2026-10-04T18:04:22.025281+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,20 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 81,
-    "pending": 30335,
-    "processing": 2,
+    "processed": 94,
+    "pending": 30323,
+    "processing": 1,
     "eligible": 4,
-    "review": 52,
-    "rejected": 22,
+    "review": 62,
+    "rejected": 25,
     "errors": 0,
     "ready": 49,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9rRZBABQ0od9uU2qjKZiaQ",
-        "name": "경선식에듀 직영학원 수원영통",
-        "query": "수원 학원"
-      },
-      {
-        "channel_id": "UCnkcnkavpEYVJlqyBHwEUeA",
-        "name": "RAW DANCE SUWON",
-        "query": "수원 학원"
+        "channel_id": "UCG0AksHoHbr2NoZziZR4-6Q",
+        "name": "Momnmom",
+        "query": "수원 어학원"
       }
     ]
   },
@@ -38,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 23,
   "channels_discovered": 28150,
-  "channels_observed": 81,
+  "channels_observed": 94,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 75,
+      "observed": 88,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 75,
+      "classified": 88,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 28,
+      "observed": 32,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 28,
+      "classified": 32,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 30,
+      "observed": 32,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 30,
+      "classified": 32,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 54,
+      "observed": 64,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 54,
+      "classified": 64,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 32,
+      "observed": 33,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 32,
+      "classified": 33,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 48,
+      "observed": 50,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 48,
+      "classified": 50,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 26,
+      "observed": 28,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 26,
+      "classified": 28,
       "classification_errors": 0,
       "jobs": [
         {
