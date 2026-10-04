@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T23:41:38.093961+00:00",
+  "updated_at": "2026-10-04T23:42:39.731888+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 4495,
-    "pending": 25921,
+    "processed": 4505,
+    "pending": 25911,
     "processing": 2,
     "eligible": 88,
-    "review": 3020,
-    "rejected": 1375,
+    "review": 3024,
+    "rejected": 1381,
     "errors": 9,
     "ready": 45,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCrP9m6FC5Zb0nTYQ4QX7N8Q",
-        "name": "아이플러스 강화유리파티션 사무용가구",
-        "query": "수원 노무법인"
+        "channel_id": "UCor80wMsBZ0AADIBZ_QF6bQ",
+        "name": "한국산업인력공단",
+        "query": "수원 변리사"
       },
       {
-        "channel_id": "UC68QEZNtp01BwW5OU-2xgmw",
-        "name": "KoreanNews",
-        "query": "수원 노무법인"
+        "channel_id": "UCxY3Bhqs3fBJKIcGxT5xdVA",
+        "name": "공동TLO사무국",
+        "query": "수원 변리사"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1060,
   "channels_discovered": 28150,
-  "channels_observed": 4486,
+  "channels_observed": 4496,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 2894,
+      "observed": 2903,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2897,
+      "classified": 2906,
       "classification_errors": 3,
       "jobs": [
         {
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 1115,
+      "observed": 1118,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1115,
+      "classified": 1118,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1144,
+      "observed": 1145,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1144,
+      "classified": 1145,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1170,
+      "observed": 1171,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1170,
+      "classified": 1171,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2005,
+      "observed": 2009,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2007,
+      "classified": 2011,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1239,
+      "observed": 1243,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1240,
+      "classified": 1244,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1632,
+      "observed": 1635,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1634,
+      "classified": 1637,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 896,
+      "observed": 898,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 897,
+      "classified": 899,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1213,
+      "observed": 1214,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1214,
+      "classified": 1215,
       "classification_errors": 1,
       "jobs": [
         {
