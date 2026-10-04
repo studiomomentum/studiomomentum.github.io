@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T20:25:00.562014+00:00",
+  "updated_at": "2026-10-04T20:26:02.147378+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 1936,
-    "pending": 28481,
-    "processing": 1,
-    "eligible": 44,
-    "review": 1264,
-    "rejected": 622,
+    "processed": 1949,
+    "pending": 28467,
+    "processing": 2,
+    "eligible": 45,
+    "review": 1274,
+    "rejected": 624,
     "errors": 3,
     "ready": 48,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCzLWTOZAaiVqvg-QRouxFDQ",
-        "name": "줄이세",
-        "query": "송파 세무법인"
+        "channel_id": "UC7nVFmwDFNBVHCQPXt7GZbQ",
+        "name": "심과함께ㅣ법무법인 심",
+        "query": "송파 법무법인"
+      },
+      {
+        "channel_id": "UCrMDd6g0U05BnFCk-VFwb0Q",
+        "name": "가치있는 이혼",
+        "query": "송파 법무법인"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 532,
+  "region_observed": 545,
   "channels_discovered": 28150,
-  "channels_observed": 1933,
+  "channels_observed": 1946,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 861,
+      "observed": 863,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 862,
+      "classified": 864,
       "classification_errors": 1,
       "jobs": [
         {
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 626,
+      "observed": 627,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 626,
+      "classified": 627,
       "classification_errors": 0,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 690,
+      "observed": 691,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 690,
+      "classified": 691,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 891,
+      "observed": 892,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 892,
+      "classified": 893,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 741,
+      "observed": 745,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 742,
+      "classified": 746,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 720,
+      "observed": 723,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 721,
+      "classified": 724,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 722,
+      "observed": 730,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 722,
+      "classified": 730,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 532,
+      "observed": 545,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 532,
+      "classified": 545,
       "classification_errors": 0,
       "jobs": [
         {
