@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T20:03:43.139426+00:00",
+  "updated_at": "2026-10-04T20:04:44.105447+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 1666,
-    "pending": 28751,
-    "processing": 1,
-    "eligible": 34,
-    "review": 1107,
-    "rejected": 519,
+    "processed": 1677,
+    "pending": 28741,
+    "processing": 0,
+    "eligible": 35,
+    "review": 1111,
+    "rejected": 525,
     "errors": 3,
     "ready": 46,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCZoS-TrFdP1-z49JATZx8Qw",
-        "name": "OFP DENTAL",
-        "query": "강남 내과의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 427,
+  "region_observed": 430,
   "channels_discovered": 28150,
-  "channels_observed": 1663,
+  "channels_observed": 1674,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 609,
+      "observed": 612,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 609,
+      "classified": 612,
       "classification_errors": 0,
       "jobs": [
         {
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 664,
+      "observed": 666,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 664,
+      "classified": 666,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 643,
+      "observed": 647,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 644,
+      "classified": 648,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 680,
+      "observed": 684,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 681,
+      "classified": 685,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 501,
+      "observed": 506,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 502,
+      "classified": 507,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 553,
+      "observed": 564,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 554,
+      "classified": 565,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 480,
+      "observed": 490,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 480,
+      "classified": 490,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 427,
+      "observed": 430,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 427,
+      "classified": 430,
       "classification_errors": 0,
       "jobs": [
         {
