@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T20:26:02.147378+00:00",
+  "updated_at": "2026-10-04T20:27:14.574594+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 1949,
-    "pending": 28467,
-    "processing": 2,
+    "processed": 1959,
+    "pending": 28459,
+    "processing": 0,
     "eligible": 45,
-    "review": 1274,
-    "rejected": 624,
+    "review": 1282,
+    "rejected": 626,
     "errors": 3,
     "ready": 48,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC7nVFmwDFNBVHCQPXt7GZbQ",
-        "name": "심과함께ㅣ법무법인 심",
-        "query": "송파 법무법인"
-      },
-      {
-        "channel_id": "UCrMDd6g0U05BnFCk-VFwb0Q",
-        "name": "가치있는 이혼",
-        "query": "송파 법무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 545,
+  "region_observed": 555,
   "channels_discovered": 28150,
-  "channels_observed": 1946,
+  "channels_observed": 1956,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 627,
+      "observed": 628,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 627,
+      "classified": 628,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 691,
+      "observed": 692,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 691,
+      "classified": 692,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 892,
+      "observed": 893,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 893,
+      "classified": 894,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 683,
+      "observed": 684,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 684,
+      "classified": 685,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 745,
+      "observed": 746,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 746,
+      "classified": 747,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 549,
+      "observed": 552,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 550,
+      "classified": 553,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 723,
+      "observed": 728,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 724,
+      "classified": 729,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 730,
+      "observed": 738,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 730,
+      "classified": 738,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 545,
+      "observed": 555,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 545,
+      "classified": 555,
       "classification_errors": 0,
       "jobs": [
         {
