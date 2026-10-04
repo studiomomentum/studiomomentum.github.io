@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T23:27:08.512929+00:00",
+  "updated_at": "2026-10-04T23:28:14.999818+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 4302,
-    "pending": 26115,
-    "processing": 1,
+    "processed": 4317,
+    "pending": 26101,
+    "processing": 0,
     "eligible": 86,
-    "review": 2869,
-    "rejected": 1336,
-    "errors": 8,
+    "review": 2882,
+    "rejected": 1337,
+    "errors": 9,
     "ready": 45,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCYX4rkkFHSJsM3meLHtQoNw",
-        "name": "더크리에이터즈",
-        "query": "수원 의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1033,
+  "region_observed": 1034,
   "channels_discovered": 28150,
-  "channels_observed": 4294,
+  "channels_observed": 4308,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 2713,
+      "observed": 2721,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2716,
+      "classified": 2724,
       "classification_errors": 3,
       "jobs": [
         {
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 1091,
+      "observed": 1092,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1091,
+      "classified": 1092,
       "classification_errors": 0,
       "jobs": [
         {
@@ -629,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1109,
+      "observed": 1110,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1109,
+      "classified": 1110,
       "classification_errors": 0,
       "jobs": [
         {
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1126,
+      "observed": 1127,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1126,
+      "classified": 1127,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 1910,
+      "observed": 1914,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1912,
+      "classified": 1916,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1559,
+      "observed": 1562,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1561,
+      "classified": 1564,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1182,
+      "observed": 1183,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1183,
+      "classified": 1184,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1033,
+      "observed": 1034,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1034,
+      "classified": 1035,
       "classification_errors": 1,
       "jobs": [
         {
