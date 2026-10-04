@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T20:31:55.227468+00:00",
+  "updated_at": "2026-10-04T20:32:56.275845+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 2025,
-    "pending": 28391,
-    "processing": 2,
-    "eligible": 46,
-    "review": 1325,
-    "rejected": 647,
+    "processed": 2032,
+    "pending": 28385,
+    "processing": 1,
+    "eligible": 48,
+    "review": 1328,
+    "rejected": 649,
     "errors": 4,
     "ready": 48,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCEJ5Lv1oU7hdsgto-VQI3ow",
-        "name": "Derm&More",
-        "query": "송파 피부과"
-      },
-      {
-        "channel_id": "UC73pldKqWhuMAB6yJgV2tVw",
-        "name": "당신의 피부과 전문의, 허준원",
-        "query": "송파 피부과"
+        "channel_id": "UCibdde_leFS0bvxXXUvhGVA",
+        "name": "우리성형외과 WOORI beauty TV ",
+        "query": "송파 성형외과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 614,
+  "region_observed": 621,
   "channels_discovered": 28150,
-  "channels_observed": 2021,
+  "channels_observed": 2028,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 665,
+      "observed": 667,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 665,
+      "classified": 667,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 634,
+      "observed": 635,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 634,
+      "classified": 635,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 697,
+      "observed": 698,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 697,
+      "classified": 698,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 905,
+      "observed": 906,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 906,
+      "classified": 907,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 693,
+      "observed": 694,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 694,
+      "classified": 695,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 752,
+      "observed": 754,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 753,
+      "classified": 755,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 767,
+      "observed": 772,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 767,
+      "classified": 772,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 614,
+      "observed": 621,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 614,
+      "classified": 621,
       "classification_errors": 0,
       "jobs": [
         {
