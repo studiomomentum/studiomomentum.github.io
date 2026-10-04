@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T20:14:13.279673+00:00",
+  "updated_at": "2026-10-04T20:15:15.671782+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 1797,
-    "pending": 28619,
-    "processing": 2,
+    "processed": 1813,
+    "pending": 28605,
+    "processing": 0,
     "eligible": 41,
-    "review": 1173,
-    "rejected": 577,
+    "review": 1184,
+    "rejected": 582,
     "errors": 3,
     "ready": 48,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCbQqPO4j4upAVJ1SUruxPjw",
-        "name": "깊생 TV",
-        "query": "서초 학원"
-      },
-      {
-        "channel_id": "UC4id9L5MoglrKmY3_Eetv0A",
-        "name": "대치동캐슬",
-        "query": "서초 학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 478,
+  "region_observed": 489,
   "channels_discovered": 28150,
-  "channels_observed": 1794,
+  "channels_observed": 1810,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 837,
+      "observed": 839,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 838,
+      "classified": 840,
       "classification_errors": 1,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 612,
+      "observed": 613,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 612,
+      "classified": 613,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 677,
+      "observed": 678,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 677,
+      "classified": 678,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 873,
+      "observed": 874,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 874,
+      "classified": 875,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 664,
+      "observed": 665,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 665,
+      "classified": 666,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 527,
+      "observed": 529,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 528,
+      "classified": 530,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 651,
+      "observed": 656,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 652,
+      "classified": 657,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 587,
+      "observed": 603,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 587,
+      "classified": 603,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 478,
+      "observed": 489,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 478,
+      "classified": 489,
       "classification_errors": 0,
       "jobs": [
         {
