@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T19:31:15.596813+00:00",
+  "updated_at": "2026-10-04T19:32:16.610502+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 1225,
-    "pending": 29191,
+    "processed": 1237,
+    "pending": 29179,
     "processing": 2,
     "eligible": 28,
-    "review": 818,
-    "rejected": 374,
+    "review": 828,
+    "rejected": 376,
     "errors": 2,
-    "ready": 47,
+    "ready": 46,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCTEQtiETcCvijJHozDOJgIw",
-        "name": "법무법인디지털",
-        "query": "분당 법무법인"
+        "channel_id": "UC-up_FojjKDISztOfhE6I8g",
+        "name": "곽황래 TV",
+        "query": "분당 한의원"
       },
       {
-        "channel_id": "UCpHo_KX9Q69npyr1qffZ6Pg",
-        "name": "슬기로운 변호사 생활",
-        "query": "분당 법무법인"
+        "channel_id": "UC7l0LbQkx--vsZYokRx7ElQ",
+        "name": "분당삼성한의원",
+        "query": "분당 한의원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 290,
+  "region_observed": 293,
   "channels_discovered": 28150,
-  "channels_observed": 1223,
+  "channels_observed": 1235,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 690,
+      "observed": 693,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 690,
+      "classified": 693,
       "classification_errors": 0,
       "jobs": [
         {
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 533,
+      "observed": 535,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 533,
+      "classified": 535,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 586,
+      "observed": 587,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 586,
+      "classified": 587,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 733,
+      "observed": 738,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 733,
+      "classified": 738,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 445,
+      "observed": 457,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 445,
+      "classified": 457,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 275,
+      "observed": 278,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 275,
+      "classified": 278,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 335,
+      "observed": 338,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 335,
+      "classified": 338,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 290,
+      "observed": 293,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 290,
+      "classified": 293,
       "classification_errors": 0,
       "jobs": [
         {
