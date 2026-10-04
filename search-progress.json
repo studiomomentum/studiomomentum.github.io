@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-04T19:05:49.487929+00:00",
+  "updated_at": "2026-10-04T19:06:51.426698+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 891,
-    "pending": 29525,
-    "processing": 2,
+    "processed": 903,
+    "pending": 29515,
+    "processing": 0,
     "eligible": 20,
-    "review": 596,
-    "rejected": 270,
+    "review": 605,
+    "rejected": 273,
     "errors": 2,
     "ready": 49,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCrm5TGGMc4RYxSL0vbCf5gQ",
-        "name": "변원장의 자율신경노트",
-        "query": "용인 한의원"
-      },
-      {
-        "channel_id": "UCtzV1QWFyubSasDDNRzwdzw",
-        "name": "한의공방",
-        "query": "용인 한방병원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 216,
+  "region_observed": 217,
   "channels_discovered": 28150,
-  "channels_observed": 889,
+  "channels_observed": 901,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 539,
+      "observed": 545,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 539,
+      "classified": 545,
       "classification_errors": 0,
       "jobs": [
         {
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 440,
+      "observed": 442,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 440,
+      "classified": 442,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 537,
+      "observed": 549,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 537,
+      "classified": 549,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 339,
+      "observed": 344,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 339,
+      "classified": 344,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 313,
+      "observed": 319,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 313,
+      "classified": 319,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 265,
+      "observed": 267,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 265,
+      "classified": 267,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 216,
+      "observed": 217,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 216,
+      "classified": 217,
       "classification_errors": 0,
       "jobs": [
         {
