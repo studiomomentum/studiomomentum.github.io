@@ -1,8 +1,8 @@
 {
   "sweep_id": "manual-37099031291",
   "region": "송파",
-  "phase": "parallel",
-  "updated_at": "2026-10-04T22:54:31.355023+00:00",
+  "phase": "incomplete",
+  "updated_at": "2026-10-04T22:55:05.829205+00:00",
   "run_id": "37222246069",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 3911,
+    "processed": 3913,
     "pending": 26505,
-    "processing": 2,
+    "processing": 0,
     "eligible": 84,
-    "review": 2635,
-    "rejected": 1181,
+    "review": 2636,
+    "rejected": 1182,
     "errors": 8,
     "ready": 46,
-    "status": "running",
-    "active": [
-      {
-        "channel_id": "UC5-1JLYBZwCNK60kFSlfMZQ",
-        "name": "LG헬로비전 경기북부",
-        "query": "수원 동물병원"
-      },
-      {
-        "channel_id": "UCQYNyOV-3xE0oRJ8I9rhc_A",
-        "name": "라이크도그",
-        "query": "수원 동물병원"
-      }
-    ]
+    "status": "incomplete",
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 965,
   "channels_discovered": 28150,
-  "channels_observed": 3903,
+  "channels_observed": 3905,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 2375,
+      "observed": 2377,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2378,
+      "classified": 2380,
       "classification_errors": 3,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1028,
+      "observed": 1030,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1028,
+      "classified": 1030,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1049,
+      "observed": 1051,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1049,
+      "classified": 1051,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 1746,
+      "observed": 1748,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1748,
+      "classified": 1750,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1131,
+      "observed": 1132,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1132,
+      "classified": 1133,
       "classification_errors": 1,
       "jobs": [
         {
