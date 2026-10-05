@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:53:29.168077+00:00",
+  "updated_at": "2026-10-05T14:54:31.108717+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 16005,
-    "pending": 14412,
+    "processed": 16017,
+    "pending": 14400,
     "processing": 1,
     "eligible": 155,
-    "review": 11170,
-    "rejected": 4635,
+    "review": 11177,
+    "rejected": 4640,
     "errors": 42,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC01MlDckXxG423FKIhAL1gw",
-        "name": "홍성수지공인중개사",
+        "channel_id": "UCwYCux6AwZ4_81tOxQkXpEg",
+        "name": "Jeen Moon",
         "query": "화성 공인중개사"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1756,
+  "region_observed": 1757,
   "channels_discovered": 28150,
-  "channels_observed": 15963,
+  "channels_observed": 15975,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3650,
+      "observed": 3661,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3656,
+      "classified": 3667,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2022,
+      "observed": 2024,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2025,
+      "classified": 2027,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2181,
+      "observed": 2182,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2186,
+      "classified": 2187,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2026,
+      "observed": 2027,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2027,
+      "classified": 2028,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1756,
+      "observed": 1757,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1757,
+      "classified": 1758,
       "classification_errors": 1,
       "jobs": [
         {
