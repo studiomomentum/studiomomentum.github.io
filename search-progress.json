@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:52:37.739008+00:00",
+  "updated_at": "2026-10-05T05:53:39.497735+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9282,
-    "pending": 21135,
-    "processing": 1,
+    "processed": 9291,
+    "pending": 21125,
+    "processing": 2,
     "eligible": 109,
-    "review": 6311,
-    "rejected": 2841,
+    "review": 6315,
+    "rejected": 2846,
     "errors": 18,
     "ready": 29,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCkW3qWVwgkI7mL0eFPVOlPA",
-        "name": "한국맛집K",
+        "channel_id": "UCuv_0CZqeTIQczTZW2xfl2g",
+        "name": "CLSTV. 기독교사랑방송",
+        "query": "오산 변호사"
+      },
+      {
+        "channel_id": "UCv1r8Dj-SxTCIGU_7oAIjiw",
+        "name": "짱교수네",
         "query": "오산 변호사"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1417,
   "channels_discovered": 28150,
-  "channels_observed": 9264,
+  "channels_observed": 9273,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2171,
+      "observed": 2176,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2173,
+      "classified": 2178,
       "classification_errors": 2,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1924,
+      "observed": 1925,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1925,
+      "classified": 1926,
       "classification_errors": 1,
       "jobs": [
         {
