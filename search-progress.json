@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:31:08.934484+00:00",
+  "updated_at": "2026-10-05T12:32:10.693999+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14283,
-    "pending": 16135,
-    "processing": 0,
+    "processed": 14300,
+    "pending": 16117,
+    "processing": 1,
     "eligible": 144,
-    "review": 9950,
-    "rejected": 4151,
+    "review": 9961,
+    "rejected": 4157,
     "errors": 35,
     "ready": 31,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC3N2zKVZXqmjkiYW3TwdASA",
+        "name": "행정사합동사무소 정의",
+        "query": "용인 행정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1669,
+  "region_observed": 1672,
   "channels_discovered": 28150,
-  "channels_observed": 14248,
+  "channels_observed": 14265,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4547,
+      "observed": 4548,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4556,
+      "classified": 4557,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3398,
+      "observed": 3411,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3400,
+      "classified": 3413,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2652,
+      "observed": 2654,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2656,
+      "classified": 2658,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2482,
+      "observed": 2485,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2484,
+      "classified": 2487,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1916,
+      "observed": 1917,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1919,
+      "classified": 1920,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1929,
+      "observed": 1931,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1930,
+      "classified": 1932,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1669,
+      "observed": 1672,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1670,
+      "classified": 1673,
       "classification_errors": 1,
       "jobs": [
         {
