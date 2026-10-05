@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:40:04.487793+00:00",
+  "updated_at": "2026-10-05T17:41:17.258697+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18178,
-    "pending": 12238,
-    "processing": 2,
+    "processed": 18192,
+    "pending": 12226,
+    "processing": 0,
     "eligible": 162,
-    "review": 12708,
-    "rejected": 5255,
+    "review": 12719,
+    "rejected": 5258,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClhTo9qjmDDT5sGw26cmQfg",
-        "name": "LG헬로비전 전남",
-        "query": "분당 행정사사무소"
-      },
-      {
-        "channel_id": "UCo1caoF21NiE2ScwV0C9-Vw",
-        "name": "아티플로",
-        "query": "분당 행정사사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1926,
+  "region_observed": 1927,
   "channels_discovered": 28150,
-  "channels_observed": 18128,
+  "channels_observed": 18142,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3180,
+      "observed": 3194,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3184,
+      "classified": 3198,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2321,
+      "observed": 2323,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2326,
+      "classified": 2328,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2155,
+      "observed": 2156,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2156,
+      "classified": 2157,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1926,
+      "observed": 1927,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1927,
+      "classified": 1928,
       "classification_errors": 1,
       "jobs": [
         {
