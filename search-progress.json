@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:11:34.672668+00:00",
+  "updated_at": "2026-10-05T17:12:45.813349+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17816,
-    "pending": 12600,
-    "processing": 2,
+    "processed": 17832,
+    "pending": 12586,
+    "processing": 0,
     "eligible": 161,
-    "review": 12428,
-    "rejected": 5175,
+    "review": 12443,
+    "rejected": 5176,
     "errors": 49,
     "ready": 38,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCdrX58c9NGVTsAy8zrrRbSA",
-        "name": "Donggeun Lee",
-        "query": "분당 치과의원"
-      },
-      {
-        "channel_id": "UCGjnwCUpVlClBKvi8wup-yA",
-        "name": "굿모닝치과의원",
-        "query": "분당 치과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1850,
+  "region_observed": 1853,
   "channels_discovered": 28150,
-  "channels_observed": 17767,
+  "channels_observed": 17783,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2856,
+      "observed": 2871,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2860,
+      "classified": 2875,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2140,
+      "observed": 2141,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2144,
+      "classified": 2145,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2278,
+      "observed": 2280,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2283,
+      "classified": 2285,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2111,
+      "observed": 2113,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2112,
+      "classified": 2114,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1850,
+      "observed": 1853,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1851,
+      "classified": 1854,
       "classification_errors": 1,
       "jobs": [
         {
