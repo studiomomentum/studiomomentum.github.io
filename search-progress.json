@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T06:01:11.179042+00:00",
+  "updated_at": "2026-10-05T06:02:12.810418+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9386,
-    "pending": 21031,
-    "processing": 1,
-    "eligible": 110,
-    "review": 6380,
-    "rejected": 2875,
+    "processed": 9395,
+    "pending": 21021,
+    "processing": 2,
+    "eligible": 111,
+    "review": 6385,
+    "rejected": 2878,
     "errors": 18,
     "ready": 29,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCM6gid2jm7Pc7d_wOrDgQQg",
-        "name": "굿엔트",
+        "channel_id": "UCot3IlVrwKto4F3ie-uG9Ng",
+        "name": "변호사JYP",
+        "query": "오산 법률사무소"
+      },
+      {
+        "channel_id": "UC1W_z4oJABcS0yxl8zfGp4A",
+        "name": "알쏭달쏭부동산(재건축,가로주택,지주택)",
         "query": "오산 법률사무소"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1420,
   "channels_discovered": 28150,
-  "channels_observed": 9368,
+  "channels_observed": 9377,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2261,
+      "observed": 2268,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2263,
+      "classified": 2270,
       "classification_errors": 2,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1939,
+      "observed": 1941,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1940,
+      "classified": 1942,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2555,
+      "observed": 2558,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2557,
+      "classified": 2560,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2121,
+      "observed": 2123,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2122,
+      "classified": 2124,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2192,
+      "observed": 2193,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2194,
+      "classified": 2195,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1622,
+      "observed": 1623,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1624,
+      "classified": 1625,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1719,
+      "observed": 1721,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1722,
+      "classified": 1724,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1652,
+      "observed": 1655,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1653,
+      "classified": 1656,
       "classification_errors": 1,
       "jobs": [
         {
