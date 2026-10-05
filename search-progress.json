@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:47:07.766700+00:00",
+  "updated_at": "2026-10-05T09:48:10.192020+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12216,
-    "pending": 18201,
-    "processing": 1,
-    "eligible": 127,
-    "review": 8452,
-    "rejected": 3605,
+    "processed": 12225,
+    "pending": 18191,
+    "processing": 2,
+    "eligible": 128,
+    "review": 8457,
+    "rejected": 3608,
     "errors": 29,
     "ready": 24,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC56TQEr_1oW3okbH-hbPetA",
-        "name": "지식세포",
+        "channel_id": "UCXe6iqnnk2LBl1a5rsm_-Vg",
+        "name": "IamTV (I am 부동산)",
+        "query": "평택 공인중개사"
+      },
+      {
+        "channel_id": "UCDyi_kh4sgyMGdlLnt2y5qQ",
+        "name": "프라임 행정사 공인중개사 사무소",
         "query": "평택 공인중개사"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1550,
   "channels_discovered": 28150,
-  "channels_observed": 12187,
+  "channels_observed": 12196,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3133,
+      "observed": 3142,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3136,
+      "classified": 3145,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2820,
+      "observed": 2821,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2822,
+      "classified": 2823,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2460,
+      "observed": 2462,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2464,
+      "classified": 2466,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1804,
+      "observed": 1805,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1807,
+      "classified": 1808,
       "classification_errors": 3,
       "jobs": [
         {
