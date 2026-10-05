@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:06:03.539719+00:00",
+  "updated_at": "2026-10-05T09:07:06.333716+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11719,
-    "pending": 18697,
+    "processed": 11731,
+    "pending": 18685,
     "processing": 2,
     "eligible": 127,
-    "review": 8040,
-    "rejected": 3523,
+    "review": 8048,
+    "rejected": 3527,
     "errors": 26,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9-C1rkT4HFt8ut49Nqq7sA",
-        "name": "youngil kim",
-        "query": "평택 법률사무소"
+        "channel_id": "UC0_cMG9byuhVWclt49eIfbQ",
+        "name": "chang yong kang",
+        "query": "평택 치과"
       },
       {
-        "channel_id": "UC1cbXkg2-1ujjX0F9kt0YoA",
-        "name": "별가람소아치과 , 소아치과의 모든것",
+        "channel_id": "UCBoD1NQjqckkPdt4AKMCHIA",
+        "name": "Shinwon Dental",
         "query": "평택 치과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1522,
+  "region_observed": 1524,
   "channels_discovered": 28150,
-  "channels_observed": 11693,
+  "channels_observed": 11705,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2692,
+      "observed": 2704,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2695,
+      "classified": 2707,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1777,
+      "observed": 1779,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1780,
+      "classified": 1782,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1777,
+      "observed": 1780,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1778,
+      "classified": 1781,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1522,
+      "observed": 1524,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1523,
+      "classified": 1525,
       "classification_errors": 1,
       "jobs": [
         {
