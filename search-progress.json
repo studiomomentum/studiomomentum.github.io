@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:02:43.931054+00:00",
+  "updated_at": "2026-10-05T10:03:46.344228+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12415,
-    "pending": 18001,
+    "processed": 12427,
+    "pending": 17989,
     "processing": 2,
-    "eligible": 129,
-    "review": 8589,
-    "rejected": 3664,
+    "eligible": 130,
+    "review": 8598,
+    "rejected": 3666,
     "errors": 30,
     "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC2RrbL-hcZTxJ_JjwuJmpBA",
-        "name": "갓정사TV – 돈 되는 행정사",
+        "channel_id": "UCCNYzKapXzc5TwrsrFk_Hnw",
+        "name": "액츠29 미디어",
         "query": "평택 행정사"
       },
       {
-        "channel_id": "UCRjF0L38NJTv9dds1bpwVcw",
-        "name": "윤행정사 업무노트 (청주행정사 대표)",
+        "channel_id": "UCUnSdg6_nmdhh2fXjsNqTXg",
+        "name": "KBS대전 [CULTURE&DOCUMENTARY]",
         "query": "평택 행정사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1553,
+  "region_observed": 1556,
   "channels_discovered": 28150,
-  "channels_observed": 12385,
+  "channels_observed": 12397,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4518,
+      "observed": 4519,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4524,
+      "classified": 4525,
       "classification_errors": 6,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3297,
+      "observed": 3309,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3301,
+      "classified": 3313,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2836,
+      "observed": 2841,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2838,
+      "classified": 2843,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2481,
+      "observed": 2484,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2485,
+      "classified": 2488,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1816,
+      "observed": 1817,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1819,
+      "classified": 1820,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1904,
+      "observed": 1907,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1908,
+      "classified": 1911,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1819,
+      "observed": 1821,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1820,
+      "classified": 1822,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1553,
+      "observed": 1556,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1554,
+      "classified": 1557,
       "classification_errors": 1,
       "jobs": [
         {
