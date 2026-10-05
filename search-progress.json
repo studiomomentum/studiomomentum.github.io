@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:18:11.320498+00:00",
+  "updated_at": "2026-10-05T11:19:13.110620+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13375,
-    "pending": 17043,
-    "processing": 0,
+    "processed": 13383,
+    "pending": 17033,
+    "processing": 2,
     "eligible": 137,
-    "review": 9286,
-    "rejected": 3916,
+    "review": 9292,
+    "rejected": 3918,
     "errors": 33,
     "ready": 27,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC19_qHonOXVKLh4Qn4BAnig",
+        "name": "월도저",
+        "query": "평택 관세사"
+      },
+      {
+        "channel_id": "UCYuXC5Cwk9fAfKLMH0rq2gQ",
+        "name": "내귀에경제학",
+        "query": "평택 관세사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1608,
   "channels_discovered": 28150,
-  "channels_observed": 13342,
+  "channels_observed": 13350,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4188,
+      "observed": 4196,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4195,
+      "classified": 4203,
       "classification_errors": 7,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2585,
+      "observed": 2586,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2589,
+      "classified": 2590,
       "classification_errors": 4,
       "jobs": [
         {
