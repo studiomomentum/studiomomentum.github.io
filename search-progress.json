@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:43:19.498061+00:00",
+  "updated_at": "2026-10-05T12:44:21.782636+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,12 +11,12 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14441,
-    "pending": 15977,
+    "processed": 14451,
+    "pending": 15967,
     "processing": 0,
     "eligible": 145,
-    "review": 10065,
-    "rejected": 4193,
+    "review": 10074,
+    "rejected": 4194,
     "errors": 35,
     "ready": 31,
     "status": "running",
@@ -27,7 +27,7 @@
   "region_channels": 4214,
   "region_observed": 1684,
   "channels_discovered": 28150,
-  "channels_observed": 14406,
+  "channels_observed": 14416,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3875,
+      "observed": 3879,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3879,
+      "classified": 3883,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1209,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3521,
+      "observed": 3531,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3523,
+      "classified": 3533,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2685,
+      "observed": 2686,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2689,
+      "classified": 2690,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2071,
+      "observed": 2072,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2076,
+      "classified": 2077,
       "classification_errors": 5,
       "jobs": [
         {
