@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:04:24.654153+00:00",
+  "updated_at": "2026-10-05T05:05:26.296201+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8642,
-    "pending": 21775,
+    "processed": 8654,
+    "pending": 21763,
     "processing": 1,
     "eligible": 108,
-    "review": 5865,
-    "rejected": 2650,
+    "review": 5873,
+    "rejected": 2654,
     "errors": 16,
     "ready": 31,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCD9fCQhqgUln56OVgOikURQ",
-        "name": "줌인주민센터_다목적실",
+        "channel_id": "UCk1Yy37mDdkhNZvns5VCl4A",
+        "name": "BOM Pilates 봄필라테스 by PAI인스티튜트",
         "query": "동탄 필라테스"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1397,
+  "region_observed": 1398,
   "channels_discovered": 28150,
-  "channels_observed": 8626,
+  "channels_observed": 8638,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4199,
+      "observed": 4210,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4204,
+      "classified": 4215,
       "classification_errors": 5,
       "jobs": [
         {
@@ -922,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1788,
+      "observed": 1791,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1788,
+      "classified": 1791,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2094,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1550,
+      "observed": 1552,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1551,
+      "classified": 1553,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2387,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1681,
+      "observed": 1683,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1684,
+      "classified": 1686,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1611,
+      "observed": 1613,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1612,
+      "classified": 1614,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1397,
+      "observed": 1398,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1398,
+      "classified": 1399,
       "classification_errors": 1,
       "jobs": [
         {
