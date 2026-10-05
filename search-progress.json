@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:08:11.940417+00:00",
+  "updated_at": "2026-10-05T10:09:15.018658+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12485,
-    "pending": 17933,
-    "processing": 0,
+    "processed": 12497,
+    "pending": 17919,
+    "processing": 2,
     "eligible": 130,
-    "review": 8642,
-    "rejected": 3680,
+    "review": 8650,
+    "rejected": 3684,
     "errors": 30,
     "ready": 25,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCjxQUvHWFeyvYgJAZ3aPiNA",
+        "name": "평택벨라",
+        "query": "평택 피부과"
+      },
+      {
+        "channel_id": "UCH8oDR8KjKK-Qs9VsATepAw",
+        "name": "XE-LHA",
+        "query": "평택 피부과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1557,
   "channels_discovered": 28150,
-  "channels_observed": 12455,
+  "channels_observed": 12467,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3947,
+      "observed": 3948,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3953,
+      "classified": 3954,
       "classification_errors": 6,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3366,
+      "observed": 3378,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3370,
+      "classified": 3382,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2500,
+      "observed": 2501,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2504,
+      "classified": 2505,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1819,
+      "observed": 1820,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1822,
+      "classified": 1823,
       "classification_errors": 3,
       "jobs": [
         {
