@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:46:19.466120+00:00",
+  "updated_at": "2026-10-05T16:47:21.136897+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17482,
-    "pending": 12934,
-    "processing": 2,
+    "processed": 17495,
+    "pending": 12922,
+    "processing": 1,
     "eligible": 156,
-    "review": 12189,
-    "rejected": 5086,
+    "review": 12200,
+    "rejected": 5088,
     "errors": 48,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCkEJwGspL211ZtS8D8uM0xw",
-        "name": "무드앤소 moodandso",
-        "query": "화성 심리상담센터"
-      },
-      {
-        "channel_id": "UCIEGjMsHMSAhJ3fhq1sTBdw",
-        "name": "국제구호개발NGO월드휴먼브리지",
+        "channel_id": "UCn6RkaeTCNQOZOMP1S8lTfQ",
+        "name": "전라남도광역정신건강복지센터",
         "query": "화성 심리상담센터"
       }
     ]
@@ -38,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 1823,
   "channels_discovered": 28150,
-  "channels_observed": 17434,
+  "channels_observed": 17447,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4872,
+      "observed": 4885,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4884,
+      "classified": 4897,
       "classification_errors": 12,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2112,
+      "observed": 2113,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2116,
+      "classified": 2117,
       "classification_errors": 4,
       "jobs": [
         {
