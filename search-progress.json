@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:05:01.690976+00:00",
+  "updated_at": "2026-10-05T09:06:03.539719+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11703,
-    "pending": 18715,
-    "processing": 0,
+    "processed": 11719,
+    "pending": 18697,
+    "processing": 2,
     "eligible": 127,
-    "review": 8028,
-    "rejected": 3519,
+    "review": 8040,
+    "rejected": 3523,
     "errors": 26,
     "ready": 27,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC9-C1rkT4HFt8ut49Nqq7sA",
+        "name": "youngil kim",
+        "query": "평택 법률사무소"
+      },
+      {
+        "channel_id": "UC1cbXkg2-1ujjX0F9kt0YoA",
+        "name": "별가람소아치과 , 소아치과의 모든것",
+        "query": "평택 치과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1521,
+  "region_observed": 1522,
   "channels_discovered": 28150,
-  "channels_observed": 11677,
+  "channels_observed": 11693,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2679,
+      "observed": 2692,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2682,
+      "classified": 2695,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2757,
+      "observed": 2759,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2759,
+      "classified": 2761,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2418,
+      "observed": 2419,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2421,
+      "classified": 2422,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2316,
+      "observed": 2317,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2318,
+      "classified": 2319,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1775,
+      "observed": 1777,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1778,
+      "classified": 1780,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1872,
+      "observed": 1873,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1876,
+      "classified": 1877,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1775,
+      "observed": 1777,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1776,
+      "classified": 1778,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1521,
+      "observed": 1522,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1522,
+      "classified": 1523,
       "classification_errors": 1,
       "jobs": [
         {
