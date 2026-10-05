@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:02:47.323669+00:00",
+  "updated_at": "2026-10-05T17:03:48.709238+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17702,
-    "pending": 12716,
-    "processing": 0,
-    "eligible": 158,
-    "review": 12358,
-    "rejected": 5135,
-    "errors": 48,
+    "processed": 17719,
+    "pending": 12698,
+    "processing": 1,
+    "eligible": 159,
+    "review": 12365,
+    "rejected": 5143,
+    "errors": 49,
     "ready": 36,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCbXpHMZqBEfb1JnVw9KQ3sw",
+        "name": "이현주",
+        "query": "분당 세무회계"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1831,
+  "region_observed": 1835,
   "channels_discovered": 28150,
-  "channels_observed": 17654,
+  "channels_observed": 17670,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1795,11 +1801,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2775,
-      "observation_errors": 3,
+      "observed": 2790,
+      "observation_errors": 4,
       "classified_at": null,
-      "classified": 2778,
-      "classification_errors": 3,
+      "classified": 2794,
+      "classification_errors": 4,
       "jobs": [
         {
           "name": "세무사",
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2127,
+      "observed": 2131,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2131,
+      "classified": 2135,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2267,
+      "observed": 2269,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2272,
+      "classified": 2274,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2100,
+      "observed": 2103,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2101,
+      "classified": 2104,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1831,
+      "observed": 1835,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1832,
+      "classified": 1836,
       "classification_errors": 1,
       "jobs": [
         {
