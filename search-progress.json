@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:46:34.663745+00:00",
+  "updated_at": "2026-10-05T05:47:36.142664+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9201,
-    "pending": 21215,
+    "processed": 9209,
+    "pending": 21207,
     "processing": 2,
     "eligible": 109,
-    "review": 6268,
-    "rejected": 2804,
-    "errors": 17,
+    "review": 6274,
+    "rejected": 2805,
+    "errors": 18,
     "ready": 29,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCffeENTmcUNO153hZjngMzg",
-        "name": "JK컴퍼니",
+        "channel_id": "UCQEkk5qbZP8txG-Y0VUM5rQ",
+        "name": "국립경국대학교",
         "query": "오산 세무회계"
       },
       {
-        "channel_id": "UCZ66cu4nB7sFO1-geTR-m0A",
-        "name": "삼일상고 응원단아에토스",
-        "query": "오산 세무회계"
+        "channel_id": "UC8geyLDlJAHBoDqtYPwLlmQ",
+        "name": "동탄 에이맨교회(A-MAN CHURCH)",
+        "query": "오산 변호사"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1415,
   "channels_discovered": 28150,
-  "channels_observed": 9184,
+  "channels_observed": 9191,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,11 +634,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2109,
-      "observation_errors": 1,
+      "observed": 2116,
+      "observation_errors": 2,
       "classified_at": null,
-      "classified": 2110,
-      "classification_errors": 1,
+      "classified": 2118,
+      "classification_errors": 2,
       "jobs": [
         {
           "name": "세무사",
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1911,
+      "observed": 1912,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1912,
+      "classified": 1913,
       "classification_errors": 1,
       "jobs": [
         {
