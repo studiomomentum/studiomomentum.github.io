@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:11:05.898821+00:00",
+  "updated_at": "2026-10-05T11:12:08.699208+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13286,
-    "pending": 17131,
+    "processed": 13298,
+    "pending": 17119,
     "processing": 1,
     "eligible": 136,
-    "review": 9216,
-    "rejected": 3899,
+    "review": 9226,
+    "rejected": 3901,
     "errors": 32,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCYdVFHdr-S76QEAR9aRx7kw",
-        "name": "나투어뮤직Naturmusic",
+        "channel_id": "UC0Ro-u_wglTtx4C56TjzJ1w",
+        "name": "JUNI'S준이 Life",
         "query": "평택 변리사"
       }
     ]
@@ -33,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 1606,
   "channels_discovered": 28150,
-  "channels_observed": 13254,
+  "channels_observed": 13266,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3804,
+      "observed": 3805,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3808,
+      "classified": 3809,
       "classification_errors": 4,
       "jobs": [
         {
@@ -922,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4102,
+      "observed": 4114,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4108,
+      "classified": 4120,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2579,
+      "observed": 2580,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2583,
+      "classified": 2584,
       "classification_errors": 4,
       "jobs": [
         {
