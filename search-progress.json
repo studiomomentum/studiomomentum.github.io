@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:01:49.547160+00:00",
+  "updated_at": "2026-10-05T03:02:50.867719+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7047,
-    "pending": 23371,
-    "processing": 0,
+    "processed": 7060,
+    "pending": 23357,
+    "processing": 1,
     "eligible": 106,
-    "review": 4750,
-    "rejected": 2177,
+    "review": 4757,
+    "rejected": 2183,
     "errors": 11,
     "ready": 36,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC7ZnVKsRo4IKbpU6VDWUj7Q",
+        "name": "청담동 금손 김원장",
+        "query": "동탄 피부과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1298,
+  "region_observed": 1300,
   "channels_discovered": 28150,
-  "channels_observed": 7036,
+  "channels_observed": 7049,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2754,
+      "observed": 2766,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2754,
+      "classified": 2766,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1586,
+      "observed": 1587,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1586,
+      "classified": 1587,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1618,
+      "observed": 1619,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1618,
+      "classified": 1619,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2425,
+      "observed": 2426,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2427,
+      "classified": 2428,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1769,
+      "observed": 1771,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1770,
+      "classified": 1772,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1316,
+      "observed": 1319,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1317,
+      "classified": 1320,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1500,
+      "observed": 1501,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1501,
+      "classified": 1502,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1298,
+      "observed": 1300,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1299,
+      "classified": 1301,
       "classification_errors": 1,
       "jobs": [
         {
