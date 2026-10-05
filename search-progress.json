@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:54:46.280521+00:00",
+  "updated_at": "2026-10-05T03:55:48.398001+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7753,
-    "pending": 22663,
+    "processed": 7767,
+    "pending": 22649,
     "processing": 2,
     "eligible": 107,
-    "review": 5228,
-    "rejected": 2403,
+    "review": 5234,
+    "rejected": 2411,
     "errors": 12,
     "ready": 33,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCpGbpzt1lHS7KXPfoEnjEhw",
-        "name": "달꽁가족 dalkkong family",
+        "channel_id": "UCErdG7EysDarFvPNv-stQLA",
+        "name": "선찰떡네 sun chal tteok house",
         "query": "동탄 산부인과"
       },
       {
-        "channel_id": "UCh9GzHW6pY_WKelILoej7Hw",
-        "name": "단이네",
+        "channel_id": "UC5NCh3NVjuduxvtxKncZu5Q",
+        "name": "상팔자쏭주부 ssong jubu",
         "query": "동탄 산부인과"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1351,
   "channels_discovered": 28150,
-  "channels_observed": 7741,
+  "channels_observed": 7755,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3374,
+      "observed": 3388,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3375,
+      "classified": 3389,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1878,
+      "observed": 1879,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1879,
+      "classified": 1880,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1416,
+      "observed": 1419,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1417,
+      "classified": 1420,
       "classification_errors": 1,
       "jobs": [
         {
