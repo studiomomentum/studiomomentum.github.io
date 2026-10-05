@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:15:51.704155+00:00",
+  "updated_at": "2026-10-05T17:17:07.865706+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17872,
-    "pending": 12544,
-    "processing": 2,
+    "processed": 17882,
+    "pending": 12536,
+    "processing": 0,
     "eligible": 161,
-    "review": 12477,
-    "rejected": 5182,
+    "review": 12486,
+    "rejected": 5183,
     "errors": 49,
     "ready": 38,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCvtEcKGZ6haMcBIGf31skiw",
-        "name": "터한의원",
-        "query": "분당 한의원"
-      },
-      {
-        "channel_id": "UC9pi1XPD4Nhpb_mQYVCezhg",
-        "name": "YumiKim2",
-        "query": "분당 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1860,
+  "region_observed": 1862,
   "channels_discovered": 28150,
-  "channels_observed": 17823,
+  "channels_observed": 17833,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4552,
+      "observed": 4553,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4558,
+      "classified": 4559,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2907,
+      "observed": 2917,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2911,
+      "classified": 2921,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2285,
+      "observed": 2287,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2290,
+      "classified": 2292,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2119,
+      "observed": 2120,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2120,
+      "classified": 2121,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1860,
+      "observed": 1862,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1861,
+      "classified": 1863,
       "classification_errors": 1,
       "jobs": [
         {
