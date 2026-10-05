@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:30:46.938654+00:00",
+  "updated_at": "2026-10-05T13:31:56.895176+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15057,
-    "pending": 15359,
-    "processing": 2,
+    "processed": 15071,
+    "pending": 15347,
+    "processing": 0,
     "eligible": 148,
-    "review": 10504,
-    "rejected": 4363,
+    "review": 10514,
+    "rejected": 4367,
     "errors": 39,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCIqI6uIN6-b1z2TKMJNeE_g",
-        "name": "소망디자인 곽실장",
-        "query": "화성 세무법인"
-      },
-      {
-        "channel_id": "UCXCCxHuFskLJx_GaWTIRfXg",
-        "name": "잇콘TV",
-        "query": "화성 세무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1724,
   "channels_discovered": 28150,
-  "channels_observed": 15018,
+  "channels_observed": 15032,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4559,
+      "observed": 4560,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4568,
+      "classified": 4569,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2794,
+      "observed": 2808,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2799,
+      "classified": 2813,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2673,
+      "observed": 2675,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2675,
+      "classified": 2677,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1978,
+      "observed": 1981,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1981,
+      "classified": 1984,
       "classification_errors": 3,
       "jobs": [
         {
