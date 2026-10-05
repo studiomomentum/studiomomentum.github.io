@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:03:11.392212+00:00",
+  "updated_at": "2026-10-05T12:04:39.318554+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13931,
-    "pending": 16485,
-    "processing": 2,
+    "processed": 13945,
+    "pending": 16473,
+    "processing": 0,
     "eligible": 140,
-    "review": 9708,
-    "rejected": 4045,
+    "review": 9721,
+    "rejected": 4046,
     "errors": 35,
     "ready": 28,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCOy0jkZgq1nU2KlRJwQV7kQ",
-        "name": "주철진 JU CHEOL JIN",
-        "query": "용인 한의원"
-      },
-      {
-        "channel_id": "UCQZVoykTdggzMk2ZZEHrYsg",
-        "name": "폴리한의원공식채널",
-        "query": "용인 한의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1635,
+  "region_observed": 1636,
   "channels_discovered": 28150,
-  "channels_observed": 13896,
+  "channels_observed": 13910,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3826,
+      "observed": 3827,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3830,
+      "classified": 3831,
       "classification_errors": 4,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3967,
+      "observed": 3968,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3973,
+      "classified": 3974,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3129,
+      "observed": 3142,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3131,
+      "classified": 3144,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2626,
+      "observed": 2631,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2630,
+      "classified": 2635,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2437,
+      "observed": 2438,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2439,
+      "classified": 2440,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1887,
+      "observed": 1892,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1890,
+      "classified": 1895,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1895,
+      "observed": 1896,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1896,
+      "classified": 1897,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1635,
+      "observed": 1636,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1636,
+      "classified": 1637,
       "classification_errors": 1,
       "jobs": [
         {
