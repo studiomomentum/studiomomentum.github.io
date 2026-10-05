@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:48:31.370375+00:00",
+  "updated_at": "2026-10-05T07:49:33.352395+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10765,
-    "pending": 19653,
-    "processing": 0,
+    "processed": 10784,
+    "pending": 19633,
+    "processing": 1,
     "eligible": 116,
-    "review": 7373,
-    "rejected": 3250,
+    "review": 7386,
+    "rejected": 3256,
     "errors": 23,
     "ready": 23,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCQnaDBcRI-Si9H4W2f1ta7w",
+        "name": "온라인가나안성도교회 신앙터치",
+        "query": "오산 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1485,
   "channels_discovered": 28150,
-  "channels_observed": 10742,
+  "channels_observed": 10761,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3424,
+      "observed": 3443,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3429,
+      "classified": 3448,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2670,
+      "observed": 2671,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2672,
+      "classified": 2673,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2255,
+      "observed": 2256,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2257,
+      "classified": 2258,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1696,
+      "observed": 1697,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1698,
+      "classified": 1699,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1813,
+      "observed": 1814,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1816,
+      "classified": 1817,
       "classification_errors": 3,
       "jobs": [
         {
