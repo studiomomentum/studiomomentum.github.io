@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:58:46.298516+00:00",
+  "updated_at": "2026-10-05T18:59:48.733433+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19192,
-    "pending": 11224,
+    "processed": 19202,
+    "pending": 11214,
     "processing": 2,
     "eligible": 166,
-    "review": 13344,
-    "rejected": 5628,
+    "review": 13353,
+    "rejected": 5629,
     "errors": 51,
     "ready": 39,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCu0n_KekBfdCqgyA-ZYnvFw",
-        "name": "WT메소드미금점",
+        "channel_id": "UC9Ns9i6sYw-rUHvaz7rTD2A",
+        "name": "마곡 길냥이의 부동산 썰",
         "query": "분당 법무사"
       },
       {
-        "channel_id": "UCk9nXMCHaKKjEV3waM5327g",
-        "name": "지구촌교회(Global Mission Church)",
+        "channel_id": "UCc9buYhDGkSaSzt3W6uDcHA",
+        "name": "다방",
         "query": "분당 법무사"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 2025,
   "channels_discovered": 28150,
-  "channels_observed": 19141,
+  "channels_observed": 19151,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 5208,
+      "observed": 5209,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5220,
+      "classified": 5221,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3717,
+      "observed": 3727,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3721,
+      "classified": 3731,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2298,
+      "observed": 2299,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2302,
+      "classified": 2303,
       "classification_errors": 4,
       "jobs": [
         {
