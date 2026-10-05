@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:57:43.383426+00:00",
+  "updated_at": "2026-10-05T09:59:01.577190+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12349,
-    "pending": 18067,
-    "processing": 2,
+    "processed": 12363,
+    "pending": 18055,
+    "processing": 0,
     "eligible": 129,
-    "review": 8551,
-    "rejected": 3636,
+    "review": 8560,
+    "rejected": 3641,
     "errors": 30,
     "ready": 25,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCOvCws8AQyh0ISRi6FTCCdw",
-        "name": "땅에미친농부 [땅미농]",
-        "query": "평택 부동산중개"
-      },
-      {
-        "channel_id": "UCwrKmMIWA-_k-WAcyCPc3bA",
-        "name": "중개실무 공인중개사 실무교육",
-        "query": "평택 공인중개사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1553,
   "channels_discovered": 28150,
-  "channels_observed": 12319,
+  "channels_observed": 12333,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3244,
+      "observed": 3257,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3248,
+      "classified": 3261,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2471,
+      "observed": 2474,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2475,
+      "classified": 2478,
       "classification_errors": 4,
       "jobs": [
         {
