@@ -1,13 +1,13 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "송파",
-  "phase": "incomplete",
-  "updated_at": "2026-10-05T03:57:22.497914+00:00",
-  "run_id": "37241857491",
+  "region": "",
+  "phase": "parallel",
+  "updated_at": "2026-10-05T03:59:09.909399+00:00",
+  "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
-    "status": "complete",
-    "region": "송파"
+    "status": "starting",
+    "region": ""
   },
   "classification": {
     "total": 30418,
@@ -19,13 +19,13 @@
     "rejected": 2415,
     "errors": 12,
     "ready": 33,
-    "status": "incomplete",
+    "status": "starting",
     "active": []
   },
   "queries_completed": 440,
-  "region_queries_completed": 40,
-  "region_channels": 4214,
-  "region_observed": 1351,
+  "region_queries_completed": 0,
+  "region_channels": 0,
+  "region_observed": 0,
   "channels_discovered": 28150,
   "channels_observed": 7765,
   "search_pages": 10655,
