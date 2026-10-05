@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:28:41.005561+00:00",
+  "updated_at": "2026-10-05T13:29:44.080127+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15036,
-    "pending": 15381,
-    "processing": 1,
+    "processed": 15045,
+    "pending": 15371,
+    "processing": 2,
     "eligible": 148,
-    "review": 10488,
-    "rejected": 4359,
-    "errors": 38,
+    "review": 10495,
+    "rejected": 4360,
+    "errors": 39,
     "ready": 31,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCTu9Nh42-qb-ubIs4YtHP4g",
-        "name": "이작가의 주식학교",
-        "query": "화성 세무사"
+        "channel_id": "UCmzlD0wJ7KzMSnRhyKp0eLg",
+        "name": "YBM Books",
+        "query": "화성 세무법인"
+      },
+      {
+        "channel_id": "UC5YGkphqUvdosM_GOJbrNBg",
+        "name": "차별화된 변호사",
+        "query": "화성 세무법인"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1724,
   "channels_discovered": 28150,
-  "channels_observed": 14998,
+  "channels_observed": 15006,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2774,
+      "observed": 2782,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2779,
+      "classified": 2787,
       "classification_errors": 5,
       "jobs": [
         {
