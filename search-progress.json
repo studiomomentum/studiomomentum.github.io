@@ -1,13 +1,13 @@
 {
   "sweep_id": "manual-37099031291",
-  "region": "",
+  "region": "서초",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:01:43.696087+00:00",
+  "updated_at": "2026-10-05T09:02:45.904481+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
-    "status": "starting",
-    "region": ""
+    "status": "running",
+    "region": "서초"
   },
   "classification": {
     "total": 30418,
@@ -19,13 +19,13 @@
     "rejected": 3514,
     "errors": 26,
     "ready": 27,
-    "status": "starting",
+    "status": "running",
     "active": []
   },
   "queries_completed": 440,
-  "region_queries_completed": 0,
-  "region_channels": 0,
-  "region_observed": 0,
+  "region_queries_completed": 40,
+  "region_channels": 4887,
+  "region_observed": 1773,
   "channels_discovered": 28150,
   "channels_observed": 11667,
   "search_pages": 10655,
