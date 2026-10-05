@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:36:52.349606+00:00",
+  "updated_at": "2026-10-05T12:37:54.214508+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14355,
-    "pending": 16063,
-    "processing": 0,
+    "processed": 14371,
+    "pending": 16045,
+    "processing": 2,
     "eligible": 145,
-    "review": 9999,
-    "rejected": 4173,
+    "review": 10013,
+    "rejected": 4175,
     "errors": 35,
     "ready": 31,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCBn2itCS4zSLMOjfn9ZuqIg",
+        "name": "aimakingcivilization",
+        "query": "용인 피부과"
+      },
+      {
+        "channel_id": "UCu1bt7gD-XFKHmi5Szl8LNA",
+        "name": "뉴리즈피부톡",
+        "query": "용인 피부과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1678,
   "channels_discovered": 28150,
-  "channels_observed": 14320,
+  "channels_observed": 14336,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3453,
+      "observed": 3466,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3455,
+      "classified": 3468,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2663,
+      "observed": 2672,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2667,
+      "classified": 2676,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2503,
+      "observed": 2513,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2505,
+      "classified": 2515,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1926,
+      "observed": 1927,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1929,
+      "classified": 1930,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2062,
+      "observed": 2063,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2067,
+      "classified": 2068,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1935,
+      "observed": 1937,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1936,
+      "classified": 1938,
       "classification_errors": 1,
       "jobs": [
         {
