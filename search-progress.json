@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T08:57:11.481026+00:00",
+  "updated_at": "2026-10-05T08:58:13.927118+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11666,
-    "pending": 18751,
-    "processing": 1,
+    "processed": 11677,
+    "pending": 18739,
+    "processing": 2,
     "eligible": 127,
-    "review": 8004,
-    "rejected": 3506,
+    "review": 8012,
+    "rejected": 3509,
     "errors": 26,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCWq79TuJby_f36a285jU3bw",
-        "name": "포유법률사무소",
-        "query": "평택 법률사무소"
+        "channel_id": "UCwStFN-_Cd0HLbhy6338V_A",
+        "name": "치아구조대",
+        "query": "평택 치과"
+      },
+      {
+        "channel_id": "UC4RqeUMFYaaiRcOOg9t8vzQ",
+        "name": "3i대장_더블엠",
+        "query": "평택 치과"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1518,
   "channels_discovered": 28150,
-  "channels_observed": 11640,
+  "channels_observed": 11651,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2650,
+      "observed": 2658,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2653,
+      "classified": 2661,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2410,
+      "observed": 2412,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2413,
+      "classified": 2415,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1768,
+      "observed": 1769,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1771,
+      "classified": 1772,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1772,
+      "observed": 1773,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1773,
+      "classified": 1774,
       "classification_errors": 1,
       "jobs": [
         {
