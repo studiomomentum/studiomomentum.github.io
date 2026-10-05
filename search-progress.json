@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:53:46.309673+00:00",
+  "updated_at": "2026-10-05T10:54:49.237815+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13076,
-    "pending": 17341,
-    "processing": 1,
+    "processed": 13077,
+    "pending": 17339,
+    "processing": 2,
     "eligible": 133,
-    "review": 9069,
+    "review": 9070,
     "rejected": 3841,
     "errors": 30,
     "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCMAkBL0hvf_eM7yCuq10P_A",
-        "name": "김현tv",
-        "query": "평택 의원"
+        "channel_id": "UC4rUuWz4prUYbJVe-mGIjIg",
+        "name": "직업상담사 노쌤TV[직업상담 실무]",
+        "query": "평택 노무사"
+      },
+      {
+        "channel_id": "UCIOK1C8ZmjpAjKNQDhKgOUw",
+        "name": "금속노련",
+        "query": "평택 노무사"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1592,
   "channels_discovered": 28150,
-  "channels_observed": 13046,
+  "channels_observed": 13047,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3901,
+      "observed": 3902,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3905,
+      "classified": 3906,
       "classification_errors": 4,
       "jobs": [
         {
