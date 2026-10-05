@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:42:36.370249+00:00",
+  "updated_at": "2026-10-05T07:43:38.728430+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10689,
-    "pending": 19729,
-    "processing": 0,
+    "processed": 10701,
+    "pending": 19715,
+    "processing": 2,
     "eligible": 116,
-    "review": 7322,
-    "rejected": 3226,
+    "review": 7325,
+    "rejected": 3235,
     "errors": 22,
     "ready": 23,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCa1z_nBoCl6WAVjkTuzQNtA",
+        "name": "爽劇星球",
+        "query": "오산 동물병원"
+      },
+      {
+        "channel_id": "UCq6IcMJrSLcNfrzdU5oYmZQ",
+        "name": "龍吟嘯短劇",
+        "query": "오산 동물병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1482,
   "channels_discovered": 28150,
-  "channels_observed": 10667,
+  "channels_observed": 10679,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3776,
+      "observed": 3777,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3780,
+      "classified": 3781,
       "classification_errors": 4,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3368,
+      "observed": 3372,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3373,
+      "classified": 3377,
       "classification_errors": 5,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2206,
+      "observed": 2207,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2207,
+      "classified": 2208,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2665,
+      "observed": 2666,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2667,
+      "classified": 2668,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2284,
+      "observed": 2286,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2287,
+      "classified": 2289,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2251,
+      "observed": 2254,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2253,
+      "classified": 2256,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1812,
+      "observed": 1813,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1815,
+      "classified": 1816,
       "classification_errors": 3,
       "jobs": [
         {
