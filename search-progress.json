@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:49:51.206570+00:00",
+  "updated_at": "2026-10-05T13:50:54.486958+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15290,
-    "pending": 15127,
-    "processing": 1,
+    "processed": 15303,
+    "pending": 15115,
+    "processing": 0,
     "eligible": 152,
-    "review": 10662,
-    "rejected": 4434,
+    "review": 10672,
+    "rejected": 4437,
     "errors": 39,
-    "ready": 32,
+    "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCQUSW6Llxrk8qaF1f1SCCUw",
-        "name": "잡플러스교양",
-        "query": "화성 법률사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1733,
   "channels_discovered": 28150,
-  "channels_observed": 15251,
+  "channels_observed": 15264,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3969,
+      "observed": 3970,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3972,
+      "classified": 3973,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2995,
+      "observed": 3007,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3000,
+      "classified": 3012,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1991,
+      "observed": 1992,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1994,
+      "classified": 1995,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2137,
+      "observed": 2139,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2142,
+      "classified": 2144,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1990,
+      "observed": 1991,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1991,
+      "classified": 1992,
       "classification_errors": 1,
       "jobs": [
         {
