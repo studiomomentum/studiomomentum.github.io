@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:42:40.340169+00:00",
+  "updated_at": "2026-10-05T14:43:42.012145+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15867,
-    "pending": 14550,
-    "processing": 1,
+    "processed": 15880,
+    "pending": 14536,
+    "processing": 2,
     "eligible": 154,
-    "review": 11077,
-    "rejected": 4591,
+    "review": 11086,
+    "rejected": 4595,
     "errors": 42,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC2quSX0ea8WWj43UUABV1zg",
-        "name": "재밌는 코딩수업",
+        "channel_id": "UCzrt7fgmR1gfO34aZHAmfng",
+        "name": "소방쟁이",
+        "query": "화성 학원"
+      },
+      {
+        "channel_id": "UCKujKp3Y-PP1t0lDZbYEBjQ",
+        "name": "랭귀지시티",
         "query": "화성 학원"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1754,
   "channels_discovered": 28150,
-  "channels_observed": 15825,
+  "channels_observed": 15838,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3536,
+      "observed": 3548,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3542,
+      "classified": 3554,
       "classification_errors": 6,
       "jobs": [
         {
