@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:07:09.498048+00:00",
+  "updated_at": "2026-10-05T10:08:11.940417+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12472,
-    "pending": 17945,
-    "processing": 1,
+    "processed": 12485,
+    "pending": 17933,
+    "processing": 0,
     "eligible": 130,
-    "review": 8634,
-    "rejected": 3675,
+    "review": 8642,
+    "rejected": 3680,
     "errors": 30,
     "ready": 25,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC93xjAviFM-t4ECyLx3d4PQ",
-        "name": "닥터라니의 피부이야기",
-        "query": "평택 피부과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1556,
+  "region_observed": 1557,
   "channels_discovered": 28150,
-  "channels_observed": 12442,
+  "channels_observed": 12455,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3353,
+      "observed": 3366,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3357,
+      "classified": 3370,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2847,
+      "observed": 2849,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2849,
+      "classified": 2851,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2499,
+      "observed": 2500,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2503,
+      "classified": 2504,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1910,
+      "observed": 1911,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1914,
+      "classified": 1915,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1556,
+      "observed": 1557,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1557,
+      "classified": 1558,
       "classification_errors": 1,
       "jobs": [
         {
