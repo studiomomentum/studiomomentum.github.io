@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T04:59:43.207029+00:00",
+  "updated_at": "2026-10-05T05:00:45.599642+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8579,
-    "pending": 21837,
-    "processing": 2,
+    "processed": 8593,
+    "pending": 21825,
+    "processing": 0,
     "eligible": 108,
-    "review": 5810,
-    "rejected": 2642,
+    "review": 5823,
+    "rejected": 2643,
     "errors": 16,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCeEbFuHgBgfl7tTYLjdWQGQ",
-        "name": "잇다CG_건축인테리어 3D작업",
-        "query": "동탄 심리상담센터"
-      },
-      {
-        "channel_id": "UCdgGExrA-yfUZ076ngJp-ug",
-        "name": "대구보건대학교 언어치료학과",
-        "query": "동탄 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1392,
   "channels_discovered": 28150,
-  "channels_observed": 8563,
+  "channels_observed": 8577,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4136,
+      "observed": 4150,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4141,
+      "classified": 4155,
       "classification_errors": 5,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1800,
+      "observed": 1803,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1800,
+      "classified": 1803,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1771,
+      "observed": 1776,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1771,
+      "classified": 1776,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2504,
+      "observed": 2505,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2506,
+      "classified": 2507,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2032,
+      "observed": 2037,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2033,
+      "classified": 2038,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1538,
+      "observed": 1540,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1539,
+      "classified": 1541,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1675,
+      "observed": 1677,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1678,
+      "classified": 1680,
       "classification_errors": 3,
       "jobs": [
         {
