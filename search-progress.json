@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T15:17:59.413050+00:00",
+  "updated_at": "2026-10-05T15:19:01.748941+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 16325,
-    "pending": 14092,
-    "processing": 1,
+    "processed": 16336,
+    "pending": 14082,
+    "processing": 0,
     "eligible": 155,
-    "review": 11387,
-    "rejected": 4735,
+    "review": 11397,
+    "rejected": 4736,
     "errors": 45,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCSPMRoAphbObUYeDaX367Fg",
-        "name": "에스오디 SOD",
-        "query": "화성 성형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1779,
   "channels_discovered": 28150,
-  "channels_observed": 16280,
+  "channels_observed": 16291,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4540,
+      "observed": 4541,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4546,
+      "classified": 4547,
       "classification_errors": 6,
       "jobs": [
         {
@@ -629,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3999,
+      "observed": 4000,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4005,
+      "classified": 4006,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3951,
+      "observed": 3961,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 3960,
+      "classified": 3970,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2047,
+      "observed": 2049,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2051,
+      "classified": 2053,
       "classification_errors": 4,
       "jobs": [
         {
