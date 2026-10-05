@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:52:24.338477+00:00",
+  "updated_at": "2026-10-05T09:53:26.571771+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,20 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12285,
-    "pending": 18131,
-    "processing": 2,
+    "processed": 12294,
+    "pending": 18123,
+    "processing": 1,
     "eligible": 129,
-    "review": 8504,
-    "rejected": 3619,
+    "review": 8511,
+    "rejected": 3621,
     "errors": 30,
     "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCg1Fdvtmmf1hcMKjWrjY6AA",
-        "name": "DE",
-        "query": "평택 어학원"
-      },
-      {
-        "channel_id": "UCHgmosRG2_mwZY5TEqPsW7A",
-        "name": "김챠",
-        "query": "평택 어학원"
+        "channel_id": "UC_ndq-wKNGuu0MlW0iriBSA",
+        "name": "천사부동산",
+        "query": "평택 공인중개사"
       }
     ]
   },
@@ -38,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 1550,
   "channels_discovered": 28150,
-  "channels_observed": 12255,
+  "channels_observed": 12264,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3188,
+      "observed": 3196,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3192,
+      "classified": 3200,
       "classification_errors": 4,
       "jobs": [
         {
