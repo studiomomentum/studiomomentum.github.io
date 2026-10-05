@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:29:23.646847+00:00",
+  "updated_at": "2026-10-05T05:30:45.939122+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8975,
-    "pending": 21441,
-    "processing": 2,
+    "processed": 8991,
+    "pending": 21427,
+    "processing": 0,
     "eligible": 109,
-    "review": 6114,
-    "rejected": 2732,
+    "review": 6124,
+    "rejected": 2738,
     "errors": 17,
     "ready": 29,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCTwQ9iAIojmsw_mFlYj54SA",
-        "name": "극동방송",
-        "query": "오산 세무법인"
-      },
-      {
-        "channel_id": "UC0d3s4v91U0lcid8Wawh8dQ",
-        "name": "충남사회적경제지원센터",
-        "query": "오산 세무법인"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1409,
+  "region_observed": 1410,
   "channels_discovered": 28150,
-  "channels_observed": 8958,
+  "channels_observed": 8974,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1887,
+      "observed": 1903,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1888,
+      "classified": 1904,
       "classification_errors": 1,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1852,
+      "observed": 1854,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1853,
+      "classified": 1855,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2071,
+      "observed": 2073,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2072,
+      "classified": 2074,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2171,
+      "observed": 2174,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2173,
+      "classified": 2176,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1588,
+      "observed": 1592,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1590,
+      "classified": 1594,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1632,
+      "observed": 1633,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1633,
+      "classified": 1634,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1409,
+      "observed": 1410,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1410,
+      "classified": 1411,
       "classification_errors": 1,
       "jobs": [
         {
