@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:24:02.786335+00:00",
+  "updated_at": "2026-10-05T12:25:05.686330+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14193,
-    "pending": 16225,
-    "processing": 0,
+    "processed": 14210,
+    "pending": 16207,
+    "processing": 1,
     "eligible": 144,
-    "review": 9903,
-    "rejected": 4108,
+    "review": 9917,
+    "rejected": 4111,
     "errors": 35,
     "ready": 31,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCMhLPpzCDpQuOiIzVGRGG-w",
+        "name": "icon english",
+        "query": "용인 어학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1655,
+  "region_observed": 1656,
   "channels_discovered": 28150,
-  "channels_observed": 14158,
+  "channels_observed": 14175,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3345,
+      "observed": 3354,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3347,
+      "classified": 3356,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2466,
+      "observed": 2469,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2468,
+      "classified": 2471,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1905,
+      "observed": 1906,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1908,
+      "classified": 1909,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1923,
+      "observed": 1924,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1924,
+      "classified": 1925,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1655,
+      "observed": 1656,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1656,
+      "classified": 1657,
       "classification_errors": 1,
       "jobs": [
         {
