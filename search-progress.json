@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:47:21.136897+00:00",
+  "updated_at": "2026-10-05T16:48:40.130018+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17495,
-    "pending": 12922,
-    "processing": 1,
+    "processed": 17510,
+    "pending": 12908,
+    "processing": 0,
     "eligible": 156,
-    "review": 12200,
-    "rejected": 5088,
+    "review": 12213,
+    "rejected": 5090,
     "errors": 48,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCn6RkaeTCNQOZOMP1S8lTfQ",
-        "name": "전라남도광역정신건강복지센터",
-        "query": "화성 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1823,
   "channels_discovered": 28150,
-  "channels_observed": 17447,
+  "channels_observed": 17462,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4885,
+      "observed": 4900,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4897,
+      "classified": 4912,
       "classification_errors": 12,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2113,
+      "observed": 2114,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2117,
+      "classified": 2118,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2094,
+      "observed": 2095,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2095,
+      "classified": 2096,
       "classification_errors": 1,
       "jobs": [
         {
