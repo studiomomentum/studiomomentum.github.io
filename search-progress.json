@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:46:42.285435+00:00",
+  "updated_at": "2026-10-05T10:47:45.421602+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12988,
-    "pending": 17429,
+    "processed": 13000,
+    "pending": 17417,
     "processing": 1,
     "eligible": 133,
-    "review": 9014,
-    "rejected": 3808,
+    "review": 9022,
+    "rejected": 3812,
     "errors": 30,
     "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UClluK2CiktohmfJvx4FanGw",
-        "name": "평안밀알선교단",
+        "channel_id": "UCPmTn0wbYx1xiv_zteWI9Jg",
+        "name": "미라클클",
         "query": "평택 동물병원"
       }
     ]
@@ -33,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 1591,
   "channels_discovered": 28150,
-  "channels_observed": 12958,
+  "channels_observed": 12970,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3818,
+      "observed": 3830,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3822,
+      "classified": 3834,
       "classification_errors": 4,
       "jobs": [
         {
