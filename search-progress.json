@@ -1,8 +1,8 @@
 {
   "sweep_id": "manual-37099031291",
   "region": "송파",
-  "phase": "parallel",
-  "updated_at": "2026-10-05T03:57:19.495421+00:00",
+  "phase": "incomplete",
+  "updated_at": "2026-10-05T03:57:22.497914+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -19,7 +19,7 @@
     "rejected": 2415,
     "errors": 12,
     "ready": 33,
-    "status": "running",
+    "status": "incomplete",
     "active": []
   },
   "queries_completed": 440,
