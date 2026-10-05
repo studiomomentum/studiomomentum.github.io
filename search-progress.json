@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:37:17.747853+00:00",
+  "updated_at": "2026-10-05T07:38:20.095765+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10613,
-    "pending": 19805,
-    "processing": 0,
+    "processed": 10634,
+    "pending": 19783,
+    "processing": 1,
     "eligible": 116,
-    "review": 7279,
-    "rejected": 3193,
+    "review": 7294,
+    "rejected": 3199,
     "errors": 22,
     "ready": 23,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC6vVhvBFPfToEKZHd7a7AGw",
+        "name": "[공식]장애인문화복지신문",
+        "query": "오산 의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1480,
+  "region_observed": 1482,
   "channels_discovered": 28150,
-  "channels_observed": 10591,
+  "channels_observed": 10612,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3314,
+      "observed": 3335,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3319,
+      "classified": 3340,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2280,
+      "observed": 2282,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2283,
+      "classified": 2285,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1732,
+      "observed": 1733,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1733,
+      "classified": 1734,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1480,
+      "observed": 1482,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1481,
+      "classified": 1483,
       "classification_errors": 1,
       "jobs": [
         {
