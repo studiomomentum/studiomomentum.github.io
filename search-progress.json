@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:05:38.527954+00:00",
+  "updated_at": "2026-10-05T13:06:55.448522+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14739,
-    "pending": 15677,
-    "processing": 2,
+    "processed": 14753,
+    "pending": 15665,
+    "processing": 0,
     "eligible": 148,
-    "review": 10280,
-    "rejected": 4271,
+    "review": 10290,
+    "rejected": 4275,
     "errors": 37,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCtwdNMVajUgcAHumo2b3WVg",
-        "name": "가요뉴스넷",
-        "query": "용인 감정평가사"
-      },
-      {
-        "channel_id": "UCpVyIVO03MyfRT_vLkzE1jw",
-        "name": "가수나소연",
-        "query": "용인 관세사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1708,
+  "region_observed": 1710,
   "channels_discovered": 28150,
-  "channels_observed": 14702,
+  "channels_observed": 14716,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3779,
+      "observed": 3793,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3782,
+      "classified": 3796,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2707,
+      "observed": 2708,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2711,
+      "classified": 2712,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2626,
+      "observed": 2630,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2628,
+      "classified": 2632,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1953,
+      "observed": 1955,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1956,
+      "classified": 1958,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2097,
+      "observed": 2098,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2102,
+      "classified": 2103,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1708,
+      "observed": 1710,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1709,
+      "classified": 1711,
       "classification_errors": 1,
       "jobs": [
         {
