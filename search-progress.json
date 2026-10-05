@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:17:45.266844+00:00",
+  "updated_at": "2026-10-05T14:18:46.557278+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15548,
-    "pending": 14870,
-    "processing": 0,
+    "processed": 15564,
+    "pending": 14852,
+    "processing": 2,
     "eligible": 153,
-    "review": 10843,
-    "rejected": 4509,
+    "review": 10855,
+    "rejected": 4513,
     "errors": 40,
     "ready": 34,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC0nYHt2q0nnU7JerxzTJqlQ",
+        "name": "경희리솜한방병원경희리솜한방병원",
+        "query": "화성 한방병원"
+      },
+      {
+        "channel_id": "UCrc--8Z5wbsx5w4AWhdP8xw",
+        "name": "박지영박사의 건강돋보기TV",
+        "query": "화성 한의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1744,
+  "region_observed": 1745,
   "channels_discovered": 28150,
-  "channels_observed": 15508,
+  "channels_observed": 15524,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3901,
+      "observed": 3902,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3905,
+      "classified": 3906,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3240,
+      "observed": 3256,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3245,
+      "classified": 3261,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2691,
+      "observed": 2693,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2693,
+      "classified": 2695,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2008,
+      "observed": 2009,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2011,
+      "classified": 2012,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2158,
+      "observed": 2160,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2163,
+      "classified": 2165,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2003,
+      "observed": 2006,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2004,
+      "classified": 2007,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1744,
+      "observed": 1745,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1745,
+      "classified": 1746,
       "classification_errors": 1,
       "jobs": [
         {
