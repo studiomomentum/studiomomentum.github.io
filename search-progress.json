@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:41:46.242081+00:00",
+  "updated_at": "2026-10-05T18:42:48.576545+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18966,
-    "pending": 11450,
-    "processing": 2,
+    "processed": 18975,
+    "pending": 11442,
+    "processing": 1,
     "eligible": 164,
-    "review": 13175,
-    "rejected": 5573,
+    "review": 13182,
+    "rejected": 5575,
     "errors": 51,
     "ready": 39,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCbpHoHI10wydUwekJMcWgPw",
-        "name": "HIFIVE PICTURES",
-        "query": "분당 의원"
-      },
-      {
-        "channel_id": "UCWgZAPHaSZ2J8aoOMVs3yCg",
-        "name": "성남시사회복지사협회",
-        "query": "분당 의원"
+        "channel_id": "UCzFMDafQcWxOrvRvTBRLfTg",
+        "name": "닥터펫",
+        "query": "분당 동물병원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 2004,
+  "region_observed": 2006,
   "channels_discovered": 28150,
-  "channels_observed": 18915,
+  "channels_observed": 18924,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3530,
+      "observed": 3539,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3534,
+      "classified": 3543,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2281,
+      "observed": 2282,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2285,
+      "classified": 2286,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2227,
+      "observed": 2228,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2228,
+      "classified": 2229,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 2004,
+      "observed": 2006,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2005,
+      "classified": 2007,
       "classification_errors": 1,
       "jobs": [
         {
