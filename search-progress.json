@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:10:03.355893+00:00",
+  "updated_at": "2026-10-05T11:11:05.898821+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13274,
-    "pending": 17143,
+    "processed": 13286,
+    "pending": 17131,
     "processing": 1,
     "eligible": 136,
-    "review": 9205,
-    "rejected": 3898,
+    "review": 9216,
+    "rejected": 3899,
     "errors": 32,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCWVdNFn45SQbq6omJ5Zs8SQ",
-        "name": "분양라인TV",
-        "query": "평택 법무사"
+        "channel_id": "UCYdVFHdr-S76QEAR9aRx7kw",
+        "name": "나투어뮤직Naturmusic",
+        "query": "평택 변리사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1605,
+  "region_observed": 1606,
   "channels_discovered": 28150,
-  "channels_observed": 13242,
+  "channels_observed": 13254,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4090,
+      "observed": 4102,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4096,
+      "classified": 4108,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1508,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2578,
+      "observed": 2579,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2582,
+      "classified": 2583,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1605,
+      "observed": 1606,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1606,
+      "classified": 1607,
       "classification_errors": 1,
       "jobs": [
         {
