@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:34:13.519117+00:00",
+  "updated_at": "2026-10-05T09:35:17.376388+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12057,
-    "pending": 18359,
-    "processing": 2,
+    "processed": 12069,
+    "pending": 18349,
+    "processing": 0,
     "eligible": 127,
-    "review": 8315,
+    "review": 8327,
     "rejected": 3583,
     "errors": 29,
     "ready": 24,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCPD1Q1S3-VnTkuVzlt5TLqA",
-        "name": "YONI DRUM 요니뮤직 실용음악학원",
-        "query": "평택 학원"
-      },
-      {
-        "channel_id": "UCaf8JJDvcIA62TCEyEsgGrw",
-        "name": "M보컬뮤직아카데미",
-        "query": "평택 학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1543,
   "channels_discovered": 28150,
-  "channels_observed": 12028,
+  "channels_observed": 12040,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2991,
+      "observed": 3003,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2994,
+      "classified": 3006,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2791,
+      "observed": 2795,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2793,
+      "classified": 2797,
       "classification_errors": 2,
       "jobs": [
         {
