@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:13:39.405181+00:00",
+  "updated_at": "2026-10-05T13:14:41.356534+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14839,
-    "pending": 15579,
-    "processing": 0,
+    "processed": 14857,
+    "pending": 15559,
+    "processing": 2,
     "eligible": 148,
-    "review": 10354,
-    "rejected": 4297,
+    "review": 10366,
+    "rejected": 4303,
     "errors": 37,
     "ready": 31,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCGCyT2XJeuZnJMeaZ0irI3w",
+        "name": "KIMS Baseball",
+        "query": "용인 손해사정사"
+      },
+      {
+        "channel_id": "UCa_Bvlw6AavvDun0_YDcAyQ",
+        "name": "고려대학교 Korea University",
+        "query": "용인 손해사정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1719,
   "channels_discovered": 28150,
-  "channels_observed": 14802,
+  "channels_observed": 14820,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3981,
+      "observed": 3982,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3987,
+      "classified": 3988,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2712,
+      "observed": 2715,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2716,
+      "classified": 2719,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2638,
+      "observed": 2643,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2640,
+      "classified": 2645,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1959,
+      "observed": 1962,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1962,
+      "classified": 1965,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2106,
+      "observed": 2108,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2111,
+      "classified": 2113,
       "classification_errors": 5,
       "jobs": [
         {
