@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T06:29:21.289685+00:00",
+  "updated_at": "2026-10-05T06:30:24.365230+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9732,
-    "pending": 20685,
-    "processing": 1,
+    "processed": 9745,
+    "pending": 20671,
+    "processing": 2,
     "eligible": 112,
-    "review": 6646,
-    "rejected": 2952,
+    "review": 6657,
+    "rejected": 2954,
     "errors": 19,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCT0Iq6PJ6HM53Gwk8nKREDw",
-        "name": "온부TV",
-        "query": "오산 공인중개사"
+        "channel_id": "UCue8buknlzBXnTWE_IM_JEQ",
+        "name": "이인숙",
+        "query": "오산 어학원"
+      },
+      {
+        "channel_id": "UCEcC1DayNoei4c5IEXjZwaA",
+        "name": "재수생",
+        "query": "오산 어학원"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1436,
   "channels_discovered": 28150,
-  "channels_observed": 9713,
+  "channels_observed": 9726,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2560,
+      "observed": 2571,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2563,
+      "classified": 2574,
       "classification_errors": 3,
       "jobs": [
         {
