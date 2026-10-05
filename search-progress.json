@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T08:29:50.725249+00:00",
+  "updated_at": "2026-10-05T08:30:52.424186+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11325,
-    "pending": 19091,
+    "processed": 11333,
+    "pending": 19083,
     "processing": 2,
-    "eligible": 120,
-    "review": 7776,
-    "rejected": 3402,
+    "eligible": 121,
+    "review": 7781,
+    "rejected": 3404,
     "errors": 24,
-    "ready": 22,
+    "ready": 24,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCz8uEU26q5yTUJr1Smwgp-g",
-        "name": "하루봄봄TV",
+        "channel_id": "UCjjVYlEq1Q2cJF0vo1-S_fg",
+        "name": "꼼지락농원 순간일기",
         "query": "평택 세무사"
       },
       {
-        "channel_id": "UCdZMuLvg6c8UtSknWzIebDg",
-        "name": "시간날때보는 금융 취미생활",
+        "channel_id": "UCXQ3WiGhs_D4CBgEe60PEfg",
+        "name": "더원 family ",
         "query": "평택 세무사"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1505,
   "channels_discovered": 28150,
-  "channels_observed": 11301,
+  "channels_observed": 11309,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2333,
+      "observed": 2341,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2334,
+      "classified": 2342,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2712,
+      "observed": 2714,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2714,
+      "classified": 2716,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2359,
+      "observed": 2361,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2362,
+      "classified": 2364,
       "classification_errors": 3,
       "jobs": [
         {
