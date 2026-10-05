@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:14:28.855400+00:00",
+  "updated_at": "2026-10-05T14:15:30.650091+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,20 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15511,
-    "pending": 14906,
-    "processing": 1,
+    "processed": 15524,
+    "pending": 14892,
+    "processing": 2,
     "eligible": 153,
-    "review": 10811,
-    "rejected": 4505,
-    "errors": 39,
+    "review": 10822,
+    "rejected": 4506,
+    "errors": 40,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCBTKnsKyRG434VH6Ii8gA5w",
-        "name": "The Children of Karma, Astrology",
-        "query": "화성 치과"
+        "channel_id": "UCODbWxwiBXGDhid1LdNyjag",
+        "name": "해운대백병원TV",
+        "query": "화성 치과의원"
+      },
+      {
+        "channel_id": "UCq_OlzZygQoc4rZE959CsWA",
+        "name": "봉봉잇",
+        "query": "화성 치과의원"
       }
     ]
   },
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1742,
   "channels_discovered": 28150,
-  "channels_observed": 15472,
+  "channels_observed": 15484,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3207,
+      "observed": 3216,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3212,
+      "classified": 3221,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2006,
+      "observed": 2007,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2009,
+      "classified": 2010,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1999,
+      "observed": 2001,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2000,
+      "classified": 2002,
       "classification_errors": 1,
       "jobs": [
         {
