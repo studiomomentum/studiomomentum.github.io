@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:07:29.312900+00:00",
+  "updated_at": "2026-10-05T03:08:30.925451+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7117,
-    "pending": 23301,
-    "processing": 0,
+    "processed": 7135,
+    "pending": 23281,
+    "processing": 2,
     "eligible": 106,
-    "review": 4787,
-    "rejected": 2210,
+    "review": 4797,
+    "rejected": 2218,
     "errors": 11,
     "ready": 36,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCBfE607BQfmt6bXy1rFI02Q",
+        "name": "Ceed2014의 부채널 (전체캠&세로캠)",
+        "query": "동탄 성형외과"
+      },
+      {
+        "channel_id": "UCXKdwe7M4NAdjM14rW-PJsg",
+        "name": "Fresh TV",
+        "query": "동탄 성형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1308,
+  "region_observed": 1310,
   "channels_discovered": 28150,
-  "channels_observed": 7106,
+  "channels_observed": 7124,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2821,
+      "observed": 2837,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2821,
+      "classified": 2837,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1622,
+      "observed": 1623,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1622,
+      "classified": 1623,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1779,
+      "observed": 1781,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1780,
+      "classified": 1782,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2025,
+      "observed": 2026,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2027,
+      "classified": 2028,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1329,
+      "observed": 1330,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1330,
+      "classified": 1331,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1539,
+      "observed": 1543,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1540,
+      "classified": 1544,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1507,
+      "observed": 1510,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1508,
+      "classified": 1511,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1308,
+      "observed": 1310,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1309,
+      "classified": 1311,
       "classification_errors": 1,
       "jobs": [
         {
