@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T15:16:56.680480+00:00",
+  "updated_at": "2026-10-05T15:17:59.413050+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 16306,
-    "pending": 14112,
-    "processing": 0,
+    "processed": 16325,
+    "pending": 14092,
+    "processing": 1,
     "eligible": 155,
-    "review": 11375,
-    "rejected": 4728,
+    "review": 11387,
+    "rejected": 4735,
     "errors": 45,
     "ready": 34,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCSPMRoAphbObUYeDaX367Fg",
+        "name": "에스오디 SOD",
+        "query": "화성 성형외과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1777,
+  "region_observed": 1779,
   "channels_discovered": 28150,
-  "channels_observed": 16261,
+  "channels_observed": 16280,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3934,
+      "observed": 3951,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 3943,
+      "classified": 3960,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2716,
+      "observed": 2717,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2718,
+      "classified": 2719,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2046,
+      "observed": 2047,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2050,
+      "classified": 2051,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2200,
+      "observed": 2201,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2205,
+      "classified": 2206,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2049,
+      "observed": 2053,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2050,
+      "classified": 2054,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1777,
+      "observed": 1779,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1778,
+      "classified": 1780,
       "classification_errors": 1,
       "jobs": [
         {
