@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T08:34:08.498584+00:00",
+  "updated_at": "2026-10-05T08:35:10.423743+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11381,
-    "pending": 19035,
-    "processing": 2,
+    "processed": 11394,
+    "pending": 19023,
+    "processing": 1,
     "eligible": 122,
-    "review": 7815,
-    "rejected": 3417,
+    "review": 7822,
+    "rejected": 3423,
     "errors": 24,
-    "ready": 24,
+    "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCB6uD9riJ4egsRseGVDjrQg",
-        "name": "광tv",
-        "query": "평택 세무사"
-      },
-      {
-        "channel_id": "UCxSBmIRgVZAUYJIctn1GeSg",
-        "name": "학생선생 홍쌤의 그 대학? 이 학과!",
+        "channel_id": "UCFSjpvS0KUbCu5ZvwYDLlvg",
+        "name": "집돈버 구쯔",
         "query": "평택 세무사"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1507,
+  "region_observed": 1508,
   "channels_discovered": 28150,
-  "channels_observed": 11357,
+  "channels_observed": 11370,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2388,
+      "observed": 2401,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2389,
+      "classified": 2402,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2373,
+      "observed": 2374,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2376,
+      "classified": 2377,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1843,
+      "observed": 1845,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1846,
+      "classified": 1848,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1751,
+      "observed": 1752,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1752,
+      "classified": 1753,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1507,
+      "observed": 1508,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1508,
+      "classified": 1509,
       "classification_errors": 1,
       "jobs": [
         {
