@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T08:20:03.141975+00:00",
+  "updated_at": "2026-10-05T08:21:05.392283+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11190,
-    "pending": 19227,
-    "processing": 1,
+    "processed": 11203,
+    "pending": 19213,
+    "processing": 2,
     "eligible": 118,
-    "review": 7687,
-    "rejected": 3358,
+    "review": 7696,
+    "rejected": 3362,
     "errors": 24,
     "ready": 21,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCQgm3pPlI3fbZYRJPwyYPow",
-        "name": "Jun Oh Lim",
+        "channel_id": "UCzHrOOw0rWI1-4_KUFn56_w",
+        "name": "대전박보정다옴필라테스요가",
+        "query": "오산 필라테스"
+      },
+      {
+        "channel_id": "UC1xJCrGkOKHUO-Jt6zXDdjg",
+        "name": "경구무브먼트",
         "query": "오산 필라테스"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1501,
   "channels_discovered": 28150,
-  "channels_observed": 11166,
+  "channels_observed": 11179,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3834,
+      "observed": 3847,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3840,
+      "classified": 3853,
       "classification_errors": 6,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2298,
+      "observed": 2300,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2299,
+      "classified": 2301,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2340,
+      "observed": 2341,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2343,
+      "classified": 2344,
       "classification_errors": 3,
       "jobs": [
         {
