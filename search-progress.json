@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:59:00.545264+00:00",
+  "updated_at": "2026-10-05T17:00:07.470010+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17658,
-    "pending": 12758,
-    "processing": 2,
+    "processed": 17666,
+    "pending": 12752,
+    "processing": 0,
     "eligible": 156,
-    "review": 12327,
-    "rejected": 5124,
+    "review": 12334,
+    "rejected": 5125,
     "errors": 48,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCcjv8TRsYzuaU4iYSafTcqA",
-        "name": "이상예 tv ",
-        "query": "화성 심리상담센터"
-      },
-      {
-        "channel_id": "UCO2cL7AJgjywjPuvx0LnUaA",
-        "name": "서울특별시학교밖청소년지원센터",
-        "query": "화성 심리상담센터"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1827,
   "channels_discovered": 28150,
-  "channels_observed": 17610,
+  "channels_observed": 17618,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4582,
+      "observed": 4583,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4591,
+      "classified": 4592,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 5044,
+      "observed": 5051,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5056,
+      "classified": 5063,
       "classification_errors": 12,
       "jobs": [
         {
