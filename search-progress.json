@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:51:22.329293+00:00",
+  "updated_at": "2026-10-05T09:52:24.338477+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12272,
-    "pending": 18145,
-    "processing": 1,
+    "processed": 12285,
+    "pending": 18131,
+    "processing": 2,
     "eligible": 129,
-    "review": 8494,
-    "rejected": 3617,
-    "errors": 29,
+    "review": 8504,
+    "rejected": 3619,
+    "errors": 30,
     "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCdG85jsDe3SVukiZf1QhviQ",
-        "name": "파머스어학원 고덕국제캠퍼스",
+        "channel_id": "UCg1Fdvtmmf1hcMKjWrjY6AA",
+        "name": "DE",
+        "query": "평택 어학원"
+      },
+      {
+        "channel_id": "UCHgmosRG2_mwZY5TEqPsW7A",
+        "name": "김챠",
         "query": "평택 어학원"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1550,
   "channels_discovered": 28150,
-  "channels_observed": 12243,
+  "channels_observed": 12255,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4516,
+      "observed": 4518,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4522,
+      "classified": 4524,
       "classification_errors": 6,
       "jobs": [
         {
@@ -922,11 +927,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3180,
-      "observation_errors": 3,
+      "observed": 3188,
+      "observation_errors": 4,
       "classified_at": null,
-      "classified": 3183,
-      "classification_errors": 3,
+      "classified": 3192,
+      "classification_errors": 4,
       "jobs": [
         {
           "name": "세무사",
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2465,
+      "observed": 2466,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2469,
+      "classified": 2470,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1809,
+      "observed": 1810,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1812,
+      "classified": 1813,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1902,
+      "observed": 1903,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1906,
+      "classified": 1907,
       "classification_errors": 4,
       "jobs": [
         {
