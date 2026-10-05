@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T04:01:16.068555+00:00",
+  "updated_at": "2026-10-05T04:02:29.185958+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7784,
-    "pending": 22633,
-    "processing": 1,
+    "processed": 7801,
+    "pending": 22617,
+    "processing": 0,
     "eligible": 107,
-    "review": 5245,
-    "rejected": 2417,
+    "review": 5253,
+    "rejected": 2426,
     "errors": 12,
     "ready": 33,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UClqLj8YAiONo3DzPhg4tHlg",
-        "name": "오장영",
-        "query": "동탄 산부인과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1351,
   "channels_discovered": 28150,
-  "channels_observed": 7772,
+  "channels_observed": 7789,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3404,
+      "observed": 3416,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3405,
+      "classified": 3417,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1421,
+      "observed": 1423,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1422,
+      "classified": 1424,
       "classification_errors": 1,
       "jobs": [
         {
