@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T02:10:48.984934+00:00",
+  "updated_at": "2026-10-05T02:11:50.436133+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 6401,
-    "pending": 24017,
-    "processing": 0,
+    "processed": 6419,
+    "pending": 23997,
+    "processing": 2,
     "eligible": 97,
-    "review": 4302,
-    "rejected": 1988,
+    "review": 4315,
+    "rejected": 1993,
     "errors": 11,
     "ready": 34,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCoDYSo4ao33sO0ySuJ4at_A",
+        "name": "여성미한의원 조선화 원장",
+        "query": "동탄 한의원"
+      },
+      {
+        "channel_id": "UC3noAE5UqEpexVELd-4ESBQ",
+        "name": "알면한의원 뇌 면역 진료실 ",
+        "query": "동탄 한의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1250,
   "channels_discovered": 28150,
-  "channels_observed": 6390,
+  "channels_observed": 6408,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2147,
+      "observed": 2165,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2147,
+      "classified": 2165,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1482,
+      "observed": 1487,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1482,
+      "classified": 1487,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1519,
+      "observed": 1525,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1519,
+      "classified": 1525,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2361,
+      "observed": 2363,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2363,
+      "classified": 2365,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1652,
+      "observed": 1656,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1653,
+      "classified": 1657,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1980,
+      "observed": 1981,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1982,
+      "classified": 1983,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1233,
+      "observed": 1235,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1234,
+      "classified": 1236,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1473,
+      "observed": 1475,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1474,
+      "classified": 1476,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1436,
+      "observed": 1437,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1437,
+      "classified": 1438,
       "classification_errors": 1,
       "jobs": [
         {
