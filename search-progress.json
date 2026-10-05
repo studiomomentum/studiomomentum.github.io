@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:03:52.346177+00:00",
+  "updated_at": "2026-10-05T03:04:54.465938+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7073,
-    "pending": 23343,
+    "processed": 7085,
+    "pending": 23331,
     "processing": 2,
     "eligible": 106,
-    "review": 4762,
-    "rejected": 2191,
+    "review": 4770,
+    "rejected": 2195,
     "errors": 11,
     "ready": 36,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCX__TGVo6H9leRj6oY8dmqg",
-        "name": "차교수의 조명연구소",
+        "channel_id": "UCUixAoUDkcIaYVRR4gHbTRQ",
+        "name": "김민정관상가",
         "query": "동탄 피부과"
       },
       {
-        "channel_id": "UCpU7snnJRZFglA-nOb_R3Sg",
-        "name": "성신여대피부과 포이즌의원",
+        "channel_id": "UCmEsDbDZqRkEx9q5PwTXEAA",
+        "name": "건반TV",
         "query": "동탄 피부과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1303,
+  "region_observed": 1304,
   "channels_discovered": 28150,
-  "channels_observed": 7062,
+  "channels_observed": 7074,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2779,
+      "observed": 2791,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2779,
+      "classified": 2791,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1590,
+      "observed": 1591,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1590,
+      "classified": 1591,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1773,
+      "observed": 1776,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1774,
+      "classified": 1777,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2023,
+      "observed": 2024,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2025,
+      "classified": 2026,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1320,
+      "observed": 1323,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1321,
+      "classified": 1324,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1532,
+      "observed": 1534,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1533,
+      "classified": 1535,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1502,
+      "observed": 1503,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1503,
+      "classified": 1504,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1303,
+      "observed": 1304,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1304,
+      "classified": 1305,
       "classification_errors": 1,
       "jobs": [
         {
