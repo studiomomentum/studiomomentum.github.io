@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:14:14.777827+00:00",
+  "updated_at": "2026-10-05T10:15:17.209241+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12565,
-    "pending": 17851,
-    "processing": 2,
+    "processed": 12579,
+    "pending": 17839,
+    "processing": 0,
     "eligible": 132,
-    "review": 8693,
-    "rejected": 3707,
+    "review": 8705,
+    "rejected": 3709,
     "errors": 30,
     "ready": 27,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCCUVSREmeZiOt1eC8aJWIZw",
-        "name": "제니스TV",
-        "query": "평택 성형외과"
-      },
-      {
-        "channel_id": "UCwDBeTZ0XHB0BVDmfL1H9Cg",
-        "name": "김주",
-        "query": "평택 성형외과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1561,
+  "region_observed": 1563,
   "channels_discovered": 28150,
-  "channels_observed": 12535,
+  "channels_observed": 12549,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3951,
+      "observed": 3952,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3957,
+      "classified": 3958,
       "classification_errors": 6,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3431,
+      "observed": 3441,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3435,
+      "classified": 3445,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2862,
+      "observed": 2864,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2864,
+      "classified": 2866,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2507,
+      "observed": 2508,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2511,
+      "classified": 2512,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2350,
+      "observed": 2351,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2352,
+      "classified": 2353,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1915,
+      "observed": 1916,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1919,
+      "classified": 1920,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1828,
+      "observed": 1830,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1829,
+      "classified": 1831,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1561,
+      "observed": 1563,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1562,
+      "classified": 1564,
       "classification_errors": 1,
       "jobs": [
         {
