@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:07:06.333716+00:00",
+  "updated_at": "2026-10-05T09:08:08.359663+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11731,
-    "pending": 18685,
-    "processing": 2,
+    "processed": 11738,
+    "pending": 18679,
+    "processing": 1,
     "eligible": 127,
-    "review": 8048,
-    "rejected": 3527,
+    "review": 8051,
+    "rejected": 3531,
     "errors": 26,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0_cMG9byuhVWclt49eIfbQ",
-        "name": "chang yong kang",
-        "query": "평택 치과"
-      },
-      {
-        "channel_id": "UCBoD1NQjqckkPdt4AKMCHIA",
-        "name": "Shinwon Dental",
+        "channel_id": "UCPMi12TUn3Ok_UkBScWXGIw",
+        "name": "원데이치과",
         "query": "평택 치과"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1524,
+  "region_observed": 1526,
   "channels_discovered": 28150,
-  "channels_observed": 11705,
+  "channels_observed": 11712,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2704,
+      "observed": 2711,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2707,
+      "classified": 2714,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2759,
+      "observed": 2761,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2761,
+      "classified": 2763,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2419,
+      "observed": 2422,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2422,
+      "classified": 2425,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1873,
+      "observed": 1875,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1877,
+      "classified": 1879,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1780,
+      "observed": 1782,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1781,
+      "classified": 1783,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1524,
+      "observed": 1526,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1525,
+      "classified": 1527,
       "classification_errors": 1,
       "jobs": [
         {
