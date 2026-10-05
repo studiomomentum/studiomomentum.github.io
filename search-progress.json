@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T04:57:38.941619+00:00",
+  "updated_at": "2026-10-05T04:58:41.714861+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8549,
-    "pending": 21869,
-    "processing": 0,
+    "processed": 8568,
+    "pending": 21849,
+    "processing": 1,
     "eligible": 108,
-    "review": 5786,
-    "rejected": 2636,
+    "review": 5802,
+    "rejected": 2639,
     "errors": 16,
     "ready": 31,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCfEFoaj3JguiMEKKNFfdvSg",
+        "name": "가이드필라테스",
+        "query": "동탄 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1391,
   "channels_discovered": 28150,
-  "channels_observed": 8533,
+  "channels_observed": 8552,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4107,
+      "observed": 4126,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4112,
+      "classified": 4131,
       "classification_errors": 5,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1797,
+      "observed": 1799,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1797,
+      "classified": 1799,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1767,
+      "observed": 1768,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1767,
+      "classified": 1768,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2029,
+      "observed": 2030,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2030,
+      "classified": 2031,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1534,
+      "observed": 1536,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1535,
+      "classified": 1537,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1607,
+      "observed": 1608,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1608,
+      "classified": 1609,
       "classification_errors": 1,
       "jobs": [
         {
