@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T01:12:01.029907+00:00",
+  "updated_at": "2026-10-05T01:13:03.256237+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 5695,
-    "pending": 24723,
-    "processing": 0,
+    "processed": 5704,
+    "pending": 24713,
+    "processing": 1,
     "eligible": 94,
-    "review": 3812,
-    "rejected": 1776,
+    "review": 3816,
+    "rejected": 1781,
     "errors": 10,
     "ready": 40,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCFQTG-jVA9vUIDa35VHQK-A",
+        "name": "부동산 잡설",
+        "query": "동탄 세무회계"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1188,
   "channels_discovered": 28150,
-  "channels_observed": 5685,
+  "channels_observed": 5694,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 1567,
+      "observed": 1575,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1567,
+      "classified": 1575,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1410,
+      "observed": 1411,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1410,
+      "classified": 1411,
       "classification_errors": 0,
       "jobs": [
         {
