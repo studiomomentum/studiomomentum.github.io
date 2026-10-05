@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T04:38:03.793192+00:00",
+  "updated_at": "2026-10-05T04:39:37.089117+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8285,
-    "pending": 22131,
-    "processing": 2,
+    "processed": 8305,
+    "pending": 22113,
+    "processing": 0,
     "eligible": 108,
-    "review": 5600,
-    "rejected": 2561,
+    "review": 5614,
+    "rejected": 2567,
     "errors": 13,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCyzQmoDmiuCF-K1i2OduLFg",
-        "name": "작심 ZAKSIM",
-        "query": "동탄 변리사"
-      },
-      {
-        "channel_id": "UC4NCOzc0nTQJaGSBsHPOSpQ",
-        "name": "wiseup와이즈업",
-        "query": "동탄 변리사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1366,
+  "region_observed": 1367,
   "channels_discovered": 28150,
-  "channels_observed": 8272,
+  "channels_observed": 8292,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3865,
+      "observed": 3882,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3867,
+      "classified": 3884,
       "classification_errors": 2,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1764,
+      "observed": 1765,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1764,
+      "classified": 1765,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1734,
+      "observed": 1736,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1734,
+      "classified": 1736,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2469,
+      "observed": 2470,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2471,
+      "classified": 2472,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1963,
+      "observed": 1964,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1964,
+      "classified": 1965,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2120,
+      "observed": 2122,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2122,
+      "classified": 2124,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1481,
+      "observed": 1486,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1482,
+      "classified": 1487,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1366,
+      "observed": 1367,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1367,
+      "classified": 1368,
       "classification_errors": 1,
       "jobs": [
         {
