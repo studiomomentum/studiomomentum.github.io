@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:13:47.260564+00:00",
+  "updated_at": "2026-10-05T17:14:50.187561+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17847,
-    "pending": 12570,
-    "processing": 1,
+    "processed": 17860,
+    "pending": 12556,
+    "processing": 2,
     "eligible": 161,
-    "review": 12455,
-    "rejected": 5179,
+    "review": 12467,
+    "rejected": 5180,
     "errors": 49,
     "ready": 38,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCekUY9Bc3J9adN2tQ-uDXqA",
-        "name": "세우리협동조합AD",
+        "channel_id": "UCdH42ZtIgfENsCMdUQH5Dgw",
+        "name": "리바디한의원",
+        "query": "분당 한의원"
+      },
+      {
+        "channel_id": "UCpvEVDxXeNAXAOkGOJkj4GQ",
+        "name": "혜민한의원 | 혈변·치질·항문통증 치료",
         "query": "분당 한의원"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1856,
+  "region_observed": 1859,
   "channels_discovered": 28150,
-  "channels_observed": 17798,
+  "channels_observed": 17811,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2883,
+      "observed": 2896,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2887,
+      "classified": 2900,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2281,
+      "observed": 2282,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2286,
+      "classified": 2287,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2114,
+      "observed": 2116,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2115,
+      "classified": 2117,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1856,
+      "observed": 1859,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1857,
+      "classified": 1860,
       "classification_errors": 1,
       "jobs": [
         {
