@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:57:44.928969+00:00",
+  "updated_at": "2026-10-05T18:58:46.298516+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19180,
-    "pending": 11236,
+    "processed": 19192,
+    "pending": 11224,
     "processing": 2,
     "eligible": 166,
-    "review": 13337,
-    "rejected": 5623,
+    "review": 13344,
+    "rejected": 5628,
     "errors": 51,
     "ready": 39,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCXhu9ABheuKs8Xyu1rltImA",
-        "name": "돈파는가게",
+        "channel_id": "UCu0n_KekBfdCqgyA-ZYnvFw",
+        "name": "WT메소드미금점",
         "query": "분당 법무사"
       },
       {
-        "channel_id": "UC4kaqwJiyohcKlSi0N9g8Lg",
-        "name": "성은 #수와진 tv  #수지니 ",
+        "channel_id": "UCk9nXMCHaKKjEV3waM5327g",
+        "name": "지구촌교회(Global Mission Church)",
         "query": "분당 법무사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 2022,
+  "region_observed": 2025,
   "channels_discovered": 28150,
-  "channels_observed": 19129,
+  "channels_observed": 19141,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3705,
+      "observed": 3717,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3709,
+      "classified": 3721,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2294,
+      "observed": 2298,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2298,
+      "classified": 2302,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2422,
+      "observed": 2423,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2427,
+      "classified": 2428,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2240,
+      "observed": 2241,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2241,
+      "classified": 2242,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 2022,
+      "observed": 2025,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2023,
+      "classified": 2026,
       "classification_errors": 1,
       "jobs": [
         {
