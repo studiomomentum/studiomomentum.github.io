@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T02:23:37.390687+00:00",
+  "updated_at": "2026-10-05T02:24:38.973974+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 6567,
-    "pending": 23851,
-    "processing": 0,
+    "processed": 6586,
+    "pending": 23831,
+    "processing": 1,
     "eligible": 98,
-    "review": 4410,
-    "rejected": 2045,
+    "review": 4426,
+    "rejected": 2048,
     "errors": 11,
     "ready": 34,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCa8IcEhoe0w3sopIohdyU0w",
+        "name": "이상국어연구소",
+        "query": "동탄 학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1260,
+  "region_observed": 1261,
   "channels_discovered": 28150,
-  "channels_observed": 6556,
+  "channels_observed": 6575,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3699,
+      "observed": 3700,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3703,
+      "classified": 3704,
       "classification_errors": 4,
       "jobs": [
         {
@@ -330,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2306,
+      "observed": 2324,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2306,
+      "classified": 2324,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1510,
+      "observed": 1515,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1510,
+      "classified": 1515,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1544,
+      "observed": 1547,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1544,
+      "classified": 1547,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2388,
+      "observed": 2390,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2390,
+      "classified": 2392,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1685,
+      "observed": 1692,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1686,
+      "classified": 1693,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1482,
+      "observed": 1483,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1483,
+      "classified": 1484,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1452,
+      "observed": 1453,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1453,
+      "classified": 1454,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1260,
+      "observed": 1261,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1261,
+      "classified": 1262,
       "classification_errors": 1,
       "jobs": [
         {
