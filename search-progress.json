@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:12:17.613944+00:00",
+  "updated_at": "2026-10-05T14:13:26.829860+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15476,
-    "pending": 14940,
-    "processing": 2,
+    "processed": 15492,
+    "pending": 14926,
+    "processing": 0,
     "eligible": 153,
-    "review": 10796,
-    "rejected": 4485,
+    "review": 10806,
+    "rejected": 4491,
     "errors": 39,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCf3HDtJY0sMKZ-o0PqS0D9g",
-        "name": "photist",
-        "query": "화성 치과"
-      },
-      {
-        "channel_id": "UCWo0d0SUBU_3qBWGQ69m02Q",
-        "name": "BonanzaTV",
-        "query": "화성 치과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1741,
+  "region_observed": 1742,
   "channels_discovered": 28150,
-  "channels_observed": 15437,
+  "channels_observed": 15453,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3173,
+      "observed": 3189,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3178,
+      "classified": 3194,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2155,
+      "observed": 2156,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2160,
+      "classified": 2161,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1741,
+      "observed": 1742,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1742,
+      "classified": 1743,
       "classification_errors": 1,
       "jobs": [
         {
