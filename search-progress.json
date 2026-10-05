@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T04:54:01.419239+00:00",
+  "updated_at": "2026-10-05T04:55:02.834485+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8502,
-    "pending": 21915,
-    "processing": 1,
+    "processed": 8515,
+    "pending": 21901,
+    "processing": 2,
     "eligible": 108,
-    "review": 5747,
+    "review": 5760,
     "rejected": 2628,
     "errors": 16,
     "ready": 31,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC9Q9Hhw8qMko_oQs3x_x1Og",
-        "name": "심리상담센터_함께하는자유",
+        "channel_id": "UCseQRmiucFJshjZQQoLbCqg",
+        "name": "세포언니TV [부부,심리상담전문가]",
+        "query": "동탄 심리상담센터"
+      },
+      {
+        "channel_id": "UC2sJznjXgCrJw5TNs4z8mGg",
+        "name": "다다르고TV",
         "query": "동탄 심리상담센터"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1386,
+  "region_observed": 1387,
   "channels_discovered": 28150,
-  "channels_observed": 8486,
+  "channels_observed": 8499,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4060,
+      "observed": 4073,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4065,
+      "classified": 4078,
       "classification_errors": 5,
       "jobs": [
         {
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1792,
+      "observed": 1793,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1792,
+      "classified": 1793,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2498,
+      "observed": 2499,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2500,
+      "classified": 2501,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2148,
+      "observed": 2151,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2150,
+      "classified": 2153,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1673,
+      "observed": 1674,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1676,
+      "classified": 1677,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1601,
+      "observed": 1603,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1602,
+      "classified": 1604,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1386,
+      "observed": 1387,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1387,
+      "classified": 1388,
       "classification_errors": 1,
       "jobs": [
         {
