@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:33:08.055347+00:00",
+  "updated_at": "2026-10-05T17:34:22.998221+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18100,
-    "pending": 12316,
-    "processing": 2,
+    "processed": 18106,
+    "pending": 12312,
+    "processing": 0,
     "eligible": 162,
-    "review": 12646,
+    "review": 12652,
     "rejected": 5239,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCFGIyNshjKynjZoMRPjZvqg",
-        "name": "지승범TV",
-        "query": "분당 행정사"
-      },
-      {
-        "channel_id": "UCEgMkQTJPFk8xvqaY4t1BvA",
-        "name": "공장중개TV",
-        "query": "분당 행정사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1902,
+  "region_observed": 1903,
   "channels_discovered": 28150,
-  "channels_observed": 18050,
+  "channels_observed": 18056,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3104,
+      "observed": 3110,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3108,
+      "classified": 3114,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2313,
+      "observed": 2314,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2318,
+      "classified": 2319,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1902,
+      "observed": 1903,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1903,
+      "classified": 1904,
       "classification_errors": 1,
       "jobs": [
         {
