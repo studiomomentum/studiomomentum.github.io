@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:26:51.428721+00:00",
+  "updated_at": "2026-10-05T07:27:54.528782+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10473,
-    "pending": 19943,
-    "processing": 2,
+    "processed": 10486,
+    "pending": 19931,
+    "processing": 1,
     "eligible": 116,
-    "review": 7176,
-    "rejected": 3157,
+    "review": 7185,
+    "rejected": 3161,
     "errors": 21,
     "ready": 23,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCC0sBZ1PjZ5j-U_7CpmWf3w",
-        "name": "홀워",
-        "query": "오산 산부인과"
-      },
-      {
-        "channel_id": "UC2Tw1EXC1KbpJXHVmychlyQ",
-        "name": "토닥",
+        "channel_id": "UCv2Ff3KTgebvUhbC6cxc9Jg",
+        "name": "先锋影音",
         "query": "오산 산부인과"
       }
     ]
@@ -36,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1473,
+  "region_observed": 1474,
   "channels_discovered": 28150,
-  "channels_observed": 10452,
+  "channels_observed": 10465,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3182,
+      "observed": 3191,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3186,
+      "classified": 3195,
       "classification_errors": 4,
       "jobs": [
         {
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2158,
+      "observed": 2159,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2159,
+      "classified": 2160,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2267,
+      "observed": 2268,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2270,
+      "classified": 2271,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2242,
+      "observed": 2243,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2244,
+      "classified": 2245,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1687,
+      "observed": 1689,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1689,
+      "classified": 1691,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2685,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1728,
+      "observed": 1729,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1729,
+      "classified": 1730,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1473,
+      "observed": 1474,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1474,
+      "classified": 1475,
       "classification_errors": 1,
       "jobs": [
         {
