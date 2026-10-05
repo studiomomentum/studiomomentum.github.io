@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:19:13.110620+00:00",
+  "updated_at": "2026-10-05T11:20:26.893777+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13383,
-    "pending": 17033,
-    "processing": 2,
+    "processed": 13399,
+    "pending": 17019,
+    "processing": 0,
     "eligible": 137,
-    "review": 9292,
-    "rejected": 3918,
+    "review": 9307,
+    "rejected": 3919,
     "errors": 33,
     "ready": 27,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC19_qHonOXVKLh4Qn4BAnig",
-        "name": "월도저",
-        "query": "평택 관세사"
-      },
-      {
-        "channel_id": "UCYuXC5Cwk9fAfKLMH0rq2gQ",
-        "name": "내귀에경제학",
-        "query": "평택 관세사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1608,
+  "region_observed": 1610,
   "channels_discovered": 28150,
-  "channels_observed": 13350,
+  "channels_observed": 13366,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4196,
+      "observed": 4212,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4203,
+      "classified": 4219,
       "classification_errors": 7,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2932,
+      "observed": 2933,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2934,
+      "classified": 2935,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2586,
+      "observed": 2588,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2590,
+      "classified": 2592,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2387,
+      "observed": 2388,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2389,
+      "classified": 2390,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1861,
+      "observed": 1862,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1864,
+      "classified": 1865,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1971,
+      "observed": 1973,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1976,
+      "classified": 1978,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1867,
+      "observed": 1868,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1868,
+      "classified": 1869,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1608,
+      "observed": 1610,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1609,
+      "classified": 1611,
       "classification_errors": 1,
       "jobs": [
         {
