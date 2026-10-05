@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:47:35.098165+00:00",
+  "updated_at": "2026-10-05T12:48:37.059654+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14499,
-    "pending": 15917,
-    "processing": 2,
+    "processed": 14513,
+    "pending": 15905,
+    "processing": 0,
     "eligible": 145,
-    "review": 10112,
-    "rejected": 4203,
+    "review": 10123,
+    "rejected": 4206,
     "errors": 36,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC77SWF1d53rGnAdd41J_cFA",
-        "name": "훈뚜루마뚜루",
-        "query": "용인 동물병원"
-      },
-      {
-        "channel_id": "UC-CcdaUoPcW9d-NFOrIJ49A",
-        "name": "튤립댁 (펜디샤넬이네)",
-        "query": "용인 동물병원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1690,
   "channels_discovered": 28150,
-  "channels_observed": 14463,
+  "channels_observed": 14477,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3886,
+      "observed": 3887,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3890,
+      "classified": 3891,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3564,
+      "observed": 3578,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3567,
+      "classified": 3581,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2691,
+      "observed": 2693,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2695,
+      "classified": 2697,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2558,
+      "observed": 2560,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2560,
+      "classified": 2562,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2078,
+      "observed": 2079,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2083,
+      "classified": 2084,
       "classification_errors": 5,
       "jobs": [
         {
