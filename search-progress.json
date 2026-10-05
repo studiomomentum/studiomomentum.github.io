@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:05:52.929443+00:00",
+  "updated_at": "2026-10-05T17:07:04.961582+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,12 +11,12 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17742,
-    "pending": 12676,
+    "processed": 17758,
+    "pending": 12660,
     "processing": 0,
     "eligible": 159,
-    "review": 12384,
-    "rejected": 5147,
+    "review": 12393,
+    "rejected": 5154,
     "errors": 49,
     "ready": 36,
     "status": "running",
@@ -25,9 +25,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1841,
+  "region_observed": 1844,
   "channels_discovered": 28150,
-  "channels_observed": 17693,
+  "channels_observed": 17709,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1795,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2809,
+      "observed": 2821,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2813,
+      "classified": 2825,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2132,
+      "observed": 2134,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2136,
+      "classified": 2138,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2270,
+      "observed": 2272,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2275,
+      "classified": 2277,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2105,
+      "observed": 2107,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2106,
+      "classified": 2108,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1841,
+      "observed": 1844,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1842,
+      "classified": 1845,
       "classification_errors": 1,
       "jobs": [
         {
