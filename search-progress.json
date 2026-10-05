@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:12:52.642037+00:00",
+  "updated_at": "2026-10-05T05:13:54.454479+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8755,
-    "pending": 21661,
-    "processing": 2,
+    "processed": 8765,
+    "pending": 21653,
+    "processing": 0,
     "eligible": 109,
-    "review": 5951,
-    "rejected": 2676,
+    "review": 5960,
+    "rejected": 2677,
     "errors": 16,
     "ready": 29,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCUBTji8WSAmD2leribotnmQ",
-        "name": "케어필라테스 carepilates",
-        "query": "동탄 필라테스"
-      },
-      {
-        "channel_id": "UCDst66mBZWct4KppcmgdLbA",
-        "name": "석유나",
-        "query": "동탄 필라테스"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1402,
+  "region_observed": 1403,
   "channels_discovered": 28150,
-  "channels_observed": 8739,
+  "channels_observed": 8749,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4309,
+      "observed": 4319,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4314,
+      "classified": 4324,
       "classification_errors": 5,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1810,
+      "observed": 1812,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1810,
+      "classified": 1812,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2054,
+      "observed": 2056,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2055,
+      "classified": 2057,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2164,
+      "observed": 2165,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2166,
+      "classified": 2167,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1568,
+      "observed": 1569,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1569,
+      "classified": 1570,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1688,
+      "observed": 1689,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1691,
+      "classified": 1692,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1622,
+      "observed": 1624,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1623,
+      "classified": 1625,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1402,
+      "observed": 1403,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1403,
+      "classified": 1404,
       "classification_errors": 1,
       "jobs": [
         {
