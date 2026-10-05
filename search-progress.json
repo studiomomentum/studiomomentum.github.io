@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T00:38:40.011747+00:00",
+  "updated_at": "2026-10-05T00:39:41.704847+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 5251,
-    "pending": 25165,
-    "processing": 2,
+    "processed": 5261,
+    "pending": 25157,
+    "processing": 0,
     "eligible": 93,
-    "review": 3538,
-    "rejected": 1607,
+    "review": 3546,
+    "rejected": 1609,
     "errors": 10,
     "ready": 43,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCb3pWzNOBMLN68AvA-0-Ebg",
-        "name": "한세대학교 공식 유튜브",
-        "query": "수원 심리상담센터"
-      },
-      {
-        "channel_id": "UCvZORQ9nOSYEOUEcHiOyZtg",
-        "name": "영영필",
-        "query": "수원 필라테스"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1139,
   "channels_discovered": 28150,
-  "channels_observed": 5241,
+  "channels_observed": 5251,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3596,
+      "observed": 3603,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3600,
+      "classified": 3607,
       "classification_errors": 4,
       "jobs": [
         {
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 1250,
+      "observed": 1252,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1250,
+      "classified": 1252,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1318,
+      "observed": 1322,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1318,
+      "classified": 1322,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2228,
+      "observed": 2230,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2230,
+      "classified": 2232,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1825,
+      "observed": 1828,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1827,
+      "classified": 1830,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1008,
+      "observed": 1009,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1009,
+      "classified": 1010,
       "classification_errors": 1,
       "jobs": [
         {
