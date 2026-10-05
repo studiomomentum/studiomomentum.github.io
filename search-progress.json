@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:34:01.712783+00:00",
+  "updated_at": "2026-10-05T13:35:03.599184+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15101,
-    "pending": 15317,
-    "processing": 0,
+    "processed": 15109,
+    "pending": 15307,
+    "processing": 2,
     "eligible": 148,
-    "review": 10539,
-    "rejected": 4372,
+    "review": 10545,
+    "rejected": 4374,
     "errors": 39,
     "ready": 31,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCRxrEBaLEzs0UKNHU5hMGfA",
+        "name": "DC DESIGN",
+        "query": "화성 세무법인"
+      },
+      {
+        "channel_id": "UCHfJ6J_KvKgaceSfK9dNKzQ",
+        "name": "이거야 사무용가구",
+        "query": "화성 세무법인"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1726,
+  "region_observed": 1727,
   "channels_discovered": 28150,
-  "channels_observed": 15062,
+  "channels_observed": 15070,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4561,
+      "observed": 4562,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4570,
+      "classified": 4571,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2837,
+      "observed": 2845,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2842,
+      "classified": 2850,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1982,
+      "observed": 1983,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1985,
+      "classified": 1986,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2123,
+      "observed": 2124,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2128,
+      "classified": 2129,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1978,
+      "observed": 1979,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1979,
+      "classified": 1980,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1726,
+      "observed": 1727,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1727,
+      "classified": 1728,
       "classification_errors": 1,
       "jobs": [
         {
