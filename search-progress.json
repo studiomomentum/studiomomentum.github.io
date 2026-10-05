@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:23:17.913455+00:00",
+  "updated_at": "2026-10-05T18:24:20.562671+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18727,
-    "pending": 11690,
-    "processing": 1,
+    "processed": 18740,
+    "pending": 11678,
+    "processing": 0,
     "eligible": 162,
-    "review": 13012,
-    "rejected": 5500,
+    "review": 13015,
+    "rejected": 5510,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCMicp4_zaN6TsVKtVJBNBrA",
-        "name": "오토드림",
-        "query": "용인 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1971,
+  "region_observed": 1972,
   "channels_discovered": 28150,
-  "channels_observed": 18677,
+  "channels_observed": 18690,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 4023,
+      "observed": 4024,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4027,
+      "classified": 4028,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 4087,
+      "observed": 4098,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4090,
+      "classified": 4101,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 5131,
+      "observed": 5132,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5143,
+      "classified": 5144,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3406,
+      "observed": 3407,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3410,
+      "classified": 3411,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2247,
+      "observed": 2250,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2251,
+      "classified": 2254,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2383,
+      "observed": 2384,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2388,
+      "classified": 2389,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1971,
+      "observed": 1972,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1972,
+      "classified": 1973,
       "classification_errors": 1,
       "jobs": [
         {
