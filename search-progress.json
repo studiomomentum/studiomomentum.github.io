@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:19:48.052956+00:00",
+  "updated_at": "2026-10-05T14:20:49.426922+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15572,
-    "pending": 14844,
+    "processed": 15584,
+    "pending": 14832,
     "processing": 2,
     "eligible": 153,
-    "review": 10859,
-    "rejected": 4517,
+    "review": 10867,
+    "rejected": 4521,
     "errors": 40,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCR5o_wWxmbHbuBqHuZVo1hQ",
-        "name": "열린한의원",
+        "channel_id": "UCko8X-NtnSmikI5wrFF-RnA",
+        "name": "청뇌와 함께하는 치매이야기",
         "query": "화성 한의원"
       },
       {
-        "channel_id": "UCUFLlI-ofE_W86KdDT-DHqg",
-        "name": "쓰미미🤗",
+        "channel_id": "UC87nVCBIBs6qGjLF6_BDAvg",
+        "name": "해버데이haveaday",
         "query": "화성 한의원"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1745,
+  "region_observed": 1746,
   "channels_discovered": 28150,
-  "channels_observed": 15532,
+  "channels_observed": 15544,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3264,
+      "observed": 3276,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3269,
+      "classified": 3281,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2009,
+      "observed": 2011,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2012,
+      "classified": 2014,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2161,
+      "observed": 2162,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2166,
+      "classified": 2167,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2007,
+      "observed": 2008,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2008,
+      "classified": 2009,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1745,
+      "observed": 1746,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1746,
+      "classified": 1747,
       "classification_errors": 1,
       "jobs": [
         {
