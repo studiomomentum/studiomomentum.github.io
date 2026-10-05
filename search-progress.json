@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:51:41.300877+00:00",
+  "updated_at": "2026-10-05T18:52:43.272810+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19104,
-    "pending": 11314,
-    "processing": 0,
-    "eligible": 164,
-    "review": 13279,
-    "rejected": 5607,
+    "processed": 19114,
+    "pending": 11302,
+    "processing": 2,
+    "eligible": 165,
+    "review": 13286,
+    "rejected": 5609,
     "errors": 51,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC9hYqlQWQehvXOY8q1Oi2EQ",
+        "name": "스타라라TV Official",
+        "query": "분당 노무법인"
+      },
+      {
+        "channel_id": "UCrC2jAVDZNWBw11vUmu5hpg",
+        "name": "이파피루스",
+        "query": "분당 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 2010,
+  "region_observed": 2011,
   "channels_discovered": 28150,
-  "channels_observed": 19053,
+  "channels_observed": 19063,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 4102,
+      "observed": 4103,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4105,
+      "classified": 4106,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3633,
+      "observed": 3643,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3637,
+      "classified": 3647,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2286,
+      "observed": 2288,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2290,
+      "classified": 2292,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 2010,
+      "observed": 2011,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2011,
+      "classified": 2012,
       "classification_errors": 1,
       "jobs": [
         {
