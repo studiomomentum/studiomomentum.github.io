@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T06:37:21.834749+00:00",
+  "updated_at": "2026-10-05T06:38:24.501672+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9833,
-    "pending": 20583,
-    "processing": 2,
+    "processed": 9843,
+    "pending": 20575,
+    "processing": 0,
     "eligible": 113,
-    "review": 6716,
-    "rejected": 2982,
+    "review": 6719,
+    "rejected": 2989,
     "errors": 19,
     "ready": 27,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCcodvLRYgWSd6nThA8eQ-Zw",
-        "name": "알알컴퍼니",
-        "query": "오산 공인중개사"
-      },
-      {
-        "channel_id": "UCWC1rNvsYe7RD8yJqGxaehA",
-        "name": "오산부동산.세교점.원동점.오산세교아파트",
-        "query": "오산 부동산중개"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1436,
   "channels_discovered": 28150,
-  "channels_observed": 9814,
+  "channels_observed": 9824,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2629,
+      "observed": 2636,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2632,
+      "classified": 2639,
       "classification_errors": 3,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2020,
+      "observed": 2022,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2021,
+      "classified": 2023,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2165,
+      "observed": 2166,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2167,
+      "classified": 2168,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2208,
+      "observed": 2209,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2210,
+      "classified": 2211,
       "classification_errors": 2,
       "jobs": [
         {
