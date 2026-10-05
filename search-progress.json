@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:49:37.412691+00:00",
+  "updated_at": "2026-10-05T18:50:38.869140+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19072,
-    "pending": 11346,
-    "processing": 0,
+    "processed": 19090,
+    "pending": 11326,
+    "processing": 2,
     "eligible": 164,
-    "review": 13255,
-    "rejected": 5599,
+    "review": 13267,
+    "rejected": 5605,
     "errors": 51,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCyBEWeJZbv5AJ-7T4e_FsnA",
+        "name": "한국 재벌가의 어둠",
+        "query": "분당 의원"
+      },
+      {
+        "channel_id": "UCnGmWmghuX8M4wQMnVELv8Q",
+        "name": "Betrayed Man Stories",
+        "query": "분당 의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 2007,
+  "region_observed": 2008,
   "channels_discovered": 28150,
-  "channels_observed": 19021,
+  "channels_observed": 19039,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 4072,
+      "observed": 4073,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4078,
+      "classified": 4079,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 4101,
+      "observed": 4102,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4104,
+      "classified": 4105,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3619,
+      "observed": 3623,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3623,
+      "classified": 3627,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2409,
+      "observed": 2411,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2414,
+      "classified": 2416,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 2007,
+      "observed": 2008,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2008,
+      "classified": 2009,
       "classification_errors": 1,
       "jobs": [
         {
