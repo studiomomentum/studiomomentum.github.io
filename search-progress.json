@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:24:08.819644+00:00",
+  "updated_at": "2026-10-05T13:25:11.856905+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14976,
-    "pending": 15441,
-    "processing": 1,
+    "processed": 14989,
+    "pending": 15429,
+    "processing": 0,
     "eligible": 148,
-    "review": 10449,
-    "rejected": 4339,
+    "review": 10460,
+    "rejected": 4341,
     "errors": 37,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCkZHnsg64szH3t8LS1sm1iQ",
-        "name": "유진스",
-        "query": "용인 필라테스"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1722,
+  "region_observed": 1723,
   "channels_discovered": 28150,
-  "channels_observed": 14939,
+  "channels_observed": 14952,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3898,
+      "observed": 3899,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3902,
+      "classified": 3903,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3963,
+      "observed": 3966,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3966,
+      "classified": 3969,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2720,
+      "observed": 2730,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2724,
+      "classified": 2734,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2670,
+      "observed": 2672,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2672,
+      "classified": 2674,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1974,
+      "observed": 1975,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1977,
+      "classified": 1978,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2118,
+      "observed": 2119,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2123,
+      "classified": 2124,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1973,
+      "observed": 1974,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1974,
+      "classified": 1975,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1722,
+      "observed": 1723,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1723,
+      "classified": 1724,
       "classification_errors": 1,
       "jobs": [
         {
