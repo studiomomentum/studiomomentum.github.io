@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:38:46.023773+00:00",
+  "updated_at": "2026-10-05T09:39:47.636771+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12112,
-    "pending": 18305,
-    "processing": 1,
+    "processed": 12123,
+    "pending": 18293,
+    "processing": 2,
     "eligible": 127,
-    "review": 8361,
+    "review": 8372,
     "rejected": 3592,
     "errors": 29,
     "ready": 24,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCfpzpSi0hDoSSgu-Uwx3Kqw",
-        "name": "부산항공과승무원학원 크루나라",
-        "query": "평택 입시학원"
+        "channel_id": "UCwtr5g1oI9k2gFioUyr629w",
+        "name": "젤리나영어 Jelina English",
+        "query": "평택 어학원"
+      },
+      {
+        "channel_id": "UCSwWLRSOCMjNDYXs9-EpzAA",
+        "name": "parkfish1",
+        "query": "평택 어학원"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1546,
+  "region_observed": 1547,
   "channels_discovered": 28150,
-  "channels_observed": 12083,
+  "channels_observed": 12094,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3033,
+      "observed": 3043,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3036,
+      "classified": 3046,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2806,
+      "observed": 2807,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2808,
+      "classified": 2809,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2456,
+      "observed": 2457,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2460,
+      "classified": 2461,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2339,
+      "observed": 2340,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2341,
+      "classified": 2342,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1897,
+      "observed": 1898,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1901,
+      "classified": 1902,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1810,
+      "observed": 1812,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1811,
+      "classified": 1813,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1546,
+      "observed": 1547,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1547,
+      "classified": 1548,
       "classification_errors": 1,
       "jobs": [
         {
