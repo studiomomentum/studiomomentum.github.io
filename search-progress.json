@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:50:32.369518+00:00",
+  "updated_at": "2026-10-05T03:51:33.822098+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7695,
-    "pending": 22721,
+    "processed": 7705,
+    "pending": 22711,
     "processing": 2,
     "eligible": 107,
-    "review": 5191,
-    "rejected": 2382,
+    "review": 5200,
+    "rejected": 2383,
     "errors": 12,
     "ready": 33,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0yB3f_3UxzoCf-X36KhQ9Q",
-        "name": "Grace, just living",
+        "channel_id": "UCqHfD8UIjzwb-zCaHOVNm8Q",
+        "name": "nkykfamily",
         "query": "동탄 산부인과"
       },
       {
-        "channel_id": "UC2qiZ3Yr2FHhJtJH5zfWSkA",
-        "name": "비치",
+        "channel_id": "UCJGFZtvKuWFUsIi3TE3wiWw",
+        "name": "에너지니 energyNee",
         "query": "동탄 산부인과"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1350,
   "channels_discovered": 28150,
-  "channels_observed": 7683,
+  "channels_observed": 7693,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3729,
+      "observed": 3730,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3733,
+      "classified": 3734,
       "classification_errors": 4,
       "jobs": [
         {
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3323,
+      "observed": 3332,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3324,
+      "classified": 3333,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1876,
+      "observed": 1877,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1877,
+      "classified": 1878,
       "classification_errors": 1,
       "jobs": [
         {
