@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:24:20.562671+00:00",
+  "updated_at": "2026-10-05T18:25:22.393141+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18740,
-    "pending": 11678,
-    "processing": 0,
-    "eligible": 162,
-    "review": 13015,
-    "rejected": 5510,
+    "processed": 18748,
+    "pending": 11668,
+    "processing": 2,
+    "eligible": 163,
+    "review": 13018,
+    "rejected": 5514,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCgh24UXuFtdK5ISnJvavkdA",
+        "name": "이윤지",
+        "query": "화성 중고차"
+      },
+      {
+        "channel_id": "UCByatfXTLdPEsJ05VF80SDw",
+        "name": "화성버스4989",
+        "query": "화성 중고차"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1972,
+  "region_observed": 1973,
   "channels_discovered": 28150,
-  "channels_observed": 18690,
+  "channels_observed": 18698,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 4024,
+      "observed": 4025,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4028,
+      "classified": 4029,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 4098,
+      "observed": 4101,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4101,
+      "classified": 4104,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 5132,
+      "observed": 5133,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5144,
+      "classified": 5145,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3407,
+      "observed": 3408,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3411,
+      "classified": 3412,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1972,
+      "observed": 1973,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1973,
+      "classified": 1974,
       "classification_errors": 1,
       "jobs": [
         {
