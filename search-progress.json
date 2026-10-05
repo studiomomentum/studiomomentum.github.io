@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:46:42.534655+00:00",
+  "updated_at": "2026-10-05T11:47:44.296629+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13746,
-    "pending": 16671,
-    "processing": 1,
+    "processed": 13753,
+    "pending": 16663,
+    "processing": 2,
     "eligible": 137,
-    "review": 9565,
-    "rejected": 4006,
+    "review": 9570,
+    "rejected": 4008,
     "errors": 35,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCegPcx8b176ex2LX3oZRKYw",
-        "name": "필라테스학교_PILATES SCHULE",
-        "query": "평택 필라테스"
+        "channel_id": "UCssrcLCSFoVSTzIV4I0PsGw",
+        "name": "부동산나침반",
+        "query": "용인 세무사"
+      },
+      {
+        "channel_id": "UCPVslOFhVZ5JHFUhlqMfMsA",
+        "name": "아하! 지식을 깨닫는 순간",
+        "query": "용인 세무법인"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1619,
+  "region_observed": 1620,
   "channels_discovered": 28150,
-  "channels_observed": 13711,
+  "channels_observed": 13718,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4540,
+      "observed": 4544,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4549,
+      "classified": 4553,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1987,
+      "observed": 1988,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1992,
+      "classified": 1993,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1878,
+      "observed": 1879,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1879,
+      "classified": 1880,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1619,
+      "observed": 1620,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1620,
+      "classified": 1621,
       "classification_errors": 1,
       "jobs": [
         {
