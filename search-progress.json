@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:09:30.103939+00:00",
+  "updated_at": "2026-10-05T17:10:31.974819+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17794,
-    "pending": 12622,
+    "processed": 17806,
+    "pending": 12610,
     "processing": 2,
-    "eligible": 160,
-    "review": 12411,
-    "rejected": 5171,
+    "eligible": 161,
+    "review": 12420,
+    "rejected": 5173,
     "errors": 49,
-    "ready": 36,
+    "ready": 37,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCjKl3Ft4R1yJP1CeuWTtxFg",
-        "name": "입벌려TV",
+        "channel_id": "UCl-jlB1Z8xW9W-scI1oEsWw",
+        "name": "분당새로이치과",
         "query": "분당 치과"
       },
       {
-        "channel_id": "UCjJZfn25VtmmLFGb7mgGe7g",
-        "name": "임종",
-        "query": "분당 법무법인"
+        "channel_id": "UCne6JvMSRh6hleukPUYXwrQ",
+        "name": "티플러스치과",
+        "query": "분당 치과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1847,
+  "region_observed": 1849,
   "channels_discovered": 28150,
-  "channels_observed": 17745,
+  "channels_observed": 17757,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2835,
+      "observed": 2847,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2839,
+      "classified": 2851,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2137,
+      "observed": 2139,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2141,
+      "classified": 2143,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1847,
+      "observed": 1849,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1848,
+      "classified": 1850,
       "classification_errors": 1,
       "jobs": [
         {
