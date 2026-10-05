@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:41:05.090790+00:00",
+  "updated_at": "2026-10-05T16:42:06.972359+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17415,
-    "pending": 13002,
-    "processing": 1,
+    "processed": 17428,
+    "pending": 12988,
+    "processing": 2,
     "eligible": 156,
-    "review": 12139,
-    "rejected": 5069,
+    "review": 12146,
+    "rejected": 5075,
     "errors": 48,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC7Uyv6MatAxpzSfce4cPknw",
-        "name": "잡슈",
-        "query": "화성 건축사사무소"
+        "channel_id": "UCIPzhGbwTnEXCVllm3x6t7g",
+        "name": "허그맘허그인 심들어TV",
+        "query": "화성 심리상담센터"
+      },
+      {
+        "channel_id": "UCgWTAPidJWPMZn_AYupCJQQ",
+        "name": "제주삼대TV",
+        "query": "화성 심리상담센터"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1819,
+  "region_observed": 1822,
   "channels_discovered": 28150,
-  "channels_observed": 17367,
+  "channels_observed": 17380,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4550,
+      "observed": 4551,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4556,
+      "classified": 4557,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4813,
+      "observed": 4819,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4825,
+      "classified": 4831,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2747,
+      "observed": 2748,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2750,
+      "classified": 2751,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2090,
+      "observed": 2093,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2091,
+      "classified": 2094,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1819,
+      "observed": 1822,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1820,
+      "classified": 1823,
       "classification_errors": 1,
       "jobs": [
         {
