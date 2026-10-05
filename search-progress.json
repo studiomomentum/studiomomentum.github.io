@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:09:53.084554+00:00",
+  "updated_at": "2026-10-05T18:11:03.099946+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18556,
-    "pending": 11860,
-    "processing": 2,
+    "processed": 18570,
+    "pending": 11848,
+    "processing": 0,
     "eligible": 162,
-    "review": 12929,
-    "rejected": 5412,
+    "review": 12938,
+    "rejected": 5417,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC3sg2s1DGpbvVhEWPmRHrzA",
-        "name": "오토엔젤용인점",
-        "query": "동탄 중고차"
-      },
-      {
-        "channel_id": "UCOugKx-K5wkMtZlaUJJdTxA",
-        "name": "착한수현중고차(010-5800-2494)",
-        "query": "동탄 중고차"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1958,
+  "region_observed": 1959,
   "channels_discovered": 28150,
-  "channels_observed": 18506,
+  "channels_observed": 18520,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4659,
+      "observed": 4673,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4665,
+      "classified": 4679,
       "classification_errors": 6,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 4044,
+      "observed": 4045,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4050,
+      "classified": 4051,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 5108,
+      "observed": 5109,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5120,
+      "classified": 5121,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3384,
+      "observed": 3386,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3388,
+      "classified": 3390,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2224,
+      "observed": 2226,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2228,
+      "classified": 2230,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2372,
+      "observed": 2373,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2377,
+      "classified": 2378,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1958,
+      "observed": 1959,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1959,
+      "classified": 1960,
       "classification_errors": 1,
       "jobs": [
         {
