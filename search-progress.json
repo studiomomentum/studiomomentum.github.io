@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:49:31.082273+00:00",
+  "updated_at": "2026-10-05T03:50:32.369518+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7675,
-    "pending": 22743,
-    "processing": 0,
+    "processed": 7695,
+    "pending": 22721,
+    "processing": 2,
     "eligible": 107,
-    "review": 5178,
-    "rejected": 2375,
+    "review": 5191,
+    "rejected": 2382,
     "errors": 12,
     "ready": 33,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC0yB3f_3UxzoCf-X36KhQ9Q",
+        "name": "Grace, just living",
+        "query": "동탄 산부인과"
+      },
+      {
+        "channel_id": "UC2qiZ3Yr2FHhJtJH5zfWSkA",
+        "name": "비치",
+        "query": "동탄 산부인과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1350,
   "channels_discovered": 28150,
-  "channels_observed": 7663,
+  "channels_observed": 7683,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3303,
+      "observed": 3323,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3304,
+      "classified": 3324,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1412,
+      "observed": 1414,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1413,
+      "classified": 1415,
       "classification_errors": 1,
       "jobs": [
         {
