@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T00:53:49.487375+00:00",
+  "updated_at": "2026-10-05T00:54:50.802108+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 5455,
-    "pending": 24963,
-    "processing": 0,
+    "processed": 5467,
+    "pending": 24949,
+    "processing": 2,
     "eligible": 93,
-    "review": 3661,
-    "rejected": 1688,
+    "review": 3669,
+    "rejected": 1692,
     "errors": 10,
     "ready": 43,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCsiUdjqsUbB_Vk31H7FfZZg",
+        "name": "안상수의 법인영업 마스터 클래스",
+        "query": "동탄 세무법인"
+      },
+      {
+        "channel_id": "UCWGCDx3momdRJyfpwXkPHBw",
+        "name": "아이엠지영 HI",
+        "query": "동탄 세무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1166,
+  "region_observed": 1167,
   "channels_discovered": 28150,
-  "channels_observed": 5445,
+  "channels_observed": 5457,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 1338,
+      "observed": 1349,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1338,
+      "classified": 1349,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1295,
+      "observed": 1300,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1295,
+      "classified": 1300,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1359,
+      "observed": 1361,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1359,
+      "classified": 1361,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1455,
+      "observed": 1457,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1456,
+      "classified": 1458,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1058,
+      "observed": 1060,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1059,
+      "classified": 1061,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1337,
+      "observed": 1338,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1338,
+      "classified": 1339,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1337,
+      "observed": 1338,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1338,
+      "classified": 1339,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1166,
+      "observed": 1167,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1167,
+      "classified": 1168,
       "classification_errors": 1,
       "jobs": [
         {
