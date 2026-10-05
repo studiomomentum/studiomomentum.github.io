@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:21:36.531132+00:00",
+  "updated_at": "2026-10-05T07:22:39.481716+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10404,
-    "pending": 20013,
-    "processing": 1,
+    "processed": 10417,
+    "pending": 19999,
+    "processing": 2,
     "eligible": 116,
-    "review": 7117,
+    "review": 7130,
     "rejected": 3147,
     "errors": 21,
     "ready": 23,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCkWwBb07mBBbQymeVW44sLw",
-        "name": "룰랄루 다락방",
+        "channel_id": "UCnIW9geUGafAAKFEz0TuR1A",
+        "name": "CHANNEL SODA",
+        "query": "오산 산부인과"
+      },
+      {
+        "channel_id": "UC51oazmpBaVh55rV_avILgg",
+        "name": "소방학사모",
         "query": "오산 산부인과"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1471,
   "channels_discovered": 28150,
-  "channels_observed": 10383,
+  "channels_observed": 10396,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3124,
+      "observed": 3137,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3128,
+      "classified": 3141,
       "classification_errors": 4,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2149,
+      "observed": 2151,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2150,
+      "classified": 2152,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2654,
+      "observed": 2655,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2656,
+      "classified": 2657,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2255,
+      "observed": 2258,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2258,
+      "classified": 2261,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2240,
+      "observed": 2241,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2242,
+      "classified": 2243,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1680,
+      "observed": 1682,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1682,
+      "classified": 1684,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1795,
+      "observed": 1796,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1798,
+      "classified": 1799,
       "classification_errors": 3,
       "jobs": [
         {
