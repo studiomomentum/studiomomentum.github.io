@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:38:00.110896+00:00",
+  "updated_at": "2026-10-05T17:39:03.185066+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18158,
-    "pending": 12258,
-    "processing": 2,
+    "processed": 18170,
+    "pending": 12248,
+    "processing": 0,
     "eligible": 162,
-    "review": 12694,
-    "rejected": 5249,
+    "review": 12702,
+    "rejected": 5253,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCt20usEzI4JDTNndUM9JkdQ",
-        "name": "서울대학교병원 피부과 명예교수 정진호",
-        "query": "분당 피부과"
-      },
-      {
-        "channel_id": "UCljKUtafMPx0T0E4MbMtFCA",
-        "name": "우아한 맞춤 이주영",
-        "query": "분당 피부과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1922,
+  "region_observed": 1923,
   "channels_discovered": 28150,
-  "channels_observed": 18108,
+  "channels_observed": 18120,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3160,
+      "observed": 3172,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3164,
+      "classified": 3176,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2175,
+      "observed": 2176,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2179,
+      "classified": 2180,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1922,
+      "observed": 1923,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1923,
+      "classified": 1924,
       "classification_errors": 1,
       "jobs": [
         {
