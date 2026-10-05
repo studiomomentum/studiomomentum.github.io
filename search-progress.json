@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T15:34:29.905005+00:00",
+  "updated_at": "2026-10-05T15:35:32.381075+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 16542,
-    "pending": 13874,
+    "processed": 16552,
+    "pending": 13864,
     "processing": 2,
     "eligible": 155,
-    "review": 11530,
-    "rejected": 4809,
+    "review": 11538,
+    "rejected": 4811,
     "errors": 45,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCRUKVyPwjdWUDRuW-NSKO_g",
-        "name": "호프쌤TVᆞ",
+        "channel_id": "UC6xYGgH_YecAWhF-A2fho0w",
+        "name": "히어링오케이 hearingok",
         "query": "화성 이비인후과"
       },
       {
-        "channel_id": "UC9TIiPugUQzzRaZ-HJ346FQ",
-        "name": "닥터 김성근",
+        "channel_id": "UCo47AQKXvHDsXBbNJkTFJIQ",
+        "name": "이실장의 똑똑한 보청기",
         "query": "화성 이비인후과"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1784,
+  "region_observed": 1785,
   "channels_discovered": 28150,
-  "channels_observed": 16497,
+  "channels_observed": 16507,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3909,
+      "observed": 3910,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3913,
+      "classified": 3914,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4145,
+      "observed": 4155,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4154,
+      "classified": 4164,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2059,
+      "observed": 2060,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2063,
+      "classified": 2064,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2214,
+      "observed": 2217,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2219,
+      "classified": 2222,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2060,
+      "observed": 2061,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2061,
+      "classified": 2062,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1784,
+      "observed": 1785,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1785,
+      "classified": 1786,
       "classification_errors": 1,
       "jobs": [
         {
