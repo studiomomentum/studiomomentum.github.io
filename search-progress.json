@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:26:15.179926+00:00",
+  "updated_at": "2026-10-05T16:27:22.887579+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17213,
-    "pending": 13204,
-    "processing": 1,
+    "processed": 17228,
+    "pending": 13190,
+    "processing": 0,
     "eligible": 156,
-    "review": 12009,
-    "rejected": 4998,
+    "review": 12018,
+    "rejected": 5004,
     "errors": 47,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCcz0MYESkxdcKEIR8YJTleg",
-        "name": "박소현의 현대점성학 강좌 ",
-        "query": "화성 감정평가사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1811,
   "channels_discovered": 28150,
-  "channels_observed": 17166,
+  "channels_observed": 17181,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4738,
+      "observed": 4747,
       "observation_errors": 11,
       "classified_at": null,
-      "classified": 4749,
+      "classified": 4758,
       "classification_errors": 11,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2095,
+      "observed": 2096,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2099,
+      "classified": 2100,
       "classification_errors": 4,
       "jobs": [
         {
