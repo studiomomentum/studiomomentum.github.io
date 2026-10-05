@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:45:17.635457+00:00",
+  "updated_at": "2026-10-05T16:46:19.466120+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17469,
-    "pending": 12948,
-    "processing": 1,
+    "processed": 17482,
+    "pending": 12934,
+    "processing": 2,
     "eligible": 156,
-    "review": 12179,
-    "rejected": 5083,
+    "review": 12189,
+    "rejected": 5086,
     "errors": 48,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCLmEW1tvCPCh_yPtZOsah5A",
-        "name": "화성당",
+        "channel_id": "UCkEJwGspL211ZtS8D8uM0xw",
+        "name": "무드앤소 moodandso",
+        "query": "화성 심리상담센터"
+      },
+      {
+        "channel_id": "UCIEGjMsHMSAhJ3fhq1sTBdw",
+        "name": "국제구호개발NGO월드휴먼브리지",
         "query": "화성 심리상담센터"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1822,
+  "region_observed": 1823,
   "channels_discovered": 28150,
-  "channels_observed": 17421,
+  "channels_observed": 17434,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4859,
+      "observed": 4872,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4871,
+      "classified": 4884,
       "classification_errors": 12,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2111,
+      "observed": 2112,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2115,
+      "classified": 2116,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2093,
+      "observed": 2094,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2094,
+      "classified": 2095,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1822,
+      "observed": 1823,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1823,
+      "classified": 1824,
       "classification_errors": 1,
       "jobs": [
         {
