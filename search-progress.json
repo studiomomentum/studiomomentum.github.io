@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:45:40.718486+00:00",
+  "updated_at": "2026-10-05T11:46:42.534655+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13727,
-    "pending": 16691,
-    "processing": 0,
+    "processed": 13746,
+    "pending": 16671,
+    "processing": 1,
     "eligible": 137,
-    "review": 9548,
-    "rejected": 4004,
+    "review": 9565,
+    "rejected": 4006,
     "errors": 35,
     "ready": 27,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCegPcx8b176ex2LX3oZRKYw",
+        "name": "필라테스학교_PILATES SCHULE",
+        "query": "평택 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1619,
   "channels_discovered": 28150,
-  "channels_observed": 13692,
+  "channels_observed": 13711,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4523,
+      "observed": 4540,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4532,
+      "classified": 4549,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2980,
+      "observed": 2983,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2982,
+      "classified": 2985,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2614,
+      "observed": 2615,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2618,
+      "classified": 2619,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1879,
+      "observed": 1880,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1882,
+      "classified": 1883,
       "classification_errors": 3,
       "jobs": [
         {
