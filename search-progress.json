@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T15:09:21.771424+00:00",
+  "updated_at": "2026-10-05T15:10:23.912586+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 16212,
-    "pending": 14204,
+    "processed": 16224,
+    "pending": 14192,
     "processing": 2,
     "eligible": 155,
-    "review": 11307,
-    "rejected": 4705,
+    "review": 11316,
+    "rejected": 4708,
     "errors": 42,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCoFCLS9LbZgksgrH-bIgJ-w",
-        "name": "앤드성형외과의원 [ 눈서코TV ]",
+        "channel_id": "UCxg-kM2MBGShNfO9lNjlhMg",
+        "name": "한국 경제 데일리",
         "query": "화성 성형외과"
       },
       {
-        "channel_id": "UCEk4DvuMqaqoT33MMDmL4Lw",
-        "name": "HERSHE Plastic Surgery",
+        "channel_id": "UCEZpPm--lp8ps8hISLwtqTQ",
+        "name": "이용균",
         "query": "화성 성형외과"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1771,
   "channels_discovered": 28150,
-  "channels_observed": 16170,
+  "channels_observed": 16182,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3846,
+      "observed": 3857,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3852,
+      "classified": 3863,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2037,
+      "observed": 2038,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2040,
+      "classified": 2041,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2188,
+      "observed": 2189,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2193,
+      "classified": 2194,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2041,
+      "observed": 2042,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2042,
+      "classified": 2043,
       "classification_errors": 1,
       "jobs": [
         {
