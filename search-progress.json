@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T04:12:16.449637+00:00",
+  "updated_at": "2026-10-05T04:13:18.132485+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7931,
-    "pending": 22487,
-    "processing": 0,
-    "eligible": 107,
-    "review": 5350,
-    "rejected": 2459,
+    "processed": 7949,
+    "pending": 22467,
+    "processing": 2,
+    "eligible": 108,
+    "review": 5365,
+    "rejected": 2461,
     "errors": 12,
     "ready": 30,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCn9wQdSLLpQ6phGjny-VJzQ",
+        "name": "김유치 Yuchi Kim",
+        "query": "동탄 의원"
+      },
+      {
+        "channel_id": "UCbO07TBxVKxNaHKVNK2ZwyA",
+        "name": "라이프티비",
+        "query": "동탄 동물병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1357,
+  "region_observed": 1358,
   "channels_discovered": 28150,
-  "channels_observed": 7919,
+  "channels_observed": 7937,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3540,
+      "observed": 3558,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3541,
+      "classified": 3559,
       "classification_errors": 1,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1731,
+      "observed": 1733,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1731,
+      "classified": 1733,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1708,
+      "observed": 1710,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1708,
+      "classified": 1710,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2453,
+      "observed": 2455,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2455,
+      "classified": 2457,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1900,
+      "observed": 1903,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1901,
+      "classified": 1904,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2097,
+      "observed": 2098,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2099,
+      "classified": 2100,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1435,
+      "observed": 1437,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1436,
+      "classified": 1438,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1630,
+      "observed": 1633,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1632,
+      "classified": 1635,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1576,
+      "observed": 1578,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1577,
+      "classified": 1579,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1357,
+      "observed": 1358,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1358,
+      "classified": 1359,
       "classification_errors": 1,
       "jobs": [
         {
