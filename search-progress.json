@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T01:55:33.715415+00:00",
+  "updated_at": "2026-10-05T01:56:35.271691+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 6223,
-    "pending": 24193,
+    "processed": 6235,
+    "pending": 24181,
     "processing": 2,
     "eligible": 97,
-    "review": 4169,
-    "rejected": 1943,
+    "review": 4176,
+    "rejected": 1948,
     "errors": 11,
     "ready": 37,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCP7Xqe_IT-qsrl6jgJ-CvWQ",
-        "name": "먹부장TV",
-        "query": "동탄 치과"
+        "channel_id": "UCfTFezucEztH58rnKhiADtQ",
+        "name": "다모아분양",
+        "query": "동탄 치과의원"
       },
       {
-        "channel_id": "UCp_jl9zbA-ZVRNw8Qh51Rlg",
-        "name": "뎐 Dyun",
-        "query": "동탄 치과의원"
+        "channel_id": "UCc8AzjIg-A-0IzwiDNFh_ZQ",
+        "name": "치덕후",
+        "query": "동탄 치과"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1239,
   "channels_discovered": 28150,
-  "channels_observed": 6212,
+  "channels_observed": 6224,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 1973,
+      "observed": 1985,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1973,
+      "classified": 1985,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1445,
+      "observed": 1447,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1445,
+      "classified": 1447,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1498,
+      "observed": 1501,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1498,
+      "classified": 1501,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2346,
+      "observed": 2347,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2348,
+      "classified": 2349,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1620,
+      "observed": 1622,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1621,
+      "classified": 1623,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1214,
+      "observed": 1216,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1215,
+      "classified": 1217,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1447,
+      "observed": 1449,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1448,
+      "classified": 1450,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1411,
+      "observed": 1412,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1412,
+      "classified": 1413,
       "classification_errors": 1,
       "jobs": [
         {
