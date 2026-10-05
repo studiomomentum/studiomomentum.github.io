@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:50:36.266042+00:00",
+  "updated_at": "2026-10-05T07:51:39.226749+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10797,
-    "pending": 19621,
-    "processing": 0,
+    "processed": 10806,
+    "pending": 19611,
+    "processing": 1,
     "eligible": 116,
-    "review": 7394,
-    "rejected": 3261,
+    "review": 7401,
+    "rejected": 3263,
     "errors": 23,
     "ready": 23,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCQn-ejL6cZ7WJxOsvoCnDFQ",
+        "name": "행복지킴이권혁준",
+        "query": "오산 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1486,
   "channels_discovered": 28150,
-  "channels_observed": 10774,
+  "channels_observed": 10783,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3456,
+      "observed": 3465,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3461,
+      "classified": 3470,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1698,
+      "observed": 1699,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1700,
+      "classified": 1701,
       "classification_errors": 2,
       "jobs": [
         {
