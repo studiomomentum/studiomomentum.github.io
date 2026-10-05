@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:55:39.163098+00:00",
+  "updated_at": "2026-10-05T09:56:41.764151+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12326,
-    "pending": 18091,
+    "processed": 12338,
+    "pending": 18079,
     "processing": 1,
     "eligible": 129,
-    "review": 8535,
-    "rejected": 3629,
+    "review": 8544,
+    "rejected": 3632,
     "errors": 30,
     "ready": 25,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCvphLtaDbv2c1fR5WQjel4w",
-        "name": "문은진부동산TV",
+        "channel_id": "UCioqc8EHhiZl_upvvoNLV9Q",
+        "name": "호박부동산TV",
         "query": "평택 공인중개사"
       }
     ]
@@ -31,9 +31,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1552,
+  "region_observed": 1553,
   "channels_discovered": 28150,
-  "channels_observed": 12296,
+  "channels_observed": 12308,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3224,
+      "observed": 3235,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3228,
+      "classified": 3239,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2973,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1552,
+      "observed": 1553,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1553,
+      "classified": 1554,
       "classification_errors": 1,
       "jobs": [
         {
