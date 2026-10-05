@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:59:45.773069+00:00",
+  "updated_at": "2026-10-05T11:00:48.427712+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13145,
-    "pending": 17273,
-    "processing": 0,
+    "processed": 13156,
+    "pending": 17261,
+    "processing": 1,
     "eligible": 134,
-    "review": 9115,
-    "rejected": 3861,
+    "review": 9124,
+    "rejected": 3863,
     "errors": 32,
     "ready": 26,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCOWnNOXd4UAzHbMeqfT6DEg",
+        "name": "방송미디어통신위원회",
+        "query": "평택 노무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1596,
+  "region_observed": 1597,
   "channels_discovered": 28150,
-  "channels_observed": 13113,
+  "channels_observed": 13124,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3965,
+      "observed": 3976,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3971,
+      "classified": 3982,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2377,
+      "observed": 2378,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2379,
+      "classified": 2380,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1850,
+      "observed": 1851,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1853,
+      "classified": 1854,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1596,
+      "observed": 1597,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1597,
+      "classified": 1598,
       "classification_errors": 1,
       "jobs": [
         {
