@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:30:50.749109+00:00",
+  "updated_at": "2026-10-05T11:31:53.313763+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13535,
-    "pending": 16881,
+    "processed": 13549,
+    "pending": 16867,
     "processing": 2,
     "eligible": 137,
-    "review": 9408,
-    "rejected": 3953,
+    "review": 9418,
+    "rejected": 3957,
     "errors": 34,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCUPQw2gCUHTpbjTpSTCsvpg",
-        "name": "Mr.",
-        "query": "평택 손해사정사"
+        "channel_id": "UCP9rCpKks_CApOo5qM7GFIQ",
+        "name": "김정영의 주택이야기",
+        "query": "평택 건축사사무소"
       },
       {
-        "channel_id": "UCFX1r-8Ce3zhN52uLwdW9KA",
-        "name": "일반 보험의 정석",
-        "query": "평택 손해사정사"
+        "channel_id": "UCSVQ3c2Gd6uWO9Bp2jzYirw",
+        "name": "한국목조기술학원",
+        "query": "평택 건축사사무소"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1614,
   "channels_discovered": 28150,
-  "channels_observed": 13501,
+  "channels_observed": 13515,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4343,
+      "observed": 4357,
       "observation_errors": 8,
       "classified_at": null,
-      "classified": 4351,
+      "classified": 4365,
       "classification_errors": 8,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2395,
+      "observed": 2398,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2397,
+      "classified": 2400,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1868,
+      "observed": 1869,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1871,
+      "classified": 1872,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1981,
+      "observed": 1983,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1986,
+      "classified": 1988,
       "classification_errors": 5,
       "jobs": [
         {
