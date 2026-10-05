@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T03:41:05.069835+00:00",
+  "updated_at": "2026-10-05T03:42:06.544366+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 7563,
-    "pending": 22855,
-    "processing": 0,
+    "processed": 7582,
+    "pending": 22835,
+    "processing": 1,
     "eligible": 107,
-    "review": 5103,
-    "rejected": 2338,
+    "review": 5117,
+    "rejected": 2343,
     "errors": 12,
     "ready": 33,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCIRVUrwZPuVL05S9uBOpx8g",
+        "name": "명지병원-MYONGJI HOSPITAL",
+        "query": "동탄 산부인과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1343,
+  "region_observed": 1344,
   "channels_discovered": 28150,
-  "channels_observed": 7551,
+  "channels_observed": 7570,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +336,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 3195,
+      "observed": 3213,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 3196,
+      "classified": 3214,
       "classification_errors": 1,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1696,
+      "observed": 1699,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1696,
+      "classified": 1699,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1681,
+      "observed": 1682,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1681,
+      "classified": 1682,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1863,
+      "observed": 1867,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1864,
+      "classified": 1868,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2074,
+      "observed": 2075,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2076,
+      "classified": 2077,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1391,
+      "observed": 1394,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1392,
+      "classified": 1395,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1602,
+      "observed": 1604,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1604,
+      "classified": 1606,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1343,
+      "observed": 1344,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1344,
+      "classified": 1345,
       "classification_errors": 1,
       "jobs": [
         {
