@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T16:44:15.664826+00:00",
+  "updated_at": "2026-10-05T16:45:17.635457+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17450,
-    "pending": 12968,
-    "processing": 0,
+    "processed": 17469,
+    "pending": 12948,
+    "processing": 1,
     "eligible": 156,
-    "review": 12164,
-    "rejected": 5079,
+    "review": 12179,
+    "rejected": 5083,
     "errors": 48,
     "ready": 34,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCLmEW1tvCPCh_yPtZOsah5A",
+        "name": "화성당",
+        "query": "화성 심리상담센터"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1822,
   "channels_discovered": 28150,
-  "channels_observed": 17402,
+  "channels_observed": 17421,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 4841,
+      "observed": 4859,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 4853,
+      "classified": 4871,
       "classification_errors": 12,
       "jobs": [
         {
