@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T11:31:53.313763+00:00",
+  "updated_at": "2026-10-05T11:33:05.041575+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13549,
-    "pending": 16867,
-    "processing": 2,
+    "processed": 13565,
+    "pending": 16853,
+    "processing": 0,
     "eligible": 137,
-    "review": 9418,
-    "rejected": 3957,
-    "errors": 34,
+    "review": 9431,
+    "rejected": 3959,
+    "errors": 35,
     "ready": 27,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCP9rCpKks_CApOo5qM7GFIQ",
-        "name": "김정영의 주택이야기",
-        "query": "평택 건축사사무소"
-      },
-      {
-        "channel_id": "UCSVQ3c2Gd6uWO9Bp2jzYirw",
-        "name": "한국목조기술학원",
-        "query": "평택 건축사사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1614,
   "channels_discovered": 28150,
-  "channels_observed": 13515,
+  "channels_observed": 13530,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,11 +916,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4357,
-      "observation_errors": 8,
+      "observed": 4371,
+      "observation_errors": 9,
       "classified_at": null,
-      "classified": 4365,
-      "classification_errors": 8,
+      "classified": 4380,
+      "classification_errors": 9,
       "jobs": [
         {
           "name": "세무사",
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2952,
+      "observed": 2953,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2954,
+      "classified": 2955,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2605,
+      "observed": 2606,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2609,
+      "classified": 2610,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2398,
+      "observed": 2399,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2400,
+      "classified": 2401,
       "classification_errors": 2,
       "jobs": [
         {
