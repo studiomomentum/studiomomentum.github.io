@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:34:02.629990+00:00",
+  "updated_at": "2026-10-05T18:35:05.336449+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18856,
-    "pending": 11562,
-    "processing": 0,
+    "processed": 18877,
+    "pending": 11540,
+    "processing": 1,
     "eligible": 163,
-    "review": 13098,
-    "rejected": 5541,
+    "review": 13116,
+    "rejected": 5544,
     "errors": 51,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCbwM_yV5SuvFbCD0844RiCg",
+        "name": "예린의 이야기",
+        "query": "분당 산부인과"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1990,
+  "region_observed": 1992,
   "channels_discovered": 28150,
-  "channels_observed": 18805,
+  "channels_observed": 18826,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 4026,
+      "observed": 4027,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4030,
+      "classified": 4031,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3436,
+      "observed": 3454,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3440,
+      "classified": 3458,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2396,
+      "observed": 2399,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2401,
+      "classified": 2404,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2212,
+      "observed": 2215,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2213,
+      "classified": 2216,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1990,
+      "observed": 1992,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1991,
+      "classified": 1993,
       "classification_errors": 1,
       "jobs": [
         {
