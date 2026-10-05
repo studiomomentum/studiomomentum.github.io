@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:07:49.772682+00:00",
+  "updated_at": "2026-10-05T18:08:51.298614+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18535,
-    "pending": 11882,
-    "processing": 1,
+    "processed": 18544,
+    "pending": 11872,
+    "processing": 2,
     "eligible": 162,
-    "review": 12914,
-    "rejected": 5406,
+    "review": 12920,
+    "rejected": 5409,
     "errors": 50,
     "ready": 39,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCVioOGT1kjfc81C8PgCsk8Q",
-        "name": "인생여행음악",
+        "channel_id": "UC0LwkKiVrfOCH0051gt94vw",
+        "name": "세자녀아빠",
+        "query": "동탄 중고차"
+      },
+      {
+        "channel_id": "UCd7mZWD5doZ9uGe1k9WexuQ",
+        "name": "수입차정비 길라잡이 ",
         "query": "동탄 중고차"
       }
     ]
@@ -33,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1958,
   "channels_discovered": 28150,
-  "channels_observed": 18485,
+  "channels_observed": 18494,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4639,
+      "observed": 4648,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4645,
+      "classified": 4654,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 5107,
+      "observed": 5108,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5119,
+      "classified": 5120,
       "classification_errors": 12,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2223,
+      "observed": 2224,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2227,
+      "classified": 2228,
       "classification_errors": 4,
       "jobs": [
         {
