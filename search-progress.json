@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T02:26:42.202280+00:00",
+  "updated_at": "2026-10-05T02:27:51.265736+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 6605,
-    "pending": 23811,
-    "processing": 2,
+    "processed": 6619,
+    "pending": 23799,
+    "processing": 0,
     "eligible": 99,
-    "review": 4443,
+    "review": 4457,
     "rejected": 2049,
     "errors": 11,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCT12JR91EvQyoCuECP-Rikw",
-        "name": "동탄 칼수학학원",
-        "query": "동탄 입시학원"
-      },
-      {
-        "channel_id": "UCBg4EDR5ftvWL0d6g7pSRVA",
-        "name": "spinel",
-        "query": "동탄 입시학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1261,
   "channels_discovered": 28150,
-  "channels_observed": 6594,
+  "channels_observed": 6608,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2342,
+      "observed": 2354,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2342,
+      "classified": 2354,
       "classification_errors": 0,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1521,
+      "observed": 1526,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1521,
+      "classified": 1526,
       "classification_errors": 0,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1552,
+      "observed": 1556,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1552,
+      "classified": 1556,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2391,
+      "observed": 2393,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2393,
+      "classified": 2395,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1695,
+      "observed": 1699,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1696,
+      "classified": 1700,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1990,
+      "observed": 1991,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1992,
+      "classified": 1993,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1455,
+      "observed": 1456,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1456,
+      "classified": 1457,
       "classification_errors": 1,
       "jobs": [
         {
