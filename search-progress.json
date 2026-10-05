@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:53:35.862631+00:00",
+  "updated_at": "2026-10-05T17:54:38.319843+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18349,
-    "pending": 12068,
-    "processing": 1,
+    "processed": 18362,
+    "pending": 12054,
+    "processing": 2,
     "eligible": 162,
-    "review": 12840,
-    "rejected": 5294,
+    "review": 12848,
+    "rejected": 5299,
     "errors": 50,
     "ready": 39,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCG9PjlKzkqrBK4C4cb-or-A",
-        "name": "한분한본 최경열 원장",
-        "query": "분당 재활의학과"
+        "channel_id": "UCYwAjXWx-pHzejdJ1qlZmhw",
+        "name": "helloshine헬로샤인",
+        "query": "분당 이비인후과"
+      },
+      {
+        "channel_id": "UC48Z9s-tpM5ux2HCELzGbsA",
+        "name": "지성인 🙂",
+        "query": "분당 이비인후과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1941,
+  "region_observed": 1942,
   "channels_discovered": 28150,
-  "channels_observed": 18299,
+  "channels_observed": 18312,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4555,
+      "observed": 4556,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4561,
+      "classified": 4562,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1801,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3341,
+      "observed": 3352,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3345,
+      "classified": 3356,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2187,
+      "observed": 2188,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2191,
+      "classified": 2192,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2352,
+      "observed": 2353,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2357,
+      "classified": 2358,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2178,
+      "observed": 2179,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2179,
+      "classified": 2180,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1941,
+      "observed": 1942,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1942,
+      "classified": 1943,
       "classification_errors": 1,
       "jobs": [
         {
