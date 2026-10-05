@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:26:06.723837+00:00",
+  "updated_at": "2026-10-05T17:27:08.431879+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18006,
-    "pending": 12412,
-    "processing": 0,
+    "processed": 18018,
+    "pending": 12398,
+    "processing": 2,
     "eligible": 162,
-    "review": 12578,
-    "rejected": 5213,
+    "review": 12587,
+    "rejected": 5216,
     "errors": 50,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCjRKYmHPYvdCVjCZ9BF5N_w",
+        "name": "문팀장의목조주택이야기",
+        "query": "분당 어학원"
+      },
+      {
+        "channel_id": "UCCjB2RnB7qVoQciU76Rcw8Q",
+        "name": "Sue",
+        "query": "분당 어학원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1878,
+  "region_observed": 1879,
   "channels_discovered": 28150,
-  "channels_observed": 17956,
+  "channels_observed": 17968,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3024,
+      "observed": 3036,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3028,
+      "classified": 3040,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2303,
+      "observed": 2304,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2308,
+      "classified": 2309,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1878,
+      "observed": 1879,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1879,
+      "classified": 1880,
       "classification_errors": 1,
       "jobs": [
         {
