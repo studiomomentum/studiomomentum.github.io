@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:05:26.296201+00:00",
+  "updated_at": "2026-10-05T05:06:28.035500+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 8654,
-    "pending": 21763,
-    "processing": 1,
+    "processed": 8667,
+    "pending": 21751,
+    "processing": 0,
     "eligible": 108,
-    "review": 5873,
-    "rejected": 2654,
+    "review": 5883,
+    "rejected": 2657,
     "errors": 16,
     "ready": 31,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCk1Yy37mDdkhNZvns5VCl4A",
-        "name": "BOM Pilates 봄필라테스 by PAI인스티튜트",
-        "query": "동탄 필라테스"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1398,
   "channels_discovered": 28150,
-  "channels_observed": 8638,
+  "channels_observed": 8651,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 4210,
+      "observed": 4223,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4215,
+      "classified": 4228,
       "classification_errors": 5,
       "jobs": [
         {
@@ -629,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1806,
+      "observed": 1808,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1806,
+      "classified": 1808,
       "classification_errors": 0,
       "jobs": [
         {
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1791,
+      "observed": 1792,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1791,
+      "classified": 1792,
       "classification_errors": 0,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1552,
+      "observed": 1556,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1553,
+      "classified": 1557,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1683,
+      "observed": 1686,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1686,
+      "classified": 1689,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1613,
+      "observed": 1614,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1614,
+      "classified": 1615,
       "classification_errors": 1,
       "jobs": [
         {
