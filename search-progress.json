@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T05:51:34.827898+00:00",
+  "updated_at": "2026-10-05T05:52:37.739008+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9263,
-    "pending": 21155,
-    "processing": 0,
+    "processed": 9282,
+    "pending": 21135,
+    "processing": 1,
     "eligible": 109,
-    "review": 6305,
-    "rejected": 2828,
+    "review": 6311,
+    "rejected": 2841,
     "errors": 18,
     "ready": 29,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCkW3qWVwgkI7mL0eFPVOlPA",
+        "name": "한국맛집K",
+        "query": "오산 변호사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1417,
   "channels_discovered": 28150,
-  "channels_observed": 9245,
+  "channels_observed": 9264,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3745,
+      "observed": 3746,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3749,
+      "classified": 3750,
       "classification_errors": 4,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2163,
+      "observed": 2171,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2165,
+      "classified": 2173,
       "classification_errors": 2,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1922,
+      "observed": 1924,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1923,
+      "classified": 1925,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2544,
+      "observed": 2547,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2546,
+      "classified": 2549,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2104,
+      "observed": 2106,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2105,
+      "classified": 2107,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2188,
+      "observed": 2189,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2190,
+      "classified": 2191,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1613,
+      "observed": 1614,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1615,
+      "classified": 1616,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1709,
+      "observed": 1714,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1712,
+      "classified": 1717,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1644,
+      "observed": 1645,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1645,
+      "classified": 1646,
       "classification_errors": 1,
       "jobs": [
         {
