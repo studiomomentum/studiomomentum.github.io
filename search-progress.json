@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:40:23.522703+00:00",
+  "updated_at": "2026-10-05T07:41:32.842248+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10655,
-    "pending": 19761,
-    "processing": 2,
+    "processed": 10669,
+    "pending": 19749,
+    "processing": 0,
     "eligible": 116,
-    "review": 7308,
-    "rejected": 3206,
+    "review": 7311,
+    "rejected": 3217,
     "errors": 22,
     "ready": 23,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCcA7D47UCqsGr2paczJU6jw",
-        "name": "航海劇場ShortTV",
-        "query": "오산 동물병원"
-      },
-      {
-        "channel_id": "UCkVOUHbIAeZQ93pHQBKFAeg",
-        "name": "천안시의회",
-        "query": "오산 의원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1482,
   "channels_discovered": 28150,
-  "channels_observed": 10633,
+  "channels_observed": 10647,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3353,
+      "observed": 3363,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3358,
+      "classified": 3368,
       "classification_errors": 5,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2203,
+      "observed": 2204,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2204,
+      "classified": 2205,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2663,
+      "observed": 2665,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2665,
+      "classified": 2667,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2282,
+      "observed": 2284,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2285,
+      "classified": 2287,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1803,
+      "observed": 1807,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1806,
+      "classified": 1810,
       "classification_errors": 3,
       "jobs": [
         {
