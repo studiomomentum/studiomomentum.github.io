@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T02:33:28.156048+00:00",
+  "updated_at": "2026-10-05T02:34:29.667314+00:00",
   "run_id": "37241857491",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 6693,
-    "pending": 23725,
-    "processing": 0,
+    "processed": 6705,
+    "pending": 23711,
+    "processing": 2,
     "eligible": 100,
-    "review": 4502,
-    "rejected": 2077,
+    "review": 4513,
+    "rejected": 2078,
     "errors": 11,
     "ready": 34,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCxS8DquiCTf0rQDNhDJXH9A",
+        "name": "공인중개사 무료인강 인강드림",
+        "query": "동탄 공인중개사"
+      },
+      {
+        "channel_id": "UCpZXZhuor2iZXDv1LRgIR6Q",
+        "name": "기흥힉스 공인중개사 / 광개토",
+        "query": "동탄 공인중개사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1263,
   "channels_discovered": 28150,
-  "channels_observed": 6682,
+  "channels_observed": 6694,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -330,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 2419,
+      "observed": 2431,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 2419,
+      "classified": 2431,
       "classification_errors": 0,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 1531,
+      "observed": 1533,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1531,
+      "classified": 1533,
       "classification_errors": 0,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 1566,
+      "observed": 1569,
       "observation_errors": 0,
       "classified_at": null,
-      "classified": 1566,
+      "classified": 1569,
       "classification_errors": 0,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2398,
+      "observed": 2399,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2400,
+      "classified": 2401,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 1710,
+      "observed": 1712,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1711,
+      "classified": 1713,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 1994,
+      "observed": 1995,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1996,
+      "classified": 1997,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1268,
+      "observed": 1274,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1269,
+      "classified": 1275,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1488,
+      "observed": 1489,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1489,
+      "classified": 1490,
       "classification_errors": 1,
       "jobs": [
         {
