@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:58:43.357164+00:00",
+  "updated_at": "2026-10-05T10:59:45.773069+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 13132,
-    "pending": 17285,
-    "processing": 1,
+    "processed": 13145,
+    "pending": 17273,
+    "processing": 0,
     "eligible": 134,
-    "review": 9108,
-    "rejected": 3856,
-    "errors": 31,
+    "review": 9115,
+    "rejected": 3861,
+    "errors": 32,
     "ready": 26,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC3eHhRsG77qrfWkbP2BezTQ",
-        "name": "노가다  강반장 TV",
-        "query": "평택 노무사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1596,
   "channels_discovered": 28150,
-  "channels_observed": 13101,
+  "channels_observed": 13113,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -922,11 +916,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3953,
-      "observation_errors": 5,
+      "observed": 3965,
+      "observation_errors": 6,
       "classified_at": null,
-      "classified": 3958,
-      "classification_errors": 5,
+      "classified": 3971,
+      "classification_errors": 6,
       "jobs": [
         {
           "name": "세무사",
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2564,
+      "observed": 2565,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2568,
+      "classified": 2569,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2376,
+      "observed": 2377,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2378,
+      "classified": 2379,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1849,
+      "observed": 1850,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1852,
+      "classified": 1853,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1956,
+      "observed": 1957,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 1961,
+      "classified": 1962,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1860,
+      "observed": 1861,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1861,
+      "classified": 1862,
       "classification_errors": 1,
       "jobs": [
         {
