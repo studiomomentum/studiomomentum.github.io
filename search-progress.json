@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:55:02.389857+00:00",
+  "updated_at": "2026-10-05T12:56:04.269944+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14603,
-    "pending": 15813,
+    "processed": 14611,
+    "pending": 15805,
     "processing": 2,
     "eligible": 145,
-    "review": 10175,
-    "rejected": 4244,
+    "review": 10181,
+    "rejected": 4246,
     "errors": 36,
     "ready": 31,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCuJoZc9NkCvMVZLYZBWAR5g",
-        "name": "박세준 변리사",
+        "channel_id": "UChD7VCBxN6DvLIDjA_kZXSA",
+        "name": "뉴스트리",
         "query": "용인 변리사"
       },
       {
-        "channel_id": "UCcpZhdzRcmaVI__SJuAvQCA",
-        "name": "미학",
-        "query": "용인 법무사"
+        "channel_id": "UCWdITyRFjyVBnCtjyNy_GpA",
+        "name": "패스애드",
+        "query": "용인 변리사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1697,
+  "region_observed": 1700,
   "channels_discovered": 28150,
-  "channels_observed": 14567,
+  "channels_observed": 14575,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3650,
+      "observed": 3658,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3653,
+      "classified": 3661,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2697,
+      "observed": 2698,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2701,
+      "classified": 2702,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2573,
+      "observed": 2580,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2575,
+      "classified": 2582,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1945,
+      "observed": 1947,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1948,
+      "classified": 1950,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2083,
+      "observed": 2087,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2088,
+      "classified": 2092,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1955,
+      "observed": 1957,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1956,
+      "classified": 1958,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1697,
+      "observed": 1700,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1698,
+      "classified": 1701,
       "classification_errors": 1,
       "jobs": [
         {
