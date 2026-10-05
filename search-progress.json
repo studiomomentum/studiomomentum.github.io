@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:14:50.187561+00:00",
+  "updated_at": "2026-10-05T17:15:51.704155+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17860,
-    "pending": 12556,
+    "processed": 17872,
+    "pending": 12544,
     "processing": 2,
     "eligible": 161,
-    "review": 12467,
-    "rejected": 5180,
+    "review": 12477,
+    "rejected": 5182,
     "errors": 49,
     "ready": 38,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCdH42ZtIgfENsCMdUQH5Dgw",
-        "name": "리바디한의원",
+        "channel_id": "UCvtEcKGZ6haMcBIGf31skiw",
+        "name": "터한의원",
         "query": "분당 한의원"
       },
       {
-        "channel_id": "UCpvEVDxXeNAXAOkGOJkj4GQ",
-        "name": "혜민한의원 | 혈변·치질·항문통증 치료",
+        "channel_id": "UC9pi1XPD4Nhpb_mQYVCezhg",
+        "name": "YumiKim2",
         "query": "분당 한의원"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1859,
+  "region_observed": 1860,
   "channels_discovered": 28150,
-  "channels_observed": 17811,
+  "channels_observed": 17823,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3916,
+      "observed": 3917,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3920,
+      "classified": 3921,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2896,
+      "observed": 2907,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2900,
+      "classified": 2911,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2141,
+      "observed": 2142,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2145,
+      "classified": 2146,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2282,
+      "observed": 2285,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2287,
+      "classified": 2290,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2116,
+      "observed": 2119,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2117,
+      "classified": 2120,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1859,
+      "observed": 1860,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1860,
+      "classified": 1861,
       "classification_errors": 1,
       "jobs": [
         {
