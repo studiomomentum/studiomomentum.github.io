@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:25:49.686818+00:00",
+  "updated_at": "2026-10-05T07:26:51.428721+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10459,
-    "pending": 19957,
+    "processed": 10473,
+    "pending": 19943,
     "processing": 2,
     "eligible": 116,
-    "review": 7165,
-    "rejected": 3154,
+    "review": 7176,
+    "rejected": 3157,
     "errors": 21,
     "ready": 23,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCKZ6jnfGzb9k01DAcAHQWSg",
-        "name": "815광복TV 1채널[종합채널]",
+        "channel_id": "UCC0sBZ1PjZ5j-U_7CpmWf3w",
+        "name": "홀워",
         "query": "오산 산부인과"
       },
       {
-        "channel_id": "UC2O40Z4QUysFsdPLrFzCcLg",
-        "name": "닥터고구마 Dr Goguma[영국의사 Korean in NHS]",
+        "channel_id": "UC2Tw1EXC1KbpJXHVmychlyQ",
+        "name": "토닥",
         "query": "오산 산부인과"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1473,
   "channels_discovered": 28150,
-  "channels_observed": 10438,
+  "channels_observed": 10452,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3170,
+      "observed": 3182,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3174,
+      "classified": 3186,
       "classification_errors": 4,
       "jobs": [
         {
@@ -927,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2156,
+      "observed": 2158,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2157,
+      "classified": 2159,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2656,
+      "observed": 2657,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2658,
+      "classified": 2659,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1797,
+      "observed": 1798,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1800,
+      "classified": 1801,
       "classification_errors": 3,
       "jobs": [
         {
