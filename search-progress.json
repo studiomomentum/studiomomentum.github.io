@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:18:46.557278+00:00",
+  "updated_at": "2026-10-05T14:19:48.052956+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15564,
-    "pending": 14852,
+    "processed": 15572,
+    "pending": 14844,
     "processing": 2,
     "eligible": 153,
-    "review": 10855,
-    "rejected": 4513,
+    "review": 10859,
+    "rejected": 4517,
     "errors": 40,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0nYHt2q0nnU7JerxzTJqlQ",
-        "name": "경희리솜한방병원경희리솜한방병원",
-        "query": "화성 한방병원"
+        "channel_id": "UCR5o_wWxmbHbuBqHuZVo1hQ",
+        "name": "열린한의원",
+        "query": "화성 한의원"
       },
       {
-        "channel_id": "UCrc--8Z5wbsx5w4AWhdP8xw",
-        "name": "박지영박사의 건강돋보기TV",
+        "channel_id": "UCUFLlI-ofE_W86KdDT-DHqg",
+        "name": "쓰미미🤗",
         "query": "화성 한의원"
       }
     ]
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1745,
   "channels_discovered": 28150,
-  "channels_observed": 15524,
+  "channels_observed": 15532,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3256,
+      "observed": 3264,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3261,
+      "classified": 3269,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2160,
+      "observed": 2161,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2165,
+      "classified": 2166,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2006,
+      "observed": 2007,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2007,
+      "classified": 2008,
       "classification_errors": 1,
       "jobs": [
         {
