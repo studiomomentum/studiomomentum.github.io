@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:01:42.199255+00:00",
+  "updated_at": "2026-10-05T10:02:43.931054+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12397,
-    "pending": 18021,
-    "processing": 0,
+    "processed": 12415,
+    "pending": 18001,
+    "processing": 2,
     "eligible": 129,
-    "review": 8578,
-    "rejected": 3657,
+    "review": 8589,
+    "rejected": 3664,
     "errors": 30,
     "ready": 25,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC2RrbL-hcZTxJ_JjwuJmpBA",
+        "name": "갓정사TV – 돈 되는 행정사",
+        "query": "평택 행정사"
+      },
+      {
+        "channel_id": "UCRjF0L38NJTv9dds1bpwVcw",
+        "name": "윤행정사 업무노트 (청주행정사 대표)",
+        "query": "평택 행정사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1553,
   "channels_discovered": 28150,
-  "channels_observed": 12367,
+  "channels_observed": 12385,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3282,
+      "observed": 3297,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3286,
+      "classified": 3301,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2833,
+      "observed": 2836,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2835,
+      "classified": 2838,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2478,
+      "observed": 2481,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2482,
+      "classified": 2485,
       "classification_errors": 4,
       "jobs": [
         {
