@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:39:42.820060+00:00",
+  "updated_at": "2026-10-05T18:40:44.506271+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18932,
-    "pending": 11486,
-    "processing": 0,
+    "processed": 18952,
+    "pending": 11464,
+    "processing": 2,
     "eligible": 164,
-    "review": 13152,
-    "rejected": 5562,
+    "review": 13166,
+    "rejected": 5568,
     "errors": 51,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCm3l1SLzw9dcSjZ4PYh_9GQ",
+        "name": "random tv",
+        "query": "분당 동물병원"
+      },
+      {
+        "channel_id": "UCaMFOP62A9wSGvsLgEe7y9w",
+        "name": "아프냥웃으시개",
+        "query": "분당 동물병원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1999,
+  "region_observed": 2003,
   "channels_discovered": 28150,
-  "channels_observed": 18881,
+  "channels_observed": 18901,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3497,
+      "observed": 3517,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3501,
+      "classified": 3521,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2280,
+      "observed": 2281,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2284,
+      "classified": 2285,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2403,
+      "observed": 2405,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2408,
+      "classified": 2410,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2225,
+      "observed": 2227,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2226,
+      "classified": 2228,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1999,
+      "observed": 2003,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2000,
+      "classified": 2004,
       "classification_errors": 1,
       "jobs": [
         {
