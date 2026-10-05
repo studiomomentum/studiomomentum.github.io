@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:56:43.353709+00:00",
+  "updated_at": "2026-10-05T18:57:44.928969+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19164,
-    "pending": 11254,
-    "processing": 0,
-    "eligible": 165,
-    "review": 13325,
-    "rejected": 5620,
+    "processed": 19180,
+    "pending": 11236,
+    "processing": 2,
+    "eligible": 166,
+    "review": 13337,
+    "rejected": 5623,
     "errors": 51,
     "ready": 39,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCXhu9ABheuKs8Xyu1rltImA",
+        "name": "돈파는가게",
+        "query": "분당 법무사"
+      },
+      {
+        "channel_id": "UC4kaqwJiyohcKlSi0N9g8Lg",
+        "name": "성은 #수와진 tv  #수지니 ",
+        "query": "분당 법무사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 2016,
+  "region_observed": 2022,
   "channels_discovered": 28150,
-  "channels_observed": 19113,
+  "channels_observed": 19129,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 4074,
+      "observed": 4075,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4080,
+      "classified": 4081,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 4103,
+      "observed": 4104,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4106,
+      "classified": 4107,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1795,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3689,
+      "observed": 3705,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3693,
+      "classified": 3709,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2088,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2290,
+      "observed": 2294,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2294,
+      "classified": 2298,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2418,
+      "observed": 2422,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2423,
+      "classified": 2427,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2236,
+      "observed": 2240,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2237,
+      "classified": 2241,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 2016,
+      "observed": 2022,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2017,
+      "classified": 2023,
       "classification_errors": 1,
       "jobs": [
         {
