@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:03:46.344228+00:00",
+  "updated_at": "2026-10-05T10:04:51.384224+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12427,
-    "pending": 17989,
-    "processing": 2,
+    "processed": 12437,
+    "pending": 17981,
+    "processing": 0,
     "eligible": 130,
-    "review": 8598,
-    "rejected": 3666,
+    "review": 8604,
+    "rejected": 3670,
     "errors": 30,
     "ready": 25,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCCNYzKapXzc5TwrsrFk_Hnw",
-        "name": "액츠29 미디어",
-        "query": "평택 행정사"
-      },
-      {
-        "channel_id": "UCUnSdg6_nmdhh2fXjsNqTXg",
-        "name": "KBS대전 [CULTURE&DOCUMENTARY]",
-        "query": "평택 행정사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1556,
   "channels_discovered": 28150,
-  "channels_observed": 12397,
+  "channels_observed": 12407,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3946,
+      "observed": 3947,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3952,
+      "classified": 3953,
       "classification_errors": 6,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3309,
+      "observed": 3318,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3313,
+      "classified": 3322,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2484,
+      "observed": 2487,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2488,
+      "classified": 2491,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1817,
+      "observed": 1818,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1820,
+      "classified": 1821,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1907,
+      "observed": 1908,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1911,
+      "classified": 1912,
       "classification_errors": 4,
       "jobs": [
         {
