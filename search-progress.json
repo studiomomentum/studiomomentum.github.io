@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:23:24.009656+00:00",
+  "updated_at": "2026-10-05T14:24:47.692843+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,13 +11,13 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15614,
-    "pending": 14804,
+    "processed": 15634,
+    "pending": 14784,
     "processing": 0,
     "eligible": 154,
-    "review": 10889,
-    "rejected": 4528,
-    "errors": 40,
+    "review": 10902,
+    "rejected": 4534,
+    "errors": 41,
     "ready": 34,
     "status": "running",
     "active": []
@@ -27,7 +27,7 @@
   "region_channels": 4214,
   "region_observed": 1747,
   "channels_discovered": 28150,
-  "channels_observed": 15574,
+  "channels_observed": 15593,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1502,11 +1502,11 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3305,
-      "observation_errors": 5,
+      "observed": 3322,
+      "observation_errors": 6,
       "classified_at": null,
-      "classified": 3310,
-      "classification_errors": 5,
+      "classified": 3328,
+      "classification_errors": 6,
       "jobs": [
         {
           "name": "세무사",
@@ -1795,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2693,
+      "observed": 2695,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2695,
+      "classified": 2697,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2166,
+      "observed": 2167,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2171,
+      "classified": 2172,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2011,
+      "observed": 2013,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2012,
+      "classified": 2014,
       "classification_errors": 1,
       "jobs": [
         {
