@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:34:40.179950+00:00",
+  "updated_at": "2026-10-05T14:36:03.800616+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,12 +11,12 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15756,
-    "pending": 14662,
+    "processed": 15772,
+    "pending": 14646,
     "processing": 0,
     "eligible": 154,
-    "review": 11001,
-    "rejected": 4557,
+    "review": 11013,
+    "rejected": 4561,
     "errors": 41,
     "ready": 34,
     "status": "running",
@@ -27,7 +27,7 @@
   "region_channels": 4214,
   "region_observed": 1753,
   "channels_discovered": 28150,
-  "channels_observed": 15715,
+  "channels_observed": 15731,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1502,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3433,
+      "observed": 3447,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3439,
+      "classified": 3453,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2088,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2014,
+      "observed": 2015,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2017,
+      "classified": 2018,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2674,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2018,
+      "observed": 2019,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2019,
+      "classified": 2020,
       "classification_errors": 1,
       "jobs": [
         {
