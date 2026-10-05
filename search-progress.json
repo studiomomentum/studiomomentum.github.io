@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T09:31:46.866503+00:00",
+  "updated_at": "2026-10-05T09:33:11.842363+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,13 +11,13 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12025,
-    "pending": 18393,
+    "processed": 12043,
+    "pending": 18375,
     "processing": 0,
     "eligible": 127,
-    "review": 8291,
-    "rejected": 3578,
-    "errors": 26,
+    "review": 8305,
+    "rejected": 3579,
+    "errors": 29,
     "ready": 24,
     "status": "running",
     "active": []
@@ -25,9 +25,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1542,
+  "region_observed": 1543,
   "channels_discovered": 28150,
-  "channels_observed": 11999,
+  "channels_observed": 12014,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -916,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2972,
+      "observed": 2981,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2975,
+      "classified": 2984,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1209,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2785,
+      "observed": 2786,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2787,
+      "classified": 2788,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1503,10 +1503,10 @@
       "queries_total": 40,
       "channels": 5630,
       "observed": 2455,
-      "observation_errors": 3,
+      "observation_errors": 4,
       "classified_at": null,
-      "classified": 2458,
-      "classification_errors": 3,
+      "classified": 2459,
+      "classification_errors": 4,
       "jobs": [
         {
           "name": "세무사",
@@ -1795,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2337,
+      "observed": 2338,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2339,
+      "classified": 2340,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2381,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1894,
+      "observed": 1895,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1898,
+      "classified": 1899,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2674,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1806,
+      "observed": 1807,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1807,
+      "classified": 1808,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1542,
+      "observed": 1543,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1543,
+      "classified": 1544,
       "classification_errors": 1,
       "jobs": [
         {
