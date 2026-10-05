@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:04:50.965903+00:00",
+  "updated_at": "2026-10-05T17:05:52.929443+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17732,
-    "pending": 12684,
-    "processing": 2,
+    "processed": 17742,
+    "pending": 12676,
+    "processing": 0,
     "eligible": 159,
-    "review": 12378,
-    "rejected": 5143,
+    "review": 12384,
+    "rejected": 5147,
     "errors": 49,
     "ready": 36,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC4HuQ5QrmaGQXfKIdwtpcDQ",
-        "name": "신구대신문방송국",
-        "query": "분당 세무회계"
-      },
-      {
-        "channel_id": "UCxF8k_u48J9sFixCxQQrkgA",
-        "name": "분당새소망교회",
-        "query": "분당 변호사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1841,
   "channels_discovered": 28150,
-  "channels_observed": 17683,
+  "channels_observed": 17693,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 4583,
+      "observed": 4584,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4592,
+      "classified": 4593,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3978,
+      "observed": 3979,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 3981,
+      "classified": 3982,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2802,
+      "observed": 2809,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2806,
+      "classified": 2813,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2131,
+      "observed": 2132,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2135,
+      "classified": 2136,
       "classification_errors": 4,
       "jobs": [
         {
