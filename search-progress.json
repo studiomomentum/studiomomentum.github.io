@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T12:26:07.751219+00:00",
+  "updated_at": "2026-10-05T12:27:09.716712+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 14223,
-    "pending": 16193,
+    "processed": 14231,
+    "pending": 16185,
     "processing": 2,
     "eligible": 144,
-    "review": 9923,
-    "rejected": 4118,
+    "review": 9926,
+    "rejected": 4123,
     "errors": 35,
     "ready": 31,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCIxyuwCLIWb0WUjXeSVKTTw",
-        "name": "청강부동산TV",
+        "channel_id": "UCbDGivTrO7uR3t6-J8O_L_Q",
+        "name": "홈체크",
         "query": "용인 공인중개사"
       },
       {
-        "channel_id": "UCZS8iAgZiGwI3tZjNa-ympw",
-        "name": "전원닷컴TV 양평여주가평 전원주택급매물 ",
+        "channel_id": "UCW8q8wjCTAXfD0R8g-pI-Ow",
+        "name": "유명 공인중개사 양평부동산대표!",
         "query": "용인 공인중개사"
       }
     ]
@@ -36,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1658,
+  "region_observed": 1660,
   "channels_discovered": 28150,
-  "channels_observed": 14188,
+  "channels_observed": 14196,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3846,
+      "observed": 3847,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3850,
+      "classified": 3851,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1220,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 3361,
+      "observed": 3366,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 3363,
+      "classified": 3368,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2646,
+      "observed": 2647,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2650,
+      "classified": 2651,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1806,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2473,
+      "observed": 2474,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2475,
+      "classified": 2476,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1908,
+      "observed": 1909,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1911,
+      "classified": 1912,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2046,
+      "observed": 2049,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2051,
+      "classified": 2054,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2978,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1658,
+      "observed": 1660,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1659,
+      "classified": 1661,
       "classification_errors": 1,
       "jobs": [
         {
