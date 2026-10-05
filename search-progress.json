@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:10:14.610013+00:00",
+  "updated_at": "2026-10-05T14:11:15.976330+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15455,
-    "pending": 14962,
-    "processing": 1,
+    "processed": 15464,
+    "pending": 14952,
+    "processing": 2,
     "eligible": 153,
-    "review": 10781,
-    "rejected": 4479,
+    "review": 10789,
+    "rejected": 4480,
     "errors": 39,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCP2kAuJn-QCKRd3jFitCnDw",
-        "name": "족구대한민국",
+        "channel_id": "UCB6c_ejYw1BriA8oxWvsQPw",
+        "name": "의정부시의회",
+        "query": "화성 치과의원"
+      },
+      {
+        "channel_id": "UCzfheU-SqElfaQXwOzv8yGA",
+        "name": "신지우 shinjiwoo",
         "query": "화성 치과"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1740,
+  "region_observed": 1741,
   "channels_discovered": 28150,
-  "channels_observed": 15416,
+  "channels_observed": 15425,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3153,
+      "observed": 3161,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3158,
+      "classified": 3166,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2150,
+      "observed": 2151,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2155,
+      "classified": 2156,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1740,
+      "observed": 1741,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1741,
+      "classified": 1742,
       "classification_errors": 1,
       "jobs": [
         {
