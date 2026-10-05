@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T18:37:08.711024+00:00",
+  "updated_at": "2026-10-05T18:38:21.304965+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 18896,
-    "pending": 11520,
-    "processing": 2,
-    "eligible": 163,
-    "review": 13127,
-    "rejected": 5552,
+    "processed": 18912,
+    "pending": 11506,
+    "processing": 0,
+    "eligible": 164,
+    "review": 13137,
+    "rejected": 5557,
     "errors": 51,
     "ready": 39,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC7y-1C2teP5t__jKyb_Lp8A",
-        "name": "병원어디가 - 아플때 우리동네 병원어디가",
-        "query": "분당 비뇨기과"
-      },
-      {
-        "channel_id": "UCY5epMX5qGFqRTsMHl0yHAA",
-        "name": "드림널스 작업실",
-        "query": "분당 산부인과"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1993,
+  "region_observed": 1996,
   "channels_discovered": 28150,
-  "channels_observed": 18845,
+  "channels_observed": 18861,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 3468,
+      "observed": 3479,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3472,
+      "classified": 3483,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 2270,
+      "observed": 2276,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2274,
+      "classified": 2280,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2400,
+      "observed": 2402,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2405,
+      "classified": 2407,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2218,
+      "observed": 2221,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2219,
+      "classified": 2222,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2978,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1993,
+      "observed": 1996,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1994,
+      "classified": 1997,
       "classification_errors": 1,
       "jobs": [
         {
