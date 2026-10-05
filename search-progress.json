@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T06:28:19.567373+00:00",
+  "updated_at": "2026-10-05T06:29:21.289685+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 9713,
-    "pending": 20705,
-    "processing": 0,
+    "processed": 9732,
+    "pending": 20685,
+    "processing": 1,
     "eligible": 112,
-    "review": 6630,
-    "rejected": 2949,
+    "review": 6646,
+    "rejected": 2952,
     "errors": 19,
     "ready": 27,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCT0Iq6PJ6HM53Gwk8nKREDw",
+        "name": "온부TV",
+        "query": "오산 공인중개사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1436,
   "channels_discovered": 28150,
-  "channels_observed": 9694,
+  "channels_observed": 9713,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 2547,
+      "observed": 2560,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2550,
+      "classified": 2563,
       "classification_errors": 3,
       "jobs": [
         {
@@ -916,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2002,
+      "observed": 2004,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2003,
+      "classified": 2005,
       "classification_errors": 1,
       "jobs": [
         {
@@ -1502,10 +1508,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2155,
+      "observed": 2156,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2157,
+      "classified": 2158,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2088,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1637,
+      "observed": 1638,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 1639,
+      "classified": 1640,
       "classification_errors": 2,
       "jobs": [
         {
