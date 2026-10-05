@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T10:44:28.131050+00:00",
+  "updated_at": "2026-10-05T10:45:39.004837+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 12953,
-    "pending": 17463,
-    "processing": 2,
+    "processed": 12969,
+    "pending": 17449,
+    "processing": 0,
     "eligible": 133,
-    "review": 8990,
-    "rejected": 3797,
+    "review": 8999,
+    "rejected": 3804,
     "errors": 30,
     "ready": 25,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCjyhrKgmUc0wy9usmk5KpdQ",
-        "name": "우리동물메디컬센터",
-        "query": "평택 동물병원"
-      },
-      {
-        "channel_id": "UCFryiLoZvkmZqSTGL1FMurg",
-        "name": "요미독앤캣 요미펫TV",
-        "query": "평택 동물병원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1591,
   "channels_discovered": 28150,
-  "channels_observed": 12923,
+  "channels_observed": 12939,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 3783,
+      "observed": 3799,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3787,
+      "classified": 3803,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2546,
+      "observed": 2548,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2550,
+      "classified": 2552,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2370,
+      "observed": 2371,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2372,
+      "classified": 2373,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 1951,
+      "observed": 1952,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 1955,
+      "classified": 1956,
       "classification_errors": 4,
       "jobs": [
         {
