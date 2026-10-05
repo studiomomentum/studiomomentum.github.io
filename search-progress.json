@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T13:51:56.388544+00:00",
+  "updated_at": "2026-10-05T13:53:04.321073+00:00",
   "run_id": "37287211766",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15311,
-    "pending": 15105,
-    "processing": 2,
-    "eligible": 152,
-    "review": 10677,
-    "rejected": 4440,
+    "processed": 15325,
+    "pending": 15093,
+    "processing": 0,
+    "eligible": 153,
+    "review": 10685,
+    "rejected": 4445,
     "errors": 39,
     "ready": 34,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCY9Bdync4Zaa56XSH8Vr5BQ",
-        "name": "임병수의 탐정방송",
-        "query": "화성 법률사무소"
-      },
-      {
-        "channel_id": "UCM15LnqZXsIee1z4t77VLaw",
-        "name": "법알못 가이드",
-        "query": "화성 법률사무소"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1733,
   "channels_discovered": 28150,
-  "channels_observed": 15272,
+  "channels_observed": 15286,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,10 +37,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3900,
+      "observed": 3901,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3904,
+      "classified": 3905,
       "classification_errors": 4,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3988,
+      "observed": 3989,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3994,
+      "classified": 3995,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1513,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3015,
+      "observed": 3026,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3020,
+      "classified": 3031,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2682,
+      "observed": 2684,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2684,
+      "classified": 2686,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1992,
+      "observed": 1994,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1995,
+      "classified": 1997,
       "classification_errors": 3,
       "jobs": [
         {
@@ -2392,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2139,
+      "observed": 2142,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2144,
+      "classified": 2147,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2685,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 1991,
+      "observed": 1992,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1992,
+      "classified": 1993,
       "classification_errors": 1,
       "jobs": [
         {
