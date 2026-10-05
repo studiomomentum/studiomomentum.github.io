@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T07:56:16.701863+00:00",
+  "updated_at": "2026-10-05T07:57:18.286769+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 10869,
-    "pending": 19549,
-    "processing": 0,
+    "processed": 10877,
+    "pending": 19539,
+    "processing": 2,
     "eligible": 116,
-    "review": 7450,
-    "rejected": 3277,
+    "review": 7456,
+    "rejected": 3279,
     "errors": 23,
     "ready": 23,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCc406J4J64fe-CLA0m1qjRA",
+        "name": "소셜미디어바이터진",
+        "query": "오산 변리사"
+      },
+      {
+        "channel_id": "UC_hW-IYYr9lhlHKZAjQsT8w",
+        "name": "LG Chem(LG화학)",
+        "query": "오산 변리사"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 1488,
   "channels_discovered": 28150,
-  "channels_observed": 10846,
+  "channels_observed": 10854,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 3526,
+      "observed": 3532,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3531,
+      "classified": 3537,
       "classification_errors": 5,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 2298,
+      "observed": 2299,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 2301,
+      "classified": 2302,
       "classification_errors": 3,
       "jobs": [
         {
