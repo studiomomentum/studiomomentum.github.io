@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T14:31:25.769326+00:00",
+  "updated_at": "2026-10-05T14:32:27.730766+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,25 +11,25 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 15722,
-    "pending": 14694,
+    "processed": 15732,
+    "pending": 14684,
     "processing": 2,
     "eligible": 154,
-    "review": 10971,
+    "review": 10981,
     "rejected": 4553,
     "errors": 41,
     "ready": 34,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCBvW4Aq0ekeqxZaWS9F_Raw",
-        "name": "동탄 HSP 수학학원 김재호T",
+        "channel_id": "UCk_eJvDh7xWKMTvEdHNBZ8Q",
+        "name": "단쌤",
         "query": "화성 학원"
       },
       {
-        "channel_id": "UCzu0PWC_YKEtEIjn0PGxilw",
-        "name": "용쌤수학",
-        "query": "화성 입시학원"
+        "channel_id": "UCC7-E034__itM7rSohOSVPg",
+        "name": "공장온",
+        "query": "화성 학원"
       }
     ]
   },
@@ -38,7 +38,7 @@
   "region_channels": 4214,
   "region_observed": 1753,
   "channels_discovered": 28150,
-  "channels_observed": 15681,
+  "channels_observed": 15691,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -1513,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 3400,
+      "observed": 3410,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3406,
+      "classified": 3416,
       "classification_errors": 6,
       "jobs": [
         {
