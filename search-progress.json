@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T17:12:45.813349+00:00",
+  "updated_at": "2026-10-05T17:13:47.260564+00:00",
   "run_id": "37321588975",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 17832,
-    "pending": 12586,
-    "processing": 0,
+    "processed": 17847,
+    "pending": 12570,
+    "processing": 1,
     "eligible": 161,
-    "review": 12443,
-    "rejected": 5176,
+    "review": 12455,
+    "rejected": 5179,
     "errors": 49,
     "ready": 38,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCekUY9Bc3J9adN2tQ-uDXqA",
+        "name": "세우리협동조합AD",
+        "query": "분당 한의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 1853,
+  "region_observed": 1856,
   "channels_discovered": 28150,
-  "channels_observed": 17783,
+  "channels_observed": 17798,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 3915,
+      "observed": 3916,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 3919,
+      "classified": 3920,
       "classification_errors": 4,
       "jobs": [
         {
@@ -623,10 +629,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 4018,
+      "observed": 4019,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4024,
+      "classified": 4025,
       "classification_errors": 6,
       "jobs": [
         {
@@ -1795,10 +1801,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 2871,
+      "observed": 2883,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2875,
+      "classified": 2887,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2381,10 +2387,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 2280,
+      "observed": 2281,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2285,
+      "classified": 2286,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2674,10 +2680,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 2113,
+      "observed": 2114,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2114,
+      "classified": 2115,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2967,10 +2973,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 1853,
+      "observed": 1856,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 1854,
+      "classified": 1857,
       "classification_errors": 1,
       "jobs": [
         {
