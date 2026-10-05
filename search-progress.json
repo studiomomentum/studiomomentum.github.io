@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-05T08:47:19.473870+00:00",
+  "updated_at": "2026-10-05T08:48:22.046086+00:00",
   "run_id": "37261513378",
   "active_queries": [],
   "search_stage": {
@@ -11,24 +11,19 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 11551,
-    "pending": 18865,
-    "processing": 2,
+    "processed": 11560,
+    "pending": 18857,
+    "processing": 1,
     "eligible": 124,
-    "review": 7925,
-    "rejected": 3474,
+    "review": 7933,
+    "rejected": 3475,
     "errors": 25,
     "ready": 27,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0tSk3v4NxC14yjb3NB8_eg",
-        "name": "달변 박TV(달리는 변호사 박형준TV)",
-        "query": "평택 변호사"
-      },
-      {
-        "channel_id": "UCyLuFLzqICC_ALIJ_hzBGJQ",
-        "name": "시인을 위한 한국어-수어 사전",
+        "channel_id": "UC1yqAV35f-aKJzwuSW4rJdg",
+        "name": "법률사무소 1pro",
         "query": "평택 변호사"
       }
     ]
@@ -38,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 1513,
   "channels_discovered": 28150,
-  "channels_observed": 11526,
+  "channels_observed": 11535,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -927,10 +922,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 2545,
+      "observed": 2554,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2547,
+      "classified": 2556,
       "classification_errors": 2,
       "jobs": [
         {
@@ -1220,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 2736,
+      "observed": 2737,
       "observation_errors": 2,
       "classified_at": null,
-      "classified": 2738,
+      "classified": 2739,
       "classification_errors": 2,
       "jobs": [
         {
@@ -2099,10 +2094,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 1756,
+      "observed": 1757,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 1759,
+      "classified": 1760,
       "classification_errors": 3,
       "jobs": [
         {
