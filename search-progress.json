@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T08:00:44.345326+00:00",
+  "updated_at": "2026-10-16T08:01:48.478061+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -14,16 +14,16 @@
     "processed": 19263,
     "pending": 11154,
     "processing": 1,
-    "eligible": 169,
-    "review": 13394,
+    "eligible": 170,
+    "review": 13393,
     "rejected": 5645,
     "errors": 52,
-    "ready": 2,
+    "ready": 3,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCKAn8x2vmgPo-OjIKbDkBGw",
-        "name": "개인회생신청센터",
+        "channel_id": "UCktpyaPI52eUSr5wpM-Oe3g",
+        "name": "개인회생파산센터",
         "query": "동탄 법률사무소"
       }
     ]
@@ -33,7 +33,7 @@
   "region_channels": 4214,
   "region_observed": 101,
   "channels_discovered": 28150,
-  "channels_observed": 318,
+  "channels_observed": 320,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,7 +336,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 141,
+      "observed": 143,
       "observation_errors": 6,
       "classified_at": null,
       "classified": 4704,
@@ -632,7 +632,7 @@
       "observed": 122,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4081,
+      "classified": 4080,
       "classification_errors": 6,
       "jobs": [
         {
@@ -925,7 +925,7 @@
       "observed": 118,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4652,
+      "classified": 4651,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1215,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 223,
+      "observed": 224,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4106,
+      "classified": 4107,
       "classification_errors": 3,
       "jobs": [
         {
