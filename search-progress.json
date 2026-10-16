@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T07:20:54.818379+00:00",
+  "updated_at": "2026-10-16T07:21:59.604411+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19264,
+    "processed": 19263,
     "pending": 11154,
-    "processing": 0,
+    "processing": 1,
     "eligible": 167,
-    "review": 13393,
+    "review": 13392,
     "rejected": 5649,
     "errors": 52,
     "ready": 0,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UC4N9WG5FT75cEN79pSrRSKg",
+        "name": "여신티켓 - 피부탐구생활",
+        "query": "광교삼성화이트치과의원 유튜브"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 15,
   "channels_discovered": 28150,
-  "channels_observed": 51,
+  "channels_observed": 52,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -333,7 +339,7 @@
       "observed": 22,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4705,
+      "classified": 4704,
       "classification_errors": 6,
       "jobs": [
         {
@@ -919,7 +925,7 @@
       "observed": 17,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4652,
+      "classified": 4651,
       "classification_errors": 9,
       "jobs": [
         {
@@ -2091,7 +2097,7 @@
       "observed": 12,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2316,
+      "classified": 2315,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2384,7 +2390,7 @@
       "observed": 17,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2431,
+      "classified": 2430,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2677,7 +2683,7 @@
       "observed": 17,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2245,
+      "classified": 2244,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2970,7 +2976,7 @@
       "observed": 15,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2028,
+      "classified": 2027,
       "classification_errors": 1,
       "jobs": [
         {
