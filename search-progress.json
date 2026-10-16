@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T08:42:44.619740+00:00",
+  "updated_at": "2026-10-16T08:43:46.778773+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19264,
+    "processed": 19262,
     "pending": 11154,
-    "processing": 0,
+    "processing": 2,
     "eligible": 171,
-    "review": 13393,
+    "review": 13391,
     "rejected": 5644,
     "errors": 53,
     "ready": 3,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCUT-UjeuxYihhBmm9-APO9A",
+        "name": "제이방송JBCN",
+        "query": "오산 의원"
+      },
+      {
+        "channel_id": "UCPDzNxgPaHAMIGNb1vBaHQg",
+        "name": "서울경제TV 경인",
+        "query": "오산 의원"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 166,
   "channels_discovered": 28150,
-  "channels_observed": 619,
+  "channels_observed": 623,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 438,
+      "observed": 439,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 4032,
+      "classified": 4030,
       "classification_errors": 5,
       "jobs": [
         {
@@ -623,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 327,
+      "observed": 331,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4081,
+      "classified": 4079,
       "classification_errors": 7,
       "jobs": [
         {
@@ -916,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 265,
+      "observed": 266,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4652,
+      "classified": 4650,
       "classification_errors": 10,
       "jobs": [
         {
@@ -1209,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 375,
+      "observed": 376,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4107,
+      "classified": 4105,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1502,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 256,
+      "observed": 257,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 5223,
+      "classified": 5222,
       "classification_errors": 13,
       "jobs": [
         {
@@ -2381,7 +2392,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 198,
+      "observed": 199,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 2431,
