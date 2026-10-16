@@ -50,7 +50,7 @@ class Handler(BaseHTTPRequestHandler):
             except Exception: data=b'{"error":"Status collection failed","cards":{}}'; status=503
             self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8')
         else:
-            routes={'/':'ops.html','/ops.html':'ops.html','/assets/ops.css':'assets/ops.css','/assets/ops.js':'assets/ops.js'}
+            routes={'/':'ops.html','/ops.html':'ops.html','/assets/ops.css':'assets/ops.css','/assets/ops.js':'assets/ops.js','/assets/ops-auth.js':'assets/ops-auth.js'}
             if path not in routes: self.send_error(404); return
             file=ROOT/routes[path]
             if not file.is_file(): self.send_error(404); return

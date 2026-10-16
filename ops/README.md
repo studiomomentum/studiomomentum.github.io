@@ -1,11 +1,16 @@
 # CONTROL 통합 운영실
 
 ## 현재 구현
-- `/ops.html`: 전체 관제, 솟 모멘텀, aight, BTC 터미널, 서버·백업 메뉴. 기존 `/admin.html` 영업 기능 유지.
-- 로컬 운영 서버: `python3 ops/server.py` → http://127.0.0.1:8796/ops.html
-- 기존 Ubuntu `server-monitor/monitor.py`의 읽기 전용 어댑터로 실제 service 상태, BTC 저장, 알트 결과, 영업 처리, 블로그·상담, BGM·백업을 조회. 15초 갱신.
-- API는 loopback에서만 제공. 자격증명·고객 DB·원본 로그를 반환하거나 저장하지 않으며 파일 경로 임의 조회를 허용하지 않음.
-- GitHub Pages는 정적 호스팅이므로 서버 API가 없음. 공개 배포 화면은 명시적으로 미연결 표시. 외부에서 실시간 조회하려면 인증된 API와 HTTPS 프록시가 추가로 필요. 외부 주소를 열어 두었다고 운영 서버 연결이 완료된 것은 아님.
+- GitHub Pages `/ops.html`: 전체 관제, 솟 모멘텀, aight, BTC 터미널, 서버·백업 메뉴. 기존 `/admin.html` 영업 기능 유지.
+- 기존 모멘텀 관리자 계정/세션 사용. 비밀번호는 기존 인증 서버에만 전송. Ubuntu는 관리자 세션의 유효성만 확인.
+- 원격 상태 API: Ubuntu 127.0.0.1:8797 → outbound HTTPS 터널. 인증 없는 요청은 401, 허용하지 않은 Origin은 403. 고객 레코드·비밀번호·토큰·원본 로그를 반환하지 않음.
+- `ops-config.json`에는 공개 API origin과 갱신 시각만 저장. GitHub에 운영 상태나 인증값을 저장하지 않음.
+- 기존 Ubuntu server-monitor 어댑터로 service 상태, BTC 저장, 알트 결과, 영업 처리, 블로그·상담, BGM·백업을 15초마다 조회.
+- 정상 인증 결과 캐시 30초. 인증 서버 장애 시 상태 정보 반환을 중단. UI는 수집 지연과 원본 갱신 시각을 별도로 표시.
+- systemd 사용자 서비스: `control-center`(로컬 화면), `control-center-api`(인증 API), `control-center-tunnel`(외부 연결). 로그인 시 자동 시작.
+- 터널이 재시작되어 origin이 바뀌면 자동으로 GitHub 설정을 갱신하며 화면은 설정을 30초마다 재조회. GitHub Pages 배포 전파 동안 잠시 연결 지연이 발생할 수 있음.
+- 현재 연결은 계정 없이 제공되는 Cloudflare Quick Tunnel이며 서비스 보장(SLA)이 없음. 고정 도메인/운영 SLA가 필요하면 소유 도메인에 Named Tunnel로 전환해야 함. 화면은 계속 GitHub Pages를 사용.
+- 로컬 운영 화면: http://127.0.0.1:8796/ops.html
 
 ## 프로젝트 범위 보완
 ### 솟 모멘텀
@@ -30,6 +35,9 @@
 - 알트: 일일·주간 기준일, 최근 성공, 오류, 다음 예약, 보고서 저장 검증.
 - 가격/CVD/OI의 봉 기준·시간대·결측을 별도로 검증. 보고서 최신성은 상태 화면 수집 시각과 분리.
 
-## 다음 운영 통합
-원격 실시간 API는 기존 관리자 인증을 검증한 뒤 동일 출처에서 제공해야 함. 새 도메인은 소유한 도메인의 DNS/인증서 연결이 필요. 지금은 기존 도메인의 `/ops.html`을 새 운영실 경로로 사용.
-기존 모멘텀 화면을 바로 제거하거나 로그인·발송·서버 예약을 바꾸지 않음. 단계별 원격 상태/제어 API 통합 후 `/admin.html`을 통합 로그인 진입점으로 전환.
+## 설치 및 운영
+서버 원본 코드는 `/home/pc/Documents/Server/projects/공통운영/01_서버코드/control-center/`에 보존.
+`remote.py`는 조회 전용이며 작업 실행, 발송, DB 변경 명령을 받지 않음.
+`tunnel.py`는 공식 cloudflared 바이너리로 외부 HTTPS 연결을 유지. GitHub 인증은 기존 gh 시스템 자격증명을 읽어 메모리에서만 사용. public origin만 GitHub에 반영.
+현재 GitHub Pages에서 작업 상태를 실시간 조회할 수 있으며 제어 작업은 기존 모멘텀 어드민에서 수행.
+aight 실행기·CVD/OI 연결은 아직 별도이며 미연결 상태를 실제 실행으로 표시하지 않음.
