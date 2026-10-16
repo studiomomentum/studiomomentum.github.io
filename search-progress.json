@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T08:37:18.581905+00:00",
+  "updated_at": "2026-10-16T08:38:29.239860+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,34 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19262,
+    "processed": 19264,
     "pending": 11154,
-    "processing": 2,
+    "processing": 0,
     "eligible": 171,
-    "review": 13391,
+    "review": 13393,
     "rejected": 5644,
     "errors": 53,
     "ready": 3,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCQRDrdcHBCASxvzA9jkWmew",
-        "name": "오산부동산누나TV(abo부동산)",
-        "query": "오산 부동산중개"
-      },
-      {
-        "channel_id": "UC6av7Vo82wryP8n0-hmypAA",
-        "name": "그루터기다민족행정사 ",
-        "query": "오산 행정사"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 154,
+  "region_observed": 156,
   "channels_discovered": 28150,
-  "channels_observed": 573,
+  "channels_observed": 581,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -48,7 +37,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 413,
+      "observed": 417,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 4032,
@@ -341,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 362,
+      "observed": 365,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4704,
+      "classified": 4705,
       "classification_errors": 7,
       "jobs": [
         {
@@ -634,10 +623,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 281,
+      "observed": 289,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4079,
+      "classified": 4081,
       "classification_errors": 7,
       "jobs": [
         {
@@ -927,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 234,
+      "observed": 238,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4651,
+      "classified": 4652,
       "classification_errors": 10,
       "jobs": [
         {
@@ -1220,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 345,
+      "observed": 351,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4106,
+      "classified": 4107,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1513,7 +1502,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 235,
+      "observed": 239,
       "observation_errors": 13,
       "classified_at": null,
       "classified": 5223,
@@ -1806,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 226,
+      "observed": 231,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3790,
+      "classified": 3791,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2099,7 +2088,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 161,
+      "observed": 164,
       "observation_errors": 4,
       "classified_at": null,
       "classified": 2316,
@@ -2392,7 +2381,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 179,
+      "observed": 182,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 2431,
@@ -2685,7 +2674,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 180,
+      "observed": 182,
       "observation_errors": 2,
       "classified_at": null,
       "classified": 2245,
@@ -2978,7 +2967,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 154,
+      "observed": 156,
       "observation_errors": 1,
       "classified_at": null,
       "classified": 2028,
