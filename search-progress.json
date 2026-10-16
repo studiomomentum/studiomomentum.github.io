@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T07:21:59.604411+00:00",
+  "updated_at": "2026-10-16T07:23:13.235178+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19263,
+    "processed": 19264,
     "pending": 11154,
-    "processing": 1,
+    "processing": 0,
     "eligible": 167,
     "review": 13392,
-    "rejected": 5649,
+    "rejected": 5650,
     "errors": 52,
     "ready": 0,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UC4N9WG5FT75cEN79pSrRSKg",
-        "name": "여신티켓 - 피부탐구생활",
-        "query": "광교삼성화이트치과의원 유튜브"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 15,
+  "region_observed": 18,
   "channels_discovered": 28150,
-  "channels_observed": 52,
+  "channels_observed": 59,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,7 +37,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 49,
+      "observed": 53,
       "observation_errors": 4,
       "classified_at": null,
       "classified": 4032,
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 22,
+      "observed": 27,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4704,
+      "classified": 4705,
       "classification_errors": 6,
       "jobs": [
         {
@@ -629,7 +623,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 19,
+      "observed": 21,
       "observation_errors": 6,
       "classified_at": null,
       "classified": 4081,
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 17,
+      "observed": 22,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4651,
+      "classified": 4652,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1215,7 +1209,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 37,
+      "observed": 41,
       "observation_errors": 3,
       "classified_at": null,
       "classified": 4107,
@@ -1801,7 +1795,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 36,
+      "observed": 40,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 3791,
@@ -2094,10 +2088,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 12,
+      "observed": 17,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2315,
+      "classified": 2316,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 17,
+      "observed": 22,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2430,
+      "classified": 2431,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2674,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 17,
+      "observed": 21,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2244,
+      "classified": 2245,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2967,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 15,
+      "observed": 18,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2027,
+      "classified": 2028,
       "classification_errors": 1,
       "jobs": [
         {
