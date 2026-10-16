@@ -9,7 +9,7 @@ function momentumStageControl(action,key,prefix,workflow,label) {
     button.disabled=busy;button.textContent=busy?(state?.phase==='running'?label+' 실행 중':'처리 중'):pending?'실행 상태 확인':'수동 '+label+' · 이어하기';
     document.getElementById(prefix+'Status').textContent=state?.message||(action==='search'?'중단 검색 이어하기 · 메일 발송 없음':'기존 후보 근거 수집·분류 이어하기 · 메일 발송 없음');
     if(action==='classify')document.getElementById('kpiCard_READY').dataset.state=state?.phase||'idle';
-    const link=document.getElementById(prefix+'RunLink');link.hidden=!state;link.href=Number.isSafeInteger(state?.runId)?runPage+'/runs/'+state.runId:runPage+'/workflows/'+workflow;
+    const link=document.getElementById(prefix+'RunLink');link.hidden=!state||state.backend==='cloud';link.href=Number.isSafeInteger(state?.runId)?runPage+'/runs/'+state.runId:runPage+'/workflows/'+workflow;
     if(action==='classify'){
       const mirror=document.getElementById('progressClassifyButton');
       if(mirror){
