@@ -14,5 +14,7 @@ window.OpsAuth=(()=>{
  document.getElementById('opsLogout').addEventListener('click',logout);
  try{current=JSON.parse(sessionStorage.getItem(key)||localStorage.getItem(key)||'null');}catch(_){clear();}
  if(local||session())reveal();else show();
- return {session,invalid,local};
+ async function call(action,payload={}){if(!current||current.expiresAt<=Date.now()){invalid();const e=Error('관리자 로그인이 필요합니다.');e.code='UNAUTHORIZED';throw e;}try{return await request({action,...payload,session:current.token});}catch(error){if(error.message==='로그인이 만료되었습니다.')invalid();throw error;}}
+ async function cacheScope(){if(!current)return null;const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(current.token));return Array.from(new Uint8Array(bytes),b=>b.toString(16).padStart(2,'0')).join('');}
+ return {session,invalid,local,call,cacheScope,logout,hasAdminSession:()=>!!current&&current.expiresAt>Date.now()};
 })();

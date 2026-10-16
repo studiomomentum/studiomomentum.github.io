@@ -1,0 +1,164 @@
+  <div id="dashboardApp">
+
+    <!-- 헤더 -->
+
+
+    <!-- 백업 검증 이상 감지 경고 배너 (평소 정상일 때는 완전 숨김, 검증 실패 시에만 표출) -->
+    <div id="backupAlertBanner" style="display: none; background: linear-gradient(90deg, #7f1d1d, #991b1b); border: 1px solid #ef4444; border-radius: 10px; padding: 14px 20px; margin-bottom: 20px; color: #fee2e2; font-size: 13.5px; line-height: 1.5; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.25); animation: pulseAlert 2s infinite;">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;">
+        <div style="display: flex; align-items: flex-start; gap: 10px;">
+          <span style="font-size: 20px; line-height: 1;">🚨</span>
+          <div>
+            <strong style="color: #ffffff; font-size: 14.5px;">[긴급] 텔레메트리 1시간 자동 백업 무결성 검증 이상 감지</strong>
+            <div id="backupAlertMsg" style="margin-top: 4px; color: #fca5a5;"></div>
+            <div id="backupAlertTime" style="margin-top: 2px; font-size: 11.5px; color: #f87171;"></div>
+          </div>
+        </div>
+        <button onclick="dismissBackupAlert()" style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 11.5px;">닫기</button>
+      </div>
+    </div>
+    <style>
+      @keyframes pulseAlert {
+        0%, 100% { border-color: #ef4444; box-shadow: 0 0 10px rgba(239, 68, 68, 0.2); }
+        50% { border-color: #f87171; box-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
+      }
+    </style>
+
+    <!-- KPI 요약 카드 그리드 -->
+    <div class="kpi-grid">
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_SENT_ALL" onclick="handleKpiCardClick('SENT_ALL')">
+        <div class="kpi-label">
+          <span>발송 처리</span>
+          <span>✉️</span>
+        </div>
+        <div class="kpi-val" id="kpiSentCount">0</div>
+        <div class="kpi-sub" id="kpiSentSub">발송 대기: 0건</div>
+        <div class="kpi-click-hint">👉 클릭 시 전체 발송목록 조회</div>
+      </div>
+
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_OPENED_ALL" onclick="handleKpiCardClick('OPENED_ALL')">
+        <div class="kpi-label">
+          <span title="추적 이미지 요청 기준 · 실제 읽음 여부는 확인할 수 없습니다">메일 열람 수신처</span>
+          <span>👁️</span>
+        </div>
+        <div class="kpi-val" style="color: #c084fc;" id="kpiOpenedCount">0</div>
+        <div class="kpi-sub" id="kpiOpenedRate">열람률: 0%</div>
+        <div class="kpi-click-hint" style="color: #c084fc;">👉 클릭 시 메일열람 타깃 필터</div>
+      </div>
+
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_VISITED" onclick="handleKpiCardClick('VISITED')">
+        <div class="kpi-label">
+          <span>사이트 방문</span>
+          <span>🌐</span>
+        </div>
+        <div class="kpi-val" style="color: #60a5fa;" id="kpiVisitedCount">0</div>
+        <div class="kpi-sub" id="kpiVisitedRate">방문 전환율: 0%</div>
+        <div class="kpi-click-hint" style="color: #60a5fa;">👉 클릭 시 사이트방문 고객 필터</div>
+      </div>
+
+      <div class="kpi-card" role="button" tabindex="0" id="kpiCard_HOT" onclick="handleKpiCardClick('HOT')">
+        <div class="kpi-label">
+          <span>상담 클릭</span>
+          <span>🔥</span>
+        </div>
+        <div class="kpi-val highlight-hot" id="kpiHotCount">0</div>
+        <div class="kpi-sub">카카오톡 버튼 클릭 기준</div>
+        <div class="kpi-click-hint" style="color: #f87171;">👉 클릭 시 카톡상담 리드 필터</div>
+      </div>
+
+      <div class="kpi-card ready-card" id="kpiCard_READY"><button class="ready-summary" onclick="setMainTab('READY')" aria-label="발송대기 목록 보기"><span class="kpi-label">발송 대기</span><span class="kpi-val" id="kpiReadyCount">0</span></button><button type="button" id="classifyButton" onclick="MomentumClassification.start()">분류·장전 실행</button><p id="classifyStatus" role="status" aria-live="polite">기존 후보 분류 · 메일 발송 없음</p><a id="classifyRunLink" hidden target="_blank" rel="noopener noreferrer">실행 상세 ↗</a></div>
+    </div>
+
+    <!-- 2열 메인 바디 -->
+    <div class="dashboard-body">
+      <!-- 우측: 마스터 타깃 추적 테이블 -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>타깃 관리</span>
+          </div>
+        </div>
+
+        <nav hidden class="workspace-tabs" aria-label="관리 화면">
+          <button class="active" id="workspaceTargets" onclick="setMainTab('SENT')">타깃 관리</button>
+          <button id="tabBtnSearchDB" onclick="setMainTab('SEARCH_DB')">발굴 현황 <span id="tabSearchDBCount"></span></button>
+          <button id="tabBtnContent" onclick="setMainTab('CONTENT')">콘텐츠 관리</button>
+          <button id="tabBtnInbound" onclick="setMainTab('INBOUND')">유입 분석 <span id="tabInboundCount"></span></button>
+        </nav>
+        <section id="contentWorkspace" hidden aria-label="콘텐츠 관리"></section>
+    <!-- pSEO & Inbound 실시간 지역/업종/AI(GEO·AEO) 분석 보드 -->
+    <div class="pseo-analytics-panel" id="pseoAnalyticsPanel">
+      <div class="panel-header" style="cursor: pointer; margin-bottom: 0;" onclick="togglePseoBoard()">
+        <div class="panel-title">
+          <span>유입 경로 · 지역 · 업종</span>
+          <span id="pseoTotalBadge" style="font-size: 11px; background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 10px; font-weight: 800;">pSEO: 0건 | GEO: 0건 | AEO: 0건</span>
+        </div>
+        <span style="font-size: 12px; color: #94a3b8;" id="pseoToggleIcon">▼ 접기/펼치기</span>
+      </div>
+
+      <div id="pseoBoardContent" class="pseo-board-grid">
+        <!-- 좌측: 12대 핵심 권역별 유입 랭킹 -->
+        <div class="pseo-card">
+          <div class="pseo-card-title">
+            <span>지역별 유입</span>
+            <span style="font-size:11px; color:#64748b; font-weight:normal;">클릭 시 필터</span>
+          </div>
+          <div class="pseo-ranking-list" id="pseoRegionList">
+            <!-- 동적 렌더링 -->
+          </div>
+        </div>
+
+        <!-- 중앙: 5대 고단가 업종별 유입 점유율 -->
+        <div class="pseo-card">
+          <div class="pseo-card-title">
+            <span>업종별 유입</span>
+            <span style="font-size:11px; color:#64748b; font-weight:normal;">클릭 시 필터</span>
+          </div>
+          <div class="pseo-ranking-list" id="pseoIndustryList">
+            <!-- 동적 렌더링 -->
+          </div>
+        </div>
+
+        <!-- 우측: ROI 계산기 & AI 유입 (GEO) 실시간 시뮬레이션 지표 -->
+        <div class="pseo-card">
+          <div class="pseo-card-title">
+            <span>AI 추천 · 계산기 이용</span>
+            <span style="font-size:11px; color:#64748b; font-weight:normal;">실시간 집계</span>
+          </div>
+          <div id="pseoGeoStats" class="pseo-stat-box">
+            <!-- 동적 렌더링 -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <section id="searchProgress" hidden aria-label="서치 진행 상황"></section>
+        <div id="prospectSummary" hidden></div>
+        <div class="table-controls">
+          <input type="text" id="searchInput" class="search-input" placeholder="업체·담당자·이메일 검색" aria-label="목록 검색" oninput="renderTable()">
+          <div class="filter-group" id="dynamicFilterGroup"></div>
+          <button class="btn-secondary" onclick="resetWorkspaceFilters()">초기화</button>
+          <button class="btn-secondary" onclick="exportDataCSV()">CSV 내보내기</button>
+        </div>
+        <div id="resultSummary" class="result-summary" aria-live="polite"></div>
+        <!-- 데스크톱 전용 테이블 뷰 -->
+        <div class="desktop-table-container table-wrap" id="workspaceTable">
+          <table id="targetsTable">
+            <thead id="tableHead">
+              <!-- 메인 탭에 따라 헤더 컬럼이 동적으로 바뀝니다 -->
+            </thead>
+            <tbody id="tableBody">
+              <!-- 테이블 행이 동적으로 렌더링됩니다 -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 모바일 전용 카드 피드 뷰 (좌우 스크롤 없이 한손 탐색) -->
+        <div class="mobile-cards-container" id="mobileCardsContainer">
+          <!-- 모바일 타깃 카드가 동적으로 렌더링됩니다 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>

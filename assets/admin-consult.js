@@ -1,9 +1,9 @@
 /* Private conversations are fetched only through the existing authenticated admin relay. */
 (() => {
-  const host=document.getElementById('dashboardApp');if(!host)return;
+  const host=document.getElementById('momentumConsult')||document.getElementById('dashboardApp');if(!host)return;
   const box=document.createElement('details');box.style.cssText='margin:20px;padding:18px;border:1px solid #475569;border-radius:12px;background:#0f172a;color:#e2e8f0';
   box.innerHTML='<summary style="cursor:pointer;font-weight:700">AI 상담 기록 · 고객의 고민과 실제 문의</summary><p style="font-size:13px">카카오 이동은 실제 문의 도착과 다릅니다. 실제 메시지를 받은 상담만 ‘문의 도착 확인’으로 표시하세요. 테스트 대화는 통계에서 제외합니다.</p><button type="button" data-load>상담 기록 불러오기</button><span data-status role="status" style="margin-left:12px"></span><div data-list></div>';
-  host.append(box);const status=box.querySelector('[data-status]'),list=box.querySelector('[data-list]'),button=box.querySelector('[data-load]');
+  if(host.id==='momentumConsult'){box.open=true;box.className='integrated-consult';}host.append(box);const status=box.querySelector('[data-status]'),list=box.querySelector('[data-list]'),button=box.querySelector('[data-load]');
   button.onclick=async()=>{
     button.disabled=true;status.textContent='불러오는 중…';
     try{

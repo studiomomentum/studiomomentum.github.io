@@ -39,5 +39,5 @@
 서버 원본 코드는 `/home/pc/Documents/Server/projects/공통운영/01_서버코드/control-center/`에 보존.
 `remote.py`는 조회 전용이며 작업 실행, 발송, DB 변경 명령을 받지 않음.
 `tunnel.py`는 공식 cloudflared 바이너리로 외부 HTTPS 연결을 유지. GitHub 인증은 기존 gh 시스템 자격증명을 읽어 메모리에서만 사용. public origin만 GitHub에 반영.
-현재 GitHub Pages에서 작업 상태를 실시간 조회할 수 있으며 제어 작업은 기존 모멘텀 어드민에서 수행.
+GitHub Pages 통합 화면에서 상태 조회와 모멘텀 작업 관리를 함께 수행합니다. 별도 어드민 창이나 iframe을 사용하지 않습니다. 타깃/메일, 검색/분류, 콘텐츠/발행, 유입/행동 분석, 상담, 운영 설정으로 기능을 재배치했습니다. 기존 admin.html 진입은 통합 관리 메뉴로 이동합니다. 최대화 화면은 폭 제한 없이 사용하며 1600px 이상에서 전체 관제 프로젝트를 3열로 배치합니다.
 aight 실행기·CVD/OI 연결은 아직 별도이며 미연결 상태를 실제 실행으로 표시하지 않음.
