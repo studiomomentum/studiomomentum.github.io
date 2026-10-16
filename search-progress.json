@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T07:50:42.073874+00:00",
+  "updated_at": "2026-10-16T07:51:44.158681+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,19 +11,24 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19263,
+    "processed": 19262,
     "pending": 11154,
-    "processing": 1,
+    "processing": 2,
     "eligible": 169,
-    "review": 13393,
+    "review": 13392,
     "rejected": 5646,
     "errors": 52,
     "ready": 2,
     "status": "running",
     "active": [
       {
-        "channel_id": "UC0rJ6OMj51svvJHyw9N8IiA",
-        "name": "로컬소셜살롱수원TV",
+        "channel_id": "UCsWvx0f-yLh7S_zl-ujx0sw",
+        "name": "Sangwon Park",
+        "query": "수원 건축사사무소"
+      },
+      {
+        "channel_id": "UCbWDJleAwF9AcDoAQzLM8eQ",
+        "name": "안전리뷰",
         "query": "수원 건축사사무소"
       }
     ]
@@ -31,9 +36,9 @@
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 80,
+  "region_observed": 81,
   "channels_discovered": 28150,
-  "channels_observed": 248,
+  "channels_observed": 253,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 241,
+      "observed": 245,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4031,
+      "classified": 4030,
       "classification_errors": 4,
       "jobs": [
         {
@@ -339,7 +344,7 @@
       "observed": 90,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4705,
+      "classified": 4704,
       "classification_errors": 6,
       "jobs": [
         {
@@ -629,7 +634,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 90,
+      "observed": 91,
       "observation_errors": 6,
       "classified_at": null,
       "classified": 4081,
@@ -925,7 +930,7 @@
       "observed": 90,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4652,
+      "classified": 4651,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1215,7 +1220,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 179,
+      "observed": 183,
       "observation_errors": 3,
       "classified_at": null,
       "classified": 4106,
@@ -1511,7 +1516,7 @@
       "observed": 109,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5223,
+      "classified": 5222,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1804,7 +1809,7 @@
       "observed": 128,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 3791,
+      "classified": 3790,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2094,7 +2099,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 69,
+      "observed": 70,
       "observation_errors": 4,
       "classified_at": null,
       "classified": 2316,
@@ -2387,10 +2392,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 90,
+      "observed": 91,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2431,
+      "classified": 2430,
       "classification_errors": 5,
       "jobs": [
         {
@@ -2680,10 +2685,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 94,
+      "observed": 96,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2245,
+      "classified": 2244,
       "classification_errors": 1,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 80,
+      "observed": 81,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2028,
+      "classified": 2027,
       "classification_errors": 1,
       "jobs": [
         {
