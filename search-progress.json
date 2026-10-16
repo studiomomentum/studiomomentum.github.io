@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T07:37:15.035955+00:00",
+  "updated_at": "2026-10-16T07:38:19.475065+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19263,
+    "processed": 19262,
     "pending": 11154,
-    "processing": 1,
+    "processing": 2,
     "eligible": 169,
-    "review": 13391,
+    "review": 13390,
     "rejected": 5648,
     "errors": 52,
     "ready": 2,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCMrPn-HKZ9Tm0ziuNGgT_qw",
-        "name": "한빛재활의학과TV-신경마비_통증",
-        "query": "수원 재활의학과"
+        "channel_id": "UCrstuzG3Fahxeq6MC4beF_w",
+        "name": "lim eddy",
+        "query": "수원 마취통증의학과"
+      },
+      {
+        "channel_id": "UCkzLpYfyVHRkqPGHCpRxiQw",
+        "name": "한경림 박사의 통증이야기 | 통캐한",
+        "query": "수원 마취통증의학과"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 42,
+  "region_observed": 45,
   "channels_discovered": 28150,
-  "channels_observed": 160,
+  "channels_observed": 165,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,10 +48,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 153,
+      "observed": 158,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4031,
+      "classified": 4030,
       "classification_errors": 4,
       "jobs": [
         {
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 56,
+      "observed": 59,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4705,
+      "classified": 4703,
       "classification_errors": 6,
       "jobs": [
         {
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 57,
+      "observed": 60,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 4081,
+      "classified": 4080,
       "classification_errors": 6,
       "jobs": [
         {
@@ -922,10 +927,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 55,
+      "observed": 58,
       "observation_errors": 9,
       "classified_at": null,
-      "classified": 4652,
+      "classified": 4651,
       "classification_errors": 9,
       "jobs": [
         {
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 115,
+      "observed": 120,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4106,
+      "classified": 4105,
       "classification_errors": 3,
       "jobs": [
         {
@@ -1508,10 +1513,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 70,
+      "observed": 72,
       "observation_errors": 12,
       "classified_at": null,
-      "classified": 5223,
+      "classified": 5222,
       "classification_errors": 12,
       "jobs": [
         {
@@ -1801,7 +1806,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 83,
+      "observed": 88,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 3790,
@@ -2094,10 +2099,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5132,
-      "observed": 41,
+      "observed": 45,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 2315,
+      "classified": 2314,
       "classification_errors": 4,
       "jobs": [
         {
@@ -2387,7 +2392,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 55,
+      "observed": 59,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 2430,
@@ -2680,7 +2685,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4887,
-      "observed": 53,
+      "observed": 56,
       "observation_errors": 1,
       "classified_at": null,
       "classified": 2244,
@@ -2973,7 +2978,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 42,
+      "observed": 45,
       "observation_errors": 1,
       "classified_at": null,
       "classified": 2027,
