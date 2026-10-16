@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T08:56:59.119993+00:00",
+  "updated_at": "2026-10-16T08:58:01.943219+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,23 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19263,
+    "processed": 19264,
     "pending": 11154,
-    "processing": 1,
+    "processing": 0,
     "eligible": 172,
-    "review": 13391,
+    "review": 13392,
     "rejected": 5644,
     "errors": 53,
     "ready": 3,
     "status": "running",
-    "active": [
-      {
-        "channel_id": "UCCjEe3sPutWuKoFTaT6IMfA",
-        "name": "김태영 (미래시스템)",
-        "query": "평택 학원"
-      }
-    ]
+    "active": []
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 183,
   "channels_discovered": 28150,
-  "channels_observed": 719,
+  "channels_observed": 726,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -336,10 +330,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 400,
+      "observed": 401,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4704,
+      "classified": 4705,
       "classification_errors": 7,
       "jobs": [
         {
@@ -922,10 +916,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 326,
+      "observed": 333,
       "observation_errors": 10,
       "classified_at": null,
-      "classified": 4651,
+      "classified": 4652,
       "classification_errors": 10,
       "jobs": [
         {
@@ -1215,10 +1209,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 427,
+      "observed": 432,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4106,
+      "classified": 4107,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1508,10 +1502,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 284,
+      "observed": 287,
       "observation_errors": 13,
       "classified_at": null,
-      "classified": 5222,
+      "classified": 5223,
       "classification_errors": 13,
       "jobs": [
         {
@@ -1801,10 +1795,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4458,
-      "observed": 267,
+      "observed": 268,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3790,
+      "classified": 3791,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2387,10 +2381,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5022,
-      "observed": 223,
+      "observed": 224,
       "observation_errors": 5,
       "classified_at": null,
-      "classified": 2430,
+      "classified": 2431,
       "classification_errors": 5,
       "jobs": [
         {
