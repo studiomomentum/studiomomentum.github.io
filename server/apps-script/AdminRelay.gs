@@ -1,5 +1,7 @@
 /* Secrets exist only in Script Properties. Never log requests, passwords or tokens. */
 const ADMIN_RELAY_VERSION_ = 1;
+// Compatibility deadline for older clients; server persistence is explicit and has no time limit.
+const ADMIN_PERSISTENT_CLIENT_EXPIRY_ = 8640000000000000;
 const ADMIN_REPO_ = 'studiomomentum/momentum-cold-mailer';
 const ADMIN_WORKFLOW_ = 'auto_prospect.yml';
 const ADMIN_SEARCH_WORKFLOW_ = 'prospecting.yml';
@@ -36,17 +38,18 @@ function adminLogin_(request) {
     const valid=request.username==='admin'&&password.length>0&&password.length<=256&&adminEqual_(adminMac_('password:'+adminHash_(password)),props.getProperty('ADMIN_PASSWORD_CHECK'));
     if(!valid)throw new Error('INVALID_LOGIN');
     props.deleteProperty('ADMIN_LOGIN_GUARD');
-    const expiresAt=now+(request.remember===true?7*24:8)*60*60*1000;
+    const persistent=request.remember===true;
+    const expiresAt=persistent?null:now+8*60*60*1000;
     const token=Utilities.getUuid().replace(/-/g,'')+Utilities.getUuid().replace(/-/g,'')+adminMac_(Utilities.getUuid()+':'+now);
-    const sessions=adminRead_('ADMIN_SESSIONS',[]).filter(s=>s.expiresAt>now).slice(-9);
-    sessions.push({hash:adminHash_(token),expiresAt:expiresAt});adminWrite_('ADMIN_SESSIONS',sessions);
-    return {token:token,expiresAt:expiresAt};
+    const sessions=adminRead_('ADMIN_SESSIONS',[]).filter(s=>s.persistent===true||s.expiresAt>now);
+    sessions.push({hash:adminHash_(token),expiresAt:expiresAt,persistent:persistent});adminWrite_('ADMIN_SESSIONS',sessions);
+    return {token:token,expiresAt:persistent?ADMIN_PERSISTENT_CLIENT_EXPIRY_:expiresAt,persistent:persistent};
   });
 }
 function adminSession_(token) {
   if(typeof token!=='string'||!/^[a-f0-9]{128}$/.test(token))throw new Error('UNAUTHORIZED');
   const hash=adminHash_(token),now=Date.now();
-  const session=adminRead_('ADMIN_SESSIONS',[]).find(s=>s.expiresAt>now&&adminEqual_(s.hash,hash));
+  const session=adminRead_('ADMIN_SESSIONS',[]).find(s=>(s.persistent===true||s.expiresAt>now)&&adminEqual_(s.hash,hash));
   if(!session)throw new Error('UNAUTHORIZED');return session;
 }
 function adminGithub_(path,method,body) {
@@ -164,10 +167,20 @@ function adminRoute_(request) {
   try{
     if(request.action==='login')return {ok:true,result:adminLogin_(request)};
     const session=adminSession_(request.session);
+    if(request.action==='content.worker.register')return {ok:true,result:contentWorkerRegister_()};
     if (typeof request.action==='string' && request.action.startsWith('consult.')) return {ok:true,result:consultAdmin_(request)};
     if (typeof request.action==='string' && request.action.startsWith('content.')) return {ok:true,result:contentRoute_(request)};
     switch(request.action){
-      case 'session':return {ok:true,result:{expiresAt:session.expiresAt}};
+      case 'session': {
+        // Upgrade an authenticated, remembered browser without asking for its password again.
+        const current=request.remember===true?adminLock_(()=>{
+          const valid=adminSession_(request.session),sessions=adminRead_('ADMIN_SESSIONS',[]);
+          const saved=sessions.find(s=>adminEqual_(s.hash,valid.hash));
+          if(saved.persistent!==true){saved.persistent=true;saved.expiresAt=null;adminWrite_('ADMIN_SESSIONS',sessions);}
+          return saved;
+        }):session;
+        return {ok:true,result:{expiresAt:current.persistent===true?ADMIN_PERSISTENT_CLIENT_EXPIRY_:current.expiresAt,persistent:current.persistent===true}};
+      }
       case 'logout':adminLock_(()=>adminWrite_('ADMIN_SESSIONS',adminRead_('ADMIN_SESSIONS',[]).filter(s=>!adminEqual_(s.hash,session.hash))));return {ok:true,result:{loggedOut:true}};
       case 'classify.start':return {ok:true,result:adminClassifyStart_(request)};
       case 'classify.status':return {ok:true,result:adminClassifyStatus_()};

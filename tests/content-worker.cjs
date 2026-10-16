@@ -1,0 +1,15 @@
+const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const props={};let calls=[];
+const ctx={Error,Utilities:{getUuid:()=>crypto.randomUUID()},adminLock_:fn=>fn(),adminProps_:()=>({getProperty:k=>props[k],setProperty:(k,v)=>props[k]=v}),adminHash_:s=>crypto.createHash('sha256').update(s).digest('hex'),adminEqual_:(a,b)=>a===b,contentFile_:()=>({getBlob:()=>({getDataAsString:()=>JSON.stringify({jobs:[],deliveries:[],keywordRefreshes:[]})})}),contentRoute_:r=>{calls.push(r.action);return {job:null};}};
+vm.createContext(ctx);vm.runInContext(fs.readFileSync('server/apps-script/ContentWorker.gs','utf8'),ctx);
+const token=ctx.contentWorkerRegister_().workerToken;
+assert(!JSON.stringify(props).includes(token));
+assert.equal(ctx.contentWorkerRoute_({action:'content.worker.claim',workerToken:'bad'}).error,'UNAUTHORIZED');
+for(const action of ['settings.update','content.delivery.request','content.save','content.generate','consult.list','automation.worker.register'])assert.equal(ctx.contentWorkerRoute_({action,workerToken:token}).error,'CONTENT_WORKER_ACTION_FORBIDDEN');
+assert.equal(calls.length,0);
+assert(ctx.contentWorkerRoute_({action:'content.worker.claim',workerToken:token}).ok);
+assert.deepEqual(calls,['content.worker.claim']);
+const next=ctx.contentWorkerRegister_().workerToken;
+assert.equal(ctx.contentWorkerRoute_({action:'content.worker.claim',workerToken:token}).error,'UNAUTHORIZED');
+assert(ctx.contentWorkerRoute_({action:'content.worker.claim',workerToken:next}).ok);
+console.log('PASS dedicated blog worker token cannot use admin, publish-request, article-edit or customer-record actions');
