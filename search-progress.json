@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T07:54:07.603058+00:00",
+  "updated_at": "2026-10-16T07:55:10.648984+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,23 +11,29 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19264,
+    "processed": 19263,
     "pending": 11154,
-    "processing": 0,
+    "processing": 1,
     "eligible": 169,
-    "review": 13394,
+    "review": 13393,
     "rejected": 5646,
     "errors": 52,
     "ready": 2,
     "status": "running",
-    "active": []
+    "active": [
+      {
+        "channel_id": "UCnpkCsXJ-DZWXBlJwBm-8rw",
+        "name": "여온쌤의 필라테스 Sequence Design",
+        "query": "수원 필라테스"
+      }
+    ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
   "region_observed": 89,
   "channels_discovered": 28150,
-  "channels_observed": 275,
+  "channels_observed": 276,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -37,10 +43,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 267,
+      "observed": 268,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4032,
+      "classified": 4031,
       "classification_errors": 4,
       "jobs": [
         {
@@ -330,7 +336,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 99,
+      "observed": 100,
       "observation_errors": 6,
       "classified_at": null,
       "classified": 4705,
@@ -623,7 +629,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 101,
+      "observed": 102,
       "observation_errors": 6,
       "classified_at": null,
       "classified": 4081,
@@ -916,7 +922,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 98,
+      "observed": 99,
       "observation_errors": 9,
       "classified_at": null,
       "classified": 4652,
@@ -1209,10 +1215,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 199,
+      "observed": 200,
       "observation_errors": 3,
       "classified_at": null,
-      "classified": 4107,
+      "classified": 4106,
       "classification_errors": 3,
       "jobs": [
         {
