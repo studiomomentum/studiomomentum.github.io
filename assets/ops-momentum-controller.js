@@ -285,7 +285,7 @@
     }
 
     function updateKPIs() {
-      const searchStats = targetsMap['_search_db_stats'] || {};
+      const searchStats = window.MomentumSearchProgress?.stats() || {};
       const targetsList = Object.values(targetsMap).filter(t => t && t.token && t.token !== '_search_db_stats');
       const totalSent = targetsList.filter(t => t.status === "SENT" || t.status === "BOUNCED").length;
       const totalReady = targetsList.filter(t => t.status === "READY").length;

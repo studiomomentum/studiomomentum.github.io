@@ -1,19 +1,11 @@
-/* Public aggregate progress only; credentials and channel evidence stay server-side. */
+/* Authenticated Ubuntu checkpoints; credentials and evidence stay server-side. */
 (() => {
-  const endpoint='https://raw.githubusercontent.com/studiomomentum/studiomomentum.github.io/main/search-progress.json';
   let data=null,selected='',loading=false,failed=false,lastActive=[];
   const e=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const n=value=>Number.isFinite(Number(value))?Number(value):0;
   const date=value=>new Date(value).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
-  function nextSearch(now=new Date()) {
-    const next=new Date(now);next.setUTCHours(14,0,0,0);
-    next.setUTCDate(next.getUTCDate()+(7-next.getUTCDay())%7);
-    if(next<=now)next.setUTCDate(next.getUTCDate()+7);
-    return next;
-  }
   function activeLabel(t) {
-    const fallback=typeof targetsMap!=='undefined'?targetsMap._classification_context?.[t.channel_id]:'';
-    const query=String(t.query||fallback||'').trim();
+    const query=String(t.query||'').trim();
     const parts=query.split(/\s+/),region=parts.shift(),profession=parts.join(' ');
     return `<li><strong>${e(region||'지역 미확인')} · ${e(profession||'직업 미확인')}</strong><span>${e(t.name||t.channel_id||'채널 미확인')}</span></li>`;
   }
@@ -30,16 +22,17 @@
     const classification=data?.classification||{}, searchStage=data?.search_stage||{};
     const active=Array.isArray(classification.active)?classification.active:[];
     if(active.length)lastActive=active;
-    const recent=lastActive.length?lastActive:(typeof targetsMap!=='undefined'?targetsMap._classification_recent||[]:[]);
+    const recent=lastActive.length?lastActive:(data?.recent||[]);
     const emptyState=classification.status==='complete'?'분류 완료':classification.status==='incomplete'?'분류 중단 · 실행 상태 확인 필요':n(classification.pending)>0?'분류 결과 저장·다음 후보 준비 중':'새 검색 후보 대기 중';
     const activeMarkup=active.length?active.map(activeLabel).join(''):`<li>${e(emptyState)} · 대기 ${n(classification.pending).toLocaleString()}건</li>`;
     const recentMarkup=!active.length&&recent.length?`<p class="search-progress-note">마지막 처리 기록 · 현재 처리 중인 채널과 구분됩니다.</p><ul>${recent.map(activeLabel).join('')}</ul>`:'';
-    const banner=!data?'진행 정보 대기':failed?'갱신 실패 · 마지막 기록 표시':data.phase==='complete'?'작업 종료':stale?'갱신 지연 · 실행 상태 확인 필요':`${searchStage.region||data.region||''} · ${stageLabels[searchStage.status]||phases[data.phase]||'진행 중'}`;
-    Momentum.setHTML(host,`<div class="search-progress-heading"><div><h3>서치 진행 상황</h3><p>다음 정기 서치 <strong>${e(date(nextSearch()))}</strong> · 매주 일요일 23:00 KST</p></div><button type="button" id="refreshSearchProgress">새로고침</button></div>
-      <div class="manual-prospect-controls"><button type="button" id="searchButton">수동 서치 · 이어하기</button><button type="button" id="progressClassifyButton">수동 분류 · 이어하기</button><p id="progressClassifyStatus" role="status" aria-live="polite">기존 후보 근거 수집·분류 이어하기 · 메일 발송 없음</p><a id="progressClassifyRunLink" hidden target="_blank" rel="noopener noreferrer">분류 실행 상세 ↗</a><p id="searchStatus" role="status" aria-live="polite">중단 검색 이어하기 · 메일 발송 없음</p><a id="searchRunLink" hidden target="_blank" rel="noopener noreferrer">서치 실행 상세 ↗</a><p class="search-progress-note">GitHub 실행 한도가 갱신된 뒤 필요한 단계를 눌러 재개하세요. 수동 실행도 Actions 시간을 사용합니다. 접수·실행 상태와 실행 상세는 각 버튼 아래에 표시됩니다.</p></div>
-      <p class="search-live-state ${stale?'is-stale':''}" role="status">${e(banner)}${data?.updated_at?` · 서버 갱신 ${e(date(data.updated_at))}`:''}</p>
+    const running=data?.execution?.running;
+    const banner=!data?'우분투 진행 정보 대기':failed?'우분투 조회 실패 · 마지막 기록 표시':data.phase==='complete'?'작업 종료':!running?'우분투 요청 대기 · 마지막 체크포인트':stale?'작업 기록 갱신 지연 · 실행 상태 확인 필요':`${searchStage.region||data.region||''} · ${stageLabels[searchStage.status]||phases[data.phase]||'진행 중'}`;
+    Momentum.setHTML(host,`<div class="search-progress-heading"><div><h3>서치 진행 상황</h3><p>다음 정기 서치 <strong>${data?.next_search_at?e(date(data.next_search_at)):'우분투 예약 확인 중'}</strong> · 서버 예약 기준</p></div><button type="button" id="refreshSearchProgress">새로고침</button></div>
+      <div class="manual-prospect-controls"><button type="button" id="searchButton">수동 서치 · 이어하기</button><button type="button" id="progressClassifyButton">수동 분류 · 이어하기</button><p id="progressClassifyStatus" role="status" aria-live="polite">우분투에서 기존 후보 근거 수집·분류 이어하기 · 메일 발송 없음</p><a id="progressClassifyRunLink" hidden>분류 실행 상세</a><p id="searchStatus" role="status" aria-live="polite">우분투에서 중단 검색 이어하기 · 메일 발송 없음</p><a id="searchRunLink" hidden>서치 실행 상세</a><p class="search-progress-note">서치·분류는 우분투 작업자가 실행합니다. 요청 접수와 실제 처리 상태는 각 버튼 아래에서 확인하세요.</p></div>
+      <p class="search-live-state ${failed||running&&stale?'is-stale':''}" role="status">${e(banner)}${data?.updated_at?` · 체크포인트 저장 ${e(date(data.updated_at))}`:''}${data?.checked_at?` · 직접 조회 ${e(date(data.checked_at))}`:''}</p>
       <div class="search-live-metrics"><span>검색 완료 <b>${n(data?.queries_completed)}/${n(data?.queries_total)||440}</b></span><span>발견 채널 <b>${n(data?.channels_discovered).toLocaleString()}</b></span><span>검색 오류 <b>${Object.keys(data?.query_errors||{}).length}</b></span></div>
-      <p class="search-progress-note">30초마다 자동 확인 · 서버는 처리 진행 시 약 1분 간격으로 기록합니다. 서치와 분류는 독립 실행되며 분류 결과를 수시로 발송대기에 반영합니다. 예약은 실행 지연 또는 시스템 정지 시 달라질 수 있습니다.</p>
+      <p class="search-progress-note">15초마다 우분투 DB·체크포인트 직접 확인 · 서버 조회 시각과 실제 처리 기록 시각을 구분합니다. 서치와 분류는 독립 실행되며 예약은 서버 상태에 따라 지연될 수 있습니다.</p>
       <section class="classification-progress" aria-label="분류 진행 상황"><h3>분류 진행 상황 <small>${e(stageLabels[classification.status]||'기록 대기')}</small></h3>
         <p>처리 완료 <strong>${n(classification.processed).toLocaleString()} / ${n(classification.total).toLocaleString()}</strong> · ${classification.total?Math.min(100,n(classification.processed)/n(classification.total)*100).toFixed(1):'0.0'}%</p>
         <progress max="${n(classification.total)||1}" value="${n(classification.processed)}" aria-label="전체 분류 진행률"></progress>
@@ -56,16 +49,19 @@
     host.querySelectorAll('[data-search-region]').forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.searchRegion;render();}));
   }
   async function refresh() {
-    if(loading)return;loading=true;
+    if(loading||!window.OpsAuth?.hasAdminSession()||!window.ProjectControls)return;loading=true;
     try {
-      const response=await fetch(endpoint+'?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});
-      if(!response.ok)throw new Error('progress unavailable');
-      const value=await response.json();
-      if(!value || !Array.isArray(value.regions) || !value.updated_at)throw new Error('invalid progress');
+      const value=await ProjectControls.request('search-progress');
+      if(value?.source!=='ubuntu'||!Array.isArray(value.regions)||!value.updated_at)throw new Error('invalid progress');
       data=value;failed=false;
+      if(typeof updateKPIs==='function')updateKPIs();
+      if(typeof mainTab!=='undefined'&&mainTab==='SEARCH_DB')renderTable();
     } catch(_){failed=true;} finally {loading=false;render();}
   }
-  render();refresh();
-  setInterval(()=>{if(!document.hidden)refresh();},30000);
+  window.MomentumSearchProgress={refresh,stats:()=>data?.stats||null};
+  window.addEventListener('ops-authenticated',refresh);
+  window.addEventListener('ops-cleared',()=>{data=null;lastActive=[];failed=false;render();});
+  render();document.addEventListener('DOMContentLoaded',refresh);
+  setInterval(()=>{if(!document.hidden)refresh();},15000);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
 })();

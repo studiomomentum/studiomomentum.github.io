@@ -27,4 +27,5 @@ let controller=source.slice(finish).match(/<script>([\s\S]*?)<\/script>/)[1];
 controller=controller.replace('document.getElementById("loginOverlay").style.display = "none";','');
 controller=controller.replace('let dashboardStarted = false;','let dashboardStarted = false;\n    let dashboardPoll = null;');
 controller=controller.replace('setInterval(() => {\n        loadTargets()', 'dashboardPoll = setInterval(() => {\n        if(!OpsAuth.hasAdminSession())return;\n        loadTargets()');
+controller=controller.replace("const searchStats = targetsMap['_search_db_stats'] || {};", "const searchStats = window.MomentumSearchProgress?.stats() || {};");
 fs.writeFileSync('assets/ops-momentum-controller.js',controller);

@@ -67,7 +67,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path=='/health':return self.send(200,{'ok':True})
         self.send(401 if self.path=='/api/ops' else 404,{'error':'UNAUTHORIZED' if self.path=='/api/ops' else 'NOT_FOUND'})
     def do_POST(self):
-        paths={'/api/ops','/api/control/state','/api/control/submit','/api/control/cancel','/api/control/job','/api/control/artifact'}
+        paths={'/api/ops','/api/control/state','/api/control/submit','/api/control/cancel','/api/control/job','/api/control/artifact','/api/control/search-progress'}
         worker=self.path.startswith('/api/worker/')
         if self.path not in paths and not worker:return self.send(404,{'error':'NOT_FOUND'})
         if self.headers.get('Origin') and self.headers['Origin'] not in ORIGINS:return self.send(403,{'error':'ORIGIN_DENIED'})
@@ -96,6 +96,9 @@ class Handler(BaseHTTPRequestHandler):
                 if result.get('error'):return self.send(503,{'error':'STATUS_UNAVAILABLE'})
                 return self.send(200,result)
             if self.path=='/api/control/state':return self.send(200,controls.state(value.get('project')))
+            if self.path=='/api/control/search-progress':
+                from momentum_progress import progress
+                return self.send(200,progress())
             if self.path=='/api/control/submit':
                 result=controls.submit(value.get('requestId'),value.get('action'),value.get('params',{}))
                 return self.send(202,{'job':result})

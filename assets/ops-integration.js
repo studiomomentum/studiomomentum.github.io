@@ -16,7 +16,7 @@ window.MomentumIntegration=(()=>{
   try{
    if(!ready)ready=initDashboard();
    if(tab)setMainTab(tab);
-   await ready;status.textContent='관리 기능 연결됨';
+   await ready;status.textContent='관리 기능 연결됨';if(selected==='search')window.MomentumSearchProgress?.refresh();
   }catch(error){status.textContent=error.message||'관리 데이터 연결을 확인해 주세요.';ready=null;}
  }
  window.addEventListener('ops-cleared',()=>{ready=null;dashboardStarted=false;clearInterval(dashboardPoll);targetsMap={};liveEvents=[];window.dispatchEvent(new Event('momentum-auth-cleared'));document.getElementById('tableBody').replaceChildren();document.getElementById('mobileCardsContainer').replaceChildren();});
