@@ -40,6 +40,10 @@ def snapshot():
     result['cards']['btc']['maxAgeSeconds']=180
     result['cards']['alt']['maxAgeSeconds']=93600
     result['cards']['cvd']={'label':'CVD · OI 수집','state':'연결 확인 필요','summary':'BTC 가격 수집기는 CVD·OI를 쓰지 않습니다. 별도 수집 작업자와 DB 갱신 시각 연결이 필요합니다.','details':['Coinglass(사용자 표기: 코인레이지) 공급원·수집 권한 확인','가격·CVD·OI의 시간축과 데이터 누락을 각각 검사']}
+    try:
+        from controls import summary_cards
+        result['cards'].update(summary_cards())
+    except ImportError:pass
     return result
 
 class Handler(BaseHTTPRequestHandler):
@@ -51,7 +55,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8')
         else:
             routes={'/':'ops.html','/ops.html':'ops.html'}
-            assets=('ops.css','ops.js','ops-auth.js','ops-integration.css','ops-integration.js','ops-momentum.css','ops-momentum-controller.js','admin-keywords.js','admin-content.js','admin-workspace.js','admin-search-progress.js','admin-classification.js','admin-consult.js','momentum-runtime.js','purify.min.js')
+            assets=('ops.css','ops.js','ops-auth.js','ops-controls.js','ops-controls.css','ops-integration.css','ops-integration.js','ops-momentum.css','ops-momentum-controller.js','admin-keywords.js','admin-content.js','admin-workspace.js','admin-search-progress.js','admin-classification.js','admin-consult.js','momentum-runtime.js','purify.min.js')
             routes.update({'/assets/'+name:'assets/'+name for name in assets})
             routes.update({'/'+name:name for name in ('targets.json','system_config.json','backup_status.json','search-progress.json')})
             if path not in routes: self.send_error(404); return

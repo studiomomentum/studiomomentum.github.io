@@ -4,7 +4,7 @@ const $=id=>document.getElementById(id);
 const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const models=[
 {id:'momentum',icon:'↗',name:'솟 모멘텀',desc:'유입 → 상담 → 영업 → 성과 추적',stages:[['prospect','대상 검색 · 분류','중복 제거 / 적합성 검증 / 발송 큐'],['mail','콜드메일 · 영업','예약 발송 / 반송·수신 거부 / 전환'],['blog','콘텐츠 · 검색 유입','네이버 · Threads · 티스토리 / SEO·GEO'],['consult','AI 상담','사이트 상담 / 답변 / 상담 결과 저장']],foot:'블로그 유입은 인바운드 · 콜드메일은 아웃바운드',link:true},
-{id:'aight',icon:'▷',name:'aight',desc:'우분투 기획 → 맥북 제작 → 백업 → YouTube',stages:[['aight-plan','기획 · 대본','주제 / 대본 버전 / 장면별 지문 확정'],['aight-assets','ComfyUI · 제작 지시','배경·투명 PNG / 장면 연결 / 맥북 접수'],['aight-edit','손 편집기 · 백업','편집 / 렌더링 / 파일 해시 / 백업 검증'],['aight-publish','YouTube 발행','우분투 업로드 / 공개 일정 / 영상 ID']],foot:'연동 설계 완료 · 맥북 작업자 및 편집기 인터페이스 확인 필요'},
+{id:'aight',icon:'▷',name:'aight',desc:'우분투 기획 → 맥북 제작 → 백업 → YouTube',stages:[['aight-plan','기획 · 대본','주제 / 대본 버전 / 장면별 지문 확정'],['aight-assets','ComfyUI · 제작 지시','배경·투명 PNG / 장면 연결 / 맥북 접수'],['aight-edit','손 편집기 · 백업','편집 / 렌더링 / 파일 해시 / 백업 검증'],['aight-publish','YouTube 발행','우분투 업로드 / 공개 일정 / 영상 ID']],foot:'기획·대본 실행 / 맥북 제작 요청 / 산출물·백업 관리'},
 {id:'btc',icon:'⌁',name:'BTC 터미널',desc:'시세와 파생 데이터의 수집 · 보존 · 리포트',stages:[['btc','Binance 가격','확정 봉 / 1분봉·다른 시간봉 / 결측 검사'],['cvd','CVD · OI','공급원 응답 / 시간축 정렬 / 중복 제거'],['btc','DB · Google Drive','저장 결과 / 원본 읽기 검증 / 복구 파일'],['alt','일일 · 주간 알트','데이터 기준일 / 후보 분석 / 보고서 검증']],foot:'가격 수집과 CVD·OI 수집을 별도 검증'}];
 let subview='targets';let data={cards:{}},view='overview',busy=false,failed=false,endpoint=null,configAt=0;
 function health(card){
@@ -26,6 +26,7 @@ function render(){
  document.querySelectorAll('a[data-view]').forEach(a=>a.classList.toggle('active',a.dataset.view===view));
  $('momentumSubnav').hidden=view!=='momentum';$('momentumManagement').hidden=view!=='momentum';
  document.body.classList.toggle('manage-mode',view==='momentum');
+ $('projectManagement').hidden=!['aight','btc'].includes(view);
  $('sectionTitle').textContent=view==='system'?'서버와 제작 인프라':'프로젝트 파이프라인';
  const shown=view==='overview'?models:models.filter(m=>m.id===view);
  $('projects').innerHTML=shown.map(m=>{
@@ -41,7 +42,7 @@ const plans={aight:['각 제작 요청에 job_id·대본 버전·장면 ID·입�
 function detail(title,summary,lines){$('opsDetailTitle').textContent=title;$('opsDetailSummary').textContent=summary;$('opsDetailList').replaceChildren(...lines.map(line=>{const li=document.createElement('li');li.textContent=line;return li;}));$('detail').showModal();}
 document.addEventListener('click',event=>{const key=event.target.closest('[data-key]')?.dataset.key;const plan=event.target.closest('[data-plan]')?.dataset.plan;if(key){const c=data.cards[key];detail(c?.label||'서버 미연결',c?.state||'연결 후 실행 기록 표시',c?.details||['실시간 상태 API가 연결되어야 조회할 수 있습니다.']);}if(plan)detail(models.find(m=>m.id===plan).name,'구현·연동 기준',plans[plan]);});
 $('closeDetail').addEventListener('click',()=>$('detail').close());
-function changeView(){const parts=location.hash.slice(1).split('/');view=['momentum','aight','btc','system'].includes(parts[0])?parts[0]:'overview';subview=parts[1]||'targets';render();if(view==='momentum')window.MomentumIntegration.select(subview);}
+function changeView(){const parts=location.hash.slice(1).split('/');view=['momentum','aight','btc','system'].includes(parts[0])?parts[0]:'overview';subview=parts[1]||'targets';render();if(view==='momentum')window.MomentumIntegration.select(subview);window.ProjectControls?.open(view);}
 window.addEventListener('hashchange',changeView);
 async function refresh(){if(busy)return;
  const token=OpsAuth.session();if(!OpsAuth.local&&!token)return;
@@ -51,6 +52,6 @@ async function refresh(){if(busy)return;
  if(target.protocol!=='https:'||!target.hostname.endsWith('.trycloudflare.com'))throw Error('ENDPOINT');endpoint=target.origin+'/api/ops';configAt=Date.now();}
  const response=await fetch(OpsAuth.local?'/api/ops':endpoint,{cache:'no-store',...(OpsAuth.local?{}:{method:'POST',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({session:token})}),signal:AbortSignal.timeout(30000)});
  if(response.status===401){OpsAuth.invalid();return;}if(!response.ok)throw Error('HTTP');const next=await response.json();if(!next.cards||next.error)throw Error('DATA');data=next;failed=false;$('connection').textContent=OpsAuth.local?'서버 기록 연결':'우분투 원격 연결';$('connectionDot').className='dot green';$('notice').textContent='관리자 인증 완료 · 우분투의 실제 상태를 15초마다 조회합니다. 원본 작업 시각을 별도로 확인하세요.';}catch(_){failed=true;endpoint=null;$('connection').textContent='실시간 연결 없음';$('connectionDot').className='dot amber';$('notice').textContent=data.checkedAt?'연결이 끊겼습니다. 아래는 '+displayTime(data.checkedAt)+'에 조회한 기록이며 현재 상태가 아닙니다.':'우분투 상태 API에 연결하지 못했습니다. 연결 복구 시 자동으로 다시 조회합니다.';}finally{render();busy=false;$('refresh').disabled=false;}}
-$('refresh').addEventListener('click',refresh);function tick(){const now=new Date();$('clock').textContent=now.toLocaleTimeString('en-GB',{timeZone:'Asia/Seoul'});$('date').textContent=now.toLocaleDateString('en-CA',{timeZone:'Asia/Seoul'});if(data.checkedAt&&Date.now()-Date.parse(data.checkedAt)>45000&&!failed){$('connection').textContent='상태 수집 지연';$('connectionDot').className='dot amber';} }window.addEventListener('ops-authenticated',()=>{refresh();if(view==='momentum')window.MomentumIntegration.select(subview);});window.addEventListener('ops-cleared',()=>{data={cards:{}};render();});changeView();tick();refresh();setInterval(refresh,15000);setInterval(tick,1000);
+$('refresh').addEventListener('click',refresh);function tick(){const now=new Date();$('clock').textContent=now.toLocaleTimeString('en-GB',{timeZone:'Asia/Seoul'});$('date').textContent=now.toLocaleDateString('en-CA',{timeZone:'Asia/Seoul'});if(data.checkedAt&&Date.now()-Date.parse(data.checkedAt)>45000&&!failed){$('connection').textContent='상태 수집 지연';$('connectionDot').className='dot amber';} }window.addEventListener('ops-authenticated',()=>{refresh();if(view==='momentum')window.MomentumIntegration.select(subview);window.ProjectControls?.open(view);});window.addEventListener('ops-cleared',()=>{data={cards:{}};render();});changeView();tick();refresh();setInterval(refresh,15000);setInterval(tick,1000);
 
 })();
