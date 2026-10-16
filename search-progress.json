@@ -2,7 +2,7 @@
   "sweep_id": "manual-37099031291",
   "region": "송파",
   "phase": "parallel",
-  "updated_at": "2026-10-16T08:36:14.216025+00:00",
+  "updated_at": "2026-10-16T08:37:18.581905+00:00",
   "run_id": "1792134697299",
   "active_queries": [],
   "search_stage": {
@@ -11,29 +11,34 @@
   },
   "classification": {
     "total": 30418,
-    "processed": 19263,
+    "processed": 19262,
     "pending": 11154,
-    "processing": 1,
+    "processing": 2,
     "eligible": 171,
-    "review": 13392,
+    "review": 13391,
     "rejected": 5644,
     "errors": 53,
     "ready": 3,
     "status": "running",
     "active": [
       {
-        "channel_id": "UCpRj--ptKh2m80gqntPaA-Q",
-        "name": "맑음 REALTY",
-        "query": "오산 공인중개사"
+        "channel_id": "UCQRDrdcHBCASxvzA9jkWmew",
+        "name": "오산부동산누나TV(abo부동산)",
+        "query": "오산 부동산중개"
+      },
+      {
+        "channel_id": "UC6av7Vo82wryP8n0-hmypAA",
+        "name": "그루터기다민족행정사 ",
+        "query": "오산 행정사"
       }
     ]
   },
   "queries_completed": 440,
   "region_queries_completed": 40,
   "region_channels": 4214,
-  "region_observed": 152,
+  "region_observed": 154,
   "channels_discovered": 28150,
-  "channels_observed": 566,
+  "channels_observed": 573,
   "search_pages": 10655,
   "search_results_read": 200872,
   "query_errors": {},
@@ -43,7 +48,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4203,
-      "observed": 412,
+      "observed": 413,
       "observation_errors": 5,
       "classified_at": null,
       "classified": 4032,
@@ -336,10 +341,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4938,
-      "observed": 359,
+      "observed": 362,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4705,
+      "classified": 4704,
       "classification_errors": 7,
       "jobs": [
         {
@@ -629,10 +634,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4416,
-      "observed": 276,
+      "observed": 281,
       "observation_errors": 7,
       "classified_at": null,
-      "classified": 4081,
+      "classified": 4079,
       "classification_errors": 7,
       "jobs": [
         {
@@ -922,7 +927,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4997,
-      "observed": 231,
+      "observed": 234,
       "observation_errors": 10,
       "classified_at": null,
       "classified": 4651,
@@ -1215,10 +1220,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4320,
-      "observed": 343,
+      "observed": 345,
       "observation_errors": 4,
       "classified_at": null,
-      "classified": 4107,
+      "classified": 4106,
       "classification_errors": 4,
       "jobs": [
         {
@@ -1508,7 +1513,7 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 5630,
-      "observed": 233,
+      "observed": 235,
       "observation_errors": 13,
       "classified_at": null,
       "classified": 5223,
@@ -1804,7 +1809,7 @@
       "observed": 226,
       "observation_errors": 6,
       "classified_at": null,
-      "classified": 3791,
+      "classified": 3790,
       "classification_errors": 6,
       "jobs": [
         {
@@ -2973,10 +2978,10 @@
       "queries_completed": 40,
       "queries_total": 40,
       "channels": 4214,
-      "observed": 152,
+      "observed": 154,
       "observation_errors": 1,
       "classified_at": null,
-      "classified": 2027,
+      "classified": 2028,
       "classification_errors": 1,
       "jobs": [
         {
