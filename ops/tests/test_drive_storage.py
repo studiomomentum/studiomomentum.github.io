@@ -25,7 +25,7 @@ class StorageTests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'INVALID_SETTING'):m.call('settings.update',{'setting':'command','value':True})
  def test_failed_backup_preserves_previous_verified_receipt(self):
   d.atomic(d.STATUS,{'projects':{'momentum':{'verifiedAt':'previous-success'}}})
-  with patch.object(d,'upload_verified',side_effect=RuntimeError('DRIVE_TRANSFER_FAILED')):
+  with patch.object(d,'refresh_drive_databases'),patch.object(d,'upload_verified',side_effect=RuntimeError('DRIVE_TRANSFER_FAILED')):
    with self.assertRaises(RuntimeError):d.snapshot('momentum')
   value=d.read(d.STATUS);self.assertEqual(value['projects']['momentum']['verifiedAt'],'previous-success');self.assertEqual(value['error'],'DRIVE_TRANSFER_FAILED')
 if __name__=='__main__':unittest.main()

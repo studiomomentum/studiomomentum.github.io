@@ -51,9 +51,17 @@ CVD/OI 공급원 연결은 별도 미완료. aight 맥북·ComfyUI·손 결과 �
 - Ubuntu 공용 DB: databases/outreach/live. 기존 후보·근거·발송 이력은 원본을 보존한 채 합쳤고 SENT/BOUNCED/SENDING/UNKNOWN 이력을 보호함.
 - Google Drive 통합운영_DB: momentum(후보·근거·발송), aight(제작 데이터), btc(로컬 시장 데이터), control(일관된 SQLite 백업). 기존 BTC 가격 원본은 기존 Drive 저장을 유지.
 - 파일은 내용 해시로 이름을 정한 ZIP 스냅샷으로 저장. 실제 업로드 파일과 latest.json을 재조회해 크기·SHA-256이 같아야 저장 완료로 표시. 인증값·SMTP 비밀번호·rclone 설정은 백업에 포함하지 않음.
-- 검증 완료: momentum 27,890개 파일 / aight 465개 / btc 123개 / control 1개. 검증 영수증은 runtime/control-center/drive-backup-status.json.
+- 검증 영수증은 runtime/control-center/drive-backup-status.json. 후보·근거 외에 기존 Drive의 콘텐츠·상담·행동 통계 원본 DB도 매번 최신본을 읽어 momentum 백업에 포함함. 원본 저장소 ID와 기존 서비스 연결은 유지.
 - 전환 코드: ops/outreach. 공유 파일 잠금·로컬 운영 설정·SMTP 전 Drive 발송 의도 백업·주기 백업 작업자. 실행 중 작업이 있으면 전환하지 않음.
 - 작업자 세 개의 실제 프로세스 환경에서 공용 DB 경로와 MOMENTUM_DRIVE_DB=1을 확인. 기존 자동발송 ON 유지. 전체 DB는 시간마다 자동 백업하고 어드민의 수동 백업 요청도 처리함. SMTP 전에 발송 의도는 별도 Drive 백업으로 보존. 검증용 메일은 발송하지 않음.
 
 - GitHub에는 프론트와 소스 코드만 배포. targets.json, search-progress.json, backup_status.json, system_config.json 운영 데이터 파일은 현재 배포에서 제거하며 과거 Git 이력은 변경하지 않음.
 - 모니터·관찰 서비스도 메일 설정을 Ubuntu DB에서 읽음. GitHub 운영 설정 조회 제거.
+- Drive 요청량 제한은 대기 후 재시도. 업로드 세션·완료한 프로젝트를 비공개 상태 파일에 보존하며 동일 스냅샷은 중단 지점부터 전송. ZIP 메타데이터를 고정해 변경 없는 DB의 재시도 해시를 유지. 요청이 남아 있어도 5분 재시도 간격을 지키며 검증된 기존 백업을 보존.
+
+## 우분투 백엔드 점검
+- 2026-10-17: 시스템·사용자 서비스 11개 실행, 영업 작업자 3개의 실제 환경에서 Ubuntu 공용 DB 사용 확인. 관리자 API 인증·Origin 제한과 공개 점검 설정의 최소 필드 확인.
+- 서치 440/440, 후보 30,418개. 이전 분류 체크포인트는 대기 상태이며 실행 중 채널을 잘못 표시하지 않음. 검증 목적으로 대량 검색·분류·메일을 실행하지 않음.
+- BTC 4개 예약 활성화, 저장 영수증 조회와 통합 큐의 읽기 검증 작업 성공. aight 산출물 46개, 실제 AI 실행기 응답 및 캡처 런타임 확인.
+- 블로그 작업자 심박과 콘텐츠·상담 실제 API 조회 성공. 콘텐츠 18개, 완료 생성 작업 15개, 기존 발행 실패 3개는 과거 이력. 상담 online 확인. 저장 계층·추천 근거·상담 정책 검증 통과.
+- 실제 공개 발행·메일·영상 업로드 검증은 수행하지 않음. 맥북 작업자, 손·ComfyUI 실행, YouTube OAuth, CVD/OI 연결은 미완료로 표시. 인증·작업 접수 릴레이와 기존 콘텐츠·상담 Drive 저장 접근에는 Apps Script를 계속 사용하며 실제 제작·검색·메일 실행은 Ubuntu 작업자가 담당.
