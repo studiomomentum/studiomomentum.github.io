@@ -72,7 +72,7 @@ test('the active skill and ledger links select a newer generation without editin
 test('installed runtime resolves original Markdown through its private configuration',async t=>{
  const options=sources(t),runtime=path.join(options.skillDir,'runtime');mkdirSync(runtime);
  cpSync(new URL('../generator.mjs',import.meta.url),path.join(runtime,'generator.mjs'));
- cpSync(new URL('../campaign-link.mjs',import.meta.url),path.join(runtime,'campaign-link.mjs')); 
+ cpSync(new URL('../campaign-link.mjs',import.meta.url),path.join(runtime,'campaign-link.mjs'));
  writeFileSync(path.join(runtime,'prompt-sources.json'),JSON.stringify(options));
  const installed=await import(pathToFileURL(path.join(runtime,'generator.mjs')));
  assert.equal(installed.loadPromptReferences(['naver']).pd.generation,'G15');

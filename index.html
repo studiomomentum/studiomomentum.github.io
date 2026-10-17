@@ -2765,7 +2765,10 @@ if (refToken && refToken !== 'direct' && !refToken.startsWith('inbound_')) {
   const utmSource = (urlParams.get('utm_source') || urlParams.get('source') || urlParams.get('src') || '').toLowerCase();
   const utmMedium = (urlParams.get('utm_medium') || '').toLowerCase();
 
-  if (/perplexity\.ai/i.test(rawReferrer) || utmSource.includes('perplexity') || utmMedium.includes('perplexity') || utmSource === 'aeo' || utmMedium === 'aeo') {
+  if (utmMedium === 'organic_social' && ['naver','tistory','threads'].includes(utmSource)) {
+    channelType = 'SNS';
+    channelName = ({naver:'네이버 블로그',tistory:'티스토리',threads:'쓰레드'})[utmSource] + ' 홍보 유입';
+  } else if (/perplexity\.ai/i.test(rawReferrer) || utmSource.includes('perplexity') || utmMedium.includes('perplexity') || utmSource === 'aeo' || utmMedium === 'aeo') {
     channelType = 'AEO';
     channelName = 'Perplexity AI (AEO 직답 인용)';
   } else if (/google\..*(\?|&)ai(=|&|$)|google\.com\/search.*source=ai/i.test(rawReferrer) || utmSource.includes('ai_overview') || utmMedium.includes('ai_overview')) {
