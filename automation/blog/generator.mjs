@@ -72,7 +72,8 @@ export function loadPromptReferences(platforms=allPlatforms,options={}){
   return refs;
 }
 export function makePrompt(topic,platforms=allPlatforms,options={}){
-  const refs=loadPromptReferences(platforms,options);
+  const referencePlatforms=options.writingContext&&platforms.length===1&&platforms[0]==='threads'?['naver','threads']:platforms;
+  const refs=loadPromptReferences(referencePlatforms,options);
   const parts=[`이번 생성 대상: ${platforms.join(", ")}. JSON에는 이 매체의 제목·본문만 출력한다. 선택하지 않은 매체는 생성하지 않는다. 공통 주제는 유지하며 선택한 매체의 지침만 적용한다.
 한국어 글 작성 작업이다. 도구 호출, 파일 탐색, 외부 행동 없이 제공한 재료만으로 결과 JSON을 작성한다.`,refs.business];
   if(refs.pd)parts.push(`[PD 글쓰기 기반 원문 — 네이버·티스토리만 참조]

@@ -126,3 +126,10 @@ test('scheduled writing context applies G17 principles to Threads without removi
  assert(prompt.includes('500자 이내'));assert(prompt.includes('링크 제외'));
  assert.throws(()=>validateOutputs({threads:{title:'제목',body:'가'.repeat(501)}},['threads']),/THREADS_TOO_LONG/);
 });
+
+test('scheduled Threads-only rewrite still reads the G17 writing basis',t=>{
+ const options={...modernSources(t),writingContext:'예약 쓰레드 말투 수정'};
+ const prompt=makePrompt({},['threads'],options);
+ assert(prompt.includes('참조 세대: G17'));assert(prompt.includes('이번 생성 대상: threads.'));
+ assert(prompt.includes('예약 작업의 쓰레드는 G17'));
+});

@@ -71,10 +71,14 @@ test('scheduler persists planning, recovers lost topic response, and publishes e
  await autopilotOnce({...deps,now:release});
  await autopilotOnce({...deps,now:release+60001});
  assert.equal(calls.filter(a=>a==='content.delivery.request').length,3);
+ view.deliveries[0].state='cancelled';
+ await autopilotOnce({...deps,now:release+120002});
+ assert.equal(calls.filter(a=>a==='content.delivery.request').length,3);
+ state=JSON.parse(await fs.readFile(config.stateFile));assert.equal(state.days[date].slots[18].error,'SCHEDULE_CANCELLED');
  assert(await scheduledDeliveryExpired({topicId:'t',platform:'naver',version:1},release+2*3600000+1));
  state=JSON.parse(await fs.readFile(config.stateFile));state.lastTickAt=0;state.days[date].slots[18].review={approved:false,reasons:['허위 사례']};state.days[date].slots[18].state='ready';
  await fs.writeFile(config.stateFile,JSON.stringify(state));view.deliveries=[];
- await autopilotOnce({...deps,now:release+120002});
+ await autopilotOnce({...deps,now:release+180003});
  assert.equal(calls.filter(a=>a==='content.delivery.request').length,3);
  state=JSON.parse(await fs.readFile(config.stateFile));assert.equal(state.days[date].slots[18].state,'held');
  globalThis.Date=OriginalDate;console.log('idempotent schedule PASS');

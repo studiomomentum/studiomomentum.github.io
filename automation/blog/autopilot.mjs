@@ -162,15 +162,17 @@ export async function autopilotOnce({rpc,now=Date.now(),plan=planDay,review=revi
       const clock=Date.now();
       if(clock<slot.time)continue;
       if(clock>slot.time+2*3600000)throw Error('AUTOPILOT_SLOT_EXPIRED');
+      let cancelled=false;
       for(const p of platforms){
         const post=slot.posts[p];
-        const job=view.deliveries.find(j=>j.docId===slot.topicId+':'+p&&j.kind==='publish'&&j.version===post.version&&['queued','running','complete','unknown','failed'].includes(j.state));
-        if(job){post.state=job.state;post.error=job.error||null;if(job.state==='complete'){post.url=job.url;post.publishedAt=post.publishedAt||Date.now();}continue;}
+        const job=view.deliveries.filter(j=>j.docId===slot.topicId+':'+p&&j.kind==='publish'&&j.version===post.version&&['queued','running','complete','unknown','failed','cancelled'].includes(j.state)).at(-1);
+        if(job){post.state=job.state;post.error=job.error||null;if(job.state==='cancelled')cancelled=true;if(job.state==='complete'){post.url=job.url;post.publishedAt=post.publishedAt||Date.now();}continue;}
         // Persist version and deadline before requesting; a lost response is reconciled above.
         view=await call('content.delivery.request',{id:slot.topicId+':'+p,version:post.version,kind:'publish'});
         post.state='queued';await save();
       }
-      if(platforms.every(p=>slot.posts[p]?.state==='complete'))slot.state='complete';
+      if(cancelled){slot.state='held';slot.error='SCHEDULE_CANCELLED';}
+      else if(platforms.every(p=>slot.posts[p]?.state==='complete'))slot.state='complete';
       else slot.state='publishing';
     }catch(e){slot.error=safeError(e);slot.state=['RELAY_CONNECTION','RELAY_FAILED','CONTENT_BUSY','BUSY'].includes(slot.error)?'waiting':'held';await save();}
   }
