@@ -1,8 +1,10 @@
+import {writeDurableJson} from './durable-json.mjs';
 import fs from 'node:fs/promises';import path from 'node:path';import {randomUUID} from 'node:crypto';
 import {openBrowser,root} from './browser.mjs';import {deliver} from './delivery-adapters.mjs';
+import {scheduledDeliveryExpired} from './autopilot.mjs';
 const receiptFile=path.join(root,'delivery-receipt.json');
 async function read(file){try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT')return null;throw e;}}
-async function write(data){await fs.mkdir(root,{recursive:true,mode:0o700});const tmp=receiptFile+'.tmp';await fs.writeFile(tmp,JSON.stringify(data),{mode:0o600});await fs.rename(tmp,receiptFile);}
+async function write(data){await writeDurableJson(receiptFile,data);}
 export async function deliveryOnce(config,rpc){
  let receipt=await read(receiptFile);
  if(!receipt){receipt={requestId:randomUUID()};await write(receipt);}
@@ -11,6 +13,7 @@ export async function deliveryOnce(config,rpc){
  if(!receipt.outcome){
   let context;
   try{
+   if(!receipt.clickStarted&&await scheduledDeliveryExpired(job))throw Error('SCHEDULE_EXPIRED');
    const settings=await read(path.join(root,'browser-settings.json'));if(!settings?.profile)throw Error('BROWSER_SETUP_REQUIRED');
    await rpc(config,'content.delivery.authorize',{jobId:job.id,claim:job.claim});
    context=await openBrowser(settings.profile,'operate');

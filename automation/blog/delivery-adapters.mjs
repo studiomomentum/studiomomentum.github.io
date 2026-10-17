@@ -1,4 +1,5 @@
 import {naverDelivery} from './naver-delivery.mjs';
+import {retryPublishedRead} from './publication-result.mjs';
 import {openEditor,inspectEditor,target} from './tistory-draft.mjs';
 import {draftHTML,normalizedText} from './draft-format.mjs';
 const threadsURL='https://www.threads.com';
@@ -59,35 +60,38 @@ async function threadsComposer(context){
  const page=await context.newPage();await page.goto(threadsURL+'/',{waitUntil:'domcontentloaded'});
  await page.locator('a[href="/@sot_momentum"]').first().waitFor({timeout:15000});
  // The logged-in navigation profile must match the destination account.
-  await page.getByText('새로운 소식을 공유해보세요.',{exact:true}).click();await page.getByRole('dialog').getByRole('textbox').waitFor();if(await page.getByRole('dialog').getByText('sot_momentum',{exact:true}).count()!==1)throw Error('WRONG_ACCOUNT');return page;
+  await page.getByText('새로운 소식을 공유해보세요.',{exact:true}).or(page.getByRole('button',{name:'New thread',exact:true})).first().click();await page.getByRole('dialog').getByRole('textbox').waitFor();if(await page.getByRole('dialog').getByText('sot_momentum',{exact:true}).count()!==1)throw Error('WRONG_ACCOUNT');return page;
 }
 async function threadsRestore(context,source){
- const page=await threadsComposer(context);await page.getByRole('dialog').getByRole('button',{name:'임시 저장본',exact:true}).click();
+ const page=await threadsComposer(context);await page.getByRole('dialog').getByRole('button',{name:/^(임시 저장본|Drafts)$/}).click();
  const row=page.getByRole('dialog').getByRole('button').filter({hasText:source.body.slice(0,25)});
  try{await row.first().waitFor({timeout:10000});}catch{await page.close();return null;}
  if(await row.count()!==1)throw Error('AMBIGUOUS_DRAFT');await row.click();await page.getByRole('dialog').getByRole('textbox').waitFor();
  if(normalizedText(await page.getByRole('dialog').getByRole('textbox').innerText())!==normalizedText(source.body))throw Error('DRAFT_VERSION_CONFLICT');return page;
 }
 async function threadsPostURL(context,source){
- const page=await context.newPage();await page.goto(threadsURL+'/@sot_momentum',{waitUntil:'domcontentloaded'});
+ const page=await context.newPage();try{await page.goto(threadsURL+'/@sot_momentum',{waitUntil:'domcontentloaded'});
  let urls=[];
  await waitCheck(async()=>{urls=await page.locator('a[href*="/@sot_momentum/post/"]').evaluateAll(threadPostURLs,source.body);return urls.length>0;});
  if(urls.length!==1||!/^https:\/\/www\.threads\.com\/@sot_momentum\/post\/[\w-]+$/.test(urls[0]))throw Error('AMBIGUOUS_POST');
  await page.goto(urls[0],{waitUntil:'domcontentloaded'});
  await waitCheck(async()=>normalizedText(await page.locator('body').innerText()).includes(normalizedText(source.body)));return urls[0];
+ }finally{await page.close();}
 }
+export async function verifyThreadsPublished(context,source){return {url:await retryPublishedRead(()=>threadsPostURL(context,source))};}
 async function threads(context,job,control){
  const source=job.snapshot;if(Array.from(source.body).length>500||/(https?:\/\/|www\.)/i.test(source.body))throw Error('THREADS_INVALID');
- if(control.receipt.clickStarted){if(job.kind==='publish')return {url:await threadsPostURL(context,source)};const restored=await threadsRestore(context,source);if(!restored)throw Error('RESULT_UNKNOWN');return {};}
+ if(control.receipt.clickStarted){if(job.kind==='publish')return verifyThreadsPublished(context,source);const restored=await threadsRestore(context,source);if(!restored)throw Error('RESULT_UNKNOWN');return {};}
  let page=await threadsRestore(context,source);const existing=!!page;
  if(!page){page=await threadsComposer(context);await page.getByRole('dialog').getByRole('textbox').fill(source.body);}
  if(normalizedText(await page.getByRole('dialog').getByRole('textbox').innerText())!==normalizedText(source.body))throw Error('EDITOR_CONTENT_MISMATCH');
  if(job.kind==='draft'){
-  if(!existing){await page.getByRole('dialog').getByRole('button',{name:'취소',exact:true}).click();await page.getByRole('dialog').getByRole('button',{name:'저장',exact:true}).waitFor();await control.beforeClick({});await page.getByRole('dialog').getByRole('button',{name:'저장',exact:true}).click();}
+  if(!existing){await page.getByRole('dialog').getByRole('button',{name:/^(취소|Cancel)$/}).click();await page.getByRole('dialog').getByRole('button',{name:/^(저장|Save|Save draft)$/}).waitFor();await control.beforeClick({});await page.getByRole('dialog').getByRole('button',{name:/^(저장|Save|Save draft)$/}).click();}
   const saved=await threadsRestore(context,source);if(!saved)throw Error('DRAFT_NOT_VERIFIED');return {};
  }
- await control.beforeClick({});await page.getByRole('dialog').getByRole('button',{name:'게시',exact:true}).click();await page.getByRole('dialog').waitFor({state:'hidden',timeout:30000});
- return {url:await threadsPostURL(context,source)};
+ await control.beforeClick({});
+ try{await page.getByRole('dialog').getByRole('button',{name:/^(게시|Post)$/}).click();await page.getByRole('dialog').waitFor({state:'hidden',timeout:15000});}catch{}
+ return verifyThreadsPublished(context,source);
 }
 export async function deliver(context,job,control){if(job.platform==='naver')return naverDelivery(context,job,control);if(job.platform==='tistory')return tistory(context,job,control);if(job.platform==='threads')return threads(context,job,control);throw Error('PLATFORM_PAUSED');}
 

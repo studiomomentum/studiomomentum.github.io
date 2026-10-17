@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 
 // No option accepts an existing personal Chrome profile.
-export const root = path.join(os.homedir(), 'Library', 'Application Support', 'MomentumBlog');
+export const root = process.env.MOMENTUM_BLOG_HOME || path.join(os.homedir(), ...(process.platform === 'darwin' ? ['Library', 'Application Support', 'MomentumBlog'] : ['.local', 'state', 'momentum-blog']));
 export const platforms = {
   vidiq: {setup: 'https://app.vidiq.com/auth/login', home: 'https://app.vidiq.com/'},
   naver: {setup: 'https://nid.naver.com/nidlogin.login', home: 'https://blog.naver.com/'},

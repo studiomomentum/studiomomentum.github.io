@@ -1,9 +1,18 @@
 // Uses the existing dedicated Chrome session; never stores credentials.
+import {retryPublishedRead} from './publication-result.mjs';
 export const naverBlogId='sot_momentum';
 export const naverTarget='https://blog.naver.com/'+naverBlogId;
 const lines=s=>s.replace(/\r\n?/g,'\n').split('\n');
 export function sameNaverLines(actual,body){return JSON.stringify(actual)===JSON.stringify(lines(body));}
 export function naverPostURL(url){return /^https:\/\/blog\.naver\.com\/sot_momentum\/\d+$/.test(url);}
+export function canonicalNaverPostURL(value){
+ try{
+  const u=new URL(value);
+  if(u.protocol!=='https:'||!['blog.naver.com','m.blog.naver.com'].includes(u.hostname))return null;
+  if(/^\/sot_momentum\/\d+$/.test(u.pathname))return naverTarget+'/'+u.pathname.split('/').at(-1);
+  if(u.pathname==='/PostView.naver'&&u.searchParams.get('blogId')===naverBlogId&&/^\d+$/.test(u.searchParams.get('logNo')||''))return naverTarget+'/'+u.searchParams.get('logNo');
+ }catch{}return null;
+}
 async function until(fn){for(let n=0;n<40;n++){if(await fn())return;await new Promise(r=>setTimeout(r,250));}throw Error('RESULT_NOT_VERIFIED');}
 export async function inspectNaver(page,source){
  const title=(await page.locator('.se-documentTitle .__se-node').allTextContents()).join('');
@@ -39,35 +48,43 @@ async function restore(context,source,required=false){
  if((await page.locator('.se-documentTitle .__se-node,.se-component.se-text .__se-node').allTextContents()).join('').trim())throw Error('EDITOR_NOT_EMPTY');
  await page.locator('.se-documentTitle .se-text-paragraph').click();await page.keyboard.insertText(source.title);
  await page.locator('.se-component.se-text .se-text-paragraph').first().click();
- for(const [i,line] of lines(source.body).entries()){if(i)await page.keyboard.press('Enter');if(line)await page.keyboard.insertText(line);}
+ for(const [i,line] of lines(source.body).entries()){
+  if(i)await page.keyboard.press('Enter');
+  const paragraphs=page.locator('.se-component.se-text .se-text-paragraph');
+  await until(async()=>await paragraphs.count()===i+1);
+  if(line)await page.keyboard.insertText(line);
+  // SmartEditor commits asynchronously; wait before sending the next keyboard event.
+  await until(async()=>(await paragraphs.nth(i).locator('.__se-node').allTextContents()).join('')===line);
+ }
  const check=await inspectNaver(page,source);if(!check.titleMatches||!check.linesMatch)throw Error('EDITOR_CONTENT_MISMATCH');
  return {page,existing:false,...check};
 }
 async function verifyPost(context,url,source){
  if(!naverPostURL(url))throw Error('POST_URL_INVALID');
- const page=await context.newPage();await page.goto(url,{waitUntil:'domcontentloaded'});
+ const page=await context.newPage();try{await page.goto(url,{waitUntil:'domcontentloaded'});
  await until(async()=>{
   for(const frame of page.frames()){
    const title=await frame.locator('.se-title-text').allTextContents();
    const paragraphs=await frame.locator('.se-main-container .se-text-paragraph').allTextContents();
    if(title.join('').trim()===source.title&&sameNaverLines(paragraphs.map(s=>s.replace(/\u200b/g,'')),source.body))return true;
   }return false;
- });return {url};
+ });return {url};}finally{await page.close();}
 }
 async function recoverPost(context,source){
- const page=await context.newPage();await page.goto(naverTarget,{waitUntil:'domcontentloaded'});
+ const page=await context.newPage();try{await page.goto(naverTarget,{waitUntil:'domcontentloaded'});
  const urls=new Set();
  await until(async()=>{
   for(const frame of page.frames()){
    const links=await frame.getByText(source.title,{exact:true}).evaluateAll(es=>es.map(e=>e.closest('a')?.href).filter(Boolean));
-   for(const link of links){const u=new URL(link);const id=u.searchParams.get('blogId'),no=u.searchParams.get('logNo');const canonical=id===naverBlogId&&/^\d+$/.test(no||'')?naverTarget+'/'+no:link.split('?')[0];if(naverPostURL(canonical))urls.add(canonical);}
+   for(const link of links){const canonical=canonicalNaverPostURL(link);if(canonical)urls.add(canonical);}
   }return urls.size>0;
- });if(urls.size!==1)throw Error('AMBIGUOUS_POST');return verifyPost(context,[...urls][0],source);
+ });if(urls.size!==1)throw Error('AMBIGUOUS_POST');return await verifyPost(context,[...urls][0],source);}finally{await page.close();}
 }
+export async function verifyNaverPublished(context,source){return retryPublishedRead(()=>recoverPost(context,source));}
 export async function naverDelivery(context,job,control){
  if(!['draft','publish'].includes(job.kind))throw Error('DELIVERY_KIND_INVALID');
  if(job.target!==naverBlogId)throw Error('WRONG_BLOG');
- if(control.receipt.clickStarted&&job.kind==='publish')return recoverPost(context,job.snapshot);
+ if(control.receipt.clickStarted&&job.kind==='publish')return verifyNaverPublished(context,job.snapshot);
  const {page,existing}=await restore(context,job.snapshot,!!control.receipt.clickStarted);
  if(job.kind==='draft'){
   if(!existing){await control.beforeClick({});await page.getByRole('button',{name:'저장',exact:true}).click();await until(async()=>Number((await page.getByRole('button',{name:/임시저장된 글 보기/}).innerText()).trim())>0);}
@@ -75,6 +92,14 @@ export async function naverDelivery(context,job,control){
  }
  await page.getByRole('button',{name:'발행',exact:true}).click();await page.getByTestId('seOnePublishBtn').waitFor();
  await page.locator('label[for="open_public"]').click();if(!await page.getByTestId('openType_2').isChecked())throw Error('VISIBILITY_NOT_PUBLIC');
- await control.beforeClick({});await page.getByTestId('seOnePublishBtn').click();
- await page.waitForURL(u=>naverPostURL(u.href),{timeout:30000});return verifyPost(context,page.url(),job.snapshot);
+ await control.beforeClick({});
+ // A click/navigation timeout can happen after the server accepted the post.
+ // From this boundary onward, confirm existing publication only; never click again.
+ try{
+  await page.getByTestId('seOnePublishBtn').click();
+  await page.waitForURL(u=>!!canonicalNaverPostURL(u.href),{timeout:15000});
+  const url=canonicalNaverPostURL(page.url());
+  if(url)return await verifyPost(context,url,job.snapshot);
+ }catch{}
+ return verifyNaverPublished(context,job.snapshot);
 }

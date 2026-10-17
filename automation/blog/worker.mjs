@@ -1,3 +1,4 @@
+import {writeDurableJson} from './durable-json.mjs';
 import fs from 'node:fs/promises';
 import {randomUUID} from 'node:crypto';
 import path from 'node:path';
@@ -7,12 +8,14 @@ import {root} from './browser.mjs';
 import {generate} from './generator.mjs';
 import {deliveryOnce} from './delivery-worker.mjs';
 import {keywordOnce} from './keyword-worker.mjs';
+import {autopilotOnce,scheduledWritingOptions} from './autopilot.mjs';
 const configFile=path.join(root,'worker-session.json'), receiptFile=path.join(root,'generation-receipt.json');
 async function read(file){try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT')return null;throw e;}}
-async function write(file,data){await fs.mkdir(root,{recursive:true,mode:0o700});const temp=file+'.tmp';await fs.writeFile(temp,JSON.stringify(data),{mode:0o600});await fs.rename(temp,file);}
+async function write(file,data){await writeDurableJson(file,data);}
 async function rpc(config,action,payload={}){
   const url=new URL(config.url);if(url.protocol!=='https:'||url.hostname!=='script.google.com'||!/^\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(url.pathname))throw Error('RELAY_URL_INVALID');
-  const response=await fetch(url,{method:'POST',body:JSON.stringify({route:'momentum_admin',action,session:config.session,...payload}),signal:AbortSignal.timeout(30000)});
+  const identity=config.workerToken?{route:'momentum_content_worker',workerToken:config.workerToken}:{route:'momentum_admin',session:config.session};
+  const response=await fetch(url,{method:'POST',body:JSON.stringify({...identity,action,...payload}),signal:AbortSignal.timeout(30000)});
   if(!response.ok)throw Error('RELAY_CONNECTION');const data=await response.json();if(!data.ok)throw Error(data.error||'RELAY_FAILED');return data.result;
 }
 async function question(label,secret=false){
@@ -32,7 +35,7 @@ async function once(config){
   const result=await rpc(config,'content.worker.claim',{requestId:receipt.requestId});if(!result.job){await fs.unlink(receiptFile);if(result.activeJobId)console.log('진행 중 생성 작업 확인 필요');return;}
   const job=result.job;receipt={jobId:job.id,claim:job.claim};await write(receiptFile,receipt);
   let outputs;
-  try{outputs=await generate(job.topic,job.platforms);}catch(e){await rpc(config,'content.worker.fail',receipt);await fs.unlink(receiptFile);throw e;}
+  try{outputs=await generate(job.topic,job.platforms,await scheduledWritingOptions(job.topic));}catch(e){await rpc(config,'content.worker.fail',receipt);await fs.unlink(receiptFile);throw e;}
   receipt.outputs=outputs;await write(receiptFile,receipt);
   await rpc(config,'content.worker.complete',receipt);await fs.unlink(receiptFile);console.log('선택 매체 초안 저장 완료 · 발행 없음');
 }
@@ -54,10 +57,17 @@ try{
   if(command==='login'){
     const url=await question('기존 Apps Script 웹앱 URL: '),password=await question('관리자 비밀번호 (화면에 표시되지 않음): ',true);
     const session=await rpc({url},'login',{username:'admin',password,remember:true});
-    await write(configFile,{url,session:session.token,expiresAt:session.expiresAt});console.log('관리자 세션을 로컬 전용 파일에 저장했습니다.');
+    await write(configFile,{url,session:session.token,expiresAt:session.expiresAt,persistent:session.persistent===true});console.log('관리자 세션을 로컬 전용 파일에 저장했습니다.');
+  }else if(command==='register'){
+    const config=await read(configFile);
+    if(!config?.session||(config.persistent!==true&&config.expiresAt<=Date.now()))throw Error('LOGIN_REQUIRED');
+    const result=await rpc(config,'content.worker.register');
+    await write(configFile,{url:config.url,workerToken:result.workerToken});
+    console.log('만료 없는 작업 전용 인증을 등록했습니다. 관리자 세션은 실행기에서 제거했습니다.');
   }else if(['once','run'].includes(command)){
     await acquireLock();
-    do{const config=await read(configFile);if(!config||config.expiresAt<=Date.now())throw Error('LOGIN_REQUIRED');
+    do{const config=await read(configFile);if(!config||(!config.workerToken&&(!config.session||(config.persistent!==true&&config.expiresAt<=Date.now()))))throw Error('LOGIN_REQUIRED');
+      await autopilotOnce({rpc}).catch(e=>console.error('예약 글쓰기 확인 필요: '+(/^[A-Z_]+$/.test(e.message)?e.message:'AUTOPILOT_LOCAL_ERROR')));
       await deliveryOnce(config,rpc);await once(config);await keywordOnce(config,rpc);if(command==='run')await new Promise(r=>setTimeout(r,15000));}while(command==='run');
   }else throw Error('COMMAND_INVALID');
 }catch(e){console.error('실행 중단: '+(/^[A-Z_]+$/.test(e.message)?e.message:'LOCAL_ERROR')+' · 재로그인 또는 작업 상태를 확인하세요.');process.exitCode=1;}
