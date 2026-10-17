@@ -134,7 +134,7 @@ function customerVisitHistory(events) {
   return `<section class="customer-visits"><h3>방문 기록</h3><dl><div><dt>첫 방문</dt><dd>${visits.length?e(stamp(visits[visits.length-1])):'기록 없음'}</dd></div><div><dt>최근 방문</dt><dd>${visits.length?e(stamp(visits[0])):'기록 없음'}</dd></div><div><dt>상담 클릭</dt><dd>${clicks.length}회${clicks.length?' · 최근 '+e(stamp(clicks[0])):''}</dd></div><div><dt>최근 적용 가격</dt><dd>${visits.length?e(price(visits[0])):'미기록'}</dd></div></dl><p class="field-label">고객사 전용 링크 또는 그 방문 이력에 연결된 기록입니다. 링크 전달·공용 기기 사용 시 실제 방문자가 다를 수 있습니다. 상담 클릭은 상담 완료가 아닙니다.</p><ol class="visit-cards">${visits.map(ev=>{
     const related=ev.meta.visit_id?events.filter(x=>x.meta.visit_id===ev.meta.visit_id):[];
     const clicked=related.some(x=>x.event==='kakao_click');
-    return `<li><time>${e(stamp(ev))}</time><strong>${e(ev.meta.arrival_source||'과거 기록 · 유입 경로 미분리')}</strong><span>${e(price(ev))}</span><span>연결 기준: ${e(ev.meta.attribution_basis||'기존 추적 토큰')}</span><span>${e(ev.device||'기기 미기록')} · ${e(ev.path||'/')}</span><span>${ev.meta.visit_id?(clicked?'상담 버튼 클릭 있음':'상담 클릭 기록 없음'):'방문별 상담 연결 미기록'}</span></li>`;
+    return `<li><time>${e(stamp(ev))}</time><strong>${e(ev.meta.arrival_source||'과거 기록 · 유입 경로 미분리')}</strong><span>${e(price(ev))}</span>${ev.meta.utm_content?`<span>콘텐츠: ${e(ev.meta.utm_content)} · ${e(ev.meta.utm_campaign||'')}</span>`:''}<span>연결 기준: ${e(ev.meta.attribution_basis||'기존 추적 토큰')}</span><span>${e(ev.device||'기기 미기록')} · ${e(ev.path||'/')}</span><span>${ev.meta.visit_id?(clicked?'상담 버튼 클릭 있음':'상담 클릭 기록 없음'):'방문별 상담 연결 미기록'}</span></li>`;
   }).join('')||'<li>동기화된 방문 상세 기록이 없습니다.</li>'}</ol><p class="field-label">새 유입 경로 구분은 업데이트 이후 기록부터 제공됩니다. 직접 접속과 출처가 전달되지 않은 방문은 구분할 수 없습니다.</p></section>`;
 }
 function openTargetDetail(token) {

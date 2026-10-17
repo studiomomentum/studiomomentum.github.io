@@ -74,6 +74,7 @@
     else if (host) arrival = '외부 링크: ' + host;
     pageVisitId = pageVisitId || (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(16).slice(2));
     return {visit_id:pageVisitId, arrival_source:arrival, arrival_host:host, utm_source:source, utm_medium:medium,
+      utm_campaign:(query.get('utm_campaign') || '').slice(0,100), utm_content:(query.get('utm_content') || '').slice(0,180),
       attribution_basis:explicit ? '전용 링크' : (payload.channel_type === 'OUTBOUND' ? '이전 제안 방문 이력' : '익명 방문'),
       applied_pricing:payload.pricing_tier || (payload.meta && payload.meta.pricing) || ''};
   }

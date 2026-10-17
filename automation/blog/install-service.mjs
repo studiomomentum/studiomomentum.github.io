@@ -13,7 +13,7 @@ else{
  // Stop only this registered service before replacing its runtime.
  spawnSync('launchctl',['bootout',domain,plist],{stdio:'ignore'});
  await fs.mkdir(runtime,{recursive:true,mode:0o700});
- for(const name of ['autopilot.mjs','autopilot-cli.mjs','autopilot-policy.mjs','view-metrics.mjs','durable-json.mjs','worker.mjs','keyword-worker.mjs','keyword-refresh.mjs','research-sources.mjs','vidiq-keywords.mjs','vidiq-mcp.mjs','keyword-framing.mjs','browser.mjs','generator.mjs','delivery-worker.mjs','delivery-adapters.mjs','publication-result.mjs','naver-delivery.mjs','tistory-draft.mjs','draft-format.mjs','package.json','package-lock.json'])await fs.copyFile(path.join(source,name),path.join(runtime,name));
+ for(const name of ['autopilot.mjs','autopilot-cli.mjs','autopilot-policy.mjs','view-metrics.mjs','durable-json.mjs','worker.mjs','keyword-worker.mjs','keyword-refresh.mjs','research-sources.mjs','vidiq-keywords.mjs','vidiq-mcp.mjs','keyword-framing.mjs','browser.mjs','campaign-link.mjs','generator.mjs','delivery-worker.mjs','delivery-adapters.mjs','publication-result.mjs','naver-delivery.mjs','tistory-draft.mjs','draft-format.mjs','package.json','package-lock.json'])await fs.copyFile(path.join(source,name),path.join(runtime,name));
  await fs.writeFile(path.join(runtime,'prompt-sources.json'),JSON.stringify({promptDir,skillDir}),{mode:0o600});
  run('/opt/homebrew/bin/npm',['ci','--omit=dev','--prefix',runtime]);
  await fs.mkdir(path.dirname(plist),{recursive:true});

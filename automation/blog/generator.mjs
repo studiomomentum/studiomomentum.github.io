@@ -1,3 +1,4 @@
+import {trackArticleLinks} from './campaign-link.mjs';
 import {spawn} from 'node:child_process';
 import fs from 'node:fs/promises';
 import {readFileSync} from 'node:fs';
@@ -102,7 +103,7 @@ export async function generate(topic,platforms=allPlatforms,options={}){
     const fixed=await runAntigravity(`쓰레드 글의 길이만 편집한다. 원문의 중심 질문·구체적 판단·사실 조건과 가상 예시 표시는 보존한다. 새로운 사실·경험·성과를 추가하지 않는다. 목표는 공백·개행 포함 380~440자, 반드시 500자 이내다. 제목·본문 JSON을 threads 키로 반환한다. 도구 호출은 하지 않는다.\n${refs.threads}\n원문 자료: ${JSON.stringify(value.threads)}`,schemaFor(['threads']));
     value.threads=validateOutputs(fixed,['threads']).threads;
   }
-  return validateOutputs(value,platforms);
+  return validateOutputs(trackArticleLinks(validateOutputs(value,platforms),topic.id),platforms);
 }
 export async function runAntigravity(prompt,outputSchema){
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'momentum-writing-'));

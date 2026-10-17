@@ -12,6 +12,8 @@ async function check(search,referrer,expected){
  assert.equal((await check('', 'https://www.google.com/search?q=x','검색: www.google.com')).meta.attribution_basis,'이전 제안 방문 이력');
  await check('','', '직접 / 출처 미확인');
  assert.equal((await check('?ref=customer','','제안 전용 링크')).meta.attribution_basis,'전용 링크');
+ const tracked=await check('?utm_source=naver&utm_medium=organic_social&utm_campaign=professional_filming&utm_content=topic_abc','','캠페인: naver');
+ assert.equal(tracked.meta.utm_campaign,'professional_filming');assert.equal(tracked.meta.utm_content,'topic_abc');assert.equal(tracked.meta.attribution_basis,'이전 제안 방문 이력');
  await check('?utm_source=newsletter&utm_medium=email','','캠페인: newsletter');
  await check('','https://google.com.evil.test/','외부 링크: google.com.evil.test');
  console.log('PASS: current arrival independent of VIP attribution, page event association, metadata preservation');
