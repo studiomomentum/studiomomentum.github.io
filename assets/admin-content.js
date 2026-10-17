@@ -173,9 +173,10 @@ window.MomentumContent=(()=>{
           const draft=button('임시저장 요청',()=>request('draft')),publish=button('공개 발행',()=>request('publish'));
           // request owns the busy guard; these handlers must not nest run().
           draft.onclick=()=>request('draft');publish.onclick=()=>request('publish');draft.dataset.publish=publish.dataset.publish='true';
-          const posted=deliveryJobs.some(j=>j.kind==='publish'&&j.state==='complete');
+          const posted=deliveryJobs.some(j=>j.kind==='publish'&&j.state==='complete'&&j.version===version);
           draft.disabled=dirty||locked;publish.disabled=dirty||locked||posted||doc.reviewedVersion!==version;
           card.append(draft,publish);
+          if(!posted&&deliveryJobs.some(j=>j.kind==='publish'&&j.state==='complete'&&j.version!==version))card.append(node('p','검수한 새 버전은 새 게시글로 발행됩니다. 이전 게시글은 유지됩니다.'));
           if(!posted&&doc.reviewedVersion!==version)card.append(node('p','저장한 버전을 검수 완료하면 공개 발행할 수 있습니다.'));
           for(const job of [...deliveryJobs].reverse()){
             const row=node('p',(job.kind==='publish'?'발행':'임시저장')+' v'+job.version+' · '+({queued:'대기',running:'처리 중',complete:'완료',failed:'실패',unknown:'결과 확인 필요',cancelled:'취소'}[job.state]||job.state));

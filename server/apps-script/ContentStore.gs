@@ -138,7 +138,7 @@ function contentRoute_(r) {
         if(doc.platform==='threads'&&(Array.from(doc.versions.at(-1).body).length>500||/(https?:\/\/|www\.)/i.test(doc.versions.at(-1).body)))throw Error('CONTENT_INVALID');
         const same=db.deliveries.find(j=>j.docId===doc.id&&(doc.platform!=='naver'||j.target==='sot_momentum')&&j.kind===r.kind&&j.version===r.version&&['queued','running','complete','unknown'].includes(j.state));
         if(same)return contentView_(db);
-        if(db.deliveries.some(j=>j.docId===doc.id&&(j.kind==='publish'&&['complete','unknown'].includes(j.state)||['queued','running'].includes(j.state))))throw Error('CONTENT_RECONCILE_REQUIRED');
+        if(db.deliveries.some(j=>j.docId===doc.id&&(j.kind==='publish'&&j.state==='unknown'||['queued','running'].includes(j.state))))throw Error('CONTENT_RECONCILE_REQUIRED');
         db.deliveries.push({id:Utilities.getUuid(),docId:doc.id,topicId:doc.topicId,platform:doc.platform,target:doc.platform==='naver'?'sot_momentum':null,version:r.version,kind:r.kind,state:'queued',createdAt:now,snapshot:doc.versions.at(-1)});changed=true;break;
       }
       case 'content.delivery.cancel': {

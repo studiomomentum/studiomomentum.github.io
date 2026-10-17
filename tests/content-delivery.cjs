@@ -11,7 +11,12 @@ call('content.delivery.finish',{jobId:j.id,claim:j.claim,state:'unknown',error:'
 assert.throws(()=>call('content.delivery.resolve',{jobId:j.id,resolution:'not_posted'}),/INVALID/);call('content.delivery.resolve',{jobId:j.id,resolution:'not_posted',confirmed:true});call('content.delivery.request',{id,version:1,kind:'publish'});
 const retry=call('content.delivery.claim',{requestId:'retry'}).job;call('content.delivery.finish',{jobId:retry.id,claim:retry.claim,state:'complete',url:'https://sotmomentum.tistory.com/1'});assert(call('content.delivery.finish',{jobId:retry.id,claim:retry.claim,state:'complete',url:'https://sotmomentum.tistory.com/1'}).completed);
 const state=call('content.get');assert(!JSON.stringify(state.deliveries).includes('snapshot'));assert(!JSON.stringify(state.deliveries).includes('claim'));assert.equal(state.deliveries.at(-1).url,'https://sotmomentum.tistory.com/1');
-call('content.save',{id,version:1,title:'v2',body:'v2'});call('content.review',{id,version:2});assert.throws(()=>call('content.delivery.request',{id,version:2,kind:'publish'}),/RECONCILE/);
+call('content.save',{id,version:1,title:'v2',body:'v2'});call('content.review',{id,version:2});call('content.delivery.request',{id,version:2,kind:'publish'});
+assert.equal(call('content.get').deliveries.at(-1).version,2);
+const v2job=call('content.delivery.claim',{requestId:'new-version'}).job;
+call('content.delivery.finish',{jobId:v2job.id,claim:v2job.claim,state:'complete',url:'https://sotmomentum.tistory.com/2'});
+call('content.delivery.request',{id,version:2,kind:'publish'});
+assert.equal(call('content.get').deliveries.filter(j=>j.docId===id&&j.version===2&&j.kind==='publish').length,1);
 console.log('Delivery review gate, Naver review gate, snapshots, locks, duplicate claims, ambiguous recovery, URL checks PASS');
 
 const tid=topic.id+':threads';call('content.review',{id:tid,version:1});
