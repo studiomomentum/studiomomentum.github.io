@@ -48,7 +48,7 @@
     }
   </style>
 <script src="assets/momentum-runtime.js"></script>
-</head>
+<script src="assets/momentum-public-config.js?v=7"></script></head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
   <div id="maintenanceOverlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#070b16; z-index:9999999; justify-content:center; align-items:center; padding:24px; box-sizing:border-box;">
@@ -88,7 +88,7 @@
         document.body.style.overflow = "";
       }
     }
-    fetch("system_config.json?t=" + Date.now())
+    MomentumPublic.config()
       .then(r => r.ok ? r.json() : null)
       .then(cfg => {
         if (cfg && cfg.client_access_blocked) {

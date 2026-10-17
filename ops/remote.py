@@ -65,9 +65,14 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header('Access-Control-Max-Age','600');self.send_header('Vary','Origin');self.end_headers()
     def do_GET(self):
         if self.path=='/health':return self.send(200,{'ok':True})
+        if self.path=='/api/site-config':
+            try:
+                from momentum_data import site_config
+                return self.send(200,site_config())
+            except Exception:return self.send(503,{'error':'CONFIG_UNAVAILABLE'})
         self.send(401 if self.path=='/api/ops' else 404,{'error':'UNAUTHORIZED' if self.path=='/api/ops' else 'NOT_FOUND'})
     def do_POST(self):
-        paths={'/api/ops','/api/control/state','/api/control/submit','/api/control/cancel','/api/control/job','/api/control/artifact','/api/control/search-progress'}
+        paths={'/api/ops','/api/control/state','/api/control/submit','/api/control/cancel','/api/control/job','/api/control/artifact','/api/control/search-progress','/api/control/targets','/api/control/momentum-call','/api/control/backup-status','/api/control/backup'}
         worker=self.path.startswith('/api/worker/')
         if self.path not in paths and not worker:return self.send(404,{'error':'NOT_FOUND'})
         if self.headers.get('Origin') and self.headers['Origin'] not in ORIGINS:return self.send(403,{'error':'ORIGIN_DENIED'})
@@ -99,6 +104,18 @@ class Handler(BaseHTTPRequestHandler):
             if self.path=='/api/control/search-progress':
                 from momentum_progress import progress
                 return self.send(200,progress())
+            if self.path=='/api/control/targets':
+                from momentum_data import targets
+                return self.send(200,targets())
+            if self.path=='/api/control/momentum-call':
+                from momentum_data import call
+                return self.send(200,call(value.get('action'),value.get('payload',{})))
+            if self.path=='/api/control/backup-status':
+                from drive_backup import public_status
+                return self.send(200,public_status())
+            if self.path=='/api/control/backup':
+                from drive_backup import request_backup
+                return self.send(202,request_backup())
             if self.path=='/api/control/submit':
                 result=controls.submit(value.get('requestId'),value.get('action'),value.get('params',{}))
                 return self.send(202,{'job':result})

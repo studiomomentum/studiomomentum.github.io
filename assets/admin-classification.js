@@ -22,7 +22,7 @@ function momentumStageControl(action,key,prefix,label) {
   function stop(){busy=false;clearTimeout(timer);timer=null;render();}
   function display(result){
     if(result.backend!=='cloud')throw Error('우분투 실행 연결을 확인하지 못했습니다.');
-    const reason={CHECKOUT_DIRTY_RECONCILE_REQUIRED:'저장된 체크포인트 정리 필요',COMMAND_FAILED:'서버 작업 실패 · 기록 확인 필요',INTERRUPTED_RECONCILE_REQUIRED:'이전 작업 중단 · 실제 결과 확인 필요'};
+    const reason={CHECKOUT_DIRTY_RECONCILE_REQUIRED:'이전 저장소 실행 실패 · Drive 전환 후 다시 실행 가능',COMMAND_FAILED:'서버 작업 실패 · 기록 확인 필요',INTERRUPTED_RECONCILE_REQUIRED:'이전 작업 중단 · 실제 결과 확인 필요'};
     const labels={accepted:'우분투 접수됨 · 실행 대기 중',running:'우분투 실행 중 · '+(action==='search'?'검색 후보 수집':'기존 후보 근거 수집·분류 및 READY 등록'),success:label+' 실행 완료 · 우분투 진행판에서 결과 확인',failed:'최근 실행 실패 · '+(reason[result.conclusion]||result.conclusion||'서버 기록 확인'),unknown:'우분투 접수 결과 확인 필요 · 자동 재실행하지 않습니다.',idle:'우분투 수동 '+label+' 요청 대기'};
     save({...result,message:(labels[result.phase]||'우분투 실행 상태 확인 필요')+(result.runId?' · 작업 #'+result.runId:'')});
   }

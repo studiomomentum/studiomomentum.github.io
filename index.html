@@ -1773,7 +1773,7 @@
 </style>
 <script src="assets/momentum-runtime.js?v=20260928-visit-profile"></script>
   <link rel="stylesheet" href="assets/consultation.css?v=20261003">
-</head>
+<script src="assets/momentum-public-config.js?v=7"></script></head>
 <body>
 
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
@@ -1819,7 +1819,7 @@
     }
 
     // 1. system_config.json 정적 확인 (캐시 무효화)
-    fetch("system_config.json?t=" + Date.now())
+    MomentumPublic.config()
       .then(r => r.ok ? r.json() : null)
       .then(cfg => {
         if (cfg && cfg.client_access_blocked) {
@@ -1829,7 +1829,7 @@
       .catch(() => {});
 
     // Only the website repository config controls maintenance, never public telemetry.
-    setInterval(() => fetch('system_config.json?t=' + Date.now(), {cache:'no-store'})
+    setInterval(() => MomentumPublic.config()
       .then(r => r.ok ? r.json() : null)
       .then(cfg => { if (cfg) applyBlock(cfg.client_access_blocked === true, cfg.blocked_message); })
       .catch(() => {}), 60000);

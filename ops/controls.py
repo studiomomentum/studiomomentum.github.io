@@ -50,9 +50,14 @@ def clean(value):
     text=str(value)
     text=re.sub(r'(?i)(bearer\s+|(?:access_token|refresh_token|workerToken|password|secret)["\s:=]+)[\w.\-/+]{12,}',r'\1[redacted]',text)
     return re.sub(r'\b(?:sk-[A-Za-z0-9_-]{16,}|gh[pousr]_[A-Za-z0-9_]{20,})\b','[redacted]',text)
+class ClosingConnection(sqlite3.Connection):
+    def __exit__(self,*args):
+        try:return super().__exit__(*args)
+        finally:self.close()
+
 def connect():
     STATE.mkdir(parents=True,exist_ok=True,mode=0o700)
-    db=sqlite3.connect(DB,timeout=10);db.row_factory=sqlite3.Row
+    db=sqlite3.connect(DB,timeout=10,factory=ClosingConnection);db.row_factory=sqlite3.Row
     db.execute('PRAGMA journal_mode=WAL');db.execute('PRAGMA busy_timeout=10000')
     db.executescript('''CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY, request_id TEXT UNIQUE NOT NULL, project TEXT, action TEXT, resource TEXT, params TEXT, status TEXT, message TEXT, created_at TEXT, started_at TEXT, finished_at TEXT, result TEXT, error TEXT);
     CREATE TABLE IF NOT EXISTS projects(id TEXT PRIMARY KEY,title TEXT,brief TEXT,script TEXT,scenes TEXT,revision INTEGER,created_at TEXT,updated_at TEXT);

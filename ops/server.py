@@ -44,6 +44,11 @@ def snapshot():
         from controls import summary_cards
         result['cards'].update(summary_cards())
     except ImportError:pass
+    try:
+        from drive_backup import public_status
+        backup=public_status();projects=backup.get('projects') or {}
+        result['cards']['drive-db']={'label':'Google Drive 통합 DB','state':'백업 확인 필요' if backup.get('error') else '백업 중' if backup.get('running') else '저장 검증 완료' if len(projects)==4 else '첫 백업 준비','summary':'GitHub 프론트 → 우분투 실행·DB → Google Drive 보존','evidenceAt':backup.get('lastSuccessAt'),'details':[f'{name}: {value["files"]:,}개 파일 · {value["verifiedAt"]} · SHA-256 재조회 확인' for name,value in projects.items()]}
+    except ImportError:pass
     return result
 
 class Handler(BaseHTTPRequestHandler):
@@ -55,9 +60,9 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8')
         else:
             routes={'/':'ops.html','/ops.html':'ops.html'}
-            assets=('ops.css','ops.js','ops-auth.js','ops-controls.js','ops-controls.css','ops-integration.css','ops-integration.js','ops-momentum.css','ops-momentum-controller.js','admin-keywords.js','admin-content.js','admin-workspace.js','admin-search-progress.js','admin-classification.js','admin-consult.js','momentum-runtime.js','purify.min.js')
+            assets=('ops.css','ops.js','ops-auth.js','ops-controls.js','ops-controls.css','momentum-public-config.js','ops-integration.css','ops-integration.js','ops-momentum.css','ops-momentum-controller.js','admin-keywords.js','admin-content.js','admin-workspace.js','admin-search-progress.js','admin-classification.js','admin-consult.js','momentum-runtime.js','purify.min.js')
             routes.update({'/assets/'+name:'assets/'+name for name in assets})
-            routes.update({'/'+name:name for name in ('targets.json','system_config.json','backup_status.json','search-progress.json')})
+            routes['/ops-config.json']='ops-config.json'
             if path not in routes: self.send_error(404); return
             file=ROOT/routes[path]
             if not file.is_file():
@@ -66,7 +71,7 @@ class Handler(BaseHTTPRequestHandler):
             data=file.read_bytes(); self.send_response(200)
             self.send_header('Content-Type','text/css' if path.endswith('.css') else 'text/javascript' if path.endswith('.js') else 'application/json' if path.endswith('.json') else 'text/html; charset=utf-8')
         self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff')
-        self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://ntfy.sh https://raw.githubusercontent.com; frame-ancestors 'none'")
+        self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' http://127.0.0.1:8797 https://script.google.com https://script.googleusercontent.com https://ntfy.sh; frame-ancestors 'none'")
         self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
     def log_message(self,*args): pass
 

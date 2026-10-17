@@ -15,7 +15,7 @@
 ## 프로젝트 범위 보완
 ### 솟 모멘텀
 - 검색·분류 진행판: 관리자 인증 후 Ubuntu 원본 DB와 sweep 체크포인트를 15초마다 직접 조회. GitHub search-progress.json·Actions 링크·실행 한도 안내 제거. 서비스 대기와 실제 실행을 구분하며 예전 active 채널을 현재 작업으로 표시하지 않음.
-- 검색·분류 요청: 기존 인증 릴레이의 cloud backend 사용을 확인. GitHub Actions로 전환된 응답은 연결 확인 필요로 표시. 현재 분류의 마지막 실패는 CHECKOUT_DIRTY_RECONCILE_REQUIRED이며 데이터 외부 동기화 복구는 승인 대기.
+- 검색·분류 요청: 기존 인증 릴레이의 cloud backend 사용을 확인. GitHub Actions로 전환된 응답은 연결 확인 필요로 표시. 기존 분류의 마지막 실패는 CHECKOUT_DIRTY_RECONCILE_REQUIRED. 새 실행기는 GitHub checkout 검사·pull·DB push를 제거하고 Ubuntu 공용 DB를 사용하도록 전환 완료. 사용자 승인 후 기존 자동발송 ON을 보존해 작업자 세 개를 재시작함.
 - 아웃바운드: 대상 서치 → 중복 제거 → 분류 → 검토 → 예약 발송 → 반송·수신 거부 → 회신·상담 전환.
 - 인바운드: 키워드 → 콘텐츠 기획 → 생성 → 검수 → 네이버/Threads/티스토리 발행 → 검색 등록 → 유입·전환 분석.
 - 검색: SEO/GEO 및 사용자 표기 IEO의 정확한 범위 확인 필요. 포털별 등록 상태, sitemap·색인 결과 확인을 별도 작업으로 기록.
@@ -45,3 +45,15 @@
 `tunnel.py`는 공식 cloudflared 바이너리로 외부 HTTPS 연결을 유지. GitHub 인증은 기존 gh 시스템 자격증명을 읽어 메모리에서만 사용. public origin만 GitHub에 반영.
 GitHub Pages 통합 화면에서 상태 조회와 모멘텀 작업 관리를 함께 수행합니다. 별도 어드민 창이나 iframe을 사용하지 않습니다. 타깃/메일, 검색/분류, 콘텐츠/발행, 유입/행동 분석, 상담, 운영 설정으로 기능을 재배치했습니다. 기존 admin.html 진입은 통합 관리 메뉴로 이동합니다. 최대화 화면은 폭 제한 없이 사용하며 1600px 이상에서 전체 관제 프로젝트를 3열로 배치합니다.
 CVD/OI 공급원 연결은 별도 미완료. aight 맥북·ComfyUI·손 결과 파일 연동 및 YouTube OAuth 연결은 설치 상태에 따라 구분해 표시.
+
+## Google Drive DB 전환
+- 프론트: GitHub Pages. 운영 대상·설정·백업·서치 진행은 인증된 Ubuntu API에서 조회. 고객 홈페이지의 점검 상태도 Ubuntu 공개 설정 API에서 읽음.
+- Ubuntu 공용 DB: databases/outreach/live. 기존 후보·근거·발송 이력은 원본을 보존한 채 합쳤고 SENT/BOUNCED/SENDING/UNKNOWN 이력을 보호함.
+- Google Drive 통합운영_DB: momentum(후보·근거·발송), aight(제작 데이터), btc(로컬 시장 데이터), control(일관된 SQLite 백업). 기존 BTC 가격 원본은 기존 Drive 저장을 유지.
+- 파일은 내용 해시로 이름을 정한 ZIP 스냅샷으로 저장. 실제 업로드 파일과 latest.json을 재조회해 크기·SHA-256이 같아야 저장 완료로 표시. 인증값·SMTP 비밀번호·rclone 설정은 백업에 포함하지 않음.
+- 검증 완료: momentum 27,890개 파일 / aight 465개 / btc 123개 / control 1개. 검증 영수증은 runtime/control-center/drive-backup-status.json.
+- 전환 코드: ops/outreach. 공유 파일 잠금·로컬 운영 설정·SMTP 전 Drive 발송 의도 백업·주기 백업 작업자. 실행 중 작업이 있으면 전환하지 않음.
+- 작업자 세 개의 실제 프로세스 환경에서 공용 DB 경로와 MOMENTUM_DRIVE_DB=1을 확인. 기존 자동발송 ON 유지. 전체 DB는 시간마다 자동 백업하고 어드민의 수동 백업 요청도 처리함. SMTP 전에 발송 의도는 별도 Drive 백업으로 보존. 검증용 메일은 발송하지 않음.
+
+- GitHub에는 프론트와 소스 코드만 배포. targets.json, search-progress.json, backup_status.json, system_config.json 운영 데이터 파일은 현재 배포에서 제거하며 과거 Git 이력은 변경하지 않음.
+- 모니터·관찰 서비스도 메일 설정을 Ubuntu DB에서 읽음. GitHub 운영 설정 조회 제거.

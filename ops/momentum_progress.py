@@ -9,7 +9,7 @@ import re
 import subprocess
 
 BASE=Path('/home/pc/Documents/Server')
-ROOT=BASE/'runtime/outreach/prospect/checkout'
+ROOT=BASE/'databases/outreach/live'
 SOURCE=BASE/'backends/outreach'
 
 def read(path,default=None):

@@ -26,14 +26,14 @@ function render(){
  document.querySelectorAll('a[data-view]').forEach(a=>a.classList.toggle('active',a.dataset.view===view));
  $('momentumSubnav').hidden=view!=='momentum';$('momentumManagement').hidden=view!=='momentum';
  document.body.classList.toggle('manage-mode',view==='momentum');
- $('projectManagement').hidden=!['aight','btc'].includes(view);
+ $('projectManagement').hidden=!['aight','btc','system'].includes(view);
  $('sectionTitle').textContent=view==='system'?'서버와 제작 인프라':'프로젝트 파이프라인';
  const shown=view==='overview'?models:models.filter(m=>m.id===view);
  $('projects').innerHTML=shown.map(m=>{
   const connected=m.stages.filter(s=>data.cards[s[0]]&&!/연결 확인/.test(data.cards[s[0]].state)).length;
   return `<article class="project"><div class="projecthead"><span class="icon">${m.icon}</span><div><h3>${m.name}</h3><p>${m.desc}</p></div><span class="tag ${connected?'':'muted'}">${connected?`${connected}/4 단계 조회`:'파이프라인 설계'}</span></div><div class="pipeline">${m.stages.map((s,i)=>`<div class="stage"><div class="num">STEP 0${i+1}</div><h4>${s[1]}</h4>${tag(data.cards[s[0]])}<p>${s[2]}</p></div>`).join('')}</div><div class="projectfoot"><span>${m.foot}</span>${m.link?'<a href="#momentum/targets">통합 관리 열기 →</a>':'<button data-plan="'+m.id+'">운영 설계 보기 →</button>'}</div></article>`;
  }).join('');
- const keys=view==='system'?['backup','bgm','production']:view==='momentum'?['outreach','blog','consult']:view==='btc'?['btc','cvd','alt']:view==='aight'?['production','bgm','backup']:['btc','alt','outreach','blog','backup'];
+ const keys=view==='system'?['drive-db','backup','bgm','production']:view==='momentum'?['outreach','blog','consult']:view==='btc'?['btc','cvd','alt']:view==='aight'?['production','bgm','backup']:['btc','alt','outreach','blog','backup'];
  $('evidence').innerHTML=keys.map(key=>{const c=data.cards[key];return `<div class="evidencerow"><div><b>${escapeHtml(c?.label||({btc:'BTC 가격',alt:'알트 보고서',outreach:'검색·메일',blog:'블로그',backup:'백업',production:'영상 제작 환경',bgm:'BGM',cvd:'CVD · OI',consult:'상담'})[key])}</b><p>${escapeHtml(c?.summary||'서버 연결 후 실제 실행 기록을 표시합니다.')}</p>${c?.evidenceAt?'<p>원본 기록 '+escapeHtml(displayTime(c.evidenceAt))+'</p>':''}</div><button data-key="${key}">${health(c).warn?'점검':'기록'} 보기 →</button></div>`;}).join('');
  const cards=Object.values(data.cards); const missing=new Set(models.flatMap(m=>m.stages.map(s=>s[0])).filter(key=>!data.cards[key]));$('healthy').textContent=cards.length?String(cards.filter(c=>!health(c).warn).length).padStart(2,'0'):'—';$('attention').textContent=cards.length?String(cards.filter(c=>health(c).warn).length+missing.size).padStart(2,'0'):'—';
  $('checked').textContent=data.checkedAt?new Date(data.checkedAt).toLocaleTimeString('ko-KR',{timeZone:'Asia/Seoul',hour12:false}):'—';

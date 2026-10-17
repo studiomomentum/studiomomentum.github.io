@@ -29,19 +29,8 @@
     };
 
     async function loadSystemConfig() {
-      try {
-        const [mail, webRes] = await Promise.all([
-          MomentumAdmin.call('settings.status'),
-          fetch('system_config.json?v='+Date.now(), {cache:'no-store'})
-        ]);
-        if (!webRes.ok) throw new Error('Control config unavailable');
-        const web = await webRes.json();
-        systemConfig = Object.assign({}, web, {email_system_enabled: mail.email_system_enabled === true});
-        updateSystemControlUI();
-      } catch (err) {
-        const label = document.getElementById('textEmailSystem');
-        if (label) label.textContent = '자동발송: 상태 확인 불가';
-      }
+      try { systemConfig=await MomentumAdmin.call('settings.status'); updateSystemControlUI(); }
+      catch (_) { document.getElementById('textEmailSystem').textContent='자동발송: 상태 확인 불가'; }
     }
 
     function updateSystemControlUI() {
@@ -78,7 +67,7 @@
       }
     }
 
-    async function updateRepositoryConfig(repo, changes) {
+    async function updateOperationalConfig(repo, changes) {
       const setting = Object.keys(changes)[0];
       await MomentumAdmin.call('settings.update', {setting, value: changes[setting]});
       Object.assign(systemConfig, changes); updateSystemControlUI();
@@ -88,22 +77,22 @@
       const next = systemConfig.email_system_enabled !== true;
       if (!confirm('자동발송을 '+(next?'ON':'OFF')+'으로 저장할까요? 서치·분류는 계속 실행됩니다.')) return;
       try {
-        if (await updateRepositoryConfig('momentum-cold-mailer',{email_system_enabled:next}))
+        if (await updateOperationalConfig('momentum-cold-mailer',{email_system_enabled:next}))
           alert('설정이 저장되었습니다. 발송기는 발송 전 설정을 다시 확인합니다.');
       } catch (err) { alert(err.message); }
     }
     async function toggleClientAccessBlock() {
       const next = systemConfig.client_access_blocked !== true;
-      if (!confirm('홈페이지 점검 화면을 '+(next?'표시':'해제')+'하도록 저장할까요? 홈페이지 배포 반영 시간이 필요합니다.')) return;
+      if (!confirm('홈페이지 점검 화면을 '+(next?'표시':'해제')+'하도록 저장할까요? 우분투 설정이 고객 화면에 반영됩니다.')) return;
       try {
-        if (await updateRepositoryConfig('studiomomentum.github.io',{client_access_blocked:next}))
-          alert('설정이 저장되었습니다. 홈페이지 배포가 반영된 뒤 적용됩니다.');
+        if (await updateOperationalConfig('studiomomentum.github.io',{client_access_blocked:next}))
+          alert('설정이 저장되었습니다. 고객 화면에서 다음 설정 조회 시 적용됩니다.');
       } catch (err) { alert(err.message); }
     }
 
     async function checkBackupStatus() {
       try {
-        const res = await fetch("backup_status.json?v=" + Date.now());
+        const value=await ProjectControls.request('backup-status'); const res={ok:true,json:async()=>({status:value.error?'ERROR':'OK',last_error:value.error,last_backup_time:value.lastSuccessAt})};
         if (res.ok) {
           const statusObj = await res.json();
           const banner = document.getElementById("backupAlertBanner");
@@ -139,7 +128,7 @@
 
       window.MomentumContent?.preload();
 
-      // 1. targets.json, 시스템 제어 config 및 백업 상태 확인
+      // 1. 우분투 타깃 DB, 운영 설정 및 Drive 백업 상태 확인
       await Promise.all([loadTargets(), loadSystemConfig(), checkBackupStatus()]);
 
       // 2. pSEO 분석 보드 이전 사용자 접힘/펼침 상태 복원
@@ -162,14 +151,14 @@
 
     async function loadTargets() {
       try {
-        const res = await fetch("targets.json?v=" + Date.now());
+        const value=await ProjectControls.request('targets'); const res={ok:true,json:async()=>value};
         if (res.ok) {
           targetsMap = await res.json();
           applyPermanentExclusions();
           await refreshPermanentExclusions();
         }
       } catch (e) {
-        console.warn("targets.json 로드 실패:", e);
+        console.warn("우분투 타깃 DB 조회 실패:", e);
       }
     }
 
