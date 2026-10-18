@@ -25,3 +25,35 @@ aside{overflow-y:auto}.sidebarbottom{position:static;margin-top:48px}.intro{padd
 @media(max-width:768px){#momentumManagement .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#momentumManagement .dashboard-body>.panel{padding:14px}#momentumManagement .filter-group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));flex:1 1 100%}#momentumManagement .management-tabs{flex-wrap:nowrap;overflow-x:auto}#momentumManagement .management-tabs a{font-size:12px}.management-heading{align-items:flex-start;flex-direction:column;gap:10px}}
 @media(max-width:650px){main{width:100%;margin:0;padding-inline:16px}aside{overflow:visible}#momentumSubnav{display:none!important}.manage-mode .intro{padding:16px 0 12px}.manage-mode .clock{display:none}.management-heading h2{font-size:21px}.management-heading p{line-height:1.7}#momentumManagement .settings-grid article{padding:20px}#momentumManagement .table-controls>.btn-secondary{min-height:42px}.projecthead .tag{margin-left:auto}}
 @media(max-width:650px){main>header{flex-wrap:wrap;padding:12px 0;gap:8px}main>header>span{flex:1 1 100%}main>header>div{width:100%;gap:8px;justify-content:flex-end}main>header button{white-space:nowrap;flex-shrink:0;font-size:11px;padding:8px 10px}#connection{margin-right:auto;font-size:11px;white-space:nowrap}.project-subnav{min-width:0}}
+
+/* Mobile: keep long workspaces in the page scroll; only the section tabs scroll sideways. */
+@media(max-width:768px){
+  #momentumManagement .pseo-ranking-list,
+  #momentumManagement .feed-container,
+  #momentumManagement #contentTopics{
+    max-height:none;
+    overflow-y:visible;
+    padding-right:0;
+  }
+  #momentumManagement .management-tabs{
+    position:relative;
+    gap:4px;
+    padding:6px;
+    margin-inline:-2px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    scrollbar-width:thin;
+    scroll-snap-type:x proximity;
+  }
+  #momentumManagement .management-tabs a{
+    flex:0 0 auto;
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding-inline:12px;
+    scroll-snap-align:start;
+  }
+}
