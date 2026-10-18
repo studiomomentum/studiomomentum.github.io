@@ -266,10 +266,10 @@
         setFilter('ALL');
       }
 
-      // 테이블 영역으로 부드럽게 스크롤 이동
+      // 테이블 영역으로 즉시 이동해 터치 스크롤을 바로 이어갈 수 있게 함
       const targetSection = document.querySelector('.table-controls') || document.getElementById('targetsTable');
       if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        targetSection.scrollIntoView({ behavior: 'auto', block: 'start' });
       }
     }
 

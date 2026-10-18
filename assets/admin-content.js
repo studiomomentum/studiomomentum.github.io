@@ -79,7 +79,7 @@ window.MomentumContent=(()=>{
       if(state)card.append(node('p',({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state.state])));
       const details=node('details');details.append(node('summary','주제·근거 보기'),node('p',t.question),node('p',t.intent+' · 검색량 미확인'),node('p',t.evidence));card.append(details);
       if(state?.state==='failed')card.append(button('생성 재시도',async()=>{if(!dirtyGuard())return;data=await contentCall('content.retry',{topicId:t.id});dirty=false;draw();notice('실패한 생성 작업을 다시 요청했습니다.');}));
-      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'smooth'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);list.append(card);
+      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'auto'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);list.append(card);
     }
   }
   function draw(){
@@ -94,7 +94,7 @@ window.MomentumContent=(()=>{
     if(window.MomentumKeywords)MomentumKeywords.render($('contentKeywords'),data.keywordBoard,(row,group)=>{
       const form=$('contentTopicForm');if([...form.elements].some(e=>e.name&&e.value.trim())&&!confirm('주제 등록란의 기존 입력을 선택한 키워드로 바꿀까요?'))return;form.elements.title.value=row.keyword;form.elements.question.value=row.question;form.elements.intent.value='해결 탐색';
       form.elements.evidence.value=[group.title+' · '+group.basis,'조회: '+row.observedAt,row.metric,row.detail,'기획 판단: '+row.reason,...row.links.map(l=>l.label+' '+l.url),group.limitations].join('\n');
-      form.closest('details').open=true;form.scrollIntoView({block:'center',behavior:'smooth'});notice('키워드와 근거를 주제 등록란에 채웠습니다. 제목·질문을 검토하고 저장하세요.');
+      form.closest('details').open=true;form.scrollIntoView({block:'center',behavior:'auto'});notice('키워드와 근거를 주제 등록란에 채웠습니다. 제목·질문을 검토하고 저장하세요.');
     },data.keywordRefreshes,source=>run(async()=>{const title={naver:'네이버 검색',datalab:'데이터랩',vidiq:'vidIQ'}[source];if(!confirm(title+' TOP 10을 갱신할까요?'+(source==='vidiq'?'\n최대 20크레딧을 사용합니다.':'')))return;const next=await contentCall('content.keywords.refresh',{source});data.revision=next.revision;data.keywordBoard=next.keywordBoard;data.keywordRefreshes=next.keywordRefreshes;drawKeywordRefresh();notice(title+' 갱신을 요청했습니다. 완료되면 해당 항목의 경과 시간이 초기화됩니다.');}));
   }
   function generationProgress(snapshot=data){
