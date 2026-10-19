@@ -125,7 +125,7 @@ function renderTable() {
 function customerVisitHistory(events) {
   const e=workspaceEscape;
   const visits=events.filter(ev=>['visit','view'].includes(ev.event));
-  const stamp=ev=>new Date(ev.timestamp).toLocaleString('ko-KR');
+  const stamp=ev=>Momentum.formatEventTime(ev.timestamp);
   const price=ev=>{
     const raw=ev.meta.applied_pricing||ev.pricing_tier||ev.meta.pricing||'';
     return /OUTBOUND|VIP/i.test(raw)?'제휴가 · 50 / 280 / 360만 원':/INBOUND_PUBLIC/i.test(raw)?'정상가 · 60 / 320 / 400만 원':'미기록';
@@ -144,7 +144,7 @@ function openTargetDetail(token) {
   const facts=t.company?[['담당자',t.rep],['이메일',t.email],['업종 / 지역',[t.category,t.region].filter(Boolean).join(' / ')],['발송 상태',t.status==='SENT'?'발송 완료':deliveryLabels[t.status]||t.status],['발송일시',t.sent_at],['영업 포인트',t.point||t.views],['채널',t.channel_url||t.channel],['추적 토큰',token]]:[['유입 경로',t.channel_name],['기기',t.device],['유입 주소',t.ref_url],['세션',token]];
   const names={email_open:'메일 열람',open:'메일 열람',visit:'사이트 방문',view:'페이지 조회',scroll_50:'50% 스크롤',scroll_90:'90% 스크롤',kakao_click:'카카오톡 상담 클릭',cta_click:'버튼 클릭',payment_attempt:'결제 시도',pay_modal_open:'결제창 열기',roi_calc_change:'계산기 사용',leave:'페이지 떠남',pay_and_kakao_connect:'결제·상담 연결 클릭'};
   const events=Momentum.mergeEvents(liveEvents).filter(ev=>ev.ref===token&&!Momentum.isTestEvent(ev));
-  Momentum.setHTML(document.getElementById('detailBody'),`${youtubeChannelButton(t)}${excludeTargetButton(t)}${prospectScoreBadge(t,true)}<dl>${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${e(v||'—')}</dd></div>`).join('')}</dl><div class="detail-metrics"><span>메일 열람 <strong>${Number(s.openCount)||0}회</strong></span><span>사이트 방문 <strong>${Number(s.visitCount)||0}회</strong></span><span>스크롤 <strong>${Number(s.maxScroll)||t.maxScroll||0}%</strong></span><span>체류 <strong>${Number(s.maxStaySec)||t.maxStaySec||0}초</strong></span></div>${customerVisitHistory(events)}<h3>활동 이력</h3><p class="field-label">현재 동기화된 기록 기준 · 메일 열람은 추적 이미지 요청 기준</p><ol class="detail-events">${events.map(ev=>`<li><span>${e(names[ev.event]||(/^duration_/.test(ev.event)?'체류 기록':ev.event))}</span><time>${e(new Date(ev.timestamp).toLocaleString('ko-KR'))}</time></li>`).join('')||'<li>동기화된 상세 활동 기록이 없습니다.</li>'}</ol>`);
+  Momentum.setHTML(document.getElementById('detailBody'),`${youtubeChannelButton(t)}${excludeTargetButton(t)}${prospectScoreBadge(t,true)}<dl>${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${e(v||'—')}</dd></div>`).join('')}</dl><div class="detail-metrics"><span>메일 열람 <strong>${Number(s.openCount)||0}회</strong></span><span>사이트 방문 <strong>${Number(s.visitCount)||0}회</strong></span><span>스크롤 <strong>${Number(s.maxScroll)||t.maxScroll||0}%</strong></span><span>체류 <strong>${Number(s.maxStaySec)||t.maxStaySec||0}초</strong></span></div>${customerVisitHistory(events)}<h3>활동 이력</h3><p class="field-label">현재 동기화된 기록 기준 · 메일 열람은 추적 이미지 요청 기준</p><ol class="detail-events">${events.map(ev=>`<li><span>${e(names[ev.event]||(/^duration_/.test(ev.event)?'체류 기록':ev.event))}</span><time>${e(Momentum.formatEventTime(ev.timestamp))}</time></li>`).join('')||'<li>동기화된 상세 활동 기록이 없습니다.</li>'}</ol>`);
   activateYoutubeLinks(document.getElementById('detailBody'));
   document.getElementById('targetDetail').showModal();
 }

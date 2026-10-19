@@ -1237,7 +1237,7 @@
 .manual-prospect-controls{margin:12px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.manual-prospect-controls button{min-height:44px;padding:10px 14px;border:1px solid var(--border);border-radius:8px;cursor:pointer}.manual-prospect-controls button:disabled{opacity:.6;cursor:wait}.manual-prospect-controls p{flex-basis:100%;margin:0}
   </style>
 <script src="assets/purify.min.js"></script>
-<script src="assets/momentum-runtime.js?v=20261017-content-tracking"></script>
+<script src="assets/momentum-runtime.js?v=20261019-event-time"></script>
 <link rel="stylesheet" href="assets/admin-workspace.css?v=20260928-visit-profile">
 <link rel="stylesheet" href="assets/admin-content.css?v=20260929-generation-progress-1">
 </head>
@@ -2040,7 +2040,8 @@
     }
 
     function formatRelativeTime(ts) {
-      if (!ts) return '-';
+      ts = Momentum.parseTimestamp(ts);
+      if (!ts) return '시각 미기록';
       const diff = Math.floor((Date.now() - ts) / 1000);
       if (diff < 60) return "방금 전";
       if (diff < 3600) return `${Math.floor(diff / 60)}분 전`;
@@ -2068,8 +2069,8 @@
         const hotStr = s && s.kakaoClick ? "Y" : "N";
         const scrollPct = s ? s.maxScroll : 0;
         const staySec = s ? s.maxStaySec : 0;
-        const firstStr = s && s.firstSeen ? new Date(s.firstSeen).toLocaleString("ko-KR") : "-";
-        const lastStr = s && s.lastSeen ? new Date(s.lastSeen).toLocaleString("ko-KR") : "-";
+        const firstStr = s && s.firstSeen ? Momentum.formatEventTime(s.firstSeen) : "-";
+        const lastStr = s && s.lastSeen ? Momentum.formatEventTime(s.lastSeen) : "-";
 
         csvContent += [t.no,t.token,t.company,t.rep,t.email,t.region,t.category,t.status,t.sent_at,openStatus,visitStatus,openCnt,visitCnt,hotStr,scrollPct,staySec,firstStr,lastStr].map(Momentum.csvCell).join(',')+'\n';
       });
@@ -2078,7 +2079,7 @@
       csvContent += "\n\n[원본 이벤트 텔레메트리 로그]\n";
       csvContent += "이벤트ID,일시,토큰,이벤트유형,채널,기기,해상도,체류/완독,메타데이터\n";
       liveEvents.forEach(ev => {
-        const timeStr = ev._received || ev.timestamp ? new Date(ev._received || ev.timestamp).toLocaleString("ko-KR") : "-";
+        const timeStr = Momentum.formatEventTime(ev.timestamp);
         const metaStr = ev.meta ? JSON.stringify(ev.meta).replace(/"/g, '""') : "";
         csvContent += [ev._id,timeStr,ev.ref,ev.event,ev.channel_type,ev.device,ev.screen,ev.meta && ev.meta.duration,JSON.stringify(ev.meta||{})].map(Momentum.csvCell).join(',')+'\n';
       });
@@ -2097,7 +2098,7 @@
   <dialog id="targetDetail"><div class="detail-heading"><h2 id="detailTitle">타깃 상세</h2><button autofocus onclick="document.getElementById('targetDetail').close()" aria-label="상세 닫기">닫기</button></div><div id="detailBody"></div></dialog>
   <script src="assets/admin-keywords.js?v=20260930-source-refresh-1"></script>
   <script src="assets/admin-content.js?v=20260930-naver-2"></script>
-  <script src="assets/admin-workspace.js?v=20261017-content-tracking"></script>
+  <script src="assets/admin-workspace.js?v=20261019-event-time"></script>
   <script src="assets/admin-search-progress.js?v=manual-stages-feedback-20261001-20260928-date-filter"></script>
   <script src="assets/admin-auth.js?v=20260930-session-cache-1"></script>
   <script src="assets/admin-classification.js?v=manual-stages-feedback-20261001"></script>

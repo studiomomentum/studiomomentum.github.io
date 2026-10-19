@@ -5,13 +5,41 @@
   function eventKey(ev) {
     return ev.event_id || ev.id || ev._msg_id || ev._id || [ev.time || ev.timestamp, ev.ref, ev.event].join('_');
   }
+  // Legacy ko-KR strings were written in Korea time, independent of the viewer timezone.
+  function parseTimestamp(input) {
+    if (input == null || input === '' || typeof input === 'boolean') return 0;
+    let stamp = 0;
+    if (typeof input === 'number' || (typeof input === 'string' && /^\d+(?:\.\d+)?$/.test(input.trim()))) {
+      const n = Number(input);
+      stamp = n < 1e11 ? n * 1000 : n;
+    } else if (typeof input === 'string') {
+      const text = input.trim();
+      const ko = /^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\s*(오전|오후)\s*(\d{1,2}):(\d{2})(?::(\d{2}))?$/.exec(text);
+      if (ko) {
+        const [, y, m, d, period, h, min, sec = '0'] = ko;
+        if (+h < 1 || +h > 12 || +min > 59 || +sec > 59) return 0;
+        const hour = +h % 12 + (period === '오후' ? 12 : 0);
+        const local = Date.UTC(+y, +m - 1, +d, hour, +min, +sec);
+        const check = new Date(local);
+        if (check.getUTCFullYear() !== +y || check.getUTCMonth() !== +m - 1 || check.getUTCDate() !== +d) return 0;
+        stamp = local - 9 * 3600000;
+      } else if (/^\d{4}-\d{2}-\d{2}(?:T|$)/.test(text)) {
+        stamp = Date.parse(text);
+      }
+    }
+    return Number.isFinite(stamp) && stamp >= Date.UTC(2000, 0, 1) && stamp <= 253402300799999 ? stamp : 0;
+  }
+  function formatEventTime(input) {
+    const stamp = parseTimestamp(input);
+    return stamp ? new Date(stamp).toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) : '시각 미기록';
+  }
   function normalizeEvent(ev) {
     if (!ev || typeof ev !== 'object' || !allowed.test(ev.event || '') || typeof ev.ref !== 'string') return null;
     if (!/^[A-Za-z0-9_-]{1,160}$/.test(ev.ref) || ['__proto__','constructor','prototype'].includes(ev.ref)) return null;
     const value = Object.assign({}, ev);
     value.meta = ev.meta && typeof ev.meta === 'object' ? ev.meta : {};
-    const raw = Number(ev.timestamp) || (typeof ev.time === 'number' ? ev.time : Date.parse(ev.time || '')) || Number(ev._received) || 0;
-    value.timestamp = Number.isFinite(raw) && raw > 0 ? (raw < 1e11 ? raw * 1000 : raw) : 0;
+    value.timestamp = parseTimestamp(ev.timestamp) || parseTimestamp(ev.time) || parseTimestamp(ev._received);
+    if ('_received' in value) value._received = parseTimestamp(ev._received);
     value._id = eventKey(ev);
     return value;
   }
@@ -81,8 +109,8 @@
   function sendTelemetry(payload, topic, gasUrl) {
     payload.meta = Object.assign({}, payload.meta || {}, visitContext(payload));
     payload.event_id = payload.event_id || (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(16).slice(2));
-    payload.time = payload.time || new Date().toISOString();
-    payload.timestamp = payload.timestamp || Date.now();
+    payload.timestamp = parseTimestamp(payload.timestamp) || parseTimestamp(payload.time) || Date.now();
+    payload.time = new Date(payload.timestamp).toISOString();
     const body = JSON.stringify(payload);
     const destinations = ['https://ntfy.sh/' + topic];
     if (gasUrl) destinations.push(gasUrl);
@@ -149,7 +177,7 @@
     }
     return result;
   }
-  window.Momentum = {unpersistedEvents,isTestEvent,renderActivityCounts,activitySets,aggregateStats,eventKey, normalizeEvent, mergeEvents, csvCell, setHTML, sendTelemetry};
+  window.Momentum = {parseTimestamp,formatEventTime,unpersistedEvents,isTestEvent,renderActivityCounts,activitySets,aggregateStats,eventKey, normalizeEvent, mergeEvents, csvCell, setHTML, sendTelemetry};
   document.addEventListener('click', event => {
     const el = event.target.closest('[data-filter],[data-target-token],[data-notif-id]');
     if (!el) return;

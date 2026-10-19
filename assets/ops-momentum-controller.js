@@ -550,8 +550,8 @@
             channel_name: chName,
             pricing: '💎 공개 정상가 상담',
             hot: false,
-            firstSeen: ev._received || ev.timestamp || Date.now(),
-            lastSeen: ev._received || ev.timestamp || Date.now(),
+            firstSeen: ev.timestamp || 0,
+            lastSeen: ev.timestamp || 0,
             maxScroll: 0,
             maxStaySec: 0,
             device: ev.device || 'Desktop',
@@ -561,18 +561,21 @@
         }
 
         const s = inboundsMap[key];
-        s.lastSeen = Math.max(s.lastSeen, ev._received || ev.timestamp || 0);
+        if (ev.timestamp) s.firstSeen = s.firstSeen ? Math.min(s.firstSeen, ev.timestamp) : ev.timestamp;
+        s.lastSeen = Math.max(s.lastSeen, ev.timestamp || 0);
         if (ev.event === 'kakao_click') s.hot = true;
         if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
         if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
         if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
         if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
+        if (ev.meta && ev.meta.elapsed) s.maxStaySec = Math.max(s.maxStaySec, Number(ev.meta.elapsed) || 0);
       });
       return Object.values(inboundsMap);
     }
 
     function formatRelativeTime(ts) {
-      if (!ts) return '-';
+      ts = Momentum.parseTimestamp(ts);
+      if (!ts) return '시각 미기록';
       const diff = Math.floor((Date.now() - ts) / 1000);
       if (diff < 60) return "방금 전";
       if (diff < 3600) return `${Math.floor(diff / 60)}분 전`;
@@ -600,8 +603,8 @@
         const hotStr = s && s.kakaoClick ? "Y" : "N";
         const scrollPct = s ? s.maxScroll : 0;
         const staySec = s ? s.maxStaySec : 0;
-        const firstStr = s && s.firstSeen ? new Date(s.firstSeen).toLocaleString("ko-KR") : "-";
-        const lastStr = s && s.lastSeen ? new Date(s.lastSeen).toLocaleString("ko-KR") : "-";
+        const firstStr = s && s.firstSeen ? Momentum.formatEventTime(s.firstSeen) : "-";
+        const lastStr = s && s.lastSeen ? Momentum.formatEventTime(s.lastSeen) : "-";
 
         csvContent += [t.no,t.token,t.company,t.rep,t.email,t.region,t.category,t.status,t.sent_at,openStatus,visitStatus,openCnt,visitCnt,hotStr,scrollPct,staySec,firstStr,lastStr].map(Momentum.csvCell).join(',')+'\n';
       });
@@ -610,7 +613,7 @@
       csvContent += "\n\n[원본 이벤트 텔레메트리 로그]\n";
       csvContent += "이벤트ID,일시,토큰,이벤트유형,채널,기기,해상도,체류/완독,메타데이터\n";
       liveEvents.forEach(ev => {
-        const timeStr = ev._received || ev.timestamp ? new Date(ev._received || ev.timestamp).toLocaleString("ko-KR") : "-";
+        const timeStr = Momentum.formatEventTime(ev.timestamp);
         const metaStr = ev.meta ? JSON.stringify(ev.meta).replace(/"/g, '""') : "";
         csvContent += [ev._id,timeStr,ev.ref,ev.event,ev.channel_type,ev.device,ev.screen,ev.meta && ev.meta.duration,JSON.stringify(ev.meta||{})].map(Momentum.csvCell).join(',')+'\n';
       });
