@@ -1771,8 +1771,8 @@
 @media(max-width:600px){.container{padding-top:28px}.nav{gap:18px;padding-bottom:22px;margin-bottom:40px;align-items:center}.sot-symbol{font-size:60px}.sot-momentum{font-size:11px;letter-spacing:2.5px}.nav-status{max-width:150px;font-size:11px;word-break:keep-all;}}
 
 </style>
-<script src="assets/momentum-collector.js?v=20261019-tracking-v2"></script>
-<script src="assets/momentum-runtime.js?v=20261019-tracking-v2"></script>
+<script src="assets/momentum-collector.js?v=20261019-tracking-v2.1"></script>
+<script src="assets/momentum-runtime.js?v=20261019-tracking-v2.1"></script>
   <link rel="stylesheet" href="assets/consultation.css?v=20261003">
 <script src="assets/momentum-public-config.js?v=7"></script></head>
 <body>
@@ -2946,6 +2946,7 @@ if (channelType === 'OUTBOUND') {
     return false;
   })();
 
+  let engagement;
   function sendEvent(eventType, meta) {
     if (isAdminDevice) {
       console.log('[Momentum Telemetry Skipped] Admin self-visit detected. Telemetry event ignored:', eventType);
@@ -2963,7 +2964,7 @@ if (channelType === 'OUTBOUND') {
       path: window.location.pathname,
       time: new Date().toISOString(),
       timestamp: Date.now(),
-      meta: meta || {}
+      meta: Object.assign({}, meta || {}, engagement ? {active_duration:engagement.seconds(),measurement:'visible_time_v2'} : {})
     };
 
     return Momentum.sendTelemetry(payload, TRACK_TOPIC, GAS_DB_URL);
@@ -2977,7 +2978,7 @@ if (channelType === 'OUTBOUND') {
     window._smEventQueue = [];
   }
 
-  const engagement = MomentumCollector.activeTracker(sendEvent);
+  engagement = MomentumCollector.activeTracker(sendEvent);
 
   // 1. 최초 방문 이벤트 발송
   sendEvent('visit', { ua: ua.slice(0, 120), channel: channelName, pricing: pricingTier });

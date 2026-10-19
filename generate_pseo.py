@@ -205,8 +205,8 @@ TEMPLATE = """<!DOCTYPE html>
       .cta-box {{ padding: 28px 18px; }}
     }}
   </style>
-<script src="assets/momentum-collector.js?v=20261019-tracking-v2"></script>
-<script src="assets/momentum-runtime.js?v=20261019-tracking-v2"></script>
+<script src="assets/momentum-collector.js?v=20261019-tracking-v2.1"></script>
+<script src="assets/momentum-runtime.js?v=20261019-tracking-v2.1"></script>
 </head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
@@ -325,6 +325,7 @@ TEMPLATE = """<!DOCTYPE html>
       return false;
     }})();
 
+    let engagement;
     function sendEvent(eventType, extraMeta) {{
       if (isAdminDevice) return;
       const payload = {{
@@ -337,12 +338,12 @@ TEMPLATE = """<!DOCTYPE html>
         timestamp: Date.now(),
         device: getDevice(),
         screen: window.innerWidth + 'x' + window.innerHeight,
-        meta: extraMeta || {{}}
+        meta: Object.assign({{}}, extraMeta || {{}}, engagement ? {{active_duration:engagement.seconds(),measurement:'visible_time_v2'}} : {{}})
       }};
       Momentum.sendTelemetry(payload, TRACK_TOPIC, 'https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec');
     }}
 
-    const engagement = MomentumCollector.activeTracker(sendEvent);
+    engagement = MomentumCollector.activeTracker(sendEvent);
     sendEvent('visit', {{ page: window.location.pathname }});
 
 

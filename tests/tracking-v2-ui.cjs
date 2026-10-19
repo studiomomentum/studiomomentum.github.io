@@ -6,7 +6,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
   const req=route.request(),u=new URL(req.url()),file=path.join(process.cwd(),u.pathname);
   if(u.hostname==='studiomomentum.github.io'&&fs.existsSync(file)&&fs.statSync(file).isFile())return route.fulfill({path:file});
   const fixture=process.env.OPS_ASSET_FIXTURES&&path.join(process.env.OPS_ASSET_FIXTURES,path.basename(u.pathname));
-  if(u.hostname==='studiomomentum.github.io'&&fixture&&fs.existsSync(fixture))return route.fulfill({path:fixture});
+  if(u.hostname==='studiomomentum.github.io'&&fixture&&fs.existsSync(fixture)&&fs.statSync(fixture).isFile())return route.fulfill({path:fixture});
   if(u.hostname==='studiomomentum.github.io'&&u.pathname==='/')return route.fulfill({path:path.join(process.cwd(),'index.html')});
   if(u.hostname==='ntfy.sh'||u.hostname==='script.google.com'){
    if(offline)return route.abort('internetdisconnected');
