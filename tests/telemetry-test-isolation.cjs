@@ -10,7 +10,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
  const code=fs.readFileSync('assets/momentum-runtime.js','utf8'),context={window:{},document:{addEventListener(){}}};vm.runInNewContext(code,context);
  const M=context.window.Momentum,ids=JSON.parse(code.match(/excludedTestSessions = new Set\((\[[^\n]+\])\)/)[1]);
  assert.equal(ids.length,9);
- const make=session=>({event:'visit',ref:'pseo_suwon_hospital_fixture',timestamp:Date.now(),meta:{session_id:session,schema_version:2,visit_id:session,visitor_id:session}});
+ const make=session=>({event_id:session,event:'visit',ref:'pseo_suwon_hospital_fixture',timestamp:Date.now(),meta:{session_id:session,schema_version:2,visit_id:session,visitor_id:session}});
  assert(M.isTestEvent(make(ids[0])));assert(!M.isTestEvent(make('unrelated-customer')));
  assert.equal(M.trafficSummary([make(ids[0]),make('unrelated-customer')]).pageViews,1);
  assert.equal(M.trafficSummary([make(ids[0]),make('unrelated-customer')]).sessions,1);
