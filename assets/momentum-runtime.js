@@ -1,7 +1,7 @@
 /* Shared data contracts; no network writes occur on import. */
 (function () {
   'use strict';
-  const allowed = /^(visit|view|email_open|open|scroll_50|scroll_90|duration_\d+s|leave|cta_click|kakao_click|roi_calc_change|pay_and_kakao_connect|payment_attempt|pay_modal_open)$/;
+  const allowed = /^(visit|view|email_open|open|scroll_50|scroll_90|duration_\d+s|leave|engagement|cta_click|kakao_click|roi_calc_change|pay_and_kakao_connect|payment_attempt|pay_modal_open)$/;
   function eventKey(ev) {
     return ev.event_id || ev.id || ev._msg_id || ev._id || [ev.time || ev.timestamp, ev.ref, ev.event].join('_');
   }
@@ -107,10 +107,16 @@
       applied_pricing:payload.pricing_tier || (payload.meta && payload.meta.pricing) || ''};
   }
   function sendTelemetry(payload, topic, gasUrl) {
-    payload.meta = Object.assign({}, payload.meta || {}, visitContext(payload));
+    if (isTestEvent(payload)) return Promise.resolve({skipped:true});
+    const arrival = visitContext(payload);
+    const identity = window.MomentumCollector ? window.MomentumCollector.context(payload, arrival) : {};
+    payload.path = payload.path || window.location.pathname || '/';
+    payload.meta = Object.assign({}, payload.meta || {}, arrival, identity);
     payload.event_id = payload.event_id || (crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(16).slice(2));
     payload.timestamp = parseTimestamp(payload.timestamp) || parseTimestamp(payload.time) || Date.now();
     payload.time = new Date(payload.timestamp).toISOString();
+    if (!normalizeEvent(payload)) return Promise.resolve({rejected:'invalid_event'});
+    if (window.MomentumCollector) return window.MomentumCollector.deliver(payload, topic, gasUrl);
     const body = JSON.stringify(payload);
     const destinations = ['https://ntfy.sh/' + topic];
     if (gasUrl) destinations.push(gasUrl);
@@ -125,9 +131,25 @@
   function isTestEvent(ev) {
     return !!(ev.is_admin || ev.channel_type==='ADMIN_TEST' || (ev.meta && ev.meta.is_admin) || /^(vip|test|preview|admin|dev|sample|direct|o3eltr25|momentum|vip_test)$/i.test(ev.ref||'') || /^momentum-test-/i.test(ev.ref||''));
   }
+  function visitEvents(events) {
+    const seen = new Set();
+    return mergeEvents(events).filter(ev => {
+      if (isTestEvent(ev) || !['visit','view'].includes(ev.event)) return false;
+      const key = ev.meta.visit_id || eventKey(ev);
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+  }
+  function trafficSummary(events) {
+    const views=visitEvents(events), modern=mergeEvents(events).filter(ev=>!isTestEvent(ev)&&ev.meta.schema_version===2);
+    return {pageViews:views.length, sessions:new Set(modern.map(ev=>ev.meta.session_id).filter(Boolean)).size,
+      browserVisitors:new Set(modern.map(ev=>ev.meta.visitor_id).filter(Boolean)).size,
+      legacyPageViews:views.filter(ev=>ev.meta.schema_version!==2).length};
+  }
   function aggregateStats(targets, events) {
     const result = Object.create(null);
     const get = ref => result[ref] || (result[ref]={opened:false,visited:false,hot:false,kakaoClick:false,openCount:0,visitCount:0,maxScroll:0,maxStaySec:0,firstSeen:0,lastSeen:0,events:[]});
+    const pageViewIds = new Set(visitEvents(events).map(eventKey));
     for (const ev of mergeEvents(events)) {
       if (isTestEvent(ev)) continue;
       const s=get(ev.ref), stamp=ev.timestamp;
@@ -136,13 +158,23 @@
       if (ev.event==='email_open'||ev.event==='open') {s.opened=true;s.openCount++;}
       else {
         s.visited=true;
-        if (ev.event==='visit'||ev.event==='view') s.visitCount++;
-        if (ev.event==='kakao_click') s.hot=s.kakaoClick=true;
+        if (pageViewIds.has(eventKey(ev))) s.visitCount++;
+        if (['kakao_click','pay_and_kakao_connect'].includes(ev.event)) s.hot=s.kakaoClick=true;
         if (ev.event==='scroll_90') s.maxScroll=Math.max(s.maxScroll,90);
         if (ev.event==='scroll_50') s.maxScroll=Math.max(s.maxScroll,50);
         s.maxStaySec=Math.max(s.maxStaySec,Number(ev.meta.duration)||0,Number(ev.meta.totalDuration)||0,Number(ev.meta.elapsed)||0);
       }
     }
+    const pageTimes = new Map();
+    for (const ev of mergeEvents(events)) {
+      if (isTestEvent(ev) || ev.meta.measurement !== 'visible_time_v2' || !ev.meta.visit_id) continue;
+      const seconds = Number(ev.meta.active_duration);
+      if (!Number.isFinite(seconds) || seconds < 0) continue;
+      const key = JSON.stringify([ev.ref,ev.meta.visit_id]);
+      pageTimes.set(key,Math.max(pageTimes.get(key)||0,seconds));
+    }
+    for (const [key,seconds] of pageTimes) {const [ref]=JSON.parse(key);const s=get(ref);s.activeStaySec=(s.activeStaySec||0)+seconds;}
+    for (const s of Object.values(result)) {s.legacyMaxStaySec=s.maxStaySec;s.maxStaySec=s.activeStaySec===undefined?s.maxStaySec:s.activeStaySec;}
     for (const t of Object.values(targets)) {
       if (!t || !t.token) continue;
       const s=get(t.token);
@@ -152,7 +184,7 @@
       s.openCount=Math.max(s.openCount,Number(t.open_count)||0,t.opened===true?1:0);
       s.visitCount=Math.max(s.visitCount,Number(t.visit_count)||0,t.visited===true?1:0);
       s.maxScroll=Math.max(s.maxScroll,Number(t.max_scroll)||0);
-      s.maxStaySec=Math.max(s.maxStaySec,Number(t.max_stay_sec)||0);
+      if(s.activeStaySec===undefined)s.maxStaySec=Math.max(s.maxStaySec,Number(t.max_stay_sec)||0);
       s.opened=s.opened||s.openCount>0; s.visited=s.visited||s.visitCount>0;
       const first=Date.parse(t.first_activity||'')||0;
       if(first) s.firstSeen=s.firstSeen?Math.min(s.firstSeen,first):first;
@@ -162,7 +194,7 @@
   }
   function renderActivityCounts(stats = {}) {
     const count = value => Number.isFinite(Number(value)) ? Math.max(0,Math.floor(Number(value))) : 0;
-    return `<div class="activity-counts" style="margin-top:5px;font-size:11.5px;color:#93c5fd;font-weight:600;display:flex;gap:8px;flex-wrap:wrap"><span>📨 메일 열람 ${count(stats.openCount)}회</span><span>·</span><span>🌐 사이트 방문 ${count(stats.visitCount)}회</span></div>`;
+    return `<div class="activity-counts" style="margin-top:5px;font-size:11.5px;color:#93c5fd;font-weight:600;display:flex;gap:8px;flex-wrap:wrap"><span>📨 메일 열람 ${count(stats.openCount)}회</span><span>·</span><span>🌐 페이지 조회 ${count(stats.visitCount)}회</span></div>`;
   }
   function activitySets(targets, events, sentOnly = false) {
     const result = {openedTokens:new Set(),visitedTokens:new Set(),hotTokens:new Set(),scroll90Tokens:new Set()};
@@ -177,7 +209,7 @@
     }
     return result;
   }
-  window.Momentum = {parseTimestamp,formatEventTime,unpersistedEvents,isTestEvent,renderActivityCounts,activitySets,aggregateStats,eventKey, normalizeEvent, mergeEvents, csvCell, setHTML, sendTelemetry};
+  window.Momentum = {visitEvents,trafficSummary,parseTimestamp,formatEventTime,unpersistedEvents,isTestEvent,renderActivityCounts,activitySets,aggregateStats,eventKey, normalizeEvent, mergeEvents, csvCell, setHTML, sendTelemetry};
   document.addEventListener('click', event => {
     const el = event.target.closest('[data-filter],[data-target-token],[data-notif-id]');
     if (!el) return;

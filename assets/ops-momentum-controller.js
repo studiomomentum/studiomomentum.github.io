@@ -388,28 +388,32 @@
       let totalAeo = 0;
       let roiCalculations = 0;
       let roiSalarySum = 0;
+      let roiSalarySamples = 0;
       const aiSources = { 'ChatGPT': 0, 'Perplexity (AEO)': 0, 'Claude': 0, 'Gemini': 0, 'Google AI (AEO)': 0, 'Others': 0 };
 
-      liveEvents.forEach(ev => {
+      const canonicalViews = new Set(Momentum.visitEvents(liveEvents).map(Momentum.eventKey));
+      Momentum.mergeEvents(liveEvents).forEach(ev => {
         const refLower = (ev.ref || '').toLowerCase();
         if (Momentum.isTestEvent(ev)) return;
 
+        const isPageView = canonicalViews.has(Momentum.eventKey(ev));
+
         // 1. PSEO 감지
-        if (ev.channel_type === 'PSEO' || (ev.ref && ev.ref.startsWith('pseo_'))) {
+        if (isPageView && (ev.channel_type === 'PSEO' || (ev.meta.entry_channel_type === 'PSEO'))) {
           totalPseo++;
-          const r = ev.region || (ev.channel_name ? ev.channel_name.split(' ')[0] : '');
-          const ind = ev.industry || (ev.channel_name ? ev.channel_name.split(' ')[1] : '');
+          const r = ev.region || ev.meta.entry_region || (ev.channel_name ? ev.channel_name.split(' ')[0] : '');
+          const ind = ev.industry || ev.meta.entry_industry || (ev.channel_name ? ev.channel_name.split(' ')[1] : '');
 
           PSEO_REGIONS.forEach(reg => {
-            if (reg.includes(r) || (r && r.includes(reg.split('·')[0]))) regionCounts[reg] = (regionCounts[reg] || 0) + 1;
+            if (r && (reg.includes(r) || r.includes(reg.split('·')[0]))) regionCounts[reg] = (regionCounts[reg] || 0) + 1;
           });
           PSEO_INDUSTRIES.forEach(industry => {
-            if (industry.includes(ind) || (ind && ind.includes(industry.split('·')[0]))) indCounts[industry] = (indCounts[industry] || 0) + 1;
+            if (ind && (industry.includes(ind) || ind.includes(industry.split('·')[0]))) indCounts[industry] = (indCounts[industry] || 0) + 1;
           });
         }
 
         // 2. AEO (답변 엔진 직답 인용) 감지
-        if (ev.channel_type === 'AEO' || (ev.channel_name && (ev.channel_name.includes('AEO') || ev.channel_name.includes('Perplexity') || ev.channel_name.includes('Overview')))) {
+        if (isPageView && ev.channel_type === 'AEO') {
           totalAeo++;
           const name = ev.channel_name || '';
           if (name.includes('Perplexity')) aiSources['Perplexity (AEO)']++;
@@ -417,7 +421,7 @@
           else aiSources['Others']++;
         }
         // 3. GEO (생성형 AI 추천) 감지
-        else if (ev.channel_type === 'GEO' || (ev.channel_name && (ev.channel_name.includes('ChatGPT') || ev.channel_name.includes('Claude') || ev.channel_name.includes('Gemini')))) {
+        else if (isPageView && ev.channel_type === 'GEO') {
           totalGeo++;
           const name = ev.channel_name || '';
           if (name.includes('ChatGPT') || name.includes('OpenAI')) aiSources['ChatGPT']++;
@@ -427,14 +431,18 @@
         }
 
         // 4. ROI 계산기 조작 감지
-        if (ev.event === 'roi_calc_change' && ev.meta && ev.meta.salary) {
+        if (ev.event === 'roi_calc_change') {
           roiCalculations++;
-          roiSalarySum += parseInt(ev.meta.salary, 10) || 350;
+          const salary=Number(ev.meta?.salary);
+          if (Number.isFinite(salary) && salary>0) {roiSalarySamples++;roiSalarySum+=salary;}
         }
       });
 
+      const metrics = Momentum.trafficSummary(liveEvents.filter(ev => ev.channel_type !== 'OUTBOUND'));
+      const metricLabel = document.getElementById('trafficMetricSummary');
+      if (metricLabel) metricLabel.textContent = `페이지 조회 ${metrics.pageViews}회 · 새 기준 방문 세션 ${metrics.sessions}개 · 브라우저 방문자 ${metrics.browserVisitors}개 · 세션 구분 불가한 과거 조회 ${metrics.legacyPageViews}회`;
       const totalBadgeEl = document.getElementById("pseoTotalBadge");
-      if (totalBadgeEl) totalBadgeEl.textContent = `pSEO: ${totalPseo}건 | GEO: ${totalGeo}건 | AEO: ${totalAeo}건`;
+      if (totalBadgeEl) totalBadgeEl.textContent = `페이지 조회 · pSEO ${totalPseo}회 | AI 추천 ${totalGeo}회 | AI 검색 ${totalAeo}회`;
 
       // 렌더링: 권역별 랭킹
       const regEl = document.getElementById("pseoRegionList");
@@ -482,14 +490,14 @@
       // 렌더링: AI 유입 & ROI 계산기 통계
       const geoEl = document.getElementById("pseoGeoStats");
       if (geoEl) {
-        const avgSalary = roiCalculations > 0 ? Math.round(roiSalarySum / roiCalculations) : 350;
+        const avgSalary = roiSalarySamples > 0 ? Math.round(roiSalarySum / roiSalarySamples)+'만 원' : '기록 없음';
         Momentum.setHTML(geoEl, `
           <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; border: 1px solid #334155; margin-bottom: 10px;">
-            <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px;">🤖 AI 검색 추천 &amp; 직답 인용 (GEO · AEO)</div>
+            <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px;">🤖 AI 검색 추천 &amp; 직답 인용 (관측된 AI 링크·캠페인)</div>
             <div style="display: flex; gap: 6px; flex-wrap: wrap;">
               <span class="badge" style="background:#0284c7; color:white; font-size:11px;">ChatGPT: ${aiSources['ChatGPT']}</span>
               <span class="badge" style="background:#8b5cf6; color:white; font-size:11px;">Perplexity (AEO): ${aiSources['Perplexity (AEO)']}</span>
-              <span class="badge" style="background:#059669; color:white; font-size:11px;">Google AI (AEO): ${aiSources['Google AI (AEO)']}</span>
+              <span class="badge" style="background:#059669; color:white; font-size:11px;">Google AI 링크: ${aiSources['Google AI (AEO)']}</span>
               <span class="badge" style="background:#d97706; color:white; font-size:11px;">Claude: ${aiSources['Claude']}</span>
               <span class="badge" style="background:#475569; color:white; font-size:11px;">Gemini: ${aiSources['Gemini']}</span>
             </div>
@@ -498,8 +506,8 @@
             <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 4px;">📊 ROI 계산기 실시간 시뮬레이션</div>
             <div style="font-size: 12.5px; color: #f8fafc; line-height: 1.6;">
               • 계산기 시뮬레이션: <strong style="color:#38bdf8;">${roiCalculations}회</strong><br>
-              • 관심 사내 PD 평균 월급: <strong style="color:#fbbf24;">${avgSalary}만 원</strong><br>
-              • 대표님 연간 기대 절감액: <strong style="color:#34d399;">연 2,970만 원+</strong>
+              • 계산기 월급 입력값 평균: <strong style="color:#fbbf24;">${avgSalary}</strong><br>
+              • 계산기 입력값 기준이며 실제 계약·절감 성과가 아닙니다.
             </div>
           </div>
         `);
@@ -527,7 +535,7 @@
         const key = ev.ref || 'inbound_unknown';
         if (!inboundsMap[key]) {
           let chType = isPseo ? 'PSEO' : (ev.channel_type || 'DIRECT');
-          let chName = ev.channel_name || '';
+          let chName = ev.meta?.entry_channel_name || ev.channel_name || '';
           if (!chName) {
             if (isPseo) {
               chName = `${ev.region || ''} ${ev.industry || ''} (pSEO)`;
@@ -563,13 +571,15 @@
         const s = inboundsMap[key];
         if (ev.timestamp) s.firstSeen = s.firstSeen ? Math.min(s.firstSeen, ev.timestamp) : ev.timestamp;
         s.lastSeen = Math.max(s.lastSeen, ev.timestamp || 0);
-        if (ev.event === 'kakao_click') s.hot = true;
+        if (['kakao_click','pay_and_kakao_connect'].includes(ev.event)) s.hot = true;
         if (ev.event === 'scroll_90') s.maxScroll = Math.max(s.maxScroll, 90);
         if (ev.event === 'scroll_50') s.maxScroll = Math.max(s.maxScroll, 50);
         if (ev.meta && ev.meta.duration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.duration);
         if (ev.meta && ev.meta.totalDuration) s.maxStaySec = Math.max(s.maxStaySec, ev.meta.totalDuration);
         if (ev.meta && ev.meta.elapsed) s.maxStaySec = Math.max(s.maxStaySec, Number(ev.meta.elapsed) || 0);
       });
+      const measured = Momentum.aggregateStats({}, liveEvents);
+      for (const row of Object.values(inboundsMap)) if (measured[row.token]?.activeStaySec !== undefined) row.maxStaySec = measured[row.token].activeStaySec;
       return Object.values(inboundsMap);
     }
 

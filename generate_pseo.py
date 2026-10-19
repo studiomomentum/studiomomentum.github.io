@@ -205,7 +205,8 @@ TEMPLATE = """<!DOCTYPE html>
       .cta-box {{ padding: 28px 18px; }}
     }}
   </style>
-<script src="assets/momentum-runtime.js"></script>
+<script src="assets/momentum-collector.js?v=20261019-tracking-v2"></script>
+<script src="assets/momentum-runtime.js?v=20261019-tracking-v2"></script>
 </head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
@@ -341,11 +342,9 @@ TEMPLATE = """<!DOCTYPE html>
       Momentum.sendTelemetry(payload, TRACK_TOPIC, 'https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec');
     }}
 
+    const engagement = MomentumCollector.activeTracker(sendEvent);
     sendEvent('visit', {{ page: window.location.pathname }});
 
-    [10, 30, 60].forEach(function(sec) {{
-      setTimeout(function() {{ sendEvent('duration_' + sec + 's', {{ duration: sec }}); }}, sec * 1000);
-    }});
 
     let scroll50 = false, scroll90 = false;
     window.addEventListener('scroll', function() {{
@@ -357,7 +356,7 @@ TEMPLATE = """<!DOCTYPE html>
     document.addEventListener('click', function(e) {{
       const link = e.target.closest('a');
       if (link && link.href && link.href.includes('open.kakao.com')) {{
-        sendEvent('kakao_click', {{ elapsed: Math.round((Date.now() - startTime) / 1000) }});
+        sendEvent('kakao_click', {{ elapsed: engagement.seconds() }});
       }}
     }}, {{ capture: true }});
   }})();

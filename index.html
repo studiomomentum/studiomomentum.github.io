@@ -1771,7 +1771,8 @@
 @media(max-width:600px){.container{padding-top:28px}.nav{gap:18px;padding-bottom:22px;margin-bottom:40px;align-items:center}.sot-symbol{font-size:60px}.sot-momentum{font-size:11px;letter-spacing:2.5px}.nav-status{max-width:150px;font-size:11px;word-break:keep-all;}}
 
 </style>
-<script src="assets/momentum-runtime.js?v=20261019-event-time"></script>
+<script src="assets/momentum-collector.js?v=20261019-tracking-v2"></script>
+<script src="assets/momentum-runtime.js?v=20261019-tracking-v2"></script>
   <link rel="stylesheet" href="assets/consultation.css?v=20261003">
 <script src="assets/momentum-public-config.js?v=7"></script></head>
 <body>
@@ -2976,6 +2977,8 @@ if (channelType === 'OUTBOUND') {
     window._smEventQueue = [];
   }
 
+  const engagement = MomentumCollector.activeTracker(sendEvent);
+
   // 1. 최초 방문 이벤트 발송
   sendEvent('visit', { ua: ua.slice(0, 120), channel: channelName, pricing: pricingTier });
 
@@ -2990,20 +2993,13 @@ if (channelType === 'OUTBOUND') {
 
     if (!firedScroll50 && scrollPct >= 50) {
       firedScroll50 = true;
-      sendEvent('scroll_50', { pct: 50, elapsed: Math.round((Date.now() - startTime) / 1000) });
+      sendEvent('scroll_50', { pct: 50, elapsed: engagement.seconds() });
     }
     if (!firedScroll90 && scrollPct >= 90) {
       firedScroll90 = true;
-      sendEvent('scroll_90', { pct: 90, elapsed: Math.round((Date.now() - startTime) / 1000) });
+      sendEvent('scroll_90', { pct: 90, elapsed: engagement.seconds() });
     }
   }, { passive: true });
-
-  // 3. 체류 시간 마일스톤 추적 (10초, 30초, 60초, 90초)
-  [10, 30, 60, 90].forEach(function(sec) {
-    setTimeout(function() {
-      sendEvent('duration_' + sec + 's', { duration: sec });
-    }, sec * 1000);
-  });
 
   // 4. 핵심 전환: 카카오톡 오픈채팅 클릭 감지 (HOT LEAD!)
   document.addEventListener('click', function(e) {
@@ -3014,26 +3010,12 @@ if (channelType === 'OUTBOUND') {
         btnText: (link.innerText || '').trim().slice(0, 50),
         channel: channelName,
         pricing: pricingTier,
-        elapsed: Math.round((Date.now() - startTime) / 1000)
+        elapsed: engagement.seconds()
       });
     }
   }, { capture: true });
 
-  // 5. 모바일 사파리 및 앱 브라우저 이탈(visibilitychange & pagehide) 감지
-  let leaveSent = false;
-  function handleLeave() {
-    if (leaveSent) return;
-    const totalDuration = Math.round((Date.now() - startTime) / 1000);
-    if (totalDuration >= 3) {
-      leaveSent = true;
-      sendEvent('leave', { totalDuration: totalDuration });
-    }
-  }
-  document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'hidden') handleLeave();
-  });
-  window.addEventListener('pagehide', handleLeave);
-  window.addEventListener('beforeunload', handleLeave);
+
 })();
 </script>
 
