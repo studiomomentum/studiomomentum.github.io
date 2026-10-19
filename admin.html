@@ -1867,9 +1867,10 @@
         if (Momentum.isTestEvent(ev)) return;
 
         const isPageView = canonicalViews.has(Momentum.eventKey(ev));
+        const kind = ev.meta.entry_channel_type || ev.channel_type || (ev.ref?.startsWith('pseo_') ? 'PSEO' : '');
 
         // 1. PSEO 감지
-        if (isPageView && (ev.channel_type === 'PSEO' || (ev.meta.entry_channel_type === 'PSEO'))) {
+        if (isPageView && kind === 'PSEO') {
           totalPseo++;
           const r = ev.region || ev.meta.entry_region || (ev.channel_name ? ev.channel_name.split(' ')[0] : '');
           const ind = ev.industry || ev.meta.entry_industry || (ev.channel_name ? ev.channel_name.split(' ')[1] : '');
@@ -1883,20 +1884,20 @@
         }
 
         // 2. AEO (답변 엔진 직답 인용) 감지
-        if (isPageView && ev.channel_type === 'AEO') {
+        if (isPageView && kind === 'AEO') {
           totalAeo++;
-          const name = ev.channel_name || '';
-          if (name.includes('Perplexity')) aiSources['Perplexity (AEO)']++;
-          else if (name.includes('Overview') || name.includes('Google')) aiSources['Google AI (AEO)']++;
+          const name = (ev.meta.entry_channel_name || ev.channel_name || '').toLowerCase();
+          if (name.includes('perplexity')) aiSources['Perplexity (AEO)']++;
+          else if (name.includes('overview') || name.includes('google')) aiSources['Google AI (AEO)']++;
           else aiSources['Others']++;
         }
         // 3. GEO (생성형 AI 추천) 감지
-        else if (isPageView && ev.channel_type === 'GEO') {
+        else if (isPageView && kind === 'GEO') {
           totalGeo++;
-          const name = ev.channel_name || '';
-          if (name.includes('ChatGPT') || name.includes('OpenAI')) aiSources['ChatGPT']++;
-          else if (name.includes('Claude')) aiSources['Claude']++;
-          else if (name.includes('Gemini')) aiSources['Gemini']++;
+          const name = (ev.meta.entry_channel_name || ev.channel_name || '').toLowerCase();
+          if (name.includes('chatgpt') || name.includes('openai')) aiSources['ChatGPT']++;
+          else if (name.includes('claude')) aiSources['Claude']++;
+          else if (name.includes('gemini')) aiSources['Gemini']++;
           else aiSources['Others']++;
         }
 
@@ -1908,7 +1909,7 @@
         }
       });
 
-      const metrics = Momentum.trafficSummary(liveEvents.filter(ev => ev.channel_type !== 'OUTBOUND'));
+      const metrics = Momentum.trafficSummary(liveEvents.filter(ev => ev.channel_type !== 'OUTBOUND' || (ev.meta?.entry_channel_type && ev.meta.entry_channel_type !== 'OUTBOUND')));
       const metricLabel = document.getElementById('trafficMetricSummary');
       if (metricLabel) metricLabel.textContent = `페이지 조회 ${metrics.pageViews}회 · 새 기준 방문 세션 ${metrics.sessions}개 · 브라우저 방문자 ${metrics.browserVisitors}개 · 세션 구분 불가한 과거 조회 ${metrics.legacyPageViews}회`;
       const totalBadgeEl = document.getElementById("pseoTotalBadge");
@@ -1966,10 +1967,11 @@
             <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px;">🤖 AI 검색 추천 &amp; 직답 인용 (관측된 AI 링크·캠페인)</div>
             <div style="display: flex; gap: 6px; flex-wrap: wrap;">
               <span class="badge" style="background:#0284c7; color:white; font-size:11px;">ChatGPT: ${aiSources['ChatGPT']}</span>
-              <span class="badge" style="background:#8b5cf6; color:white; font-size:11px;">Perplexity (AEO): ${aiSources['Perplexity (AEO)']}</span>
+              <span class="badge" style="background:#8b5cf6; color:white; font-size:11px;">Perplexity: ${aiSources['Perplexity (AEO)']}</span>
               <span class="badge" style="background:#059669; color:white; font-size:11px;">Google AI 링크: ${aiSources['Google AI (AEO)']}</span>
               <span class="badge" style="background:#d97706; color:white; font-size:11px;">Claude: ${aiSources['Claude']}</span>
               <span class="badge" style="background:#475569; color:white; font-size:11px;">Gemini: ${aiSources['Gemini']}</span>
+              <span class="badge" style="background:#475569; color:white; font-size:11px;">기타 AI: ${aiSources['Others']}</span>
             </div>
           </div>
           <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; border: 1px solid #334155;">
