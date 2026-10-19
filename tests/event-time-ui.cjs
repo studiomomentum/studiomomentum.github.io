@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 (async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{
  const context=await browser.newContext({timezoneId:'America/Los_Angeles'}),errors=[];
  await context.route('**/*',route=>{const url=new URL(route.request().url()),file=path.join(process.cwd(),url.pathname);if(url.hostname==='momentum.local'&&fs.existsSync(file)&&fs.statSync(file).isFile())return route.fulfill({path:file});return route.fulfill({body:url.hostname==='ntfy.sh'?'':'[]',contentType:'application/json'});});
- const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto('http://momentum.local/ops.html');
+ const page=await require('./isolate-telemetry.cjs')(context).then(()=>context.newPage());page.on('pageerror',e=>errors.push(e.message));await page.goto('http://momentum.local/ops.html');
  await page.evaluate(()=>{
   for(const id of ['opsLogin','opsWorkspace','momentumManagement']){const el=document.getElementById(id);if(el)el.hidden=id==='opsLogin';}
   document.getElementById('dashboardApp').style.display='block';targetsMap={};

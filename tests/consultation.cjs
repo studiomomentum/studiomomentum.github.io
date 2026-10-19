@@ -22,7 +22,7 @@ const {chromium}=require('../automation/blog/node_modules/playwright'),fs=requir
   }
   return r.fulfill({json:u.pathname.includes('system_config')?{client_access_blocked:false}:[]});
  });
- const page=await c.newPage();page.on('pageerror',e=>errors.push(e.message));
+ const page=await require('./isolate-telemetry.cjs')(c).then(()=>c.newPage());page.on('pageerror',e=>errors.push(e.message));
  for(const mode of ['inbound','outbound']){
   await page.goto('https://momentum.local/?admin=1&preview_mode='+mode+(mode==='outbound'?'&vip':''));
   assert.equal(await page.evaluate(()=>window._smChannelType==='OUTBOUND'),mode==='outbound');

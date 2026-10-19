@@ -23,7 +23,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
    }
    return json([]);
   });
-  const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.clock.install();
+  const p=await require('./isolate-telemetry.cjs')(context).then(()=>context.newPage());p.on('pageerror',e=>errors.push(e.message));await p.clock.install();
   await p.addInitScript(()=>{window.prompt=()=>{throw Error('Token prompt forbidden');};localStorage.setItem('sm_admin_persistent_auth','old-public-hash');sessionStorage.setItem('sm_admin_authenticated','true');});
   await p.goto('http://momentum.local/admin.html');assert(await p.locator('#loginOverlay').isVisible());
   await p.locator('#username').fill('admin');await p.locator('#password').fill('wrong');await p.locator('.login-btn').click();await p.waitForFunction(()=>document.getElementById('loginError').textContent.includes('일치하지'));

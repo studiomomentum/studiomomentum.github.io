@@ -4,6 +4,8 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
  const context=await browser.newContext(),saved=new Map(),posts=[],errors=[];let offline=false,confirm=true;
  await context.route('**/*',route=>{
   const req=route.request(),u=new URL(req.url()),file=path.join(process.cwd(),u.pathname);
+  if(u.hostname==='ntfy.telemetry.invalid')u.hostname='ntfy.sh';
+  if(u.hostname==='gas.telemetry.invalid')u.hostname='script.google.com';
   if(u.hostname==='studiomomentum.github.io'&&fs.existsSync(file)&&fs.statSync(file).isFile())return route.fulfill({path:file});
   const fixture=process.env.OPS_ASSET_FIXTURES&&path.join(process.env.OPS_ASSET_FIXTURES,path.basename(u.pathname));
   if(u.hostname==='studiomomentum.github.io'&&fixture&&fs.existsSync(fixture)&&fs.statSync(fixture).isFile())return route.fulfill({path:fixture});
@@ -19,7 +21,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
   }
   return route.fulfill({body:'{}',contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'}});
  });
- const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
+ const page=await require('./isolate-telemetry.cjs')(context).then(()=>context.newPage());page.on('pageerror',e=>errors.push(e.message));
  await page.clock.install();
  await page.goto('https://studiomomentum.github.io/suwon-hospital.html');
  await page.evaluate(()=>MomentumCollector.flush(true));

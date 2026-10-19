@@ -624,7 +624,7 @@
       // 3. 브라우저 캐시 원본 이벤트 로그 블록 (현재 브라우저 보유분; 전체 서버 백업 아님)
       csvContent += "\n\n[원본 이벤트 텔레메트리 로그]\n";
       csvContent += "이벤트ID,일시,토큰,이벤트유형,채널,기기,해상도,체류/완독,메타데이터\n";
-      liveEvents.forEach(ev => {
+      liveEvents.filter(ev => !Momentum.isTestEvent(ev)).forEach(ev => {
         const timeStr = Momentum.formatEventTime(ev.timestamp);
         const metaStr = ev.meta ? JSON.stringify(ev.meta).replace(/"/g, '""') : "";
         csvContent += [ev._id,timeStr,ev.ref,ev.event,ev.channel_type,ev.device,ev.screen,ev.meta && ev.meta.duration,JSON.stringify(ev.meta||{})].map(Momentum.csvCell).join(',')+'\n';

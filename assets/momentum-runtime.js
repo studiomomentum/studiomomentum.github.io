@@ -40,6 +40,7 @@
     value.meta = ev.meta && typeof ev.meta === 'object' ? ev.meta : {};
     value.timestamp = parseTimestamp(ev.timestamp) || parseTimestamp(ev.time) || parseTimestamp(ev._received);
     if ('_received' in value) value._received = parseTimestamp(ev._received);
+    if (isTestEvent(value)) {value.is_test=true;}
     value._id = eventKey(ev);
     return value;
   }
@@ -128,8 +129,10 @@
         .catch(() => beacon());
     })); // Transport attempt only: opaque GAS responses are not persistence acknowledgements.
   }
+  // Confirmed browser verification sessions; preserve raw archive, exclude from customer metrics.
+  const excludedTestSessions = new Set(["18088418-c7fb-4c8e-8eb3-112e29a950ea", "1b0b43bb-eaad-4a37-bf87-09b73a8b2f35", "5c4cdef5-e69f-489f-aa30-e080472038b2", "758aaad8-407f-43a1-8e7e-e790a13b2cf0", "9118aa5f-9090-4bd9-aa95-da26765e9e56", "c35059ff-a135-43ba-9739-c2af6b55013b", "da9e2318-1834-4470-bfd2-19fb36d29467", "e73fabf1-6857-4fb4-8f7d-05f5cfcc2fae", "fb74b0ab-c972-4230-9661-bdc2f1b36939"]);
   function isTestEvent(ev) {
-    return !!(ev.is_admin || ev.channel_type==='ADMIN_TEST' || (ev.meta && ev.meta.is_admin) || /^(vip|test|preview|admin|dev|sample|direct|o3eltr25|momentum|vip_test)$/i.test(ev.ref||'') || /^momentum-test-/i.test(ev.ref||''));
+    return !!(ev.is_test || excludedTestSessions.has(ev.meta?.session_id) || ev.is_admin || ev.channel_type==='ADMIN_TEST' || (ev.meta && ev.meta.is_admin) || /^(vip|test|preview|admin|dev|sample|direct|o3eltr25|momentum|vip_test)$/i.test(ev.ref||'') || /^momentum-test-/i.test(ev.ref||''));
   }
   function visitEvents(events) {
     const seen = new Set();

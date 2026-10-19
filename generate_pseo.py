@@ -206,7 +206,7 @@ TEMPLATE = """<!DOCTYPE html>
     }}
   </style>
 <script src="assets/momentum-collector.js?v=20261019-tracking-v2.1"></script>
-<script src="assets/momentum-runtime.js?v=20261019-tracking-v2.1"></script>
+<script src="assets/momentum-runtime.js?v=20261019-tracking-v2.3"></script>
 </head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
