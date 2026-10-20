@@ -65,6 +65,13 @@ window.MomentumContent=(()=>{
   }
   function sortedTopics(){return [...data.topics].sort((a,b)=>{const x=topicDates(a),y=topicDates(b);return y.generated-x.generated || b.createdAt-a.createdAt || a.id.localeCompare(b.id);});}
   function dateLabel(time){return new Date(time).toLocaleString('ko-KR',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});}
+  function publishedPosts(topicId){
+    return [...(data?.deliveries||[])].reverse().filter(j=>j.kind==='publish'&&j.state==='complete'&&j.url&&data.articles[j.docId]?.topicId===topicId).flatMap(j=>{
+      const doc=data.articles[j.docId],v=doc.versions[j.version-1];if(!v)return [];
+      return [{id:j.id,channel:j.platform,label:platforms[j.platform],title:v.title,body:v.body,version:j.version,url:j.url,published_at:j.publishedAt||null}];
+    });
+  }
+  function showPublished(topicId,jobId){PublishedPostViewer.open({project:'솟 모멘텀',posts:publishedPosts(topicId),selectedId:jobId});}
   function drawTopics(){
     const list=$('contentTopics');list.replaceChildren();
     if(!data.topics.length)list.append(node('p','아직 등록한 주제가 없습니다. 아래에서 중심 질문과 근거를 함께 등록하세요.'));
@@ -79,7 +86,7 @@ window.MomentumContent=(()=>{
       if(state)card.append(node('p',({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state.state])));
       const details=node('details');details.append(node('summary','주제·근거 보기'),node('p',t.question),node('p',t.intent+' · 검색량 미확인'),node('p',t.evidence));card.append(details);
       if(state?.state==='failed')card.append(button('생성 재시도',async()=>{if(!dirtyGuard())return;data=await contentCall('content.retry',{topicId:t.id});dirty=false;draw();notice('실패한 생성 작업을 다시 요청했습니다.');}));
-      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'auto'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);list.append(card);
+      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'auto'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);if(publishedPosts(t.id).length){const read=button('게시된 글 보기',async()=>showPublished(t.id));read.className='published-post-open';read.dataset.publishedTopic=t.id;card.append(read);}list.append(card);
     }
   }
   function draw(){
@@ -182,7 +189,7 @@ window.MomentumContent=(()=>{
             const row=node('p',(job.kind==='publish'?'발행':'임시저장')+' v'+job.version+' · '+({queued:'대기',running:'처리 중',complete:'완료',failed:'실패',unknown:'결과 확인 필요',cancelled:'취소'}[job.state]||job.state));
             if(job.platform==='naver'&&job.target)row.append(document.createTextNode(' · '+job.target));
             if(job.error)row.append(document.createTextNode(' · '+({BROWSER_PROFILE_IN_USE:'Mac의 자동화 Chrome 창을 닫은 뒤 다시 요청하세요',BROWSER_LOGIN_OR_EDITOR_CHECK_REQUIRED:'플랫폼 로그인 또는 편집기 확인 필요',LOGIN_REQUIRED:'플랫폼 재로그인 필요',DRAFT_VERSION_CONFLICT:'플랫폼 임시저장본과 현재 버전이 다릅니다',WRONG_ACCOUNT:'로그인 계정 확인 필요',RESULT_UNKNOWN:'플랫폼에서 실제 처리 여부를 확인하세요'}[job.error]||job.error)));
-            if(job.url){const a=node('a','게시물 열기');a.href=job.url;a.target='_blank';a.rel='noopener noreferrer';row.append(' ',a);}
+            if(job.url&&job.kind==='publish'&&job.state==='complete')row.append(button('게시글 보기',async()=>showPublished(doc.topicId,job.id)));
             if(job.state==='queued')row.append(button('요청 취소',async()=>{data=await contentCall('content.delivery.cancel',{jobId:job.id});draw();}));
             if(job.state==='unknown'&&job.kind==='publish')row.append(button('게시 주소로 결과 확인',async()=>{const url=prompt('직접 확인한 게시물 주소를 입력하세요.');if(!url)return;if(!confirm('이 주소가 해당 글의 실제 게시물임을 확인했나요?'))return;data=await contentCall('content.delivery.resolve',{jobId:job.id,resolution:'posted',url,confirmed:true});draw();}));
             if(job.state==='unknown')row.append(button('미게시 확인 후 잠금 해제',async()=>{if(!confirm('플랫폼에서 실제로 저장/게시되지 않았음을 확인했나요? 게시됐다면 해제하지 마세요.'))return;data=await contentCall('content.delivery.resolve',{jobId:job.id,resolution:'not_posted',confirmed:true});draw();}));
@@ -194,7 +201,7 @@ window.MomentumContent=(()=>{
         doc.versions.forEach((v,i)=>{const item=node('details');item.append(node('summary','v'+(i+1)+' · '+new Date(v.createdAt).toLocaleString()),node('pre',v.title+'\n\n'+v.body));history.append(item);});card.append(history);grid.append(card);
       }editor.append(grid);
     }
-    editor.append(node('p','티스토리·쓰레드만 연결합니다. 검수 완료 후 공개 발행을 눌러야 게시됩니다. 결과 확인 필요 상태에서는 자동 재시도하지 않습니다.'));
+    editor.append(node('p','네이버·티스토리·쓰레드의 게시 결과와 발행 버전을 이 화면에서 확인할 수 있습니다.'));
   }
   function mount(){
     if(root().dataset.mounted)return;root().dataset.mounted='true';
@@ -208,8 +215,8 @@ window.MomentumContent=(()=>{
     for(const [title,question] of [ ['촬영 전에 대본에서 먼저 정할 세 가지','전문 지식은 많은데 카메라 앞에서 설명이 길어지는 이유는 무엇인가?'],['유튜브 편집 외주를 맡겨도 일이 줄지 않는 이유','수정 요청이 반복될 때 기획 단계에서 무엇을 합의해야 하는가?'],['대표님 셀프 촬영, 장비보다 먼저 확인할 것','혼자 촬영을 시작할 때 무엇부터 점검해야 하는가?']]){
       suggestions.append(button(title,async()=>{if(!dirtyGuard())return;data=await contentCall('content.topic.add',{title,question,intent:'해결 탐색',evidence:'v1 기획서의 고객 고민과 PD 제작 관점을 바탕으로 한 기획 가설. 외부 검색 근거·검색량·성과 수치는 미검증. 실제 고객 사례로 서술하지 않음.'});selected=data.topics[data.topics.length-1].id;dirty=false;draw();notice('기획 가설을 등록했습니다. 근거를 검토한 뒤 생성을 선택하세요.');}));
     }
-    const keywords=node('section');keywords.id='contentKeywords';
-    const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,keywords,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
+    const keywords=node('section');keywords.id='contentKeywords';const keywordPanel=node('details');keywordPanel.id='contentKeywordPanel';keywordPanel.append(node('summary','주제 발굴 · 키워드 TOP 10'),keywords);
+    const editor=node('section');editor.id='contentEditor';root().append(header,worker,msg,keywordPanel,node('h3','콘텐츠 목록 · 최근 생성순'),node('p','생성된 글을 먼저 표시합니다. 새로 열면 가장 최근 생성한 글이 바로 보입니다.'),topics,suggestions,add,editor);
   }
   async function open(){
     mount();await initializeCache();
