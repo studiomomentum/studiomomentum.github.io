@@ -1,7 +1,7 @@
 'use strict';
 window.PublishedPostViewer=(()=>{
  const make=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
- let dialog,posts=[],active=0,opener=null;
+ let dialog,posts=[],active=0,opener=null,mode='published';
  function ensure(){
   if(dialog)return;
   dialog=make('dialog');dialog.className='published-post-dialog';dialog.setAttribute('aria-labelledby','publishedPostHeading');
@@ -43,15 +43,15 @@ window.PublishedPostViewer=(()=>{
   for(const [i,post]of posts.entries()){const b=make('button',(post.label||post.channel)+' · v'+(post.version||1));b.type='button';b.setAttribute('aria-pressed',String(i===active));b.onclick=()=>{active=i;draw();};nav.append(b);}
   nav.hidden=posts.length<2;
   const post=posts[active];if(!post)return;
-  const info=make('p','게시 완료 · '+(post.label||post.channel)+' · 게시한 버전 v'+(post.version||1));info.className='published-post-meta';content.append(info);
+  const info=make('p',(mode==='draft'?'저장 원고 · ':'게시 완료 · ')+(post.label||post.channel)+(mode==='draft'?' · 저장 버전 v':' · 게시한 버전 v')+(post.version||1));info.className='published-post-meta';content.append(info);
   if(post.published_at){const date=new Date(post.published_at);if(Number.isFinite(date.getTime()))content.append(make('small',date.toLocaleString('ko-KR',{timeZone:'Asia/Seoul',hour12:false})));}
   if(post.title&&!['threads','x'].includes(post.channel))content.append(make('h2',post.title));
   body(content,post.body,post.body_media);
   if(post.first_comment){const comment=make('section');comment.className='published-post-comment';comment.append(make('h3','첫 댓글'));body(comment,post.first_comment,post.comment_media);content.append(comment);}
   if(post.missing_media_count)content.append(make('p','일부 이전 첨부 이미지의 저장본이 없습니다.'));
-  content.append(make('p','공개 확인된 발행 버전의 원고입니다.'));content.lastElementChild.className='published-post-meta';
+  content.append(make('p',mode==='draft'?'현재 저장된 버전의 원고입니다.':'공개 확인된 발행 버전의 원고입니다.'));content.lastElementChild.className='published-post-meta';
  }
- function open(value){ensure();posts=value.posts||[];if(!posts.length)return;active=Math.max(0,posts.findIndex(p=>p.id===value.selectedId));opener=document.activeElement;dialog.querySelector('h2').textContent=value.project+' · 게시된 글';draw();if(!dialog.open)dialog.showModal();dialog.scrollTop=0;}
+ function open(value){ensure();mode=value.mode==='draft'?'draft':'published';posts=value.posts||[];if(!posts.length)return;active=Math.max(0,posts.findIndex(p=>p.id===value.selectedId));opener=document.activeElement;dialog.querySelector('h2').textContent=value.project+(mode==='draft'?' · 저장 원고':' · 게시된 글');dialog.querySelector('header button').setAttribute('aria-label',mode==='draft'?'원고 닫기':'게시글 닫기');draw();if(!dialog.open)dialog.showModal();dialog.scrollTop=0;}
  function clear(){if(dialog?.open)dialog.close();posts=[];dialog?.querySelector('article').replaceChildren();}
  window.addEventListener('ops-cleared',clear);window.addEventListener('momentum-auth-cleared',clear);
  return {open,clear};

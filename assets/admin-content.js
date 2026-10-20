@@ -72,6 +72,14 @@ window.MomentumContent=(()=>{
     });
   }
   function showPublished(topicId,jobId){PublishedPostViewer.open({project:'솟 모멘텀',posts:publishedPosts(topicId),selectedId:jobId});}
+  function savedPosts(topicId){
+    return Object.keys(platforms).flatMap(channel=>{
+      const doc=data?.articles[topicId+':'+channel],v=doc?.versions?.at(-1);if(!v)return [];
+      return [{id:doc.id,channel,label:platforms[channel],title:v.title,body:v.body,version:doc.versions.length}];
+    });
+  }
+  function showSaved(topicId,docId){PublishedPostViewer.open({project:'솟 모멘텀',mode:'draft',posts:savedPosts(topicId),selectedId:docId});}
+
   function drawTopics(){
     const list=$('contentTopics');list.replaceChildren();
     if(!data.topics.length)list.append(node('p','아직 등록한 주제가 없습니다. 아래에서 중심 질문과 근거를 함께 등록하세요.'));
@@ -86,7 +94,7 @@ window.MomentumContent=(()=>{
       if(state)card.append(node('p',({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state.state])));
       const details=node('details');details.append(node('summary','주제·근거 보기'),node('p',t.question),node('p',t.intent+' · 검색량 미확인'),node('p',t.evidence));card.append(details);
       if(state?.state==='failed')card.append(button('생성 재시도',async()=>{if(!dirtyGuard())return;data=await contentCall('content.retry',{topicId:t.id});dirty=false;draw();notice('실패한 생성 작업을 다시 요청했습니다.');}));
-      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'auto'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);if(publishedPosts(t.id).length){const read=button('게시된 글 보기',async()=>showPublished(t.id));read.className='published-post-open';read.dataset.publishedTopic=t.id;card.append(read);}list.append(card);
+      const open=button(selected===t.id?'보고 있는 글':'글 열기',async()=>{if(!dirtyGuard())return;selected=t.id;dirty=false;drawTopics();drawEditor();$('contentEditor').scrollIntoView({block:'start',behavior:'auto'});});open.setAttribute('aria-pressed',String(selected===t.id));card.append(open);if(savedPosts(t.id).length){const read=button('원고 보기',async()=>showSaved(t.id));read.className='published-post-open';read.dataset.draftTopic=t.id;card.append(read);}if(publishedPosts(t.id).length){const read=button('게시된 글 보기',async()=>showPublished(t.id));read.className='published-post-open';read.dataset.publishedTopic=t.id;card.append(read);}list.append(card);
     }
   }
   function draw(){
@@ -166,7 +174,7 @@ window.MomentumContent=(()=>{
         });
         title.dataset.saved=last.title;body.dataset.saved=last.body;title.disabled=body.disabled=save.disabled=locked;
         // Saving another card changes its version; redraw before review when all cards are clean.
-        card.append(node('h4',platforms[platform]),status,title,body,save,review);
+        card.append(node('h4',platforms[platform]),status,title,body,save,review);card.append(button('저장 원고 보기',async()=>showSaved(doc.topicId,doc.id)));
         const regenerate=button(platforms[platform]+'만 새 버전 생성',async()=>{
           if(dirty){notice('편집 중인 글을 먼저 저장한 뒤 새 버전을 생성하세요.');return;}
           data=await contentCall('content.generate',{topicId:selected,platform});draw();notice(platforms[platform]+'만 새 버전 생성을 요청했습니다. 다른 매체의 글은 유지됩니다.');
@@ -232,8 +240,7 @@ window.MomentumContent=(()=>{
   setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&(data.deliveries||[]).some(j=>['queued','running'].includes(j.state)))run(load);},10000);
   setInterval(checkGeneration,3000);
   setInterval(()=>window.MomentumKeywords?.tick($('contentKeywords')),1000);
-  let checkingKeywords=false;
-  setInterval(async()=>{if(!data||busy||checkingKeywords||root().hidden)return;checkingKeywords=true;try{const next=await contentCall('content.get');if(!busy&&next.revision>=data.revision&&JSON.stringify([next.keywordBoard,next.keywordRefreshes])!==JSON.stringify([data.keywordBoard,data.keywordRefreshes])){data.revision=next.revision;data.keywordBoard=next.keywordBoard;data.keywordRefreshes=next.keywordRefreshes;drawKeywordRefresh();}}catch{}finally{checkingKeywords=false;}},30000);
+  setInterval(()=>{if(root()?.dataset.mounted&&!root().hidden)refreshBackground();},30000);
   window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   return {open,preload};
 })();
