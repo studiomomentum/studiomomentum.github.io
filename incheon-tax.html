@@ -48,7 +48,8 @@
     }
   </style>
 <script src="assets/momentum-collector.js?v=20261019-tracking-v2.1"></script>
-<script src="assets/momentum-runtime.js?v=20261019-tracking-v2.3"></script>
+<script src="assets/momentum-backend.js?v=20261020-local"></script>
+<script src="assets/momentum-runtime.js?v=20261020-ubuntu"></script>
 <script src="assets/momentum-public-config.js?v=7"></script></head>
 <body>
   <!-- 시스템 업데이트 및 점검 안내 오버레이 (관리자 원터치 차단 시 발동) -->
@@ -182,7 +183,7 @@
         screen: window.innerWidth + 'x' + window.innerHeight,
         meta: Object.assign({}, extraMeta || {}, engagement ? {active_duration:engagement.seconds(),measurement:'visible_time_v2'} : {})
       };
-      Momentum.sendTelemetry(payload, TRACK_TOPIC, 'https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec');
+      Momentum.sendTelemetry(payload, TRACK_TOPIC, null);
     }
 
     engagement = MomentumCollector.activeTracker(sendEvent);

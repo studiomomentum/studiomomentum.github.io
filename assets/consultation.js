@@ -1,7 +1,6 @@
 /* Public UI only; bearer access is visitor-specific. No admin/Codex credentials. */
 (() => {
   'use strict';
-  const endpoint='https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec';
   const kakao='https://open.kakao.com/o/sEX8RWNi',key='sm_consult_v1';
   const event=(name,meta={})=>window._smSendEvent?.(name,meta);
   let saved=null;try{saved=JSON.parse(sessionStorage.getItem(key)||'null');if(saved?.expiresAt<Date.now())saved=null;}catch{}
@@ -10,7 +9,7 @@
   let dialog,els,lastFocus,timer,busy=false,pollBusy=false,pendingSend=null,entry='hero';
   function persist(){try{sessionStorage.setItem(key,JSON.stringify(state));}catch{}}
   async function api(action,extra={}){
-    const r=await fetch(endpoint,{method:'POST',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({route:'momentum_consult',action,token:state.token,id:state.id,...extra}),signal:AbortSignal.timeout(25000)});
+    const r=await fetch(await MomentumBackend.url(),{method:'POST',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({route:'momentum_consult',action,token:state.token,id:state.id,...extra}),signal:AbortSignal.timeout(25000)});
     if(!r.ok)throw Error('NETWORK');const d=await r.json();if(!d.ok)throw Error(d.error||'NETWORK');return d.result;
   }
   const errors={CONSULT_OFFLINE:'지금은 AI 상담이 쉬고 있어요. PD와 직접 상담하실 수 있습니다',CONSULT_RATE_LIMIT:'AI 상담은 여기까지 도와드릴 수 있어요. 대화를 정리해서 PD와 이어가세요',CONSULT_UNAUTHORIZED:'대화 연결이 만료되었습니다. 새 대화를 시작하거나 PD에게 연결해 주세요',CONSULT_BUSY:'앞선 답변을 준비하고 있어요. 잠시 기다려 주세요',BUSY:'잠시 요청이 몰리고 있어요. 입력한 내용은 유지됩니다. 다시 보내주세요'};

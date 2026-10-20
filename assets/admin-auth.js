@@ -11,7 +11,7 @@ window.MomentumAdmin = (() => {
   async function request(action,payload={}){
     let response,data;
     try{
-      response=await fetch(GAS_DB_URL,{method:'POST',mode:'cors',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({route:'momentum_admin',action,...payload}),signal:AbortSignal.timeout(30000)});
+      response=await fetch(await MomentumBackend.url(),{method:'POST',mode:'cors',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({route:'momentum_admin',action,...payload}),signal:AbortSignal.timeout(30000)});
       if(!response.ok)throw new Error('NETWORK');
       data=await response.json();
     }catch(_){const e=new Error('서버 연결을 확인하지 못했습니다. 잠시 후 상태를 확인해 주세요.');e.code='NETWORK';throw e;}

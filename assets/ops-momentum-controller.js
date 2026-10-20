@@ -11,7 +11,7 @@
     } catch(e) {}
 
     const TRACK_TOPIC = "sm_events_2026_x89a";
-    const GAS_DB_URL = "https://script.google.com/macros/s/AKfycbyGHgW1OYt8Xv4fivHmM5CGcVmgUzJtGFCfGWlBtD0Aob_FIZlILsvWvFZx-8zpu_7EUQ/exec";
+    const GAS_DB_URL = null;
     const LOCAL_EVENTS_KEY = "sm_stored_telemetry_events";
     // 관리자 테스트/미등록 테스트 토큰 블랙리스트 (인바운드 및 통계 오염 방지)
     const TEST_REFS = new Set(['vip', 'test', 'preview', 'admin', 'dev', 'o3eltr25', 'sample', 'direct']);
@@ -206,7 +206,7 @@
               } catch (_) { return []; }
             });
           }),
-          fetch(GAS_DB_URL).then(async res => {
+          MomentumAdmin.call('telemetry.get').then(value => ({ok:true,json:async()=>value})).then(async res => {
             if (!res.ok) throw new Error('GAS unavailable');
             const value = await res.json();
             if (!Array.isArray(value)) throw new Error('GAS returned an error');
@@ -223,9 +223,8 @@
           const pending = Momentum.unpersistedEvents(liveEvents, results[1].value);
           try {
             for (let i = 0; i < pending.length; i += 100) {
-              const res = await fetch(GAS_DB_URL, {method:'POST',
-                headers:{'Content-Type':'text/plain;charset=UTF-8'},
-                body:JSON.stringify(pending.slice(i,i+100))});
+              const stored = await MomentumAdmin.call('telemetry.append',{events:pending.slice(i,i+100)});
+              const res = {ok:true,json:async()=>stored};
               const ack = await res.json();
               if (!res.ok || !ack || ack.status !== 'SUCCESS') throw new Error('Archive not acknowledged');
             }

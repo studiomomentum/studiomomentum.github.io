@@ -107,7 +107,8 @@
       attribution_basis:explicit ? '전용 링크' : (payload.channel_type === 'OUTBOUND' ? '이전 제안 방문 이력' : '익명 방문'),
       applied_pricing:payload.pricing_tier || (payload.meta && payload.meta.pricing) || ''};
   }
-  function sendTelemetry(payload, topic, gasUrl) {
+  async function sendTelemetry(payload, topic, gasUrl) {
+    gasUrl = window.MomentumBackend ? await window.MomentumBackend.url().catch(()=>null) : null;
     if (isTestEvent(payload)) return Promise.resolve({skipped:true});
     const arrival = visitContext(payload);
     const identity = window.MomentumCollector ? window.MomentumCollector.context(payload, arrival) : {};
