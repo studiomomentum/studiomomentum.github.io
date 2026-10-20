@@ -2,7 +2,7 @@
 window.MomentumContent=(()=>{
   let data=null,selected=null,dirty=false,busy=false,checkingGeneration=false;
   const CACHE_KEY='sm_content_cache_v1',CACHE_MAX_AGE=30*60*1000;
-  let cacheScope=null,cacheInit=null,lastRead=0,pendingRead=null,refreshing=false,authEpoch=0;
+  let cacheScope=null,cacheInit=null,lastRead=0,pendingRead=null,refreshing=false,authEpoch=0,reader=null;
   const $=id=>document.getElementById(id), platforms={naver:'네이버',tistory:'티스토리',threads:'쓰레드'};
   const messages={INVALID_REQUEST:'콘텐츠 서버가 아직 배포되지 않았습니다.',CONTENT_CONFLICT:'다른 창에서 수정됐습니다. 입력을 복사해 보관한 뒤 다시 불러오세요.',CONTENT_BUSY:'생성·전송 작업 중입니다. 완료 후 다시 시도하세요.',CONTENT_EXISTS:'기존 초안이 있어 다시 생성하지 않았습니다.',CONTENT_RECONCILE_REQUIRED:'실패한 생성 작업의 결과를 실행기에서 확인해야 합니다.',CONTENT_DUPLICATE:'같은 제목의 주제가 있습니다.',CONTENT_INVALID:'입력 내용과 길이를 확인해 주세요.'};
   const snapshotValid=value=>value&&Array.isArray(value.topics)&&Array.isArray(value.jobs)&&value.articles&&typeof value.articles==='object';
@@ -40,25 +40,41 @@ window.MomentumContent=(()=>{
     if(!cacheScope)return;try{const saved=JSON.parse(sessionStorage.getItem(CACHE_KEY)||'null');if(saved?.scope===cacheScope){saved.selected=selected;sessionStorage.setItem(CACHE_KEY,JSON.stringify(saved));}}catch{}
   }
   function contentSignature(value){return JSON.stringify([value.topics,value.articles,value.jobs,value.deliveries,value.keywordBoard,value.keywordRefreshes]);}
+  function syncStatus(text){if($('contentSync'))$('contentSync').textContent=text;}
+  function acceptSnapshot(next){
+    if(data&&next.revision<data.revision)return;
+    const changed=!data||contentSignature(next)!==contentSignature(data);data=next;
+    if(root()?.dataset.mounted){
+      if(changed||!root().dataset.loaded){
+        // Editor controls retain their original version and conflict checks while
+        // unsaved. Lists and readers always use the latest server snapshot.
+        if(dirty){drawTopics();drawKeywordRefresh();generationProgress();syncReader();}
+        else draw();
+        root().dataset.loaded='true';
+      }
+      syncStatus('서버 동기화 · '+new Date(lastRead).toLocaleTimeString('ko-KR',{hour12:false}));
+    }
+  }
+  async function readLatest(){
+    syncStatus('서버 확인 중…');
+    try{acceptSnapshot(await contentCall('content.get'));}
+    catch(e){syncStatus('동기화 실패 · 이전 저장본 표시 중');throw e;}
+  }
   async function refreshBackground(){
     if(refreshing||busy)return;refreshing=true;
     try{
-      const next=await contentCall('content.get');if(busy||dirty||data&&next.revision<data.revision)return;
-      const changed=!data||contentSignature(next)!==contentSignature(data);data=next;
-      if(root()?.dataset.mounted){
-        if(changed||!root().dataset.loaded){draw();root().dataset.loaded='true';}
-        notice('최신 콘텐츠를 확인했습니다.');
-      }
+      await readLatest();
+      if(root()?.dataset.mounted)notice(dirty?'미저장 편집은 유지하고 목록·저장 원고를 서버와 동기화했습니다.':'최신 콘텐츠를 확인했습니다.');
     }catch(e){if(root()?.dataset.mounted&&e.code!=='UNAUTHORIZED')notice(data?'저장된 콘텐츠를 표시 중입니다. 최신 상태 확인을 다시 시도해 주세요.':e.message);}
     finally{refreshing=false;}
   }
-  function notice(text){$('contentNotice').textContent=text;}
+  function notice(text){if($('contentNotice'))$('contentNotice').textContent=text;}
   async function run(fn){if(busy)return;busy=true;root().setAttribute('aria-busy','true');try{await fn();}catch(e){notice(messages[e.code]||e.message||'처리하지 못했습니다.');}finally{busy=false;root().removeAttribute('aria-busy');}}
   function root(){return $('contentWorkspace');}
   function node(tag,text){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;return el;}
   function button(text,fn){const b=node('button',text);b.type='button';b.onclick=()=>run(fn);return b;}
   function dirtyGuard(){return !dirty||confirm('저장하지 않은 수정 내용이 있습니다. 다시 불러오면 사라집니다. 계속할까요?');}
-  async function load(){if(!dirtyGuard())return;data=await contentCall('content.get');dirty=false;draw();notice('서버에 저장된 콘텐츠를 불러왔습니다.');}
+  async function load(){if(!dirtyGuard())return;const next=await contentCall('content.get');dirty=false;acceptSnapshot(next);draw();notice('서버에 저장된 콘텐츠를 불러왔습니다.');}
   function topicDates(t){
     const versions=Object.values(data.articles).filter(d=>d.topicId===t.id).flatMap(d=>d.versions);
     return {generated:Math.max(0,...versions.filter(v=>v.origin==='generated').map(v=>v.createdAt||0)),updated:Math.max(0,...versions.map(v=>v.createdAt||0))};
@@ -71,14 +87,15 @@ window.MomentumContent=(()=>{
       return [{id:j.id,channel:j.platform,label:platforms[j.platform],title:v.title,body:v.body,version:j.version,url:j.url,published_at:j.publishedAt||null}];
     });
   }
-  function showPublished(topicId,jobId){PublishedPostViewer.open({project:'솟 모멘텀',posts:publishedPosts(topicId),selectedId:jobId});}
+  async function showPublished(topicId,jobId){await readLatest();reader={topicId,mode:'published',key:'momentum:published:'+topicId};PublishedPostViewer.open({...reader,project:'솟 모멘텀',posts:publishedPosts(topicId),selectedId:jobId});}
   function savedPosts(topicId){
     return Object.keys(platforms).flatMap(channel=>{
       const doc=data?.articles[topicId+':'+channel],v=doc?.versions?.at(-1);if(!v)return [];
-      return [{id:doc.id,channel,label:platforms[channel],title:v.title,body:v.body,version:doc.versions.length}];
+      return [{id:doc.id,channel,label:platforms[channel],title:v.title,body:v.body,version:doc.versions.length,saved_at:v.createdAt}];
     });
   }
-  function showSaved(topicId,docId){PublishedPostViewer.open({project:'솟 모멘텀',mode:'draft',posts:savedPosts(topicId),selectedId:docId});}
+  async function showSaved(topicId,docId){await readLatest();reader={topicId,mode:'draft',key:'momentum:draft:'+topicId};PublishedPostViewer.open({...reader,project:'솟 모멘텀',posts:savedPosts(topicId),selectedId:docId});}
+  function syncReader(){if(reader)PublishedPostViewer.update?.({...reader,posts:reader.mode==='draft'?savedPosts(reader.topicId):publishedPosts(reader.topicId)});}
 
   function drawTopics(){
     const list=$('contentTopics');list.replaceChildren();
@@ -89,7 +106,7 @@ window.MomentumContent=(()=>{
       const heading=node('h3',t.title);card.append(heading);
       const timestamp=node('p',dates.generated?'최근 생성 '+dateLabel(dates.generated):'아직 생성하지 않음 · 등록 '+dateLabel(t.createdAt));timestamp.className='content-topic-time';
       if(dates.updated>dates.generated)timestamp.textContent+=' · 마지막 저장 '+dateLabel(dates.updated);card.append(timestamp);
-      const statuses=Object.keys(platforms).map(platform=>{const doc=data.articles[t.id+':'+platform],posted=(data.deliveries||[]).find(j=>j.docId===doc?.id&&j.kind==='publish'&&j.state==='complete');if(posted)return platforms[platform]+' 발행 완료 v'+posted.version+(doc.versions.length!==posted.version?' · 수정본 v'+doc.versions.length:'');return platforms[platform]+' '+(!doc?'미생성':(doc.reviewedVersion===doc.versions.length?'검수 완료':'초안')+' v'+doc.versions.length);});
+      const statuses=Object.keys(platforms).map(platform=>{const doc=data.articles[t.id+':'+platform],posted=[...(data.deliveries||[])].reverse().find(j=>j.docId===doc?.id&&j.kind==='publish'&&j.state==='complete');if(posted)return platforms[platform]+' 발행 완료 v'+posted.version+(doc.versions.length!==posted.version?' · 수정본 v'+doc.versions.length:'');return platforms[platform]+' '+(!doc?'미생성':(doc.reviewedVersion===doc.versions.length?'검수 완료':'초안')+' v'+doc.versions.length);});
       card.append(node('small',statuses.join(' · ')));
       if(state)card.append(node('p',({queued:'생성 대기',running:'생성 중',failed:'생성 실패'}[state.state])));
       const details=node('details');details.append(node('summary','주제·근거 보기'),node('p',t.question),node('p',t.intent+' · 검색량 미확인'),node('p',t.evidence));card.append(details);
@@ -104,6 +121,7 @@ window.MomentumContent=(()=>{
     const online=data.workerSeenAt&&Date.now()-data.workerSeenAt<90000;
     $('contentWorker').textContent=online?'실행기 최근 연결됨':'PC 실행기 연결 미확인 · PC 실행과 관리자 로그인을 확인하세요. 요청은 대기열에 보관됩니다.';
     drawEditor();
+    syncReader();
   }
   function drawKeywordRefresh(){
     if(window.MomentumKeywords)MomentumKeywords.render($('contentKeywords'),data.keywordBoard,(row,group)=>{
@@ -130,10 +148,10 @@ window.MomentumContent=(()=>{
       generationProgress(next);
       const ended=(data.jobs||[]).some(j=>['queued','running'].includes(j.state)&&next.jobs.some(n=>n.id===j.id&&['complete','failed'].includes(n.state)));
       if(ended){
-        if(dirty){notice('생성 작업이 끝났습니다. 편집 중인 내용을 저장한 뒤 결과를 불러오세요.');return;}
+        if(dirty){acceptSnapshot(next);notice('생성이 끝나 목록·저장 원고를 갱신했습니다. 미저장 편집은 유지했습니다.');return;}
         await new Promise(resolve=>setTimeout(resolve,500));
         if(dirty||busy||root().hidden)return;
-        data=next;draw();notice('생성 상태를 확인하고 결과를 불러왔습니다.');
+        acceptSnapshot(next);notice('생성 상태를 확인하고 결과를 불러왔습니다.');
       }
     }catch(e){const area=$('contentGenerationProgress');if(area&&!area.hidden)area.querySelector('span').textContent='연결 확인 중 · 작성 상태를 다시 확인합니다.';}
     finally{checkingGeneration=false;}
@@ -213,7 +231,7 @@ window.MomentumContent=(()=>{
   }
   function mount(){
     if(root().dataset.mounted)return;root().dataset.mounted='true';
-    const header=node('div');header.className='content-toolbar';header.append(node('h2','콘텐츠 관리'),button('결과 불러오기',load));
+    const header=node('div');header.className='content-toolbar';const sync=node('small','서버 확인 대기');sync.id='contentSync';sync.setAttribute('role','status');header.append(node('h2','콘텐츠 관리'),button('결과 불러오기',load),sync);
     const worker=node('p');worker.id='contentWorker';const msg=node('p','주제 선택 → 초안 생성 → 편집·저장 → 매체별 검수');msg.id='contentNotice';msg.setAttribute('role','status');
     const topics=node('div');topics.id='contentTopics';topics.className='content-topics';
     const add=node('details');add.append(node('summary','주제 등록'));const form=node('form');form.id='contentTopicForm';
@@ -228,19 +246,21 @@ window.MomentumContent=(()=>{
   }
   async function open(){
     mount();await initializeCache();
-    if(data&&!root().dataset.loaded){draw();root().dataset.loaded='true';notice('저장된 콘텐츠를 먼저 표시했습니다.');}
+    if(data&&!root().dataset.loaded){draw();root().dataset.loaded='true';syncStatus('저장본 표시 · 서버 확인 중…');notice('저장된 콘텐츠를 먼저 표시했습니다.');}
     if(!data)notice('콘텐츠를 불러오는 중입니다.');
-    if(!lastRead||Date.now()-lastRead>30000)refreshBackground();
+    await refreshBackground();
   }
   async function preload(){await initializeCache();if(!lastRead)refreshBackground();}
   window.addEventListener('momentum-auth-cleared',()=>{
-    authEpoch++;data=null;selected=null;dirty=false;cacheScope=null;cacheInit=null;lastRead=0;pendingRead=null;
+    authEpoch++;data=null;selected=null;dirty=false;cacheScope=null;cacheInit=null;lastRead=0;pendingRead=null;reader=null;
     if(root()){root().replaceChildren();delete root().dataset.mounted;delete root().dataset.loaded;}
   });
   setInterval(()=>{if(data&&!dirty&&!busy&&!root().hidden&&(data.deliveries||[]).some(j=>['queued','running'].includes(j.state)))run(load);},10000);
   setInterval(checkGeneration,3000);
   setInterval(()=>window.MomentumKeywords?.tick($('contentKeywords')),1000);
   setInterval(()=>{if(root()?.dataset.mounted&&!root().hidden)refreshBackground();},30000);
+  const resume=()=>{if(root()?.dataset.mounted&&!root().hidden&&document.visibilityState==='visible')refreshBackground();};
+  window.addEventListener('focus',resume);window.addEventListener('online',resume);document.addEventListener('visibilitychange',resume);
   window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   return {open,preload};
 })();
